@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Data Cloud Mock</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Data Cloud Mocks</value>
+    </caseValues>
+    <fields>
+        <label><!-- Average Monthly Expenditure Cover --></label>
+        <name>Average_Monthly_Expenditure_Cover__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Monthly Expenses --></label>
+        <name>Average_Monthly_Expenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Monthly Income --></label>
+        <name>Average_Monthly_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Monthly Surplus --></label>
+        <name>Average_Monthly_Surplus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Account --></label>
+        <name>Client_Account__c</name>
+        <relationshipLabel><!-- Data Cloud Mocks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Credit Card Use Ratio --></label>
+        <name>Credit_Card_Use_Ratio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposits for 1 year --></label>
+        <name>Deposits_for_1_year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposits for 3 Months --></label>
+        <name>Deposits_for_3_Months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposits for 6 Months --></label>
+        <name>Deposits_for_6_Months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expenses for 1 Year --></label>
+        <name>Expenses_for_1_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expenses for 3 Months --></label>
+        <name>Expenses_for_3_Months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expenses for 6 Months --></label>
+        <name>Expenses_for_6_Months__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Account Balance Net Worth --></label>
+        <name>Financial_Account_Balance_Net_Worth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Account Balance Wallet Share --></label>
+        <name>Financial_Account_Balance_Wallet_Share__c</name>
+    </fields>
+    <fields>
+        <label><!-- Held Away Financial Account Balance --></label>
+        <name>Held_Away_Financial_Account_Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Large Deposit --></label>
+        <name>Large_Deposit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Large Expense --></label>
+        <name>Large_Expense__c</name>
+    </fields>
+    <fields>
+        <label><!-- Managed Financial Account Balance --></label>
+        <name>Managed_Financial_Account_Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Deposits by Category --></label>
+        <name>Monthly_Deposits_by_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Expenses by Category --></label>
+        <name>Monthly_Expenses_by_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Inflow Transactions --></label>
+        <name>Monthly_Inflow_Transactions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percentage of Assets to Liabilities --></label>
+        <name>Percentage_of_Assets_to_Liabilities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percentage of Cash Inflow Spent --></label>
+        <name>Percentage_of_Cash_Inflow_Spent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Annual Expenses --></label>
+        <name>Total_Annual_Expenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Deposits by Month Last 12 Months --></label>
+        <name>Total_Deposits_by_Month_Last_12_Months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Expense --></label>
+        <name>Total_Expense__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Expenses by Month Last 12 Months --></label>
+        <name>Total_Expenses_by_Month_Last_12_Months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Income --></label>
+        <name>Total_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Monthly Deposits --></label>
+        <name>Total_Monthly_Deposits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Monthly Expenses --></label>
+        <name>Total_Monthly_Expenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Number of Accounts --></label>
+        <name>Total_Number_of_Accounts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Outstanding Credit --></label>
+        <name>Total_Outstanding_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Surplus --></label>
+        <name>Total_Surplus__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Calculated Insights --></label>
+        <name>Calculated_Insights</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Cashflow --></label>
+        <name>Cashflow</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

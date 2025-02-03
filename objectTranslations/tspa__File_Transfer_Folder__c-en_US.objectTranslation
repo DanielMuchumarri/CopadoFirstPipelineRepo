@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Folder Id --></label>
+        <name>tspa__Folder_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Folder Name --></label>
+        <name>tspa__Folder_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Folder Id --></label>
+        <name>tspa__ParentFolderId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Root Library Id --></label>
+        <name>tspa__Root_Library_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tspa__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- isAssetLibrary --></label>
+        <name>tspa__isAssetLibrary__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,10 @@
+AccountID,Account_Team,Client_Name,Contacts,Days_Since_Last_Int,Description,Last_Interaction,Last_Processed,Likelihood_to_Invest,Strength
+0014V00004MtbHcQAJ,View Account Team,Jennifer Blake,View Contacts,37,Primary,03/19/2023,04/25/2023,0.58,https://finsido-mortcib-244r2-dev.file.force.com/file-asset/primarypng?v=1
+0014V00004MtbHcQAJ,View Account Team,John Robinson,View Contacts,5,Primary,04/20/2023,04/25/2023,0.49,https://finsido-mortcib-244r2-dev.file.force.com/file-asset/primarypng?v=1
+0014V00004MtbHcQAJ,View Account Team,Fred Smith,View Contacts,2,Developing,04/23/2023,04/25/2023,0.35,https://finsido-mortcib-244r2-dev.file.force.com/file-asset/developingpng?v=1
+0014V00004MtbHcQAJ,View Account Team,Rebecca Long,View Contacts,8,Developing,04/17/2023,04/25/2023,0.3,https://finsido-mortcib-244r2-dev.file.force.com/file-asset/developingpng?v=1
+0014V00004MtbHcQAJ,View Account Team,Sarah Johnson,View Contacts,,Developing,04/25/2023,04/25/2023,0.27,https://finsido-mortcib-244r2-dev.file.force.com/file-asset/developingpng?v=1
+0014V00004MtbHcQAJ,View Account Team,Sally Wright,View Contacts,,Strong,04/25/2023,04/25/2023,0.26,https://finsido-mortcib-244r2-dev.file.force.com/file-asset/strongpng?v=1
+0014V00004MtbHcQAJ,View Account Team,James Baird,View Contacts,18,Strong,04/07/2023,04/25/2023,0.2,https://finsido-mortcib-244r2-dev.file.force.com/file-asset/strongpng?v=1
+0014V00004MtbHcQAJ,View Account Team,Roger Bain,View Contacts,11,Strong,04/14/2023,04/25/2023,0.18,https://finsido-mortcib-244r2-dev.file.force.com/file-asset/strongpng?v=1
+0014V00004MtbHcQAJ,View Account Team,Emily Young,View Contacts,8,Strong,04/17/2023,04/25/2023,0.15,https://finsido-mortcib-244r2-dev.file.force.com/file-asset/strongpng?v=1

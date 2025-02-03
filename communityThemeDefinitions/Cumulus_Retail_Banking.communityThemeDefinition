@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CommunityThemeDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <bundlesInfo>
+        <description>Self-Service</description>
+        <order>1</order>
+        <title>Self-Service</title>
+        <type>Highlight</type>
+    </bundlesInfo>
+    <bundlesInfo>
+        <image>siteAsset_6103a62c03964e0eb80743be9b9e89cc</image>
+        <order>1</order>
+        <title>siteAsset_6103a62c03964e0eb80743be9b9e89cc</title>
+        <type>PreviewImage</type>
+    </bundlesInfo>
+    <defaultBrandingSet>Cumulus_Retail_Banking</defaultBrandingSet>
+    <description>Retail Banking Theme</description>
+    <enableExtendedCleanUpOnDelete>true</enableExtendedCleanUpOnDelete>
+    <masterLabel>Cumulus Retail Banking</masterLabel>
+    <publisher>Augusta J. Kimble</publisher>
+    <themeRouteOverride>
+        <pageAttributes>{&quot;PageName&quot;:&quot;Home&quot;}</pageAttributes>
+        <pageType>comm__standardPage</pageType>
+        <themeLayoutType>Home</themeLayoutType>
+    </themeRouteOverride>
+    <themeSetting>
+        <themeLayout>Cumulus_Retail_Banking_themeLayout_Default</themeLayout>
+        <themeLayoutType>Inner</themeLayoutType>
+    </themeSetting>
+    <themeSetting>
+        <themeLayout>Cumulus_Retail_Banking_themeLayout_Home</themeLayout>
+        <themeLayoutType>Home</themeLayoutType>
+    </themeSetting>
+    <themeSetting>
+        <themeLayout>Cumulus_Retail_Banking_themeLayout_Login</themeLayout>
+        <themeLayoutType>Login</themeLayoutType>
+    </themeSetting>
+</CommunityThemeDefinition>

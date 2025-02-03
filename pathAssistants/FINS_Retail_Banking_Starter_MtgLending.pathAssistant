@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Retail Banking - Mortgage Lending</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>sbaa__ApprovalStatus__c</fieldNames>
+        <fieldNames>Approval_Feedback__c</fieldNames>
+        <fieldNames>FINS_Lending_Approved_Amount__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Monitor Approval Status &amp;amp; update Borrower accordingly&lt;/li&gt;&lt;li&gt;Ensure all required documentation is attached to Loan Application&lt;/li&gt;&lt;li&gt;Schedule Closing Date with Borrower&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Approval</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>FINS_Requested_Amount__c</fieldNames>
+        <fieldNames>FINS_Lending_Type_of_Loan__c</fieldNames>
+        <fieldNames>Description</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Ensure the necessary data points are collected prior to Pre-Approval&lt;/li&gt;&lt;li&gt;Notify the Underwriting team of upcoming request&lt;/li&gt;&lt;li&gt;Begin to educate Borrower on the mortgage process and required documentation&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Pre-Approval</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>FINS_Borrower__c</fieldNames>
+        <fieldNames>Contact_Email_1__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Begin collecting documentation and uploading for Underwriting Review&lt;/li&gt;&lt;li&gt;Continue to engage with Borrower and keep them updated on requirements&lt;/li&gt;&lt;li&gt;Prepare to submit to Encompass or Rocket Mortgage&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Preparation</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>FINS_Lending_Interest_Rate__c</fieldNames>
+        <fieldNames>Interest_Rate_Type__c</fieldNames>
+        <fieldNames>NextStep</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Help Borrower understand the Interest Rate Options&lt;/li&gt;&lt;li&gt;Advise Borrower on what Interest Rate best fits their needs&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Rate Negotiation</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>FINS_Lending_Max_Loan__c</fieldNames>
+        <fieldNames>FINS_Residence_Type__c</fieldNames>
+        <fieldNames>Real_Estate_Agent__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Upload all required supporting documents &amp;amp; complete assigned activities&lt;/li&gt;&lt;li&gt;Submit for Underwriting Review &amp;amp; Monitor status&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Underwriting Review</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>FSC_Lending_Mortgage</recordTypeName>
+</PathAssistant>

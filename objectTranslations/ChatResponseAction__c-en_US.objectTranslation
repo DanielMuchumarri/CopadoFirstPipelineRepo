@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Chat Response Action</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Chat Response Actions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Chat Response --></label>
+        <name>ChatResponse__c</name>
+        <relationshipLabel><!-- Chat Response Actions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon Name --></label>
+        <name>IconName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Variant --></label>
+        <name>Variant__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

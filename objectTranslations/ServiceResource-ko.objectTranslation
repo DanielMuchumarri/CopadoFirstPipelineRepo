@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Crew Managment Resource Lightbox --></label>
+        <name>FSL__CrewManagment_Lightbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Emergency Fields --></label>
+        <name>FSL__Emergency_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Get Candidates Resource Details --></label>
+        <name>FSL__Get_Candidates_Resource_Details</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Resource Gantt Filter --></label>
+        <name>FSL__Resource_Gantt_Filter</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Resource Lightbox --></label>
+        <name>FSL__Resource_Lightbox</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Additional Job Revenue --></label>
+        <name>Additional_Job_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Jobs Scheduled --></label>
+        <name>Additional_Jobs_Scheduled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contractor&apos;s Service Territory --></label>
+        <name>Contractor_s_Service_Territory__c</name>
+        <relationshipLabel><!-- Service Resources --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cost Per Mile --></label>
+        <name>Cost_Per_Mile__c</name>
+    </fields>
+    <fields>
+        <help><!-- Set this value to the location you want to use for your technicians En Route location. This will be used on the map that the customer sees for the first notification --></help>
+        <label><!-- En Route Location --></label>
+        <name>En_Route_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q-Branch Demo Reference --></label>
+        <name>FINS_Q_Branch_Demo_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Efficiency --></label>
+        <name>FSL__Efficiency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gantt Label --></label>
+        <name>FSL__GanttLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Online Offset --></label>
+        <name>FSL__Online_Offset__c</name>
+    </fields>
+    <fields>
+        <label><!-- Picture Link --></label>
+        <name>FSL__Picture_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>FSL__Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel Speed --></label>
+        <name>FSL__Travel_Speed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gantt Color --></label>
+        <name>Gantt_Color__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11</masterLabel>
+            <translation><!-- 11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation><!-- 12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is Contractor --></label>
+        <name>Is_Contractor__c</name>
+    </fields>
+    <fields>
+        <help><!-- Set this value to the location you want to use for your technicians LastMile location. This will be used on the map that the customer sees for the second notification --></help>
+        <label><!-- Last Mile Location --></label>
+        <name>Last_Mile_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Jobs Optimized --></label>
+        <name>Number_of_Jobs_Optimized__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Jobs Scheduled --></label>
+        <name>Number_of_Jobs_Scheduled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opt KPI Reset --></label>
+        <name>Opt_KPI_Reset__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optimization KPI --></label>
+        <name>Optimization_KPI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optimization Revenue --></label>
+        <name>Optimization_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Travel Time --></label>
+        <name>Original_Travel_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracker Contact --></label>
+        <name>SDO_SFS_Tracker_Contact__c</name>
+        <relationshipLabel><!-- Service Resources --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Travel Delta --></label>
+        <name>Travel_Delta__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel Savings --></label>
+        <name>Travel_Savings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Updated Travel Time --></label>
+        <name>Updated_Travel_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Type --></label>
+        <name>User_Type__c</name>
+        <picklistValues>
+            <masterLabel>Lightning Scheduler (LS)</masterLabel>
+            <translation><!-- Lightning Scheduler (LS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Field Service (SFS)</masterLabel>
+            <translation><!-- Salesforce Field Service (SFS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Cloud</masterLabel>
+            <translation><!-- Service Cloud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workforce Engagement</masterLabel>
+            <translation><!-- Workforce Engagement --></translation>
+        </picklistValues>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Capacity Resource Can&apos;t Be of Type Crew --></errorMessage>
+        <name>FSL__Capacity_Resource_of_Type_Crew</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Resource travel speed must be greater than 0. --></errorMessage>
+        <name>FSL__Resource_travel</name>
+    </validationRules>
+</CustomObjectTranslation>

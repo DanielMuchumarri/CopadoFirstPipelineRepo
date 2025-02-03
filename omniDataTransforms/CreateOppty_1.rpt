@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;stDomesticPaymentsKYC&quot; : {
+    &quot;TotalDollarsOfMonthlyWires&quot; : null,
+    &quot;NatureOfWires&quot; : null,
+    &quot;SendingWiresOnBehalfOfOthers&quot; : null,
+    &quot;AnticipatedMonthlyWires&quot; : null
+  },
+  &quot;stDomesticPaymentsEnrollment&quot; : {
+    &quot;StandingOrders&quot; : null,
+    &quot;StandardingOrderUploadQuestion&quot; : null,
+    &quot;StandingOrderFile&quot; : [ {
+      &quot;data&quot; : null,
+      &quot;size&quot; : null,
+      &quot;filename&quot; : null
+    } ],
+    &quot;IntegrationServices&quot; : null,
+    &quot;RequestedLynxOriginationLimit&quot; : null
+  },
+  &quot;vlcTimeTracking&quot; : {
+    &quot;stServices&quot; : null,
+    &quot;stCompanyInfo&quot; : null,
+    &quot;stCanadianClearingCashServices&quot; : null,
+    &quot;stWelcome&quot; : null,
+    &quot;DomesticPaymentsSave&quot; : null,
+    &quot;DomesticPaymentsKYCSave&quot; : null,
+    &quot;stSignDisclosure&quot; : null,
+    &quot;stDomesticPaymentsKYC&quot; : null,
+    &quot;OnlineCashManagementSave&quot; : null,
+    &quot;stDomesticPaymentsEnrollment&quot; : null,
+    &quot;stConfirmation&quot; : null,
+    &quot;CreateOpportunity&quot; : null,
+    &quot;stCashManagementEnrollment&quot; : null,
+    &quot;ReturnToHome&quot; : null,
+    &quot;GatherNeededInfo&quot; : null
+  },
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;userTimeZone&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;ContextId&quot; : null,
+  &quot;stCashManagementEnrollment&quot; : {
+    &quot;AccessWithAccounts&quot; : null,
+    &quot;AccountForFee&quot; : null,
+    &quot;CompanyAdministrator&quot; : {
+      &quot;FirstName&quot; : null,
+      &quot;AdminEmail&quot; : null,
+      &quot;LastName&quot; : null,
+      &quot;Title&quot; : null
+    }
+  },
+  &quot;stServices&quot; : {
+    &quot;ContainsAM&quot; : null,
+    &quot;ContainsBBE&quot; : null,
+    &quot;ProductsServices&quot; : null,
+    &quot;Block5&quot; : {
+      &quot;Block8&quot; : {
+        &quot;FFYesNo&quot; : null
+      },
+      &quot;Block6&quot; : {
+        &quot;CRSYesNo&quot; : null
+      }
+    },
+    &quot;ContainsPCS&quot; : null,
+    &quot;blBanksBrokersExchanges&quot; : {
+      &quot;Block3&quot; : {
+        &quot;CSSYesNo&quot; : null
+      },
+      &quot;blacktradefinance&quot; : {
+        &quot;TFYesNo&quot; : null
+      },
+      &quot;BBECanadianClearingCashServices&quot; : {
+        &quot;CCCSYesNo&quot; : null
+      },
+      &quot;Block4&quot; : {
+        &quot;SBDYesNo&quot; : null
+      }
+    },
+    &quot;Block7&quot; : {
+      &quot;Block9&quot; : {
+        &quot;POYesNo&quot; : null
+      },
+      &quot;Block10&quot; : {
+        &quot;SDSYesNo&quot; : null
+      }
+    }
+  },
+  &quot;stCompanyInfo&quot; : {
+    &quot;taAddress-Block&quot; : {
+      &quot;taAddress&quot; : null,
+      &quot;AddressStreet&quot; : null,
+      &quot;AddressState&quot; : null,
+      &quot;AddressCity&quot; : null,
+      &quot;AddressPostalCode&quot; : null,
+      &quot;AddressCountry&quot; : null
+    },
+    &quot;Email&quot; : null,
+    &quot;OffCountry&quot; : null,
+    &quot;OffStreetAddress&quot; : null,
+    &quot;OffPostalCode&quot; : null,
+    &quot;AccountingOfficeAddressDifferent&quot; : null,
+    &quot;OffCity&quot; : null,
+    &quot;OffState&quot; : null,
+    &quot;Text1&quot; : null,
+    &quot;DbaIndicator&quot; : null,
+    &quot;BusinessName&quot; : null,
+    &quot;EIN&quot; : null,
+    &quot;BusinessStructure&quot; : null,
+    &quot;DateBusinessEstablished&quot; : null,
+    &quot;Phone&quot; : null
+  },
+  &quot;stCanadianClearingCashServices&quot; : {
+    &quot;Lynx&quot; : null,
+    &quot;NewToCashManagement&quot; : null,
+    &quot;ACSS&quot; : null,
+    &quot;RTP&quot; : null,
+    &quot;SWIFT&quot; : null
+  },
+  &quot;stWelcome&quot; : { },
+  &quot;stSignDisclosure&quot; : { },
+  &quot;stConfirmation&quot; : { }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>CreateOppty</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>CreateOpptyCustom3437</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>CreateOppty</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Opportunity</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateOpptyCustom2699</globalKey>
+        <inputFieldName>ContextId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOppty</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AccountId</outputFieldName>
+        <outputObjectName>Opportunity</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateOpptyCustom3132</globalKey>
+        <inputFieldName>DateFormula</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOppty</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Description</outputFieldName>
+        <outputObjectName>Opportunity</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateOpptyCustom2628</globalKey>
+        <inputFieldName>userId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOppty</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>OwnerId</outputFieldName>
+        <outputObjectName>Opportunity</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Assessment Needed</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateOpptyCustom189</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOppty</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>StageName</outputFieldName>
+        <outputObjectName>Opportunity</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;United/\/\/Partners/\/\/-/\/\/New/\/\/Treasury/\/\/Service/\/\/-/\/\/&quot; | | TODAY MONTH &quot;/&quot; | | TODAY DAY &quot;/&quot; | | TODAY YEAR CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(&quot;United Partners - New Treasury Service - &quot;, MONTH(TODAY()),&quot;/&quot;,DAY(TODAY()),&quot;/&quot;,YEAR(TODAY()))</formulaExpression>
+        <formulaResultPath>DateFormula</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>CreateOpptyCustom282</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOppty</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Add-On Business</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateOpptyCustom660</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOppty</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Type</outputFieldName>
+        <outputObjectName>Opportunity</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateOpptyCustom5914</globalKey>
+        <inputFieldName>DateFormula</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOppty</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Name</outputFieldName>
+        <outputObjectName>Opportunity</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | TODAY 30 ADDDAY</formulaConverted>
+        <formulaExpression>ADDDAY(TODAY(), 30)</formulaExpression>
+        <formulaResultPath>CloseDateFormula</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>CreateOpptyCustom4594</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOppty</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateOpptyCustom456</globalKey>
+        <inputFieldName>CloseDateFormula</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOppty</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CloseDate</outputFieldName>
+        <outputObjectName>Opportunity</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>53000</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateOpptyCustom4731</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOppty</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Amount</outputFieldName>
+        <outputObjectName>Opportunity</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;stDomesticPaymentsKYC&quot; : {
+    &quot;TotalDollarsOfMonthlyWires&quot; : null,
+    &quot;NatureOfWires&quot; : null,
+    &quot;SendingWiresOnBehalfOfOthers&quot; : null,
+    &quot;AnticipatedMonthlyWires&quot; : null
+  },
+  &quot;stDomesticPaymentsEnrollment&quot; : {
+    &quot;StandingOrders&quot; : null,
+    &quot;StandardingOrderUploadQuestion&quot; : null,
+    &quot;StandingOrderFile&quot; : [ {
+      &quot;data&quot; : null,
+      &quot;size&quot; : null,
+      &quot;filename&quot; : null
+    } ],
+    &quot;IntegrationServices&quot; : null,
+    &quot;RequestedLynxOriginationLimit&quot; : null
+  },
+  &quot;vlcTimeTracking&quot; : {
+    &quot;stServices&quot; : null,
+    &quot;stCompanyInfo&quot; : null,
+    &quot;stCanadianClearingCashServices&quot; : null,
+    &quot;stWelcome&quot; : null,
+    &quot;DomesticPaymentsSave&quot; : null,
+    &quot;DomesticPaymentsKYCSave&quot; : null,
+    &quot;stSignDisclosure&quot; : null,
+    &quot;stDomesticPaymentsKYC&quot; : null,
+    &quot;OnlineCashManagementSave&quot; : null,
+    &quot;stDomesticPaymentsEnrollment&quot; : null,
+    &quot;stConfirmation&quot; : null,
+    &quot;CreateOpportunity&quot; : null,
+    &quot;stCashManagementEnrollment&quot; : null,
+    &quot;ReturnToHome&quot; : null,
+    &quot;GatherNeededInfo&quot; : null
+  },
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;userTimeZone&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;ContextId&quot; : &quot;001Hn00001udQRiIAM&quot;,
+  &quot;stCashManagementEnrollment&quot; : {
+    &quot;AccessWithAccounts&quot; : null,
+    &quot;AccountForFee&quot; : null,
+    &quot;CompanyAdministrator&quot; : {
+      &quot;FirstName&quot; : null,
+      &quot;AdminEmail&quot; : null,
+      &quot;LastName&quot; : null,
+      &quot;Title&quot; : null
+    }
+  },
+  &quot;stServices&quot; : {
+    &quot;ContainsAM&quot; : null,
+    &quot;ContainsBBE&quot; : null,
+    &quot;ProductsServices&quot; : null,
+    &quot;Block5&quot; : {
+      &quot;Block8&quot; : {
+        &quot;FFYesNo&quot; : null
+      },
+      &quot;Block6&quot; : {
+        &quot;CRSYesNo&quot; : null
+      }
+    },
+    &quot;ContainsPCS&quot; : null,
+    &quot;blBanksBrokersExchanges&quot; : {
+      &quot;Block3&quot; : {
+        &quot;CSSYesNo&quot; : null
+      },
+      &quot;blacktradefinance&quot; : {
+        &quot;TFYesNo&quot; : null
+      },
+      &quot;BBECanadianClearingCashServices&quot; : {
+        &quot;CCCSYesNo&quot; : null
+      },
+      &quot;Block4&quot; : {
+        &quot;SBDYesNo&quot; : null
+      }
+    },
+    &quot;Block7&quot; : {
+      &quot;Block9&quot; : {
+        &quot;POYesNo&quot; : null
+      },
+      &quot;Block10&quot; : {
+        &quot;SDSYesNo&quot; : null
+      }
+    }
+  },
+  &quot;stCompanyInfo&quot; : {
+    &quot;taAddress-Block&quot; : {
+      &quot;taAddress&quot; : null,
+      &quot;AddressStreet&quot; : null,
+      &quot;AddressState&quot; : null,
+      &quot;AddressCity&quot; : null,
+      &quot;AddressPostalCode&quot; : null,
+      &quot;AddressCountry&quot; : null
+    },
+    &quot;Email&quot; : null,
+    &quot;OffCountry&quot; : null,
+    &quot;OffStreetAddress&quot; : null,
+    &quot;OffPostalCode&quot; : null,
+    &quot;AccountingOfficeAddressDifferent&quot; : null,
+    &quot;OffCity&quot; : null,
+    &quot;OffState&quot; : null,
+    &quot;Text1&quot; : null,
+    &quot;DbaIndicator&quot; : null,
+    &quot;BusinessName&quot; : null,
+    &quot;EIN&quot; : null,
+    &quot;BusinessStructure&quot; : null,
+    &quot;DateBusinessEstablished&quot; : null,
+    &quot;Phone&quot; : null
+  },
+  &quot;stCanadianClearingCashServices&quot; : {
+    &quot;Lynx&quot; : null,
+    &quot;NewToCashManagement&quot; : null,
+    &quot;ACSS&quot; : null,
+    &quot;RTP&quot; : null,
+    &quot;SWIFT&quot; : null
+  },
+  &quot;stWelcome&quot; : { },
+  &quot;stSignDisclosure&quot; : { },
+  &quot;stConfirmation&quot; : { }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>CreateOppty_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

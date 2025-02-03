@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <decisions>
+        <description>Checks if the status of the AsyncCalloutFailed variable is set to True to determine if the callout to the asynchronous Apex action failed.</description>
+        <name>IsAsyncCalloutFailedToTrue</name>
+        <label>Is AsyncCalloutFailed to True?</label>
+        <locationX>336</locationX>
+        <locationY>1277</locationY>
+        <defaultConnectorLabel>Other (Default Outcome)</defaultConnectorLabel>
+        <rules>
+            <name>IsFailed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AttemptManageStandingInstructionRequestandDisplayCaseStatus.Outputs.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ShowServiceRequestStatus</targetReference>
+            </connector>
+            <label>Is Failed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if the agent rejected the document or not.</description>
+        <name>IsDocumentRejected</name>
+        <label>Was Document Rejected?</label>
+        <locationX>182</locationX>
+        <locationY>719</locationY>
+        <defaultConnector>
+            <targetReference>PerformManageStandingInstructionUpdateandPostUpdateActions</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Document Approved</defaultConnectorLabel>
+        <rules>
+            <name>DocumentRejected</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ReviewDocumentForManageStandingInstructionRequest.Outputs.DocumentRejectionStatus</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>PerformManageStandingInstructionWhenDocumentIsRejected</targetReference>
+            </connector>
+            <label>Document Rejected</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determines if the customer has uploaded any file for verification.</description>
+        <name>IsHavingFileUpload</name>
+        <label>Is Having File Upload?</label>
+        <locationX>336</locationX>
+        <locationY>395</locationY>
+        <defaultConnector>
+            <targetReference>PerformManageStandingInstructionUpdateandPostUpdateActions</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>File Not Uploaded</defaultConnectorLabel>
+        <rules>
+            <name>IsFileUploaded</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ReviewManageStandingInstructionRequestandNotify.Outputs.HasFileUpload</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>ReviewManageStandingInstructionRequestandNotify.Outputs.HasFileUpload</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>PerformGetDocumentChecklistItems</targetReference>
+            </connector>
+            <label>File Uploaded</label>
+        </rules>
+    </decisions>
+    <description>Allows a case owner to the review request related to manage standing instructions, submits the change, and either updates the case record or notifies the case owner that the update failed.</description>
+    <environments>Default</environments>
+    <interviewLabel>FSC Wealth:Process Manage Standing Instructions Service Request {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FSC Wealth:Process Manage Standing Instructions Service Request</label>
+    <orchestratedStages>
+        <description>Verifies the document for Manage Standing Instruction Request.</description>
+        <name>PerformDocumentVerificationforManageStandingInstructionRequest</name>
+        <label>Perform Document Verification for Manage Standing Instruction Request</label>
+        <locationX>182</locationX>
+        <locationY>611</locationY>
+        <connector>
+            <targetReference>IsDocumentRejected</targetReference>
+        </connector>
+        <exitConditionLogic>and</exitConditionLogic>
+        <stageSteps>
+            <description>Allows a case owner to review the document for a standing instruction request.</description>
+            <name>ReviewDocumentForManageStandingInstructionRequest</name>
+            <actionName>fscWlthReviewManageStndInstrDocSts</actionName>
+            <actionType>stepInteractive</actionType>
+            <assignees>
+                <assignee>
+                    <elementReference>$Record.Case.Owner:User.Username</elementReference>
+                </assignee>
+                <assigneeType>User</assigneeType>
+            </assignees>
+            <canAssigneeEdit>false</canAssigneeEdit>
+            <entryConditionLogic>and</entryConditionLogic>
+            <exitConditionLogic>and</exitConditionLogic>
+            <inputParameters>
+                <name>AccountId</name>
+                <value>
+                    <elementReference>$Record.Case.Account.Id</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>CaseId</name>
+                <value>
+                    <elementReference>$Record.CaseId</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>NewDCIRecordIds</name>
+                <value>
+                    <elementReference>ReviewDocumentChecklistItems.Outputs.DocumentCheckListItemID</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>ActionInput__RecordId</name>
+                <value>
+                    <elementReference>$Record.CaseId</elementReference>
+                </value>
+            </inputParameters>
+            <label>Review Document for Manage Standing Instruction Request</label>
+            <requiresAsyncProcessing>false</requiresAsyncProcessing>
+            <runAsUser>false</runAsUser>
+            <shouldLock>false</shouldLock>
+            <stepSubtype>InteractiveStep</stepSubtype>
+        </stageSteps>
+    </orchestratedStages>
+    <orchestratedStages>
+        <description>Gets all the Document Checklist Item records where Status is New and passes it to the other flows.</description>
+        <name>PerformGetDocumentChecklistItems</name>
+        <label>Perform Get Document Checklist Items</label>
+        <locationX>182</locationX>
+        <locationY>503</locationY>
+        <connector>
+            <targetReference>PerformDocumentVerificationforManageStandingInstructionRequest</targetReference>
+        </connector>
+        <exitConditionLogic>and</exitConditionLogic>
+        <stageSteps>
+            <description>Gets all the Document Checklist Item records where Status is New and passes it to the other flows.</description>
+            <name>ReviewDocumentChecklistItems</name>
+            <actionName>fscWlthGetNewDocChecklistItem</actionName>
+            <actionType>stepBackground</actionType>
+            <canAssigneeEdit>false</canAssigneeEdit>
+            <entryConditionLogic>and</entryConditionLogic>
+            <exitConditionLogic>and</exitConditionLogic>
+            <inputParameters>
+                <name>CaseId</name>
+                <value>
+                    <elementReference>$Record.CaseId</elementReference>
+                </value>
+            </inputParameters>
+            <label>Review Document Checklist Items</label>
+            <requiresAsyncProcessing>false</requiresAsyncProcessing>
+            <runAsUser>false</runAsUser>
+            <shouldLock>false</shouldLock>
+            <stepSubtype>BackgroundStep</stepSubtype>
+        </stageSteps>
+    </orchestratedStages>
+    <orchestratedStages>
+        <description>Perform manage standing instruction and update the case status.</description>
+        <name>PerformManageStandingInstructionUpdateandPostUpdateActions</name>
+        <label>Perform Manage Standing Instruction Update and Post-Update Actions</label>
+        <locationX>336</locationX>
+        <locationY>1169</locationY>
+        <connector>
+            <targetReference>IsAsyncCalloutFailedToTrue</targetReference>
+        </connector>
+        <exitConditionLogic>and</exitConditionLogic>
+        <stageSteps>
+            <description>Calls an asynchronous Apex action to update a service catalog request record for manage standing instruction update. Updates a specified case&apos;s status to closed if the request for manage standing instruction was successful. Otherwise, displays an error to the flow user.</description>
+            <name>AttemptManageStandingInstructionRequestandDisplayCaseStatus</name>
+            <actionName>fscWlth_UpdateServiceProcessRqst</actionName>
+            <actionType>stepBackground</actionType>
+            <canAssigneeEdit>false</canAssigneeEdit>
+            <entryConditionLogic>and</entryConditionLogic>
+            <exitConditionLogic>and</exitConditionLogic>
+            <inputParameters>
+                <name>AccountEmail</name>
+                <value>
+                    <elementReference>ReviewManageStandingInstructionRequestandNotify.Outputs.AccountEmail</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>CaseId</name>
+                <value>
+                    <elementReference>$Record.CaseId</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>InputRecordId</name>
+                <value>
+                    <elementReference>$Record.Id</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>IntegrationDefinition</name>
+                <value>
+                    <stringValue>FSCWlth_ManageStandingInstructions</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>PersonContactId</name>
+                <value>
+                    <elementReference>ReviewManageStandingInstructionRequestandNotify.Outputs.PersonContactId</elementReference>
+                </value>
+            </inputParameters>
+            <label>Attempt Manage Standing Instruction Request and Display Case Status</label>
+            <requiresAsyncProcessing>true</requiresAsyncProcessing>
+            <runAsUser>false</runAsUser>
+            <shouldLock>false</shouldLock>
+            <stepSubtype>BackgroundStep</stepSubtype>
+        </stageSteps>
+    </orchestratedStages>
+    <orchestratedStages>
+        <description>Allows the customer to resubmit the rejected documents.</description>
+        <name>PerformManageStandingInstructionWhenDocumentIsRejected</name>
+        <label>Perform Manage Standing Instruction When Document Is Rejected</label>
+        <locationX>50</locationX>
+        <locationY>827</locationY>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>PerformGetDocumentChecklistItems</targetReference>
+        </connector>
+        <exitConditionLogic>and</exitConditionLogic>
+        <stageSteps>
+            <description>Allows Customer to resubmit the rejected documents.</description>
+            <name>ResubmitTheRejectedDocuments</name>
+            <actionName>fscWlthManageStndInstrResubmitRejectedDoc</actionName>
+            <actionType>stepInteractive</actionType>
+            <assignees>
+                <assignee>
+                    <elementReference>ReviewDocumentForManageStandingInstructionRequest.Outputs.CustomerUserName</elementReference>
+                </assignee>
+                <assigneeType>User</assigneeType>
+            </assignees>
+            <canAssigneeEdit>false</canAssigneeEdit>
+            <entryConditionLogic>and</entryConditionLogic>
+            <exitConditionLogic>and</exitConditionLogic>
+            <inputParameters>
+                <name>CaseId</name>
+                <value>
+                    <elementReference>$Record.CaseId</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>ActionInput__RecordId</name>
+                <value>
+                    <elementReference>$Record.CaseId</elementReference>
+                </value>
+            </inputParameters>
+            <label>Resubmit The Rejected Documents</label>
+            <requiresAsyncProcessing>false</requiresAsyncProcessing>
+            <runAsUser>false</runAsUser>
+            <shouldLock>false</shouldLock>
+            <stepSubtype>InteractiveStep</stepSubtype>
+        </stageSteps>
+    </orchestratedStages>
+    <orchestratedStages>
+        <description>Processes the manage standing instruction update for a service catalog request.</description>
+        <name>ProcessTheManageStandingInstructionRequest</name>
+        <label>Process the Manage Standing Instruction Request</label>
+        <locationX>336</locationX>
+        <locationY>287</locationY>
+        <connector>
+            <targetReference>IsHavingFileUpload</targetReference>
+        </connector>
+        <exitConditionLogic>and</exitConditionLogic>
+        <stageSteps>
+            <description>Allows a case owner to review details and sends an email to the customer who raised a standing instruction request.</description>
+            <name>ReviewManageStandingInstructionRequestandNotify</name>
+            <actionName>fscWlthManageStndInstrSvcRqst</actionName>
+            <actionType>stepBackground</actionType>
+            <canAssigneeEdit>false</canAssigneeEdit>
+            <entryConditionLogic>and</entryConditionLogic>
+            <exitConditionLogic>and</exitConditionLogic>
+            <inputParameters>
+                <name>InputRecordId</name>
+                <value>
+                    <elementReference>$Record.Id</elementReference>
+                </value>
+            </inputParameters>
+            <label>Review Manage Standing Instruction Request and Notify</label>
+            <requiresAsyncProcessing>true</requiresAsyncProcessing>
+            <runAsUser>false</runAsUser>
+            <shouldLock>false</shouldLock>
+            <stepSubtype>BackgroundStep</stepSubtype>
+        </stageSteps>
+    </orchestratedStages>
+    <orchestratedStages>
+        <description>Shows the status of the service request to the user.</description>
+        <name>ShowServiceRequestStatus</name>
+        <label>Show Service Request Status</label>
+        <locationX>204</locationX>
+        <locationY>1385</locationY>
+        <exitConditionLogic>and</exitConditionLogic>
+        <stageSteps>
+            <description>Displays the result of the API callout made to the mulesoft interface.</description>
+            <name>APICalloutResult</name>
+            <actionName>fscWlth_AsynchApexCalloutSts</actionName>
+            <actionType>stepInteractive</actionType>
+            <assignees>
+                <assignee>
+                    <elementReference>$Record.Case.Owner:User.Username</elementReference>
+                </assignee>
+                <assigneeType>User</assigneeType>
+            </assignees>
+            <canAssigneeEdit>false</canAssigneeEdit>
+            <entryConditionLogic>and</entryConditionLogic>
+            <exitConditionLogic>and</exitConditionLogic>
+            <inputParameters>
+                <name>Status</name>
+                <value>
+                    <elementReference>AttemptManageStandingInstructionRequestandDisplayCaseStatus.Outputs.Status</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>ActionInput__RecordId</name>
+                <value>
+                    <elementReference>$Record.CaseId</elementReference>
+                </value>
+            </inputParameters>
+            <label>API Callout Result</label>
+            <requiresAsyncProcessing>false</requiresAsyncProcessing>
+            <runAsUser>false</runAsUser>
+            <shouldLock>false</shouldLock>
+            <stepSubtype>InteractiveStep</stepSubtype>
+        </stageSteps>
+    </orchestratedStages>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Orchestrator</processType>
+    <start>
+        <locationX>210</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>ProcessTheManageStandingInstructionRequest</targetReference>
+        </connector>
+        <filterFormula>{!$Record.SvcCatalogItemDefinition.DeveloperName}=&apos;FSCWlth_ManageStandingInstruction&apos;</filterFormula>
+        <object>SvcCatalogRequest</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

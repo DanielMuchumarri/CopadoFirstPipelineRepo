@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{
+    &quot;svcCatalogItemDefApiName&quot;: &quot;Debit_Transaction_Dispute&quot;,
+    &quot;FinancialAccountId&quot;: &quot;a7k4S000000XhwkQAC&quot;,
+    &quot;SourceSystemId&quot;: &quot;test123&quot;,
+    &quot;DisputedTransactions&quot;: {
+        &quot;TransactionId&quot;: &quot;7&quot;,
+        &quot;Reason&quot;: &quot;-&quot;,
+        &quot;TransactionAmountCurrency&quot;: &quot;USD&quot;,
+        &quot;TransactionDescription&quot;: &quot;ATM machine withdrawal&quot;,
+        &quot;expanded&quot;: true,
+        &quot;TransactionType&quot;: &quot;Withdrawal&quot;,
+        &quot;IsOlderThan90Days&quot;: false,
+        &quot;TransactionPostedDate&quot;: &quot;2023-06-11T16:41:41.09Z&quot;,
+        &quot;Status&quot;: &quot;Reversible&quot;,
+        &quot;TransactionAmount&quot;: 6.5
+    },
+    &quot;AccountId&quot;: &quot;&quot;,
+    &quot;DisputeType&quot;: &quot;Unknown&quot;,
+    &quot;OtherReason&quot;: &quot;&quot;,
+    &quot;DateMerchContactUnknown&quot;: &quot;2023-06-05&quot;,
+    &quot;MerchResponseUnknown&quot;: &quot;sdcdvasdfas&quot;,
+    &quot;omniScriptId&quot;: &quot;0jN4S000000TdDWUA0&quot;,
+    &quot;elementName&quot;: &quot;CreateCase&quot;
+}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>false</isActive>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>FSCTxnDisputeCreateCase</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>InvokeCreateConnectAPI</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;svcCatalogItemDefApiName&quot; : &quot;=%svcCatalogItemDefApiName%&quot;,
+    &quot;DisputedTransactions&quot; : &quot;=%DisputedTransactions%&quot;,
+    &quot;SourceSystemId&quot; : &quot;=%SourceSystemId%&quot;,
+    &quot;FinancialAccountId&quot; : &quot;=%FinancialAccountId%&quot;,
+    &quot;AccountId&quot; : &quot;=%AccountId%&quot;,
+    &quot;isCommunitySite&quot; : &quot;=%isCommunitySite%&quot;,
+    &quot;DisputeType&quot; : &quot;=%DisputeType%&quot;,
+    &quot;OriginalTransactionId&quot; : &quot;&quot;,
+    &quot;AmountOnReciept&quot; : &quot;=%AmtOnReceipt%&quot;,
+    &quot;DateReceived&quot; : &quot;&quot;,
+    &quot;DateReturned&quot; : &quot;&quot;,
+    &quot;ExpectedDeliveryDate&quot; : &quot;&quot;,
+    &quot;DateMerchContactedNR&quot; : &quot;&quot;,
+    &quot;MerchResponseNR&quot; : &quot;&quot;,
+    &quot;DateMerchContactedUK&quot; : &quot;=%DateMerchContactUnknown%&quot;,
+    &quot;MerchResponseUK&quot; : &quot;=%MerchResponseUnknown%&quot;,
+    &quot;AmountAuthorized&quot; : &quot;=%AmtAuth%&quot;,
+    &quot;DateMerchNotifiedSub&quot; : &quot;&quot;,
+    &quot;ReasonForCancellation&quot; : &quot;&quot;,
+    &quot;CancellationDate&quot; : &quot;&quot;,
+    &quot;CancellationConfirmationNumber&quot; : &quot;&quot;,
+    &quot;OtherReason&quot; : &quot;=%OtherReason%&quot;,
+    &quot;ProvisionalCreditPercentage&quot; : &quot;%ProvCredPctg%&quot;,
+    &quot;ProvisionalCreditAmount&quot; : &quot;%ProvCreditAmt%&quot;,
+    &quot;SusActivity&quot; : &quot;%SusAct%&quot;,
+    &quot;PermGiven&quot; : &quot;%PermGvn%&quot;,
+    &quot;AddlDetails&quot; : &quot;%AddlDtls%&quot;,
+    &quot;SelectedFA&quot; : &quot;%FAlink%&quot;,
+    &quot;Faname&quot; : &quot;%FAName%&quot;,
+    &quot;Fatype&quot; : &quot;%FAtype%&quot;,
+    &quot;FALast4&quot; : &quot;%FAlast4%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : true,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;remoteClass&quot; : &quot;TransactionDisputeHelperFunctions&quot;,
+  &quot;remoteOptions&quot; : { },
+  &quot;remoteMethod&quot; : &quot;callCreateCaseApi&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;RemoteAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Remote Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ResponseAction</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalOutput&quot; : { },
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;InvokeCreateConnectAPI:apiResponse&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;vlcResponseHeaders&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ResponseAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessKey>FSC_TxnDisputeCreateCase</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <overrideKey>fscserviceprocess__FSC_FeeReversalCreateCase_Procedure_1</overrideKey>
+    <propertySetConfig>{
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;trackingCustomData&quot; : { },
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;description&quot; : &quot;&quot;,
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;rollbackOnError&quot; : false,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;ttlMinutes&quot; : 5,
+  &quot;mockResponseMap&quot; : { }
+}</propertySetConfig>
+    <subType>TxnDisputeCreateCase</subType>
+    <type>FSC</type>
+    <uniqueName>FSC_TxnDisputeCreateCase_Procedure_3</uniqueName>
+    <versionNumber>3.0</versionNumber>
+    <webComponentKey>75eaed1d-e6b3-8bdb-a986-3cdd9fa924f5</webComponentKey>
+</OmniIntegrationProcedure>

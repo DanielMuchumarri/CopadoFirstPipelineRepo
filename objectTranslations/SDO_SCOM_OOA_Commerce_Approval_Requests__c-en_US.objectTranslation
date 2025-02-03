@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Commerce Approval Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Commerce Approval Requests</value>
+    </caseValues>
+    <fields>
+        <label><!-- Budget Limit --></label>
+        <name>Budget_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cart --></label>
+        <name>Cart__c</name>
+        <relationshipLabel><!-- Commerce Approval Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Credit Override Amount --></label>
+        <name>Credit_Override_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Products/Quantities --></label>
+        <name>Products_Quantities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requester --></label>
+        <name>Requester__c</name>
+        <relationshipLabel><!-- Commerce Approval Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Awaiting Response</masterLabel>
+            <translation><!-- Awaiting Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denied</masterLabel>
+            <translation><!-- Denied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Credit Override</masterLabel>
+            <translation><!-- Credit Override --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product/Quantity</masterLabel>
+            <translation><!-- Product/Quantity --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

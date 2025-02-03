@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>FSCTxnDisputeGetTxnTypes</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:Transactions LIST &apos;TransactionType!=&quot;Fee&quot;&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(Transactions),&apos;TransactionType!=&quot;Fee&quot;&apos;)</formulaExpression>
+        <formulaResultPath>NonFeeTransactions</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>FSCTxnDisputeGetTxnTypesCustom0jI4S000000TY8uUAGItem0</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCTxnDisputeGetTxnTypes</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCTxnDisputeGetTxnTypesCustom0jI4S000000TY8uUAGItem9</globalKey>
+        <inputFieldName>NonFeeTransactions:AdditionalAttributes:Subtype</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCTxnDisputeGetTxnTypes</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>Transactions:Subtype</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCTxnDisputeGetTxnTypesCustom0jI4S000000TY8uUAGItem10</globalKey>
+        <inputFieldName>TransactionTypes</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCTxnDisputeGetTxnTypes</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>TransactionTypes</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &apos;Subtype&apos; | var:NonFeeTransactions:AdditionalAttributes LIST LISTMERGE</formulaConverted>
+        <formulaExpression>LISTMERGE(&apos;Subtype&apos;, LIST(NonFeeTransactions:AdditionalAttributes))</formulaExpression>
+        <formulaResultPath>TransactionTypes</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>FSCTxnDisputeGetTxnTypesCustom0jI4S000000TY8uUAGItem1</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCTxnDisputeGetTxnTypes</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCTxnDisputeGetTxnTypesCustom0jI4S000000TY8uUAGItem2</globalKey>
+        <inputFieldName>NonFeeTransactions:TransactionDescription</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCTxnDisputeGetTxnTypes</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>Transactions:TransactionDescription</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCTxnDisputeGetTxnTypesCustom0jI4S000000TY8uUAGItem3</globalKey>
+        <inputFieldName>NonFeeTransactions:TransactionAmountCurrency</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCTxnDisputeGetTxnTypes</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>Transactions:TransactionAmountCurrency</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCTxnDisputeGetTxnTypesCustom0jI4S000000TY8uUAGItem4</globalKey>
+        <inputFieldName>NonFeeTransactions:TransactionId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCTxnDisputeGetTxnTypes</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>Transactions:TransactionId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCTxnDisputeGetTxnTypesCustom0jI4S000000TY8uUAGItem8</globalKey>
+        <inputFieldName>NonFeeTransactions:TransactionCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCTxnDisputeGetTxnTypes</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>Transactions:TransactionCode</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCTxnDisputeGetTxnTypesCustom0jI4S000000TY8uUAGItem5</globalKey>
+        <inputFieldName>NonFeeTransactions:TransactionAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCTxnDisputeGetTxnTypes</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Number</outputFieldFormat>
+        <outputFieldName>Transactions:TransactionAmount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCTxnDisputeGetTxnTypesCustom0jI4S000000TY8uUAGItem6</globalKey>
+        <inputFieldName>NonFeeTransactions:TransactionPostedDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCTxnDisputeGetTxnTypes</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>Transactions:TransactionPostedDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCTxnDisputeGetTxnTypesCustom0jI4S000000TY8uUAGItem7</globalKey>
+        <inputFieldName>NonFeeTransactions:TransactionType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCTxnDisputeGetTxnTypes</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>Transactions:TransactionType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;originalIndex&quot; : &quot;0&quot;,
+  &quot;Id&quot; : &quot;REC0&quot;,
+  &quot;TransactionId&quot; : &quot;16&quot;,
+  &quot;Subtype&quot; : &quot;Overdraft fee&quot;,
+  &quot;TransactionCode&quot; : &quot;Charge&quot;,
+  &quot;TransactionAmountCurrency&quot; : &quot;USD&quot;,
+  &quot;TransactionDescription&quot; : &quot;Parking violation&quot;,
+  &quot;TransactionType&quot; : &quot;Fee&quot;,
+  &quot;TransactionPostedDate&quot; : &quot;2022-08-05T16:41:41.090Z&quot;,
+  &quot;TransactionAmount&quot; : &quot;13.13&quot;,
+  &quot;uniqueKey&quot; : &quot;REC0&quot;,
+  &quot;_flex&quot; : {
+    &quot;uniqueKey&quot; : &quot;REC0&quot;
+  },
+  &quot;selectrow&quot; : true
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>FSCTxnDisputeGetTxnTypes_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

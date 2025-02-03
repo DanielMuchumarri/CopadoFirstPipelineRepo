@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants access to a collection of permissions needed to support the Retail Banking &quot;Starter&quot; demo/ use case.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Q-Brix Demo: FINS Retail Banking Starter Group</label>
+    <permissionSets>ISS_Demo_FINS_Retail_Banking_Starter</permissionSets>
+    <permissionSets>SDO_Analytics_Dashboard_Magic_Base</permissionSets>
+    <permissionSets>force__EnablementAdmin</permissionSets>
+    <permissionSets>force__EnablementUser</permissionSets>
+    <permissionSets>force__Walkthroughs</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

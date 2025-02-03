@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- IsActive --></label>
+        <name>tspa__IsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site Prefix --></label>
+        <name>tspa__Site_Prefix__c</name>
+    </fields>
+</CustomObjectTranslation>

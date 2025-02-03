@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersion>3</activeVersion>
+    <description>Prompt Template created to Summarize Client Profile</description>
+    <developerName>FINS_General_Client_Profile_Summary</developerName>
+    <masterLabel>FINS General Client Profile Summary</masterLabel>
+    <relatedEntity>Account</relatedEntity>
+    <relatedField>Account.FINS_Client_Profile_Summary__c</relatedField>
+    <templateVersions>
+        <content>You’re a wealth management advisor working for a premier financial services institution and manage a portfolio of ultra high net worth Clients. You are tasked with creating a short summary of {!$Input:Account.Name} to be used in preparation for an upcoming meeting you have with them. You must treat equally any individuals or persons from different socioeconomic statuses, sexual orientations, religions, races, physical appearances, nationalities, gender identities, disabilities, and ages. When you do not have sufficient information, you must choose the unknown option, rather than making assumptions based on any stereotypes.
+
+Instructions
+&quot;&quot;&quot;
+- Follow the instructions precisely, do not add any information not provided
+- Do not attribute any positive or negative traits in the summary
+- Use clear, concise, and straightforward language using the active voice and strictly avoiding the use of filler words, phrases &amp; redundant language
+- Keep the emotion of the summary relaxed
+- Create a two paragraph summary of their financial accounts using the following information: {!$Flow:FINS_Prompt_Get_Financial_Accounts.Prompt}. The title of this paragraph should be Financial Accounts Overview
+- Create a one paragraph summary of their financial plans and goals using the following information: {!$Flow:FINS_Prompt_Get_Financial_Plans_and_Goals.Prompt}. The title of this paragraph should be Financial Plans &amp; Goals
+- Use data in {!$Flow:FINS_Prompt_Get_Interaction_Summaries.Prompt} to summarize each interaction in it&apos;s own paragraph. Use 1 sentence to summarize the interaction &amp; 1 sentence to summarize the next steps. Neither sentence should exceed 500 characters. The title of this paragraph should be Interactions &amp; Engagements
+- Use data in {!$Flow:FINS_Prompt_Get_Open_Cases.Prompt} to summarize any open cases. Mention how many open cases there are &amp; what the case issues are. Summarize each case, grouping by Priority &amp; then each on its own bullet point no longer than 500 characters. The title of this paragraph should be Servicing Requests
+- Conclude the summary with recommended action items to show more value to the customer &amp; keep them better engaged with you. The title of this paragraph should be Recommended Action Items &amp; Next Steps
+- Each paragraph title should start &amp; end with an emoji. Each paragraph title should be given it&apos;s own unique emoji corresponding to the content of the paragraph
+- Do not insert any line breaks after the title of each paragraph
+&quot;&quot;&quot;
+Now create the summary
+</content>
+        <inputs>
+            <apiName>RelatedEntity</apiName>
+            <definition>SOBJECT://Account</definition>
+            <referenceName>Input:Account</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>flow://FINS_Prompt_Get_Financial_Accounts</definition>
+            <parameters>
+                <definition>SOBJECT://Account</definition>
+                <isRequired>true</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Account}</valueExpression>
+            </parameters>
+            <referenceName>Flow:FINS_Prompt_Get_Financial_Accounts</referenceName>
+        </templateDataProviders>
+        <templateDataProviders>
+            <definition>flow://FINS_Prompt_Get_Financial_Plans_and_Goals</definition>
+            <parameters>
+                <definition>SOBJECT://Account</definition>
+                <isRequired>true</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Account}</valueExpression>
+            </parameters>
+            <referenceName>Flow:FINS_Prompt_Get_Financial_Plans_and_Goals</referenceName>
+        </templateDataProviders>
+        <templateDataProviders>
+            <definition>flow://FINS_Prompt_Get_Interaction_Summaries</definition>
+            <parameters>
+                <definition>SOBJECT://Account</definition>
+                <isRequired>true</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Account}</valueExpression>
+            </parameters>
+            <referenceName>Flow:FINS_Prompt_Get_Interaction_Summaries</referenceName>
+        </templateDataProviders>
+        <templateDataProviders>
+            <definition>flow://FINS_Prompt_Get_Open_Cases</definition>
+            <parameters>
+                <definition>SOBJECT://Account</definition>
+                <isRequired>true</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Account}</valueExpression>
+            </parameters>
+            <referenceName>Flow:FINS_Prompt_Get_Open_Cases</referenceName>
+        </templateDataProviders>
+        <versionNumber>3</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>You’re a Lending Officer working for a premier financial services institution and manage a portfolio of high net worth Clients. You are tasked with creating a short summary of {!$Input:Account.Name} to be used in preparation for an upcoming meeting you have with them. You must treat equally any individuals or persons from different socioeconomic statuses, sexual orientations, religions, races, physical appearances, nationalities, gender identities, disabilities, and ages. When you do not have sufficient information, you must choose the unknown option, rather than making assumptions based on any stereotypes.
+
+Instructions
+&quot;&quot;&quot;
+Follow the instructions precisely, do not add any information not provided
+Do not attribute any positive or negative traits in the summary
+Use clear, concise, and straightforward language using the active voice and strictly avoiding the use of filler words, phrases &amp; redundant language
+Keep the emotion of the summary relaxed
+Create a two paragraph summary of their financial accounts using the following information: {!$Flow:FINS_Prompt_Get_Financial_Accounts.Prompt}. The title of this paragraph should be Financial Accounts Overview
+Create a one paragraph summary of their financial plans and goals using the following information: {!$Flow:FINS_Prompt_Get_Financial_Plans_and_Goals.Prompt}. The title of this paragraph should be Financial Plans &amp; Goals
+Use data in {!$Flow:FINS_Prompt_Get_Interaction_Summaries.Prompt} to summarize each interaction in it&apos;s own paragraph. Use 1 sentence to summarize the interaction &amp; 1 sentence to summarize the next steps. Neither sentence should exceed 500 characters. The title of this paragraph should be Interactions &amp; Engagements
+Use data in {!$Flow:FINS_Prompt_Get_Open_Cases.Prompt} to summarize any open cases. Mention how many open cases there are &amp; what the case issues are. Summarize each case, grouping by Priority &amp; then each on its own bullet point no longer than 500 characters. The title of this paragraph should be Servicing Requests
+Conclude the summary with recommended action items to show more value to the customer &amp; keep them better engaged with you. The title of this paragraph should be Recommended Action Items &amp; Next Steps
+Each paragraph title should start &amp; end with an emoji. Each paragraph title should be given it&apos;s own unique emoji corresponding to the content of the paragraph
+Do not insert any line breaks after the title of each paragraph
+&quot;&quot;&quot;
+Now create the summary
+</content>
+        <inputs>
+            <apiName>RelatedEntity</apiName>
+            <definition>SOBJECT://Account</definition>
+            <referenceName>Input:Account</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>flow://FINS_Prompt_Get_Financial_Accounts</definition>
+            <parameters>
+                <definition>SOBJECT://Account</definition>
+                <isRequired>true</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Account}</valueExpression>
+            </parameters>
+            <referenceName>Flow:FINS_Prompt_Get_Financial_Accounts</referenceName>
+        </templateDataProviders>
+        <templateDataProviders>
+            <definition>flow://FINS_Prompt_Get_Financial_Plans_and_Goals</definition>
+            <parameters>
+                <definition>SOBJECT://Account</definition>
+                <isRequired>true</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Account}</valueExpression>
+            </parameters>
+            <referenceName>Flow:FINS_Prompt_Get_Financial_Plans_and_Goals</referenceName>
+        </templateDataProviders>
+        <templateDataProviders>
+            <definition>flow://FINS_Prompt_Get_Interaction_Summaries</definition>
+            <parameters>
+                <definition>SOBJECT://Account</definition>
+                <isRequired>true</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Account}</valueExpression>
+            </parameters>
+            <referenceName>Flow:FINS_Prompt_Get_Interaction_Summaries</referenceName>
+        </templateDataProviders>
+        <templateDataProviders>
+            <definition>flow://FINS_Prompt_Get_Open_Cases</definition>
+            <parameters>
+                <definition>SOBJECT://Account</definition>
+                <isRequired>true</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Account}</valueExpression>
+            </parameters>
+            <referenceName>Flow:FINS_Prompt_Get_Open_Cases</referenceName>
+        </templateDataProviders>
+        <versionNumber>1</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>You’re a wealth management advisor working for a premier financial services institution and manage a portfolio of high net worth Clients. You are tasked with creating a short summary of {!$Input:Account.Name} to be used in preparation for an upcoming meeting you have with them. You must treat equally any individuals or persons from different socioeconomic statuses, sexual orientations, religions, races, physical appearances, nationalities, gender identities, disabilities, and ages. When you do not have sufficient information, you must choose the unknown option, rather than making assumptions based on any stereotypes.
+
+Instructions
+&quot;&quot;&quot;
+Follow the instructions precisely, do not add any information not provided
+Do not attribute any positive or negative traits in the summary
+Use clear, concise, and straightforward language using the active voice and strictly avoiding the use of filler words, phrases &amp; redundant language
+Keep the emotion of the summary relaxed
+Create a two paragraph summary of their financial accounts using the following information: {!$Flow:FINS_Prompt_Get_Financial_Accounts.Prompt}. The title of this paragraph should be Financial Accounts Overview
+Create a one paragraph summary of their financial plans and goals using the following information: {!$Flow:FINS_Prompt_Get_Financial_Plans_and_Goals.Prompt}. The title of this paragraph should be Financial Plans &amp; Goals
+Use data in {!$Flow:FINS_Prompt_Get_Interaction_Summaries.Prompt} to summarize each interaction in it&apos;s own paragraph. Use 1 sentence to summarize the interaction &amp; 1 sentence to summarize the next steps. Neither sentence should exceed 500 characters. The title of this paragraph should be Interactions &amp; Engagements
+Use data in {!$Flow:FINS_Prompt_Get_Open_Cases.Prompt} to summarize any open cases. Mention how many open cases there are &amp; what the case issues are. Summarize each case, grouping by Priority &amp; then each on its own bullet point no longer than 500 characters. The title of this paragraph should be Servicing Requests
+Conclude the summary with recommended action items to show more value to the customer &amp; keep them better engaged with you. The title of this paragraph should be Recommended Action Items &amp; Next Steps
+Each paragraph title should start &amp; end with an emoji. Each paragraph title should be given it&apos;s own unique emoji corresponding to the content of the paragraph
+Do not insert any line breaks after the title of each paragraph
+&quot;&quot;&quot;
+Now create the summary
+</content>
+        <inputs>
+            <apiName>RelatedEntity</apiName>
+            <definition>SOBJECT://Account</definition>
+            <referenceName>Input:Account</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>flow://FINS_Prompt_Get_Financial_Accounts</definition>
+            <parameters>
+                <definition>SOBJECT://Account</definition>
+                <isRequired>true</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Account}</valueExpression>
+            </parameters>
+            <referenceName>Flow:FINS_Prompt_Get_Financial_Accounts</referenceName>
+        </templateDataProviders>
+        <templateDataProviders>
+            <definition>flow://FINS_Prompt_Get_Financial_Plans_and_Goals</definition>
+            <parameters>
+                <definition>SOBJECT://Account</definition>
+                <isRequired>true</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Account}</valueExpression>
+            </parameters>
+            <referenceName>Flow:FINS_Prompt_Get_Financial_Plans_and_Goals</referenceName>
+        </templateDataProviders>
+        <templateDataProviders>
+            <definition>flow://FINS_Prompt_Get_Interaction_Summaries</definition>
+            <parameters>
+                <definition>SOBJECT://Account</definition>
+                <isRequired>true</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Account}</valueExpression>
+            </parameters>
+            <referenceName>Flow:FINS_Prompt_Get_Interaction_Summaries</referenceName>
+        </templateDataProviders>
+        <templateDataProviders>
+            <definition>flow://FINS_Prompt_Get_Open_Cases</definition>
+            <parameters>
+                <definition>SOBJECT://Account</definition>
+                <isRequired>true</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Account}</valueExpression>
+            </parameters>
+            <referenceName>Flow:FINS_Prompt_Get_Open_Cases</referenceName>
+        </templateDataProviders>
+        <versionNumber>2</versionNumber>
+    </templateVersions>
+    <type>einstein_gpt__fieldCompletion</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

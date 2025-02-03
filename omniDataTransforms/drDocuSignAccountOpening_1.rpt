@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;finGoalsList&quot; : [ {
+    &quot;PickListValue&quot; : &quot;Pay Off Credit Card&quot;,
+    &quot;PickListLabel&quot; : &quot;Pay Off Credit Card&quot;
+  }, {
+    &quot;PickListValue&quot; : &quot;Pay off Other Debt&quot;,
+    &quot;PickListLabel&quot; : &quot;Pay off Other Debt&quot;
+  }, {
+    &quot;PickListValue&quot; : &quot;Build Emergency Fund&quot;,
+    &quot;PickListLabel&quot; : &quot;Build Emergency Fund&quot;
+  }, {
+    &quot;PickListValue&quot; : &quot;Save for Retirement&quot;,
+    &quot;PickListLabel&quot; : &quot;Save for Retirement&quot;
+  }, {
+    &quot;PickListValue&quot; : &quot;Save for Vacation&quot;,
+    &quot;PickListLabel&quot; : &quot;Save for Vacation&quot;
+  }, {
+    &quot;PickListValue&quot; : &quot;Buy A Home&quot;,
+    &quot;PickListLabel&quot; : &quot;Buy A Home&quot;
+  }, {
+    &quot;PickListValue&quot; : &quot;Build Wealth&quot;,
+    &quot;PickListLabel&quot; : &quot;Build Wealth&quot;
+  }, {
+    &quot;PickListValue&quot; : &quot;Other&quot;,
+    &quot;PickListLabel&quot; : &quot;Other&quot;
+  } ],
+  &quot;sourceLabel&quot; : &quot;Select goals from the list below.&quot;,
+  &quot;selectedLabel&quot; : &quot;Select one or more goals from the left&quot;,
+  &quot;listLabel&quot; : &quot;&quot;,
+  &quot;selectedLabelMultiple&quot; : &quot;Now prioritize the goals&quot;,
+  &quot;ContextId&quot; : &quot;001B000001QTvupIAD&quot;,
+  &quot;timeStamp&quot; : &quot;2022-09-08T15:15:00.984Z&quot;,
+  &quot;userProfile&quot; : &quot;*FINS - Internal - Admin&quot;,
+  &quot;userTimeZoneName&quot; : &quot;America/Los_Angeles&quot;,
+  &quot;userTimeZone&quot; : &quot;-420&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;u1@sfgs0240.finsido&quot;,
+  &quot;userId&quot; : &quot;005B0000008huLUIAY&quot;,
+  &quot;agreements&quot; : {
+    &quot;dscl1&quot; : true,
+    &quot;disc2&quot; : true
+  },
+  &quot;sendDocuments&quot; : {
+    &quot;chkConfirmEmail&quot; : false
+  },
+  &quot;Congratulations&quot; : null,
+  &quot;clientInitials&quot; : &quot;DEN&quot;,
+  &quot;clientEmail&quot; : &quot;duane.nelson@salesforce.com&quot;,
+  &quot;warningmsg&quot; : [ {
+    &quot;msg&quot; : &quot;...&quot;
+  } ],
+  &quot;compoundAddress&quot; : &quot;1300 Veterans Blvd., San Francisco, CA  94016&quot;,
+  &quot;Email&quot; : &quot;jmorris@example.com&quot;,
+  &quot;contactId&quot; : &quot;003B000000LRFTVIA5&quot;,
+  &quot;billingState&quot; : &quot;CA&quot;,
+  &quot;billingZip&quot; : &quot;94016&quot;,
+  &quot;billingStreet&quot; : &quot;1300 Veterans Blvd.&quot;,
+  &quot;billingCity&quot; : &quot;San Francisco&quot;,
+  &quot;lName&quot; : &quot;Morris&quot;,
+  &quot;fName&quot; : &quot;Julie&quot;,
+  &quot;accountId&quot; : &quot;001B000001QTvupIAD&quot;,
+  &quot;mobilePhone&quot; : &quot;(863) 584-1901&quot;,
+  &quot;personalInfo&quot; : {
+    &quot;firstName&quot; : null,
+    &quot;lastName&quot; : null,
+    &quot;phone&quot; : null,
+    &quot;email&quot; : null,
+    &quot;TApersAddressBak-Block&quot; : null,
+    &quot;TApersAddress-Block&quot; : null
+  },
+  &quot;finGoals&quot; : {
+    &quot;fRetirement&quot; : false
+  },
+  &quot;finHurdles&quot; : {
+    &quot;txtOtherConcerns&quot; : null,
+    &quot;fOtherConcerns&quot; : false,
+    &quot;fConsLoan&quot; : false,
+    &quot;fCarRepairs&quot; : false,
+    &quot;fUnexpected&quot; : false
+  },
+  &quot;productSelections&quot; : {
+    &quot;fProdSelected&quot; : true,
+    &quot;fStratus&quot; : true,
+    &quot;fHeloc&quot; : true,
+    &quot;fGoalSetter&quot; : false,
+    &quot;lwcGenericBundleFlexCard&quot; : {
+      &quot;prodSelectionParentNode&quot; : {
+        &quot;selectedProduct&quot; : [ {
+          &quot;Id&quot; : &quot;REC0&quot;,
+          &quot;bundleName&quot; : &quot;Stratus Bundle&quot;,
+          &quot;productList&quot; : [ {
+            &quot;productName&quot; : &quot;Stratus Checking&quot;,
+            &quot;featureList&quot; : [ {
+              &quot;featureName&quot; : &quot;Online and Mobile Banking&quot;
+            }, {
+              &quot;featureName&quot; : &quot;Cumulus Bank VISA Debit Card&quot;
+            }, {
+              &quot;featureName&quot; : &quot;Mobile Check Deposit&quot;
+            }, {
+              &quot;featureName&quot; : &quot;Overdraft Protection Available&quot;
+            } ]
+          }, {
+            &quot;productName&quot; : &quot;Goal Setter Savings&quot;,
+            &quot;featureList&quot; : [ {
+              &quot;featureName&quot; : &quot;Great rate with minimum balance&quot;
+            }, {
+              &quot;featureName&quot; : &quot;Watch your nest egg grow!&quot;
+            }, {
+              &quot;featureName&quot; : &quot;No mimimum balance&quot;
+            }, {
+              &quot;featureName&quot; : &quot;Create automatic deposits&quot;
+            } ]
+          }, {
+            &quot;productName&quot; : &quot;Stratus Rewards Credit Card&quot;,
+            &quot;featureList&quot; : [ {
+              &quot;featureName&quot; : &quot;No annual fees&quot;
+            }, {
+              &quot;featureName&quot; : &quot;20,000 points immediately&quot;
+            }, {
+              &quot;featureName&quot; : &quot;10x points for groceries, and gas&quot;
+            }, {
+              &quot;featureName&quot; : &quot;0% for 12 months on balance transfers&quot;
+            } ]
+          } ],
+          &quot;uniqueKey&quot; : &quot;REC0&quot;,
+          &quot;_flex&quot; : {
+            &quot;uniqueKey&quot; : &quot;REC0&quot;,
+            &quot;state0element0&quot; : true,
+            &quot;state0element0_child&quot; : true,
+            &quot;state0element1&quot; : true,
+            &quot;state0element1_child&quot; : true,
+            &quot;state0element2&quot; : true,
+            &quot;state0element2_child&quot; : true,
+            &quot;state0element2block_element0&quot; : false,
+            &quot;state0element2block_element0_child&quot; : false,
+            &quot;state0element2block_element0block_element0&quot; : true,
+            &quot;state0element2block_element0block_element0_child&quot; : true,
+            &quot;state0element2block_element1&quot; : true,
+            &quot;state0element2block_element1_child&quot; : true,
+            &quot;state0element3&quot; : true,
+            &quot;state0element3_child&quot; : true,
+            &quot;state0element3block_element2block_element0&quot; : true,
+            &quot;state0element3block_element2block_element0_child&quot; : true,
+            &quot;state0element3block_element2block_element1&quot; : true,
+            &quot;state0element3block_element2block_element1_child&quot; : true
+          },
+          &quot;isSelected&quot; : true
+        }, {
+          &quot;Id&quot; : &quot;REC1&quot;,
+          &quot;bundleName&quot; : &quot;HELOC&quot;,
+          &quot;banner&quot; : &quot;APR 5.79%&quot;,
+          &quot;productList&quot; : [ {
+            &quot;productName&quot; : &quot;Revolving Line Of Credit&quot;,
+            &quot;featureList&quot; : [ {
+              &quot;featureName&quot; : &quot;Features Go Here&quot;
+            } ]
+          }, {
+            &quot;productName&quot; : &quot;Use your home equity&quot;,
+            &quot;featureList&quot; : [ {
+              &quot;featureName&quot; : &quot;Features Go Here&quot;
+            } ]
+          }, {
+            &quot;productName&quot; : &quot;Only pay for what you use&quot;,
+            &quot;featureList&quot; : [ {
+              &quot;featureName&quot; : &quot;Features Go Here&quot;
+            } ]
+          } ],
+          &quot;uniqueKey&quot; : &quot;REC1&quot;,
+          &quot;_flex&quot; : {
+            &quot;uniqueKey&quot; : &quot;REC1&quot;,
+            &quot;state0element0&quot; : true,
+            &quot;state0element0_child&quot; : true,
+            &quot;state0element1&quot; : true,
+            &quot;state0element1_child&quot; : true,
+            &quot;state0element2&quot; : true,
+            &quot;state0element2_child&quot; : true,
+            &quot;state0element2block_element0&quot; : true,
+            &quot;state0element2block_element0_child&quot; : true,
+            &quot;state0element2block_element0block_element0&quot; : true,
+            &quot;state0element2block_element0block_element0_child&quot; : true,
+            &quot;state0element2block_element1&quot; : false,
+            &quot;state0element2block_element1_child&quot; : false,
+            &quot;state0element3&quot; : true,
+            &quot;state0element3_child&quot; : true,
+            &quot;state0element3block_element2block_element0&quot; : true,
+            &quot;state0element3block_element2block_element0_child&quot; : true,
+            &quot;state0element3block_element2block_element1&quot; : true,
+            &quot;state0element3block_element2block_element1_child&quot; : true
+          },
+          &quot;isSelected&quot; : true
+        } ]
+      }
+    }
+  },
+  &quot;emailSent&quot; : true,
+  &quot;success&quot; : true,
+  &quot;docusignEnvelopeAction&quot; : {
+    &quot;status&quot; : &quot;sent&quot;,
+    &quot;envelopeId&quot; : &quot;4883bd87-338e-4675-95a8-587486592f37&quot;
+  }
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;txtCity&quot; : &quot;Text&quot;,
+  &quot;txtFirstName&quot; : &quot;Text&quot;,
+  &quot;txtCountry&quot; : &quot;Text&quot;,
+  &quot;txtPhone&quot; : &quot;Text&quot;,
+  &quot;txtState&quot; : &quot;Text&quot;,
+  &quot;txtLastName&quot; : &quot;Text&quot;,
+  &quot;txtZip&quot; : &quot;Text&quot;,
+  &quot;txtStreet&quot; : &quot;Text&quot;,
+  &quot;FirstName&quot; : &quot;Text&quot;,
+  &quot;LastName&quot; : &quot;Text&quot;
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>drDocuSignAccountOpening</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>4d28a155-28b3-4606-96c3-b42b0e1af803</globalKey>
+        <inputFieldName>billingZip</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>drDocuSignAccountOpening</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>txtZip</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>25096b69-f45b-401e-8d29-1609f50ece5c</globalKey>
+        <inputFieldName>fName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>drDocuSignAccountOpening</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>txtFirstName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>a42b7259-8405-433c-a905-b8fd1474d363</globalKey>
+        <inputFieldName>fName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>drDocuSignAccountOpening</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FirstName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>79c611e6-2329-4a12-b9b0-db8a855dbc96</globalKey>
+        <inputFieldName>lName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>drDocuSignAccountOpening</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>LastName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>8d1d3d7e-64e2-4598-bd3b-cf7372fe08de</globalKey>
+        <inputFieldName>lName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>drDocuSignAccountOpening</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>txtLastName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>5ca8f0b0-3c1c-47b8-a822-1e7e75b56227</globalKey>
+        <inputFieldName>billingCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>drDocuSignAccountOpening</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>txtCity</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>3c6df1e5-2ff5-43e8-9edb-83509840ae24</globalKey>
+        <inputFieldName>billingState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>drDocuSignAccountOpening</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>txtState</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>9c49d16d-de01-4032-b79c-12ce566b0651</globalKey>
+        <inputFieldName>mobilePhone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>drDocuSignAccountOpening</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>txtPhone</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>e9368c4f-c580-4431-9032-73a28fa9c12c</globalKey>
+        <inputFieldName>billingStreet</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>drDocuSignAccountOpening</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>txtStreet</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;mobilePhone&quot; : &quot;(863) 584-1901&quot;,
+  &quot;billingZip&quot; : &quot;94016&quot;,
+  &quot;lName&quot; : &quot;Morris&quot;,
+  &quot;fName&quot; : &quot;Julie&quot;,
+  &quot;billingState&quot; : &quot;CA&quot;,
+  &quot;billingStreet&quot; : &quot;1300 Veterans Blvd.&quot;,
+  &quot;billingCity&quot; : &quot;San Francisco&quot;,
+  &quot;clientEmail&quot; : &quot;duane.nelson@salesforce.com&quot;,
+  &quot;clientName&quot; : &quot;DEN&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>-1.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>drDocuSignAccountOpening_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

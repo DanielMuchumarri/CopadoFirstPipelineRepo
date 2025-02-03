@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimelineObjectDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>Account</baseObject>
+    <definition>{&quot;timeline&quot;:{&quot;anchorObject&quot;:{&quot;object&quot;:{&quot;entity&quot;:&quot;Account&quot;,&quot;label&quot;:&quot;Account&quot;,&quot;source&quot;:&quot;&quot;,&quot;icon&quot;:&quot;&quot;}},&quot;age&quot;:{&quot;field&quot;:&quot;&quot;},&quot;events&quot;:[{&quot;oneToMany&quot;:{&quot;eventObject&quot;:{&quot;name&quot;:&quot;Lead&quot;,&quot;label&quot;:&quot;Lead&quot;,&quot;recordTypes&quot;:[],&quot;fieldsToDisplay&quot;:[],&quot;relatedlistsToDisplay&quot;:[],&quot;title&quot;:{&quot;field&quot;:&quot;Name&quot;,&quot;label&quot;:&quot;Full Name&quot;,&quot;type&quot;:&quot;PersonName&quot;},&quot;subTitle&quot;:{&quot;field&quot;:&quot;Address&quot;,&quot;label&quot;:&quot;Address&quot;,&quot;type&quot;:&quot;Address&quot;},&quot;allowNew&quot;:true},&quot;filters&quot;:[],&quot;sort&quot;:{&quot;field&quot;:&quot;SystemModstamp&quot;,&quot;label&quot;:&quot;System Modstamp&quot;,&quot;type&quot;:&quot;DateTime&quot;},&quot;anchorReferenceField&quot;:{&quot;field&quot;:&quot;00N4V00000CQ13d&quot;,&quot;label&quot;:&quot;Household&quot;,&quot;type&quot;:&quot;EntityId&quot;}}}]}}</definition>
+    <isActive>false</isActive>
+    <masterLabel>PKM</masterLabel>
+</TimelineObjectDefinition>

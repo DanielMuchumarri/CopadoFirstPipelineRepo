@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersion>2</activeVersion>
+    <description>Will be used by Gen AI to create a holistic client profile summary of a commercial banking customer</description>
+    <developerName>B2B_Client_Profile_Summary</developerName>
+    <masterLabel>B2B Client Profile Summary</masterLabel>
+    <relatedEntity>Account</relatedEntity>
+    <relatedField>Account.FINS_B2B_Client_Profile_Summary__c</relatedField>
+    <templateVersions>
+        <content>You&apos;re a commercial banker working for a premier financial institution supporting retail and commercial banking customers. You are tasked with creating a short summary of your client {!$Input:Account.Name} to be used in preparation for an upcoming meeting you have with them. You must treat equally any individuals or persons from different socioeconomic statuses, sexual orientations, religions, races, physical appearances, nationalities, gender identities, disabilities, and ages. When you do not have sufficient information, you must choose the unknown option, rather than making assumptions based on any stereotypes.
+
+Instructions
+&quot;&quot;&quot;
+- Do not attribute any positive or negative traits in the summary
+- Use clear, concise, and straightforward language using the active voice and strictly avoiding the use of filler words, phrases &amp; redundant language
+- Create a one paragraph summary of their orders using the following information: {!$RelatedList:Account.Orders.Records}. The title of this paragraph should be Current Orders and should be in bold formatting.
+- Use data in {!$RelatedList:Account.OpenActivities.Records} to summarize each interaction in it&apos;s own paragraph. The title of this paragraph should be Interactions &amp; Engagements and should be in bold formatting.
+- Use data in {!$Flow:FINS_Prompt_Get_Open_Cases.Prompt} to summarize any open cases. Mention how many open cases there are &amp; what the case issues are. Summarize each case, grouping by Priority. The title of this paragraph should be Servicing Requests and should be in bold formatting.
+- Use data in {!$RelatedList:Account.Invoices__r.Records} to summarize any invoices. Mention how many invoices there are. The title of this paragraph should be Invoices
+- Use data in {!$Flow:FINS_Prompt_Get_Open_Opportunities.Prompt} to summarize any open deals we have with the Client. Mention how many opportunities there are. The title of this paragraph should be Open Pipeline
+- Conclude the summary with recommended action items to show more value to the customer &amp; keep them better engaged with you. The title of this paragraph should be Recommended Action Items &amp; Next Steps
+- Each paragraph title should start &amp; end with an emoji. Each paragraph title should be given it&apos;s own unique emoji corresponding to the content of the paragraph
+- Do not insert any line breaks after the title of each paragraph
+&quot;&quot;&quot;
+Now create the summary
+</content>
+        <inputs>
+            <apiName>RelatedEntity</apiName>
+            <definition>SOBJECT://Account</definition>
+            <referenceName>Input:Account</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>flow://FINS_Prompt_Get_Open_Cases</definition>
+            <parameters>
+                <definition>SOBJECT://Account</definition>
+                <isRequired>true</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Account}</valueExpression>
+            </parameters>
+            <referenceName>Flow:FINS_Prompt_Get_Open_Cases</referenceName>
+        </templateDataProviders>
+        <templateDataProviders>
+            <definition>flow://FINS_Prompt_Get_Open_Opportunities</definition>
+            <parameters>
+                <definition>SOBJECT://Account</definition>
+                <isRequired>true</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Account}</valueExpression>
+            </parameters>
+            <referenceName>Flow:FINS_Prompt_Get_Open_Opportunities</referenceName>
+        </templateDataProviders>
+        <templateDataProviders>
+            <definition>invocable://getRelatedList</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>parentRecordId</parameterName>
+                <valueExpression>{!$Input:Account.Id}</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>relatedListName</parameterName>
+                <valueExpression>Orders</valueExpression>
+            </parameters>
+            <referenceName>RelatedList:Account.Orders.Records</referenceName>
+        </templateDataProviders>
+        <templateDataProviders>
+            <definition>invocable://getRelatedList</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>parentRecordId</parameterName>
+                <valueExpression>{!$Input:Account.Id}</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>relatedListName</parameterName>
+                <valueExpression>OpenActivities</valueExpression>
+            </parameters>
+            <referenceName>RelatedList:Account.OpenActivities.Records</referenceName>
+        </templateDataProviders>
+        <templateDataProviders>
+            <definition>invocable://getRelatedList</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>parentRecordId</parameterName>
+                <valueExpression>{!$Input:Account.Id}</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>relatedListName</parameterName>
+                <valueExpression>Invoices__r</valueExpression>
+            </parameters>
+            <referenceName>RelatedList:Account.Invoices__r.Records</referenceName>
+        </templateDataProviders>
+        <versionNumber>2</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>You&apos;re a commercial banker working for a premier financial institution supporting retail and commercial banking customers. You are tasked with creating a short summary of your client {!$Input:Account.Name} to be used in preparation for an upcoming meeting you have with them. You must treat equally any individuals or persons from different socioeconomic statuses, sexual orientations, religions, races, physical appearances, nationalities, gender identities, disabilities, and ages. When you do not have sufficient information, you must choose the unknown option, rather than making assumptions based on any stereotypes.
+
+Instructions
+&quot;&quot;&quot;
+- Do not attribute any positive or negative traits in the summary
+- Use clear, concise, and straightforward language using the active voice and strictly avoiding the use of filler words, phrases &amp; redundant language
+- Create a one paragraph summary of their orders using the following information: {!$RelatedList:Account.Orders.Records}. The title of this paragraph should be Current Orders and should be in bold formatting.
+- Use data in {!$RelatedList:Account.OpenActivities.Records} to summarize each interaction in it&apos;s own paragraph. The title of this paragraph should be Interactions &amp; Engagements and should be in bold formatting.
+- Use data in {!$Flow:FINS_Prompt_Get_Open_Cases.Prompt} to summarize any open cases. Mention how many open cases there are &amp; what the case issues are. Summarize each case, grouping by Priority. The title of this paragraph should be Servicing Requests and should be in bold formatting.
+- Use data in {!$RelatedList:Account.Invoices__r.Records} to summarize any invoices. Mention how many invoices there are. The title of this paragraph should be Invoices
+- Use data in {!$RelatedList:Account.Opportunities.Records} to summarize any open deals we have with the Client. Mention how many opportunities there are. The title of this paragraph should be Open Pipeline
+- Conclude the summary with recommended action items to show more value to the customer &amp; keep them better engaged with you. The title of this paragraph should be Recommended Action Items &amp; Next Steps
+- Each paragraph title should start &amp; end with an emoji. Each paragraph title should be given it&apos;s own unique emoji corresponding to the content of the paragraph
+- Do not insert any line breaks after the title of each paragraph
+&quot;&quot;&quot;
+Now create the summary
+</content>
+        <inputs>
+            <apiName>RelatedEntity</apiName>
+            <definition>SOBJECT://Account</definition>
+            <referenceName>Input:Account</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>flow://FINS_Prompt_Get_Open_Cases</definition>
+            <parameters>
+                <definition>SOBJECT://Account</definition>
+                <isRequired>true</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Account}</valueExpression>
+            </parameters>
+            <referenceName>Flow:FINS_Prompt_Get_Open_Cases</referenceName>
+        </templateDataProviders>
+        <templateDataProviders>
+            <definition>invocable://getRelatedList</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>parentRecordId</parameterName>
+                <valueExpression>{!$Input:Account.Id}</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>relatedListName</parameterName>
+                <valueExpression>Orders</valueExpression>
+            </parameters>
+            <referenceName>RelatedList:Account.Orders.Records</referenceName>
+        </templateDataProviders>
+        <templateDataProviders>
+            <definition>invocable://getRelatedList</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>parentRecordId</parameterName>
+                <valueExpression>{!$Input:Account.Id}</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>relatedListName</parameterName>
+                <valueExpression>OpenActivities</valueExpression>
+            </parameters>
+            <referenceName>RelatedList:Account.OpenActivities.Records</referenceName>
+        </templateDataProviders>
+        <templateDataProviders>
+            <definition>invocable://getRelatedList</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>parentRecordId</parameterName>
+                <valueExpression>{!$Input:Account.Id}</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>relatedListName</parameterName>
+                <valueExpression>Invoices__r</valueExpression>
+            </parameters>
+            <referenceName>RelatedList:Account.Invoices__r.Records</referenceName>
+        </templateDataProviders>
+        <templateDataProviders>
+            <definition>invocable://getRelatedList</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>parentRecordId</parameterName>
+                <valueExpression>{!$Input:Account.Id}</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>relatedListName</parameterName>
+                <valueExpression>Opportunities</valueExpression>
+            </parameters>
+            <referenceName>RelatedList:Account.Opportunities.Records</referenceName>
+        </templateDataProviders>
+        <versionNumber>1</versionNumber>
+    </templateVersions>
+    <type>einstein_gpt__fieldCompletion</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Activates/deactivates the trigger which automates the project sharing. Keep this false, if your sharing model is public read/write for project --></help>
+        <label><!-- Allocation Trigger Status --></label>
+        <name>inov8__Allocation_Trigger_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- The default availability percentage assigned to the users while creating the availabilities --></help>
+        <label><!-- Default Availability for Scheduler --></label>
+        <name>inov8__Default_Availability_for_Scheduler__c</name>
+    </fields>
+    <fields>
+        <help><!-- The rolling number of years for which the availability is created by the scheduler in advance, so that resource planning can be done in advance for those many number of years --></help>
+        <label><!-- Resource Planning # Years in Advance --></label>
+        <name>inov8__Resource_Planning_Years_in_Advance__c</name>
+    </fields>
+    <fields>
+        <help><!-- This indicates the start of the fiscal year. For example, if value is 2 which means year starts from Feb, 3 for Mar, and so on --></help>
+        <label><!-- Start Month of Fiscal Year --></label>
+        <name>inov8__Start_Month_of_Fiscal_Year__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- The default availability should be between 0 to 100 --></errorMessage>
+        <name>inov8__Default_Availability_btwn_1_to_100</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Resource planning years in advance should be greater than 0 --></errorMessage>
+        <name>inov8__RP_Years_in_advance_greater_than_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Start month for fiscal year setting should be in between 1 and 12 --></errorMessage>
+        <name>inov8__Start_Month_between_1_and_12</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Fake Report Data</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Fake Report Data</value>
+    </caseValues>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q-Branch Demo Reference --></label>
+        <name>FINS_Q_Branch_Demo_Reference__c</name>
+    </fields>
+    <fields>
+        <help><!-- Customers won&apos;t see this value, it&apos;s just something to associate all the values together so they show up on the same report --></help>
+        <label><!-- Group --></label>
+        <name>Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Grouping --></label>
+        <name>Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent --></label>
+        <name>Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Grouping --></label>
+        <name>Secondary_Grouping__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>Value__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

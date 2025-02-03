@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <decisions>
+        <description>Checks if the status of the AsyncCalloutFailed variable is set to True to determine if the callout to the asynchronous Apex action failed.</description>
+        <name>IsAsyncCalloutFailedToTrue</name>
+        <label>Is AsyncCalloutFailed to True?</label>
+        <locationX>182</locationX>
+        <locationY>503</locationY>
+        <defaultConnectorLabel>Other (Default Outcome)</defaultConnectorLabel>
+        <rules>
+            <name>IsFailed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AttemptOrderCheckbookUpdateandDisplayCaseStatus.Outputs.AsyncCalloutFailed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ShowServiceRequestStatus</targetReference>
+            </connector>
+            <label>Is Failed</label>
+        </rules>
+    </decisions>
+    <description>Allows a case owner to review the order checkbook request, submits the change, and either updates the case record or notifies the case owner that the update failed.</description>
+    <environments>Default</environments>
+    <interviewLabel>Process Order Checkbook {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Process Order Checkbook</label>
+    <orchestratedStages>
+        <description>Send an order checkbook update request and update the case status</description>
+        <name>PerformOrderCheckbookUpdateandPostUpdateActions</name>
+        <label>Perform Order Checkbook Update and Post-Update Actions</label>
+        <locationX>182</locationX>
+        <locationY>395</locationY>
+        <connector>
+            <targetReference>IsAsyncCalloutFailedToTrue</targetReference>
+        </connector>
+        <exitConditionLogic>and</exitConditionLogic>
+        <stageSteps>
+            <description>Calls an asynchronous Apex action to update a service catalog request record forOrder Checkbook. Updates a specified case&apos;s status to closed if an Order Checkbook update was successful. Otherwise, displays an error to the flow user.</description>
+            <name>AttemptOrderCheckbookUpdateandDisplayCaseStatus</name>
+            <actionName>UpdateServiceProcessRequest</actionName>
+            <actionType>stepBackground</actionType>
+            <canAssigneeEdit>false</canAssigneeEdit>
+            <entryConditionLogic>and</entryConditionLogic>
+            <exitConditionLogic>and</exitConditionLogic>
+            <inputParameters>
+                <name>AccountEmail</name>
+                <value>
+                    <elementReference>ReviewOrderCheckbookRequestandNotify.Outputs.AccountEmail</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>CaseId</name>
+                <value>
+                    <elementReference>$Record.CaseId</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>IntegrationDefinitionDevName</name>
+                <value>
+                    <stringValue>FSC_OrderCheckbook</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>PersonContactId</name>
+                <value>
+                    <elementReference>ReviewOrderCheckbookRequestandNotify.Outputs.PersonContactId</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>RecordId</name>
+                <value>
+                    <elementReference>$Record.Id</elementReference>
+                </value>
+            </inputParameters>
+            <label>Attempt Order Checkbook Update and Display Case Status</label>
+            <requiresAsyncProcessing>true</requiresAsyncProcessing>
+            <runAsUser>false</runAsUser>
+            <shouldLock>false</shouldLock>
+            <stepSubtype>BackgroundStep</stepSubtype>
+        </stageSteps>
+    </orchestratedStages>
+    <orchestratedStages>
+        <description>Processes an Order Checkbook update for a service catalog request.</description>
+        <name>ProcessOrderCheckbook</name>
+        <label>Process Order Checkbook</label>
+        <locationX>182</locationX>
+        <locationY>287</locationY>
+        <connector>
+            <targetReference>PerformOrderCheckbookUpdateandPostUpdateActions</targetReference>
+        </connector>
+        <exitConditionLogic>and</exitConditionLogic>
+        <stageSteps>
+            <description>Allows a case owner to review details and sends an email to the customer who raised a Order Checkbook request.</description>
+            <name>ReviewOrderCheckbookRequestandNotify</name>
+            <actionName>ReviewOrderCheckbook</actionName>
+            <actionType>stepBackground</actionType>
+            <canAssigneeEdit>false</canAssigneeEdit>
+            <entryConditionLogic>and</entryConditionLogic>
+            <exitConditionLogic>and</exitConditionLogic>
+            <inputParameters>
+                <name>InputRecordId</name>
+                <value>
+                    <elementReference>$Record.Id</elementReference>
+                </value>
+            </inputParameters>
+            <label>Review Order Checkbook Request and Notify</label>
+            <requiresAsyncProcessing>true</requiresAsyncProcessing>
+            <runAsUser>false</runAsUser>
+            <shouldLock>false</shouldLock>
+            <stepSubtype>BackgroundStep</stepSubtype>
+        </stageSteps>
+    </orchestratedStages>
+    <orchestratedStages>
+        <description>Shows the status of the service request to the user.</description>
+        <name>ShowServiceRequestStatus</name>
+        <label>Show Service Request Status</label>
+        <locationX>50</locationX>
+        <locationY>611</locationY>
+        <exitConditionLogic>and</exitConditionLogic>
+        <stageSteps>
+            <description>Displays the result of the API callout made to the mulesoft interface</description>
+            <name>APICalloutResult</name>
+            <actionName>ShowAsynchronousApexActionCalloutStatus</actionName>
+            <actionType>stepInteractive</actionType>
+            <assignees>
+                <assignee>
+                    <elementReference>$Record.Case.Owner:User.Username</elementReference>
+                </assignee>
+                <assigneeType>User</assigneeType>
+            </assignees>
+            <canAssigneeEdit>false</canAssigneeEdit>
+            <entryConditionLogic>and</entryConditionLogic>
+            <exitConditionLogic>and</exitConditionLogic>
+            <inputParameters>
+                <name>Status</name>
+                <value>
+                    <elementReference>AttemptOrderCheckbookUpdateandDisplayCaseStatus.Outputs.Status</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>ActionInput__RecordId</name>
+                <value>
+                    <elementReference>$Record.CaseId</elementReference>
+                </value>
+            </inputParameters>
+            <label>API Callout Result</label>
+            <requiresAsyncProcessing>false</requiresAsyncProcessing>
+            <runAsUser>false</runAsUser>
+            <shouldLock>false</shouldLock>
+            <stepSubtype>InteractiveStep</stepSubtype>
+        </stageSteps>
+    </orchestratedStages>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Orchestrator</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>ProcessOrderCheckbook</targetReference>
+        </connector>
+        <filterFormula>{!$Record.SvcCatalogItemDefinition.DeveloperName}=&apos;OrderCheckbook&apos;</filterFormula>
+        <object>SvcCatalogRequest</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

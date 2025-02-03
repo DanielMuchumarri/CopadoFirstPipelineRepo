@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <assignments>
+        <description>Sets the value of the IsApplicationFormApproved variable to True and the value of the IsApplicationFormRejected variable to False.</description>
+        <name>SetApplicantionFormStage</name>
+        <label>Set Application Form Stage</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <assignmentItems>
+            <assignToReference>IsApplicationFormApproved</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>IsApplicationFormRejected</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>IterateThroughApplicants</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Checks if the Applicant stage is In Progress. If the stage is In Progress, the flow sets the value of the isApplicationFormApproved variable to False.</description>
+        <name>SetApplicationFormAsNotApproved</name>
+        <label>Set Application Form As Not Approved</label>
+        <locationX>842</locationX>
+        <locationY>755</locationY>
+        <assignmentItems>
+            <assignToReference>IsApplicationFormApproved</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>IterateThroughApplicants</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Checks if the Applicant stage is Rejected. If the stage is Rejected, the flow sets the value of the isApplicationFormRejected variable to True and the value of the isApplicationFormApproved variable to False.</description>
+        <name>SetIsApplicationFormAsRejected</name>
+        <label>Set Application Form As Rejected</label>
+        <locationX>578</locationX>
+        <locationY>755</locationY>
+        <assignmentItems>
+            <assignToReference>IsApplicationFormApproved</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>IsApplicationFormRejected</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>IsApplicationFormApprovedOrRejected</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Determines the stage of the application form.</description>
+        <name>IsApplicationFormApprovedOrRejected</name>
+        <label>Is Application Form Approved or Rejected?</label>
+        <locationX>314</locationX>
+        <locationY>1097</locationY>
+        <defaultConnectorLabel>Other (Default)</defaultConnectorLabel>
+        <rules>
+            <name>IsApplicationRejected</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IsApplicationFormRejected</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>UpdateApplicationFormStageToRejected</targetReference>
+            </connector>
+            <label>Is Rejected</label>
+        </rules>
+        <rules>
+            <name>IsApplicationApproved</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IsApplicationFormApproved</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>UpdateApplicationFormStageToApproved</targetReference>
+            </connector>
+            <label>Is Approved</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determines the stage of the Applicant records returned by the GetApplicants element.</description>
+        <name>WhatIsTheApplicantRecordStage</name>
+        <label>What’s the Applicant Record Stage?</label>
+        <locationX>622</locationX>
+        <locationY>647</locationY>
+        <defaultConnector>
+            <targetReference>SetApplicationFormAsNotApproved</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Other (Default)</defaultConnectorLabel>
+        <rules>
+            <name>isApproved</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughApplicants.Stage</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Approved</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>IterateThroughApplicants</targetReference>
+            </connector>
+            <label>Approved</label>
+        </rules>
+        <rules>
+            <name>isRejected</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughApplicants.Stage</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Rejected</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetIsApplicationFormAsRejected</targetReference>
+            </connector>
+            <label>Rejected</label>
+        </rules>
+    </decisions>
+    <description>Checks if all the Applicant records for an application form are Approved or Rejected. If the Applicant records are approved, the flow updates the stage of the associated Application Form record to Approved. Otherwise, the flow updates the stage of the Application Form record to Rejected.</description>
+    <environments>Default</environments>
+    <interviewLabel>Onboarding: Check Applicant Stage and Update Application Form Stage {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Onboarding: Check Applicant Stage and Update Application Form Stage</label>
+    <loops>
+        <description>Repeats actions in a loop for the records returned by the GetApplicants element.</description>
+        <name>IterateThroughApplicants</name>
+        <label>Iterate Through Applicants</label>
+        <locationX>314</locationX>
+        <locationY>539</locationY>
+        <collectionReference>GetApplicants</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>WhatIsTheApplicantRecordStage</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>IsApplicationFormApprovedOrRejected</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Gets all the Applicant records with an Application Form ID that matches the ID of the Application Form record that triggered the flow.</description>
+        <name>GetApplicants</name>
+        <label>Get Applicants</label>
+        <locationX>314</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>SetApplicantionFormStage</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ApplicationFormId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ApplicationFormId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Applicant</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Updates the stage of the Application Form record related to the Applicant record that triggered the flow to Approved.</description>
+        <name>UpdateApplicationFormStageToApproved</name>
+        <label>Update Application Form Stage to Approved</label>
+        <locationX>314</locationX>
+        <locationY>1205</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ApplicationFormId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Stage</field>
+            <value>
+                <stringValue>Approved</stringValue>
+            </value>
+        </inputAssignments>
+        <object>ApplicationForm</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Updates the stage of the Application Form record related to the Applicant record that triggered the flow to Rejected.</description>
+        <name>UpdateApplicationFormStageToRejected</name>
+        <label>Update Application Form Stage to Rejected</label>
+        <locationX>50</locationX>
+        <locationY>1205</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ApplicationFormId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Stage</field>
+            <value>
+                <stringValue>Rejected</stringValue>
+            </value>
+        </inputAssignments>
+        <object>ApplicationForm</object>
+    </recordUpdates>
+    <sourceTemplate>fsc_onboarding__UpdateAppFormStage</sourceTemplate>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>GetApplicants</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>Stage</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Approved</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Stage</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Rejected</stringValue>
+            </value>
+        </filters>
+        <object>Applicant</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Stores a boolean value that indicates that all the applicants for an application form are approved.</description>
+        <name>IsApplicationFormApproved</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores a boolean value that indicates that one or more applicants for an application form are rejected.</description>
+        <name>IsApplicationFormRejected</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </variables>
+</Flow>

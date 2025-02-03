@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Checkbox Required --></label>
+        <name>Checkbox_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q-Branch Demo Reference --></label>
+        <name>FINS_Q_Branch_Demo_Reference__c</name>
+    </fields>
+    <fields>
+        <help>Son Tarihi, Dakikaları Hizmet oluşturma zamanına ekleyerek ve kuruluşun dahili SLA&apos;sını yansıtarak hesaplar</help>
+        <label><!-- Due Date Offset --></label>
+        <name>FSL__Due_Date_Offset__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exact Appointments --></label>
+        <name>FSL__Exact_Appointments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box to indicate that this Work Type will also be visible to a customer who is self scheduling. --></help>
+        <label><!-- Self Service Work Type --></label>
+        <name>SDO_SFS_Self_Service_Work_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Lightning Scheduler (LS)</masterLabel>
+            <translation><!-- Lightning Scheduler (LS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Field Service(SFS)</masterLabel>
+            <translation><!-- Salesforce Field Service(SFS) --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

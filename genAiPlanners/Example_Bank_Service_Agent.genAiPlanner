@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlanner xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Example Banking Service Agent is designed to deliver personalized customer interactions and streamline all banking operations. This intelligent agent autonomously supports your customers with common banking inquiries and efficiently escalates complex issu</description>
+    <genAiFunctions>
+        <genAiFunctionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</genAiFunctionName>
+    </genAiFunctions>
+    <genAiPlugins>
+        <genAiPluginName>Lost_Credit_Card0</genAiPluginName>
+    </genAiPlugins>
+    <masterLabel>Example Bank Service Agent</masterLabel>
+    <plannerType>AiCopilot__ReAct</plannerType>
+</GenAiPlanner>

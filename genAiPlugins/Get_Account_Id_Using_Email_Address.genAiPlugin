@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description>This topic retrieves an Account Id based upon the user entering an email address. The Agent will ask the user for the email address and then return the Account Id that can be used in future flows</description>
+    <developerName>Get_Account_Id_Using_Email_Address</developerName>
+    <genAiPluginInstructions>
+        <description>Only use this to query the Account object by email address and then return the Id if matched. If no match is found, say &quot;No Matching Accounts&quot; were found</description>
+        <developerName>instruction_onlyusethi0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_onlyusethi0</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Get Account Id Using Email Address</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to only return the Account Id</scope>
+</GenAiPlugin>

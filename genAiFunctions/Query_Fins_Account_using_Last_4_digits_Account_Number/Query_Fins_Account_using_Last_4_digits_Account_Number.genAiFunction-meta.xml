@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Query Financial Account object using last 4 digits of account number</description>
+    <invocationTarget>Query_Fins_Account_using_Last_4_digits_Account_Number</invocationTarget>
+    <invocationTargetType>flow</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <masterLabel>Query Fins Account using Last 4 digits Account Number</masterLabel>
+</GenAiFunction>

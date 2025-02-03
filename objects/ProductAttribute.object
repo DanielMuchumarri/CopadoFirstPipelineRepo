@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Clothing_Colors__c</fullName>
+        <label>Clothing Colors</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Grey</fullName>
+                    <default>false</default>
+                    <label>Grey</label>
+                </value>
+                <value>
+                    <fullName>Red</fullName>
+                    <default>false</default>
+                    <label>Red</label>
+                </value>
+                <value>
+                    <fullName>Black</fullName>
+                    <default>false</default>
+                    <label>Black</label>
+                </value>
+                <value>
+                    <fullName>Green</fullName>
+                    <default>false</default>
+                    <label>Green</label>
+                </value>
+                <value>
+                    <fullName>White</fullName>
+                    <default>false</default>
+                    <label>White</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Clothing_Sizes__c</fullName>
+        <label>Clothing Sizes</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>XS</fullName>
+                    <default>false</default>
+                    <label>XS</label>
+                </value>
+                <value>
+                    <fullName>Small</fullName>
+                    <default>false</default>
+                    <label>Small</label>
+                </value>
+                <value>
+                    <fullName>Medium</fullName>
+                    <default>false</default>
+                    <label>Medium</label>
+                </value>
+                <value>
+                    <fullName>Large</fullName>
+                    <default>false</default>
+                    <label>Large</label>
+                </value>
+                <value>
+                    <fullName>XL</fullName>
+                    <default>false</default>
+                    <label>XL</label>
+                </value>
+                <value>
+                    <fullName>XXL</fullName>
+                    <default>false</default>
+                    <label>XXL</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Color__c</fullName>
+        <label>Color</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Blue</fullName>
+                    <default>false</default>
+                    <label>Blue</label>
+                </value>
+                <value>
+                    <fullName>Black</fullName>
+                    <default>false</default>
+                    <label>Black</label>
+                </value>
+                <value>
+                    <fullName>Orange</fullName>
+                    <default>false</default>
+                    <label>Orange</label>
+                </value>
+                <value>
+                    <fullName>White</fullName>
+                    <default>false</default>
+                    <label>White</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Controller__c</fullName>
+        <label>Controller</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>Single Controller</fullName>
+                    <default>false</default>
+                    <label>Single Controller</label>
+                </value>
+                <value>
+                    <fullName>Dual Controller</fullName>
+                    <default>false</default>
+                    <label>Dual Controller</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>External_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>This is used to consistently import data to a version of the SDO and translate data into other languages.</description>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Length__c</fullName>
+        <label>Length</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1/2 in</fullName>
+                    <default>false</default>
+                    <label>1/2 in</label>
+                </value>
+                <value>
+                    <fullName>3/4 in</fullName>
+                    <default>false</default>
+                    <label>3/4 in</label>
+                </value>
+                <value>
+                    <fullName>1 in</fullName>
+                    <default>false</default>
+                    <label>1 in</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ProductId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Sequence</fullName>
+    </fields>
+    <fields>
+        <fullName>Size__c</fullName>
+        <label>Size</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1200 Watts</fullName>
+                    <default>false</default>
+                    <label>1200 Watts</label>
+                </value>
+                <value>
+                    <fullName>1600 Watts</fullName>
+                    <default>false</default>
+                    <label>1600 Watts</label>
+                </value>
+                <value>
+                    <fullName>26800 mAh (99 Wh)</fullName>
+                    <default>false</default>
+                    <label>26800 mAh (99 Wh)</label>
+                </value>
+                <value>
+                    <fullName>19200 mAh (71.04 Wh)</fullName>
+                    <default>false</default>
+                    <label>19200 mAh (71.04 Wh)</label>
+                </value>
+                <value>
+                    <fullName>10200 mAh (37.74 Wh)</fullName>
+                    <default>false</default>
+                    <label>10200 mAh (37.74 Wh)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Subscription__c</fullName>
+        <label>Subscription</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yearly</fullName>
+                    <default>false</default>
+                    <label>Yearly</label>
+                </value>
+                <value>
+                    <fullName>Monthly</fullName>
+                    <default>false</default>
+                    <label>Monthly</label>
+                </value>
+                <value>
+                    <fullName>One-Time</fullName>
+                    <default>false</default>
+                    <label>One-Time</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>VariantParentId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Warranty_Options__c</fullName>
+        <label>Warranty Length</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>5 Years</fullName>
+                    <default>false</default>
+                    <label>5 Years</label>
+                </value>
+                <value>
+                    <fullName>10 Years</fullName>
+                    <default>false</default>
+                    <label>10 Years</label>
+                </value>
+                <value>
+                    <fullName>15 Years</fullName>
+                    <default>false</default>
+                    <label>15 Years</label>
+                </value>
+                <value>
+                    <fullName>25 Years</fullName>
+                    <default>false</default>
+                    <label>25 Years</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

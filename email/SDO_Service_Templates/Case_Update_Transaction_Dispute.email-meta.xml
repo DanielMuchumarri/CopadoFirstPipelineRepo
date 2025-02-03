@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used for RegE</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>SDO_CorporateLogo</letterhead>
+    <name>Case_Update_Transaction_Dispute</name>
+    <style>freeForm</style>
+    <subject>An update from {!Organization.Name} on Case #{!Case.CaseNumber}</subject>
+    <textOnly>Dear {!Contact.Name},
+
+Thank you for contacting us regarding your issue &quot;{!Case.Subject}&quot;.
+
+Your case has been transferred to the research and credit department.
+
+If you have any other questions, please don&apos;t hesitate to reply to this email or add comments to your case in the {!Organization.Name} Community.
+
+We hope this update is helpful and thanks for your patience as we work to resolve this issue as quickly as possible.
+
+Sincerely,
+{!Organization.Name} Customer Service</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

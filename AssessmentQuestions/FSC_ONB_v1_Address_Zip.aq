@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Address Zip</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Zip</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Integer</dataType>
+    <developerName>FSC_ONB_v1_Address_Zip</developerName>
+    <name>Address Zip</name>
+    <questionCategory>Demographic</questionCategory>
+    <relatedQuestion>FSC_ONB_v1_Address</relatedQuestion>
+</AssessmentQuestion>

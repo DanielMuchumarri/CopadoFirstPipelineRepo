@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <decisions>
+        <description>Checks if the status of the AsyncCalloutFailed variable is set to True to determine if the callout to the asynchronous Apex action failed.</description>
+        <name>IsAsyncCalloutFailedToTrue</name>
+        <label>Is AsyncCalloutFailed to True?</label>
+        <locationX>336</locationX>
+        <locationY>1277</locationY>
+        <defaultConnectorLabel>Other (Default Outcome)</defaultConnectorLabel>
+        <rules>
+            <name>IsFailed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AttemptSetupRequiredMinimumDistributionRequestandDisplayCaseStatus.Outputs.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ShowServiceRequestStatus</targetReference>
+            </connector>
+            <label>Is Failed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Check if the agent rejected the document or not.</description>
+        <name>IsDocumentRejected</name>
+        <label>Is Document Rejected</label>
+        <locationX>182</locationX>
+        <locationY>719</locationY>
+        <defaultConnector>
+            <targetReference>PerformSetupRequiredMinimumDistributionUpdateandPostUpdateActions</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Document Approved</defaultConnectorLabel>
+        <rules>
+            <name>DocumentRejected</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ReviewDocumentforRequiredMinimumDistributionRequest.Outputs.RejectedDocumentStatus</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>PerformSetupRequiredMinimumDistributionWhenDocumentIsRejected</targetReference>
+            </connector>
+            <label>Document Rejected</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if the status of the EFTPaymentOption variable is set to True to determine if the callout to the asynchronous Apex action failed.</description>
+        <name>IsNewEFTPaymentOptionSelected</name>
+        <label>Is New EFT Payment Option Selected?</label>
+        <locationX>336</locationX>
+        <locationY>395</locationY>
+        <defaultConnector>
+            <targetReference>PerformSetupRequiredMinimumDistributionUpdateandPostUpdateActions</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Other (Default)</defaultConnectorLabel>
+        <rules>
+            <name>EFTPaymentOption</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ReviewSetupRequiredMinimumDistributionRequestandNotify.Outputs.PaymentMethod</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>ReviewSetupRequiredMinimumDistributionRequestandNotify.Outputs.PaymentMethod</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>New EFT Account</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>PerformGetDocumentChecklistItems</targetReference>
+            </connector>
+            <label>EFTPaymentOption</label>
+        </rules>
+    </decisions>
+    <description>Allows a case owner to review the required minimum distribution request, submits the change, and either updates the case record or notifies the case owner that the update failed.</description>
+    <environments>Default</environments>
+    <interviewLabel>FSC Wealth: Setup Required Minimum Distribution Service Request {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FSC Wealth: Setup Required Minimum Distribution Service Request</label>
+    <orchestratedStages>
+        <description>Verifies the document for the required minimum distribution request.</description>
+        <name>PerformDocumentVerificationforRequiredMinimumDistributionServiceRequest</name>
+        <label>Perform Document Verification for Required Minimum Distribution Service Request</label>
+        <locationX>182</locationX>
+        <locationY>611</locationY>
+        <connector>
+            <targetReference>IsDocumentRejected</targetReference>
+        </connector>
+        <exitConditionLogic>and</exitConditionLogic>
+        <stageSteps>
+            <description>Allows a case owner to review the document for required minimum distribution request.</description>
+            <name>ReviewDocumentforRequiredMinimumDistributionRequest</name>
+            <actionName>fscWlthReviewRqrMinDstrDocSts</actionName>
+            <actionType>stepInteractive</actionType>
+            <assignees>
+                <assignee>
+                    <elementReference>$Record.Case.Owner:User.Username</elementReference>
+                </assignee>
+                <assigneeType>User</assigneeType>
+            </assignees>
+            <canAssigneeEdit>false</canAssigneeEdit>
+            <entryConditionLogic>and</entryConditionLogic>
+            <exitConditionLogic>and</exitConditionLogic>
+            <inputParameters>
+                <name>AccountId</name>
+                <value>
+                    <elementReference>$Record.Case.AccountId</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>BankName</name>
+                <value>
+                    <elementReference>ReviewSetupRequiredMinimumDistributionRequestandNotify.Outputs.BankName</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>CaseId</name>
+                <value>
+                    <elementReference>$Record.CaseId</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>FinancialAccountNumber</name>
+                <value>
+                    <elementReference>ReviewSetupRequiredMinimumDistributionRequestandNotify.Outputs.FinancialAccountNumber</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>NewDCIRecordIds</name>
+                <value>
+                    <elementReference>ReviewDocumentChecklistItems.Outputs.DocumentCheckListItemID</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>RoutingNumber</name>
+                <value>
+                    <elementReference>ReviewSetupRequiredMinimumDistributionRequestandNotify.Outputs.RoutingNumber</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>ActionInput__RecordId</name>
+                <value>
+                    <elementReference>$Record.CaseId</elementReference>
+                </value>
+            </inputParameters>
+            <label>Review Document for Required Minimum Distribution Request</label>
+            <requiresAsyncProcessing>false</requiresAsyncProcessing>
+            <runAsUser>false</runAsUser>
+            <shouldLock>false</shouldLock>
+            <stepSubtype>InteractiveStep</stepSubtype>
+        </stageSteps>
+    </orchestratedStages>
+    <orchestratedStages>
+        <description>Gets all the Document Checklist Item records where Status is New and passes it to the other flows.</description>
+        <name>PerformGetDocumentChecklistItems</name>
+        <label>Perform Get Document Checklist Items</label>
+        <locationX>182</locationX>
+        <locationY>503</locationY>
+        <connector>
+            <targetReference>PerformDocumentVerificationforRequiredMinimumDistributionServiceRequest</targetReference>
+        </connector>
+        <exitConditionLogic>and</exitConditionLogic>
+        <stageSteps>
+            <description>Gets all the Document Checklist Item records where Status is New and passes it to the other flows.</description>
+            <name>ReviewDocumentChecklistItems</name>
+            <actionName>fscWlthGetNewDocChecklistItem</actionName>
+            <actionType>stepBackground</actionType>
+            <canAssigneeEdit>false</canAssigneeEdit>
+            <entryConditionLogic>and</entryConditionLogic>
+            <exitConditionLogic>and</exitConditionLogic>
+            <inputParameters>
+                <name>CaseId</name>
+                <value>
+                    <elementReference>$Record.CaseId</elementReference>
+                </value>
+            </inputParameters>
+            <label>Review Document Checklist Items</label>
+            <requiresAsyncProcessing>false</requiresAsyncProcessing>
+            <runAsUser>false</runAsUser>
+            <shouldLock>false</shouldLock>
+            <stepSubtype>BackgroundStep</stepSubtype>
+        </stageSteps>
+    </orchestratedStages>
+    <orchestratedStages>
+        <description>Perform setup Required Minimum Distribution updates and update the case status.</description>
+        <name>PerformSetupRequiredMinimumDistributionUpdateandPostUpdateActions</name>
+        <label>Perform Setup Required Minimum Distribution Update and Post-Update Actions</label>
+        <locationX>336</locationX>
+        <locationY>1169</locationY>
+        <connector>
+            <targetReference>IsAsyncCalloutFailedToTrue</targetReference>
+        </connector>
+        <exitConditionLogic>and</exitConditionLogic>
+        <stageSteps>
+            <description>Calls an asynchronous Apex action to update a service catalog request record for Setup Required Minimum Distribution update. Updates a specified case&apos;s status to closed if the request for Setup Required Minimum Distribution was successful. Otherwise, displays an error to the flow user.</description>
+            <name>AttemptSetupRequiredMinimumDistributionRequestandDisplayCaseStatus</name>
+            <actionName>fscWlth_UpdateServiceProcessRqst</actionName>
+            <actionType>stepBackground</actionType>
+            <canAssigneeEdit>false</canAssigneeEdit>
+            <entryConditionLogic>and</entryConditionLogic>
+            <exitConditionLogic>and</exitConditionLogic>
+            <inputParameters>
+                <name>AccountEmail</name>
+                <value>
+                    <elementReference>ReviewSetupRequiredMinimumDistributionRequestandNotify.Outputs.AccountEmail</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>CaseId</name>
+                <value>
+                    <elementReference>$Record.CaseId</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>InputRecordId</name>
+                <value>
+                    <elementReference>$Record.Id</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>IntegrationDefinition</name>
+                <value>
+                    <stringValue>FSCWlth_SetupRequiredMinimumDistribution</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>PersonContactId</name>
+                <value>
+                    <elementReference>ReviewSetupRequiredMinimumDistributionRequestandNotify.Outputs.PersonContactId</elementReference>
+                </value>
+            </inputParameters>
+            <label>Attempt the Setup Required Minimum Distribution Request and Display Case Status</label>
+            <requiresAsyncProcessing>true</requiresAsyncProcessing>
+            <runAsUser>false</runAsUser>
+            <shouldLock>false</shouldLock>
+            <stepSubtype>BackgroundStep</stepSubtype>
+        </stageSteps>
+    </orchestratedStages>
+    <orchestratedStages>
+        <description>Allows the customer to resubmit the rejected documents.</description>
+        <name>PerformSetupRequiredMinimumDistributionWhenDocumentIsRejected</name>
+        <label>Perform Setup Required Minimum Distribution When Document Is Rejected</label>
+        <locationX>50</locationX>
+        <locationY>827</locationY>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>PerformGetDocumentChecklistItems</targetReference>
+        </connector>
+        <exitConditionLogic>and</exitConditionLogic>
+        <stageSteps>
+            <description>Allows Customer to resubmit the rejected documents.</description>
+            <name>ResubmitTheRejectedDocuments</name>
+            <actionName>fscWlthResubmitRejectedDoc</actionName>
+            <actionType>stepInteractive</actionType>
+            <assignees>
+                <assignee>
+                    <elementReference>ReviewDocumentforRequiredMinimumDistributionRequest.Outputs.CustomerUserName</elementReference>
+                </assignee>
+                <assigneeType>User</assigneeType>
+            </assignees>
+            <canAssigneeEdit>false</canAssigneeEdit>
+            <entryConditionLogic>and</entryConditionLogic>
+            <exitConditionLogic>and</exitConditionLogic>
+            <inputParameters>
+                <name>CaseID</name>
+                <value>
+                    <elementReference>$Record.CaseId</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>ActionInput__RecordId</name>
+                <value>
+                    <elementReference>$Record.CaseId</elementReference>
+                </value>
+            </inputParameters>
+            <label>Resubmit The Rejected Documents</label>
+            <requiresAsyncProcessing>false</requiresAsyncProcessing>
+            <runAsUser>false</runAsUser>
+            <shouldLock>false</shouldLock>
+            <stepSubtype>InteractiveStep</stepSubtype>
+        </stageSteps>
+    </orchestratedStages>
+    <orchestratedStages>
+        <description>Processes the Set up Required Minimum Distribution service request updates for a service catalog request.</description>
+        <name>ProcessSetupRequiredMinimumDistributionServiceRequest</name>
+        <label>Process the Setup Required Minimum Distribution Service Request</label>
+        <locationX>336</locationX>
+        <locationY>287</locationY>
+        <connector>
+            <targetReference>IsNewEFTPaymentOptionSelected</targetReference>
+        </connector>
+        <exitConditionLogic>and</exitConditionLogic>
+        <stageSteps>
+            <description>Allows a case owner to review details and sends an email to the customer who raised a set up required minimum distribution service request.</description>
+            <name>ReviewSetupRequiredMinimumDistributionRequestandNotify</name>
+            <actionName>fscWlthReviewSetupRqrMinDstr</actionName>
+            <actionType>stepBackground</actionType>
+            <canAssigneeEdit>false</canAssigneeEdit>
+            <entryConditionLogic>and</entryConditionLogic>
+            <exitConditionLogic>and</exitConditionLogic>
+            <inputParameters>
+                <name>InputRecordId</name>
+                <value>
+                    <elementReference>$Record.Id</elementReference>
+                </value>
+            </inputParameters>
+            <label>Review Setup Required Minimum Distribution Request and Notify</label>
+            <requiresAsyncProcessing>true</requiresAsyncProcessing>
+            <runAsUser>false</runAsUser>
+            <shouldLock>false</shouldLock>
+            <stepSubtype>BackgroundStep</stepSubtype>
+        </stageSteps>
+    </orchestratedStages>
+    <orchestratedStages>
+        <description>Shows the status of the service request to the user.</description>
+        <name>ShowServiceRequestStatus</name>
+        <label>Show Service Request Status</label>
+        <locationX>204</locationX>
+        <locationY>1385</locationY>
+        <exitConditionLogic>and</exitConditionLogic>
+        <stageSteps>
+            <description>Displays the result of the API callout made to the mulesoft interface.</description>
+            <name>APICalloutResult</name>
+            <actionName>fscWlth_AsynchApexCalloutSts</actionName>
+            <actionType>stepInteractive</actionType>
+            <assignees>
+                <assignee>
+                    <elementReference>$Record.Case.Owner:User.Username</elementReference>
+                </assignee>
+                <assigneeType>User</assigneeType>
+            </assignees>
+            <canAssigneeEdit>false</canAssigneeEdit>
+            <entryConditionLogic>and</entryConditionLogic>
+            <exitConditionLogic>and</exitConditionLogic>
+            <inputParameters>
+                <name>Status</name>
+                <value>
+                    <elementReference>AttemptSetupRequiredMinimumDistributionRequestandDisplayCaseStatus.Outputs.Status</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>ActionInput__RecordId</name>
+                <value>
+                    <elementReference>$Record.CaseId</elementReference>
+                </value>
+            </inputParameters>
+            <label>API Callout Result</label>
+            <requiresAsyncProcessing>false</requiresAsyncProcessing>
+            <runAsUser>false</runAsUser>
+            <shouldLock>false</shouldLock>
+            <stepSubtype>InteractiveStep</stepSubtype>
+        </stageSteps>
+    </orchestratedStages>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Orchestrator</processType>
+    <start>
+        <locationX>210</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>ProcessSetupRequiredMinimumDistributionServiceRequest</targetReference>
+        </connector>
+        <filterFormula>{!$Record.SvcCatalogItemDefinition.DeveloperName}=&apos;FSCWlth_SetupRequiredMinimumDistribution&apos;</filterFormula>
+        <object>SvcCatalogRequest</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,17 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "finAccountVar" : {
+      "title" : "finAccountVar",
+      "description" : "This is record from Financial Account object, If the status is already set to on Hold then ask user if he wants to cancel the card. If it is already cancelled, then ask user to enter the zip code. When addressing user, use his name by using MessagingSession.Full_Name__c context variable. So that user can receive more personalized message.",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "FinServ__FinancialAccount__c"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

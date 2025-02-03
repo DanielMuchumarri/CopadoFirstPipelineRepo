@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <choices>
+        <name>Account_Team</name>
+        <choiceText>Account Team</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Account Team</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Local_Branch</name>
+        <choiceText>Local Branch</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Local Branch</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Mortgage_Escalation_Swarm</name>
+        <choiceText>Mortgage Escalation Swarm</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Mortgage Escalation Swarm</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Opportunity_Team</name>
+        <choiceText>Opportunity Team</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Opportunity Team</stringValue>
+        </value>
+    </choices>
+    <description>Flow modeled after the Retail Banking Create Deal Room Flow to placehold the slack functionality</description>
+    <environments>Default</environments>
+    <interviewLabel>Lending - Create Deal Room Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Lending - Create Deal Room Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>Create_Deal_Room</name>
+        <label>Create Deal Room</label>
+        <locationX>176</locationX>
+        <locationY>278</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Copy_1_FINS_Lending_CreateNewDealRoomOrSwarm</name>
+            <extensionName>flowruntime:image</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>imageName</name>
+                <value>
+                    <stringValue>FINS_Lending_CreateNewDealRoomOrSwarm</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>Select_Swarm_Team</name>
+            <choiceReferences>Opportunity_Team</choiceReferences>
+            <choiceReferences>Account_Team</choiceReferences>
+            <choiceReferences>Mortgage_Escalation_Swarm</choiceReferences>
+            <choiceReferences>Local_Branch</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Select Swarm Team</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <nextOrFinishButtonLabel>Create Deal Room</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Launch_Screen</name>
+        <label>Launch Screen</label>
+        <locationX>176</locationX>
+        <locationY>158</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Create_Deal_Room</targetReference>
+        </connector>
+        <fields>
+            <name>FINS_Lending_CreateNewDealRoomOrSwarm</name>
+            <extensionName>flowruntime:image</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>imageName</name>
+                <value>
+                    <stringValue>FINS_Lending_CreateNewDealRoomOrSwarm</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <nextOrFinishButtonLabel>Let&apos;s Go</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Launch_Screen</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+</Flow>

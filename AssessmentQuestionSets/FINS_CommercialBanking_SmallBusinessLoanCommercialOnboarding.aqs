@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionDeveloperNames>Business_Ownership_Commercial_Onboarding</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>Ethnicity</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>Veteran</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>Minority_Owned_Business_Status</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>Bankruptcy_Commercial_Onboarding</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>Legal_Action_Commercial_Onboarding</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>Gender</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>Race</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>Women_Owned_Business_Status</assessmentQuestionDeveloperNames>
+    <developerName>FINS_CommercialBanking_SmallBusinessLoanCommercialOnboarding</developerName>
+    <name>Small Business Loan Commercial Onboarding</name>
+</AssessmentQuestionSet>

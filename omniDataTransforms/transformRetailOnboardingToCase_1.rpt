@@ -1,0 +1,1123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>RegE: prepare data for Case fields and JSON &apos;extras&apos;.</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;trxSelected&quot; : 6,
+  &quot;omnidesignerChannelId&quot; : &quot;omni-designer-channel-id-1601675991816&quot;,
+  &quot;timeStamp&quot; : &quot;2020-10-03T02:50:09.302Z&quot;,
+  &quot;userProfile&quot; : &quot;Custom: System Administrator&quot;,
+  &quot;userTimeZone&quot; : &quot;-420&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;duane@bankingdisputedemo123456.com&quot;,
+  &quot;userId&quot; : &quot;0054W00000BPTa5QAH&quot;,
+  &quot;Fraud&quot; : {
+    &quot;fRegEFlag&quot; : true,
+    &quot;fTrxWithdrawalPlusTrxDeposit&quot; : 567.89,
+    &quot;fDaysSinceLastStatement&quot; : 36,
+    &quot;disSectionI&quot; : null,
+    &quot;curPortionDisputed&quot; : 55,
+    &quot;disSectionII&quot; : true,
+    &quot;txtAreaMoreDetails&quot; : &quot;Blop blop blop&quot;,
+    &quot;rdoSuspiciousActivity&quot; : &quot;No&quot;,
+    &quot;rdoOrderDispute&quot; : &quot;No&quot;,
+    &quot;rdoRecurringCharge&quot; : &quot;Yes&quot;,
+    &quot;rdoSubscriptionCharge&quot; : &quot;No&quot;,
+    &quot;selSection&quot; : &quot;SectionII&quot;
+  },
+  &quot;Adjustment&quot; : null,
+  &quot;Action1&quot; : null,
+  &quot;financialAccountName&quot; : &quot;Classic Checking&quot;,
+  &quot;financialAccountNumber&quot; : &quot;58412390&quot;,
+  &quot;financialAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;,
+  &quot;contactId&quot; : &quot;0034W00002DFUmzQAH&quot;,
+  &quot;accountId&quot; : &quot;0014W000024fX5xQAE&quot;,
+  &quot;lastStatementDate&quot; : &quot;2020-08-27T04:00:00.000Z&quot;,
+  &quot;financialAccountDropdownData&quot; : [ {
+    &quot;NameAndNumber&quot; : &quot;Day to Day Banking - 58413762&quot;,
+    &quot;financialAccountId&quot; : &quot;a4l4W0000026TmUQAU&quot;
+  }, {
+    &quot;NameAndNumber&quot; : &quot;Classic Checking - 58412390&quot;,
+    &quot;financialAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;NameAndNumber&quot; : &quot;Rewards Card - 58419954&quot;,
+    &quot;financialAccountId&quot; : &quot;a4l4W0000026TmNQAU&quot;
+  }, {
+    &quot;NameAndNumber&quot; : &quot;SA 42848198 - 42848198&quot;,
+    &quot;financialAccountId&quot; : &quot;a4l4W0000026TmPQAU&quot;
+  } ],
+  &quot;trxs&quot; : [ {
+    &quot;StatementId&quot; : &quot;12345678&quot;,
+    &quot;TrxSourceCode&quot; : &quot;EFT&quot;,
+    &quot;TrxUID&quot; : &quot;10013014&quot;,
+    &quot;TrxDate&quot; : &quot;2020-09-03&quot;,
+    &quot;TrxBalance&quot; : 55796.18,
+    &quot;TrxDeposits&quot; : 5678.9,
+    &quot;TrxDesc&quot; : &quot;SPOUSEEMP PAY&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;StatementId&quot; : &quot;12345678&quot;,
+    &quot;TrxSourceCode&quot; : &quot;CC&quot;,
+    &quot;TrxUID&quot; : &quot;10012878&quot;,
+    &quot;TrxDate&quot; : &quot;2020-09-01&quot;,
+    &quot;TrxBalance&quot; : 50117.28,
+    &quot;TrxWithdrawals&quot; : 9876.5,
+    &quot;TrxDesc&quot; : &quot;TD VISA PREAUTH PYMT&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;StatementId&quot; : &quot;12345678&quot;,
+    &quot;TrxSourceCode&quot; : &quot;SCH&quot;,
+    &quot;TrxUID&quot; : &quot;100121111&quot;,
+    &quot;TrxDate&quot; : &quot;2020-09-01&quot;,
+    &quot;TrxBalance&quot; : 59993.78,
+    &quot;TrxWithdrawals&quot; : 53.1,
+    &quot;TrxDesc&quot; : &quot;MANULIFE MSP&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;StatementId&quot; : &quot;12345678&quot;,
+    &quot;TrxSourceCode&quot; : &quot;INT&quot;,
+    &quot;TrxUID&quot; : &quot;100118012&quot;,
+    &quot;TrxDate&quot; : &quot;2020-08-31&quot;,
+    &quot;TrxBalance&quot; : 60046.88,
+    &quot;TrxDeposits&quot; : 29.95,
+    &quot;TrxDesc&quot; : &quot;ACCT BAL REBATE&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;StatementId&quot; : &quot;12345678&quot;,
+    &quot;TrxSourceCode&quot; : &quot;EFT&quot;,
+    &quot;TrxUID&quot; : &quot;100117088&quot;,
+    &quot;TrxDate&quot; : &quot;2020-08-31&quot;,
+    &quot;TrxBalance&quot; : 60046.88,
+    &quot;TrxDeposits&quot; : 480,
+    &quot;TrxDesc&quot; : &quot;SUN LIFE MSP&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;StatementId&quot; : &quot;12345678&quot;,
+    &quot;TrxSourceCode&quot; : &quot;FEE&quot;,
+    &quot;TrxUID&quot; : &quot;100118011&quot;,
+    &quot;TrxDate&quot; : &quot;2020-08-31&quot;,
+    &quot;TrxBalance&quot; : 60016.93,
+    &quot;TrxWithdrawals&quot; : 29.95,
+    &quot;TrxDesc&quot; : &quot;MONTHLY ACCOUNT FEE&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;StatementId&quot; : &quot;12345678&quot;,
+    &quot;TrxSourceCode&quot; : &quot;DEB&quot;,
+    &quot;TrxUID&quot; : &quot;100115011&quot;,
+    &quot;TrxDate&quot; : &quot;2020-08-31&quot;,
+    &quot;TrxBalance&quot; : 59566.88,
+    &quot;TrxWithdrawals&quot; : 567.89,
+    &quot;TrxDesc&quot; : &quot;GINOS PIZZA&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;StatementId&quot; : &quot;12345678&quot;,
+    &quot;TrxSourceCode&quot; : &quot;ETR&quot;,
+    &quot;TrxUID&quot; : &quot;100112034&quot;,
+    &quot;TrxDate&quot; : &quot;2020-08-28&quot;,
+    &quot;TrxBalance&quot; : 60099.77,
+    &quot;TrxDeposits&quot; : 11.3,
+    &quot;TrxDesc&quot; : &quot;E-TRANSFER CA***6fy&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;StatementId&quot; : &quot;12345678&quot;,
+    &quot;TrxSourceCode&quot; : &quot;EFT&quot;,
+    &quot;TrxUID&quot; : &quot;100112102&quot;,
+    &quot;TrxDate&quot; : &quot;2020-08-28&quot;,
+    &quot;TrxBalance&quot; : 60134.77,
+    &quot;TrxDeposits&quot; : 35,
+    &quot;TrxDesc&quot; : &quot;CANADA LIFE INS&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;StatementId&quot; : &quot;12345678&quot;,
+    &quot;TrxSourceCode&quot; : &quot;EFT&quot;,
+    &quot;TrxUID&quot; : &quot;100112021&quot;,
+    &quot;TrxDate&quot; : &quot;2020-08-28&quot;,
+    &quot;TrxBalance&quot; : 60088.47,
+    &quot;TrxDeposits&quot; : 4567.8,
+    &quot;TrxDesc&quot; : &quot;A S YOUREMPLOYER PAY&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;StatementId&quot; : &quot;12345999&quot;,
+    &quot;TrxSourceCode&quot; : &quot;ETR&quot;,
+    &quot;TrxUID&quot; : &quot;100110909&quot;,
+    &quot;TrxDate&quot; : &quot;2020-08-27&quot;,
+    &quot;TrxBalance&quot; : 55520.67,
+    &quot;TrxWithdrawals&quot; : 60,
+    &quot;TrxDesc&quot; : &quot;SEND E-TFR CA***ZhK&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;StatementId&quot; : &quot;12345999&quot;,
+    &quot;TrxSourceCode&quot; : &quot;ETR&quot;,
+    &quot;TrxUID&quot; : &quot;100110234&quot;,
+    &quot;TrxDate&quot; : &quot;2020-08-26&quot;,
+    &quot;TrxBalance&quot; : 55580.67,
+    &quot;TrxWithdrawals&quot; : 160,
+    &quot;TrxDesc&quot; : &quot;SEND E-TFR CA***M8t&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;StatementId&quot; : &quot;12345999&quot;,
+    &quot;TrxSourceCode&quot; : &quot;SCH&quot;,
+    &quot;TrxUID&quot; : &quot;10009999&quot;,
+    &quot;TrxDate&quot; : &quot;2020-08-25&quot;,
+    &quot;TrxBalance&quot; : 55740.67,
+    &quot;TrxWithdrawals&quot; : 80,
+    &quot;TrxDesc&quot; : &quot;LIFE FORCE PHYS _F&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;StatementId&quot; : &quot;12345999&quot;,
+    &quot;TrxSourceCode&quot; : &quot;ETR&quot;,
+    &quot;TrxUID&quot; : &quot;10003040&quot;,
+    &quot;TrxDate&quot; : &quot;2020-08-25&quot;,
+    &quot;TrxBalance&quot; : 55820.67,
+    &quot;TrxWithdrawals&quot; : 10,
+    &quot;TrxDesc&quot; : &quot;SEND E-TFR CA***ZKS&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;StatementId&quot; : &quot;12345999&quot;,
+    &quot;TrxSourceCode&quot; : &quot;EFT&quot;,
+    &quot;TrxUID&quot; : &quot;10000001&quot;,
+    &quot;TrxDate&quot; : &quot;2020-08-24&quot;,
+    &quot;TrxBalance&quot; : 55830.67,
+    &quot;TrxWithdrawals&quot; : 543.21,
+    &quot;TrxDesc&quot; : &quot;CERTAS H&amp;A INS INS&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  } ],
+  &quot;Transactions&quot; : {
+    &quot;fNumberSelected&quot; : 1,
+    &quot;rdoNextActions&quot; : &quot;Fraud&quot;,
+    &quot;selMore&quot; : null,
+    &quot;selStatements&quot; : &quot;12345999&quot;,
+    &quot;taAccounts-Block&quot; : {
+      &quot;taAccounts&quot; : &quot;Classic Checking - 58412390&quot;
+    },
+    &quot;trxs&quot; : [ {
+      &quot;StatementId&quot; : &quot;12345678&quot;,
+      &quot;TrxSourceCode&quot; : &quot;DEB&quot;,
+      &quot;TrxUID&quot; : &quot;100115011&quot;,
+      &quot;TrxDate&quot; : &quot;2020-08-31&quot;,
+      &quot;TrxBalance&quot; : 59566.88,
+      &quot;TrxWithdrawals&quot; : 567.89,
+      &quot;TrxDesc&quot; : &quot;GINOS PIZZA&quot;,
+      &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;,
+      &quot;tagname&quot; : &quot;cb_6&quot;,
+      &quot;rowid&quot; : 6,
+      &quot;checked&quot; : true,
+      &quot;filtered&quot; : false
+    } ]
+  },
+  &quot;CaseDetails&quot; : {
+    &quot;fReplaceCardFlag&quot; : true,
+    &quot;selPinInformation&quot; : &quot;Same&quot;,
+    &quot;selRequestMethod&quot; : &quot;Oral&quot;,
+    &quot;selAccountAccess&quot; : &quot;Checking &amp; Saving&quot;,
+    &quot;msCaseTypes&quot; : &quot;Card Replacement;General&quot;,
+    &quot;selOrigin&quot; : &quot;Phone&quot;,
+    &quot;rdoPriority&quot; : &quot;High&quot;
+  }
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;CaseAccountAccess&quot; : &quot;unaccomm&quot;,
+  &quot;CaseCardScriptReadToCustomer&quot; : &quot;y&quot;,
+  &quot;CaseContactId&quot; : &quot;y&quot;,
+  &quot;CaseDescription&quot; : &quot;y&quot;,
+  &quot;CaseFinancialAccount&quot; : &quot;y&quot;,
+  &quot;CaseOrigin&quot; : &quot;y&quot;,
+  &quot;CasePINInformation&quot; : &quot;y&quot;,
+  &quot;CasePriority&quot; : &quot;y&quot;,
+  &quot;CaseRecordType&quot; : &quot;y&quot;,
+  &quot;CaseRequestMethod&quot; : &quot;y&quot;,
+  &quot;CaseStatus&quot; : &quot;xxx&quot;,
+  &quot;CaseSubject&quot; : &quot;xxx&quot;
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>transformRetailOnboardingToCase</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>e1b0ad9b-9496-4bb7-89a7-bae6fc0ef4cf</globalKey>
+        <inputFieldName>Fraud:fDaysSinceLastStatement</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:StatementToDays</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:Transactions:rdoNextActions &quot;/\/\/-/\/\/&quot; var:Fraud:selSection &quot;;/\/\/&quot; var:Fraud:txtAreaMoreDetails CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(Transactions:rdoNextActions, &quot; - &quot;, Fraud:selSection,&quot;; &quot;,Fraud:txtAreaMoreDetails)</formulaExpression>
+        <formulaResultPath>calcDesc</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>0af7a94c-ab2b-42ce-8d25-6839210ebe5b</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>51d26c2d-0292-4725-b058-3c06eec60d37</globalKey>
+        <inputFieldName>Fraud:rdoSubscriptionCharge</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:SubscriptionCharge</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{
+  &quot;true&quot; : &quot;Yes&quot;,
+  &quot;false&quot; : &quot;No&quot;
+}</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>e02b71f4-e969-446a-9aa8-79b2114f6d41</globalKey>
+        <inputFieldName>Fraud:rdoSuspiciousActivity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:SuspiciousActivity</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{
+  &quot;true&quot; : &quot;Yes&quot;,
+  &quot;false&quot; : &quot;No&quot;
+}</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>1c7b533a-d579-402a-9d1b-c8d2ac5e3dee</globalKey>
+        <inputFieldName>selectedTrx:trxdate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:TrxDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>31829ca2-db43-438f-871b-2b731a8fa1f8</globalKey>
+        <inputFieldName>selectedTrx:trxuid</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:TransactionId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>6e5bfd23-3d96-4ad5-89a2-6f5b69568539</globalKey>
+        <inputFieldName>calcClaimAmt</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Currency</outputFieldFormat>
+        <outputFieldName>ClaimAmountCurrencyDisplay</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Stratus Bundle Setup</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>3951e551-c0fa-442b-b2b9-51243f979669</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CaseDescription</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>beb48ade-59f0-4071-9b16-18a01f5ee381</globalKey>
+        <inputFieldName>CaseDetails:selAccountAccess</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CaseAccountAccess</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>5580d626-9795-4347-b4ce-30e3baafc5f4</globalKey>
+        <inputFieldName>calcClaimAmt</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:requestedAmount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>New Stratus Bundle</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>704367f5-c047-4d27-98bf-6005855996dc</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CaseSubject</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>573639ec-ec9d-4feb-83af-6091ce11cca3</globalKey>
+        <inputFieldName>accountId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CaseAccountId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>99c2435d-8d39-4ac0-9b2e-4cb3c232a3e7</globalKey>
+        <inputFieldName>Fraud:rdoOthersHadPermission</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:OthersHadPermission</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:selectedTrx:trxwithdrawals var:Fraud:curPortionDisputed MIN</formulaConverted>
+        <formulaExpression>MIN(selectedTrx:trxwithdrawals,Fraud:curPortionDisputed)</formulaExpression>
+        <formulaResultPath>calcClaimAmt</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>33369df6-ba70-46ba-a4c6-0b21ef62e1f3</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>d40cfd2d-6b8f-4353-bf0e-13a63170c9b2</globalKey>
+        <inputFieldName>selectedTrx:trxuid</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CaseTrxId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>8bb87287-e08d-4fdd-a3d4-f4c4b98f94d6</globalKey>
+        <inputFieldName>Fraud:fDaysSinceLastStatement</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CaseStatementToDays</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>1a91da72-2507-4eaf-a159-79429689bc9f</globalKey>
+        <inputFieldName>Fraud:fRegEFlag</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CaseRegEFlag</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>New</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>57296532-db8a-4b28-87e3-b7ab7c6d42f7</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CaseStatus</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>05f314c2-fc67-474b-8ca9-5e442831abce</globalKey>
+        <inputFieldName>Fraud:rdoOrderDispute</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:OrderDispute</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{
+  &quot;true&quot; : &quot;Yes&quot;,
+  &quot;false&quot; : &quot;No&quot;
+}</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>fdc910b8-1611-422a-ad1a-4aac7e97b8b6</globalKey>
+        <inputFieldName>CaseDetails:selRequestMethod</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CaseRequestMethod</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>New Account</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>246dd693-797a-414c-b586-8f7254def0eb</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CaseReason</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Retail Banking - New Account</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>d19b98d4-1715-483c-914a-e7ef407dcdb9</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CaseRecordTypeName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>637ebd76-c4b1-4bd8-9c3f-7618a00e4a1b</globalKey>
+        <inputFieldName>financialAccountType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CaseFinancialAccountType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Medium</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>628ac481-7179-4b7b-bf19-df69f06984bc</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CasePriority</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>34b2ce74-5a97-4b68-a6b2-80ab5d6aba4c</globalKey>
+        <inputFieldName>calcTenDaysFromNow</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:provisionByDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f1010967-9dd2-4d6d-88ac-9252dcbe48ff</globalKey>
+        <inputFieldName>contactId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CaseContactId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>$Vlocity.TODAY</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>00f311de-d6f0-4d96-8a85-762d66ed3acc</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CaseSLAStartDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>0</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>3b7fa85e-7c43-4270-a476-fac415e5886d</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Integer</outputFieldFormat>
+        <outputFieldName>additionalFields:totalProvisionedAmount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| $Vlocity.NOW 10 ADDDAY</formulaConverted>
+        <formulaExpression>ADDDAY($Vlocity.NOW,10)</formulaExpression>
+        <formulaResultPath>calcTenDaysFromNow</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>fae55b87-c941-4415-9f96-806468734df8</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>c7a0a767-8de0-4a3f-9208-b89bd3e0d13a</globalKey>
+        <inputFieldName>calcDisclosureRead</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CaseCardScriptReadToCustomer</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>edab6ff4-fb1f-4675-bf93-9e163bd84ae8</globalKey>
+        <inputFieldName>selectedTrx:trxfinaccount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CaseFinancialAccountNumber</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>cc436049-4367-41b8-a73e-aa171780999e</globalKey>
+        <inputFieldName>calcClaimAmt</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:provisionalAmountRemainder</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:Fraud:disSectionI var:Fraud:disSectionII || var:Fraud:disSectionIII ||</formulaConverted>
+        <formulaExpression>Fraud:disSectionI || Fraud:disSectionII || Fraud:disSectionIII</formulaExpression>
+        <formulaResultPath>calcDisclosureRead</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>07466a4d-af4c-4cd4-99b8-8cca0d60f99d</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ba1b7c15-3e55-435c-89a4-9086a4a0ea3c</globalKey>
+        <inputFieldName>financialAccountId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CaseFinancialAccountId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>2fd22399-3377-430f-9130-bf8441fbaff1</globalKey>
+        <inputFieldName>selectedTrx:trxfinaccount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:TrxFinAccount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>74298918-6aff-4aee-bd25-e0dbd59e0506</globalKey>
+        <inputFieldName>calcClaimAmt</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ClaimAmount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>e756b254-8c80-47d6-a0ae-2facaf7bd56f</globalKey>
+        <inputFieldName>Fraud:curPortionDisputed</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:PortionDisputed</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>d797a7c4-c960-4773-bbb0-4a9e1929355c</globalKey>
+        <inputFieldName>Fraud:selSection</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:SectionChosen</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>48231b22-3b96-4920-ac25-e8248b307ed9</globalKey>
+        <inputFieldName>selectedTrx:trxsourcecode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:TrxSourceCode</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>107b6d4b-bab0-426c-be74-27ac4033d07a</globalKey>
+        <inputFieldName>Fraud:rdoRecurringCharge</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:RecurringCharge</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{
+  &quot;true&quot; : &quot;Yes&quot;,
+  &quot;false&quot; : &quot;No&quot;
+}</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>006ee5ea-7dc2-4cc1-a3f2-02d781d2c571</globalKey>
+        <inputFieldName>selectedTrx:trxdeposits</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:TrxDepositAmt</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>87bcb5ad-55c9-4fb8-a691-b6f2f1e27b05</globalKey>
+        <inputFieldName>CaseDetails:selPinInformation</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CasePINInformation</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>8812ca40-39bb-4d37-a5e5-b5715c41a5a9</globalKey>
+        <inputFieldName>selectedTrx:trxwithdrawals</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:TrxWithdrawalAmt</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Community</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ca1c2557-911c-4d0d-a498-bb13880d2d18</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CaseOrigin</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>7e300839-3c12-497d-8032-3fbc488e2a89</globalKey>
+        <inputFieldName>selectedTrx:trxdescription</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformRetailOnboardingToCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:TrxDescription</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;trxSelected&quot; : 6,
+  &quot;omnidesignerChannelId&quot; : &quot;omni-designer-channel-id-1601675991816&quot;,
+  &quot;timeStamp&quot; : &quot;2020-10-03T03:12:51.152Z&quot;,
+  &quot;userProfile&quot; : &quot;Custom: System Administrator&quot;,
+  &quot;userTimeZone&quot; : &quot;-420&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;duane@bankingdisputedemo123456.com&quot;,
+  &quot;userId&quot; : &quot;0054W00000BPTa5QAH&quot;,
+  &quot;Fraud&quot; : {
+    &quot;fRegEFlag&quot; : true,
+    &quot;fTrxWithdrawalPlusTrxDeposit&quot; : 567.89,
+    &quot;fDaysSinceLastStatement&quot; : 36,
+    &quot;disSectionI&quot; : null,
+    &quot;curPortionDisputed&quot; : 60,
+    &quot;disSectionII&quot; : true,
+    &quot;txtAreaMoreDetails&quot; : &quot;These are the details.&quot;,
+    &quot;rdoSuspiciousActivity&quot; : &quot;No&quot;,
+    &quot;rdoOrderDispute&quot; : &quot;Yes&quot;,
+    &quot;rdoRecurringCharge&quot; : &quot;No&quot;,
+    &quot;rdoSubscriptionCharge&quot; : &quot;Yes&quot;,
+    &quot;selSection&quot; : &quot;SectionII&quot;
+  },
+  &quot;Adjustment&quot; : null,
+  &quot;Action1&quot; : null,
+  &quot;financialAccountName&quot; : &quot;Classic Checking&quot;,
+  &quot;financialAccountNumber&quot; : &quot;58412390&quot;,
+  &quot;financialAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;,
+  &quot;contactId&quot; : &quot;0034W00002DFUmzQAH&quot;,
+  &quot;accountId&quot; : &quot;0014W000024fX5xQAE&quot;,
+  &quot;lastStatementDate&quot; : &quot;2020-08-27T04:00:00.000Z&quot;,
+  &quot;financialAccountDropdownData&quot; : [ {
+    &quot;NameAndNumber&quot; : &quot;Day to Day Banking - 58413762&quot;,
+    &quot;financialAccountId&quot; : &quot;a4l4W0000026TmUQAU&quot;
+  }, {
+    &quot;NameAndNumber&quot; : &quot;Classic Checking - 58412390&quot;,
+    &quot;financialAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;NameAndNumber&quot; : &quot;Rewards Card - 58419954&quot;,
+    &quot;financialAccountId&quot; : &quot;a4l4W0000026TmNQAU&quot;
+  }, {
+    &quot;NameAndNumber&quot; : &quot;SA 42848198 - 42848198&quot;,
+    &quot;financialAccountId&quot; : &quot;a4l4W0000026TmPQAU&quot;
+  } ],
+  &quot;trxs&quot; : [ {
+    &quot;StatementId&quot; : &quot;12345678&quot;,
+    &quot;TrxSourceCode&quot; : &quot;EFT&quot;,
+    &quot;TrxUID&quot; : &quot;10013014&quot;,
+    &quot;TrxDate&quot; : &quot;2020-09-03&quot;,
+    &quot;TrxBalance&quot; : 55796.18,
+    &quot;TrxDeposits&quot; : 5678.9,
+    &quot;TrxDesc&quot; : &quot;SPOUSEEMP PAY&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;StatementId&quot; : &quot;12345678&quot;,
+    &quot;TrxSourceCode&quot; : &quot;CC&quot;,
+    &quot;TrxUID&quot; : &quot;10012878&quot;,
+    &quot;TrxDate&quot; : &quot;2020-09-01&quot;,
+    &quot;TrxBalance&quot; : 50117.28,
+    &quot;TrxWithdrawals&quot; : 9876.5,
+    &quot;TrxDesc&quot; : &quot;TD VISA PREAUTH PYMT&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;StatementId&quot; : &quot;12345678&quot;,
+    &quot;TrxSourceCode&quot; : &quot;SCH&quot;,
+    &quot;TrxUID&quot; : &quot;100121111&quot;,
+    &quot;TrxDate&quot; : &quot;2020-09-01&quot;,
+    &quot;TrxBalance&quot; : 59993.78,
+    &quot;TrxWithdrawals&quot; : 53.1,
+    &quot;TrxDesc&quot; : &quot;MANULIFE MSP&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;StatementId&quot; : &quot;12345678&quot;,
+    &quot;TrxSourceCode&quot; : &quot;INT&quot;,
+    &quot;TrxUID&quot; : &quot;100118012&quot;,
+    &quot;TrxDate&quot; : &quot;2020-08-31&quot;,
+    &quot;TrxBalance&quot; : 60046.88,
+    &quot;TrxDeposits&quot; : 29.95,
+    &quot;TrxDesc&quot; : &quot;ACCT BAL REBATE&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;StatementId&quot; : &quot;12345678&quot;,
+    &quot;TrxSourceCode&quot; : &quot;EFT&quot;,
+    &quot;TrxUID&quot; : &quot;100117088&quot;,
+    &quot;TrxDate&quot; : &quot;2020-08-31&quot;,
+    &quot;TrxBalance&quot; : 60046.88,
+    &quot;TrxDeposits&quot; : 480,
+    &quot;TrxDesc&quot; : &quot;SUN LIFE MSP&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;StatementId&quot; : &quot;12345678&quot;,
+    &quot;TrxSourceCode&quot; : &quot;FEE&quot;,
+    &quot;TrxUID&quot; : &quot;100118011&quot;,
+    &quot;TrxDate&quot; : &quot;2020-08-31&quot;,
+    &quot;TrxBalance&quot; : 60016.93,
+    &quot;TrxWithdrawals&quot; : 29.95,
+    &quot;TrxDesc&quot; : &quot;MONTHLY ACCOUNT FEE&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;StatementId&quot; : &quot;12345678&quot;,
+    &quot;TrxSourceCode&quot; : &quot;DEB&quot;,
+    &quot;TrxUID&quot; : &quot;100115011&quot;,
+    &quot;TrxDate&quot; : &quot;2020-08-31&quot;,
+    &quot;TrxBalance&quot; : 59566.88,
+    &quot;TrxWithdrawals&quot; : 567.89,
+    &quot;TrxDesc&quot; : &quot;GINOS PIZZA&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;StatementId&quot; : &quot;12345678&quot;,
+    &quot;TrxSourceCode&quot; : &quot;ETR&quot;,
+    &quot;TrxUID&quot; : &quot;100112034&quot;,
+    &quot;TrxDate&quot; : &quot;2020-08-28&quot;,
+    &quot;TrxBalance&quot; : 60099.77,
+    &quot;TrxDeposits&quot; : 11.3,
+    &quot;TrxDesc&quot; : &quot;E-TRANSFER CA***6fy&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;StatementId&quot; : &quot;12345678&quot;,
+    &quot;TrxSourceCode&quot; : &quot;EFT&quot;,
+    &quot;TrxUID&quot; : &quot;100112102&quot;,
+    &quot;TrxDate&quot; : &quot;2020-08-28&quot;,
+    &quot;TrxBalance&quot; : 60134.77,
+    &quot;TrxDeposits&quot; : 35,
+    &quot;TrxDesc&quot; : &quot;CANADA LIFE INS&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;StatementId&quot; : &quot;12345678&quot;,
+    &quot;TrxSourceCode&quot; : &quot;EFT&quot;,
+    &quot;TrxUID&quot; : &quot;100112021&quot;,
+    &quot;TrxDate&quot; : &quot;2020-08-28&quot;,
+    &quot;TrxBalance&quot; : 60088.47,
+    &quot;TrxDeposits&quot; : 4567.8,
+    &quot;TrxDesc&quot; : &quot;A S YOUREMPLOYER PAY&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;StatementId&quot; : &quot;12345999&quot;,
+    &quot;TrxSourceCode&quot; : &quot;ETR&quot;,
+    &quot;TrxUID&quot; : &quot;100110909&quot;,
+    &quot;TrxDate&quot; : &quot;2020-08-27&quot;,
+    &quot;TrxBalance&quot; : 55520.67,
+    &quot;TrxWithdrawals&quot; : 60,
+    &quot;TrxDesc&quot; : &quot;SEND E-TFR CA***ZhK&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;StatementId&quot; : &quot;12345999&quot;,
+    &quot;TrxSourceCode&quot; : &quot;ETR&quot;,
+    &quot;TrxUID&quot; : &quot;100110234&quot;,
+    &quot;TrxDate&quot; : &quot;2020-08-26&quot;,
+    &quot;TrxBalance&quot; : 55580.67,
+    &quot;TrxWithdrawals&quot; : 160,
+    &quot;TrxDesc&quot; : &quot;SEND E-TFR CA***M8t&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;StatementId&quot; : &quot;12345999&quot;,
+    &quot;TrxSourceCode&quot; : &quot;SCH&quot;,
+    &quot;TrxUID&quot; : &quot;10009999&quot;,
+    &quot;TrxDate&quot; : &quot;2020-08-25&quot;,
+    &quot;TrxBalance&quot; : 55740.67,
+    &quot;TrxWithdrawals&quot; : 80,
+    &quot;TrxDesc&quot; : &quot;LIFE FORCE PHYS _F&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;StatementId&quot; : &quot;12345999&quot;,
+    &quot;TrxSourceCode&quot; : &quot;ETR&quot;,
+    &quot;TrxUID&quot; : &quot;10003040&quot;,
+    &quot;TrxDate&quot; : &quot;2020-08-25&quot;,
+    &quot;TrxBalance&quot; : 55820.67,
+    &quot;TrxWithdrawals&quot; : 10,
+    &quot;TrxDesc&quot; : &quot;SEND E-TFR CA***ZKS&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  }, {
+    &quot;StatementId&quot; : &quot;12345999&quot;,
+    &quot;TrxSourceCode&quot; : &quot;EFT&quot;,
+    &quot;TrxUID&quot; : &quot;10000001&quot;,
+    &quot;TrxDate&quot; : &quot;2020-08-24&quot;,
+    &quot;TrxBalance&quot; : 55830.67,
+    &quot;TrxWithdrawals&quot; : 543.21,
+    &quot;TrxDesc&quot; : &quot;CERTAS H&amp;A INS INS&quot;,
+    &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;
+  } ],
+  &quot;Transactions&quot; : {
+    &quot;fNumberSelected&quot; : 1,
+    &quot;rdoNextActions&quot; : &quot;Fraud&quot;,
+    &quot;selMore&quot; : null,
+    &quot;selStatements&quot; : &quot;12345999&quot;,
+    &quot;taAccounts-Block&quot; : {
+      &quot;taAccounts&quot; : &quot;Classic Checking - 58412390&quot;
+    },
+    &quot;trxs&quot; : [ {
+      &quot;StatementId&quot; : &quot;12345678&quot;,
+      &quot;TrxSourceCode&quot; : &quot;DEB&quot;,
+      &quot;TrxUID&quot; : &quot;100115011&quot;,
+      &quot;TrxDate&quot; : &quot;2020-08-31&quot;,
+      &quot;TrxBalance&quot; : 59566.88,
+      &quot;TrxWithdrawals&quot; : 567.89,
+      &quot;TrxDesc&quot; : &quot;GINOS PIZZA&quot;,
+      &quot;finAccountId&quot; : &quot;a4l4W0000026TmTQAU&quot;,
+      &quot;tagname&quot; : &quot;cb_6&quot;,
+      &quot;rowid&quot; : 6,
+      &quot;checked&quot; : true,
+      &quot;filtered&quot; : false
+    } ]
+  },
+  &quot;CaseDetails&quot; : {
+    &quot;fReplaceCardFlag&quot; : true,
+    &quot;selPinInformation&quot; : &quot;Same&quot;,
+    &quot;selRequestMethod&quot; : &quot;Oral&quot;,
+    &quot;selAccountAccess&quot; : &quot;Checking &amp; Saving&quot;,
+    &quot;selOrigin&quot; : &quot;Phone&quot;,
+    &quot;msCaseTypes&quot; : &quot;Card Replacement;General&quot;,
+    &quot;rdoPriority&quot; : &quot;High&quot;
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>-1.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>transformRetailOnboardingToCase_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

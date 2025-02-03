@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Loan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Loans</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Loans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Amount Requested --></label>
+        <name>Amount_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Until Anticipated Closing --></label>
+        <name>Days_Until_Anticipated_Closing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Execution Date --></label>
+        <name>Execution_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Execution Time --></label>
+        <name>Execution_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Maturing --></label>
+        <name>FINS_Loan_Maturing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maturity Date --></label>
+        <name>FINS_Maturity_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q-Branch Demo Reference --></label>
+        <name>FINS_Q_Branch_Demo_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Payment Date --></label>
+        <name>First_Payment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Name --></label>
+        <name>Loan_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Purpose --></label>
+        <name>Loan_Purpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Officer --></label>
+        <name>Loan_officer__c</name>
+        <relationshipLabel><!-- Loans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Loans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>Product_Type__c</name>
+        <picklistValues>
+            <masterLabel>Auto Loan</masterLabel>
+            <translation><!-- Auto Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Real Estate Loan</masterLabel>
+            <translation><!-- Non-Real Estate Loan --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Projected Close Date --></label>
+        <name>Projected_Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>Stage__c</name>
+        <picklistValues>
+            <masterLabel>Approval / Loan</masterLabel>
+            <translation><!-- Approval / Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Booked</masterLabel>
+            <translation><!-- Booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closing</masterLabel>
+            <translation><!-- Closing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doc Prep</masterLabel>
+            <translation><!-- Doc Prep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doc Review</masterLabel>
+            <translation><!-- Doc Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation><!-- Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proposal</masterLabel>
+            <translation><!-- Proposal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualification / Application</masterLabel>
+            <translation><!-- Qualification / Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Underwriting</masterLabel>
+            <translation><!-- Underwriting --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

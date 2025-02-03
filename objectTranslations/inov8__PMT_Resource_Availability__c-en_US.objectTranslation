@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Apr Actual Hours --></label>
+        <name>inov8__Apr_Actual_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Apr Allocation --></label>
+        <name>inov8__Apr_Allocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Apr Remaining --></label>
+        <name>inov8__Apr_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Apr --></label>
+        <name>inov8__Apr__c</name>
+    </fields>
+    <fields>
+        <label><!-- Aug Actual Hours --></label>
+        <name>inov8__Aug_Actual_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Aug Allocation --></label>
+        <name>inov8__Aug_Allocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Aug Remaining --></label>
+        <name>inov8__Aug_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Aug --></label>
+        <name>inov8__Aug__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dec Actual Hours --></label>
+        <name>inov8__Dec_Actual_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dec Allocation --></label>
+        <name>inov8__Dec_Allocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dec Remaining --></label>
+        <name>inov8__Dec_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dec --></label>
+        <name>inov8__Dec__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>inov8__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feb Actual Hours --></label>
+        <name>inov8__Feb_Actual_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feb Allocation --></label>
+        <name>inov8__Feb_Allocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feb Remaining --></label>
+        <name>inov8__Feb_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feb --></label>
+        <name>inov8__Feb__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fiscal Year --></label>
+        <name>inov8__Fiscal_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jan Actual Hours --></label>
+        <name>inov8__Jan_Actual_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jan Allocation --></label>
+        <name>inov8__Jan_Allocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jan Remaining --></label>
+        <name>inov8__Jan_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jan --></label>
+        <name>inov8__Jan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jul Actual Hours --></label>
+        <name>inov8__Jul_Actual_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jul Allocation --></label>
+        <name>inov8__Jul_Allocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jul Remaining --></label>
+        <name>inov8__Jul_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jul --></label>
+        <name>inov8__Jul__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jun Actual Hours --></label>
+        <name>inov8__Jun_Actual_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jun Allocation --></label>
+        <name>inov8__Jun_Allocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jun Remaining --></label>
+        <name>inov8__Jun_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jun --></label>
+        <name>inov8__Jun__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mar Actual Hours --></label>
+        <name>inov8__Mar_Actual_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mar Allocation --></label>
+        <name>inov8__Mar_Allocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mar Remaining --></label>
+        <name>inov8__Mar_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mar --></label>
+        <name>inov8__Mar__c</name>
+    </fields>
+    <fields>
+        <label><!-- May Actual Hours --></label>
+        <name>inov8__May_Actual_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- May Allocation --></label>
+        <name>inov8__May_Allocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- May Remaining --></label>
+        <name>inov8__May_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- May --></label>
+        <name>inov8__May__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nov Actual Hours --></label>
+        <name>inov8__Nov_Actual_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nov Allocation --></label>
+        <name>inov8__Nov_Allocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nov Remaining --></label>
+        <name>inov8__Nov_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nov --></label>
+        <name>inov8__Nov__c</name>
+    </fields>
+    <fields>
+        <label><!-- Oct Actual Hours --></label>
+        <name>inov8__Oct_Actual_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Oct Allocation --></label>
+        <name>inov8__Oct_Allocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Oct Remaining --></label>
+        <name>inov8__Oct_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Oct --></label>
+        <name>inov8__Oct__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Name &amp; FY --></label>
+        <name>inov8__Resource_Name_FY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sep Actual Hours --></label>
+        <name>inov8__Sep_Actual_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sep Allocation --></label>
+        <name>inov8__Sep_Allocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sep Remaining --></label>
+        <name>inov8__Sep_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sep --></label>
+        <name>inov8__Sep__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>inov8__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Department --></label>
+        <name>inov8__User_Department__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Id --></label>
+        <name>inov8__User_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- User IsActive --></label>
+        <name>inov8__User_IsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Name --></label>
+        <name>inov8__User_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>inov8__User__c</name>
+        <relationshipLabel><!-- PMT Resource Availability --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- is Dummy Availability? --></label>
+        <name>inov8__is_Dummy_Availability__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Availability must be in between 0 and 100 --></errorMessage>
+        <name>inov8__Availability_cannot_be_more_than_100</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Fiscal Year must be in the format of FYXX --></errorMessage>
+        <name>inov8__Fiscal_Year_format_as_FYXX</name>
+    </validationRules>
+</CustomObjectTranslation>

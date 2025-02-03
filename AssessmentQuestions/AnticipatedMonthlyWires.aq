@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>AnticipatedMonthlyWires</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>How many monthly wires do you anticipate originating?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Integer</dataType>
+    <developerName>AnticipatedMonthlyWires</developerName>
+    <name>AnticipatedMonthlyWires</name>
+    <questionCategory>Financial</questionCategory>
+</AssessmentQuestion>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{
+    &quot;accountId&quot;: &quot;001B000001QU5xXIAT&quot;,
+    &quot;componentName&quot;: &quot;acctRecordAlerts&quot;
+}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>RecordAlertPersonAccount</name>
+    <omniProcessElements>
+        <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>drGetUserExpandCollapsePreference</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;getUserPreference&quot;,
+  &quot;dataRaptor Input Parameters&quot; : [ ],
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataRaptorExtractAction3&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <description>getActiveRecordAlerts</description>
+        <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>getActiveRecordAlerts</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;getAlertsFromAccount&quot;,
+  &quot;dataRaptor Input Parameters&quot; : [ {
+    &quot;inputParam&quot; : &quot;accountId&quot;,
+    &quot;element&quot; : &quot;accountId&quot;
+  } ],
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : true,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataRaptorExtractAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <description>getActiveRecordAlerts</description>
+        <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ResponseActionSeverityFilter</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalOutput&quot; : {
+    &quot;activeAlertSingularPlural&quot; : &quot;=IF(svAssembleResults:activeAlertCount=1, &apos;Alert&apos;, &apos;Alerts&apos;)&quot;,
+    &quot;snoozedAlertSingularPlural&quot; : &quot;=IF(svAssembleResults:snoozedAlertCount=1, &apos;Alert&apos;, &apos;Alerts&apos;)&quot;,
+    &quot;highestSeverity&quot; : &quot;=IF(svSetCurrentStateVars:newActiveSnoozedToggle=&apos;Active&apos;, %svAssembleResults:activeHighestSeverity%, %svAssembleResults:snoozedHighestSeverity%)&quot;,
+    &quot;activeSnoozedToggle&quot; : &quot;%svSetCurrentStateVars:newActiveSnoozedToggle%&quot;,
+    &quot;passedThurActiveSnoozedToggle&quot; : &quot;%activeSnoozedToggle%&quot;
+  },
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;svAssembleResults&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;vlcResponseHeaders&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ResponseAction2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>7.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>svAssembleResults</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;elementValueMap&quot; : {
+    &quot;userExpandPreference&quot; : &quot;=IF(ISNOTBLANK(%drGetUserExpandCollapsePreference:Value%), %drGetUserExpandCollapsePreference:Value%, &apos;Compact&apos;)&quot;,
+    &quot;activeAlerts&quot; : &quot;%svMergeNonSnoozedAndSnoozedEarlier:mergedNonSnoozed%&quot;,
+    &quot;activeHighestSeverity&quot; : &quot;=IF(CONCAT(svMergeNonSnoozedAndSnoozedEarlier:mergedNonSnoozed:Severity) LIKE &apos;Error&apos;, &apos;Error&apos;, IF(CONCAT(svMergeNonSnoozedAndSnoozedEarlier:mergedNonSnoozed:Severity) LIKE &apos;Warning&apos;, &apos;Warning&apos;, IF(CONCAT(svMergeNonSnoozedAndSnoozedEarlier:mergedNonSnoozed:Severity) LIKE&apos;Info&apos;, &apos;Info&apos;,&apos;&apos;))&quot;,
+    &quot;activeAlertCount&quot; : &quot;=IF(ISNOTBLANK(svMergeNonSnoozedAndSnoozedEarlier:mergedNonSnoozed), LISTSIZE(svMergeNonSnoozedAndSnoozedEarlier:mergedNonSnoozed),0)&quot;,
+    &quot;snoozedAlerts&quot; : &quot;%svFilterSnoozedAlerts:Snoozed%&quot;,
+    &quot;snoozedAlertCount&quot; : &quot;=IF(ISNOTBLANK(svFilterSnoozedAlerts:Snoozed), LISTSIZE(svFilterSnoozedAlerts:Snoozed),0)&quot;,
+    &quot;snoozedHighestSeverity&quot; : &quot;==IF(CONCAT(svFilterSnoozedAlerts:Snoozed:Severity) LIKE &apos;Error&apos;, &apos;Error&apos;, IF(CONCAT(svFilterSnoozedAlerts:Snoozed:Severity) LIKE &apos;Warning&apos;, &apos;Warning&apos;, IF(CONCAT(svFilterSnoozedAlerts:Snoozed:Severity) LIKE&apos;Info&apos;, &apos;Info&apos;,&apos;&apos;))&quot;
+  },
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;SetValues3&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>5.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>svFilterSnoozedAlerts</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;elementValueMap&quot; : {
+    &quot;Snoozed&quot; : &quot;=FILTER(LIST(getActiveRecordAlerts:Alerts), &apos;SnoozedUntil&gt;\&quot;&apos;+$Vlocity.TODAY+&apos;\&quot;&apos;)&quot;
+  },
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;SetValues3&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>svMergeNonSnoozedAndSnoozedEarlier</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;elementValueMap&quot; : {
+    &quot;mergedNonSnoozed&quot; : &quot;=FILTER(LIST(getActiveRecordAlerts:Alerts), &apos;SnoozedUntil=null OR SnoozedUntil&lt;=\&quot;&apos;+$Vlocity.TODAY+&apos;\&quot;&apos;)&quot;
+  },
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;SetValues3&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>svSetCurrentStateVars</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;elementValueMap&quot; : {
+    &quot;newActiveSnoozedToggle&quot; : &quot;=IF(ISBLANK(%activeSnoozedToggle%),&apos;Active&apos;, IF(%activeSnoozedToggle%=&apos;Snoozed&apos; &amp;&amp;%svAssembleResults:snoozedAlertCount%=0, &apos;Active&apos;, %activeSnoozedToggle%))&quot;,
+    &quot;old&quot; : &quot;=IF(ISBLANK(%activeSnoozedToggle%) &amp;&amp; %svAssembleResults:activeAlertCount%&gt;0,&apos;Active&apos;, IF(ISBLANK(%activeSnoozedToggle%) &amp;&amp; %svAssembleResults:snoozedAlertCount%&gt;0, &apos;Snoozed&apos;, IF(%activeSnoozedToggle%=&apos;Active&apos; &amp;&amp; %svAssembleResults:activeAlertCount%=0 &amp;&amp; %svAssembleResults:snoozedAlertCount%&gt;0,&apos;Snoozed&apos;, IF(%activeSnoozedToggle%=&apos;Snoozed&apos; &amp;&amp; %svAssembleResults:snoozedAlertCount%=0 &amp;&amp; %svAssembleResults:activeAlertCount%&gt;0, &apos;Active&apos;, %activeSnoozedToggle%))))&quot;
+  },
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;SetValues4&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>6.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessKey>RecordAlert_GetPersonAccountAlerts</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;trackingCustomData&quot; : { },
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;description&quot; : &quot;&quot;,
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;rollbackOnError&quot; : false,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;ttlMinutes&quot; : 5,
+  &quot;mockResponseMap&quot; : { }
+}</propertySetConfig>
+    <subType>GetPersonAccountAlerts</subType>
+    <type>RecordAlert</type>
+    <uniqueName>RecordAlert_GetPersonAccountAlerts_Procedure_2</uniqueName>
+    <versionNumber>2.0</versionNumber>
+    <webComponentKey>15bd790b-b80b-fe65-2426-08d4b66191be</webComponentKey>
+</OmniIntegrationProcedure>

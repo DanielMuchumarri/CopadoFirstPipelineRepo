@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Calls an action that processes an asynchronous Apex Customer callout request.</description>
+        <name>MakeAsyncApexCustomerCallout</name>
+        <label>Make Async Apex Customer Callout</label>
+        <locationX>3119</locationX>
+        <locationY>134</locationY>
+        <actionName>industriesSendApexAsyncRequest</actionName>
+        <actionType>industriesSendApexAsyncRequest</actionType>
+        <connector>
+            <targetReference>WaitForCustomerPlatformEvent</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>SetCustomerOutputVariable</targetReference>
+        </faultConnector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>RequestGuid</name>
+            <value>
+                <elementReference>$Flow.InterviewGuid</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>IntegrationDefinition</name>
+            <value>
+                <elementReference>CustomerIntegrationDefinition</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>InputRecordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>industriesSendApexAsyncRequest</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <actionCalls>
+        <description>Calls an action that processes an asynchronous Apex Financial Account  Callout request.</description>
+        <name>MakeAsyncApexFinancialAccountCallout</name>
+        <label>Make Async Apex Financial Account Callout</label>
+        <locationX>2492</locationX>
+        <locationY>350</locationY>
+        <actionName>industriesSendApexAsyncRequest</actionName>
+        <actionType>industriesSendApexAsyncRequest</actionType>
+        <connector>
+            <targetReference>WaitForFinancialAccountPlatformEvent</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>SetFinancialAccountOutputVariable</targetReference>
+        </faultConnector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>RequestGuid</name>
+            <value>
+                <elementReference>$Flow.InterviewGuid</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>IntegrationDefinition</name>
+            <value>
+                <elementReference>FinancialAccountIntegrationDefinition</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>InputRecordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>industriesSendApexAsyncRequest</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <actionCalls>
+        <description>Send a case closure status email to users.</description>
+        <name>SendEmail</name>
+        <label>Send Email</label>
+        <locationX>50</locationX>
+        <locationY>1106</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>relatedRecordId</name>
+            <value>
+                <elementReference>CaseId</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recipientId</name>
+            <value>
+                <elementReference>PersonContactId</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailTemplateId</name>
+            <value>
+                <elementReference>EmailTemplateId</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <assignments>
+        <description>Assigns Customer Async Callout Failed from the current service catalog request extended attribute value record in the loop to the CustomerAsyncCalloutFailed variable.</description>
+        <name>SetCustomerOutputVariable</name>
+        <label>Set Customer Output Variable</label>
+        <locationX>1898</locationX>
+        <locationY>890</locationY>
+        <assignmentItems>
+            <assignToReference>CustomerAsyncCalloutFailed</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Failure</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Assigns Financial Account Async Callout Failed from the current service catalog request extended attribute value record in the loop to the FinancialAccountAsyncCalloutFailed variable.</description>
+        <name>SetFinancialAccountOutputVariable</name>
+        <label>Set Financial Account Output Variable</label>
+        <locationX>2426</locationX>
+        <locationY>890</locationY>
+        <assignmentItems>
+            <assignToReference>FinancialAccountAsyncCalloutFailed</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Failure</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Assigns Customer and Financial Account Async Callout Failed from the current service catalog request extended attribute value record in the loop to the CustomerAsyncCalloutFailed and FinancialAccountAsyncCalloutFailed variables.</description>
+        <name>SetOutputVariable</name>
+        <label>Set Output Variable</label>
+        <locationX>1106</locationX>
+        <locationY>890</locationY>
+        <assignmentItems>
+            <assignToReference>CustomerAsyncCalloutFailed</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>FinancialAccountAsyncCalloutFailed</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>The Service Request failed</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Assigns the Customer profile update Async Callout Failed from the current service catalog request extended attribute value record in the loop to the CustomerAsyncCalloutFailed variable.</description>
+        <name>SetPartialCustomerSuccessStatus</name>
+        <label>Set Partial Customer Success Status</label>
+        <locationX>578</locationX>
+        <locationY>890</locationY>
+        <assignmentItems>
+            <assignToReference>Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>The Service request succeeded partially. It succeeded on financial account update but failed on customer profile update.</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CustomerAsyncCalloutFailed</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Assigns the Financial Account Update Async Callout Failed from the current service catalog request extended attribute value record in the loop to the FinancialAccountAsyncCalloutFailed variable.</description>
+        <name>SetPartialFinancialAccountSuccessStatus</name>
+        <label>Set Partial Financial Account Success Status</label>
+        <locationX>842</locationX>
+        <locationY>890</locationY>
+        <assignmentItems>
+            <assignToReference>Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>The Service request succeeded partially. It succeeded on customer profile update but failed on financial account update.</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>FinancialAccountAsyncCalloutFailed</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>Determines whether both customer and financial account types are selected or whether Customer or Financial Account is selected.</description>
+        <name>AreBothCustomerandFinclAccountTypesSelected</name>
+        <label>Are Both Customer and Financial Account Types Selected?</label>
+        <locationX>1766</locationX>
+        <locationY>566</locationY>
+        <defaultConnectorLabel>Other (Default Outcome)</defaultConnectorLabel>
+        <rules>
+            <name>BothCustomerAndFinancialAccountSelected</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>PlatformCustomerEventResponse.ResponsePayload</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>PlatformFinancialAccountEventResponse.ResponsePayload</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>AreBothProfilesSelForUpdate</targetReference>
+            </connector>
+            <label>Both Customer and Financial Account Selected</label>
+        </rules>
+        <rules>
+            <name>EitherCustomerOrFinancialAccountSelected</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>PlatformCustomerEventResponse.ResponsePayload</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>PlatformFinancialAccountEventResponse.ResponsePayload</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>IsEitheraCustomerOraFinancialAccountSelected</targetReference>
+            </connector>
+            <label>Either Customer or Financial Account Selected</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determines whether the responses from customer and financial account are successful</description>
+        <name>AreBothProfilesSelForUpdate</name>
+        <label>Are Both Profiles Selected For Update?</label>
+        <locationX>578</locationX>
+        <locationY>674</locationY>
+        <defaultConnector>
+            <targetReference>WhichProfileUpdateRequestFailed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Other (Default Outcome)</defaultConnectorLabel>
+        <rules>
+            <name>ResponsefromBothCustomerandFinancialAccountIsSuccessful</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CheckIfFinancialAccountAsyncCalloutFailed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>CheckIfCustomerAsyncCalloutFailed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>UpdateCase</targetReference>
+            </connector>
+            <label>Response from both Customer and Financial Account is Successful</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determines whether the email associated with the Account is available or not.</description>
+        <name>IsAccountEmailAvailable</name>
+        <label>Is Account Email Available?</label>
+        <locationX>182</locationX>
+        <locationY>890</locationY>
+        <defaultConnectorLabel>AccountEmailNotAvailable (Default)</defaultConnectorLabel>
+        <rules>
+            <name>AccountEmailAvailable</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AccountEmail</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>AccountEmail</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>AccountEmail</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GetEmailTemplate</targetReference>
+            </connector>
+            <label>Account Email Available</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determines whether the CheckCustomerAsyncCalloutFailed evaluates to false.</description>
+        <name>IsCustomerProfileSelected</name>
+        <label>Is Customer Profile Selected?</label>
+        <locationX>1766</locationX>
+        <locationY>782</locationY>
+        <defaultConnector>
+            <targetReference>SetCustomerOutputVariable</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No (Default Outcome)</defaultConnectorLabel>
+        <rules>
+            <name>IsCustomerProfileResponseSuccessful</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CheckIfCustomerAsyncCalloutFailed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <isGoTo>true</isGoTo>
+                <targetReference>UpdateCase</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determines the profile type selected for update.</description>
+        <name>IsEitheraCustomerOraFinancialAccountSelected</name>
+        <label>Is Either a Customer or a Financial Account Selected?</label>
+        <locationX>2228</locationX>
+        <locationY>674</locationY>
+        <defaultConnectorLabel>Other (Default Outcome)</defaultConnectorLabel>
+        <rules>
+            <name>IsCustomerProfile</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>PlatformCustomerEventResponse.ResponsePayload</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>IsCustomerProfileSelected</targetReference>
+            </connector>
+            <label>Is Customer Profile</label>
+        </rules>
+        <rules>
+            <name>IsFinancialAccount</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>PlatformFinancialAccountEventResponse.ResponsePayload</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>IsFinancialAccountSelected</targetReference>
+            </connector>
+            <label>Is Financial Account</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determines if the CheckFinancialAccountAsyncCalloutFailed variable is set to False which verfies if only the financial account is selected for update.</description>
+        <name>IsFinancialAccountSelected</name>
+        <label>Is Financial Account Selected?</label>
+        <locationX>2294</locationX>
+        <locationY>782</locationY>
+        <defaultConnector>
+            <targetReference>SetFinancialAccountOutputVariable</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No (Default Outcome)</defaultConnectorLabel>
+        <rules>
+            <name>IsFinancialAccountResponseSuccessful</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CheckIfFinancialAccountAsyncCalloutFailed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <isGoTo>true</isGoTo>
+                <targetReference>UpdateCase</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determines if the Customer Account Update Request has Failed or if the Financial Account Update Request has Failed or if both Customer and Financial Account Update Request has Failed.</description>
+        <name>WhichProfileUpdateRequestFailed</name>
+        <label>Which Profile Update Request Failed?</label>
+        <locationX>974</locationX>
+        <locationY>782</locationY>
+        <defaultConnectorLabel>Other (Default Outcome)</defaultConnectorLabel>
+        <rules>
+            <name>OnlyCustomerAccountUpdateRequestFailed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CheckIfCustomerAsyncCalloutFailed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>CheckIfFinancialAccountAsyncCalloutFailed</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetPartialCustomerSuccessStatus</targetReference>
+            </connector>
+            <label>Only Customer Account Update Request Failed</label>
+        </rules>
+        <rules>
+            <name>OnlyFinancialAccountUpdateRequestFailed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CheckIfFinancialAccountAsyncCalloutFailed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>CheckIfCustomerAsyncCalloutFailed</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetPartialFinancialAccountSuccessStatus</targetReference>
+            </connector>
+            <label>Only Financial Account Update Request Failed</label>
+        </rules>
+        <rules>
+            <name>BothCustomerandFinancialAccountUpdateRequestFailed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CheckIfFinancialAccountAsyncCalloutFailed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>CheckIfCustomerAsyncCalloutFailed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetOutputVariable</targetReference>
+            </connector>
+            <label>Both Customer and Financial Account Update Request Failed</label>
+        </rules>
+    </decisions>
+    <description>Calls an asynchronous Apex action to update a service catalog request record corresponding to a service process request.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Checks and stores the Customer Async Callout response.</description>
+        <name>CheckIfCustomerAsyncCalloutFailed</name>
+        <dataType>Boolean</dataType>
+        <expression>REGEX({!PlatformCustomerEventResponse.ResponsePayload}, &apos;(?i).*&quot;issuccess&quot;\\s*:\\s*false.*&apos;)</expression>
+    </formulas>
+    <formulas>
+        <description>Checks and stores the Financial Account Async Callout response.</description>
+        <name>CheckIfFinancialAccountAsyncCalloutFailed</name>
+        <dataType>Boolean</dataType>
+        <expression>REGEX({!PlatformFinancialAccountEventResponse.ResponsePayload}, &apos;(?i).*&quot;issuccess&quot;\\s*:\\s*false.*&apos;)</expression>
+    </formulas>
+    <interviewLabel>FSC Wealth: Update Profile for Update Service Request {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FSC Wealth: Update Profile for Update Service Request</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Gets the template for the email that is sent to users about the case notification.</description>
+        <name>GetEmailTemplate</name>
+        <label>Get Email Template</label>
+        <locationX>50</locationX>
+        <locationY>998</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>SendEmail</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>FSCWlthCaseClosureEmailTemplate</stringValue>
+            </value>
+        </filters>
+        <object>EmailTemplate</object>
+        <outputAssignments>
+            <assignToReference>EmailTemplateId</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordUpdates>
+        <description>Sets the Status field to Closed if a case passes through the flow.</description>
+        <name>UpdateCase</name>
+        <label>Update Case</label>
+        <locationX>182</locationX>
+        <locationY>782</locationY>
+        <connector>
+            <targetReference>IsAccountEmailAvailable</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>CaseId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Closed</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <start>
+        <locationX>2993</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>MakeAsyncApexCustomerCallout</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Stores the email associated with the Account.</description>
+        <name>AccountEmail</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the Case ID.</description>
+        <name>CaseId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the value of customer profile update asynchronous callout.</description>
+        <name>CustomerAsyncCalloutFailed</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the name of the customer request integration definition.</description>
+        <name>CustomerIntegrationDefinition</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the email template ID.</description>
+        <name>EmailTemplateId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the status of financial account update failure response</description>
+        <name>FinancialAccountAsyncCalloutFailed</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the name of the financial account request integration definition.</description>
+        <name>FinancialAccountIntegrationDefinition</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the person contact ID related to Account</description>
+        <name>PersonContactId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the customer response received from platform event.</description>
+        <name>PlatformCustomerEventResponse</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>AsyncRequestResponseEvent</objectType>
+    </variables>
+    <variables>
+        <description>Stores the financial account response received from platform event.</description>
+        <name>PlatformFinancialAccountEventResponse</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>AsyncRequestResponseEvent</objectType>
+    </variables>
+    <variables>
+        <description>Stores the ID of the service catalog request record passed into the flow.</description>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the status of Update Profile request</description>
+        <name>Status</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue>Success</stringValue>
+        </value>
+    </variables>
+    <waits>
+        <description>Pauses the flow until it receives an asynchronous request response event with a request GUID that matches the interview GUID for the currently running flow. Stores the event payload in the PlatformCustomerEventResponse record variable.</description>
+        <name>WaitForCustomerPlatformEvent</name>
+        <label>Wait for Customer Platform Event</label>
+        <locationX>3119</locationX>
+        <locationY>242</locationY>
+        <defaultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>SetCustomerOutputVariable</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Other (Default Path)</defaultConnectorLabel>
+        <waitEvents>
+            <name>CustomerEventReceived</name>
+            <conditionLogic>and</conditionLogic>
+            <connector>
+                <targetReference>MakeAsyncApexFinancialAccountCallout</targetReference>
+            </connector>
+            <eventType>AsyncRequestResponseEvent</eventType>
+            <inputParameters>
+                <name>RequestGuid</name>
+                <value>
+                    <elementReference>$Flow.InterviewGuid</elementReference>
+                </value>
+            </inputParameters>
+            <label>Customer Event Received</label>
+            <outputParameters>
+                <assignToReference>PlatformCustomerEventResponse</assignToReference>
+                <name>AsyncRequestResponseEvent</name>
+            </outputParameters>
+        </waitEvents>
+    </waits>
+    <waits>
+        <description>Pauses the flow until it receives an asynchronous request response event with a request GUID that matches the interview GUID for the currently running flow. Stores the event payload in the PlatformFinancialAccountEventResponse record variable.</description>
+        <name>WaitForFinancialAccountPlatformEvent</name>
+        <label>Wait for Financial Account Platform Event</label>
+        <locationX>2492</locationX>
+        <locationY>458</locationY>
+        <defaultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>SetFinancialAccountOutputVariable</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Other (Default Path)</defaultConnectorLabel>
+        <waitEvents>
+            <name>FinancialAccountEventReceived</name>
+            <conditionLogic>and</conditionLogic>
+            <connector>
+                <targetReference>AreBothCustomerandFinclAccountTypesSelected</targetReference>
+            </connector>
+            <eventType>AsyncRequestResponseEvent</eventType>
+            <inputParameters>
+                <name>RequestGuid</name>
+                <value>
+                    <elementReference>$Flow.InterviewGuid</elementReference>
+                </value>
+            </inputParameters>
+            <label>Financial Account Event Received</label>
+            <outputParameters>
+                <assignToReference>PlatformFinancialAccountEventResponse</assignToReference>
+                <name>AsyncRequestResponseEvent</name>
+            </outputParameters>
+        </waitEvents>
+    </waits>
+</Flow>

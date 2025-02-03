@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- PersonalInfo_EPIM --></label>
+        <name>PersonalInfo_EPIM</name>
+    </fieldSets>
+    <fields>
+        <help><!-- Account Id of the current user (if any) --></help>
+        <label><!-- Account Id --></label>
+        <name>Account_Id_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Admin User --></label>
+        <name>Admin_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- DB --></label>
+        <name>EDY_ORGCUSTOM__DB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old First Name --></label>
+        <name>EDY_ORGCUSTOM__Old_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Last Name --></label>
+        <name>EDY_ORGCUSTOM__Old_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Account Id of the current user (if any) --></help>
+        <label><!-- Account Id --></label>
+        <name>FINS_Account_Id_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- FINS Persona Description --></label>
+        <name>FINS_Persona_Description__c</name>
+        <picklistValues>
+            <masterLabel>B2B User</masterLabel>
+            <translation><!-- B2B User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2C User</masterLabel>
+            <translation><!-- B2C User --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Q-Branch Demo Reference --></label>
+        <name>FINS_Q_Branch_Demo_Reference__c</name>
+    </fields>
+    <fields>
+        <help><!-- A Field Service Starter Kit package field: 
+When an admin creates or updates user records, the SFS Resource Type field on the user object allows the admin to assign permission sets to the user and determine whether a Service Resource record should be created and associated to the user as well. --></help>
+        <label><!-- SFS Resource Type --></label>
+        <name>FSSK__FSK_FSL_Resource_Type__c</name>
+        <picklistValues>
+            <masterLabel>Contractor Dispatcher (Community Dispatcher)</masterLabel>
+            <translation><!-- Contractor Dispatcher (Community Dispatcher) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dispatcher</masterLabel>
+            <translation><!-- Dispatcher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resource &amp; Dispatcher (With Mobile)</masterLabel>
+            <translation><!-- Resource &amp; Dispatcher (With Mobile) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resource &amp; Dispatcher (Without Mobile)</masterLabel>
+            <translation><!-- Resource &amp; Dispatcher (Without Mobile) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resource (With Mobile)</masterLabel>
+            <translation><!-- Resource (With Mobile) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resource (Without Mobile)</masterLabel>
+            <translation><!-- Resource (Without Mobile) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Used to identify users created to demonstrate Field Service Lighting. --></help>
+        <label><!-- Field Service User --></label>
+        <name>Field_Service_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referrer Score --></label>
+        <name>FinServ__ReferrerScore__c</name>
+    </fields>
+    <fields>
+        <label><!-- HasAlerts --></label>
+        <name>HasAlerts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Key User --></label>
+        <name>Key_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Omni Supervisor --></label>
+        <name>Omni_Supervisor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Persona Description --></label>
+        <name>Persona_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Role --></label>
+        <name>Primary_Role__c</name>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service</masterLabel>
+            <translation><!-- Service --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Customize default tab in Product Lookup page. --></help>
+        <label><!-- Default Product Lookup Tab --></label>
+        <name>SBQQ__DefaultProductLookupTab__c</name>
+        <picklistValues>
+            <masterLabel>Guided Selling</masterLabel>
+            <translation><!-- Guided Selling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Search Filters</masterLabel>
+            <translation><!-- Search Filters --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Use to enable CPQ Diagnostic Tool, only available if org setting is enabled. Contact support to enable this capability. --></help>
+        <label><!-- Enable Diagnostic Tool --></label>
+        <name>SBQQ__DiagnosticToolEnabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to allow this user to change output format of quote documents. --></help>
+        <label><!-- Allow Output Format Change --></label>
+        <name>SBQQ__OutputFormatChangeAllowed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select &quot;Followed&quot; to display products you follow in Chatter before others when adding to quote. --></help>
+        <label><!-- Product Sort Preference --></label>
+        <name>SBQQ__ProductSortPreference__c</name>
+        <picklistValues>
+            <masterLabel>Followed</masterLabel>
+            <translation><!-- Followed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Check to clear search filters and results every time you add products to your quotes. Otherwise, your previous selections are kept. --></help>
+        <label><!-- Reset Product Lookup --></label>
+        <name>SBQQ__ResetProductLookup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Theme --></label>
+        <name>SBQQ__Theme__c</name>
+    </fields>
+    <fields>
+        <label><!-- Experience Reputation Points --></label>
+        <name>SDO_Experience_ReputationPoints__c</name>
+    </fields>
+    <fields>
+        <label><!-- analyticsdemo_batch_id__c --></label>
+        <name>analyticsdemo_batch_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Marketing Cloud Page --></label>
+        <name>et4ae5__Default_ET_Page__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default MID --></label>
+        <name>et4ae5__Default_MID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Cloud for AppExchange Admin --></label>
+        <name>et4ae5__ExactTargetForAppExchangeAdmin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Cloud for AppExchange User --></label>
+        <name>et4ae5__ExactTargetForAppExchangeUser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Cloud Username --></label>
+        <name>et4ae5__ExactTargetUsername__c</name>
+    </fields>
+    <fields>
+        <label><!-- @deprecated --></label>
+        <name>et4ae5__ExactTarget_OAuth_Token__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valid Marketing Cloud Admin --></label>
+        <name>et4ae5__ValidExactTargetAdmin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valid Marketing Cloud User --></label>
+        <name>et4ae5__ValidExactTargetUser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is PMT User consider for Availability --></label>
+        <name>inov8__Is_PMT_User_consider_for_Availability__c</name>
+    </fields>
+    <fields>
+        <label><!-- PMT Manager Name --></label>
+        <name>inov8__PMT_Manager_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allow Maps Exports --></label>
+        <name>maps__AllowMapsExports__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Beta Tester --></label>
+        <name>maps__BetaTester__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Default Latitude --></label>
+        <name>maps__DefaultLatitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Default Longitude --></label>
+        <name>maps__DefaultLongitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Proximity Radius --></label>
+        <name>maps__DefaultProximityRadius__c</name>
+    </fields>
+    <fields>
+        <label><!-- DefaultType --></label>
+        <name>maps__DefaultType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Default Zoom Level --></label>
+        <name>maps__DefaultZoomLevel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Id --></label>
+        <name>maps__DeviceId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Vendor --></label>
+        <name>maps__DeviceVendor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Edit Maps Org Wide Queries --></label>
+        <name>maps__EditMapsOrgWideQueries__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finished Maps Advanced Route Setup --></label>
+        <name>maps__FinishedAdvRouteSetup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Map Settings --></label>
+        <name>maps__MapsSetting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Max Export Size --></label>
+        <name>maps__MaxExportSize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Max Query Size --></label>
+        <name>maps__MaxQuerySize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Type of Measurement --></label>
+        <name>maps__PreferredTypeOfMeasurement__c</name>
+        <picklistValues>
+            <masterLabel>Feet</masterLabel>
+            <translation>Jalat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Km</masterLabel>
+            <translation>Km</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meters</masterLabel>
+            <translation>Metrit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miles</masterLabel>
+            <translation>Mailit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yards</masterLabel>
+            <translation>Jaardit</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Receive Batch Exception Emails --></label>
+        <name>maps__ReceiveBatchExceptionEmails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Planning Approver --></label>
+        <name>maps__TPApprover__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Planning Publisher --></label>
+        <name>maps__TPPublisher__c</name>
+    </fields>
+    <fields>
+        <label><!-- TestUserLookup --></label>
+        <name>maps__TestUserLookup__c</name>
+        <relationshipLabel><!-- Users --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Maps Version --></label>
+        <name>maps__Version__c</name>
+        <picklistValues>
+            <masterLabel>Beta</masterLabel>
+            <translation>Beta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current</masterLabel>
+            <translation>Nykyinen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Previous</masterLabel>
+            <translation>Edellinen</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Office Location --></label>
+        <name>physicalDeliveryOfficeName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Can View Not Assigned Prospects --></label>
+        <name>pi__Can_View_Not_Assigned_Prospects__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Engagement Api Key --></label>
+        <name>pi__Pardot_Api_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Engagement Api Version --></label>
+        <name>pi__Pardot_Api_Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Engagement User Id --></label>
+        <name>pi__Pardot_User_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Engagement User Key --></label>
+        <name>pi__Pardot_User_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Engagement User Role --></label>
+        <name>pi__Pardot_User_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q Brix Admin User --></label>
+        <name>xDO_Is_Q_Brix_Admin__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- FSSK Package: SFS Resource Type should only be used when the Field Service users automation feature in the Field Service Starter Kit Package is activated --></errorMessage>
+        <name>FSSK__FSK_User_Creation_Feature_Inactive</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- FSSK Package: This SFS Resource Type value should only be used for community user records --></errorMessage>
+        <name>FSSK__FSK_User_Type_Is_Not_Community</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- FSSK Package: This SFS Resource Type value should only be used for users with a Salesforce user license --></errorMessage>
+        <name>FSSK__FSK_User_Type_Is_Not_Standard</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Select_Theme --></label>
+        <name>SBQQ__Select_Theme</name>
+    </webLinks>
+</CustomObjectTranslation>

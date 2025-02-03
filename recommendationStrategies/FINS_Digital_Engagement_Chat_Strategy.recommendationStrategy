@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecommendationStrategy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contextRecordType>LiveChatTranscript</contextRecordType>
+    <description>Used on Chat Transcript in Digital Engagement app</description>
+    <label>Digital Engagement - Chat Strategy</label>
+    <recommendationLoad>
+        <label>loadHomeLoanOffer</label>
+        <name>loadHomeLoanOffer</name>
+        <condition>
+            <field>Name</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>Home Improvement Loan Offer</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <recommendationLoad>
+        <label>loadAutomaticBillPay</label>
+        <name>loadAutomaticBillPay</name>
+        <condition>
+            <field>Name</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>Sign Up for Automatic Bill Pay</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <union>
+        <childNode>loadHomeLoanOffer</childNode>
+        <childNode>loadAutomaticBillPay</childNode>
+        <label>Output</label>
+        <name>Output_dbaf3ba6bda74088a9f232b251869422</name>
+    </union>
+</RecommendationStrategy>

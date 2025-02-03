@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Lead</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Mortgage Lead Path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>FINS_Lending_Loan_Product_Type__c</fieldNames>
+        <fieldNames>FINS_Lending_Loan_Type__c</fieldNames>
+        <fieldNames>Type_of_Loan__c</fieldNames>
+        <info>&lt;p&gt;&lt;strong style=&quot;font-size: 13px;&quot;&gt;Learn about and contact your new lead quickly.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Use Salesforce leads to record and follow up on customers&amp;#39; potential interest in our bank&amp;#39;s products and services.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Respond to your lead within five minutes to increase your chances of being able to successfully meet the customer&amp;#39;s need.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Look at the customer profile to prepare yourself before contacting them.&lt;/li&gt;&lt;li&gt;Understand what we already know about their goals, life stage, financial situation.&lt;/li&gt;&lt;li&gt;Check their recent activity to see if they have been engaging with us.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>FINS_Lending_Mortgage</recordTypeName>
+</PathAssistant>

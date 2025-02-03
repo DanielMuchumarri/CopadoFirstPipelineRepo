@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <decisions>
+        <description>Check to confirm that a configuration for this demo was located.</description>
+        <name>Configuration_Found</name>
+        <label>Configuration Found</label>
+        <locationX>182</locationX>
+        <locationY>278</locationY>
+        <defaultConnector>
+            <targetReference>Error_Handling_Screen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_SCV_ID.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Launch_Prototype_Screen</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>Flow launches Service Cloud Voice demo that leverages mocked up screens via prototype builder</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>varDomainURL</name>
+        <dataType>String</dataType>
+        <expression>SUBSTITUTE(
+LEFT( {!$Api.Partner_Server_URL_530}, FIND(&quot;.my.salesforce.com/&quot;, {!$Api.Partner_Server_URL_530}) -1 )
+, &apos;https://&apos;, &apos;&apos;)</expression>
+    </formulas>
+    <formulas>
+        <description>Formatted URL to launch the prototype builder app for the Rocket Mortgage demo</description>
+        <name>varPrototypeURL</name>
+        <dataType>String</dataType>
+        <expression>&quot;c/ConfiguredHotspotsApp.app?pscId=&quot;+ TRIM(LEFT({!Get_SCV_ID.Id},15))</expression>
+    </formulas>
+    <interviewLabel>Retail Banking Service Cloud Voice (SCV) Demo {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Retail Banking Service Cloud Voice (SCV) Demo</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <description>Retrieve the ID of the prototype configuration record used for the Service Cloud Voice demo within Retail Banking</description>
+        <name>Get_SCV_ID</name>
+        <label>Get SCV ID</label>
+        <locationX>182</locationX>
+        <locationY>158</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Configuration_Found</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>External_ID__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>FINS_Retail_SCV_Demo</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>PrototypeConfiguration__c</object>
+        <sortField>Id</sortField>
+        <sortOrder>Asc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <screens>
+        <name>Error_Handling_Screen</name>
+        <label>Error Handling Screen</label>
+        <locationX>314</locationX>
+        <locationY>398</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>ErrorHandlingText</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;font-size: 18px;&quot;&gt;Error Handling&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;em style=&quot;font-size: 14px;&quot;&gt;We did not locate a Prototype Configuration record with the External ID field set to &quot;&lt;/em&gt;&lt;span style=&quot;font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;FINS_Retail_SCV_Demo&lt;/span&gt;&lt;em style=&quot;font-size: 14px;&quot;&gt;&quot;. This record must be created before this flow will render the demo for Service Cloud Voice.&lt;/em&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Launch_Prototype_Screen</name>
+        <label>Launch Prototype Screen</label>
+        <locationX>50</locationX>
+        <locationY>398</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>LaunchRocketMortgageDemo</name>
+            <fieldText>&lt;p&gt;&lt;a href=&quot;/{!varPrototypeURL}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;font-size: 18px;&quot;&gt;&lt;strong&gt;Launch Service Cloud Voice Demo&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_SCV_ID</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+</Flow>

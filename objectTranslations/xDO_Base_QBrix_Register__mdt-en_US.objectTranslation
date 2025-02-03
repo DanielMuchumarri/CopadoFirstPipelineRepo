@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Installed QBrix</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Installed QBrixes</value>
+    </caseValues>
+    <fields>
+        <label><!-- Content Type --></label>
+        <name>xDO_Content_Type__c</name>
+        <picklistValues>
+            <masterLabel>Metadata and Record Data</masterLabel>
+            <translation><!-- Metadata and Record Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Metadata only</masterLabel>
+            <translation><!-- Metadata only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Record Data only</masterLabel>
+            <translation><!-- Record Data only --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>xDO_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Documentation Link --></label>
+        <name>xDO_Documentation_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Publisher --></label>
+        <name>xDO_Publisher__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repository URL --></label>
+        <name>xDO_Repository_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>xDO_Type__c</name>
+        <picklistValues>
+            <masterLabel>Base xDO Component</masterLabel>
+            <translation><!-- Base xDO Component --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Pack</masterLabel>
+            <translation><!-- Data Pack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Demo Component</masterLabel>
+            <translation><!-- Demo Component --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>End to End Demo</masterLabel>
+            <translation><!-- End to End Demo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Industry Solution</masterLabel>
+            <translation><!-- Industry Solution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Localization Pack</masterLabel>
+            <translation><!-- Localization Pack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Play</masterLabel>
+            <translation><!-- Sales Play --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Version --></label>
+        <name>xDO_Version__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

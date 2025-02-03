@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <description>FINS Service Enablement Measure Progress for fist milestone - Referrals. Marks 1 towards milestone for each referral created from the Lead object</description>
+    <environments>Default</environments>
+    <interviewLabel>FINS Service - Enablement - Case Milestone Progress {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FINS Service - Enablement - Referral Milestone Progress</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Referral_Milestone_Progress_Record</name>
+        <label>Create Referral Milestone Progress Record</label>
+        <locationX>176</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Milestone_and_Exercise__c</field>
+            <value>
+                <elementReference>varMilestoneAndExerciseID_referral</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Progress_Value__c</field>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </inputAssignments>
+        <object>CGC_Milestone_Progress_V2__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <description>Get Milestone ID for the Referral Milestone</description>
+        <name>Get_Milestone_ID_for_Referral</name>
+        <label>Get Milestone ID for Referral</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Create_Referral_Milestone_Progress_Record</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>External_ID__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>FINS_CGC_Milestone_and_Exercise.011</stringValue>
+            </value>
+        </filters>
+        <object>CGC_Milestone_and_Exercise__c</object>
+        <outputAssignments>
+            <assignToReference>varMilestoneAndExerciseID_referral</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Milestone_ID_for_Referral</targetReference>
+        </connector>
+        <filterFormula>{!$Record.FinServ__ReferredByUser__r.External_ID__c} = &quot;User.001&quot; || {!$Record.FinServ__ReferredByUser__r.External_ID__c} = &quot;FSC_User.002&quot;</filterFormula>
+        <object>Lead</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>currentItemFromSourceCollection</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>CGC_Milestone_and_Exercise__c</objectType>
+    </variables>
+    <variables>
+        <name>varMilestoneAndExerciseID_referral</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Get IDV Link via Email</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>&lt;a href=%URL%&gt; You can also start the verification by clicking the link instead&lt;/a&gt;</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>FSC_ONB_v1_GetIDVLinkviaEmail</developerName>
+    <name>Get IDV Link via Email</name>
+    <questionCategory>Financial</questionCategory>
+</AssessmentQuestion>

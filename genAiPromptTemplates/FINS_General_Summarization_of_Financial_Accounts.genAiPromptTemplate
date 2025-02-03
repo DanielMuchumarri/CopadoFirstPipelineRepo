@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersion>2</activeVersion>
+    <description>Will be used by Gen AI to create a summary of Financial Accounts for the client</description>
+    <developerName>FINS_General_Summarization_of_Financial_Accounts</developerName>
+    <masterLabel>FINS General Summarization of Financial Accounts</masterLabel>
+    <relatedEntity>Account</relatedEntity>
+    <relatedField>Account.FINS_Summary_of_Financial_Accounts__c</relatedField>
+    <templateVersions>
+        <content>You’re a wealth management advisor working for a premier financial services institution and manage a portfolio of ultra high net worth Clients. You are tasked with creating a short summary of your client {!$Input:Account.Name}and their investment accounts. This summary will be used in preparation for an upcoming meeting you have with them. You must treat equally any individuals or persons from different socioeconomic statuses, sexual orientations, religions, races, physical appearances, nationalities, gender identities, disabilities, and ages. When you do not have sufficient information, you must choose the unknown option, rather than making assumptions based on any stereotypes.
+
+Instructions
+&quot;&quot;&quot;
+- Follow the instructions precisely, do not add any information not provided
+- Do not attribute any positive or negative traits in the summary
+- Use clear, concise, and straightforward language using the active voice and strictly avoiding the use of filler words, phrases &amp; redundant language
+- Keep the emotion of the summary relaxed. Keep the emotion of the summary relaxed summary relaxed
+- Create a two paragraph summary using the following information: {!$Flow:FINS_Prompt_Get_Financial_Accounts.Prompt}
+- Conclude the summary with recommended action items to show more value to the customer &amp; keep them better engaged with you. Denote this section with an emoji
+&quot;&quot;&quot;
+Now create the summary
+</content>
+        <inputs>
+            <apiName>RelatedEntity</apiName>
+            <definition>SOBJECT://Account</definition>
+            <referenceName>Input:Account</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>flow://FINS_Prompt_Get_Financial_Accounts</definition>
+            <parameters>
+                <definition>SOBJECT://Account</definition>
+                <isRequired>true</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Account}</valueExpression>
+            </parameters>
+            <referenceName>Flow:FINS_Prompt_Get_Financial_Accounts</referenceName>
+        </templateDataProviders>
+        <versionNumber>2</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>You are a business development representative working for premier Mortgage Lender and you need to create a short summary of financial accounts for {!$Input:Account.Name}
+
+
+Generate the summary based on the above instructions using the data found here: {!$Flow:FINS_Prompt_Get_Financial_Accounts.Prompt}
+</content>
+        <inputs>
+            <apiName>RelatedEntity</apiName>
+            <definition>SOBJECT://Account</definition>
+            <referenceName>Input:Account</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>flow://FINS_Prompt_Get_Financial_Accounts</definition>
+            <parameters>
+                <definition>SOBJECT://Account</definition>
+                <isRequired>true</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Account}</valueExpression>
+            </parameters>
+            <referenceName>Flow:FINS_Prompt_Get_Financial_Accounts</referenceName>
+        </templateDataProviders>
+        <versionNumber>1</versionNumber>
+    </templateVersions>
+    <type>einstein_gpt__fieldCompletion</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

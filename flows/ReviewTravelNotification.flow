@@ -1,0 +1,1252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Send case creation email to the user.</description>
+        <name>SendEmailWhenCaseIsCreated</name>
+        <label>Send Email When Case is Created</label>
+        <locationX>50</locationX>
+        <locationY>1142</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>AccountEmail</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Your service request to Notify Travel Plans was created</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>EmailBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <assignments>
+        <description>Sets the values of the fields required to send an email.</description>
+        <name>AssignEmailPrerequisites</name>
+        <label>Assign Email Prerequisites</label>
+        <locationX>1854</locationX>
+        <locationY>758</locationY>
+        <assignmentItems>
+            <assignToReference>AccountEmail</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.SvcCatalogRequest.Case.Account.PersonEmail</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CaseNumber</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.SvcCatalogRequest.Case.CaseNumber</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>AccountName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>AccountNameFormula</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PersonContactId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.SvcCatalogRequest.Case.Account.PersonContact.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>IterateThroughServiceCatalogRequests</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Alternate Phone Country Code from the current service catalog request extended attribute value record in the loop to the AlternatePhoneCountryCode Text variable.</description>
+        <name>SetAlternatePhoneCountryCode</name>
+        <label>Set Attribute Value</label>
+        <locationX>1062</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>AlternatePhoneCountryCode</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Alternate Phone Number from the current service catalog request extended attribute value record in the loop to the SetAlternatePhoneNumber Text variable..</description>
+        <name>SetAlternatePhoneNumber</name>
+        <label>Set Attribute Value</label>
+        <locationX>2382</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>AlternatePhoneNumber</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Phone from the current service catalog request extended attribute value record in the loop to the Phone Text variable.</description>
+        <name>SetCardExpiryDates</name>
+        <label>Set Attribute Value</label>
+        <locationX>2118</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>CardExpiryDates</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Card Names from the current service catalog request extended attribute value record in the loop to the CardNames String Collection variable.</description>
+        <name>SetCardNames</name>
+        <label>Set Attribute Value</label>
+        <locationX>2910</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>CardNames</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Card Number from the current service catalog request extended attribute value record in the loop to the CardNumbers String Collection variable, and masks the card number so that only the last four digits are visible.</description>
+        <name>SetCardNumbers</name>
+        <label>Set Attribute Value</label>
+        <locationX>1854</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>CardNumbers</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>MaskedCardNumbers</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>MaskedCardNumbersFormula</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Date Of Departure from the current service catalog request extended attribute value record in the loop to the DateOfDeparture Text variable.</description>
+        <name>SetDateOfDeparture</name>
+        <label>Set Attribute Value</label>
+        <locationX>2646</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>DateOfDeparture</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Date Of Return from the current service catalog request extended attribute value record in the loop to the DateOfReturn Text variable</description>
+        <name>SetDateOfReturn</name>
+        <label>Set Attribute Value</label>
+        <locationX>1326</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>DateOfReturn</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Domestic Destinations from the current service catalog request extended attribute value record in the loop to the DomesticDestination Text variable.</description>
+        <name>SetDomesticDestinations</name>
+        <label>Set Attribute Value</label>
+        <locationX>3174</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>DomesticDestination</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Email from the current service catalog request extended attribute value record in the loop to the Email Text variable.</description>
+        <name>SetEmail</name>
+        <label>Set Attribute Value</label>
+        <locationX>798</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>Email</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns International Destinations from the current service catalog request extended attribute value record in the loop to the InternationalDestination Text variable.</description>
+        <name>SetInternationalDestinations</name>
+        <label>Set Attribute Value</label>
+        <locationX>3438</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>InternationalDestination</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Mobile from the current service catalog request extended attribute value record in the loop to the Mobile Text variable.</description>
+        <name>SetMobile</name>
+        <label>Set Attribute Value</label>
+        <locationX>534</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>Mobile</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Phone from the current service catalog request extended attribute value record in the loop to the Phone Text variable.</description>
+        <name>SetPhone</name>
+        <label>Set Attribute Value</label>
+        <locationX>270</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>Phone</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Role from the current service catalog request extended attribute value record in the loop to the Roles String Collection variable.</description>
+        <name>SetRoles</name>
+        <label>Set Attribute Value</label>
+        <locationX>1590</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>Roles</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <constants>
+        <description>Stores blank value</description>
+        <name>BlankValue</name>
+        <dataType>String</dataType>
+    </constants>
+    <constants>
+        <description>Stores the address of the header image used in the email template.</description>
+        <name>HeaderImageURL</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>https://244fscorg.file.force.com/servlet/servlet.ImageServer?id=015B0000001Hsbn&amp;oid=00DB000000Fzrvi&amp;lastMod=1689143201000</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <description>Determines if the prerequisites to send an email are available or not.</description>
+        <name>HavePrerequisitesToSendAnEmail</name>
+        <label>Have Prerequisites To Send An Email?</label>
+        <locationX>1986</locationX>
+        <locationY>650</locationY>
+        <defaultConnector>
+            <targetReference>IterateThroughServiceCatalogRequests</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Email Prerequisites Available</defaultConnectorLabel>
+        <rules>
+            <name>EmailPrerequisitesNotAvailable</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AccountEmail</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>CaseNumber</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>AccountName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>PersonContactId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>AssignEmailPrerequisites</targetReference>
+            </connector>
+            <label>Email Prerequisites Not Available</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determines whether the email associated with the Account is available or not.</description>
+        <name>IsAccountEmailAvailable</name>
+        <label>Is Account Email Available?</label>
+        <locationX>182</locationX>
+        <locationY>1034</locationY>
+        <defaultConnectorLabel>Other(Default)</defaultConnectorLabel>
+        <rules>
+            <name>AccountEmailAvailable</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AccountEmail</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>BlankValue</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>AccountEmail</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>AccountEmail</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SendEmailWhenCaseIsCreated</targetReference>
+            </connector>
+            <label>Account Email Available</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determines which attribute is stored in the current service catalog request extended attribute value record in the loop</description>
+        <name>SetWhichAttribute</name>
+        <label>Set Which Attribute?</label>
+        <locationX>1986</locationX>
+        <locationY>350</locationY>
+        <defaultConnector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Other (Default)</defaultConnectorLabel>
+        <rules>
+            <name>isPhone</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>PhoneAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>BlankValue</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetPhone</targetReference>
+            </connector>
+            <label>Phone</label>
+        </rules>
+        <rules>
+            <name>isMobile</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>MobileAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>BlankValue</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetMobile</targetReference>
+            </connector>
+            <label>Mobile</label>
+        </rules>
+        <rules>
+            <name>isEmail</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>EmailAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>BlankValue</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetEmail</targetReference>
+            </connector>
+            <label>Email</label>
+        </rules>
+        <rules>
+            <name>isAlternatePhoneCountryCode</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>AlternatePhoneCountryCodeAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>BlankValue</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetAlternatePhoneCountryCode</targetReference>
+            </connector>
+            <label>Alternate Phone Country Code</label>
+        </rules>
+        <rules>
+            <name>isDateOfReturn</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>DateOfReturnAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetDateOfReturn</targetReference>
+            </connector>
+            <label>Date of Return</label>
+        </rules>
+        <rules>
+            <name>isRole</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>RoleAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetRoles</targetReference>
+            </connector>
+            <label>Role</label>
+        </rules>
+        <rules>
+            <name>isCardNumber</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>CardNumberAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetCardNumbers</targetReference>
+            </connector>
+            <label>Card Number</label>
+        </rules>
+        <rules>
+            <name>isCardExpiryDate</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>CardExpiryDateAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetCardExpiryDates</targetReference>
+            </connector>
+            <label>Card Expiry Date</label>
+        </rules>
+        <rules>
+            <name>isAlternatePhoneNumber</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>AlternatePhoneNumberAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>BlankValue</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetAlternatePhoneNumber</targetReference>
+            </connector>
+            <label>Alternate Phone Number</label>
+        </rules>
+        <rules>
+            <name>isDateOfDeparture</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>DateOfDepartureAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetDateOfDeparture</targetReference>
+            </connector>
+            <label>Date of Departure</label>
+        </rules>
+        <rules>
+            <name>isCardName</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>CardNameAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetCardNames</targetReference>
+            </connector>
+            <label>Card Name</label>
+        </rules>
+        <rules>
+            <name>isDomesticDestination</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>DomesticDestinationAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>BlankValue</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetDomesticDestinations</targetReference>
+            </connector>
+            <label>Domestic Destination</label>
+        </rules>
+        <rules>
+            <name>isInternationalDestination</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>InternationalDestinationAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>BlankValue</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetInternationalDestinations</targetReference>
+            </connector>
+            <label>International Destination</label>
+        </rules>
+    </decisions>
+    <description>Allows an agent to review the details of a customer&apos;s travel notification request.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Creates the account name by concatenating first name and last name.</description>
+        <name>AccountNameFormula</name>
+        <dataType>String</dataType>
+        <expression>{!IterateThroughServiceCatalogRequests.SvcCatalogRequest.Case.Account.FirstName}&amp;IF(NOT(ISBLANK({!IterateThroughServiceCatalogRequests.SvcCatalogRequest.Case.Account.FirstName})),&quot; &quot;,&quot;&quot;)&amp;{!IterateThroughServiceCatalogRequests.SvcCatalogRequest.Case.Account.LastName}</expression>
+    </formulas>
+    <formulas>
+        <description>Adds a row for the alternate phone number in the email template.</description>
+        <name>AddAlternatePhoneRow</name>
+        <dataType>String</dataType>
+        <expression>IF({!AlternatePhoneNumberFormula}&lt;&gt;&apos;N/A&apos; , &apos;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;Alternate Phone: &apos;+&apos;&lt;strong style=&quot;padding: 0;margin: 0;font-family:Segoe UI, Helvetica, Arial, sans-serif;&quot;&gt;&apos;+ {!AlternatePhoneNumberFormula} +&apos;&lt;/strong&gt;&lt;br&gt;&apos;,&apos; &apos;)</expression>
+    </formulas>
+    <formulas>
+        <description>Adds a row for the email in the email template.</description>
+        <name>AddEmailRow</name>
+        <dataType>String</dataType>
+        <expression>IF({!Email}&lt;&gt;&apos;N/A&apos; , &apos;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;Email: &apos;+&apos;&lt;strong style=&quot;padding: 0;margin: 0;font-family:Segoe UI, Helvetica, Arial, sans-serif;&quot;&gt;&lt;a&gt;&apos;+ {!Email} +&apos;&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;&apos;,&apos; &apos;)</expression>
+    </formulas>
+    <formulas>
+        <description>Adds a row for the mobile in the email template</description>
+        <name>AddMobileRow</name>
+        <dataType>String</dataType>
+        <expression>IF({!Mobile}&lt;&gt;&apos;N/A&apos; , &apos;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;Mobile: &apos;+&apos;&lt;strong style=&quot;padding: 0;margin: 0;font-family:Segoe UI, Helvetica, Arial, sans-serif;&quot;&gt;&apos;+ {!Mobile} +&apos;&lt;/strong&gt;&lt;br&gt;&apos;,&apos; &apos;)</expression>
+    </formulas>
+    <formulas>
+        <description>Adds a row for the phone in the email template.</description>
+        <name>AddPhoneRow</name>
+        <dataType>String</dataType>
+        <expression>IF({!Phone}&lt;&gt;&apos;N/A&apos; , &apos;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;Phone: &apos;+&apos;&lt;strong style=&quot;padding: 0;margin: 0;font-family:Segoe UI, Helvetica, Arial, sans-serif;&quot;&gt;&apos;+ {!Phone} +&apos;&lt;/strong&gt;&lt;br&gt;&apos;,&apos; &apos;)</expression>
+    </formulas>
+    <formulas>
+        <description>Creates an alternate phone number by concatenating country code and phone number.</description>
+        <name>AlternatePhoneNumberFormula</name>
+        <dataType>String</dataType>
+        <expression>IF(({!AlternatePhoneCountryCode}&lt;&gt;&apos;N/A&apos; &amp;&amp; {!AlternatePhoneNumber}&lt;&gt;&apos;N/A&apos;), {!AlternatePhoneCountryCode}+&apos;-&apos;+{!AlternatePhoneNumber},&apos;N/A&apos;)</expression>
+    </formulas>
+    <formulas>
+        <description>Removes square braces from text collection CardNumbers variable</description>
+        <name>CardNumbersFormula</name>
+        <dataType>String</dataType>
+        <expression>SUBSTITUTE(SUBSTITUTE(SUBSTITUTE({!MaskedCardNumbers},&apos;[&apos;,&apos;&apos;),&apos;]&apos;,&apos;&apos;),&apos;,&apos;,&apos;, &apos;)</expression>
+    </formulas>
+    <formulas>
+        <description>Masks the card numbers and show only the last four digits.</description>
+        <name>MaskedCardNumbersFormula</name>
+        <dataType>String</dataType>
+        <expression>&apos;XXXX - &apos;&amp;RIGHT({!IterateThroughServiceCatalogRequests.TextValue}, 4)</expression>
+    </formulas>
+    <interviewLabel>ReviewTravelNotification {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Review Travel Notification</label>
+    <loops>
+        <description>Iterates through Service Catalog Request Extended Attribute Values from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>IterateThroughServiceCatalogRequests</name>
+        <label>Iterate Through Service Catalog Requests</label>
+        <locationX>182</locationX>
+        <locationY>242</locationY>
+        <collectionReference>GetServiceCatalogRequestExtendedAttributes</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>SetWhichAttribute</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>IsAccountEmailAvailable</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Gets the service catalog request extended attribute value records with a record Id matching the SvcCatalogRequestId that was passed into the flow. Stores the results in the Service Catalog Request Extended Attribute Value collection variable.</description>
+        <name>GetServiceCatalogRequestExtendedAttributes</name>
+        <label>Get Service Catalog Request Extended Attributes</label>
+        <locationX>182</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>IterateThroughServiceCatalogRequests</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SvcCatalogRequestId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>InputRecordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>SvcCatalogReqExtdAttrVal</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>GetServiceCatalogRequestExtendedAttributes</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <description>Stores the body of the email that’s sent when a case is created.</description>
+        <name>EmailBody</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;div class=&quot;base&quot; style=&quot;padding: 56px;margin: 0px;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;background-color: #F4F5F4;&quot;&gt;
+    &lt;div class=&quot;container&quot; style=&quot;padding: 0;margin: 8px auto;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;background-color: #FFFFFF;border-radius: 5px;width: 660px;font-size: 16px;&quot;&gt;
+        &lt;a&gt;&lt;img src=&apos;{!HeaderImageURL}&apos; width=&quot;660&quot; height=&quot;206&quot; alt=&quot;&quot; style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;&lt;/a&gt;
+        &lt;div class=&quot;content&quot; style=&quot;padding: 32px;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;line-height: 1.5;&quot;&gt;
+            &lt;p class=&quot;first-text-block&quot; style=&quot;padding: 0;margin: 16px 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;margin-bottom: 40px;&quot;&gt;
+                Hello &lt;strong style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!AccountName}&lt;/strong&gt;,&lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;
+                Your service request to travel plan notification was created and your case number is &lt;span style=&quot;font-weight: bold;color: #000000;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!CaseNumber}&lt;/span&gt;.
+            &lt;/p&gt;
+            &lt;p style=&quot;padding: 0;margin: 16px 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;
+                &lt;u&gt;Request Summary:&lt;/u&gt;&lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;
+                    Cards Selected: &lt;strong style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!CardNumbersFormula}&lt;/strong&gt;&lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;
+                    Departure Date: &lt;strong style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!DateOfDeparture}&lt;/strong&gt;&lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;
+                    Return Date: &lt;strong style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!DateOfReturn}&lt;/strong&gt;&lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;
+                    Domestic Destinations: &lt;strong style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!DomesticDestination}&lt;/strong&gt;&lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;
+                    International Destinations: &lt;strong style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!InternationalDestination}&lt;/strong&gt;&lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;
+                    Preferred Communication Method:&lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;
+                   {!AddEmailRow}
+                    {!AddPhoneRow}
+                    {!AddMobileRow}
+                    {!AddAlternatePhoneRow}
+            &lt;/p&gt;
+            &lt;p class=&quot;email-footer&quot; style=&quot;padding: 0;margin: 16px 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;margin-top: 40px;font-style: italic;&quot;&gt;
+                Thank you, &lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;
+                Customer Support Team
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</text>
+    </textTemplates>
+    <variables>
+        <description>Stores the value of Account Email of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>AccountEmail</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of Account Name of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>AccountName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the Alternate Phone Country Code attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>AlternatePhoneCountryCode</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Alternate Phone Country Code.</description>
+        <name>AlternatePhoneCountryCodeAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Alternate Phone Country Code</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the Alternate Phone Number attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>AlternatePhoneNumber</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Alternate Phone Number.</description>
+        <name>AlternatePhoneNumberAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Alternate Phone Number</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Card Expiry Date.</description>
+        <name>CardExpiryDateAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Card Expiry Date</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the card expiry date value from the current service catalog request extended attribute value record in the loop.</description>
+        <name>CardExpiryDates</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Card Name.</description>
+        <name>CardNameAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Card Name</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the values for card names of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>CardNames</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Card Number.</description>
+        <name>CardNumberAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Card Number</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the values for Card Numbers of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>CardNumbers</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>CaseId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of Case Number of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>CaseNumber</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the Date Of Departure attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>DateOfDeparture</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Date of Departure.</description>
+        <name>DateOfDepartureAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Date of Departure</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the Date Of Return attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>DateOfReturn</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the label ‘Date of Return’ to compare against the service catalog request extended attribute label field</description>
+        <name>DateOfReturnAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Date of Return</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the Domestic Destination attribute of the service catalog request extended attribute value record from GetServiceCatalogRequests.</description>
+        <name>DomesticDestination</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Domestic Destination.</description>
+        <name>DomesticDestinationAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Domestic Destination</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the Email attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>Email</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Email.</description>
+        <name>EmailAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Email</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the serviceCatalogRequestId passed into the flow and is available as output from the flow.</description>
+        <name>InputRecordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the International Destination attribute of the service catalog request extended attribute value record from GetServiceCatalogRequests.</description>
+        <name>InternationalDestination</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for International Destination.</description>
+        <name>InternationalDestinationAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>International Destination</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the values for Masked Card Numbers of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes</description>
+        <name>MaskedCardNumbers</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the value of the Mobile attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>Mobile</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Mobile.</description>
+        <name>MobileAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Mobile</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of Person Contact Id of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>PersonContactId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the Phone attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>Phone</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Phone.</description>
+        <name>PhoneAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Phone</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Role.</description>
+        <name>RoleAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Ownership Type</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the values for Roles of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>Roles</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

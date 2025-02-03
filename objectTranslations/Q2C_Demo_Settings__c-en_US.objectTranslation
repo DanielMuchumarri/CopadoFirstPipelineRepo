@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Q2C Demo Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Q2C Demo Settings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Approver Email --></label>
+        <name>Approver_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- BaseURL --></label>
+        <name>BaseURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company City --></label>
+        <name>Company_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Country --></label>
+        <name>Company_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Email --></label>
+        <name>Company_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Fax --></label>
+        <name>Company_Fax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Image Height --></label>
+        <name>Company_Image_Height__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Image URL --></label>
+        <name>Company_Image_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Image Width --></label>
+        <name>Company_Image_Width__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Name --></label>
+        <name>Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Phone --></label>
+        <name>Company_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Postal Code --></label>
+        <name>Company_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Primary Color --></label>
+        <name>Company_Primary_Color__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Slogan --></label>
+        <name>Company_Slogan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company State --></label>
+        <name>Company_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Street --></label>
+        <name>Company_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Note Line Product Name --></label>
+        <name>Credit_Note_Line_Product_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used to disable triggers, workflow rules and process builders that cause errors in the DataCannon --></help>
+        <label><!-- DataCannon Trigger Disabler --></label>
+        <name>DataCannon_Trigger_Disabler__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debit Note Line Product Name --></label>
+        <name>Debit_Note_Line_Product_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Approval Tier 1 --></label>
+        <name>Default_Approval_Tier_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Approval Tier 2 --></label>
+        <name>Default_Approval_Tier_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Approval Tier 3 --></label>
+        <name>Default_Approval_Tier_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include Contracted Prices in Deletion --></label>
+        <name>Delete_Contracted_Prices__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Discount (%) --></label>
+        <name>Discount_Variation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enforce Purchase Order Logic --></label>
+        <name>Enforce_PO_Logic__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- InitBill? --></label>
+        <name>InitBill__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master Quote (Record ID) --></label>
+        <name>Master_Quote__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quotes per Month --></label>
+        <name>Number_of_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approver Password --></label>
+        <name>Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Randomize Discounts --></label>
+        <name>Randomize_Discounts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Randomize Quantity --></label>
+        <name>Randomize_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Randomize Term --></label>
+        <name>Randomize_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reporting End Date --></label>
+        <name>Reporting_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reporting Start Date --></label>
+        <name>Reporting_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Version --></label>
+        <name>Version__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

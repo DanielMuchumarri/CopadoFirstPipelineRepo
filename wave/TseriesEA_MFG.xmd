@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata">
+    <dataset>TseriesEA_MFG</dataset>
+    <measures>
+        <field>ts2</field>
+        <formatDecimalDigits>2</formatDecimalDigits>
+        <isDerived>false</isDerived>
+        <label>ts2</label>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <field>ts1</field>
+        <formatDecimalDigits>2</formatDecimalDigits>
+        <isDerived>false</isDerived>
+        <label>ts1</label>
+        <sortIndex>1</sortIndex>
+    </measures>
+    <measures>
+        <field>ts4</field>
+        <formatDecimalDigits>2</formatDecimalDigits>
+        <isDerived>false</isDerived>
+        <label>ts4</label>
+        <sortIndex>2</sortIndex>
+    </measures>
+    <measures>
+        <field>ts3</field>
+        <formatDecimalDigits>2</formatDecimalDigits>
+        <isDerived>false</isDerived>
+        <label>ts3</label>
+        <sortIndex>3</sortIndex>
+    </measures>
+</WaveXmd>

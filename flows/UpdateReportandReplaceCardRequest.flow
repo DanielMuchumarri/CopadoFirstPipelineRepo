@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Apex class for credit callout to mulesoft.</description>
+        <name>ApexCreditCallout</name>
+        <label>Apex Credit Callout</label>
+        <locationX>2492</locationX>
+        <locationY>350</locationY>
+        <actionName>industriesSendApexAsyncRequest</actionName>
+        <actionType>industriesSendApexAsyncRequest</actionType>
+        <connector>
+            <targetReference>PauseForCreditPlatformEvent</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>SetCreditOutputVariable</targetReference>
+        </faultConnector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>RequestGuid</name>
+            <value>
+                <elementReference>$Flow.InterviewGuid</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>IntegrationDefinition</name>
+            <value>
+                <elementReference>CreditIntegrationDefinition</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>InputRecordId</name>
+            <value>
+                <elementReference>RecordId</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>industriesSendApexAsyncRequest</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <actionCalls>
+        <description>Apex class for debit callout to mulesoft.</description>
+        <name>ApexDebitCallout</name>
+        <label>Apex Debit Callout</label>
+        <locationX>3119</locationX>
+        <locationY>134</locationY>
+        <actionName>industriesSendApexAsyncRequest</actionName>
+        <actionType>industriesSendApexAsyncRequest</actionType>
+        <connector>
+            <targetReference>PauseForDebitPlatformEvent</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>SetDebitOutputVariable</targetReference>
+        </faultConnector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>RequestGuid</name>
+            <value>
+                <elementReference>$Flow.InterviewGuid</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>IntegrationDefinition</name>
+            <value>
+                <elementReference>DebitIntegrationDefinition</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>InputRecordId</name>
+            <value>
+                <elementReference>RecordId</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>industriesSendApexAsyncRequest</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <actionCalls>
+        <description>Send a Case closure status email to users.</description>
+        <name>SendEmail</name>
+        <label>Send Email</label>
+        <locationX>50</locationX>
+        <locationY>1106</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>relatedRecordId</name>
+            <value>
+                <elementReference>CaseId</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recipientId</name>
+            <value>
+                <elementReference>PersonContactId</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailTemplateId</name>
+            <value>
+                <elementReference>EmailTemplateId</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <assignments>
+        <description>Assigns the Credit Async Callout Failed from the current service catalog request extended attribute value record in the loop to the CreditAsyncCalloutFailed variable.</description>
+        <name>AssignPartialCreditSuccessStatus</name>
+        <label>Assign Partial Credit Success Status</label>
+        <locationX>842</locationX>
+        <locationY>890</locationY>
+        <assignmentItems>
+            <assignToReference>Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>The Service request succeeded partially. It succeeded on debit but failed on credit card.</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CreditAsyncCalloutFailed</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Assigns the 
+Debit Async Callout Failed from the current service catalog request extended attribute value record in the loop to the DebitAsyncCalloutFailed variable.</description>
+        <name>AssignPartialDebitSuccessStatus</name>
+        <label>Assign Partial Debit Success Status</label>
+        <locationX>578</locationX>
+        <locationY>890</locationY>
+        <assignmentItems>
+            <assignToReference>Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>The Service request succeeded partially. It succeeded on credit but failed on debit card.</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>DebitAsyncCalloutFailed</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Assigns Credit Async Callout Failed from the current service catalog request extended attribute value record in the loop to the CreditAsyncCalloutFailed variable.</description>
+        <name>SetCreditOutputVariable</name>
+        <label>Set Credit Output Variable</label>
+        <locationX>2426</locationX>
+        <locationY>890</locationY>
+        <assignmentItems>
+            <assignToReference>CreditAsyncCalloutFailed</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Failure</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Assigns Debit Async Callout Failed from the current service catalog request extended attribute value record in the loop to the DebitAsyncCalloutFailed variable.</description>
+        <name>SetDebitOutputVariable</name>
+        <label>Set Debit Output Variable</label>
+        <locationX>1898</locationX>
+        <locationY>890</locationY>
+        <assignmentItems>
+            <assignToReference>DebitAsyncCalloutFailed</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Failure</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Assigns Debit and Credit Async Callout Failed from the current service catalog request extended attribute value record in the loop to the DebitAsyncCalloutFailed and CreditAsyncCalloutFailed variables.</description>
+        <name>SetOutputVariable</name>
+        <label>Set Output Variable</label>
+        <locationX>1106</locationX>
+        <locationY>890</locationY>
+        <assignmentItems>
+            <assignToReference>DebitAsyncCalloutFailed</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CreditAsyncCalloutFailed</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>The Service Request failed</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>Determines if both credit and debit responses are successful.</description>
+        <name>AreBothCardsSelectedForReplacement</name>
+        <label>Are Both Cards Selected For Replacement?</label>
+        <locationX>578</locationX>
+        <locationY>674</locationY>
+        <defaultConnector>
+            <targetReference>WhichCardTypeRequestFailed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Other (Default Outcome)</defaultConnectorLabel>
+        <rules>
+            <name>BothCreditandDebitResponseisSuccessful</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CheckCreditAsyncCalloutFailed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>CheckDebitAsyncCalloutFailed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>UpdateCase</targetReference>
+            </connector>
+            <label>Both Credit and Debit Response is Successful</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determines whether both card types are selected or only Debit or Credit card is selected.</description>
+        <name>AreBothCardTypesSelected</name>
+        <label>Are Both Card Types Selected?</label>
+        <locationX>1766</locationX>
+        <locationY>566</locationY>
+        <defaultConnectorLabel>Other (Default Outcome)</defaultConnectorLabel>
+        <rules>
+            <name>BothDebitAndCreditSelected</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>PlatformDebitEventResponse.ResponsePayload</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>PlatformCreditEventResponse.ResponsePayload</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>AreBothCardsSelectedForReplacement</targetReference>
+            </connector>
+            <label>Both Debit and Credit Selected</label>
+        </rules>
+        <rules>
+            <name>EitherDebitCardOrCreditCardSelected</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>PlatformDebitEventResponse.ResponsePayload</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>PlatformCreditEventResponse.ResponsePayload</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>IsEitheraDebitCardoraCreditCardSelected</targetReference>
+            </connector>
+            <label>Either Debit Card or Credit Card Selected</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determines whether the email associated with the Account is available or not.</description>
+        <name>IsAccountEmailAvailable</name>
+        <label>Is Account Email Available?</label>
+        <locationX>182</locationX>
+        <locationY>890</locationY>
+        <defaultConnectorLabel>Other (Default Outcome)</defaultConnectorLabel>
+        <rules>
+            <name>AccountEmailAvailable</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AccountEmail</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>AccountEmail</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>AccountEmail</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GetEmailTemplate</targetReference>
+            </connector>
+            <label>Account Email Available</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if the CheckCreditAsyncCalloutFailed variable is set to False to determine if only the credit card is selected for replacement.</description>
+        <name>IsCreditCardSelected</name>
+        <label>Is Credit Card Selected?</label>
+        <locationX>2294</locationX>
+        <locationY>782</locationY>
+        <defaultConnector>
+            <targetReference>SetCreditOutputVariable</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No (Default Outcome)</defaultConnectorLabel>
+        <rules>
+            <name>IsCreditCardResponseSuccessful</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CheckCreditAsyncCalloutFailed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <isGoTo>true</isGoTo>
+                <targetReference>UpdateCase</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if the
+CheckDebitAsyncCalloutFailed
+variable is set to False to determine if only the debit card is selected for replacement.</description>
+        <name>IsDebitCardSelected</name>
+        <label>Is Debit Card Selected?</label>
+        <locationX>1766</locationX>
+        <locationY>782</locationY>
+        <defaultConnector>
+            <targetReference>SetDebitOutputVariable</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No (Default Outcome)</defaultConnectorLabel>
+        <rules>
+            <name>IsDebitCardResponseSuccessful</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CheckDebitAsyncCalloutFailed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <isGoTo>true</isGoTo>
+                <targetReference>UpdateCase</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determines the type of card selected for replacement.</description>
+        <name>IsEitheraDebitCardoraCreditCardSelected</name>
+        <label>Is Either a Debit Card or a Credit Card Selected?</label>
+        <locationX>2228</locationX>
+        <locationY>674</locationY>
+        <defaultConnectorLabel>Other (Default Outcome)</defaultConnectorLabel>
+        <rules>
+            <name>IsDebitCard</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>PlatformDebitEventResponse.ResponsePayload</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>IsDebitCardSelected</targetReference>
+            </connector>
+            <label>Is Debit Card</label>
+        </rules>
+        <rules>
+            <name>IsCreditCard</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>PlatformCreditEventResponse.ResponsePayload</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>IsCreditCardSelected</targetReference>
+            </connector>
+            <label>Is Credit Card</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determines if Debit Async Failed, Credit Async Failed or both Credit and Debit Request Failed</description>
+        <name>WhichCardTypeRequestFailed</name>
+        <label>Which Card Type Request Failed?</label>
+        <locationX>974</locationX>
+        <locationY>782</locationY>
+        <defaultConnectorLabel>Other (Default Outcome)</defaultConnectorLabel>
+        <rules>
+            <name>OnlyDebitRequestFailed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CheckDebitAsyncCalloutFailed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>CheckCreditAsyncCalloutFailed</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>AssignPartialDebitSuccessStatus</targetReference>
+            </connector>
+            <label>Only Debit Request Failed</label>
+        </rules>
+        <rules>
+            <name>OnlyCreditRequestFailed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CheckCreditAsyncCalloutFailed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>CheckDebitAsyncCalloutFailed</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>AssignPartialCreditSuccessStatus</targetReference>
+            </connector>
+            <label>Only Credit Request Failed</label>
+        </rules>
+        <rules>
+            <name>BothCreditandDebitRequestFailed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CheckCreditAsyncCalloutFailed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>CheckDebitAsyncCalloutFailed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetOutputVariable</targetReference>
+            </connector>
+            <label>Both Credit and Debit Request Failed</label>
+        </rules>
+    </decisions>
+    <description>Calls an asynchronous Apex action to update a service catalog request record corresponding to a service process request.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Checks the callout response.</description>
+        <name>CheckCreditAsyncCalloutFailed</name>
+        <dataType>Boolean</dataType>
+        <expression>REGEX({!PlatformCreditEventResponse.ResponsePayload}, &apos;(?i).*&quot;issuccess&quot;\\s*:\\s*false.*&apos;)</expression>
+    </formulas>
+    <formulas>
+        <description>Checks the callout response.</description>
+        <name>CheckDebitAsyncCalloutFailed</name>
+        <dataType>Boolean</dataType>
+        <expression>REGEX({!PlatformDebitEventResponse.ResponsePayload}, &apos;(?i).*&quot;issuccess&quot;\\s*:\\s*false.*&apos;)</expression>
+    </formulas>
+    <interviewLabel>Update Report and Replace Card Request {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Report and Replace Card Request</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Gets the template for the email that is sent to users about the case notification.</description>
+        <name>GetEmailTemplate</name>
+        <label>Get Email Template</label>
+        <locationX>50</locationX>
+        <locationY>998</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>SendEmail</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>CaseClosureEmailTemplate</stringValue>
+            </value>
+        </filters>
+        <object>EmailTemplate</object>
+        <outputAssignments>
+            <assignToReference>EmailTemplateId</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordUpdates>
+        <description>Updates the Status field to Closed for the case passed into the flow.</description>
+        <name>UpdateCase</name>
+        <label>Update Case</label>
+        <locationX>182</locationX>
+        <locationY>782</locationY>
+        <connector>
+            <targetReference>IsAccountEmailAvailable</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>CaseId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Closed</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <start>
+        <locationX>2993</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>ApexDebitCallout</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Stores the email associated with the Account.</description>
+        <name>AccountEmail</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the Case ID.</description>
+        <name>CaseId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the status of credit failure response</description>
+        <name>CreditAsyncCalloutFailed</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the name of the credit request integration definition.</description>
+        <name>CreditIntegrationDefinition</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of debit asynchronous callout.</description>
+        <name>DebitAsyncCalloutFailed</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the name of the debit request integration definition.</description>
+        <name>DebitIntegrationDefinition</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the email template ID.</description>
+        <name>EmailTemplateId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the person contact ID related to Account</description>
+        <name>PersonContactId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the credit response received from platform event.</description>
+        <name>PlatformCreditEventResponse</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>AsyncRequestResponseEvent</objectType>
+    </variables>
+    <variables>
+        <description>Stores the debit response received from platform event.</description>
+        <name>PlatformDebitEventResponse</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>AsyncRequestResponseEvent</objectType>
+    </variables>
+    <variables>
+        <description>Stores the ID of the service catalog request record passed into the flow.</description>
+        <name>RecordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the status of report and replace card request</description>
+        <name>Status</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue>Success</stringValue>
+        </value>
+    </variables>
+    <waits>
+        <description>Pauses for the platform event to resume the flow.</description>
+        <name>PauseForCreditPlatformEvent</name>
+        <label>Pause for Credit Platform Event</label>
+        <locationX>2492</locationX>
+        <locationY>458</locationY>
+        <defaultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>SetCreditOutputVariable</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Other (Default Path)</defaultConnectorLabel>
+        <waitEvents>
+            <name>CreditEventReceived</name>
+            <conditionLogic>and</conditionLogic>
+            <connector>
+                <targetReference>AreBothCardTypesSelected</targetReference>
+            </connector>
+            <eventType>AsyncRequestResponseEvent</eventType>
+            <inputParameters>
+                <name>RequestGuid</name>
+                <value>
+                    <elementReference>$Flow.InterviewGuid</elementReference>
+                </value>
+            </inputParameters>
+            <label>Credit Event Received</label>
+            <outputParameters>
+                <assignToReference>PlatformCreditEventResponse</assignToReference>
+                <name>AsyncRequestResponseEvent</name>
+            </outputParameters>
+        </waitEvents>
+    </waits>
+    <waits>
+        <description>Pauses for the platform event to resume the flow.</description>
+        <name>PauseForDebitPlatformEvent</name>
+        <label>Pause for Debit Platform Event</label>
+        <locationX>3119</locationX>
+        <locationY>242</locationY>
+        <defaultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>SetDebitOutputVariable</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Other (Default Path)</defaultConnectorLabel>
+        <waitEvents>
+            <name>DebitEventReceived</name>
+            <conditionLogic>and</conditionLogic>
+            <connector>
+                <targetReference>ApexCreditCallout</targetReference>
+            </connector>
+            <eventType>AsyncRequestResponseEvent</eventType>
+            <inputParameters>
+                <name>RequestGuid</name>
+                <value>
+                    <elementReference>$Flow.InterviewGuid</elementReference>
+                </value>
+            </inputParameters>
+            <label>Debit Event Received</label>
+            <outputParameters>
+                <assignToReference>PlatformDebitEventResponse</assignToReference>
+                <name>AsyncRequestResponseEvent</name>
+            </outputParameters>
+        </waitEvents>
+    </waits>
+</Flow>

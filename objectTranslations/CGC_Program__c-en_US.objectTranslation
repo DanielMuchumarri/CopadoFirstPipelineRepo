@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Demo Program</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Demo Programs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed Exercises --></label>
+        <name>Completed_Exercises__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed Milestones --></label>
+        <name>Completed_Milestones__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completion Percentage --></label>
+        <name>Completion_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Value --></label>
+        <name>Current_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Due Date --></label>
+        <name>Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q-Branch Demo Reference --></label>
+        <name>FINS_Q_Branch_Demo_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Milestone Icon Type --></label>
+        <name>Milestone_Icon_Type__c</name>
+        <picklistValues>
+            <masterLabel>Icon</masterLabel>
+            <translation><!-- Icon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Progress Ring</masterLabel>
+            <translation><!-- Progress Ring --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Target Value --></label>
+        <name>Target_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Exercises --></label>
+        <name>Total_Exercises__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Milestones --></label>
+        <name>Total_Milestones__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Milestones and Exercises --></label>
+        <name>Total_Milestones_and_Exercises__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- When checked, automatically center the timeline on the most recent (past) event. When unchecked, center the timeline at the current date/time. --></help>
+        <label><!-- Auto Center on Most Recent Event --></label>
+        <name>slt__Auto_Center_Recent__c</name>
+    </fields>
+    <fields>
+        <help><!-- The initial zoom level when the timeline first opens, from 0 (hours) to 9 (years). Default is 7. --></help>
+        <label><!-- Initial Zoom Level (0-9) --></label>
+        <name>slt__Default_Zoom__c</name>
+    </fields>
+    <fields>
+        <help><!-- Whether the mouse wheel and/or trackpad gestures should scroll the timeline horizontally when the cursor is positioned over the timeline component (if not, it will scroll the outer page/container) --></help>
+        <label><!-- Mouse Wheel/Trackpad Scrolling --></label>
+        <name>slt__Scrolling__c</name>
+    </fields>
+    <fields>
+        <help><!-- When viewing the Timeline in a standard (non-console) view, the HTML browser target window to use for opening links (can use a named window or standard values like &quot;_blank&quot;, &quot;_parent&quot;, &quot;_top&quot;, etc). --></help>
+        <label><!-- Link Target --></label>
+        <name>slt__Target__c</name>
+    </fields>
+    <fields>
+        <help><!-- When clicking the Zoom buttons, whether to zoom based on left edge of timeline (unchecked) or the center of the timeline (checked) --></help>
+        <label><!-- Zoom from Center --></label>
+        <name>slt__Zoom_Center__c</name>
+    </fields>
+</CustomObjectTranslation>

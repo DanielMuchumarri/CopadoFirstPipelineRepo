@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>inov8__FY20_Q1</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>inov8__FY20_Q1</fullName>
+        <fields>inov8__Task_Name_w_Alert__c</fields>
+        <label>FY20-Q1</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>An activity that has been assigned to a User.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>inov8__Alert__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(AND(inov8__Days_Late__c &gt;0,TEXT(inov8__Status__c) &lt;&gt; &quot;On Hold&quot;),IMAGE(&quot;/resource/inov8__PMT_Status_Images/PMT_warning_60.png&quot;,&quot;Late&quot;,20,20), 
+IF( TEXT(inov8__Sign_off_status__c) = &quot;Approved&quot;, IMAGE(&quot;/resource/inov8__PMT_Status_Images/PMT_approval.png&quot;,&quot;Approved&quot;,20,20), 
+CASE( TEXT(inov8__Status__c) , 
+&quot;Not Started&quot;, IMAGE(&quot;/resource/inov8__PMT_Status_Images/PMT_routing_offline_60.png&quot;,&quot;Incomplete&quot;,20,20), 
+&quot;In Progress&quot;, IMAGE(&quot;/resource/inov8__PMT_Status_Images/PMT_Clock.png&quot;,&quot;In Progress&quot;,20,20), 
+&quot;On Hold&quot;,IMAGE(&quot;/resource/inov8__PMT_Status_Images/PMT_error_60.png&quot;,&quot;On Hold&quot;,20,20), 
+IMAGE(&quot;/resource/inov8__PMT_Status_Images/PMT_success_60.png&quot;,&quot;Closed&quot;,20,20))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Alert</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__Assigned_To1__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <label>Assigned To</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>PMT_Tasks</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Assigned_To_Email__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>inov8__Assigned_To1__r.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Assigned To Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__Checklist_Selected__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <label>Checklist Selected</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Days_Late__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF( ISPICKVAL(inov8__Status__c,&apos;Completed&apos;) || ISPICKVAL(inov8__Status__c,&apos;Closed, not Completed&apos;),0, Today() - inov8__Due_Date__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days Late</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <inlineHelpText>The general description of the task. For example, what is the purpose of the task.</inlineHelpText>
+        <label>Description</label>
+        <length>5000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>inov8__Due_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <inlineHelpText>The date this task is due to be completed</inlineHelpText>
+        <label>End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Duration__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>inov8__Due_Date__c - inov8__Start_Date__c+1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__Is_Milestone__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <label>Is Milestone?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Is_Recurring__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <label>Is Recurring?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>inov8__My_Task__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(inov8__Assigned_To1__c = $User.Id , &quot;me&quot;, &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>My Task</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__On_Hold_Reason__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>If blocked, why?</inlineHelpText>
+        <label>On Hold Reason</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__Percentage_Completion__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <label>Task Completion %</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Phase__c</fullName>
+        <deprecated>false</deprecated>
+        <inlineHelpText>The phase that this task is assigned to.</inlineHelpText>
+        <label>Phase</label>
+        <referenceTo>inov8__PMT_Phase__c</referenceTo>
+        <relationshipLabel>PMT Tasks</relationshipLabel>
+        <relationshipName>Project_Tasks</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>inov8__Project_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(inov8__Phase__r.inov8__Project__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Project Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__Project_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/lightning/r/PMT_Project__c/&quot; &amp; inov8__Phase__r.inov8__Project__c &amp; &quot;/view&quot;, inov8__Phase__r.inov8__Project__r.Name,&apos;_self&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Project Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__Sign_off_status__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Sign-off status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Submitted</fullName>
+                    <default>false</default>
+                    <label>Submitted</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>inov8__Start_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <inlineHelpText>When should this task start by?</inlineHelpText>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Status_Icon_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(AND(inov8__Days_Late__c &gt;0,TEXT(inov8__Status__c) &lt;&gt; &quot;On Hold&quot;),&quot;utility:warning&quot;, 
+IF( TEXT(inov8__Sign_off_status__c) = &quot;Approved&quot;, &quot;utility:approval&quot;, 
+CASE( TEXT(inov8__Status__c) , 
+&quot;Not Started&quot;, &quot;utility:routing_offline&quot;, 
+&quot;In Progress&quot;, &quot;utility:clock&quot;, 
+&quot;On Hold&quot;,&quot;utility:error&quot;, 
+&quot;utility:success&quot;)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Status Icon Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__Status_Icon__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(AND(inov8__Days_Late__c &gt;0,TEXT(inov8__Status__c) &lt;&gt; &quot;On Hold&quot;),IMAGE(&quot;/resource/inov8__PMT_Status_Images/PMT_warning_60.png&quot;,&quot;Late&quot;,20,20), 
+IF( TEXT(inov8__Sign_off_status__c) = &quot;Approved&quot;, IMAGE(&quot;/resource/inov8__PMT_Status_Images/PMT_approval.png&quot;,&quot;Approved&quot;,20,20), 
+CASE( TEXT(inov8__Status__c) , 
+&quot;Not Started&quot;, IMAGE(&quot;/resource/inov8__PMT_Status_Images/PMT_routing_offline_60.png&quot;,&quot;Incomplete&quot;,20,20), 
+&quot;In Progress&quot;, IMAGE(&quot;/resource/inov8__PMT_Status_Images/PMT_Clock.png&quot;,&quot;In Progress&quot;,20,20), 
+&quot;On Hold&quot;,IMAGE(&quot;/resource/inov8__PMT_Status_Images/PMT_error_60.png&quot;,&quot;On Hold&quot;,20,20), 
+IMAGE(&quot;/resource/inov8__PMT_Status_Images/PMT_success_60.png&quot;,&quot;Closed&quot;,20,20))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Status Icon</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Task Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Started</fullName>
+                    <default>true</default>
+                    <label>Not Started</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>On Hold</fullName>
+                    <default>false</default>
+                    <label>On Hold</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Closed, not Completed</fullName>
+                    <default>false</default>
+                    <label>Closed, not Completed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>inov8__Task_Level__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Task Level</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__Task_Level_formula__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>inov8__Task_Level__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Task Level</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__Task_Name_w_Alert__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>inov8__Status_Icon__c &amp;&quot; &quot;&amp; Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Task Name w. Alert</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__Topic__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Topic</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__Weighted_percentage__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>inov8__Duration__c *  inov8__Percentage_Completion__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Weighted %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>PMT Task</label>
+    <listViews>
+        <fullName>inov8__All</fullName>
+        <columns>NAME</columns>
+        <columns>inov8__Phase__c</columns>
+        <columns>inov8__Percentage_Completion__c</columns>
+        <columns>inov8__Assigned_To1__c</columns>
+        <columns>inov8__Start_Date__c</columns>
+        <columns>inov8__Due_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>inov8__My_Open_Tasks_2</fullName>
+        <columns>inov8__Project_Name__c</columns>
+        <columns>NAME</columns>
+        <columns>inov8__Percentage_Completion__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>inov8__My_Task__c</field>
+            <operation>equals</operation>
+            <value>me</value>
+        </filters>
+        <filters>
+            <field>inov8__Status__c</field>
+            <operation>equals</operation>
+            <value>Not Started,In Progress,On Hold</value>
+        </filters>
+        <label>My Open Tasks</label>
+    </listViews>
+    <nameField>
+        <label>Task Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>PMT Tasks</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>inov8__Phase__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>inov8__Due_Date__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>inov8__Phase__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>inov8__Due_Date__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>inov8__Phase__c</searchFilterFields>
+        <searchFilterFields>inov8__Due_Date__c</searchFilterFields>
+        <searchResultsAdditionalFields>inov8__Phase__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>inov8__Project_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>inov8__Assigned_To1__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>inov8__Is_Milestone__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>inov8__Sign_off_status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>inov8__Status__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>inov8__Task_On_hold_Reason_not_null_if_On_Hold</fullName>
+        <active>true</active>
+        <description>Task On hold Reason Mandatory if Task Status is &apos;On Hold&apos;</description>
+        <errorConditionFormula>(TEXT(inov8__Status__c)=&apos;On Hold&apos;) &amp;&amp; ISBLANK(inov8__On_Hold_Reason__c)</errorConditionFormula>
+        <errorMessage>On Hold Reason should not be Blank if Status is &apos;On Hold&apos;.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>inov8__Task_start_date_less_than_end_date</fullName>
+        <active>true</active>
+        <description>Task Start date must be less than the Task End date</description>
+        <errorConditionFormula>NOT(ISNULL(inov8__Start_Date__c)) &amp;&amp; NOT(ISNULL(inov8__Due_Date__c)) &amp;&amp; inov8__Due_Date__c&lt;inov8__Start_Date__c</errorConditionFormula>
+        <errorMessage>End Date must be after Start Date.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

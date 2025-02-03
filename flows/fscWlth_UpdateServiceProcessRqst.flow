@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Calls an asynchronous Apex action to update a service catalog request record corresponding to a service process request.</description>
+        <name>CallApexAction</name>
+        <label>Call Apex Action</label>
+        <locationX>325</locationX>
+        <locationY>134</locationY>
+        <actionName>industriesSendApexAsyncRequest</actionName>
+        <actionType>industriesSendApexAsyncRequest</actionType>
+        <connector>
+            <targetReference>WaitForPlatformEventResponse</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>SetAPIResponseValue</targetReference>
+        </faultConnector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>RequestGuid</name>
+            <value>
+                <elementReference>$Flow.InterviewGuid</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>IntegrationDefinition</name>
+            <value>
+                <elementReference>IntegrationDefinition</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>InputRecordId</name>
+            <value>
+                <elementReference>InputRecordId</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>industriesSendApexAsyncRequest</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <actionCalls>
+        <description>Sends a case closure status email to the users.</description>
+        <name>SendEmail</name>
+        <label>Send Email</label>
+        <locationX>72</locationX>
+        <locationY>782</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>relatedRecordId</name>
+            <value>
+                <elementReference>CaseId</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recipientId</name>
+            <value>
+                <elementReference>PersonContactId</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailTemplateId</name>
+            <value>
+                <elementReference>EmailTemplateId</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <assignments>
+        <description>Sets the API response value if the API call has failed.</description>
+        <name>SetAPIResponseValue</name>
+        <label>Set API Response Value</label>
+        <locationX>325</locationX>
+        <locationY>1250</locationY>
+        <assignmentItems>
+            <assignToReference>AsyncCalloutFailed</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>The Service Request failed</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>Determines whether the HasActionFailed formula evaluates to true.</description>
+        <name>DidTheActionFail</name>
+        <label>Did the Action Fail?</label>
+        <locationX>50</locationX>
+        <locationY>350</locationY>
+        <defaultConnector>
+            <targetReference>UpdateCase</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No (Default)</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>HasActionFailed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetAPIResponseValue</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determines whether the email associated with the Account is available or not.</description>
+        <name>IsAccountEmailAvailable</name>
+        <label>Is Account Email Available</label>
+        <locationX>204</locationX>
+        <locationY>566</locationY>
+        <defaultConnectorLabel>Account Email Unavailable (Default)</defaultConnectorLabel>
+        <rules>
+            <name>AccountEmailAvailable</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AccountEmail</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>AccountEmail</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>AccountEmail</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GetEmailTemplate</targetReference>
+            </connector>
+            <label>Account Email Available</label>
+        </rules>
+    </decisions>
+    <description>Calls an asynchronous Apex action to update a service catalog request record corresponding to a service process request.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Evaluates to true if the asynchronous request event response payload isn&apos;t &quot;issuccess&quot;.</description>
+        <name>HasActionFailed</name>
+        <dataType>Boolean</dataType>
+        <expression>REGEX({!PlatformEventResponse.ResponsePayload}, &apos;(?i).*&quot;issuccess&quot;\\s*:\\s*false.*&apos;)</expression>
+    </formulas>
+    <interviewLabel>FSC Wealth: Update Service Process Request {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FSC Wealth: Update Service Process Request</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Gets the email template that’s sent to users to notify about the case.</description>
+        <name>GetEmailTemplate</name>
+        <label>Get Email Template ID</label>
+        <locationX>72</locationX>
+        <locationY>674</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>SendEmail</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>FSCWlthCaseClosureEmailTemplate</stringValue>
+            </value>
+        </filters>
+        <object>EmailTemplate</object>
+        <outputAssignments>
+            <assignToReference>EmailTemplateId</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordUpdates>
+        <description>Updates the Status field to Closed for the case passed through the flow.</description>
+        <name>UpdateCase</name>
+        <label>Update Case</label>
+        <locationX>204</locationX>
+        <locationY>458</locationY>
+        <connector>
+            <targetReference>IsAccountEmailAvailable</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>CaseId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Closed</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <runInMode>DefaultMode</runInMode>
+    <start>
+        <locationX>199</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>CallApexAction</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Stores the value of Account Email of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttribute.</description>
+        <name>AccountEmail</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the Boolean value identifying if the MakeAsyncApexCall action failed. Available as output from the flow.</description>
+        <name>AsyncCalloutFailed</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the ID of the associated case to update and is passed through the flow.</description>
+        <name>CaseId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the email template ID.</description>
+        <name>EmailTemplateId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the serviceCatalogRequestId passed into the flow and is available as input to the flow.</description>
+        <name>InputRecordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the value of the Integration Definition attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes</description>
+        <name>IntegrationDefinition</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>PersonContactId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the response received from the platform event.</description>
+        <name>PlatformEventResponse</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>AsyncRequestResponseEvent</objectType>
+    </variables>
+    <variables>
+        <description>Stores the status of update Service Process request</description>
+        <name>Status</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <waits>
+        <description>Waits for the platform event response to resume the flow.</description>
+        <name>WaitForPlatformEventResponse</name>
+        <label>Wait for Platform Event Response</label>
+        <locationX>325</locationX>
+        <locationY>242</locationY>
+        <defaultConnector>
+            <targetReference>SetAPIResponseValue</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default</defaultConnectorLabel>
+        <waitEvents>
+            <name>EventReceived</name>
+            <conditionLogic>and</conditionLogic>
+            <connector>
+                <targetReference>DidTheActionFail</targetReference>
+            </connector>
+            <eventType>AsyncRequestResponseEvent</eventType>
+            <inputParameters>
+                <name>RequestGuid</name>
+                <value>
+                    <elementReference>$Flow.InterviewGuid</elementReference>
+                </value>
+            </inputParameters>
+            <label>Event Received</label>
+            <outputParameters>
+                <assignToReference>PlatformEventResponse</assignToReference>
+                <name>AsyncRequestResponseEvent</name>
+            </outputParameters>
+        </waitEvents>
+    </waits>
+</Flow>

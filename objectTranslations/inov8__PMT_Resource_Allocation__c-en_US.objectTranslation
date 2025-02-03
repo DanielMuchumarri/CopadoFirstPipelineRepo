@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Allocated Resource Id --></label>
+        <name>inov8__Allocated_Resource_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Apr Hours --></label>
+        <name>inov8__Apr_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Apr --></label>
+        <name>inov8__Apr__c</name>
+    </fields>
+    <fields>
+        <label><!-- Aug Hours --></label>
+        <name>inov8__Aug_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Aug --></label>
+        <name>inov8__Aug__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dec Hours --></label>
+        <name>inov8__Dec_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dec --></label>
+        <name>inov8__Dec__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feb Hours --></label>
+        <name>inov8__Feb_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feb --></label>
+        <name>inov8__Feb__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fiscal Year --></label>
+        <name>inov8__Fiscal_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Allocated to Me --></label>
+        <name>inov8__Is_Allocated_to_Me__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jan Hours --></label>
+        <name>inov8__Jan_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jan --></label>
+        <name>inov8__Jan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jul Hours --></label>
+        <name>inov8__Jul_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jul --></label>
+        <name>inov8__Jul__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jun Hours --></label>
+        <name>inov8__Jun_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jun --></label>
+        <name>inov8__Jun__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mar Hours --></label>
+        <name>inov8__Mar_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mar --></label>
+        <name>inov8__Mar__c</name>
+    </fields>
+    <fields>
+        <label><!-- May Hours --></label>
+        <name>inov8__May_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- May --></label>
+        <name>inov8__May__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nov Hours --></label>
+        <name>inov8__Nov_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nov --></label>
+        <name>inov8__Nov__c</name>
+    </fields>
+    <fields>
+        <label><!-- Oct Hours --></label>
+        <name>inov8__Oct_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Oct --></label>
+        <name>inov8__Oct__c</name>
+    </fields>
+    <fields>
+        <label><!-- Program Name --></label>
+        <name>inov8__Program_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Name --></label>
+        <name>inov8__Project_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Owner --></label>
+        <name>inov8__Project_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>inov8__Project__c</name>
+        <relationshipLabel><!-- PMT Resource Allocations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource Availability --></label>
+        <name>inov8__Resource_Availability__c</name>
+        <relationshipLabel><!-- PMT Resource Allocations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource IsActive --></label>
+        <name>inov8__Resource_IsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Name --></label>
+        <name>inov8__Resource_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>inov8__Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sep Hours --></label>
+        <name>inov8__Sep_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sep --></label>
+        <name>inov8__Sep__c</name>
+    </fields>
+    <fields>
+        <label><!-- UserId --></label>
+        <name>inov8__UserId__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Department --></label>
+        <name>inov8__User_Department__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Name --></label>
+        <name>inov8__User_Name__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Actual hours worked cannot be negative numbers --></errorMessage>
+        <name>inov8__Hours_Cant_be_negative</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Hours can only be self updated --></errorMessage>
+        <name>inov8__Self_update_hours</name>
+    </validationRules>
+</CustomObjectTranslation>

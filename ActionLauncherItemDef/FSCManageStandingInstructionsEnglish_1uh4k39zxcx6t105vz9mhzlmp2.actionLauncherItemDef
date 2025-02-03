@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionLauncherItemDef xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identifier>_1uh4k39zxcx6t105vz9mhzlmp2</identifier>
+    <itemActionType>Omniscript</itemActionType>
+    <itemCategory>dbBased</itemCategory>
+    <itemLanguage>English</itemLanguage>
+    <masterLabel>FSC/ManageStandingInstructions/English</masterLabel>
+    <subType>ManageStandingInstructions</subType>
+    <type>FSC</type>
+</ActionLauncherItemDef>

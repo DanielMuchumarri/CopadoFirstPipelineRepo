@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomHelpMenuSection xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customHelpMenuItems>
+        <linkUrl>https://fins-nextgen-banking.lightning.force.com/c/ConfiguredHotspotsApp.app?pscId=a8Q4V000001QkgW</linkUrl>
+        <masterLabel>What is Service Process Studio?</masterLabel>
+        <sortOrder>1</sortOrder>
+    </customHelpMenuItems>
+    <masterLabel>Optimizing service workflows with automation and efficiency</masterLabel>
+</CustomHelpMenuSection>

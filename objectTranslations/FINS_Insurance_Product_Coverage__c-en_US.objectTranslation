@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Product Coverage</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Product Coverages</value>
+    </caseValues>
+    <fields>
+        <label><!-- Comparison Text --></label>
+        <name>Comparison_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coverage Type --></label>
+        <name>Coverage_Type__c</name>
+        <picklistValues>
+            <masterLabel>Comparison Feature</masterLabel>
+            <translation><!-- Comparison Feature --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional Coverage</masterLabel>
+            <translation><!-- Optional Coverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Policy Coverage</masterLabel>
+            <translation><!-- Policy Coverage --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Covered --></label>
+        <name>Covered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decsription --></label>
+        <name>Decsription__c</name>
+    </fields>
+    <fields>
+        <label><!-- External_Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Limit Amount --></label>
+        <name>Limit_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Premium Amount --></label>
+        <name>Premium_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Family --></label>
+        <name>Product_Family__c</name>
+        <picklistValues>
+            <masterLabel>Car Insurance</masterLabel>
+            <translation><!-- Car Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Insurance</masterLabel>
+            <translation><!-- Home Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Life Insurance</masterLabel>
+            <translation><!-- Life Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel Insurance</masterLabel>
+            <translation><!-- Travel Insurance --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

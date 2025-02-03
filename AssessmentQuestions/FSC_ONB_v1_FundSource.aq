@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Fund Source</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Source of Funds</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Select</dataType>
+    <developerName>FSC_ONB_v1_FundSource</developerName>
+    <name>Fund Source</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

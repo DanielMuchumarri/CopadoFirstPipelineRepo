@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>tspa__EnableEmailToSupport__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <label>Enable email to support</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tspa__EnableEmailToSystemAdmin__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <label>Enable email to system admin</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tspa__EnableMonitoring__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <inlineHelpText>The setting enables or disables the Platform Events Monitoring. Disabling this setting will stop the monitoring process, and disable all types of alerts (emails, logs, and warnings to the agent) if the platform events quota passes the thresholds.</inlineHelpText>
+        <label>Enable monitoring</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tspa__NotificationIntervalsInHours__c</fullName>
+        <defaultValue>12</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The settings set the maximum frequency that the email notification will be sent, set in hours. the recommended value is 12 hours. Minimum value is 1 hour.</inlineHelpText>
+        <label>Notification interval in hours</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tspa__SupportEmail__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The setting has the email address Visual Remote Assistant support which will get the email with a notification about the platform events quota threshold reached. It can have one email address.</inlineHelpText>
+        <label>Support email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tspa__SystemAdminEmail__c</fullName>
+        <deprecated>false</deprecated>
+        <inlineHelpText>The setting has a list of emails that will get the email with a notification about the platform events quota thresholds passed. It can have up to three email addresses, the emails must be separated by commas without spaces.</inlineHelpText>
+        <label>System admin emails</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>tspa__Threshold1__c</fullName>
+        <defaultValue>80</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Threshold 1 set the threshold in percentage from the org quota (either published platform events or delivered platform events) that will trigger log notifications and email alerts (based on email settings). 
+threshold 1 should be less than threshold 2.</inlineHelpText>
+        <label>Threshold 1</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tspa__Threshold2__c</fullName>
+        <defaultValue>90</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Threshold 2 set the threshold in percentage from the org quota (either published platform events or delivered platform events) that will trigger an agent warning on top of the logs and email alerts.
+Threshold 2 should be higher than threshold 1.</inlineHelpText>
+        <label>Threshold 2</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Platform Event Monitoring Configuration</label>
+    <listViews>
+        <fullName>tspa__PlatformEventMonitoringView</fullName>
+        <columns>tspa__EnableMonitoring__c</columns>
+        <columns>tspa__EnableEmailToSupport__c</columns>
+        <columns>tspa__EnableEmailToSystemAdmin__c</columns>
+        <columns>tspa__SupportEmail__c</columns>
+        <columns>tspa__SystemAdminEmail__c</columns>
+        <columns>tspa__Threshold1__c</columns>
+        <columns>tspa__Threshold2__c</columns>
+        <columns>tspa__NotificationIntervalsInHours__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Platform Event Monitoring View</label>
+        <language>en_US</language>
+    </listViews>
+    <visibility>Public</visibility>
+</CustomObject>

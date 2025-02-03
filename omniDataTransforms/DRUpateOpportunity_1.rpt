@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;ContextId&quot; : &quot;0064V00001MvjduQAB&quot;,
+  &quot;omniscriptId&quot; : &quot;0jN4V000000TNpwUAG&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;type&quot; : &quot;FinsCommercialSmallBusinessLoan&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;sId&quot; : &quot;0jN4V000000TNpwUAG&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;subType&quot; : &quot;CommercialSmallBusinessLoan&quot;,
+  &quot;timeStamp&quot; : &quot;2023-05-11T05:02:16.132Z&quot;,
+  &quot;userProfile&quot; : &quot;*FINS - Internal - Admin&quot;,
+  &quot;userTimeZoneName&quot; : &quot;America/Los_Angeles&quot;,
+  &quot;userTimeZone&quot; : &quot;-420&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;admin@bankdev242-1.finsido&quot;,
+  &quot;userId&quot; : &quot;0054V00000GOJQgQAP&quot;,
+  &quot;omniProcessId&quot; : &quot;0jN4V000000TNpwUAG&quot;,
+  &quot;OpportunityId&quot; : &quot;0064V00001MvjduQAB&quot;,
+  &quot;OpportunityStage&quot; : &quot;Initial Due Diligence&quot;,
+  &quot;OpportunityName&quot; : &quot;Small Business Loan Cash Flow + DDA Account&quot;,
+  &quot;OpportunityAccountName&quot; : &quot;Acme Partners&quot;,
+  &quot;StepPersonalInfo&quot; : {
+    &quot;BlockAddressInfo&quot; : {
+      &quot;CheckboxSameAddress&quot; : false,
+      &quot;TextMailStreet&quot; : null,
+      &quot;TextMailCity&quot; : null,
+      &quot;TextMailState&quot; : null,
+      &quot;TextMailZipCode&quot; : null,
+      &quot;NumberPostalCode&quot; : 80631,
+      &quot;TextState&quot; : &quot;CO&quot;,
+      &quot;TextCity&quot; : &quot;Greeley&quot;,
+      &quot;TextStreet&quot; : &quot;25146 Grandview Way&quot;
+    },
+    &quot;TAAuthorizedSigner-Block&quot; : null,
+    &quot;BlockPersonalInfo&quot; : {
+      &quot;OpportunityAccountId&quot; : &quot;0014V00003LetNtQAJ&quot;,
+      &quot;DateBirthDate&quot; : &quot;1977-11-19&quot;,
+      &quot;TextLastName&quot; : &quot;Bennett&quot;,
+      &quot;TextMiddleName&quot; : &quot;Patrick&quot;,
+      &quot;TextFirstName&quot; : &quot;Richard&quot;
+    },
+    &quot;BlockIDInfo&quot; : {
+      &quot;DateIDExpire&quot; : &quot;2025-11-19&quot;,
+      &quot;DateIDIssue&quot; : &quot;2017-11-19&quot;,
+      &quot;TextIDState&quot; : &quot;CO&quot;,
+      &quot;TextIDNumber&quot; : &quot;94-33-0101&quot;
+    },
+    &quot;Block9&quot; : {
+      &quot;RadioWhoistheAuthorizedSigner&quot; : &quot;Myself&quot;
+    }
+  },
+  &quot;StepBusinessInfo&quot; : {
+    &quot;Block5&quot; : {
+      &quot;Checkbox1&quot; : false,
+      &quot;Text7&quot; : null,
+      &quot;Text1&quot; : null,
+      &quot;Text2&quot; : null,
+      &quot;Text5&quot; : null,
+      &quot;City&quot; : &quot;Greeley&quot;,
+      &quot;State&quot; : &quot;CO&quot;,
+      &quot;TextPostalCode&quot; : 94105,
+      &quot;TextStreetAddress&quot; : &quot;25146 Grandview Way&quot;
+    },
+    &quot;Disclosure1&quot; : true,
+    &quot;Block6&quot; : {
+      &quot;NAICSCode&quot; : 478234,
+      &quot;BusinessTaxId&quot; : 2348958,
+      &quot;TextBusinessName&quot; : &quot;Acme Industrial&quot;
+    }
+  },
+  &quot;StepCashFlow&quot; : {
+    &quot;Businessdebtschedules&quot; : [ {
+      &quot;Origination Date&quot; : &quot;2021-09-01T00:00:00.000Z&quot;,
+      &quot;Rate&quot; : 3.5,
+      &quot;Term&quot; : 5,
+      &quot;Balance Outstanding&quot; : 743297,
+      &quot;Original Loan Amount&quot; : 150000,
+      &quot;Creditor&quot; : &quot;Nelson Ford &amp; Fleet&quot;
+    }, {
+      &quot;Origination Date&quot; : &quot;2020-02-01T08:00:00.000Z&quot;,
+      &quot;Payment&quot; : 19124,
+      &quot;Rate&quot; : 4.5,
+      &quot;Term&quot; : 15,
+      &quot;Balance Outstanding&quot; : 1988291,
+      &quot;Original Loan Amount&quot; : 25000000,
+      &quot;Creditor&quot; : &quot;Western CRE Finance&quot;
+    }, {
+      &quot;Origination Date&quot; : &quot;2022-04-01T07:00:00.000Z&quot;,
+      &quot;Payment&quot; : 1443,
+      &quot;Rate&quot; : 5.825,
+      &quot;Term&quot; : 5,
+      &quot;Balance Outstanding&quot; : 65350,
+      &quot;Original Loan Amount&quot; : 75000,
+      &quot;Creditor&quot; : &quot;Equipment USA&quot;
+    }, {
+      &quot;Origination Date&quot; : &quot;2021-02-15T08:00:00.000Z&quot;,
+      &quot;Payment&quot; : 1428,
+      &quot;Rate&quot; : 4.5,
+      &quot;Term&quot; : 5,
+      &quot;Balance Outstanding&quot; : 43500,
+      &quot;Original Loan Amount&quot; : 65000,
+      &quot;Creditor&quot; : &quot;First National&quot;
+    } ],
+    &quot;NumberWorkCapitalRatio&quot; : 2,
+    &quot;NumberGlobalDebtServiceCoverageRatio&quot; : 1.24,
+    &quot;NumberDSCR&quot; : 1.1
+  },
+  &quot;NumberAcreage&quot; : 200,
+  &quot;NumberBusniessYears&quot; : 32,
+  &quot;StpLoanInformation&quot; : {
+    &quot;RadioOption1Term&quot; : &quot;2yrs&quot;,
+    &quot;RadioOption1Amortization&quot; : &quot;10yrs&quot;
+  },
+  &quot;Step1&quot; : {
+    &quot;Race&quot; : null
+  },
+  &quot;StepSignature&quot; : {
+    &quot;FormulaTodayDate&quot; : &quot;2023-05-10T07:00:00.000Z&quot;
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRUpateOpportunity</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRUpateOpportunityCustom6947</globalKey>
+        <inputFieldName>OpportunityId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRUpateOpportunity</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Opportunity</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRUpateOpportunityCustom5730</globalKey>
+        <inputFieldName>StepLoanInfo:FormulaLoanAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRUpateOpportunity</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FINS_Lending_Max_Loan__c</outputFieldName>
+        <outputObjectName>Opportunity</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRUpateOpportunityCustom6835</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRUpateOpportunity</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Opportunity</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRUpateOpportunityCustom6738</globalKey>
+        <inputFieldName>StpLoanInformation:TACollateral</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRUpateOpportunity</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FINS_Collateral__c</outputFieldName>
+        <outputObjectName>Opportunity</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRUpateOpportunityCustom3521</globalKey>
+        <inputFieldName>StpLoanInformation:RadioTerm</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRUpateOpportunity</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FINS_Term__c</outputFieldName>
+        <outputObjectName>Opportunity</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRUpateOpportunityCustom5403</globalKey>
+        <inputFieldName>StepPersonalInfo:BlockContactInfo:Email</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRUpateOpportunity</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Contact_Email_1__c</outputFieldName>
+        <outputObjectName>Opportunity</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;OpportunityId&quot; : &quot;0064V00001MvjduQAB&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DRUpateOpportunity_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

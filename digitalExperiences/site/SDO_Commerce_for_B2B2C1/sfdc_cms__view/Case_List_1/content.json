@@ -1,0 +1,231 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Case List",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "c07ba09b-12a8-4d89-a507-d6a8cf8932bb",
+          "type" : "component"
+        } ],
+        "id" : "582e335d-c2ff-4f76-8a6a-987ee1dc92e8",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "sectionConfig" : "{\"UUID\":\"ae7ccc63-347a-4afb-98ec-1518a18260f9\",\"columns\":[{\"UUID\":\"3933febf-ce10-4a42-a5a7-f23087e83eaa\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "autoScrollToMostRecent" : true,
+                "backgroundColor" : "",
+                "borderColor" : "",
+                "borderRadius" : 0,
+                "borderWidth" : 0,
+                "itemSpacing" : "none",
+                "numberOfColumns" : 3,
+                "showPagination" : true,
+                "width" : 100
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "borderColor" : "",
+                    "borderRadius" : 0,
+                    "borderWidth" : 0,
+                    "buttonDirection" : "horizontal",
+                    "buttonGroupAlignment" : "center",
+                    "buttonGroupHeight" : 45,
+                    "buttonGroupSpacingHorizontal" : "space-evenly",
+                    "buttonGroupSpacingVertical" : "space-evenly",
+                    "buttonGroupWidth" : 75,
+                    "height" : 325,
+                    "imageFit" : "contain",
+                    "imageHeight" : 25,
+                    "imageInfo" : "{\"imageInfoV1\":{\"url\":\"/sfsites/c/cms/media/5OU4S0000000Zdi/source?cb=05T4S00000Cyctz\",\"altText\":\"\",\"contentKey\":\"MCT5CYOFXEXBDOBL4CXDE6G6E5VQ\",\"contentType\":null}}",
+                    "imagePosition" : "center center",
+                    "isLink" : false,
+                    "linkAssistiveText" : "",
+                    "showButtons" : true,
+                    "showSecondaryButton" : false,
+                    "singleButtonAlignment" : "center",
+                    "width" : 100
+                  },
+                  "children" : [ {
+                    "children" : [ {
+                      "attributes" : {
+                        "backgroundColor" : "",
+                        "paddingHorizontal" : "none",
+                        "paddingVertical" : "none",
+                        "text" : "Case #{!Item.CaseNumber}",
+                        "textAlign" : "center",
+                        "textDecoration" : "{}",
+                        "textDisplayInfo" : "{\"headingTag\": \"h2\", \"textStyle\": \"heading-large\"}"
+                      },
+                      "definition" : "dxp_base:textBlock",
+                      "id" : "fabb55c9-5a55-4c48-80b5-fb6dcbbc1bfc",
+                      "type" : "component"
+                    }, {
+                      "attributes" : {
+                        "backgroundColor" : "",
+                        "paddingHorizontal" : "none",
+                        "paddingVertical" : "none",
+                        "text" : "{!Item.Subject}",
+                        "textAlign" : "center",
+                        "textDecoration" : "{}",
+                        "textDisplayInfo" : "{\"headingTag\": \"h3\", \"textStyle\": \"heading-medium\"}"
+                      },
+                      "definition" : "dxp_base:textBlock",
+                      "id" : "304de7fa-a5ad-42f6-95bb-ba4cc0e7daea",
+                      "type" : "component"
+                    } ],
+                    "id" : "46865eb6-9de8-4d05-8c72-ecbe8df5ba4a",
+                    "name" : "topContentRegion",
+                    "type" : "region"
+                  }, {
+                    "children" : [ {
+                      "attributes" : {
+                        "backgroundColor" : "",
+                        "paddingHorizontal" : "none",
+                        "paddingVertical" : "none",
+                        "text" : "{!Item.Status}",
+                        "textAlign" : "center",
+                        "textDecoration" : "{}",
+                        "textDisplayInfo" : "{}"
+                      },
+                      "definition" : "dxp_base:textBlock",
+                      "id" : "3ed04d24-a2f2-46ee-97e3-face58e0c349",
+                      "type" : "component"
+                    } ],
+                    "id" : "fc270621-e462-4a94-b09c-92f082185d00",
+                    "name" : "contentRegion",
+                    "type" : "region"
+                  }, {
+                    "children" : [ {
+                      "attributes" : {
+                        "alignment" : "center",
+                        "size" : "standard",
+                        "stretch" : "standard",
+                        "text" : "Case Detail",
+                        "type" : "primary",
+                        "url" : "{\"linkInfo\":{\"pageReference\":{\"type\":\"standard__recordPage\",\"attributes\":{\"actionName\":\"view\",\"objectApiName\":\"Case\",\"recordId\":\"{!Item.Id}\"},\"state\":{\"recordName\":\"{!Item.Id}\"}}}}"
+                      },
+                      "definition" : "dxp_base:button",
+                      "id" : "65532530-c99e-4d3c-bb86-f2bdd1eac19b",
+                      "type" : "component"
+                    } ],
+                    "id" : "5659e810-0535-4509-b38e-30c18014e094",
+                    "name" : "tilePrimaryButton",
+                    "type" : "region"
+                  }, {
+                    "children" : [ {
+                      "attributes" : {
+                        "alignment" : "center",
+                        "size" : "standard",
+                        "stretch" : "standard",
+                        "text" : "Contact Us",
+                        "type" : "secondary"
+                      },
+                      "definition" : "dxp_base:button",
+                      "id" : "42065d20-ad91-4e64-ba03-589ebda79151",
+                      "type" : "component"
+                    } ],
+                    "id" : "a603d50e-c777-4088-b4ec-9704aac8b404",
+                    "name" : "tileSecondaryButton",
+                    "type" : "region"
+                  }, {
+                    "children" : [ {
+                      "attributes" : { },
+                      "definition" : "dxp_page_layout:placeHolder",
+                      "id" : "ac82205b-13ea-45ab-81d3-4444b52e5971",
+                      "type" : "component"
+                    } ],
+                    "id" : "56961c54-9d3f-4e6c-b0e6-05ba9cc22c6d",
+                    "name" : "placeholder",
+                    "type" : "region"
+                  } ],
+                  "definition" : "dxp_content_layout:tile2",
+                  "id" : "d2a1883d-9e6a-48e0-894b-cce449173566",
+                  "type" : "component"
+                } ],
+                "id" : "795eaffa-b13f-41b0-9792-776ad529b58d",
+                "name" : "sfdcRepeaterItem",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "horizontalAlignment" : "center",
+                    "showMoreLabel" : "Show More",
+                    "showMoreSize" : "standard",
+                    "showMoreStyle" : "secondary",
+                    "showMoreTextDecoration" : "{}",
+                    "showMoreWidth" : "standard",
+                    "variant" : "showmore",
+                    "verticalPadding" : "none"
+                  },
+                  "children" : [ {
+                    "children" : [ {
+                      "attributes" : { },
+                      "definition" : "dxp_page_layout:placeHolder",
+                      "id" : "1c5ccb03-0be4-4fe3-a401-3cb19c1ec405",
+                      "type" : "component"
+                    } ],
+                    "id" : "9a8ccb8a-e92e-4770-a12c-9a9a050f4483",
+                    "name" : "placeholder",
+                    "type" : "region"
+                  } ],
+                  "definition" : "dxp_content_layout:paginator",
+                  "id" : "86cfc549-21be-4969-8fe3-3d6cbbdc0378",
+                  "type" : "component"
+                } ],
+                "id" : "c9275f94-e99e-407c-a84a-186ded25e222",
+                "name" : "pagination",
+                "type" : "region"
+              } ],
+              "definition" : "dxp_content_layout:grid",
+              "id" : "e39978b3-c14e-423e-ae21-92f7a44e8ed7",
+              "type" : "component",
+              "dataProviders" : [ {
+                "definition" : "sfdc_cms__recordListViewDataProvider",
+                "sfdcExpressionKey" : "Item",
+                "attributes" : {
+                  "listViewApiName" : "MyCases",
+                  "objectApiName" : "Case",
+                  "pageSize" : 3
+                }
+              } ]
+            } ],
+            "id" : "3933febf-ce10-4a42-a5a7-f23087e83eaa",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "ae7ccc63-347a-4afb-98ec-1518a18260f9",
+          "type" : "component"
+        } ],
+        "id" : "cb424192-56a2-46ae-889f-39431035e0df",
+        "name" : "content",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "43f15ab7-01ed-4771-8d73-117dcad83daa",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "MyAccount",
+    "viewType" : "list-500"
+  },
+  "urlName" : "case-list"
+}

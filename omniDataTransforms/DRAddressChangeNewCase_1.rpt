@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;Policies&quot; : [ {
+    &quot;AddressCity&quot; : &quot;New York&quot;,
+    &quot;AddressPostalCode&quot; : &quot;10023&quot;,
+    &quot;AddressState&quot; : &quot;NY&quot;,
+    &quot;AddressStreet&quot; : &quot;100 Amsterdam Ave, New York, NY 10023, USA&quot;,
+    &quot;PolicyType&quot; : &quot;Specialty&quot;,
+    &quot;PolicyId&quot; : &quot;0YT5e0000005jTIGAY&quot;,
+    &quot;PolicyName&quot; : &quot;Acc79856&quot;
+  }, {
+    &quot;AddressCity&quot; : &quot;Coffeyville&quot;,
+    &quot;AddressPostalCode&quot; : &quot;67337&quot;,
+    &quot;AddressState&quot; : &quot;KS&quot;,
+    &quot;AddressStreet&quot; : &quot;3541 US-166, Coffeyville, KS 67337, USA&quot;,
+    &quot;PolicyType&quot; : &quot;Home&quot;,
+    &quot;PolicyId&quot; : &quot;0YT5e0000005bK7GAI&quot;,
+    &quot;PolicyName&quot; : &quot;PN-HOME-440957&quot;
+  }, {
+    &quot;AddressCity&quot; : &quot;New York&quot;,
+    &quot;AddressPostalCode&quot; : &quot;10023&quot;,
+    &quot;AddressState&quot; : &quot;NY&quot;,
+    &quot;AddressStreet&quot; : &quot;100 Amsterdam Ave, New York, NY 10023, USA&quot;,
+    &quot;PolicyType&quot; : &quot;Property&quot;,
+    &quot;PolicyId&quot; : &quot;0YT5e0000005babGAA&quot;,
+    &quot;PolicyName&quot; : &quot;Homeowners (HO3) - 2021-7-27-7-5-0&quot;
+  }, {
+    &quot;AddressCity&quot; : &quot;Teaneck&quot;,
+    &quot;AddressPostalCode&quot; : &quot;07666&quot;,
+    &quot;AddressState&quot; : &quot;NJ&quot;,
+    &quot;AddressStreet&quot; : &quot;24 Lindbergh Blvd, Teaneck, NJ 07666, USA&quot;,
+    &quot;PolicyType&quot; : &quot;Auto&quot;,
+    &quot;PolicyId&quot; : &quot;0YT5e0000005badGAA&quot;,
+    &quot;PolicyName&quot; : &quot;Rachel Adams - Multi Auto (Eff. 2021-08-01) 628154544&quot;
+  }, {
+    &quot;AddressCity&quot; : &quot;New York&quot;,
+    &quot;AddressPostalCode&quot; : &quot;10023&quot;,
+    &quot;AddressState&quot; : &quot;NY&quot;,
+    &quot;AddressStreet&quot; : &quot;100 Amsterdam Ave, New York, NY 10023, USA&quot;,
+    &quot;PolicyType&quot; : &quot;Life&quot;,
+    &quot;PolicyId&quot; : &quot;0YT5e0000005baOGAQ&quot;,
+    &quot;PolicyName&quot; : &quot;WL75130&quot;
+  }, {
+    &quot;AddressCity&quot; : &quot;Torrington&quot;,
+    &quot;AddressPostalCode&quot; : &quot;06790&quot;,
+    &quot;AddressState&quot; : &quot;CT&quot;,
+    &quot;AddressStreet&quot; : &quot;24 Lindbergh St, Torrington, CT 06790, USA&quot;,
+    &quot;PolicyType&quot; : &quot;Auto&quot;,
+    &quot;PolicyId&quot; : &quot;0YT5e0000005baAGAQ&quot;,
+    &quot;PolicyName&quot; : &quot;PN-ZEUM5I&quot;
+  }, {
+    &quot;AddressCity&quot; : &quot;New York&quot;,
+    &quot;AddressPostalCode&quot; : &quot;10023&quot;,
+    &quot;AddressState&quot; : &quot;NY&quot;,
+    &quot;AddressStreet&quot; : &quot;100 Amsterdam Ave, New York, NY 10023, USA&quot;,
+    &quot;PolicyType&quot; : &quot;Auto&quot;,
+    &quot;PolicyId&quot; : &quot;0YT5e0000005baVGAQ&quot;,
+    &quot;PolicyName&quot; : &quot;PN-GZ5120A&quot;
+  } ],
+  &quot;Your_ColumnNames&quot; : [ {
+    &quot;fieldName&quot; : &quot;PolicyName&quot;,
+    &quot;label&quot; : &quot;Policy Number&quot;
+  }, {
+    &quot;fieldName&quot; : &quot;PolicyType&quot;,
+    &quot;label&quot; : &quot;Policy Type&quot;
+  }, {
+    &quot;fieldName&quot; : &quot;AddressStreet&quot;,
+    &quot;label&quot; : &quot;Street&quot;
+  }, {
+    &quot;fieldName&quot; : &quot;AddressCity&quot;,
+    &quot;label&quot; : &quot;City&quot;
+  }, {
+    &quot;fieldName&quot; : &quot;AddressState&quot;,
+    &quot;label&quot; : &quot;State&quot;
+  }, {
+    &quot;fieldName&quot; : &quot;AddressPostalCode&quot;,
+    &quot;label&quot; : &quot;Zip&quot;
+  } ],
+  &quot;Id&quot; : &quot;%contextid%&quot;,
+  &quot;ContextId&quot; : &quot;0015e00000HBlH1AAL&quot;,
+  &quot;timeStamp&quot; : &quot;2021-09-09T19:53:54.123Z&quot;,
+  &quot;userProfile&quot; : &quot;*FINS - Internal - Admin&quot;,
+  &quot;userTimeZone&quot; : &quot;-240&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;corey.carpenter@sfiseorg3.demo&quot;,
+  &quot;userId&quot; : &quot;0055e000006WasxAAC&quot;,
+  &quot;AccountList&quot; : [ {
+    &quot;RecordTypeId&quot; : &quot;0125e000001qMeJAAU&quot;,
+    &quot;Id&quot; : &quot;0015e00000HXKotAAH&quot;,
+    &quot;Name&quot; : &quot;Doug Richert Body Shop&quot;
+  }, {
+    &quot;RecordTypeId&quot; : &quot;0125e000001qMcyAAE&quot;,
+    &quot;Id&quot; : &quot;0015e00000KxQ0QAAV&quot;,
+    &quot;Name&quot; : &quot;Will Baker&quot;
+  }, {
+    &quot;RecordTypeId&quot; : &quot;0125e000001qMcxAAE&quot;,
+    &quot;Id&quot; : &quot;0015e00000HBlHVAA1&quot;,
+    &quot;Name&quot; : &quot;Universal Containers&quot;
+  }, {
+    &quot;RecordTypeId&quot; : &quot;0125e000001qMcxAAE&quot;,
+    &quot;Id&quot; : &quot;0015e00000HBlHWAA1&quot;,
+    &quot;Name&quot; : &quot;Global Insurance&quot;
+  }, {
+    &quot;RecordTypeId&quot; : &quot;0125e000001qMcxAAE&quot;,
+    &quot;Id&quot; : &quot;0015e00000HBlHXAA1&quot;,
+    &quot;Name&quot; : &quot;Opportunity Resources Inc&quot;
+  } ],
+  &quot;SelectAddresses&quot; : {
+    &quot;IsHomeSelectedMessage&quot; : false,
+    &quot;IsHomeSelected&quot; : &quot;False&quot;,
+    &quot;IsPolicyAddressSelected&quot; : 0,
+    &quot;RecordsDisplayed&quot; : [ {
+      &quot;selectedDataNode&quot; : {
+        &quot;AddressCity&quot; : &quot;New York&quot;,
+        &quot;AddressPostalCode&quot; : &quot;10023&quot;,
+        &quot;AddressState&quot; : &quot;NY&quot;,
+        &quot;AddressStreet&quot; : &quot;100 Amsterdam Ave, New York, NY 10023, USA&quot;,
+        &quot;PolicyType&quot; : &quot;Specialty&quot;,
+        &quot;PolicyId&quot; : &quot;0YT5e0000005jTIGAY&quot;,
+        &quot;PolicyName&quot; : &quot;Acc79856&quot;
+      }
+    } ]
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRAddressChangeNewCase</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>d48ca0c9-e8af-4b51-b1db-da6e057e82ed</globalKey>
+        <inputFieldName>Subject</inputFieldName>
+        <inputObjectName>json</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRAddressChangeNewCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Subject</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>051a5154-e91b-425a-969d-c3e3d5535cca</globalKey>
+        <inputFieldName>Status</inputFieldName>
+        <inputObjectName>json</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRAddressChangeNewCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Status</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>8156c45f-2f4c-4de1-9149-5bde9e8931ea</globalKey>
+        <inputFieldName>AccountId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRAddressChangeNewCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AccountId</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>cae4a85f-24f6-464c-9f1d-8b9bf6efd39e</globalKey>
+        <inputFieldName>Type</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRAddressChangeNewCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Type</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ea1ca4e3-c02c-4958-88ba-0d8761b2e1bf</globalKey>
+        <inputFieldName>OwnerId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRAddressChangeNewCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>OwnerId</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>b7aebf7f-24ed-4862-8493-fa754fc8ef4b</globalKey>
+        <inputFieldName>Description</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRAddressChangeNewCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Description</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;Policies&quot; : [ {
+    &quot;AddressCity&quot; : &quot;New York&quot;,
+    &quot;AddressPostalCode&quot; : &quot;10023&quot;,
+    &quot;AddressState&quot; : &quot;NY&quot;,
+    &quot;AddressStreet&quot; : &quot;100 Amsterdam Ave, New York, NY 10023, USA&quot;,
+    &quot;PolicyType&quot; : &quot;Specialty&quot;,
+    &quot;PolicyId&quot; : &quot;0YT5e0000005jTIGAY&quot;,
+    &quot;PolicyName&quot; : &quot;Acc79856&quot;
+  }, {
+    &quot;AddressCity&quot; : &quot;Coffeyville&quot;,
+    &quot;AddressPostalCode&quot; : &quot;67337&quot;,
+    &quot;AddressState&quot; : &quot;KS&quot;,
+    &quot;AddressStreet&quot; : &quot;3541 US-166, Coffeyville, KS 67337, USA&quot;,
+    &quot;PolicyType&quot; : &quot;Home&quot;,
+    &quot;PolicyId&quot; : &quot;0YT5e0000005bK7GAI&quot;,
+    &quot;PolicyName&quot; : &quot;PN-HOME-440957&quot;
+  }, {
+    &quot;AddressCity&quot; : &quot;New York&quot;,
+    &quot;AddressPostalCode&quot; : &quot;10023&quot;,
+    &quot;AddressState&quot; : &quot;NY&quot;,
+    &quot;AddressStreet&quot; : &quot;100 Amsterdam Ave, New York, NY 10023, USA&quot;,
+    &quot;PolicyType&quot; : &quot;Property&quot;,
+    &quot;PolicyId&quot; : &quot;0YT5e0000005babGAA&quot;,
+    &quot;PolicyName&quot; : &quot;Homeowners (HO3) - 2021-7-27-7-5-0&quot;
+  }, {
+    &quot;AddressCity&quot; : &quot;Teaneck&quot;,
+    &quot;AddressPostalCode&quot; : &quot;07666&quot;,
+    &quot;AddressState&quot; : &quot;NJ&quot;,
+    &quot;AddressStreet&quot; : &quot;24 Lindbergh Blvd, Teaneck, NJ 07666, USA&quot;,
+    &quot;PolicyType&quot; : &quot;Auto&quot;,
+    &quot;PolicyId&quot; : &quot;0YT5e0000005badGAA&quot;,
+    &quot;PolicyName&quot; : &quot;Rachel Adams - Multi Auto (Eff. 2021-08-01) 628154544&quot;
+  }, {
+    &quot;AddressCity&quot; : &quot;New York&quot;,
+    &quot;AddressPostalCode&quot; : &quot;10023&quot;,
+    &quot;AddressState&quot; : &quot;NY&quot;,
+    &quot;AddressStreet&quot; : &quot;100 Amsterdam Ave, New York, NY 10023, USA&quot;,
+    &quot;PolicyType&quot; : &quot;Life&quot;,
+    &quot;PolicyId&quot; : &quot;0YT5e0000005baOGAQ&quot;,
+    &quot;PolicyName&quot; : &quot;WL75130&quot;
+  }, {
+    &quot;AddressCity&quot; : &quot;Torrington&quot;,
+    &quot;AddressPostalCode&quot; : &quot;06790&quot;,
+    &quot;AddressState&quot; : &quot;CT&quot;,
+    &quot;AddressStreet&quot; : &quot;24 Lindbergh St, Torrington, CT 06790, USA&quot;,
+    &quot;PolicyType&quot; : &quot;Auto&quot;,
+    &quot;PolicyId&quot; : &quot;0YT5e0000005baAGAQ&quot;,
+    &quot;PolicyName&quot; : &quot;PN-ZEUM5I&quot;
+  }, {
+    &quot;AddressCity&quot; : &quot;New York&quot;,
+    &quot;AddressPostalCode&quot; : &quot;10023&quot;,
+    &quot;AddressState&quot; : &quot;NY&quot;,
+    &quot;AddressStreet&quot; : &quot;100 Amsterdam Ave, New York, NY 10023, USA&quot;,
+    &quot;PolicyType&quot; : &quot;Auto&quot;,
+    &quot;PolicyId&quot; : &quot;0YT5e0000005baVGAQ&quot;,
+    &quot;PolicyName&quot; : &quot;PN-GZ5120A&quot;
+  } ],
+  &quot;Your_ColumnNames&quot; : [ {
+    &quot;fieldName&quot; : &quot;PolicyName&quot;,
+    &quot;label&quot; : &quot;Policy Number&quot;
+  }, {
+    &quot;fieldName&quot; : &quot;PolicyType&quot;,
+    &quot;label&quot; : &quot;Policy Type&quot;
+  }, {
+    &quot;fieldName&quot; : &quot;AddressStreet&quot;,
+    &quot;label&quot; : &quot;Street&quot;
+  }, {
+    &quot;fieldName&quot; : &quot;AddressCity&quot;,
+    &quot;label&quot; : &quot;City&quot;
+  }, {
+    &quot;fieldName&quot; : &quot;AddressState&quot;,
+    &quot;label&quot; : &quot;State&quot;
+  }, {
+    &quot;fieldName&quot; : &quot;AddressPostalCode&quot;,
+    &quot;label&quot; : &quot;Zip&quot;
+  } ],
+  &quot;Id&quot; : &quot;%contextid%&quot;,
+  &quot;ContextId&quot; : &quot;0015e00000HBlH1AAL&quot;,
+  &quot;timeStamp&quot; : &quot;2021-09-09T19:53:54.123Z&quot;,
+  &quot;userProfile&quot; : &quot;*FINS - Internal - Admin&quot;,
+  &quot;userTimeZone&quot; : &quot;-240&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;corey.carpenter@sfiseorg3.demo&quot;,
+  &quot;userId&quot; : &quot;0055e000006WasxAAC&quot;,
+  &quot;AccountList&quot; : [ {
+    &quot;RecordTypeId&quot; : &quot;0125e000001qMeJAAU&quot;,
+    &quot;Id&quot; : &quot;0015e00000HXKotAAH&quot;,
+    &quot;Name&quot; : &quot;Doug Richert Body Shop&quot;
+  }, {
+    &quot;RecordTypeId&quot; : &quot;0125e000001qMcyAAE&quot;,
+    &quot;Id&quot; : &quot;0015e00000KxQ0QAAV&quot;,
+    &quot;Name&quot; : &quot;Will Baker&quot;
+  }, {
+    &quot;RecordTypeId&quot; : &quot;0125e000001qMcxAAE&quot;,
+    &quot;Id&quot; : &quot;0015e00000HBlHVAA1&quot;,
+    &quot;Name&quot; : &quot;Universal Containers&quot;
+  }, {
+    &quot;RecordTypeId&quot; : &quot;0125e000001qMcxAAE&quot;,
+    &quot;Id&quot; : &quot;0015e00000HBlHWAA1&quot;,
+    &quot;Name&quot; : &quot;Global Insurance&quot;
+  }, {
+    &quot;RecordTypeId&quot; : &quot;0125e000001qMcxAAE&quot;,
+    &quot;Id&quot; : &quot;0015e00000HBlHXAA1&quot;,
+    &quot;Name&quot; : &quot;Opportunity Resources Inc&quot;
+  } ],
+  &quot;SelectAddresses&quot; : {
+    &quot;IsHomeSelectedMessage&quot; : false,
+    &quot;IsHomeSelected&quot; : &quot;False&quot;,
+    &quot;IsPolicyAddressSelected&quot; : 0,
+    &quot;RecordsDisplayed&quot; : [ {
+      &quot;selectedDataNode&quot; : {
+        &quot;AddressCity&quot; : &quot;New York&quot;,
+        &quot;AddressPostalCode&quot; : &quot;10023&quot;,
+        &quot;AddressState&quot; : &quot;NY&quot;,
+        &quot;AddressStreet&quot; : &quot;100 Amsterdam Ave, New York, NY 10023, USA&quot;,
+        &quot;PolicyType&quot; : &quot;Specialty&quot;,
+        &quot;PolicyId&quot; : &quot;0YT5e0000005jTIGAY&quot;,
+        &quot;PolicyName&quot; : &quot;Acc79856&quot;
+      }
+    } ],
+    &quot;NewAddress-Block&quot; : {
+      &quot;NewAddress&quot; : &quot;40 Duke Medicine Cir, Durham, NC 27710, USA&quot;,
+      &quot;PostalCode&quot; : &quot;27710&quot;,
+      &quot;Country&quot; : &quot;United States&quot;,
+      &quot;State&quot; : &quot;NC&quot;,
+      &quot;City&quot; : &quot;Durham&quot;,
+      &quot;Street&quot; : &quot;40 Duke Medicine Circle&quot;
+    }
+  },
+  &quot;OwnerId&quot; : &quot;0055e000006nCNMAA2&quot;,
+  &quot;AccountId&quot; : &quot;0015e00000HBlH1AAL&quot;,
+  &quot;Description&quot; : &quot;Home Policy Address Changes. Please Contact Policyholder.&quot;,
+  &quot;Type&quot; : &quot;General&quot;,
+  &quot;Subject&quot; : &quot;Address Change: Contact Customer&quot;,
+  &quot;Status&quot; : &quot;Not Started&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DRAddressChangeNewCase_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

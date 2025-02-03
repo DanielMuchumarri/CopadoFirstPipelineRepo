@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>inov8__FY20_Q1</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>inov8__FY20_Q1</fullName>
+        <fields>Name</fields>
+        <fields>inov8__Health_Icon__c</fields>
+        <fields>inov8__Phase_Completion_Image__c</fields>
+        <fields>inov8__Project__c</fields>
+        <label>FY20-Q1</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Phases are significant events in the life-cycle of a Project. Phases can have tasks associated with them.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>External_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>This is used to consistently import data to a version of the SDO and translate data into other languages.</description>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__Daily_progress__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TEXT(100/ inov8__Length__c) &amp; &apos; %&apos;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Daily progress</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__Days_to_go__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>inov8__Deadline_formula__c - Today()</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days to go</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__Deadline_formula__c</fullName>
+        <deprecated>false</deprecated>
+        <formula>IF(ISNULL(inov8__End_Date_Rollup__c),  IF(ISNULL( inov8__End_date_from_child__c), inov8__Project__r.inov8__Deadline_formula__c, inov8__End_date_from_child__c) , inov8__End_Date_Rollup__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Duration__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>inov8__Deadline_formula__c -inov8__Kickoff_formula__c+1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__End_Date_Rollup__c</fullName>
+        <deprecated>false</deprecated>
+        <label>End Date Rollup</label>
+        <summarizedField>inov8__PMT_Task__c.inov8__Due_Date__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Task__c.inov8__Phase__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__End_date_from_child__c</fullName>
+        <deprecated>false</deprecated>
+        <label>End date from child</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Expected_age_of_completion__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF( TODAY() &gt;  inov8__Deadline_formula__c , 100, ( TODAY() -  inov8__Kickoff_formula__c ) *  VALUE( SUBSTITUTE( inov8__Daily_progress__c , &apos; %&apos;, &apos;&apos;)  ) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Expected % age of completion</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__Health_Icon__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IMAGE(
+CASE(inov8__Phase_Health__c,
+&quot;Not Started&quot;, &quot;/resource/inov8__PMT_Status_logos/Not_Started.png&quot;,
+&quot;On Track&quot;, &quot;/resource/inov8__PMT_Status_logos/On_Track.png&quot;,
+&quot;At risk&quot;, &quot;/resource/inov8__PMT_Status_logos/At_Risk.png&quot;,
+&quot;Late&quot;, &quot;/resource/inov8__PMT_Status_logos/Late.png&quot;,
+&quot;On Hold&quot;, &quot;/resource/inov8__PMT_Status_logos/On_Hold.png&quot;,
+&quot;Completed&quot;, &quot;/resource/inov8__PMT_Status_logos/Completed.png&quot;,
+&quot;Closed, not Completed&quot;, &quot;/resource/inov8__PMT_Status_logos/Closed_not_Completed.png&quot;,
+&quot;/resource/inov8__PMT_Status_logos/On_Track.png&quot;),
+&quot;status icon&quot;,25,25)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Phase Health</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__Kickoff_formula__c</fullName>
+        <deprecated>false</deprecated>
+        <formula>IF(ISNULL(inov8__Start_Date_Rollup__c),  IF(ISNULL( inov8__Start_date_from_child_project__c), inov8__Project__r.inov8__Kickoff_formula__c, inov8__Start_date_from_child_project__c) ,inov8__Start_Date_Rollup__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Length__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>inov8__Deadline_formula__c -  inov8__Kickoff_formula__c</formula>
+        <label>Length</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__Percentage_Completion_without_child__c</fullName>
+        <deprecated>false</deprecated>
+        <formula>inov8__Sum_Of_Task_Completion__c/inov8__Task_Count__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Percentage Completion without child %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Phase_Completion_Image__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IMAGE(&quot;/resource/inov8__PMT_Status_Images/PMT_Percent_100.jpg&quot;, &quot;Completed&quot;, 10, ( inov8__Phase_Completion__c * 100 )/1.3) &amp; 
+IMAGE(&quot;/resource/inov8__PMT_Status_Images/PMT_Percent_0.jpg&quot;, &quot;Zero&quot;, 10, (100 - inov8__Phase_Completion__c * 100 )/1.3) &amp; 
+&apos; &apos; &amp; 
+TEXT(ROUND(inov8__Phase_Completion__c * 100,0))&amp;&quot;%&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Phase Completion</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__Phase_Completion__c</fullName>
+        <deprecated>false</deprecated>
+        <formula>FLOOR((inov8__Sum_Weighted_perc__c / inov8__Sum_Task_Duration__c)*100)/100</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Phase Completion %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Phase_Description__c</fullName>
+        <deprecated>false</deprecated>
+        <inlineHelpText>A general description of the phase.</inlineHelpText>
+        <label>Phase Description</label>
+        <length>5000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>inov8__Phase_Health__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Phase Health</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Started</fullName>
+                    <default>false</default>
+                    <label>Not Started</label>
+                </value>
+                <value>
+                    <fullName>On Track</fullName>
+                    <default>true</default>
+                    <label>On Track</label>
+                </value>
+                <value>
+                    <fullName>At Risk</fullName>
+                    <default>false</default>
+                    <label>At Risk</label>
+                </value>
+                <value>
+                    <fullName>Late</fullName>
+                    <default>false</default>
+                    <label>Late</label>
+                </value>
+                <value>
+                    <fullName>On Hold</fullName>
+                    <default>false</default>
+                    <label>On Hold</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Closed, not Completed</fullName>
+                    <default>false</default>
+                    <label>Closed, not Completed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>inov8__Phase_Weighted_Perc__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>inov8__Sum_Task_Duration__c * inov8__Phase_Completion__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Phase Weighted %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__Phases_with_completed_tasks__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Phases with completed tasks</label>
+        <summaryFilterItems>
+            <field>inov8__PMT_Task__c.inov8__Status__c</field>
+            <operation>equals</operation>
+            <value>&quot;Completed&quot;, &quot;Closed, not Completed&quot;</value>
+        </summaryFilterItems>
+        <summaryForeignKey>inov8__PMT_Task__c.inov8__Phase__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Project__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The project this phase is assigned to</description>
+        <label>Project Name</label>
+        <referenceTo>inov8__PMT_Project__c</referenceTo>
+        <relationshipLabel>PMT Phases</relationshipLabel>
+        <relationshipName>Project_Phases</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>inov8__Start_Date_Rollup__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Start Date Rollup</label>
+        <summarizedField>inov8__PMT_Task__c.inov8__Start_Date__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Task__c.inov8__Phase__c</summaryForeignKey>
+        <summaryOperation>min</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Start_date_from_child_project__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Start date from child project</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Sum_Of_Task_Completion__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Sum Of Task Completion</label>
+        <summarizedField>inov8__PMT_Task__c.inov8__Percentage_Completion__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Task__c.inov8__Phase__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Sum_Task_Duration__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Sum Task Duration</label>
+        <summarizedField>inov8__PMT_Task__c.inov8__Duration__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Task__c.inov8__Phase__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Sum_Weighted_perc__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Sum Weighted %</label>
+        <summarizedField>inov8__PMT_Task__c.inov8__Weighted_percentage__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Task__c.inov8__Phase__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Sum_of_tasks_count_child__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Sum of tasks count child</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__Task_Count__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Count phases for calculating average</description>
+        <label>Tasks Count</label>
+        <summaryForeignKey>inov8__PMT_Task__c.inov8__Phase__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <label>PMT Phase</label>
+    <listViews>
+        <fullName>inov8__All1</fullName>
+        <columns>inov8__Health_Icon__c</columns>
+        <columns>inov8__Project__c</columns>
+        <columns>NAME</columns>
+        <columns>inov8__Phase_Completion__c</columns>
+        <columns>inov8__Deadline_formula__c</columns>
+        <columns>inov8__Kickoff_formula__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Phase Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>PMT Phases</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>inov8__Project__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>inov8__Project__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>inov8__Project__c</searchFilterFields>
+        <searchResultsAdditionalFields>inov8__Project__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>inov8__Health_Icon__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>inov8__Phase_Health__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>inov8__Kickoff_before_deadline</fullName>
+        <active>true</active>
+        <description>Phase Start date must be earlier than end date</description>
+        <errorConditionFormula>NOT(ISNULL(inov8__Start_Date_Rollup__c)) &amp;&amp; 
+NOT(ISNULL(inov8__End_Date_Rollup__c)) &amp;&amp; 
+inov8__Start_Date_Rollup__c&gt;inov8__End_Date_Rollup__c</errorConditionFormula>
+        <errorMessage>Phase End Date must be after Phase Start date.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

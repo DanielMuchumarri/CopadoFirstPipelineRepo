@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExpressionSetDefinitionVersion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Expression set that gives the relationship between application form and assessment type.</description>
+    <expressionSetDefinition>Application_Assessment_Mapping</expressionSetDefinition>
+    <label>Application Assessment Mapping CLONE</label>
+    <processType>Bre</processType>
+    <rank>1</rank>
+    <shouldShowExplExternally>false</shouldShowExplExternally>
+    <startDate>2023-01-24T06:39:34.000Z</startDate>
+    <status>Active</status>
+    <steps>
+        <actionType>GetOutputsFromDecisionMatrix</actionType>
+        <decisionTable>
+            <decisionTableName>Application_Assessment_Map</decisionTableName>
+            <type>DecisionMatrix</type>
+        </decisionTable>
+        <label>Lookup Table</label>
+        <name>LookupTable</name>
+        <resultIncluded>true</resultIncluded>
+        <sequenceNumber>1</sequenceNumber>
+        <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
+        <shouldExposeConditionDetails>false</shouldExposeConditionDetails>
+        <shouldShowExplExternally>false</shouldShowExplExternally>
+        <stepType>BusinessKnowledgeModel</stepType>
+    </steps>
+    <variables>
+        <collection>false</collection>
+        <dataType>Text</dataType>
+        <input>true</input>
+        <lookupName>Application_Assessment_Map</lookupName>
+        <lookupType>DecisionMatrix</lookupType>
+        <name>ApplicationType</name>
+        <output>false</output>
+        <type>Variable</type>
+    </variables>
+    <variables>
+        <collection>false</collection>
+        <dataType>Text</dataType>
+        <input>false</input>
+        <lookupName>Application_Assessment_Map</lookupName>
+        <lookupType>DecisionMatrix</lookupType>
+        <name>Application_Assessment_Map__AssessmentType</name>
+        <output>true</output>
+        <type>Variable</type>
+    </variables>
+    <versionNumber>1</versionNumber>
+</ExpressionSetDefinitionVersion>

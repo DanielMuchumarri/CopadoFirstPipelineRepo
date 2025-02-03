@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EnablementProgramDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Engage Senior Leaders Early to Close More Deals</description>
+    <developerName>program_cf8d83ef_7426_46d5_a962_cdb650e89fc4</developerName>
+    <doesAllowSelfEnrollment>false</doesAllowSelfEnrollment>
+    <masterLabel>Increase Close Rate</masterLabel>
+    <name>Increase Close Rate</name>
+    <tasks>
+        <day>5</day>
+        <description>Leaders are busy. Learn how to cut through the noise</description>
+        <developerName>TASK_b12c1082_e242_4a23_bb26_3c023e5b13f4</developerName>
+        <exercise>
+            <cmsContent>
+                <apiName>enablement/sfdcEnablement_EnablementWorkspace.sfdc_enablement__link/MCFEBTKXFTP5GJ3PAYGIID64DHSI</apiName>
+            </cmsContent>
+        </exercise>
+        <name>Read Executive Email Best Practices</name>
+        <sequenceNumber>0</sequenceNumber>
+        <taskCategory>Exercise</taskCategory>
+        <taskSubCategory>OtherExercise</taskSubCategory>
+    </tasks>
+    <tasks>
+        <day>7</day>
+        <description>Take your templates and customize them to make them yours</description>
+        <developerName>TASK_2c34d943_b67c_4b75_88f2_fd45a445020f</developerName>
+        <exercise>
+            <cmsContent>
+                <apiName>enablement/sfdcEnablement_EnablementWorkspace.sfdc_enablement__link/MCH46MLOVQCRBTPOCK3WQI4COWTE</apiName>
+            </cmsContent>
+        </exercise>
+        <name>Customize Your Executive Templates</name>
+        <sequenceNumber>1</sequenceNumber>
+        <taskCategory>Exercise</taskCategory>
+        <taskSubCategory>OtherExercise</taskSubCategory>
+    </tasks>
+    <tasks>
+        <day>30</day>
+        <description>Understand where you’re headed and how to get there in a remote selling environment</description>
+        <developerName>TASK_61e5feb5_6c3d_4663_9592_ad2c05f42d09</developerName>
+        <exercise>
+            <cmsContent>
+                <apiName>enablement/sfdcEnablement_EnablementWorkspace.sfdc_enablement__videoLesson/MC6E7EHGCORVGX3JUFIUBUULWKXE</apiName>
+            </cmsContent>
+        </exercise>
+        <name>Watch A Successful Discovery Call</name>
+        <sequenceNumber>3</sequenceNumber>
+        <taskCategory>Exercise</taskCategory>
+        <taskSubCategory>Video</taskSubCategory>
+    </tasks>
+    <tasks>
+        <day>7</day>
+        <description>Log 50 Emails with Senior Executives of your customers</description>
+        <developerName>TASK_e9472130_071e_47ea_abf5_c4a314f8bcfc</developerName>
+        <milestone>
+            <isMilestoneAnOutcome>false</isMilestoneAnOutcome>
+            <milestoneMeasures>
+                <measureDefinitionDeveloperName>salesforceTemplate_LoggedEmails</measureDefinitionDeveloperName>
+            </milestoneMeasures>
+            <milestoneTarget>50.0</milestoneTarget>
+        </milestone>
+        <name>Log 50 Emails with Executives</name>
+        <sequenceNumber>2</sequenceNumber>
+        <taskCategory>Milestone</taskCategory>
+        <taskSubCategory>Other</taskSubCategory>
+    </tasks>
+    <tasks>
+        <day>45</day>
+        <description>Pipe 5 Opportunities with a Contact Role associated with an Executive Title</description>
+        <developerName>TASK_f6a5f114_d625_4d51_bebd_7dbd2435ba4b</developerName>
+        <milestone>
+            <isMilestoneAnOutcome>false</isMilestoneAnOutcome>
+            <milestoneMeasures>
+                <measureDefinitionDeveloperName>salesforceTemplate_DealsWonAmount</measureDefinitionDeveloperName>
+            </milestoneMeasures>
+            <milestoneTarget>5.0</milestoneTarget>
+        </milestone>
+        <name>Pipe 5 Opportunities with Senior Leadership Attached</name>
+        <sequenceNumber>4</sequenceNumber>
+        <taskCategory>Milestone</taskCategory>
+        <taskSubCategory>Other</taskSubCategory>
+    </tasks>
+    <tasks>
+        <day>100</day>
+        <description>Close 2 Opportunities with an Executive Contact Role Attached</description>
+        <developerName>TASK_68c8b80c_37ac_4cf6_b36c_81152c87b867</developerName>
+        <milestone>
+            <isMilestoneAnOutcome>false</isMilestoneAnOutcome>
+            <milestoneMeasures>
+                <measureDefinitionDeveloperName>salesforceTemplate_DealsWonCount</measureDefinitionDeveloperName>
+            </milestoneMeasures>
+            <milestoneTarget>2.0</milestoneTarget>
+        </milestone>
+        <name>Close 2 Deals with Senior Leaders Attached</name>
+        <sequenceNumber>5</sequenceNumber>
+        <taskCategory>Milestone</taskCategory>
+        <taskSubCategory>Other</taskSubCategory>
+    </tasks>
+    <type>Enablement</type>
+</EnablementProgramDefinition>

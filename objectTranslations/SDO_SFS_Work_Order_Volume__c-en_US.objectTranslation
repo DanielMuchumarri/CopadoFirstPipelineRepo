@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Work Order Volume</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Work Order Volumes</value>
+    </caseValues>
+    <fields>
+        <label><!-- Break-fix Volume --></label>
+        <name>Break_fix_Volume__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commerical Install Volume --></label>
+        <name>Commerical_Install_Volume__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Completed --></label>
+        <name>Date_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inspection Volume --></label>
+        <name>Inspection_Volume__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maintenance Volume --></label>
+        <name>Maintenance_Volume__c</name>
+    </fields>
+    <fields>
+        <label><!-- Residential Install Volume --></label>
+        <name>Residential_Install_Volume__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Territory --></label>
+        <name>Service_Territory__c</name>
+        <relationshipLabel><!-- Work Order Volumes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Work Order Volume --></label>
+        <name>Total_Work_Order_Volume__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

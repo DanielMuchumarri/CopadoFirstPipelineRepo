@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;vlcTimeTracking&quot; : {
+    &quot;DataRaptorPostAction1&quot; : null,
+    &quot;Add Employment Information&quot; : null,
+    &quot;View Confirmation&quot; : null,
+    &quot;Upload Documents&quot; : null,
+    &quot;Account Funding&quot; : null,
+    &quot;Provide Disclosure and Consent&quot; : null,
+    &quot;Services Requested&quot; : null,
+    &quot;Address Information&quot; : null,
+    &quot;Add Primary Information&quot; : null,
+    &quot;Save-Responses&quot; : null,
+    &quot;Verify Your Identity&quot; : null
+  },
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;userTimeZone&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;ContextId&quot; : null,
+  &quot;Add Employment Information&quot; : {
+    &quot;Employment_Information&quot; : {
+      &quot;FSC_ONB_Employment_Type&quot; : null,
+      &quot;FSC_ONB_JobTitle&quot; : null,
+      &quot;FSC_ONB_EndDate&quot; : null,
+      &quot;FSC_ONB_GrossAnnualIncome&quot; : null,
+      &quot;FSC_ONB_StartDate&quot; : null,
+      &quot;FSC_ONB_Employment_Name&quot; : null,
+      &quot;FSC_ONB_WorkerType&quot; : null
+    }
+  },
+  &quot;View Confirmation&quot; : { },
+  &quot;Upload Documents&quot; : {
+    &quot;FSC_ONB_v1_IDProof&quot; : [ {
+      &quot;data&quot; : null,
+      &quot;size&quot; : null,
+      &quot;filename&quot; : null
+    } ],
+    &quot;FSC_ONB_v1_AddressProof&quot; : [ {
+      &quot;data&quot; : null,
+      &quot;size&quot; : null,
+      &quot;filename&quot; : null
+    } ]
+  },
+  &quot;Account Funding&quot; : {
+    &quot;FSC_BankRoutingNumber&quot; : null,
+    &quot;FSC_ONB_NameontheAccount&quot; : null
+  },
+  &quot;Provide Disclosure and Consent&quot; : {
+    &quot;FSC_ONB_v1_Disclosure&quot; : null,
+    &quot;Signature1&quot; : null
+  },
+  &quot;Services Requested&quot; : {
+    &quot;FSC_ONB_CheckbookRequired&quot; : null,
+    &quot;FSC_ONB_ElectronicStmtOptin&quot; : null,
+    &quot;Mode_of_Operation&quot; : null,
+    &quot;FSC_ONB_ATMCardRequested&quot; : null
+  },
+  &quot;Address Information&quot; : {
+    &quot;Address&quot; : {
+      &quot;Address_Type&quot; : null,
+      &quot;Address_Country&quot; : null,
+      &quot;Address_State&quot; : null,
+      &quot;Address_Zip&quot; : null,
+      &quot;Address_City&quot; : null,
+      &quot;Address_Street&quot; : null
+    }
+  },
+  &quot;Add Primary Information&quot; : {
+    &quot;FSC_ONB_v1_Prefix&quot; : null,
+    &quot;FSC_ONB_v1_Suffix&quot; : null,
+    &quot;FSC_ONB_v1_FirstName&quot; : null,
+    &quot;FSC_ONB_v1_Phone&quot; : null,
+    &quot;FSC_ONB_v1_Gender&quot; : null,
+    &quot;FSC_ONB_v1_PrimaryTaxIdType&quot; : null,
+    &quot;FSC_ONB_v1_PrimaryTaxIdNumber&quot; : null,
+    &quot;FSC_ONB_v1_DateOfBirth&quot; : null,
+    &quot;FSC_ONB_v1_Nationality&quot; : null,
+    &quot;FSC_ONB_v1_BirthCountry&quot; : null,
+    &quot;FSC_ONB_v1_DomicileCountry&quot; : null,
+    &quot;FSC_ONB_v1_Email&quot; : null,
+    &quot;FSC_ONB_v1_EmploymentIndustry&quot; : null,
+    &quot;FSC_ONB_v1_PrimaryIdType&quot; : null,
+    &quot;FSC_ONB_v1_PrimaryId&quot; : null,
+    &quot;FSC_ONB_v1_PrimaryIdName&quot; : null,
+    &quot;FSC_ONB_v1_FundSource&quot; : null,
+    &quot;FSC_ONB_v1_ResidentType&quot; : null,
+    &quot;FSC_ONB_v1_LastName&quot; : null
+  },
+  &quot;Verify Your Identity&quot; : {
+    &quot;QRCode&quot; : null
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>UpdatePartyProfileForOnboarding</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboarding7499039951019346</globalKey>
+        <inputFieldName>Add Primary Information:FSC_ONB_v1_PrimaryIdType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PrimaryIdentifierType</outputFieldName>
+        <outputObjectName>PartyProfile</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboarding16152816354280564</globalKey>
+        <inputFieldName>Add Primary Information:FSC_ONB_v1_Gender</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Gender</outputFieldName>
+        <outputObjectName>PartyProfile</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboarding600879415832754</globalKey>
+        <inputFieldName>Add Primary Information:FSC_ONB_v1_PrimaryIdName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PrimaryIdentificationName</outputFieldName>
+        <outputObjectName>PartyProfile</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboarding9751725339239585</globalKey>
+        <inputFieldName>Add Primary Information:FSC_ONB_v1_EmploymentIndustry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EmploymentIndustry</outputFieldName>
+        <outputObjectName>PartyProfile</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboardingCustom468</globalKey>
+        <inputFieldName>PartyProfileId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>PartyProfile</outputObjectName>
+        <requiredForUpsert>true</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboarding6546737951109896</globalKey>
+        <inputFieldName>Add Address Details:FSC_ONB_v1_Address:FSC_ONB_v1_Address_State</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>State</outputFieldName>
+        <outputObjectName>PartyProfileAddress</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboarding6405932488941095</globalKey>
+        <inputFieldName>Add Primary Information:FSC_ONB_v1_DateOfBirth</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>DateOfBirth</outputFieldName>
+        <outputObjectName>PartyProfile</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboarding5876691211482774</globalKey>
+        <inputFieldName>Add Address Details:FSC_ONB_v1_Address:FSC_ONB_v1_Address_City</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>City</outputFieldName>
+        <outputObjectName>PartyProfileAddress</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>UpdatePartyProfileForOnboarding5770360871199331</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedFieldName>Id</linkedFieldName>
+        <linkedObjectSequence>1.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>PartyProfileId</outputFieldName>
+        <outputObjectName>PartyProfileAddress</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboarding09136343396628344</globalKey>
+        <inputFieldName>Add Address Details:FSC_ONB_v1_Address:FSC_ONB_v1_Address_Street</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Street</outputFieldName>
+        <outputObjectName>PartyProfileAddress</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboarding5345519729703996</globalKey>
+        <inputFieldName>Add Primary Information:FSC_ONB_v1_Prefix</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Prefix</outputFieldName>
+        <outputObjectName>PartyProfile</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboarding44505469125697816</globalKey>
+        <inputFieldName>Add Primary Information:FSC_ONB_v1_DomicileCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CountryOfDomicile</outputFieldName>
+        <outputObjectName>PartyProfile</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Risk Screening</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboardingCustom557</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Stage</outputFieldName>
+        <outputObjectName>PartyProfile</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboarding4402021350691734</globalKey>
+        <inputFieldName>Add Primary Information:FSC_ONB_v1_Email</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PrimaryEmail</outputFieldName>
+        <outputObjectName>PartyProfile</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboarding5216286643043941</globalKey>
+        <inputFieldName>Add Primary Information:FSC_ONB_v1_PrimaryTaxIdNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TaxpayerIdentificationNumber</outputFieldName>
+        <outputObjectName>PartyProfile</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboarding81058065535966</globalKey>
+        <inputFieldName>Add Primary Information:FSC_ONB_v1_Nationality</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Nationality</outputFieldName>
+        <outputObjectName>PartyProfile</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboardingCustom4301</globalKey>
+        <inputFieldName>Add Primary Information:FSC_ONB_v1_EmploymentType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EmploymentType</outputFieldName>
+        <outputObjectName>PartyProfile</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>UpdatePartyProfileForOnboarding0335137721943668</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>PartyProfile</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboarding6858491941711391</globalKey>
+        <inputFieldName>Add Primary Information:FSC_ONB_v1_PrimaryId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PrimaryIdentifier</outputFieldName>
+        <outputObjectName>PartyProfile</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboarding30732619363926195</globalKey>
+        <inputFieldName>Add Primary Information:FSC_ONB_v1_FirstName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FirstName</outputFieldName>
+        <outputObjectName>PartyProfile</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboarding7298098519028395</globalKey>
+        <inputFieldName>Add Primary Information:FSC_ONB_v1_Suffix</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Suffix</outputFieldName>
+        <outputObjectName>PartyProfile</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboarding5495076297562986</globalKey>
+        <inputFieldName>Add Address Details:FSC_ONB_v1_Address:FSC_ONB_v1_Address_Country</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Country</outputFieldName>
+        <outputObjectName>PartyProfileAddress</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboarding1204988810835772</globalKey>
+        <inputFieldName>Add Primary Information:FSC_ONB_v1_BirthCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CountryofBirth</outputFieldName>
+        <outputObjectName>PartyProfile</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboarding19405279327405722</globalKey>
+        <inputFieldName>Add Primary Information:FSC_ONB_v1_Phone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PrimaryPhone</outputFieldName>
+        <outputObjectName>PartyProfile</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboarding013792983554572702</globalKey>
+        <inputFieldName>Add Address Details:FSC_ONB_v1_Address:FSC_ONB_v1_Address_Zip</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>PostalCode</outputFieldName>
+        <outputObjectName>PartyProfileAddress</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboarding10205236328202183</globalKey>
+        <inputFieldName>Add Primary Information:FSC_ONB_v1_FundSource</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FundSource</outputFieldName>
+        <outputObjectName>PartyProfile</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboarding4706504583264177</globalKey>
+        <inputFieldName>Add Address Details:FSC_ONB_v1_Address:FSC_ONB_v1_Address_Type</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>AddressType</outputFieldName>
+        <outputObjectName>PartyProfileAddress</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>UpdatePartyProfileForOnboarding9249588467350327</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>PartyProfileAddress</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboarding41044582074084324</globalKey>
+        <inputFieldName>Add Primary Information:FSC_ONB_v1_ResidentType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ResidentType</outputFieldName>
+        <outputObjectName>PartyProfile</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Party Profile Address</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboarding39546881704524606</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Name</outputFieldName>
+        <outputObjectName>PartyProfileAddress</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboarding6124801084160085</globalKey>
+        <inputFieldName>Add Primary Information:FSC_ONB_v1_PrimaryTaxIdType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TaxpayerIdentificationType</outputFieldName>
+        <outputObjectName>PartyProfile</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePartyProfileForOnboarding8373326553993481</globalKey>
+        <inputFieldName>Add Primary Information:FSC_ONB_v1_LastName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePartyProfileForOnboarding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>LastName</outputFieldName>
+        <outputObjectName>PartyProfile</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;vlcTimeTracking&quot; : {
+    &quot;DataRaptorPostAction1&quot; : null,
+    &quot;Add Employment Information&quot; : null,
+    &quot;View Confirmation&quot; : null,
+    &quot;Upload Documents&quot; : null,
+    &quot;Account Funding&quot; : null,
+    &quot;Provide Disclosure and Consent&quot; : null,
+    &quot;Services Requested&quot; : null,
+    &quot;Add Address Details&quot; : null,
+    &quot;Add Primary Information&quot; : null,
+    &quot;Save-Responses&quot; : null,
+    &quot;Verify Your Identity&quot; : null
+  },
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;userTimeZone&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;ContextId&quot; : null,
+  &quot;Add Employment Information&quot; : {
+    &quot;Employment_Information&quot; : {
+      &quot;FSC_ONB_Employment_Type&quot; : null,
+      &quot;FSC_ONB_JobTitle&quot; : null,
+      &quot;FSC_ONB_EndDate&quot; : null,
+      &quot;FSC_ONB_GrossAnnualIncome&quot; : null,
+      &quot;FSC_ONB_StartDate&quot; : null,
+      &quot;FSC_ONB_Employment_Name&quot; : null,
+      &quot;FSC_ONB_WorkerType&quot; : null
+    }
+  },
+  &quot;View Confirmation&quot; : { },
+  &quot;Upload Documents&quot; : {
+    &quot;FSC_ONB_v1_IDProof&quot; : [ {
+      &quot;data&quot; : null,
+      &quot;size&quot; : null,
+      &quot;filename&quot; : null
+    } ],
+    &quot;FSC_ONB_v1_AddressProof&quot; : [ {
+      &quot;data&quot; : null,
+      &quot;size&quot; : null,
+      &quot;filename&quot; : null
+    } ]
+  },
+  &quot;Account Funding&quot; : {
+    &quot;FSC_BankRoutingNumber&quot; : null,
+    &quot;FSC_ONB_NameontheAccount&quot; : null
+  },
+  &quot;Provide Disclosure and Consent&quot; : {
+    &quot;FSC_ONB_v1_Disclosure&quot; : null,
+    &quot;Signature1&quot; : null
+  },
+  &quot;Services Requested&quot; : {
+    &quot;FSC_ONB_CheckbookRequired&quot; : null,
+    &quot;FSC_ONB_ElectronicStmtOptin&quot; : null,
+    &quot;Mode_of_Operation&quot; : null,
+    &quot;FSC_ONB_ATMCardRequested&quot; : null
+  },
+  &quot;Add Address Details&quot; : {
+    &quot;Address&quot; : {
+      &quot;Address_Type&quot; : null,
+      &quot;Address_Country&quot; : null,
+      &quot;Address_State&quot; : null,
+      &quot;Address_Zip&quot; : null,
+      &quot;Address_City&quot; : null,
+      &quot;Address_Street&quot; : null
+    }
+  },
+  &quot;Add Primary Information&quot; : {
+    &quot;FSC_ONB_v1_Prefix&quot; : null,
+    &quot;FSC_ONB_v1_Suffix&quot; : null,
+    &quot;FSC_ONB_v1_FirstName&quot; : null,
+    &quot;FSC_ONB_v1_Phone&quot; : null,
+    &quot;FSC_ONB_v1_Gender&quot; : null,
+    &quot;FSC_ONB_v1_PrimaryTaxIdType&quot; : null,
+    &quot;FSC_ONB_v1_PrimaryTaxIdNumber&quot; : null,
+    &quot;FSC_ONB_v1_DateOfBirth&quot; : null,
+    &quot;FSC_ONB_v1_Nationality&quot; : null,
+    &quot;FSC_ONB_v1_BirthCountry&quot; : null,
+    &quot;FSC_ONB_v1_DomicileCountry&quot; : null,
+    &quot;FSC_ONB_v1_Email&quot; : null,
+    &quot;FSC_ONB_v1_EmploymentIndustry&quot; : null,
+    &quot;FSC_ONB_v1_PrimaryIdType&quot; : null,
+    &quot;FSC_ONB_v1_PrimaryId&quot; : null,
+    &quot;FSC_ONB_v1_PrimaryIdName&quot; : null,
+    &quot;FSC_ONB_v1_FundSource&quot; : null,
+    &quot;FSC_ONB_v1_ResidentType&quot; : null,
+    &quot;FSC_ONB_v1_LastName&quot; : null
+  },
+  &quot;Verify Your Identity&quot; : {
+    &quot;QRCode&quot; : null
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>UpdatePartyProfileForOnboarding_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Comment --></label>
+        <name>tspa__Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Configuration Id --></label>
+        <name>tspa__Configuration_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Import Setting Organization ID --></label>
+        <name>tspa__ImportSettingOrganizationID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Action --></label>
+        <name>tspa__Last_Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- Package Version --></label>
+        <name>tspa__Package_Version__c</name>
+    </fields>
+</CustomObjectTranslation>

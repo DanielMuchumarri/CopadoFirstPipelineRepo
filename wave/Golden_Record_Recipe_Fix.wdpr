@@ -1,0 +1,251 @@
+{
+  "version" : "59.0",
+  "nodes" : {
+    "LOAD_DATASET0" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "AccountID", "Customer_Name", "Balance_Change", "Product", "Active_Campaign", "Segment", "LeadSource", "LeadDate", "Previous_Balance", "Wallet_Share_Percent", "Attrition_Risk_Score", "Relationship_Balance", "CSAT_Score", "Last_Contact", "LeadRank", "NPS_Score", "External_ID" ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Retail_data",
+          "name" : "Retail_data_MFG"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET1" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Account_ID", "Customer_Name", "Customer_Tier", "Product", "Service", "LifetimeValue", "OppType", "Days_Since_Last_Interaction", "Likelihood_to_buy", "Probability", "Current_Balance", "OppAmount", "External_ID" ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Heatmap_dataset",
+          "name" : "Heatmap_dataset_MFG"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET2" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "ACCOUNT_ID", "LIKELIHOOD_TO_BUY", "DAYS_SINCE_LAST_INTERACTION", "LIFETIMEVALUE", "CUSTOMER_NAME", "PRODUCT", "OPPTYPE", "CUSTOMER_TIER", "SERVICE", "PROBABILITY", "CURRENT_BALANCE", "OPPAMOUNT", "External_ID" ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Heatmap_dataset_mod",
+          "name" : "Heatmap_dataset_mod_MFG"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET3" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "Name", "Type", "ParentId", "BillingCity", "BillingState", "BillingCountry", "ShippingState", "Industry", "AnnualRevenue", "NumberOfEmployees", "OwnerId", "CreatedDate", "LastModifiedDate", "SystemModstamp", "AccountSource", "External_ID__c", "CreatedDate__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "Account",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "Account"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "UPDATE0" : {
+      "action" : "update",
+      "sources" : [ "LOAD_DATASET2", "LOAD_DATASET3" ],
+      "parameters" : {
+        "leftKeys" : [ "External_ID" ],
+        "rightKeys" : [ "External_ID__c" ],
+        "updateColumns" : {
+          "ACCOUNT_ID" : "Id"
+        }
+      }
+    },
+    "UPDATE1" : {
+      "action" : "update",
+      "sources" : [ "LOAD_DATASET1", "LOAD_DATASET3" ],
+      "parameters" : {
+        "leftKeys" : [ "External_ID" ],
+        "rightKeys" : [ "External_ID__c" ],
+        "updateColumns" : {
+          "Account_ID" : "Id"
+        }
+      }
+    },
+    "UPDATE2" : {
+      "action" : "update",
+      "sources" : [ "LOAD_DATASET0", "LOAD_DATASET3" ],
+      "parameters" : {
+        "leftKeys" : [ "External_ID" ],
+        "rightKeys" : [ "External_ID__c" ],
+        "updateColumns" : {
+          "AccountID" : "Id"
+        }
+      }
+    },
+    "OUTPUT0" : {
+      "action" : "save",
+      "sources" : [ "UPDATE2" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Retail_data",
+          "name" : "Retail_data_MFG",
+          "folderName" : "FINS_Retail_Banking_Demo_5Y6XH_MFG"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "OUTPUT1" : {
+      "action" : "save",
+      "sources" : [ "UPDATE0" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Heatmap_dataset_mod",
+          "name" : "Heatmap_dataset_mod_MFG",
+          "folderName" : "FINS_Retail_Banking_Demo_5Y6XH_MFG"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "OUTPUT2" : {
+      "action" : "save",
+      "sources" : [ "UPDATE1" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Heatmap_dataset",
+          "name" : "Heatmap_dataset_MFG",
+          "folderName" : "FINS_Retail_Banking_Demo_5Y6XH_MFG"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    }
+  },
+  "ui" : {
+    "nodes" : {
+      "LOAD_DATASET0" : {
+        "label" : "Retail_data",
+        "type" : "LOAD_DATASET",
+        "top" : 252.10000000000002,
+        "left" : 112.1,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET1" : {
+        "label" : "Heatmap_dataset",
+        "type" : "LOAD_DATASET",
+        "top" : 392.1,
+        "left" : 112.1,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET2" : {
+        "label" : "Heatmap_dataset_mod",
+        "type" : "LOAD_DATASET",
+        "top" : 532,
+        "left" : 112.1,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET3" : {
+        "label" : "Account",
+        "type" : "LOAD_DATASET",
+        "top" : 112.1,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "UPDATE0" : {
+        "label" : "Update 0",
+        "type" : "UPDATE",
+        "top" : 532.1,
+        "left" : 252
+      },
+      "UPDATE1" : {
+        "label" : "Update 1",
+        "type" : "UPDATE",
+        "top" : 392,
+        "left" : 252
+      },
+      "UPDATE2" : {
+        "label" : "Update 2",
+        "type" : "UPDATE",
+        "top" : 252,
+        "left" : 252.10000000000002
+      },
+      "OUTPUT0" : {
+        "label" : "Output 0",
+        "type" : "OUTPUT",
+        "top" : 252.10000000000002,
+        "left" : 392
+      },
+      "OUTPUT1" : {
+        "label" : "Output 1",
+        "type" : "OUTPUT",
+        "top" : 532,
+        "left" : 392
+      },
+      "OUTPUT2" : {
+        "label" : "Output 2",
+        "type" : "OUTPUT",
+        "top" : 392.2,
+        "left" : 392.1
+      }
+    },
+    "connectors" : [ {
+      "source" : "LOAD_DATASET2",
+      "target" : "UPDATE0"
+    }, {
+      "source" : "LOAD_DATASET3",
+      "target" : "UPDATE0"
+    }, {
+      "source" : "LOAD_DATASET1",
+      "target" : "UPDATE1"
+    }, {
+      "source" : "LOAD_DATASET3",
+      "target" : "UPDATE1"
+    }, {
+      "source" : "LOAD_DATASET0",
+      "target" : "UPDATE2"
+    }, {
+      "source" : "LOAD_DATASET3",
+      "target" : "UPDATE2"
+    }, {
+      "source" : "UPDATE2",
+      "target" : "OUTPUT0"
+    }, {
+      "source" : "UPDATE0",
+      "target" : "OUTPUT1"
+    }, {
+      "source" : "UPDATE1",
+      "target" : "OUTPUT2"
+    } ],
+    "hiddenColumns" : [ ]
+  },
+  "runMode" : "full"
+}

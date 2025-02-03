@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>เส้นทาง</value>
+    </caseValues>
+    <fields>
+        <label><!-- maps_Date__c db days --></label>
+        <name>db_days_maps_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>maps__Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Options --></label>
+        <name>maps__Options__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel Distance (Miles) --></label>
+        <name>maps__TravelDistance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel Time (Min) --></label>
+        <name>maps__TravelTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>maps__User__c</name>
+        <relationshipLabel><!-- Maps Routes --></relationshipLabel>
+    </fields>
+    <nameFieldLabel>ชื่อเส้นทาง</nameFieldLabel>
+</CustomObjectTranslation>

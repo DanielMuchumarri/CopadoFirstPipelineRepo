@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Article Number --></label>
+        <name>tspa__Article_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image Count --></label>
+        <name>tspa__Image_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Id --></label>
+        <name>tspa__Object_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visual Remote Assistant Reports --></label>
+        <name>tspa__Visual_Remote_Assistant_Reports__c</name>
+        <relationshipLabel><!-- VRA - Report Knowledge --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- sessionId --></label>
+        <name>tspa__sessionId__c</name>
+    </fields>
+</CustomObjectTranslation>

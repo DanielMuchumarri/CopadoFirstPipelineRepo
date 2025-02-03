@@ -1,0 +1,9 @@
+Dear&nbsp;{{{Recipient.FirstName}}},&nbsp;<br />
+<br />
+Thank you for your interest in Cirrus Bank!&nbsp; My name is {{{Sender.FirstName}}}, and I&#39;m here to help you with any questions you have may have in purchasing your new home.&nbsp;&nbsp;<br />
+<br />
+Sorry we haven&#39;t had time to connect. Please let me know how we can help!<br />
+<br />
+Regards,&nbsp;<br />
+{{{Sender.Name}}}&nbsp;<br />
+Mortgage Loan Officer

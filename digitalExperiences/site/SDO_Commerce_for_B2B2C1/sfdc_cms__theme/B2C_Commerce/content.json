@@ -1,0 +1,28 @@
+{
+  "type" : "sfdc_cms__theme",
+  "title" : "B2C Commerce",
+  "contentBody" : {
+    "activeBrandingSetId" : "B2C_Commerce",
+    "definitionName" : "b2c-commerce",
+    "layouts" : [ {
+      "layoutId" : "Checkout_Layout_1",
+      "layoutType" : "Checkout"
+    }, {
+      "layoutId" : "External_Layout_1",
+      "layoutType" : "External"
+    }, {
+      "layoutId" : "Commerce_Custom_Layout_1",
+      "layoutType" : "Custom"
+    }, {
+      "layoutId" : "Service_Not_Available_Theme_Layout_1",
+      "layoutType" : "ServiceNotAvailable"
+    }, {
+      "layoutId" : "Commerce_Layout_1",
+      "layoutType" : "Inner"
+    }, {
+      "layoutId" : "My_Account_Layout_1",
+      "layoutType" : "MyAccount"
+    } ]
+  },
+  "urlName" : "b2c-commerce"
+}

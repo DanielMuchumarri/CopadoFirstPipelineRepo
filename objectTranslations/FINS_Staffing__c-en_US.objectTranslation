@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Staffing</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Staffings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Actual Amount Remaining --></label>
+        <name>FINS_Actual_Amount_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Hours Remaining --></label>
+        <name>FINS_Actual_Hours_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Hours --></label>
+        <name>FINS_Actual_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Amount in Financials --></label>
+        <name>FINS_Billable_Amount_in_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Hours in Financials --></label>
+        <name>FINS_Billable_Hours_in_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Amount Remaining --></label>
+        <name>FINS_Effective_Amount_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Deal --></label>
+        <name>FINS_Financial_Deal__c</name>
+        <relationshipLabel><!-- Staffings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Forecasted Amount Remaining --></label>
+        <name>FINS_Forecasted_Amount_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forecasted Effective Amount Remaining --></label>
+        <name>FINS_Forecasted_Effective_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forecasted Hours Remaining --></label>
+        <name>FINS_Forecasted_Hours_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Schedule Hours (Week On) --></label>
+        <name>FINS_Future_Schedule_Hours_Week_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Scheduled Value --></label>
+        <name>FINS_Future_Scheduled_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Planned Hours --></label>
+        <name>FINS_Planned_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice --></label>
+        <name>FINS_Practice__c</name>
+        <picklistValues>
+            <masterLabel>Corporate</masterLabel>
+            <translation><!-- Corporate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Advisory</masterLabel>
+            <translation><!-- Global Advisory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISI</masterLabel>
+            <translation><!-- ISI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investment Management</masterLabel>
+            <translation><!-- Investment Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Risk Management</masterLabel>
+            <translation><!-- Risk Management --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Resource Region --></label>
+        <name>FINS_Resource_Region__c</name>
+        <picklistValues>
+            <masterLabel>APAC</masterLabel>
+            <translation><!-- APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EU</masterLabel>
+            <translation><!-- EU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UK</masterLabel>
+            <translation><!-- UK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US</masterLabel>
+            <translation><!-- US --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>FINS_Role__c</name>
+        <picklistValues>
+            <masterLabel>Associate</masterLabel>
+            <translation><!-- Associate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Associate</masterLabel>
+            <translation><!-- Senior Associate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VP</masterLabel>
+            <translation><!-- VP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Hours --></label>
+        <name>FINS_Scheduled_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skillsets Required --></label>
+        <name>FINS_Skillset_Required__c</name>
+        <picklistValues>
+            <masterLabel>Financial Modeling</masterLabel>
+            <translation><!-- Financial Modeling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research</masterLabel>
+            <translation><!-- Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restructuring</masterLabel>
+            <translation><!-- Restructuring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales &amp; Training</masterLabel>
+            <translation><!-- Sales &amp; Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strategic Advisory</masterLabel>
+            <translation><!-- Strategic Advisory --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Staffing Owner --></label>
+        <name>FINS_Staffing_Owner__c</name>
+        <relationshipLabel><!-- Staffings --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

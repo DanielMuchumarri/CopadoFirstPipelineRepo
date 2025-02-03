@@ -1,0 +1,1205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Access --></label>
+        <name>Account_Access__c</name>
+        <picklistValues>
+            <masterLabel>Checking</masterLabel>
+            <translation><!-- Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Checking &amp; Savings</masterLabel>
+            <translation><!-- Checking &amp; Savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Savings</masterLabel>
+            <translation><!-- Savings --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Auto Claim NBA --></label>
+        <name>Auto_Claim_NBA__c</name>
+    </fields>
+    <fields>
+        <label><!-- CSAT --></label>
+        <name>CSAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Script Read To Customer --></label>
+        <name>Card_Script_Read_To_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Assignment Timestamp --></label>
+        <name>Case_Assignment_Timestamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Feedback --></label>
+        <name>Case_Feedback__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Record Type API Name --></label>
+        <name>Case_Record_Type_API_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Survey URL --></label>
+        <name>Case_Survey_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel --></label>
+        <name>Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Claim --></label>
+        <name>Claim__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Closed Date --></label>
+        <name>ClosedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Community Contact Match --></label>
+        <name>Community_Contact_Match__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compliance Status --></label>
+        <name>Compliance_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Service Cost --></label>
+        <name>Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Date --></label>
+        <name>CreatedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Type --></label>
+        <name>Customer_Type__c</name>
+        <picklistValues>
+            <masterLabel>Enterprise</masterLabel>
+            <translation><!-- Enterprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation><!-- Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small and Medium Business</masterLabel>
+            <translation><!-- Small and Medium Business --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Used by the Perfect Date Wizard --></help>
+        <label><!-- DB Case Duration Hours --></label>
+        <name>DB_Case_Duration_Hours__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used by the Perfect Date Wizard --></help>
+        <label><!-- DB Hours --></label>
+        <name>DB_Hours__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used by the Perfect Date Wizard --></help>
+        <label><!-- Date Closed --></label>
+        <name>DateTime_Closed_c__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used by the Perfect Date Wizard --></help>
+        <label><!-- Date Opened --></label>
+        <name>DateTime_Opened_c__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Overdraft --></label>
+        <name>Date_of_Overdraft__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decision and Notes --></label>
+        <name>Decision_and_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dispute Outcome --></label>
+        <name>DisputeOutcome__c</name>
+        <picklistValues>
+            <masterLabel>ATM Machine Issues</masterLabel>
+            <translation><!-- ATM Machine Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fraud</masterLabel>
+            <translation><!-- Fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Fraud</masterLabel>
+            <translation><!-- Non-Fraud --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dispute Reasoning --></label>
+        <name>Dispute_Reasoning__c</name>
+        <picklistValues>
+            <masterLabel>I asked the merchant for a credit adjustment, but unsatisfied</masterLabel>
+            <translation><!-- I asked the merchant for a credit adjustment, but unsatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The charges were not made by me/a person authorized by me</masterLabel>
+            <translation><!-- The charges were not made by me/a person authorized by me --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The transaction is mine, but I dispute it</masterLabel>
+            <translation><!-- The transaction is mine, but I dispute it --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Duration --></label>
+        <name>Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- DB --></label>
+        <name>EDY_ORGCUSTOM__DB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Description --></label>
+        <name>EDY_ORGCUSTOM__Old_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Subject --></label>
+        <name>EDY_ORGCUSTOM__Old_Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED Leading Causes --></label>
+        <name>ED_Leading_Causes__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED Predicted CSAT --></label>
+        <name>ED_Outcome__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED Override Default Config --></label>
+        <name>ED_Override_Default_Config__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED Prescription --></label>
+        <name>ED_Prescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engagement Interaction --></label>
+        <name>Engagement_Interaction__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Estimated Cost --></label>
+        <name>Est_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Record Type API Name --></label>
+        <name>FINS_Case_Record_Type_API_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to select same day ACH service. --></help>
+        <label><!-- ACH (same day) --></label>
+        <name>FINS_CommercialBanking_ACH__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to include summary and detail activity for the account. --></help>
+        <label><!-- Account Activity --></label>
+        <name>FINS_CommercialBanking_AccountActivity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to include account transfers service. --></help>
+        <label><!-- Account Transfers --></label>
+        <name>FINS_CommercialBanking_AcctTransfers__c</name>
+    </fields>
+    <fields>
+        <help><!-- Administrator Email is pulled from the related Administrator Contact record. --></help>
+        <label><!-- Administrator Email --></label>
+        <name>FINS_CommercialBanking_AdminEmail__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the user access and entitlements for the previously specified Administrator. --></help>
+        <label><!-- Administrator Entitlements --></label>
+        <name>FINS_CommercialBanking_AdminEntitle__c</name>
+        <picklistValues>
+            <masterLabel>Full</masterLabel>
+            <translation><!-- Full --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited</masterLabel>
+            <translation><!-- Limited --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Setup</masterLabel>
+            <translation><!-- Setup --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the Administrator from the Account. --></help>
+        <label><!-- Administrator Name --></label>
+        <name>FINS_CommercialBanking_AdminName__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Primary Contact Phone is pulled from the selected Primary Contact record. --></help>
+        <label><!-- Administrator Phone --></label>
+        <name>FINS_CommercialBanking_AdminPhone__c</name>
+    </fields>
+    <fields>
+        <help><!-- Administrator Title is pulled from the related Administrator Contact record. --></help>
+        <label><!-- Administrator Title --></label>
+        <name>FINS_CommercialBanking_AdminTitle__c</name>
+    </fields>
+    <fields>
+        <help><!-- Administrator User ID is pulled from the related Administrator Contact record. --></help>
+        <label><!-- Administrator User ID --></label>
+        <name>FINS_CommercialBanking_AdminUserID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to include the Bill Payment and Presentation service. --></help>
+        <label><!-- Bill Payment and Presentation --></label>
+        <name>FINS_CommercialBanking_BillPayPresent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Certificate of Authority for Corporate Treasury Management Services Agreement --></help>
+        <label><!-- Certificate of Authority --></label>
+        <name>FINS_CommercialBanking_CertAuth__c</name>
+    </fields>
+    <fields>
+        <help><!-- Certified Corporate Resolutions for Corporate Treasury Management Services Agreement --></help>
+        <label><!-- Certified Corporate Resolutions --></label>
+        <name>FINS_CommercialBanking_CertCorpRes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select a status for your client --></help>
+        <label><!-- Client Status --></label>
+        <name>FINS_CommercialBanking_Client_Status__c</name>
+        <picklistValues>
+            <masterLabel>Existing</masterLabel>
+            <translation><!-- Existing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Check to select the Controlled Disbursement service. --></help>
+        <label><!-- Controlled Disbursement --></label>
+        <name>FINS_CommercialBanking_ControlledDisb__c</name>
+    </fields>
+    <fields>
+        <help><!-- Customer ID is pulled from the related Account. --></help>
+        <label><!-- Customer ID --></label>
+        <name>FINS_CommercialBanking_CustID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to select the EDI service. --></help>
+        <label><!-- EDI --></label>
+        <name>FINS_CommercialBanking_EDI__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to include the Export Options service (i.e. Quicken, Quick Books, Microsoft Money, Comma and Tab) --></help>
+        <label><!-- Export Options --></label>
+        <name>FINS_CommercialBanking_ExportOptions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to bundle all Level I Service (Account Activity Summary &amp; Detail, Account Transfers, Bill Payment and Presentment, Online Statements, and Export Options). --></help>
+        <label><!-- Level I Service --></label>
+        <name>FINS_CommercialBanking_Level1Service__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to bundle all Level II services (Stop Payments, Same Day ACH). --></help>
+        <label><!-- Level II Service --></label>
+        <name>FINS_CommercialBanking_Level2Services__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to bundle all Level III services (EDI, Controlled Disbursement, Wire Transfer Services). --></help>
+        <label><!-- Level III Service --></label>
+        <name>FINS_CommercialBanking_Level3Service__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to use the client&apos;s existing Master Services Agreement or specify that the MSA has been completed for a new client. --></help>
+        <label><!-- Master Services Agreement Received --></label>
+        <name>FINS_CommercialBanking_MSA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Mailling Address is pulled from the related Account record. --></help>
+        <label><!-- Mailing Address --></label>
+        <name>FINS_CommercialBanking_MailAddress__c</name>
+    </fields>
+    <fields>
+        <help><!-- NAICS 1 is pulled from the related Client record. --></help>
+        <label><!-- NAICS 1 --></label>
+        <name>FINS_CommercialBanking_NAICS1__c</name>
+    </fields>
+    <fields>
+        <help><!-- NAICS 2 is pulled from the related Client record. --></help>
+        <label><!-- NAICS 2 --></label>
+        <name>FINS_CommercialBanking_NAICS2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date is pre-populated based on existing schedule.  This date can be manually changed. --></help>
+        <label><!-- Next Committee Approval Meeting --></label>
+        <name>FINS_CommercialBanking_NextAppMeeting__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to include the Online Statements service (if enrolled). --></help>
+        <label><!-- Online Statements (if enrolled) --></label>
+        <name>FINS_CommercialBanking_OnlineStatement__c</name>
+    </fields>
+    <fields>
+        <help><!-- Address is pulled from the related Account record. --></help>
+        <label><!-- Physical Address --></label>
+        <name>FINS_CommercialBanking_PhysAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre-populate from Existing MSA --></label>
+        <name>FINS_CommercialBanking_PrepoulateMSA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the user access and entitlements for the previously specified Primary Contact. --></help>
+        <label><!-- Primary Contact Entitlements --></label>
+        <name>FINS_CommercialBanking_PrimUserEntitle__c</name>
+        <picklistValues>
+            <masterLabel>Full</masterLabel>
+            <translation><!-- Full --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited</masterLabel>
+            <translation><!-- Limited --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Setup</masterLabel>
+            <translation><!-- Setup --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select a user from the list. --></help>
+        <label><!-- Regional Credit Officer --></label>
+        <name>FINS_CommercialBanking_RegCreditOfficer__c</name>
+        <relationshipLabel><!-- Cases (Regional Credit Officer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Relationship Manager is based on the Client Owner. --></help>
+        <label><!-- Relationship Manager --></label>
+        <name>FINS_CommercialBanking_RelManager__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select a user from the list. --></help>
+        <label><!-- Senior Lender/Regional VP --></label>
+        <name>FINS_CommercialBanking_SrLenderRegVP__c</name>
+        <relationshipLabel><!-- Cases (Senior Lender/Regional VP) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Check to select the Stop Payments service. --></help>
+        <label><!-- Stop Payments --></label>
+        <name>FINS_CommercialBanking_Stop_Payments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the Technical Contact from the Client. --></help>
+        <label><!-- Technical Contact Name --></label>
+        <name>FINS_CommercialBanking_TechContact__c</name>
+        <relationshipLabel><!-- Cases (Technical Contact Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Technical Contact Email is pulled from the related Technical Contact record. --></help>
+        <label><!-- Technical Contact Email --></label>
+        <name>FINS_CommercialBanking_TechEmail__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the user access and entitlements for the previously selected Technical Contact. --></help>
+        <label><!-- Technical Contact Entitlements --></label>
+        <name>FINS_CommercialBanking_TechEntitle__c</name>
+        <picklistValues>
+            <masterLabel>Full</masterLabel>
+            <translation><!-- Full --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited</masterLabel>
+            <translation><!-- Limited --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Setup</masterLabel>
+            <translation><!-- Setup --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Technical Contact Phone is pulled from the related Technical Contact record. --></help>
+        <label><!-- Technical Contact Phone --></label>
+        <name>FINS_CommercialBanking_TechPhone__c</name>
+    </fields>
+    <fields>
+        <help><!-- Technical Contact Title is pulled from the related Technical Contact record. --></help>
+        <label><!-- Technical Contact Title --></label>
+        <name>FINS_CommercialBanking_TechTitle__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select a contact from the client to be the top level approver. --></help>
+        <label><!-- Assign Top Level Approver --></label>
+        <name>FINS_CommercialBanking_TopApprover__c</name>
+        <relationshipLabel><!-- Cases (Assign Ultimate Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select a user from the list. --></help>
+        <label><!-- Treasury Management Operations --></label>
+        <name>FINS_CommercialBanking_TreasMgmtOps__c</name>
+        <relationshipLabel><!-- Cases (Treasury Management Operations) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select a user from the list. --></help>
+        <label><!-- Treasury Management Rep. --></label>
+        <name>FINS_CommercialBanking_TreasMgmtRep__c</name>
+        <relationshipLabel><!-- Cases (Treasury Management Rep.) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Check to select the Wire Transfer services. --></help>
+        <label><!-- Wire Transfer Services --></label>
+        <name>FINS_CommercialBanking_WireTransfers__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tax ID is pulled from the related Account record. --></help>
+        <label><!-- FEIN/Tax ID --></label>
+        <name>FINS_Commercial_Banking_TaxID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dispute Reasoning --></label>
+        <name>FINS_Dispute_Reasoning__c</name>
+        <picklistValues>
+            <masterLabel>I asked the merchant for a credit adjustment, but unsatisfied</masterLabel>
+            <translation><!-- I asked the merchant for a credit adjustment, but unsatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The charges were not made by me/a person authorized by me</masterLabel>
+            <translation><!-- The charges were not made by me/a person authorized by me --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The transaction is mine, but I dispute it</masterLabel>
+            <translation><!-- The transaction is mine, but I dispute it --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fraud Transaction --></label>
+        <name>FINS_Fraud_Transaction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Live Chat Transcript --></label>
+        <name>FINS_Live_Chat_Transcript__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order Dispute --></label>
+        <name>FINS_Order_Dispute__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provisioned Amount --></label>
+        <name>FINS_Provisioned_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q-Branch Demo Reference --></label>
+        <name>FINS_Q_Branch_Demo_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recurring Charge --></label>
+        <name>FINS_Recurring_Charge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Amount --></label>
+        <name>FINS_Requested_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription Charge --></label>
+        <name>FINS_Subscription_Charge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suspicious Activity --></label>
+        <name>FINS_Suspicious_Activity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select a user from the list. --></help>
+        <label><!-- Treasury Management Admin --></label>
+        <name>FINS_Treasury_Management_Admin__c</name>
+        <relationshipLabel><!-- Cases (Treasury Management Admin) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Favorite Color --></label>
+        <name>Favorite_Color__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fee Amount --></label>
+        <name>Fee_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Account --></label>
+        <name>FinServ__FinancialAccount__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Household --></label>
+        <name>FinServ__Household__c</name>
+        <relationshipLabel><!-- Household Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Financial Deal --></label>
+        <name>Financial_Deal__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- First Contact Close --></label>
+        <name>First_Contact_Close__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fraud Charge Date --></label>
+        <name>Fraud_Charge_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fraud Transaction --></label>
+        <name>Fraud_Transaction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Home Claim NBA --></label>
+        <name>Home_Claim_NBA__c</name>
+    </fields>
+    <fields>
+        <label><!-- NewRate --></label>
+        <name>INS_NewRate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checked when there is a KB Article attached to the Case. --></help>
+        <label><!-- KB Article Attached --></label>
+        <name>KB_Article_Attached__c</name>
+    </fields>
+    <fields>
+        <help><!-- The delta between the last statement date as of the investigation date, and the investigation date, in days. --></help>
+        <label><!-- Last Statement to Reported (Days) --></label>
+        <name>LastStatementToReported__c</name>
+    </fields>
+    <fields>
+        <label><!-- Network Responded --></label>
+        <name>Network_Responded__c</name>
+    </fields>
+    <fields>
+        <label><!-- NewRate --></label>
+        <name>NewRate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notification Date --></label>
+        <name>Notification_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Voucher --></label>
+        <name>Offer_Voucher__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Opportunity --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order Dispute --></label>
+        <name>Order_Dispute__c</name>
+    </fields>
+    <fields>
+        <label><!-- Org Cust Case ID --></label>
+        <name>Org_Cust_Case_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- PIN Information --></label>
+        <name>PIN_Information__c</name>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Same</masterLabel>
+            <translation><!-- Same --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Family --></label>
+        <name>Product_Family_KB__c</name>
+        <picklistValues>
+            <masterLabel>Battery</masterLabel>
+            <translation><!-- Battery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Products</masterLabel>
+            <translation><!-- Commercial Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential Products</masterLabel>
+            <translation><!-- Residential Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turbine</masterLabel>
+            <translation><!-- Turbine --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Name --></label>
+        <name>Product_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provisional Status --></label>
+        <name>Provisional_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting Approval</masterLabel>
+            <translation><!-- Waiting Approval --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Provisioned Amount --></label>
+        <name>Provisioned_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ready for EI Flow --></label>
+        <name>Ready_for_EI_Flow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason for Fee Waiver --></label>
+        <name>Reason_for_Fee_Waiver__c</name>
+        <picklistValues>
+            <masterLabel>Account Compromise</masterLabel>
+            <translation><!-- Account Compromise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank Error</masterLabel>
+            <translation><!-- Bank Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing Discrepancy</masterLabel>
+            <translation><!-- Billing Discrepancy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Dissatisfaction</masterLabel>
+            <translation><!-- Customer Dissatisfaction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Retention Effort</masterLabel>
+            <translation><!-- Customer Retention Effort --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Hardship</masterLabel>
+            <translation><!-- Financial Hardship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fraudulent Activity</masterLabel>
+            <translation><!-- Fraudulent Activity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goodwill Gesture</masterLabel>
+            <translation><!-- Goodwill Gesture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect Fee Calculation</masterLabel>
+            <translation><!-- Incorrect Fee Calculation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late Transaction Posting</masterLabel>
+            <translation><!-- Late Transaction Posting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loyalty Program Benefit</masterLabel>
+            <translation><!-- Loyalty Program Benefit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other (Allow customer to provide additional details)</masterLabel>
+            <translation><!-- Other (Allow customer to provide additional details) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overlooked Account Limitations</masterLabel>
+            <translation><!-- Overlooked Account Limitations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Promotional Offer</masterLabel>
+            <translation><!-- Promotional Offer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unforeseen Circumstances</masterLabel>
+            <translation><!-- Unforeseen Circumstances --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiver Policy Exception</masterLabel>
+            <translation><!-- Waiver Policy Exception --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Recurring Charge --></label>
+        <name>Recurring_Charge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Method --></label>
+        <name>Request_Method__c</name>
+        <picklistValues>
+            <masterLabel>In Person</masterLabel>
+            <translation><!-- In Person --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Writing</masterLabel>
+            <translation><!-- In Writing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oral</masterLabel>
+            <translation><!-- Oral --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Requested Amount --></label>
+        <name>Requested_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response Time (mins) --></label>
+        <name>Response_Time_mins__c</name>
+    </fields>
+    <fields>
+        <label><!-- Article Helpful Reason --></label>
+        <name>SDO_Article_Helpful_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Article Helpful --></label>
+        <name>SDO_Article_Helpful__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ED Leading Causes --></label>
+        <name>SDO_Einstein_Discovery_Leading_Causes__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED Predicted CSAT --></label>
+        <name>SDO_Einstein_Discovery_Outcome__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED Prescription --></label>
+        <name>SDO_Einstein_Discovery_Prescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Summary --></label>
+        <name>SDO_OMS_Order_Summary__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quality Score --></label>
+        <name>SDO_Quality_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>SDO_SFS_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>SDO_SFS_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>SDO_SFS_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>SDO_SFS_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Type --></label>
+        <name>SDO_SFS_Work_Type__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Zip --></label>
+        <name>SDO_SFS_Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response Time (mins) --></label>
+        <name>SDO_Servcie_Response_Time_mins__c</name>
+    </fields>
+    <fields>
+        <help><!-- Article created using the Create Article flow through either the dynamic button or the Next Best Action recommendation --></help>
+        <label><!-- Article Created --></label>
+        <name>SDO_Service_Article_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel --></label>
+        <name>SDO_Service_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- ChatKey --></label>
+        <name>SDO_Service_ChatKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- Short summary of actions taken to resolve the Case. --></help>
+        <label><!-- Close Summary --></label>
+        <name>SDO_Service_Close_Summary__c</name>
+    </fields>
+    <fields>
+        <help><!-- The customer contact reason. --></help>
+        <label><!-- Contact Reason --></label>
+        <name>SDO_Service_Contact_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Cost --></label>
+        <name>SDO_Service_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Type --></label>
+        <name>SDO_Service_Customer_Type__c</name>
+        <picklistValues>
+            <masterLabel>Enterprise</masterLabel>
+            <translation><!-- Enterprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation><!-- Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small and Medium Business</masterLabel>
+            <translation><!-- Small and Medium Business --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Duration --></label>
+        <name>SDO_Service_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Cost --></label>
+        <name>SDO_Service_Est_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- NBA to Display --></label>
+        <name>SDO_Service_NBA_to_Display__c</name>
+    </fields>
+    <fields>
+        <help><!-- The customer contact outcome. --></help>
+        <label><!-- Resolution --></label>
+        <name>SDO_Service_Resolution__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA Compliant --></label>
+        <name>SDO_Service_SLA_Compliant__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA Type --></label>
+        <name>SDO_Service_SLA_Type__c</name>
+        <picklistValues>
+            <masterLabel>Premium</masterLabel>
+            <translation><!-- Premium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Send Email Trigger --></label>
+        <name>SDO_Service_Send_Email_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Comment --></label>
+        <name>SDO_Service_Surveys_Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey NPS --></label>
+        <name>SDO_Service_Surveys_NPS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Territory --></label>
+        <name>SDO_Service_Territory__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Urgency --></label>
+        <name>SDO_Service_Urgency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Indicator --></label>
+        <name>SDO_Status_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub-Type --></label>
+        <name>SDO_Sub_Type__c</name>
+        <picklistValues>
+            <masterLabel>Billing</masterLabel>
+            <translation><!-- Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complaint</masterLabel>
+            <translation><!-- Complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order or Invoice</masterLabel>
+            <translation><!-- Order or Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profile</masterLabel>
+            <translation><!-- Profile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Setup and Usage</masterLabel>
+            <translation><!-- Setup and Usage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suggestion</masterLabel>
+            <translation><!-- Suggestion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Troubleshooting</masterLabel>
+            <translation><!-- Troubleshooting --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Survey CSAT --></label>
+        <name>SDO_Survey_CSAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- URLsrc --></label>
+        <name>SDO_URLsrc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Volume --></label>
+        <name>SDO_Volume__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA Compliant --></label>
+        <name>SLA_Compliant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Field Service --></label>
+        <name>Send_FieldService__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sent to Network --></label>
+        <name>Sent_to_Network__c</name>
+    </fields>
+    <fields>
+        <label><!-- Indicator --></label>
+        <name>Status_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub-Type --></label>
+        <name>Sub_Type__c</name>
+        <picklistValues>
+            <masterLabel>Billing</masterLabel>
+            <translation><!-- Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complaint</masterLabel>
+            <translation><!-- Complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order or Invoice</masterLabel>
+            <translation><!-- Order or Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profile</masterLabel>
+            <translation><!-- Profile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Setup and Usage</masterLabel>
+            <translation><!-- Setup and Usage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suggestion</masterLabel>
+            <translation><!-- Suggestion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Troubleshooting</masterLabel>
+            <translation><!-- Troubleshooting --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subscription Charge --></label>
+        <name>Subscription_Charge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suspicious Activity --></label>
+        <name>Suspicious_Activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team --></label>
+        <name>Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Open --></label>
+        <name>Time_Open__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Id --></label>
+        <name>TransactionId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Type --></label>
+        <name>Transaction_Type__c</name>
+        <picklistValues>
+            <masterLabel>Business Checking</masterLabel>
+            <translation><!-- Business Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Checking</masterLabel>
+            <translation><!-- Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Card</masterLabel>
+            <translation><!-- Credit Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Savings</masterLabel>
+            <translation><!-- Savings --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Support --></label>
+        <name>Type_of_Support__c</name>
+        <picklistValues>
+            <masterLabel>Premium</masterLabel>
+            <translation><!-- Premium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- UCIN External ID --></label>
+        <name>UCIN_External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- URLsrc --></label>
+        <name>URLsrc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Urgency --></label>
+        <name>Urgency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verified Fraudulent --></label>
+        <name>Verified_Fraudulent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Volume --></label>
+        <name>Volume__c</name>
+    </fields>
+    <fields>
+        <label><!-- DateTime_Closed_c__c db hours --></label>
+        <name>db_hours_DateTime_Closed_c__c</name>
+    </fields>
+    <fields>
+        <label><!-- DateTime_Opened_c__c db hours --></label>
+        <name>db_hours_DateTime_Opened_c__c</name>
+    </fields>
+    <fields>
+        <label><!-- SlaStartDate db hours --></label>
+        <name>db_hours_SlaStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- demoRecommendations --></label>
+        <name>demoRecommendations__c</name>
+    </fields>
+    <fields>
+        <label><!-- PMT Days Open --></label>
+        <name>inov8__PMT_Days_Open__c</name>
+    </fields>
+    <fields>
+        <label><!-- PMT Program --></label>
+        <name>inov8__PMT_Program__c</name>
+    </fields>
+    <fields>
+        <label><!-- PMT Project --></label>
+        <name>inov8__PMT_Project__c</name>
+        <relationshipLabel><!-- Cases (Related Project) --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <description><!-- Used for Commercial Banking Treasury Implementation --></description>
+        <label><!-- Commercial Banking - Treasury Management Child --></label>
+        <name>FINS_Commercial_Banking_Treasury_Management_Child</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used for Commercial Banking Treasury Implementation --></description>
+        <label><!-- Commercial Banking - Treasury Management Parent --></label>
+        <name>FINS_Commercial_Banking_Treasury_Management_Parent</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Case to track loan servicing issues (inbound and outbound). --></description>
+        <label><!-- Lending - Servicing --></label>
+        <name>FINS_Lending_Servicing</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Retail Banking -  FSC IDO Lost or Stolen Card support --></description>
+        <label><!-- Retail Banking - Lost Stolen Card --></label>
+        <name>FINS_Retail_Banking_Starter_Lost_Stolen_Card</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used to dispute financial transactions (e.g. RegE) --></description>
+        <label><!-- Transaction Dispute --></label>
+        <name>FINS_Retail_Banking_Starter_Transaction_Dispute</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- For Wealth Gen AI Case Example --></description>
+        <label><!-- FINS_WM_GenAI --></label>
+        <name>FINS_WM_GenAI</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Banking Ops - Fee waiver support --></description>
+        <label><!-- Retail Banking - Fee Waiver --></label>
+        <name>Retail_Banking_Fee_Waiver</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SFS Case --></label>
+        <name>SDO_SFS_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Primary case record type used for most cases. --></description>
+        <label><!-- Case --></label>
+        <name>SDO_Service_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Use for technical issues --></description>
+        <label><!-- Technical Service --></label>
+        <name>TechnicalIssueAdvanced</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Project Issues &amp; Risks related --></description>
+        <label><!-- PMT Project --></label>
+        <name>inov8__PMT_Project</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- Mass_Delete_Records --></label>
+        <name>Mass_Delete_Records</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_Slack --></label>
+        <name>slackv2__Send_to_Slack</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Slack_Alerts --></label>
+        <name>slackv2__Slack_Alerts</name>
+    </webLinks>
+</CustomObjectTranslation>

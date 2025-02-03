@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentAsset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isVisibleByExternalUsers>true</isVisibleByExternalUsers>
+    <language>en_US</language>
+    <masterLabel>FINS_DigitalBankingBackground</masterLabel>
+    <relationships>
+        <network>
+            <access>VIEWER</access>
+            <name>FINS - NextGen Cumulus Bank</name>
+        </network>
+        <network>
+            <access>VIEWER</access>
+            <name>FINS - NEW IDO+ Cumulus Bank</name>
+        </network>
+        <organization>
+            <access>VIEWER</access>
+        </organization>
+        <workspace>
+            <access>INFERRED</access>
+            <isManagingWorkspace>true</isManagingWorkspace>
+            <name>sfdc_asset_company_assets</name>
+        </workspace>
+    </relationships>
+    <versions>
+        <version>
+            <number>1</number>
+            <pathOnClient>DigitalBanking-istock-970.jpg</pathOnClient>
+        </version>
+    </versions>
+</ContentAsset>

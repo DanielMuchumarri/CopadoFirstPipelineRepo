@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Calls the Business Rules Engine action to assess the Risk Category for a party profile based on the input parameters.</description>
+        <name>AssessRiskCategory</name>
+        <label>Assess Risk Category</label>
+        <locationX>842</locationX>
+        <locationY>782</locationY>
+        <actionName>Risk_Decision</actionName>
+        <actionType>runExpressionSet</actionType>
+        <connector>
+            <targetReference>CreatePartyProfileRisk</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>SetIsFlowFailedToTrue</targetReference>
+        </faultConnector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>EmploymentIndustry</name>
+            <value>
+                <elementReference>GetPartyProfile.EmploymentIndustry</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>EmploymentType</name>
+            <value>
+                <elementReference>GetPartyProfile.EmploymentType</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>FundSource</name>
+            <value>
+                <elementReference>GetPartyProfile.FundSource</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Risk_Decision</nameSegment>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>59.0</apiVersion>
+    <assignments>
+        <description>When an error occurs during the flow execution, sets the isFlowFailed variable to True and stores the error message in the errorMessage variable.</description>
+        <name>SetIsFlowFailedToTrue</name>
+        <label>Set isFlowFailed to True</label>
+        <locationX>1106</locationX>
+        <locationY>1106</locationY>
+        <assignmentItems>
+            <assignToReference>IsFlowFailed</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ErrorMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>If the GetPartyProfile element doesn’t return any records, sets the IsFlowFailed variable to True and stores the error message returned in the ErrorMessage variable.</description>
+        <name>SetNullFlowFailed</name>
+        <label>Set Flow to Failed</label>
+        <locationX>50</locationX>
+        <locationY>350</locationY>
+        <assignmentItems>
+            <assignToReference>IsFlowFailed</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ErrorMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>No Party Profile records were returned. </stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>If the GetPartyIdentityVerification element doesn’t return any records, sets the IsFlowFailed variable to True and stores the error message returned in the ErrorMessage variable.</description>
+        <name>SetNullFlowFailed1</name>
+        <label>Set Flow to Failed</label>
+        <locationX>314</locationX>
+        <locationY>566</locationY>
+        <assignmentItems>
+            <assignToReference>IsFlowFailed</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ErrorMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>No Party Identity Verification records were returned. </stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>If the GetPartyScreeningSummary element doesn’t return any records, sets the IsFlowFailed variable to True and stores the error message returned in the ErrorMessage variable.</description>
+        <name>SetNullFlowFailed2</name>
+        <label>Set Flow to Failed</label>
+        <locationX>578</locationX>
+        <locationY>782</locationY>
+        <assignmentItems>
+            <assignToReference>IsFlowFailed</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ErrorMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>No Party Screening Summary records were returned. </stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>Checks if the GetPartyIdentityVerification element returned any records that matched the filter criteria.</description>
+        <name>WasThePartyIdentityVerificationReturned</name>
+        <label>Was the Party Identity Verification Record Returned?</label>
+        <locationX>512</locationX>
+        <locationY>458</locationY>
+        <defaultConnector>
+            <targetReference>GetPartyScreeningSummary</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Yes (Default)</defaultConnectorLabel>
+        <rules>
+            <name>PartyIdentityVerificationNotReturned</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GetPartyIdentityVerification</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetNullFlowFailed1</targetReference>
+            </connector>
+            <label>No</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if the GetPartyProfile element returned any records that matched the filter criteria.</description>
+        <name>WasThePartyProfileRecordReturned</name>
+        <label>Was the Party Profile Record Returned?</label>
+        <locationX>281</locationX>
+        <locationY>242</locationY>
+        <defaultConnector>
+            <targetReference>GetPartyIdentityVerification</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Yes (Default)</defaultConnectorLabel>
+        <rules>
+            <name>PartyProfileRecordNotReturned</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GetPartyProfile</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetNullFlowFailed</targetReference>
+            </connector>
+            <label>No</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if the GetPartyScreeningSummary element returned any records that matched the filter criteria.</description>
+        <name>WasThePartyScreeningSummaryReturned</name>
+        <label>Was the Party Screening Summary Record Returned?</label>
+        <locationX>710</locationX>
+        <locationY>674</locationY>
+        <defaultConnector>
+            <targetReference>AssessRiskCategory</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>PartyScreeningSummaryWasReturned</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GetPartyScreeningSummary</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetNullFlowFailed2</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>Calls a Business Rules Engine action to assess the risk category of the Party Profile record that triggered the flow. The flow then creates a Party Profile Risk record and stores the risk category. Finally, the flow updates the stage of the Party Profile record to Approval.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Calculates the date of the next party profile review.</description>
+        <name>GetNextProfileReviewDate</name>
+        <dataType>DateTime</dataType>
+        <expression>ADDMONTHS({!$Flow.CurrentDateTime},{!AssessRiskCategory.OverallRiskWithReviewPeriod__KYCReviewPeriod})</expression>
+    </formulas>
+    <interviewLabel>Onboarding: Assess the Risk Category for the Party Profile and Update the Party Profile Stage {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Onboarding: Assess the Risk Category for the Party Profile and Update the Party Profile Stage</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>Creates a Party Profile Risk record for the Party Profile record whose ID matches the ID in the partyProfileId variable, and sets the values of the RiskCategory and Type fields. The RiskCategory field is set to the value returned by the AssessRiskCategory action, and the Type field is set to Initial.</description>
+        <name>CreatePartyProfileRisk</name>
+        <label>Create Party Profile Risk</label>
+        <locationX>842</locationX>
+        <locationY>890</locationY>
+        <connector>
+            <targetReference>UpdatePartyProfileStage</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>SetIsFlowFailedToTrue</targetReference>
+        </faultConnector>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>GetPartyProfile.Name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>PartyProfileId</field>
+            <value>
+                <elementReference>partyProfileId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RiskCategory</field>
+            <value>
+                <elementReference>AssessRiskCategory.OverallRiskWithReviewPeriod__OverallRiskValue</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type</field>
+            <value>
+                <stringValue>Initial</stringValue>
+            </value>
+        </inputAssignments>
+        <object>PartyProfileRisk</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <description>Gets the Party Identity Verification record associated with the Party Profile record whose ID matches the ID of the Party Profile record in the partyProfileId variable, and whose Status is Completed.</description>
+        <name>GetPartyIdentityVerification</name>
+        <label>Get Party Identity Verification</label>
+        <locationX>512</locationX>
+        <locationY>350</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>WasThePartyIdentityVerificationReturned</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>SetIsFlowFailedToTrue</targetReference>
+        </faultConnector>
+        <filterLogic>1 AND (2 OR 3)</filterLogic>
+        <filters>
+            <field>PartyProfileId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>partyProfileId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Completed</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>approved</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>PartyIdentityVerification</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Gets the Party Profile record whose ID matches the ID of the record in the partyProfileId variable and whose stage is Risk Assessment.</description>
+        <name>GetPartyProfile</name>
+        <label>Get Party Profile</label>
+        <locationX>281</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>WasThePartyProfileRecordReturned</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>SetIsFlowFailedToTrue</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>partyProfileId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Stage</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Risk Assessment</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>PartyProfile</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Gets the Party Screening Summary record associated with the Party Profile record whose ID matches the ID of the record in the partyProfileId variable and whose Status is Completed.</description>
+        <name>GetPartyScreeningSummary</name>
+        <label>Get Party Screening Summary</label>
+        <locationX>710</locationX>
+        <locationY>566</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>WasThePartyScreeningSummaryReturned</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>SetIsFlowFailedToTrue</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>PartyProfileId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>partyProfileId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Completed</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>PartyScreeningSummary</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Updates the stage of the Party Profile record whose ID matches the ID in the partyProfileId variable, and sets the values of the NextProfileReviewDate and Stage fields. The NextProfileReviewDate field is set to the value returned after evaluating the GetNextProfileReviewDate formula and the Stage field is to Approval.</description>
+        <name>UpdatePartyProfileStage</name>
+        <label>Update Party Profile Stage</label>
+        <locationX>842</locationX>
+        <locationY>998</locationY>
+        <faultConnector>
+            <targetReference>SetIsFlowFailedToTrue</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>partyProfileId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>NextProfileReviewDate</field>
+            <value>
+                <elementReference>GetNextProfileReviewDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Stage</field>
+            <value>
+                <stringValue>Approval</stringValue>
+            </value>
+        </inputAssignments>
+        <object>PartyProfile</object>
+    </recordUpdates>
+    <sourceTemplate>fsc_onboarding__AssessRiskCategory</sourceTemplate>
+    <start>
+        <locationX>155</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>GetPartyProfile</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Stores the error message if an exception occurs during flow execution.</description>
+        <name>ErrorMessage</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Stores a boolean value that indicates whether the flow execution failed.</description>
+        <name>IsFlowFailed</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>The ID of the Party Profile record that triggered the flow.</description>
+        <name>partyProfileId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

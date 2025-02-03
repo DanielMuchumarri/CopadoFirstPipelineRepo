@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Prototype Screen Configuration</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Prototype Screen Configurations</value>
+    </caseValues>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- File Name --></label>
+        <name>File_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- File VersionId --></label>
+        <name>File_VersionId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prototype Configuration --></label>
+        <name>Prototype_Configuration__c</name>
+        <relationshipLabel><!-- Prototype Screen Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Screen Height --></label>
+        <name>sheight__c</name>
+    </fields>
+    <fields>
+        <label><!-- startFlag --></label>
+        <name>startFlag__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

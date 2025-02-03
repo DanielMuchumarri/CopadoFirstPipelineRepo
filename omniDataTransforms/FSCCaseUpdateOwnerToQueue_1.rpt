@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;vlcTimeTracking&quot; : {
+    &quot;DenestExpressionSetResults&quot; : null,
+    &quot;DataRaptorPostAction1&quot; : null,
+    &quot;SelectTransactions&quot; : null,
+    &quot;SelectFinancialAccount&quot; : null,
+    &quot;GetFeeReversalTransactions&quot; : null,
+    &quot;GetFinancialAccounts&quot; : null,
+    &quot;ExpressionSetAction1&quot; : null,
+    &quot;PrepareDataForExpressionSet&quot; : null,
+    &quot;UnknownTransaction&quot; : null,
+    &quot;FinalQuestions&quot; : null,
+    &quot;newCardCallScript&quot; : null,
+    &quot;DisputeTypeSelection&quot; : null,
+    &quot;DuplicateTransaction&quot; : null,
+    &quot;drSetRachelMorris&quot; : null,
+    &quot;FSCFeeReversalFilterTransactions&quot; : null,
+    &quot;CreateCase&quot; : null,
+    &quot;Confirmation&quot; : null,
+    &quot;CANCEL&quot; : null,
+    &quot;ValidateFeeReversalTransactions&quot; : null,
+    &quot;Summary&quot; : null,
+    &quot;SetSelectedTransactions&quot; : null,
+    &quot;SetSelectedFinancialAccount&quot; : null
+  },
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;userTimeZone&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;ContextId&quot; : null,
+  &quot;newCardCallScript&quot; : {
+    &quot;CurrentAddress&quot; : null,
+    &quot;blockUpdateAddress&quot; : {
+      &quot;PostalCode&quot; : null,
+      &quot;State&quot; : null,
+      &quot;Street&quot; : null,
+      &quot;Country&quot; : null,
+      &quot;City&quot; : null
+    },
+    &quot;txtareaRecordQuestions&quot; : null,
+    &quot;keepchangePIN&quot; : null,
+    &quot;rdoChooseCardType&quot; : null,
+    &quot;rdoChangeAddress&quot; : null,
+    &quot;rdoAnyQuestions&quot; : null
+  },
+  &quot;SelectTransactions&quot; : {
+    &quot;FeeTransactionTable&quot; : null,
+    &quot;NumOfTrans&quot; : null
+  },
+  &quot;SelectFinancialAccount&quot; : {
+    &quot;FinancialAccounts&quot; : null,
+    &quot;isFASelected&quot; : null
+  },
+  &quot;UnknownTransaction&quot; : {
+    &quot;ContactedUnknown&quot; : null,
+    &quot;MerchResponseUnknown&quot; : null,
+    &quot;DateMerchContactUnknown&quot; : null
+  },
+  &quot;FinalQuestions&quot; : {
+    &quot;AddlDetails&quot; : null,
+    &quot;SusActivity&quot; : null,
+    &quot;Permission&quot; : null,
+    &quot;Signature1&quot; : null
+  },
+  &quot;DisputeTypeSelection&quot; : {
+    &quot;OtherReason&quot; : null,
+    &quot;disputeType&quot; : null
+  },
+  &quot;DuplicateTransaction&quot; : { },
+  &quot;Confirmation&quot; : { },
+  &quot;Summary&quot; : {
+    &quot;FeeReversalSummary&quot; : null
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>FSCCaseUpdateOwnerToQueue</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>FSCCaseUpdateOwnerToQueueCustom3755</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>FSCCaseUpdateOwnerToQueue</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCCaseUpdateOwnerToQueueCustom4459</globalKey>
+        <inputFieldName>DataRaptorExtractAction1:queueId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCCaseUpdateOwnerToQueue</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>OwnerId</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCCaseUpdateOwnerToQueueCustom4939</globalKey>
+        <inputFieldName>caseId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCCaseUpdateOwnerToQueue</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;caseId&quot; : &quot;5004S000000xBijQAE&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>FSCCaseUpdateOwnerToQueue_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

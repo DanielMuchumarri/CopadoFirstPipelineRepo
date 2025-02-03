@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Prototype Configuration</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Prototype Configurations</value>
+    </caseValues>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q-Branch Demo Reference --></label>
+        <name>FINS_Q_Branch_Demo_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Orientation --></label>
+        <name>Orientation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- with Frame --></label>
+        <name>with_Frame__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Edit_Prototype_Configuration --></label>
+        <name>Edit_Prototype_Configuration</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Launch_Application1 --></label>
+        <name>Launch_Application1</name>
+    </webLinks>
+</CustomObjectTranslation>

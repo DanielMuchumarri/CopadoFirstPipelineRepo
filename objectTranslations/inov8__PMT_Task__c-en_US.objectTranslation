@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Alert --></label>
+        <name>inov8__Alert__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned To --></label>
+        <name>inov8__Assigned_To1__c</name>
+        <relationshipLabel><!-- PMT Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Assigned To Email --></label>
+        <name>inov8__Assigned_To_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Checklist Selected --></label>
+        <name>inov8__Checklist_Selected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Late --></label>
+        <name>inov8__Days_Late__c</name>
+    </fields>
+    <fields>
+        <help><!-- The general description of the task. For example, what is the purpose of the task. --></help>
+        <label><!-- Description --></label>
+        <name>inov8__Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date this task is due to be completed --></help>
+        <label><!-- End Date --></label>
+        <name>inov8__Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration --></label>
+        <name>inov8__Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Milestone? --></label>
+        <name>inov8__Is_Milestone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Recurring? --></label>
+        <name>inov8__Is_Recurring__c</name>
+    </fields>
+    <fields>
+        <label><!-- My Task --></label>
+        <name>inov8__My_Task__c</name>
+    </fields>
+    <fields>
+        <help><!-- If blocked, why? --></help>
+        <label><!-- On Hold Reason --></label>
+        <name>inov8__On_Hold_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Completion % --></label>
+        <name>inov8__Percentage_Completion__c</name>
+    </fields>
+    <fields>
+        <help><!-- The phase that this task is assigned to. --></help>
+        <label><!-- Phase --></label>
+        <name>inov8__Phase__c</name>
+        <relationshipLabel><!-- PMT Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Id --></label>
+        <name>inov8__Project_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Name --></label>
+        <name>inov8__Project_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sign-off status --></label>
+        <name>inov8__Sign_off_status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation><!-- Submitted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- When should this task start by? --></help>
+        <label><!-- Start Date --></label>
+        <name>inov8__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Icon Name --></label>
+        <name>inov8__Status_Icon_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Icon --></label>
+        <name>inov8__Status_Icon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Status --></label>
+        <name>inov8__Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed, not Completed</masterLabel>
+            <translation><!-- Closed, not Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Task Level --></label>
+        <name>inov8__Task_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Level --></label>
+        <name>inov8__Task_Level_formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Name w. Alert --></label>
+        <name>inov8__Task_Name_w_Alert__c</name>
+    </fields>
+    <fields>
+        <label><!-- Topic --></label>
+        <name>inov8__Topic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weighted % --></label>
+        <name>inov8__Weighted_percentage__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- On Hold Reason should not be Blank if Status is &apos;On Hold&apos;. --></errorMessage>
+        <name>inov8__Task_On_hold_Reason_not_null_if_On_Hold</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- End Date must be after Start Date. --></errorMessage>
+        <name>inov8__Task_start_date_less_than_end_date</name>
+    </validationRules>
+</CustomObjectTranslation>

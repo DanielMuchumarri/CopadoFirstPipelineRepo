@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Reorder</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Reorder</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Reorder</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>AccountId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ActiveProcessExceptionCount</fullName>
+    </fields>
+    <fields>
+        <fullName>BillToContactId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BillingEmailAddress</fullName>
+    </fields>
+    <fields>
+        <fullName>BillingPhoneNumber</fullName>
+    </fields>
+    <fields>
+        <fullName>BusinessModel</fullName>
+    </fields>
+    <fields>
+        <fullName>ChangeOrderId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>ExternalReferenceIdentifier</fullName>
+    </fields>
+    <fields>
+        <fullName>External_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>This is used to consistently import data to a version of the SDO and translate data into other languages.</description>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>GrandTotalAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>IsSuspended</fullName>
+    </fields>
+    <fields>
+        <fullName>Number_of_Items__c</fullName>
+        <label>Number of Items</label>
+        <summarizedField>OrderItemSummary.Quantity</summarizedField>
+        <summaryForeignKey>OrderItemSummary.OrderSummaryId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>OrderLifeCycleType</fullName>
+    </fields>
+    <fields>
+        <fullName>OrderNumber</fullName>
+    </fields>
+    <fields>
+        <fullName>OrderProductLineCount</fullName>
+    </fields>
+    <fields>
+        <fullName>Order_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot; &amp; Id, OrderNumber )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Order Number</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order_Product_Summaries__c</fullName>
+        <label>Order Product Summaries</label>
+        <summarizedField>OrderItemSummary.Quantity</summarizedField>
+        <summaryForeignKey>OrderItemSummary.OrderSummaryId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>OrderedDate</fullName>
+    </fields>
+    <fields>
+        <fullName>OriginalOrderId</fullName>
+        <type>MasterDetail</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PoDate</fullName>
+    </fields>
+    <fields>
+        <fullName>PoNumber</fullName>
+    </fields>
+    <fields>
+        <fullName>Pricebook2Id</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>RoutingAttempts</fullName>
+    </fields>
+    <fields>
+        <fullName>SDO_OMS_Display_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>/* More Human-readable view of the order name, keyed on date */
+
+
+IF( (TODAY() - DATEVALUE(CreatedDate) ) == 0,
+/*If Today, say &quot;Today&quot; */
+&quot;Ordered Today (#&quot; &amp; OrderNumber &amp; &quot;)&quot;,
+
+IF( (TODAY() - DATEVALUE(CreatedDate) ) &lt; 6,
+/*Else, if in the last week, say d/o week */
+&quot;Ordered &quot; &amp;
+CASE(WEEKDAY(DATEVALUE(CreatedDate)),
+1,&quot;Sunday&quot;,
+2,&quot;Monday&quot;,
+3,&quot;Tuesday&quot;,
+4,&quot;Wednesday&quot;,
+5,&quot;Thursday&quot;,
+6,&quot;Friday&quot;,
+7,&quot;Saturday&quot;,
+&quot;&quot;)&amp;
+&quot; (#&quot; &amp; OrderNumber &amp; &quot;)&quot;,
+
+/*Else, just show the date */
+&quot;Ordered &quot; &amp;
+CASE(MONTH(DATEVALUE(CreatedDate)),
+1,&quot;January&quot;,
+2,&quot;February&quot;,
+3,&quot;March&quot;,
+4,&quot;April&quot;,
+5,&quot;May&quot;,
+6,&quot;June&quot;,
+7,&quot;July&quot;,
+8,&quot;August&quot;,
+9,&quot;September&quot;,
+10,&quot;October&quot;,
+11,&quot;November&quot;,
+12,&quot;December&quot;,
+&quot;&quot;)&amp; &quot; &quot; &amp;
+TEXT(DAY(DATEVALUE(CreatedDate))) &amp; &quot;, &quot; &amp;
+TEXT(YEAR(DATEVALUE(CreatedDate))) &amp; &quot; &quot; &amp;
+&quot; (#&quot; &amp; OrderNumber &amp; &quot;)&quot;
+))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Display Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SalesChannelId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SalesStoreId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Shipping_Tracking__c</fullName>
+        <label>Shipping Tracking</label>
+        <length>32768</length>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SourceOrderSummaryId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SourceProcess</fullName>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>TaxLocaleType</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalAdjDeliveryAmtWithTax</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalAdjDistAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalAdjDistAmountWithTax</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalAdjDistTaxAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalAdjFeeAmtWithTax</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalAdjProductAmtWithTax</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalAdjustedDeliveryAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalAdjustedDeliveryTaxAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalAdjustedFeeAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalAdjustedFeeTaxAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalAdjustedProductAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalAdjustedProductTaxAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalDeliveryAdjDistAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalDeliveryAdjDistAmtWithTax</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalDeliveryAdjDistTaxAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalDeliveryAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalDeliveryAmountWithTax</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalDeliveryTaxAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalFeeAdjDistAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalFeeAdjDistAmtWithTax</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalFeeAdjDistTaxAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalFeeAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalFeeAmountWithTax</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalFeeTaxAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalProductAdjDistAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalProductAdjDistAmtWithTax</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalProductAdjDistTaxAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalProductAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalProductAmountWithTax</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalProductTaxAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalTaxAmount</fullName>
+    </fields>
+    <listViews>
+        <fullName>SDO_My_Order_Summaries</fullName>
+        <columns>Name</columns>
+        <columns>Account</columns>
+        <columns>Status</columns>
+        <columns>OrderedDate</columns>
+        <columns>GrandTotalAmount</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Order Summaries</label>
+    </listViews>
+    <listViews>
+        <fullName>SDO_OMS_OrderSummary_OpenOrders</fullName>
+        <columns>Name</columns>
+        <columns>Account</columns>
+        <columns>Status</columns>
+        <columns>OrderedDate</columns>
+        <columns>Number_of_Items__c</columns>
+        <columns>GrandTotalAmount</columns>
+        <columns>SalesStore</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status</field>
+            <operation>notEqual</operation>
+            <value>Fulfilled</value>
+        </filters>
+        <label>Open Orders</label>
+    </listViews>
+    <listViews>
+        <fullName>all_order_summaries</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All Order Summaries</label>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>Account</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OrderedDate</customTabListAdditionalFields>
+        <customTabListAdditionalFields>GrandTotalAmount</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Account</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Status</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>OrderedDate</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>GrandTotalAmount</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Account</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Status</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>OrderedDate</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>GrandTotalAmount</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>BillingPhoneNumber</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Account</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OrderedDate</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>GrandTotalAmount</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

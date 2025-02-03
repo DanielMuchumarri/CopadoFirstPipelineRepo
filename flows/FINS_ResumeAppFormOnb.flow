@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <assignments>
+        <description>Adds the flow orchestration events to the FlowOrchestrationEventCollection variable for all orchestration runs returned by the GetOrchestrationRun element.</description>
+        <name>AddFlowOrchestrationEvents</name>
+        <label>Add Flow Orchestration Events</label>
+        <locationX>440</locationX>
+        <locationY>755</locationY>
+        <assignmentItems>
+            <assignToReference>FlowOrchestrationEvent.OrchestrationInstanceId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateOverFlowOrchestrationInstRelatedObjRecords.FlowOrchestrationInstanceId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>FlowOrchestrationEventCollection</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>FlowOrchestrationEvent</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>IterateOverFlowOrchestrationInstRelatedObjRecords</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>When an error occurs during the flow execution, sets the isFlowFailed variable to True and stores the error message in the errorMessage variable.</description>
+        <name>SetIsFlowFailedToTrue</name>
+        <label>Set isFlowFailed to True</label>
+        <locationX>656</locationX>
+        <locationY>1139</locationY>
+        <assignmentItems>
+            <assignToReference>isFlowFailed</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>errorMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>Checks if the GetOrchestrationRun element returned any records that matched the filter criteria.</description>
+        <name>WereTheOrchestrationRunRecordsReturned</name>
+        <label>Were Orchestration Run Records Returned?</label>
+        <locationX>352</locationX>
+        <locationY>647</locationY>
+        <defaultConnector>
+            <targetReference>AddFlowOrchestrationEvents</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Yes (Default)</defaultConnectorLabel>
+        <rules>
+            <name>OrchestrationRunRecordsNotReturned</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GetOrchestrationRunRecords</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>IterateOverFlowOrchestrationInstRelatedObjRecords</targetReference>
+            </connector>
+            <label>No</label>
+        </rules>
+    </decisions>
+    <description>Resumes the onboarding of an application form by creating a flow orchestration event based on the record ID of the application form.</description>
+    <environments>Default</environments>
+    <interviewLabel>Onboarding: Resume Paused Application Form {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Onboarding: Resume Paused Application Form</label>
+    <loops>
+        <description>Repeats actions in a loop for the records that were returned by the GetFlowOrchestrationInstRelatedObj element.</description>
+        <name>IterateOverFlowOrchestrationInstRelatedObjRecords</name>
+        <label>Iterate Over Flow Orchestration Inst Related Obj Records</label>
+        <locationX>176</locationX>
+        <locationY>431</locationY>
+        <collectionReference>GetFlowOrchestrationInstRelatedObjRecord</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>GetOrchestrationRunRecords</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>CreateFlowOrchestationEvents</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>Creates flow orchestration events for all the records in the FlowOrchestrationEventCollection variable.</description>
+        <name>CreateFlowOrchestationEvents</name>
+        <label>Create Flow Orchestration Events</label>
+        <locationX>176</locationX>
+        <locationY>1031</locationY>
+        <faultConnector>
+            <targetReference>SetIsFlowFailedToTrue</targetReference>
+        </faultConnector>
+        <inputReference>FlowOrchestrationEventCollection</inputReference>
+    </recordCreates>
+    <recordLookups>
+        <description>Gets the Flow Orchestration Inst Related Obj record with a RelatedObjectID that matches the ID of the record that triggered the flow.</description>
+        <name>GetFlowOrchestrationInstRelatedObjRecord</name>
+        <label>Get Flow Orchestration Inst Related Obj Record</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>IterateOverFlowOrchestrationInstRelatedObjRecords</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>SetIsFlowFailedToTrue</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>RelatedObjectId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>FlowOrchestrationInstRelaObj</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Gets the in-progress Orchestration Run records with IDs that match the IDs of the Orchestration Run records that were returned by the GetOrchestrationRun element.</description>
+        <name>GetOrchestrationRunRecords</name>
+        <label>Get Orchestration Run Records</label>
+        <locationX>352</locationX>
+        <locationY>539</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>WereTheOrchestrationRunRecordsReturned</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>SetIsFlowFailedToTrue</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>IterateOverFlowOrchestrationInstRelatedObjRecords.FlowOrchestrationInstanceId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>InProgress</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>FlowOrchestrationInstance</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <sourceTemplate>fsc_onboarding__ResumeAppFormOnb</sourceTemplate>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>GetFlowOrchestrationInstRelatedObjRecord</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>Stage</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Approved</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Stage</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Rejected</stringValue>
+            </value>
+        </filters>
+        <object>ApplicationForm</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Stores the error message if an exception occurs during flow execution.</description>
+        <name>errorMessage</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the details of a flow orchestration event.</description>
+        <name>FlowOrchestrationEvent</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>FlowOrchestrationEvent</objectType>
+    </variables>
+    <variables>
+        <description>Stores a collection of flow orchestration events.</description>
+        <name>FlowOrchestrationEventCollection</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>FlowOrchestrationEvent</objectType>
+    </variables>
+    <variables>
+        <description>Stores a boolean value that indicates whether the flow execution failed.</description>
+        <name>isFlowFailed</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </variables>
+</Flow>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>FSC_DM_FraudRelatedQ1</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Do you recognize the merchant or the disputed transactions?</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>FSC_DM_v1_FraudRelatedQ1</developerName>
+    <name>FSC_DM_FraudRelatedQ1</name>
+    <questionCategory>Financial</questionCategory>
+</AssessmentQuestion>

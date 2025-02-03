@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Custom tab used for a lightning record app page within the Commercial Banking - Onboarding demo</description>
+    <flexiPage>FINS_Research_Insights_CB_Onboarding</flexiPage>
+    <label>Research Insights - CB</label>
+    <motif>Custom39: Telescope</motif>
+</CustomTab>

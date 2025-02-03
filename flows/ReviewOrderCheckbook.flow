@@ -1,0 +1,1092 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Send an email to the user when a case is created</description>
+        <name>SendEmail</name>
+        <label>Send Email</label>
+        <locationX>50</locationX>
+        <locationY>1142</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>AccountEmail</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Your service request to Order Checkbook was created</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>EmailBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <assignments>
+        <description>Sets the values of the fields required to send an email.</description>
+        <name>AssignEmailPrerequisites</name>
+        <label>Assign Email Prerequisites</label>
+        <locationX>1590</locationX>
+        <locationY>758</locationY>
+        <assignmentItems>
+            <assignToReference>AccountEmail</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateOverServiceCatalogRequests.SvcCatalogRequest.Case.Account.PersonEmail</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CaseNumber</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateOverServiceCatalogRequests.SvcCatalogRequest.Case.CaseNumber</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>AccountName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>AccountNameFormula</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PersonContactId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateOverServiceCatalogRequests.SvcCatalogRequest.Case.Account.PersonContact.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>IterateOverServiceCatalogRequests</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Account Number from the current service catalog request extended attribute value record in the loop to the SetAccountNumber Text variable.</description>
+        <name>SetAccountNumber</name>
+        <label>Set Attribute Value</label>
+        <locationX>534</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>AccountNumber</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateOverServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Account Type from the current service catalog request extended attribute value record in the loop to the SetAccountType Text variable.</description>
+        <name>SetAccountType</name>
+        <label>Set Attribute Value</label>
+        <locationX>798</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>AccountType</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateOverServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Address Line 1 from the current service catalog request extended attribute value record in the loop to the SetAddressLine1 Text variable.</description>
+        <name>SetAddressLine1</name>
+        <label>Set Attribute Value</label>
+        <locationX>1590</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>AddressLine1</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateOverServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Address Line 2 from the current service catalog request extended attribute value record in the loop to the SetAddressLine2 Text variable.</description>
+        <name>SetAddressLine2</name>
+        <label>Set Attribute Value</label>
+        <locationX>1854</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>AddressLine2</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateOverServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns City from the current service catalog request extended attribute value record in the loop to the SetCity Text variable.</description>
+        <name>SetCity</name>
+        <label>Set Attribute Value</label>
+        <locationX>2118</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>City</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateOverServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Country from the current service catalog request extended attribute value record in the loop to the SetCountry Text variable.</description>
+        <name>SetCountry</name>
+        <label>Set Attribute Value</label>
+        <locationX>2646</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>Country</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateOverServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Account Name from the current service catalog request extended attribute value record in the loop to the Financial Account Name Text variable.</description>
+        <name>SetFinancialAccountName</name>
+        <label>Set Attribute Value</label>
+        <locationX>1062</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>FinancialAccountName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateOverServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Number of Checks from the current service catalog request extended attribute value record in the loop to the SetNumberOfChecks Text variable.</description>
+        <name>SetNumberOfChecks</name>
+        <label>Set Attribute Value</label>
+        <locationX>270</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>CheckLeaves</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateOverServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Postal Code from the current service catalog request extended attribute value record in the loop to the SetPostalCode Text variable.</description>
+        <name>SetPostalCode</name>
+        <label>Set Attribute Value</label>
+        <locationX>2910</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>PostalCode</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateOverServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Shipping Preference from the current service catalog request extended attribute value record in the loop to the SetShippingPreference Text variable.</description>
+        <name>SetShippingPreference</name>
+        <label>Set Attribute Value</label>
+        <locationX>1326</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>ShippingPreference</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateOverServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns State from the current service catalog request extended attribute value record in the loop to the State Text variable.</description>
+        <name>SetState</name>
+        <label>Set Attribute Value</label>
+        <locationX>2382</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>State</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateOverServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <constants>
+        <description>Stores blank value.</description>
+        <name>BlankValue</name>
+        <dataType>String</dataType>
+    </constants>
+    <constants>
+        <description>Stores the address of the header image used in the email template.</description>
+        <name>HeaderImageURL</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>https://244fscorg.file.force.com/servlet/servlet.ImageServer?id=015B0000001Hsbn&amp;oid=00DB000000Fzrvi&amp;lastMod=1689143201000</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <description>Determines if the account email is blank or not.</description>
+        <name>CheckAccountEmail</name>
+        <label>Is Account Email Available?</label>
+        <locationX>182</locationX>
+        <locationY>1034</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>AccountEmailAvailable</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AccountEmail</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>BlankValue</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>AccountEmail</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>AccountEmail</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SendEmail</targetReference>
+            </connector>
+            <label>Account Email Available</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determines if the prerequisites to send an email are available or not.</description>
+        <name>HavePrerequisitesToSendAnEmail</name>
+        <label>Have Prerequisites To Send An Email?</label>
+        <locationX>1722</locationX>
+        <locationY>650</locationY>
+        <defaultConnector>
+            <targetReference>IterateOverServiceCatalogRequests</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>EmailPrerequisitesNotAvailable</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AccountEmail</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>CaseNumber</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>AccountName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>PersonContactId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>AssignEmailPrerequisites</targetReference>
+            </connector>
+            <label>Email Prerequisites Not Available</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>SetWhichAttribute</name>
+        <label>Set Which Attribute?</label>
+        <locationX>1722</locationX>
+        <locationY>350</locationY>
+        <defaultConnector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>isNumberOfChecks</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>CheckLeavesAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>BlankValue</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetNumberOfChecks</targetReference>
+            </connector>
+            <label>Number Of Checks</label>
+        </rules>
+        <rules>
+            <name>isAccountNumber</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>AccountNumberAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>BlankValue</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetAccountNumber</targetReference>
+            </connector>
+            <label>Account Number</label>
+        </rules>
+        <rules>
+            <name>isAccountType</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>AccountTypeAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>BlankValue</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetAccountType</targetReference>
+            </connector>
+            <label>Account Type</label>
+        </rules>
+        <rules>
+            <name>isFinancialAccountName</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>FinancialAccountNameAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>BlankValue</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetFinancialAccountName</targetReference>
+            </connector>
+            <label>Financial Account Name</label>
+        </rules>
+        <rules>
+            <name>isShippingPreference</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>ShippingPreferenceAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>BlankValue</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetShippingPreference</targetReference>
+            </connector>
+            <label>Shipping Preference</label>
+        </rules>
+        <rules>
+            <name>isAddressLine1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>AddressLine1Attribute</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>BlankValue</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetAddressLine1</targetReference>
+            </connector>
+            <label>Address Line 1</label>
+        </rules>
+        <rules>
+            <name>isAddressLine2</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>AddressLine2Attribute</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>BlankValue</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetAddressLine2</targetReference>
+            </connector>
+            <label>Address Line 2</label>
+        </rules>
+        <rules>
+            <name>isCity</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>CityAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>BlankValue</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetCity</targetReference>
+            </connector>
+            <label>City</label>
+        </rules>
+        <rules>
+            <name>isState</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>StateAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>BlankValue</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetState</targetReference>
+            </connector>
+            <label>State</label>
+        </rules>
+        <rules>
+            <name>isCountry</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>CountryAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>BlankValue</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetCountry</targetReference>
+            </connector>
+            <label>Country</label>
+        </rules>
+        <rules>
+            <name>isPostalCode</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>PostalCodeAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>BlankValue</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateOverServiceCatalogRequests.TextValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetPostalCode</targetReference>
+            </connector>
+            <label>Postal Code</label>
+        </rules>
+    </decisions>
+    <description>Allows an agent to review the details of a customer&apos;s checkbook order request.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Creates the account name by concatenating first name and last name.</description>
+        <name>AccountNameFormula</name>
+        <dataType>String</dataType>
+        <expression>{!IterateOverServiceCatalogRequests.SvcCatalogRequest.Case.Account.FirstName}&amp;IF(NOT(ISBLANK({!IterateOverServiceCatalogRequests.SvcCatalogRequest.Case.Account.FirstName})),&quot; &quot;,&quot;&quot;)&amp;{!IterateOverServiceCatalogRequests.SvcCatalogRequest.Case.Account.LastName}</expression>
+    </formulas>
+    <formulas>
+        <description>Creates the full address by concatenating the address fields</description>
+        <name>FullAddressFormula</name>
+        <dataType>String</dataType>
+        <expression>IF(NOT(ISBLANK({!AddressLine1})),{!AddressLine1},&apos;&apos;) &amp; IF(NOT(ISBLANK({!AddressLine2})),IF(NOT(ISBLANK({!AddressLine1})), &apos;, &apos; &amp; {!AddressLine2},{!AddressLine2}),&apos;&apos;) &amp; IF(NOT(ISBLANK({!City})),IF(OR(NOT(ISBLANK({!AddressLine1})),NOT(ISBLANK({!AddressLine2}))), &apos;, &apos; &amp; {!City},{!City}),&apos;&apos;) &amp; IF(NOT(ISBLANK({!State})),IF(OR(NOT(ISBLANK({!AddressLine1})),NOT(ISBLANK({!AddressLine2})),NOT(ISBLANK({!City}))),&apos;, &apos; &amp; {!State}, {!State}),&apos;&apos;) &amp; IF(NOT(ISBLANK({!Country})),IF(OR(NOT(ISBLANK({!AddressLine1})),NOT(ISBLANK({!AddressLine2})),NOT(ISBLANK({!City})),NOT(ISBLANK({!State}))),&apos;, &apos; &amp; {!Country}, {!Country}),&apos;&apos;) &amp; IF(NOT(ISBLANK({!PostalCode})),IF(OR(NOT(ISBLANK({!AddressLine1})),NOT(ISBLANK({!AddressLine2})),NOT(ISBLANK({!City})),NOT(ISBLANK({!State})), NOT(ISBLANK({!Country}))),&apos;, &apos; &amp; {!PostalCode}, {!PostalCode}),&apos;&apos;)</expression>
+    </formulas>
+    <interviewLabel>Review Order Checkbook {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Review Order Checkbook</label>
+    <loops>
+        <description>Iterates through service catalog request extended attribute values from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>IterateOverServiceCatalogRequests</name>
+        <label>Iterate Over Service Catalog Requests</label>
+        <locationX>182</locationX>
+        <locationY>242</locationY>
+        <collectionReference>GetServiceCatalogRequestExtendedAttributes</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>SetWhichAttribute</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>CheckAccountEmail</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Gets the service catalog request extended attribute value records with a record Id that matches the SvcCatalogRequestId that was passed into the flow. Stores the results in the Service Catalog Request Extended Attribute Value collection variable.</description>
+        <name>GetServiceCatalogRequestExtendedAttributes</name>
+        <label>Get Service Catalog Request Extended Attributes</label>
+        <locationX>182</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>IterateOverServiceCatalogRequests</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SvcCatalogRequestId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>InputRecordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>SvcCatalogReqExtdAttrVal</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>GetServiceCatalogRequestExtendedAttributes</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <description>Stores the body of the email that’s sent when a case is created.</description>
+        <name>EmailBody</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;div class=&quot;base&quot; style=&quot;padding: 56px;margin: 0px;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;background-color: #F4F5F4;&quot;&gt;
+&lt;div class=&quot;container&quot; style=&quot;padding: 0;margin: 8px auto;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;background-color: #FFFFFF;border-radius: 5px;width: 660px;font-size: 16px;&quot;&gt;
+&lt;a href=&apos;&apos;&gt;&lt;img src=&apos;{!HeaderImageURL}&apos; width=&quot;660&quot; height=&quot;206&quot; alt=&quot;&quot; style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;&lt;/a&gt;
+&lt;div class=&quot;content&quot; style=&quot;padding: 32px;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;line-height: 1.5;&quot;&gt;
+&lt;p class=&quot;first-text-block&quot; style=&quot;padding: 0;margin: 16px 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;margin-bottom: 40px;&quot;&gt;
+Hello &lt;strong style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!AccountName}&lt;/strong&gt;,&lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;
+Your service request to order checkbook was created and your case number is &lt;span style=&quot;font-weight: bold;color: #000000;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!CaseNumber}&lt;/span&gt;.&lt;/p&gt;
+&lt;p style=&quot;padding: 0;margin: 16px 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;
+                &lt;u&gt;Request Summary:&lt;/u&gt;&lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;
+                    Selected Account: &lt;strong style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!AccountNumber} - {!FinancialAccountName}&lt;/strong&gt;&lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;
+                    Number of checks: &lt;strong style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!CheckLeaves}&lt;/strong&gt;&lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;
+                    Shipping Preference: &lt;strong style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!ShippingPreference}&lt;/strong&gt;&lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;
+                    Shipping Address: &lt;strong style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!FullAddressFormula}&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p class=&quot;email-footer&quot; style=&quot;padding: 0;margin: 16px 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;margin-top: 40px;font-style: italic;&quot;&gt;
+Thank you, &lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;
+Customer Support Team
+&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</text>
+    </textTemplates>
+    <variables>
+        <description>Stores the value of the email attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>AccountEmail</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the label ‘Account Id’ to compare against the service catalog request extended attribute label field.</description>
+        <name>AccountIdAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Account Id</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of Account Name of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>AccountName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the Account Number attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>AccountNumber</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Account Number.</description>
+        <name>AccountNumberAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Account Number</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the account type attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>AccountType</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Account Type</description>
+        <name>AccountTypeAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Account Type</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the Address Line 1 attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>AddressLine1</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the label ‘Address Line 1’ to compare against the service catalog request extended attribute label field.</description>
+        <name>AddressLine1Attribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Address Line 1</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the Address Line 2 attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>AddressLine2</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the label ‘Address Line 2’ to compare against the service catalog request extended attribute label field.</description>
+        <name>AddressLine2Attribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Address Line 2</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the Case Number attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>CaseNumber</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the values for Check Leaves of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>CheckLeaves</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Check Leaves.</description>
+        <name>CheckLeavesAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Check Leaves</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the city attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>City</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for City.</description>
+        <name>CityAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>City</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value for the Country attribute from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>Country</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Country.</description>
+        <name>CountryAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Country</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for CustomerId.</description>
+        <name>CustomerIdAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>CustomerId</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the Financial Account Name attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>FinancialAccountName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Financial Account Name</description>
+        <name>FinancialAccountNameAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Account Name</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the SvcCatalogRequestId passed into the flow and is available as output from the flow.</description>
+        <name>InputRecordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of Person Contact Id of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>PersonContactId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the Postal Code attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>PostalCode</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Postal Code.</description>
+        <name>PostalCodeAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Postal Code</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the Shipping Preference attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>ShippingPreference</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Shipping Preference.</description>
+        <name>ShippingPreferenceAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Shipping Preference</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the State attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>State</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for State.</description>
+        <name>StateAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>State</stringValue>
+        </value>
+    </variables>
+</Flow>

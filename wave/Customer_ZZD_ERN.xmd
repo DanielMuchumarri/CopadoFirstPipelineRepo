@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata">
+    <dataset>Customer_ZZD_ERN</dataset>
+    <dimensions>
+        <field>Category</field>
+        <isDerived>false</isDerived>
+        <label>Category</label>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Product</field>
+        <isDerived>false</isDerived>
+        <label>Product</label>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Id</field>
+        <isDerived>false</isDerived>
+        <label>Id</label>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+    <measures>
+        <field>NPS</field>
+        <formatDecimalDigits>2</formatDecimalDigits>
+        <isDerived>false</isDerived>
+        <label>NPS</label>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <field>Balance</field>
+        <formatDecimalDigits>2</formatDecimalDigits>
+        <isDerived>false</isDerived>
+        <label>Balance</label>
+        <sortIndex>1</sortIndex>
+    </measures>
+</WaveXmd>

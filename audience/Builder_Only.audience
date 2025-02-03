@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audience xmlns="http://soap.sforce.com/2006/04/metadata">
+    <audienceName>Builder Only</audienceName>
+    <container>FINS - NEW IDO+ Cumulus Bank</container>
+    <criteria>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <entityField>EmployeeNumber</entityField>
+                <entityType>User</entityType>
+                <fieldValue>-1</fieldValue>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>FieldBased</type>
+        </criterion>
+    </criteria>
+    <formulaFilterType>AllCriteriaMatch</formulaFilterType>
+    <isDefaultAudience>false</isDefaultAudience>
+    <targets>
+        <target>
+            <groupName>d4f08ad9-70e1-41fa-b077-b428797f1654$#$6b9ca23c-3bc7-4b8a-ae5f-afabf0d3cc25</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_Rich_Content_Editor_1_Component</targetValue>
+        </target>
+        <target>
+            <groupName>63d0d130-56f2-4dea-9a8d-3c775ea22574$#$c1c822fe-1066-4f7f-b295-dc405c16720c</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>B2B_Home_Rich_Content_Editor_1_Component</targetValue>
+        </target>
+        <target>
+            <groupName>d4f08ad9-70e1-41fa-b077-b428797f1654$#$a61fde7c-6cf9-4447-be59-5c0142bf53ed</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_Rich_Content_Editor_Component</targetValue>
+        </target>
+        <target>
+            <groupName>63d0d130-56f2-4dea-9a8d-3c775ea22574$#$1b5f6e15-137e-4957-92a4-ae7dd9a0cb2e</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>B2B_Home_Rich_Content_Editor_Component</targetValue>
+        </target>
+        <target>
+            <groupName>63d0d130-56f2-4dea-9a8d-3c775ea22574$#$79c2cb5b-d2f2-4766-ad77-2348685479db</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>B2B_Home_Rich_Content_Editor_2_Component</targetValue>
+        </target>
+        <target>
+            <groupName>d4f08ad9-70e1-41fa-b077-b428797f1654$#$708d0bd4-e1b6-4282-9fa3-f5d27f7b28a0</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_Rich_Content_Editor_2_Component</targetValue>
+        </target>
+    </targets>
+</Audience>

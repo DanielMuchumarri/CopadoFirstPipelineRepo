@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <processLabel>Debit Transaction Dispute</processLabel>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>ListOfMaps</dataType>
+        <developerName>ListOfTransactions</developerName>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>true</isRequired>
+        <label>List Of Transactions</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>Financial_Account_Id</developerName>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Financial Account Id</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>Dispute_Type</developerName>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Dispute Type</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>Original_Transaction_Id</developerName>
+        <groupApiName>section_5</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Original Transaction Id</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Number</dataType>
+        <developerName>Amount_On_Reciept</developerName>
+        <groupApiName>section_7</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Amount On Reciept</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>Date_Received</developerName>
+        <groupApiName>section_9</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Date Received</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>Date_Returned</developerName>
+        <groupApiName>section_9</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Date Returned</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>Expected_Delivery_Date</developerName>
+        <groupApiName>section_11</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Expected Delivery Date</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>Date_Merchant_Contacted_NotRecd</developerName>
+        <groupApiName>section_11</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Date Merchant Contacted</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>Merchant_Response_NotRecd</developerName>
+        <groupApiName>section_11</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Merchant Response</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>Date_Merchant_Contacted_Unknown</developerName>
+        <groupApiName>section_13</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Date Merchant Contacted</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>Merchant_Response_Unknown</developerName>
+        <groupApiName>section_13</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Merchant Response</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Number</dataType>
+        <developerName>Amount_Authorized</developerName>
+        <groupApiName>section_15</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Amount Authorized</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Date</dataType>
+        <developerName>Date_Merchant_Notified_Subscription</developerName>
+        <groupApiName>section_17</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Date Merchant Notified</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>Reason_for_Cancellation</developerName>
+        <groupApiName>section_17</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Reason for Cancellation</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Date</dataType>
+        <developerName>Cancellation_Date</developerName>
+        <groupApiName>section_17</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Cancellation Date</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>Cancellation_Confirmation_Number</developerName>
+        <groupApiName>section_17</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Cancellation Confirmation Number</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>Other_Reason</developerName>
+        <groupApiName>section_19</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Other Reason</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>source_system_id</developerName>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Source System Id</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Lookup</dataType>
+        <developerName>Financial_Account_Link</developerName>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Financial Account Link</label>
+        <referenceObjectApiName>FinServ__FinancialAccount__c</referenceObjectApiName>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>Financial_Account_Name</developerName>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Financial Account Name</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>Other_Suspicious_Activity</developerName>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Other Suspicious Activity?</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>Permission_Given_To_Others</developerName>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Permission Given To Others?</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>Any_Additional_Details_Given</developerName>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Any Additional Details Given?</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Percentage</dataType>
+        <developerName>Provisional_Credit_Percentage</developerName>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Provisional Credit Percentage</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Currency</dataType>
+        <developerName>Provisional_Credit_Given</developerName>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Provisional Credit Given</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>Financial_Account_Type</developerName>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Financial Account Type</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>Financial_Account_Last_4_Digits</developerName>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Financial Account Last 4 Digits</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>lot_Transaction_Id2</developerName>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Transaction ID</label>
+        <parentAttribute>ListOfTransactions</parentAttribute>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Datetime</dataType>
+        <developerName>lot_Transaction_Posted_Date</developerName>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Transaction Posted Date</label>
+        <parentAttribute>ListOfTransactions</parentAttribute>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>lot_Transaction_Description</developerName>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Transaction Description</label>
+        <parentAttribute>ListOfTransactions</parentAttribute>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>lot_Transaction_Amount_Currency</developerName>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Transaction Amount Currency</label>
+        <parentAttribute>ListOfTransactions</parentAttribute>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Number</dataType>
+        <developerName>lot_Transaction_Amount</developerName>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Transaction Amount</label>
+        <parentAttribute>ListOfTransactions</parentAttribute>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>lot_Transaction_Code</developerName>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Transaction Code</label>
+        <parentAttribute>ListOfTransactions</parentAttribute>
+    </serviceProcessAttributes>
+    <serviceProcessDependencies>
+        <dependencyReference>fee_reversal_integration_definition</dependencyReference>
+        <type>IntegrationProviderDef</type>
+    </serviceProcessDependencies>
+    <serviceProcessDependencies>
+        <dependencyReference>RetailBanking_DebitTransactionDispute_English_1</dependencyReference>
+        <type>OmniScriptConfig</type>
+    </serviceProcessDependencies>
+    <serviceProcessDependencies>
+        <dependencyReference>FINS_Orchestrate_Transaction_Dispute</dependencyReference>
+        <type>FlowDefinition</type>
+    </serviceProcessDependencies>
+    <serviceProcessItemGroups>
+        <apiName>section_2</apiName>
+        <groupName>High Level Information</groupName>
+        <sortOrder>1</sortOrder>
+    </serviceProcessItemGroups>
+    <serviceProcessItemGroups>
+        <apiName>section_5</apiName>
+        <groupName>Duplicate Transaction</groupName>
+        <sortOrder>3</sortOrder>
+    </serviceProcessItemGroups>
+    <serviceProcessItemGroups>
+        <apiName>section_7</apiName>
+        <groupName>Incorrect Amount</groupName>
+        <sortOrder>4</sortOrder>
+    </serviceProcessItemGroups>
+    <serviceProcessItemGroups>
+        <apiName>section_9</apiName>
+        <groupName>Returned Merchandise</groupName>
+        <sortOrder>5</sortOrder>
+    </serviceProcessItemGroups>
+    <serviceProcessItemGroups>
+        <apiName>section_11</apiName>
+        <groupName>Merchandise Not Received</groupName>
+        <sortOrder>6</sortOrder>
+    </serviceProcessItemGroups>
+    <serviceProcessItemGroups>
+        <apiName>section_13</apiName>
+        <groupName>Unknown Transaction</groupName>
+        <sortOrder>2</sortOrder>
+    </serviceProcessItemGroups>
+    <serviceProcessItemGroups>
+        <apiName>section_15</apiName>
+        <groupName>Unauthorized Charge Amount</groupName>
+        <sortOrder>7</sortOrder>
+    </serviceProcessItemGroups>
+    <serviceProcessItemGroups>
+        <apiName>section_17</apiName>
+        <groupName>Cancelled Subscription</groupName>
+        <sortOrder>8</sortOrder>
+    </serviceProcessItemGroups>
+    <serviceProcessItemGroups>
+        <apiName>section_19</apiName>
+        <groupName>Other</groupName>
+        <sortOrder>9</sortOrder>
+    </serviceProcessItemGroups>
+    <shortDescription>Dispute unauthorized financial transaction.</shortDescription>
+    <usageType>Industry</usageType>
+</ServiceProcess>

@@ -1,0 +1,5 @@
+{
+  "apiName" : "Commerce_Custom_Layout_1",
+  "type" : "sfdc_cms__themeLayout",
+  "path" : "themeLayouts"
+}

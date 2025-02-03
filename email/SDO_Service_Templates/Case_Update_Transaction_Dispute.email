@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div><font face="arial">Dear {!Contact.Name},</font></div><div><font face="arial"><br></font></div><div><font face="arial">Thank you for contacting us regarding your issue "{!Case.Subject}". &nbsp;</font></div><div><br></div><div>Your case has been transferred to the research and credit department.</div><div><br></div><div><font face="arial">If you have any other questions, please don't hesitate to reply to this email or add comments to your case in the {!Organization.Name} Community.&nbsp;</font></div><div><font face="arial"><br></font></div><div><font face="arial">We hope this update is helpful and thanks for your patience as we work to resolve this issue as quickly as possible.</font></div><div><font face="arial"><br></font></div><div><font face="arial">Sincerely,</font></div><div>{!Organization.Name} Customer Service&nbsp;</div>]]></td>
+</tr>
+</table>

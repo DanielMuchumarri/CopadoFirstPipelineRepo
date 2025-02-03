@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomSite xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowGuestPaymentsApi>false</allowGuestPaymentsApi>
+    <allowHomePage>false</allowHomePage>
+    <allowStandardAnswersPages>false</allowStandardAnswersPages>
+    <allowStandardIdeasPages>false</allowStandardIdeasPages>
+    <allowStandardLookups>false</allowStandardLookups>
+    <allowStandardPortalPages>true</allowStandardPortalPages>
+    <allowStandardSearch>false</allowStandardSearch>
+    <authorizationRequiredPage>CommunitiesLogin</authorizationRequiredPage>
+    <bandwidthExceededPage>BandwidthExceeded</bandwidthExceededPage>
+    <browserXssProtection>true</browserXssProtection>
+    <cachePublicVisualforcePagesInProxyServers>true</cachePublicVisualforcePagesInProxyServers>
+    <clickjackProtectionLevel>SameOriginOnly</clickjackProtectionLevel>
+    <contentSniffingProtection>true</contentSniffingProtection>
+    <enableAuraRequests>true</enableAuraRequests>
+    <fileNotFoundPage>FileNotFound</fileNotFoundPage>
+    <genericErrorPage>Exception</genericErrorPage>
+    <inMaintenancePage>InMaintenance</inMaintenancePage>
+    <indexPage>CommunitiesLanding</indexPage>
+    <masterLabel>ESW_FINS_IDO_Service_Innov_1730416330050</masterLabel>
+    <redirectToCustomDomain>false</redirectToCustomDomain>
+    <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
+    <selfRegPage>CommunitiesSelfReg</selfRegPage>
+    <serverIsDown>SNA_q1Ah6_sf_default_cdn_ESW_FINS_IDO_Service_Innov_17304163300501</serverIsDown>
+    <siteAdmin>daniel.muchumarri@ltimindtree.com2024/11/20_10-50-14.demo</siteAdmin>
+    <siteGuestRecordDefaultOwner>daniel.muchumarri@ltimindtree.com2024/11/20_10-50-14.demo</siteGuestRecordDefaultOwner>
+    <siteIframeWhiteListUrls>
+        <url>fins-nextgen-banking.my.site.com</url>
+    </siteIframeWhiteListUrls>
+    <siteIframeWhiteListUrls>
+        <url>*.fins-nextgen-banking.my.site.com</url>
+    </siteIframeWhiteListUrls>
+    <siteType>ChatterNetwork</siteType>
+    <urlPathPrefix>ESWFINSIDOServiceInnov1730416330050vforc</urlPathPrefix>
+</CustomSite>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Demo Milestone and Exercise</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Demo Milestones and Exercises</value>
+    </caseValues>
+    <fields>
+        <label><!-- Completed --></label>
+        <name>Completed_Ex__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed On --></label>
+        <name>Completed_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed --></label>
+        <name>Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completion Percentage --></label>
+        <name>Completion_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Value --></label>
+        <name>Current_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Due Date --></label>
+        <name>Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q-Branch Demo Reference --></label>
+        <name>FINS_Q_Branch_Demo_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image URL --></label>
+        <name>Image_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lesson Description --></label>
+        <name>Lesson_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- MilestoneIsTrue --></label>
+        <name>MilestoneIsTrue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Program Outcome --></label>
+        <name>Program_Outcome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Section --></label>
+        <name>Section__c</name>
+        <relationshipLabel><!-- Demo Milestones and Exercises --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Target Value --></label>
+        <name>Total_Target_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Audio Recording</masterLabel>
+            <translation><!-- Audio Recording --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Document</masterLabel>
+            <translation><!-- Document --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lesson</masterLabel>
+            <translation><!-- Lesson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Link</masterLabel>
+            <translation><!-- Link --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduled Event</masterLabel>
+            <translation><!-- Scheduled Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trailhead</masterLabel>
+            <translation><!-- Trailhead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video</masterLabel>
+            <translation><!-- Video --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- URL --></label>
+        <name>URL__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Exercise --></label>
+        <name>Exercise</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Milestone --></label>
+        <name>Milestone</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

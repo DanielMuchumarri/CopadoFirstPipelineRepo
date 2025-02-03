@@ -1,0 +1,1087 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Send case creation email to the user.</description>
+        <name>SendEmailWhenCaseIsCreated</name>
+        <label>Send Email When Case is Created</label>
+        <locationX>50</locationX>
+        <locationY>1142</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>AccountEmail</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Your service request to Transfer Funds to Own Account was created</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>EmailBodyFormula</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <assignments>
+        <description>Sets the values of the fields required to send an email.</description>
+        <name>AssignEmailPrerequisites</name>
+        <label>Assign Email Prerequisites</label>
+        <locationX>1854</locationX>
+        <locationY>758</locationY>
+        <assignmentItems>
+            <assignToReference>AccountEmail</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.SvcCatalogRequest.Case.Account.PersonEmail</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CaseNumber</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.SvcCatalogRequest.Case.CaseNumber</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PersonContactId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.SvcCatalogRequest.Case.Account.PersonContact.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>AccountName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>AccountNameFormula</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>IterateThroughServiceCatalogRequests</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Currency Code from the current service catalog request extended attribute value record in the loop to the CurrencyCode Text variable.</description>
+        <name>SetCurrencyCode</name>
+        <label>Set Attribute Value</label>
+        <locationX>1590</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>CurrencyCode</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Destination Account Name from the current service catalog request extended attribute value record in the loop to the TransferringToAccountName Text variable.</description>
+        <name>SetDesinationAccountName</name>
+        <label>Set Attribute Value</label>
+        <locationX>1062</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>DestinationAccountName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Destination Account Number from the current service catalog request extended attribute value record in the loop to the TransferringToAccountNumber Text variable.</description>
+        <name>SetDestinationAccountNumber</name>
+        <label>Set Attribute Value</label>
+        <locationX>798</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>DestinationAccountNumber</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns End Date from the current service catalog request extended attribute value record in the loop to the EndDate Text variable.</description>
+        <name>SetEndDate</name>
+        <label>Set Attribute Value</label>
+        <locationX>2382</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>EndDate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Frequency from the current service catalog request extended attribute value record in the loop to the Frequency Text variable.</description>
+        <name>SetFrequency</name>
+        <label>Set Attribute Value</label>
+        <locationX>2646</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>Frequency</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Fund Transfer Date from the current service catalog request extended attribute value record in the loop to the TransferDate Text variable.</description>
+        <name>SetFundTransferDate</name>
+        <label>Set Attribute Value</label>
+        <locationX>1854</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>FundTransferDate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Installment from the current service catalog request extended attribute value record in the loop to the Installment Number variable.</description>
+        <name>SetInstallment</name>
+        <label>Set Attribute Value</label>
+        <locationX>2910</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>Installment</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.NumberValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Payment Type from the current service catalog request extended attribute value record in the loop to the PaymentType Text variable.</description>
+        <name>SetPaymentType</name>
+        <label>Set Attribute Value</label>
+        <locationX>3174</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>PaymentType</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Remarks from the current service catalog request extended attribute value record in the loop to the Remarks Text variable.</description>
+        <name>SetRemarks</name>
+        <label>Set Attribute Value</label>
+        <locationX>3438</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>Remarks</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Source Account Name from the current service catalog request extended attribute value record in the loop to the TransferringFromAccountName Text variable.</description>
+        <name>SetSourceAccountName</name>
+        <label>Set Attribute Value</label>
+        <locationX>534</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>SourceAccoutName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Source Account Number from the current service catalog request extended attribute value record in the loop to the TransferringFromAccountNumber Text variable.</description>
+        <name>SetSourceAccountNumber</name>
+        <label>Set Attribute Value</label>
+        <locationX>270</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>SourceAccountNumber</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Start Date from the current service catalog request extended attribute value record in the loop to the StartDate Text variable.</description>
+        <name>SetStartDate</name>
+        <label>Set Attribute Value</label>
+        <locationX>2118</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>StartDate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.TextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Transfer Amount from the current service catalog request extended attribute value record in the loop to the Amount Number variable.</description>
+        <name>SetTransferAmount</name>
+        <label>Set Attribute Value</label>
+        <locationX>1326</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>TransferAmount</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IterateThroughServiceCatalogRequests.NumberValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </connector>
+    </assignments>
+    <constants>
+        <description>Stores the address of the email template header image.</description>
+        <name>HeaderImageURL</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>https://244fscorg.file.force.com/servlet/servlet.ImageServer?id=015B0000001Hsbn&amp;oid=00DB000000Fzrvi&amp;lastMod=1689143201000</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <description>Determines if the prerequisites to send an email are available or not.</description>
+        <name>HavePrerequisitesToSendAnEmail</name>
+        <label>Have Prerequisites To Send An Email?</label>
+        <locationX>1986</locationX>
+        <locationY>650</locationY>
+        <defaultConnector>
+            <targetReference>IterateThroughServiceCatalogRequests</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Email Prerequisites Available</defaultConnectorLabel>
+        <rules>
+            <name>EmailPrerequisitesNotAvailable</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AccountEmail</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>CaseNumber</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>AccountName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>PersonContactId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>AssignEmailPrerequisites</targetReference>
+            </connector>
+            <label>Email Prerequisites Not Available</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determines whether the email associated with the Account is available or not.</description>
+        <name>IsAccountEmailAvailable</name>
+        <label>Is Account Email Available?</label>
+        <locationX>182</locationX>
+        <locationY>1034</locationY>
+        <defaultConnectorLabel>Account Email Not Available</defaultConnectorLabel>
+        <rules>
+            <name>AccountEmailAvailable</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AccountEmail</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>AccountEmail</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>AccountEmail</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SendEmailWhenCaseIsCreated</targetReference>
+            </connector>
+            <label>Account Email Available</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determines which attribute is stored in the current service catalog request extended attribute value record in the loop.</description>
+        <name>SetWhichAttribute</name>
+        <label>Set Which Attribute?</label>
+        <locationX>1986</locationX>
+        <locationY>350</locationY>
+        <defaultConnector>
+            <targetReference>HavePrerequisitesToSendAnEmail</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Other (Default)</defaultConnectorLabel>
+        <rules>
+            <name>isSourceAccountNumber</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>SourceAccountNumberAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetSourceAccountNumber</targetReference>
+            </connector>
+            <label>Source Account Number</label>
+        </rules>
+        <rules>
+            <name>isSourceAccountName</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>SourceAccountNameAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetSourceAccountName</targetReference>
+            </connector>
+            <label>Source Account Name</label>
+        </rules>
+        <rules>
+            <name>isDestinationAccountNumber</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>DestinationAccountNumberAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetDestinationAccountNumber</targetReference>
+            </connector>
+            <label>Destination Account Number</label>
+        </rules>
+        <rules>
+            <name>isDestinationAccountName</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>DestinationAccountNameAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetDesinationAccountName</targetReference>
+            </connector>
+            <label>Destination Account Name</label>
+        </rules>
+        <rules>
+            <name>isAmount</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>AmountAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetTransferAmount</targetReference>
+            </connector>
+            <label>Amount</label>
+        </rules>
+        <rules>
+            <name>isCurrencyCode</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>CurrencyCodeAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetCurrencyCode</targetReference>
+            </connector>
+            <label>Currency Code</label>
+        </rules>
+        <rules>
+            <name>isTransferDate</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>TransferDateAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetFundTransferDate</targetReference>
+            </connector>
+            <label>Transfer Date</label>
+        </rules>
+        <rules>
+            <name>isStartDate</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>StartDateAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetStartDate</targetReference>
+            </connector>
+            <label>Start Date</label>
+        </rules>
+        <rules>
+            <name>isEndDate</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>EndDateAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetEndDate</targetReference>
+            </connector>
+            <label>End Date</label>
+        </rules>
+        <rules>
+            <name>isFrequency</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>FrequencyAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetFrequency</targetReference>
+            </connector>
+            <label>Frequency</label>
+        </rules>
+        <rules>
+            <name>NumberofInstallments</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>NumberofInstallmentsAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetInstallment</targetReference>
+            </connector>
+            <label>Number of Installments</label>
+        </rules>
+        <rules>
+            <name>isPaymentType</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>PaymentTypeAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetPaymentType</targetReference>
+            </connector>
+            <label>Payment Type</label>
+        </rules>
+        <rules>
+            <name>isTransferRemarks</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughServiceCatalogRequests.SvcCtlgItemAttrLabel</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>TransferRemarksAttribute</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetRemarks</targetReference>
+            </connector>
+            <label>Transfer Remarks</label>
+        </rules>
+    </decisions>
+    <description>Allows an agent to review the details of a customer&apos;s fund transfer to own account request.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Creates the account name by concatenating first name and last name.</description>
+        <name>AccountNameFormula</name>
+        <dataType>String</dataType>
+        <expression>{!IterateThroughServiceCatalogRequests.SvcCatalogRequest.Case.Account.FirstName}&amp;IF(NOT(ISBLANK({!IterateThroughServiceCatalogRequests.SvcCatalogRequest.Case.Account.FirstName})),&quot; &quot;,&quot;&quot;)&amp;{!IterateThroughServiceCatalogRequests.SvcCatalogRequest.Case.Account.LastName}</expression>
+    </formulas>
+    <formulas>
+        <description>Creates the amount with currency code by concatenating currency code and amount.</description>
+        <name>CurrencyAmountFormula</name>
+        <dataType>String</dataType>
+        <expression>{!CurrencyCode}&amp;&apos; &apos;&amp;{!TransferAmount}</expression>
+    </formulas>
+    <formulas>
+        <description>Creates the Destination account label by concatenating masked account number and account name.</description>
+        <name>DestinationAccountFormula</name>
+        <dataType>String</dataType>
+        <expression>{!DestinationAccountNumber}&amp;&apos; - &apos;&amp;{!DestinationAccountName}</expression>
+    </formulas>
+    <formulas>
+        <description>Returns either one time transfer or recurring transfer email body based on selected payment type</description>
+        <name>EmailBodyFormula</name>
+        <dataType>String</dataType>
+        <expression>IF({!PaymentType}=&apos;Recurring&apos;,{!EmailBodyWhenRecurringTransferCaseIsCreated},{!EmailBodyWhenOneTimeTransferCaseisCreated})</expression>
+    </formulas>
+    <formulas>
+        <description>Creates the source account label by concatenating masked account number and account name.</description>
+        <name>SourceAccountFormula</name>
+        <dataType>String</dataType>
+        <expression>{!SourceAccountNumber}&amp;&apos; - &apos;&amp;{!SourceAccoutName}</expression>
+    </formulas>
+    <interviewLabel>Review Transfer Funds to Own Account {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Review Transfer Funds To Own Account</label>
+    <loops>
+        <description>Iterates through Service Catalog Request Extended Attribute Values from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>IterateThroughServiceCatalogRequests</name>
+        <label>Iterate Through Service Catalog Requests</label>
+        <locationX>182</locationX>
+        <locationY>242</locationY>
+        <collectionReference>GetServiceCatalogRequestExtendedAttributes</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>SetWhichAttribute</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>IsAccountEmailAvailable</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Gets the service catalog request extended attribute value records with a record Id matching the SvcCatalogRequestId that was passed into the flow. Stores the results in the Service Catalog Request Extended Attribute Value collection variable.</description>
+        <name>GetServiceCatalogRequestExtendedAttributes</name>
+        <label>Get Service Catalog Request Extended Attributes</label>
+        <locationX>182</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>IterateThroughServiceCatalogRequests</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SvcCatalogRequestId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>InputRecordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>SvcCatalogReqExtdAttrVal</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>GetServiceCatalogRequestExtendedAttributes</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <description>Stores the body of the email that’s sent when a one-time transfer case is created.</description>
+        <name>EmailBodyWhenOneTimeTransferCaseisCreated</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;div class=&quot;base&quot; style=&quot;padding: 56px;margin: 0px;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;background-color: #F4F5F4;&quot;&gt;
+  &lt;div class=&quot;container&quot; style=&quot;padding: 0;margin: 8px auto;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;background-color: #FFFFFF;border-radius: 5px;width: 660px;font-size: 16px;&quot;&gt;
+    &lt;a&gt;
+      &lt;img src=&apos;{!HeaderImageURL}&apos; width=&quot;660&quot; height=&quot;206&quot; alt=&quot;&quot; style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;
+    &lt;/a&gt;
+    &lt;div class=&quot;content&quot; style=&quot;padding: 32px;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;line-height: 1.5;&quot;&gt;
+      &lt;p class=&quot;first-text-block&quot; style=&quot;padding: 0;margin: 16px 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;margin-bottom: 40px;&quot;&gt; Hello &lt;strong style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!AccountName}&lt;/strong&gt;, &lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt; Your service request to transfer funds to own account was created and your case number is &lt;span style=&quot;font-weight: bold;color: #000000;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!CaseNumber}&lt;/span&gt;. &lt;/p&gt;
+      &lt;p style=&quot;padding: 0;margin: 16px 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;
+        &lt;u&gt;Request Summary:&lt;/u&gt;
+        &lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt; Transferring from: &lt;strong style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!SourceAccountFormula}&lt;/strong&gt;
+        &lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt; Transferring to: &lt;strong style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!DestinationAccountFormula}&lt;/strong&gt;
+        &lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt; Transfer date: &lt;strong style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!FundTransferDate}&lt;/strong&gt;
+        &lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt; Amount: &lt;strong style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!CurrencyAmountFormula}&lt;/strong&gt;
+        &lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt; Remarks(if any): &lt;strong style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!Remarks}&lt;/strong&gt;
+      &lt;/p&gt;
+      &lt;p class=&quot;email-footer&quot; style=&quot;padding: 0;margin: 16px 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;margin-top: 40px;font-style: italic;&quot;&gt; Thank you, &lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt; Customer Support Team &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Stores the body of the email that’s sent when a recurring transfer case is created.</description>
+        <name>EmailBodyWhenRecurringTransferCaseIsCreated</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;div class=&quot;base&quot; style=&quot;padding: 56px;margin: 0px;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;background-color: #F4F5F4;&quot;&gt;
+  &lt;div class=&quot;container&quot; style=&quot;padding: 0;margin: 8px auto;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;background-color: #FFFFFF;border-radius: 5px;width: 660px;font-size: 16px;&quot;&gt;
+    &lt;a&gt;
+      &lt;img src=&apos;{!HeaderImageURL}&apos; width=&quot;660&quot; height=&quot;206&quot; alt=&quot;&quot; style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;
+    &lt;/a&gt;
+    &lt;div class=&quot;content&quot; style=&quot;padding: 32px;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;line-height: 1.5;&quot;&gt;
+      &lt;p class=&quot;first-text-block&quot; style=&quot;padding: 0;margin: 16px 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;margin-bottom: 40px;&quot;&gt; Hello &lt;strong style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!AccountName}&lt;/strong&gt;, &lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt; Your service request to transfer funds to own account was created and your case number is &lt;span style=&quot;font-weight: bold;color: #000000;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!CaseNumber}&lt;/span&gt;. &lt;/p&gt;
+      &lt;p style=&quot;padding: 0;margin: 16px 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;
+        &lt;u&gt;Request Summary:&lt;/u&gt;
+        &lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt; Transferring from: &lt;strong style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!SourceAccountFormula}&lt;/strong&gt;
+        &lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt; Transferring to: &lt;strong style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!DestinationAccountFormula}&lt;/strong&gt;
+        &lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt; Start date: &lt;strong style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!StartDate}&lt;/strong&gt;
+        &lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt; Frequency: &lt;strong style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!Frequency}&lt;/strong&gt;
+        &lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt; End date: &lt;strong style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!EndDate}&lt;/strong&gt;
+        &lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt; Installment: &lt;strong style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!Installment}&lt;/strong&gt;
+        &lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt; Amount: &lt;strong style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!CurrencyAmountFormula}&lt;/strong&gt;
+        &lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt; Remarks(if any): &lt;strong style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt;{!Remarks}&lt;/strong&gt;
+      &lt;/p&gt;
+      &lt;p class=&quot;email-footer&quot; style=&quot;padding: 0;margin: 16px 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;margin-top: 40px;font-style: italic;&quot;&gt; Thank you, &lt;br style=&quot;padding: 0;margin: 0;font-family: &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif;&quot;&gt; Customer Support Team &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</text>
+    </textTemplates>
+    <variables>
+        <description>Stores the value of Account Email of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>AccountEmail</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of Account Name of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>AccountName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Amount.</description>
+        <name>AmountAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Amount</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of Case Number of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>CaseNumber</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the Currency Code attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>CurrencyCode</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Currency Code.</description>
+        <name>CurrencyCodeAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Currency Code</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the Destination Account Name attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>DestinationAccountName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Destination Account Name.</description>
+        <name>DestinationAccountNameAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Destination Account Name</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the Destination Account Number attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>DestinationAccountNumber</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Destination Account Number.</description>
+        <name>DestinationAccountNumberAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Destination Account Number</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the End Date attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>EndDate</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for End Date.</description>
+        <name>EndDateAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>End Date</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the Frequency attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>Frequency</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Frequency.</description>
+        <name>FrequencyAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Frequency</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the Fund Transfer Date attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>FundTransferDate</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the SvcCatalogRequestId passed into the flow and is available as output from the flow.</description>
+        <name>InputRecordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the Installment attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>Installment</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Number of Installments</description>
+        <name>NumberofInstallmentsAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Installment</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the Payment Type attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>PaymentType</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Payment Type.</description>
+        <name>PaymentTypeAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Payment Type</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of Person Contact Id of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>PersonContactId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the Remarks attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>Remarks</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Source Account Name</description>
+        <name>SourceAccountNameAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Source Account Name</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the Source Account Number attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>SourceAccountNumber</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Source Account Number.</description>
+        <name>SourceAccountNumberAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Source Account Number</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the Source Account Name attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>SourceAccoutName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the Start Date attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>StartDate</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Start Date.</description>
+        <name>StartDateAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Start Date</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of the Transfer Amount attribute of the service catalog request extended attribute value record from GetServiceCatalogRequestExtendedAttributes.</description>
+        <name>TransferAmount</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>N/A</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Transfer Date.</description>
+        <name>TransferDateAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Transfer Date</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the attribute name for Remarks.</description>
+        <name>TransferRemarksAttribute</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Remarks</stringValue>
+        </value>
+    </variables>
+</Flow>

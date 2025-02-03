@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>B2B Featured Products Config</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>B2B Featured Product Configs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Org Cache TTL --></label>
+        <name>OrgCacheTTL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session Cache TTL --></label>
+        <name>SessionCacheTTL__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

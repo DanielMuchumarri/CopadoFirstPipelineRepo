@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <processLabel>Stop Check Payment</processLabel>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>check_number</developerName>
+        <groupApiName>section_5</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Check Number</label>
+        <sortOrder>1</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>starting_check_number</developerName>
+        <groupApiName>section_7</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Starting Check Number</label>
+        <sortOrder>1</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>ending_check_number</developerName>
+        <groupApiName>section_7</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Ending Check Number</label>
+        <sortOrder>2</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>check_date</developerName>
+        <groupApiName>section_5</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Check Date</label>
+        <sortOrder>2</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>amount</developerName>
+        <groupApiName>section_5</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Amount</label>
+        <sortOrder>3</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>check_type</developerName>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Check Type</label>
+        <sortOrder>1</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>payee</developerName>
+        <groupApiName>section_5</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Payee</label>
+        <sortOrder>4</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>account_number</developerName>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Account Number</label>
+        <sortOrder>2</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>account_type</developerName>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Account Type</label>
+        <sortOrder>3</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>reason</developerName>
+        <groupApiName>section_10</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Reason</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Lookup</dataType>
+        <developerName>account_id</developerName>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Account Id</label>
+        <referenceObjectApiName>FinServ__FinancialAccount__c</referenceObjectApiName>
+        <sortOrder>4</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessDependencies>
+        <dependencyReference>FSC_StopCheckPayment</dependencyReference>
+        <type>IntegrationProviderDef</type>
+    </serviceProcessDependencies>
+    <serviceProcessDependencies>
+        <dependencyReference>ProcessStopCheckPayment</dependencyReference>
+        <type>FlowDefinition</type>
+    </serviceProcessDependencies>
+    <serviceProcessDependencies>
+        <dependencyReference>FSC_StopCheckPayment_English_2</dependencyReference>
+        <type>OmniScriptConfig</type>
+    </serviceProcessDependencies>
+    <serviceProcessItemGroups>
+        <apiName>section_2</apiName>
+        <groupName>Customer &amp; Request Details</groupName>
+        <sortOrder>2</sortOrder>
+    </serviceProcessItemGroups>
+    <serviceProcessItemGroups>
+        <apiName>section_5</apiName>
+        <groupName>Single Check</groupName>
+        <sortOrder>5</sortOrder>
+    </serviceProcessItemGroups>
+    <serviceProcessItemGroups>
+        <apiName>section_7</apiName>
+        <groupName>Range of Check</groupName>
+        <sortOrder>7</sortOrder>
+    </serviceProcessItemGroups>
+    <serviceProcessItemGroups>
+        <apiName>section_10</apiName>
+        <groupName>Reasons</groupName>
+        <sortOrder>10</sortOrder>
+    </serviceProcessItemGroups>
+    <usageType>Industry</usageType>
+</ServiceProcess>

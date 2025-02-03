@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cross-Sell Recommendation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cross-SellRecommendations</value>
+    </caseValues>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>Product_Type__c</name>
+        <picklistValues>
+            <masterLabel>Accessories</masterLabel>
+            <translation><!-- Accessories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitive</masterLabel>
+            <translation><!-- Competitive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complementary</masterLabel>
+            <translation><!-- Complementary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CrossSell</masterLabel>
+            <translation><!-- CrossSell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Related</masterLabel>
+            <translation><!-- Related --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RequiredItem</masterLabel>
+            <translation><!-- RequiredItem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Superseded</masterLabel>
+            <translation><!-- Superseded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UpSell</masterLabel>
+            <translation><!-- UpSell --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Recommended Product Parent --></label>
+        <name>Recommended_Product_Parent__c</name>
+        <relationshipLabel><!-- Cross-Sell Products Recommendations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Recommended Product --></label>
+        <name>Recommended_Product__c</name>
+        <relationshipLabel><!-- Product Recommended as Cross-Sell For --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sequence --></label>
+        <name>Sequence__c</name>
+    </fields>
+    <fields>
+        <label><!-- unique ID value --></label>
+        <name>unique_ID_value__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Cannot have the product as part of its own recommendation --></errorMessage>
+        <name>impossible_recommendation_on_itself</name>
+    </validationRules>
+</CustomObjectTranslation>

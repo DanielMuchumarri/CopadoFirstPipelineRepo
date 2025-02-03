@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Real-time events driven from Techsee to Salesforce.
+This platform events record is published from VRA managed automations.</description>
+    <eventType>HighVolume</eventType>
+    <fields>
+        <fullName>tspa__Data_JSON__c</fullName>
+        <deprecated>false</deprecated>
+        <isFilteringDisabled>false</isFilteringDisabled>
+        <isNameField>false</isNameField>
+        <isSortingDisabled>false</isSortingDisabled>
+        <label>Data JSON</label>
+        <length>131072</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tspa__Session_Notification_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>smsDeliveryStatus
+customerDetails
+sessionEnded
+customerGeolocation
+imageScanResults
+desktopSharingStatus
+tosRejected
+mirroringStatus
+observerInviteStatus
+audioStatus</description>
+        <externalId>false</externalId>
+        <isFilteringDisabled>false</isFilteringDisabled>
+        <isNameField>false</isNameField>
+        <isSortingDisabled>false</isSortingDisabled>
+        <label>Session Notification Type</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>VRA Notification</label>
+    <pluralLabel>VRA Notifications</pluralLabel>
+    <publishBehavior>PublishAfterCommit</publishBehavior>
+</CustomObject>

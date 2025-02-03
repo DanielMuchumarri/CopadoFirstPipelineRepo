@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active Users Session Average --></label>
+        <name>tspa__Active_Users_Session_Average__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Number of Sessions --></label>
+        <name>tspa__Current_Number_of_Sessions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Value --></label>
+        <name>tspa__Current_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- DeveloperName --></label>
+        <name>tspa__DeveloperName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Potential Number of Sessions --></label>
+        <name>tspa__Potential_Number_of_Sessions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Potential Value --></label>
+        <name>tspa__Potential_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session Average Value --></label>
+        <name>tspa__Session_Average_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Top 25% Users Session Average --></label>
+        <name>tspa__Top_25_Users_Session_Average__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- The minimum value is 1. --></errorMessage>
+        <name>tspa__Value_Greater_Than_1</name>
+    </validationRules>
+</CustomObjectTranslation>

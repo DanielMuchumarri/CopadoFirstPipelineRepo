@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>PSBulkActionConfig</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>PSBulkActionConfig</value>
+    </caseValues>
+    <fields>
+        <label><!-- Bulk Edit Fields --></label>
+        <name>Bulk_Edit_Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Config Name --></label>
+        <name>Config_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Header Icon --></label>
+        <name>Header_Icon__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAQL ID Field --></label>
+        <name>SAQL_ID_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Bulk Edit --></label>
+        <name>Show_Bulk_Edit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Chatter --></label>
+        <name>Show_Chatter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Data --></label>
+        <name>Show_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show SAQL --></label>
+        <name>Show_SAQL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Task --></label>
+        <name>Show_Task__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tab Background Color --></label>
+        <name>Tab_Background_Color__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>Title__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;omniscriptId&quot; : &quot;0jNHo00000097qoMAA&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;type&quot; : &quot;FinsCommercialLoan&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;sId&quot; : &quot;0jNHo00000097qoMAA&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;subType&quot; : &quot;Onboarding&quot;,
+  &quot;timeStamp&quot; : &quot;2023-12-05T23:20:20.101Z&quot;,
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;userTimeZoneName&quot; : &quot;America/Los_Angeles&quot;,
+  &quot;userTimeZone&quot; : &quot;-480&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;projectteam@246onboarding-fy24.com&quot;,
+  &quot;userId&quot; : &quot;005Ho00000AmMGqIAN&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNHo00000097qoMAA&quot;,
+  &quot;localTimeZoneName&quot; : &quot;America/Phoenix&quot;,
+  &quot;StepBusinessInfo&quot; : {
+    &quot;Block4&quot; : {
+      &quot;NaicsInput&quot; : null,
+      &quot;NAICSSearch-Block&quot; : {
+        &quot;NAICSSearch&quot; : &quot;Casinos (except Casino Hotels) - 713210&quot;,
+        &quot;NAICS&quot; : &quot;713210&quot;,
+        &quot;SearchResult&quot; : &quot;Casinos (except Casino Hotels) - 713210&quot;,
+        &quot;Assessment&quot; : &quot;Casino/Gambling&quot;,
+        &quot;Description&quot; : &quot;Casinos (except Casino Hotels)&quot;
+      },
+      &quot;KnowNAICS&quot; : &quot;No&quot;
+    },
+    &quot;Block5&quot; : {
+      &quot;Checkbox1&quot; : true,
+      &quot;Text7&quot; : null,
+      &quot;Text1&quot; : null,
+      &quot;Text2&quot; : null,
+      &quot;TextPoastalCode2&quot; : null,
+      &quot;Select1&quot; : null,
+      &quot;TextStreetAddress&quot; : &quot;25146 Grandview Way&quot;,
+      &quot;TextPostalCode&quot; : 94105,
+      &quot;State&quot; : &quot;CO&quot;,
+      &quot;City&quot; : &quot;Greeley&quot;,
+      &quot;Country&quot; : &quot;China&quot;
+    },
+    &quot;DisclosureReview&quot; : true,
+    &quot;NAICS&quot; : &quot;713210&quot;,
+    &quot;Block6&quot; : {
+      &quot;TextBusinessName&quot; : &quot;Acme Industrial&quot;,
+      &quot;BusinessTaxId&quot; : 2348958,
+      &quot;DBA&quot; : &quot;DBA&quot;,
+      &quot;DateBusinessEstablished&quot; : &quot;2023-12-04&quot;,
+      &quot;NumberOfEmployees&quot; : 500,
+      &quot;StateBusinessEstablished&quot; : &quot;Wyoming&quot;,
+      &quot;LegalStructure&quot; : &quot;Other&quot;
+    }
+  },
+  &quot;output&quot; : [ {
+    &quot;calculationResults&quot; : [ {
+      &quot;ID&quot; : &quot;Input&quot;,
+      &quot;AML_Risk_Category__RiskCategory&quot; : &quot;High&quot;,
+      &quot;TotalRiskScore&quot; : 155,
+      &quot;DBAScore&quot; : 15,
+      &quot;BusinessEstablishDateScore&quot; : 25,
+      &quot;AML_Legal_Structure__Score&quot; : 15,
+      &quot;AML_State_Risk__Score&quot; : 15,
+      &quot;AML_Country_Risk__Score&quot; : 25,
+      &quot;AML_High_Risk_NAICS__Description__c&quot; : &quot;Casinos (except Casino Hotels)&quot;,
+      &quot;AML_High_Risk_NAICS__Risk_Score__c&quot; : 60,
+      &quot;AML_High_Risk_NAICS__Assessment__c&quot; : &quot;Casino/Gambling&quot;
+    } ],
+    &quot;aggregationResults&quot; : { }
+  } ],
+  &quot;StepCashFlow&quot; : {
+    &quot;Businessdebtschedules&quot; : [ {
+      &quot;Origination Date&quot; : &quot;2021-09-01T00:00:00.000Z&quot;,
+      &quot;Rate&quot; : 3.5,
+      &quot;Term&quot; : 5,
+      &quot;Balance Outstanding&quot; : 743297,
+      &quot;Original Loan Amount&quot; : 150000,
+      &quot;Creditor&quot; : &quot;Nelson Ford &amp; Fleet&quot;
+    }, {
+      &quot;Origination Date&quot; : &quot;2020-02-01T07:00:00.000Z&quot;,
+      &quot;Payment&quot; : 19124,
+      &quot;Rate&quot; : 4.5,
+      &quot;Term&quot; : 15,
+      &quot;Balance Outstanding&quot; : 1988291,
+      &quot;Original Loan Amount&quot; : 25000000,
+      &quot;Creditor&quot; : &quot;Western CRE Finance&quot;
+    }, {
+      &quot;Origination Date&quot; : &quot;2022-04-01T07:00:00.000Z&quot;,
+      &quot;Payment&quot; : 1443,
+      &quot;Rate&quot; : 5.825,
+      &quot;Term&quot; : 5,
+      &quot;Balance Outstanding&quot; : 65350,
+      &quot;Original Loan Amount&quot; : 75000,
+      &quot;Creditor&quot; : &quot;Equipment USA&quot;
+    }, {
+      &quot;Origination Date&quot; : &quot;2021-02-15T07:00:00.000Z&quot;,
+      &quot;Payment&quot; : 1428,
+      &quot;Rate&quot; : 4.5,
+      &quot;Term&quot; : 5,
+      &quot;Balance Outstanding&quot; : 43500,
+      &quot;Original Loan Amount&quot; : 65000,
+      &quot;Creditor&quot; : &quot;First National&quot;
+    } ]
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DrtCommercialLoanOriginationKycScoreOutput</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DrtCommercialLoanOriginationKycScoreOutputCustom9196</globalKey>
+        <inputFieldName>output:calculationResults:AML_Risk_Category__RiskCategory</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DrtCommercialLoanOriginationKycScoreOutput</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>KycScore:RiskCategory</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DrtCommercialLoanOriginationKycScoreOutputCustom2541</globalKey>
+        <inputFieldName>output:calculationResults:AML_Country_Risk__Score</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DrtCommercialLoanOriginationKycScoreOutput</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>KycScore:CountryScore</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DrtCommercialLoanOriginationKycScoreOutputCustom2505</globalKey>
+        <inputFieldName>output:calculationResults:AML_Legal_Structure__Score</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DrtCommercialLoanOriginationKycScoreOutput</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>KycScore:LegalStructureScore</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DrtCommercialLoanOriginationKycScoreOutputCustom3012</globalKey>
+        <inputFieldName>output:calculationResults:AML_High_Risk_NAICS__Assessment__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DrtCommercialLoanOriginationKycScoreOutput</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>KycScore:NAICSAssessment</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DrtCommercialLoanOriginationKycScoreOutputCustom8250</globalKey>
+        <inputFieldName>output:calculationResults:DBAScore</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DrtCommercialLoanOriginationKycScoreOutput</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>KycScore:DBAScore</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DrtCommercialLoanOriginationKycScoreOutputCustom6598</globalKey>
+        <inputFieldName>output:calculationResults:TotalRiskScore</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DrtCommercialLoanOriginationKycScoreOutput</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>KycScore:TotalRiskScore</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DrtCommercialLoanOriginationKycScoreOutputCustom2519</globalKey>
+        <inputFieldName>output:calculationResults:AML_High_Risk_NAICS__Risk_Score__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DrtCommercialLoanOriginationKycScoreOutput</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>KycScore:NAICSScore</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>0</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DrtCommercialLoanOriginationKycScoreOutputCustom5827</globalKey>
+        <inputFieldName>output:calculationResults:BusinessEstablishDateScore</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DrtCommercialLoanOriginationKycScoreOutput</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>KycScore:DateBusinessEstablishScore</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DrtCommercialLoanOriginationKycScoreOutputCustom2634</globalKey>
+        <inputFieldName>output:calculationResults:AML_State_Risk__Score</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DrtCommercialLoanOriginationKycScoreOutput</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>KycScore:StateBusinessEstablishScore</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;omniscriptId&quot; : &quot;0jNHo00000097qoMAA&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;type&quot; : &quot;FinsCommercialLoan&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;sId&quot; : &quot;0jNHo00000097qoMAA&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;subType&quot; : &quot;Onboarding&quot;,
+  &quot;timeStamp&quot; : &quot;2023-12-05T23:20:20.101Z&quot;,
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;userTimeZoneName&quot; : &quot;America/Los_Angeles&quot;,
+  &quot;userTimeZone&quot; : &quot;-480&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;projectteam@246onboarding-fy24.com&quot;,
+  &quot;userId&quot; : &quot;005Ho00000AmMGqIAN&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNHo00000097qoMAA&quot;,
+  &quot;localTimeZoneName&quot; : &quot;America/Phoenix&quot;,
+  &quot;StepBusinessInfo&quot; : {
+    &quot;Block4&quot; : {
+      &quot;NaicsInput&quot; : null,
+      &quot;NAICSSearch-Block&quot; : {
+        &quot;NAICSSearch&quot; : &quot;Casinos (except Casino Hotels) - 713210&quot;,
+        &quot;NAICS&quot; : &quot;713210&quot;,
+        &quot;SearchResult&quot; : &quot;Casinos (except Casino Hotels) - 713210&quot;,
+        &quot;Assessment&quot; : &quot;Casino/Gambling&quot;,
+        &quot;Description&quot; : &quot;Casinos (except Casino Hotels)&quot;
+      },
+      &quot;KnowNAICS&quot; : &quot;No&quot;
+    },
+    &quot;Block5&quot; : {
+      &quot;Checkbox1&quot; : true,
+      &quot;Text7&quot; : null,
+      &quot;Text1&quot; : null,
+      &quot;Text2&quot; : null,
+      &quot;TextPoastalCode2&quot; : null,
+      &quot;Select1&quot; : null,
+      &quot;TextStreetAddress&quot; : &quot;25146 Grandview Way&quot;,
+      &quot;TextPostalCode&quot; : 94105,
+      &quot;State&quot; : &quot;CO&quot;,
+      &quot;City&quot; : &quot;Greeley&quot;,
+      &quot;Country&quot; : &quot;China&quot;
+    },
+    &quot;DisclosureReview&quot; : true,
+    &quot;NAICS&quot; : &quot;713210&quot;,
+    &quot;Block6&quot; : {
+      &quot;TextBusinessName&quot; : &quot;Acme Industrial&quot;,
+      &quot;BusinessTaxId&quot; : 2348958,
+      &quot;DBA&quot; : &quot;DBA&quot;,
+      &quot;DateBusinessEstablished&quot; : &quot;2023-12-04&quot;,
+      &quot;NumberOfEmployees&quot; : 500,
+      &quot;StateBusinessEstablished&quot; : &quot;Wyoming&quot;,
+      &quot;LegalStructure&quot; : &quot;Other&quot;
+    }
+  },
+  &quot;output&quot; : [ {
+    &quot;calculationResults&quot; : [ {
+      &quot;ID&quot; : &quot;Input&quot;,
+      &quot;AML_Risk_Category__RiskCategory&quot; : &quot;High&quot;,
+      &quot;TotalRiskScore&quot; : 155,
+      &quot;DBAScore&quot; : 15,
+      &quot;BusinessEstablishDateScore&quot; : 25,
+      &quot;AML_Legal_Structure__Score&quot; : 15,
+      &quot;AML_State_Risk__Score&quot; : 15,
+      &quot;AML_Country_Risk__Score&quot; : 25,
+      &quot;AML_High_Risk_NAICS__Description__c&quot; : &quot;Casinos (except Casino Hotels)&quot;,
+      &quot;AML_High_Risk_NAICS__Risk_Score__c&quot; : 60,
+      &quot;AML_High_Risk_NAICS__Assessment__c&quot; : &quot;Casino/Gambling&quot;
+    } ],
+    &quot;aggregationResults&quot; : { }
+  } ],
+  &quot;StepCashFlow&quot; : {
+    &quot;Businessdebtschedules&quot; : [ {
+      &quot;Origination Date&quot; : &quot;2021-09-01T00:00:00.000Z&quot;,
+      &quot;Rate&quot; : 3.5,
+      &quot;Term&quot; : 5,
+      &quot;Balance Outstanding&quot; : 743297,
+      &quot;Original Loan Amount&quot; : 150000,
+      &quot;Creditor&quot; : &quot;Nelson Ford &amp; Fleet&quot;
+    }, {
+      &quot;Origination Date&quot; : &quot;2020-02-01T07:00:00.000Z&quot;,
+      &quot;Payment&quot; : 19124,
+      &quot;Rate&quot; : 4.5,
+      &quot;Term&quot; : 15,
+      &quot;Balance Outstanding&quot; : 1988291,
+      &quot;Original Loan Amount&quot; : 25000000,
+      &quot;Creditor&quot; : &quot;Western CRE Finance&quot;
+    }, {
+      &quot;Origination Date&quot; : &quot;2022-04-01T07:00:00.000Z&quot;,
+      &quot;Payment&quot; : 1443,
+      &quot;Rate&quot; : 5.825,
+      &quot;Term&quot; : 5,
+      &quot;Balance Outstanding&quot; : 65350,
+      &quot;Original Loan Amount&quot; : 75000,
+      &quot;Creditor&quot; : &quot;Equipment USA&quot;
+    }, {
+      &quot;Origination Date&quot; : &quot;2021-02-15T07:00:00.000Z&quot;,
+      &quot;Payment&quot; : 1428,
+      &quot;Rate&quot; : 4.5,
+      &quot;Term&quot; : 5,
+      &quot;Balance Outstanding&quot; : 43500,
+      &quot;Original Loan Amount&quot; : 65000,
+      &quot;Creditor&quot; : &quot;First National&quot;
+    } ]
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DrtCommercialLoanOriginationKycScoreOutput_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

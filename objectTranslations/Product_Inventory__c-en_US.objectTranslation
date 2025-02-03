@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Product Inventory</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Product Inventories</value>
+    </caseValues>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Message --></label>
+        <name>Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- Product Inventories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Qty Available --></label>
+        <name>Qty_Available__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>In Stock</masterLabel>
+            <translation><!-- In Stock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low Stock</masterLabel>
+            <translation><!-- Low Stock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Stock</masterLabel>
+            <translation><!-- No Stock --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

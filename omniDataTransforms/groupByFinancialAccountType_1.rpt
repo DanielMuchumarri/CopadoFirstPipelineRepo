@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;finAccts&quot; : [ {
+    &quot;lastFourDigits&quot; : &quot;7212&quot;,
+    &quot;ownershipType&quot; : &quot;Primary&quot;,
+    &quot;financialAccountType&quot; : &quot;Investment Account&quot;,
+    &quot;Id&quot; : &quot;a4l8X000000QSXFQA4&quot;,
+    &quot;Name&quot; : &quot;*Vanguard - V2343291&quot;,
+    &quot;paperlessDelivery&quot; : false,
+    &quot;overdraftProtection&quot; : false,
+    &quot;overdraftAllowed&quot; : false,
+    &quot;dateOpened&quot; : &quot;2022-07-05&quot;,
+    &quot;Managed&quot; : false,
+    &quot;lastTransactionDate&quot; : &quot;2022-02-17T20:00:00.000Z&quot;,
+    &quot;accountType&quot; : &quot;Mutual Fund&quot;,
+    &quot;accountNumber&quot; : &quot;987987212&quot;,
+    &quot;Balance&quot; : 40633
+  }, {
+    &quot;lastFourDigits&quot; : &quot;9954&quot;,
+    &quot;ownershipType&quot; : &quot;Primary&quot;,
+    &quot;financialAccountType&quot; : &quot;Credit Card&quot;,
+    &quot;Id&quot; : &quot;a4l8X000000QSWtQAO&quot;,
+    &quot;Name&quot; : &quot;Rewards Card&quot;,
+    &quot;paymentAmount&quot; : 0,
+    &quot;paperlessDelivery&quot; : false,
+    &quot;overdraftProtection&quot; : false,
+    &quot;overdraftAllowed&quot; : false,
+    &quot;dateOpened&quot; : &quot;2015-07-26&quot;,
+    &quot;minimumPayment&quot; : 150,
+    &quot;Managed&quot; : false,
+    &quot;lastTransactionDate&quot; : &quot;2023-04-21T20:00:00.000Z&quot;,
+    &quot;interestRate&quot; : 18.99,
+    &quot;accountType&quot; : &quot;Credit Card&quot;,
+    &quot;accountNumber&quot; : &quot;58419954&quot;,
+    &quot;balanceLastStatement&quot; : 2200,
+    &quot;Balance&quot; : 1200,
+    &quot;availableCredit&quot; : 10000
+  }, {
+    &quot;lastFourDigits&quot; : &quot;6985&quot;,
+    &quot;ownershipType&quot; : &quot;Primary&quot;,
+    &quot;financialAccountType&quot; : &quot;Loan Account&quot;,
+    &quot;Id&quot; : &quot;a4l8X000000QSWuQAO&quot;,
+    &quot;Name&quot; : &quot;LA 31236985&quot;,
+    &quot;paymentFrequency&quot; : &quot;Monthly&quot;,
+    &quot;paymentAmount&quot; : 0,
+    &quot;paperlessDelivery&quot; : false,
+    &quot;overdraftProtection&quot; : false,
+    &quot;overdraftAllowed&quot; : false,
+    &quot;dateOpened&quot; : &quot;2018-02-07&quot;,
+    &quot;minimumPayment&quot; : 180,
+    &quot;Managed&quot; : false,
+    &quot;loanTerm&quot; : 36,
+    &quot;lastTransactionDate&quot; : &quot;2023-03-21T20:00:00.000Z&quot;,
+    &quot;interestRate&quot; : 8.95,
+    &quot;accountType&quot; : &quot;Personal Loan&quot;,
+    &quot;accountNumber&quot; : &quot;31236985&quot;,
+    &quot;balanceLastStatement&quot; : 5300,
+    &quot;Balance&quot; : 4150
+  }, {
+    &quot;lastFourDigits&quot; : &quot;8198&quot;,
+    &quot;ownershipType&quot; : &quot;Primary&quot;,
+    &quot;financialAccountType&quot; : &quot;Savings Account&quot;,
+    &quot;Id&quot; : &quot;a4l8X000000QSWvQAO&quot;,
+    &quot;Name&quot; : &quot;SA 42848198&quot;,
+    &quot;paymentAmount&quot; : 0,
+    &quot;paperlessDelivery&quot; : false,
+    &quot;overdraftProtection&quot; : false,
+    &quot;overdraftAllowed&quot; : false,
+    &quot;dateOpened&quot; : &quot;2019-04-30&quot;,
+    &quot;minimumPayment&quot; : 0,
+    &quot;Managed&quot; : false,
+    &quot;lastTransactionDate&quot; : &quot;2023-03-13T20:00:00.000Z&quot;,
+    &quot;accountType&quot; : &quot;Savings&quot;,
+    &quot;accountNumber&quot; : &quot;42848198&quot;,
+    &quot;balanceLastStatement&quot; : 0,
+    &quot;Balance&quot; : 10000
+  }, {
+    &quot;Alerts&quot; : [ {
+      &quot;Subject&quot; : &quot;Payment Due Soon&quot;,
+      &quot;alertId&quot; : &quot;0qZ8X000000KzrTUAS&quot;
+    }, {
+      &quot;Subject&quot; : &quot;VISA Card Verification Failure&quot;,
+      &quot;alertId&quot; : &quot;0qZ8X000000KzrUUAS&quot;
+    }, {
+      &quot;Subject&quot; : &quot;Potential Fraud Alert&quot;,
+      &quot;alertId&quot; : &quot;0qZ8X000000KzrVUAS&quot;
+    } ],
+    &quot;lastFourDigits&quot; : &quot;2390&quot;,
+    &quot;ownershipType&quot; : &quot;Primary&quot;,
+    &quot;financialAccountType&quot; : &quot;Bank Account&quot;,
+    &quot;Id&quot; : &quot;a4l8X000000QSWzQAO&quot;,
+    &quot;Name&quot; : &quot;Classic Checking&quot;,
+    &quot;paperlessDelivery&quot; : false,
+    &quot;overdraftProtection&quot; : false,
+    &quot;overdraftAllowed&quot; : false,
+    &quot;dateOpened&quot; : &quot;2017-02-24&quot;,
+    &quot;Managed&quot; : false,
+    &quot;lastTransactionDate&quot; : &quot;2023-05-21T20:00:00.000Z&quot;,
+    &quot;accountType&quot; : &quot;Checking&quot;,
+    &quot;accountNumber&quot; : &quot;58412390&quot;,
+    &quot;Balance&quot; : 7796.18
+  }, {
+    &quot;Alerts&quot; : {
+      &quot;Subject&quot; : &quot;Payment Due Soon&quot;,
+      &quot;alertId&quot; : &quot;0qZ8X000000KzrRUAS&quot;
+    },
+    &quot;daysAgo&quot; : 8,
+    &quot;remainingDays&quot; : -8,
+    &quot;lastFourDigits&quot; : &quot;3762&quot;,
+    &quot;ownershipType&quot; : &quot;Primary&quot;,
+    &quot;financialAccountType&quot; : &quot;Bank Account&quot;,
+    &quot;Id&quot; : &quot;a4l8X000000QSX0QAO&quot;,
+    &quot;Name&quot; : &quot;Day to Day Banking&quot;,
+    &quot;paymentDueDate&quot; : &quot;2022-08-09&quot;,
+    &quot;paperlessDelivery&quot; : false,
+    &quot;overdraftProtection&quot; : false,
+    &quot;overdraftAllowed&quot; : false,
+    &quot;dateOpened&quot; : &quot;2019-11-23&quot;,
+    &quot;Managed&quot; : false,
+    &quot;lastTransactionDate&quot; : &quot;2023-05-19T20:00:00.000Z&quot;,
+    &quot;accountType&quot; : &quot;CD&quot;,
+    &quot;accountNumber&quot; : &quot;58413762&quot;,
+    &quot;Balance&quot; : 876.34
+  } ]
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>groupByFinancialAccountType</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:finAccts LIST &apos;financialAccountType=&quot;Mortgage&quot;&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(finAccts), &apos;financialAccountType=&quot;Mortgage&quot;&apos;)</formulaExpression>
+        <formulaResultPath>fMortgage</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>47c48368-287d-4155-9041-5bf5647d3a97</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>groupByFinancialAccountType</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:finAccts LIST &apos;financialAccountType=&quot;Auto/\/\/Loan&quot;&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(finAccts), &apos;financialAccountType=&quot;Auto Loan&quot;&apos;)</formulaExpression>
+        <formulaResultPath>fAutoLoans</formulaResultPath>
+        <formulaSequence>5.0</formulaSequence>
+        <globalKey>93c46214-cd24-4cfe-a2a7-75740cae4a09</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>groupByFinancialAccountType</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:finAccts LIST &apos;financialAccountType=&quot;Loan/\/\/Account&quot;&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(finAccts), &apos;financialAccountType=&quot;Loan Account&quot;&apos;)</formulaExpression>
+        <formulaResultPath>fLoan</formulaResultPath>
+        <formulaSequence>6.0</formulaSequence>
+        <globalKey>2b8f953a-3566-4082-bc4b-5dbd7eee12df</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>groupByFinancialAccountType</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:finAccts LIST &apos;financialAccountType=&quot;Heloc&quot;&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(finAccts), &apos;financialAccountType=&quot;Heloc&quot;&apos;)</formulaExpression>
+        <formulaResultPath>fHeloc</formulaResultPath>
+        <formulaSequence>7.0</formulaSequence>
+        <globalKey>d6a886dc-dcf0-4c9e-9b7b-6d3e971e20f7</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>groupByFinancialAccountType</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:finAccts LIST &apos;financialAccountType=&quot;Savings/\/\/Account&quot;/\/\/OR/\/\/financialAccountType=&quot;Checking/\/\/Account&quot;/\/\/OR/\/\/financialAccountType=&quot;Bank/\/\/Account&quot;&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(finAccts), &apos;financialAccountType=&quot;Savings Account&quot; OR financialAccountType=&quot;Checking Account&quot; OR financialAccountType=&quot;Bank Account&quot;&apos;)</formulaExpression>
+        <formulaResultPath>fCheckingSavings</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>ad9a49db-47ff-439a-b269-436e8057400f</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>groupByFinancialAccountType</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:finAccts LIST &apos;financialAccountType=&quot;Investment/\/\/Account&quot;&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(finAccts), &apos;financialAccountType=&quot;Investment Account&quot;&apos;)</formulaExpression>
+        <formulaResultPath>fInvestmentAccounts</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>494ce9c9-42db-43ba-8ab8-559a6fa0bc60</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>groupByFinancialAccountType</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>93edddba-2d2f-4831-887a-841ab2d7a86b</globalKey>
+        <inputFieldName>fInvestmentAccounts</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>groupByFinancialAccountType</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>investmentAccounts:recordList</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:finAccts LIST &apos;financialAccountType=&quot;Credit/\/\/Card&quot;&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(finAccts), &apos;financialAccountType=&quot;Credit Card&quot;&apos;)</formulaExpression>
+        <formulaResultPath>fCreditCards</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>eb6ba830-0511-4284-b3ec-5c76a7167b35</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>groupByFinancialAccountType</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:finAccts LIST &apos;financialAccountType!=&quot;Mortgage&quot;/\/\/AND/\/\/financialAccountType!=&quot;Credit/\/\/Card&quot;/\/\/AND/\/\/financialAccountType!=&quot;Savings/\/\/Account&quot;/\/\/AND/\/\/financialAccountType!=&quot;Checking/\/\/Account&quot;/\/\/AND/\/\/financialAccountType!=&quot;Loan/\/\/Account&quot;/\/\/AND/\/\/financialAccountType!=&quot;Investment/\/\/Account&quot;/\/\/AND/\/\/financialAccountType!=&quot;Auto/\/\/Loan&quot;/\/\/AND/\/\/financialAccountType!=&quot;Heloc&quot;/\/\/AND/\/\/financialAccountType!=&quot;Bank/\/\/Account&quot;&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(finAccts), &apos;financialAccountType!=&quot;Mortgage&quot; AND financialAccountType!=&quot;Credit Card&quot; AND financialAccountType!=&quot;Savings Account&quot; AND financialAccountType!=&quot;Checking Account&quot; AND financialAccountType!=&quot;Loan Account&quot; AND financialAccountType!=&quot;Investment Account&quot; AND financialAccountType!=&quot;Auto Loan&quot; AND financialAccountType!=&quot;Heloc&quot; AND financialAccountType!=&quot;Bank Account&quot;&apos;)</formulaExpression>
+        <formulaResultPath>fOther</formulaResultPath>
+        <formulaSequence>8.0</formulaSequence>
+        <globalKey>84833b18-1958-4ea5-b754-c86d34079121</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>groupByFinancialAccountType</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ce593da8-063a-4786-af3f-0109e69ce955</globalKey>
+        <inputFieldName>fOther</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>groupByFinancialAccountType</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>otherAccounts:recordList</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Other</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>db21be9a-5ad3-4734-881b-67964b786283</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>groupByFinancialAccountType</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>otherAccounts:groupName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>b4acd538-db61-49d9-9408-c716389d8eb7</globalKey>
+        <inputFieldName>fCheckingSavings</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>groupByFinancialAccountType</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>checkingAndSavingsAccounts:recordList</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>e0b128b2-0f2f-4d5a-912e-1fea11312152</globalKey>
+        <inputFieldName>fCreditCards</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>groupByFinancialAccountType</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>creditCardAccounts:recordList</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Auto Loan</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>65313fb3-a2c4-46a3-a1f6-79cd2724e2c3</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>groupByFinancialAccountType</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>autoLoanAccounts:groupName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Every Day Banking</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>a45d7731-50ca-4a41-a0e2-a88d2f8094cd</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>groupByFinancialAccountType</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>checkingAndSavingsAccounts:groupName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>dba2dc25-a063-47f3-b9c8-c178b8cb5497</globalKey>
+        <inputFieldName>fHeloc</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>groupByFinancialAccountType</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>helocAccounts:recordList</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>3fda53b7-7ba7-448c-8841-4fc1b9283c69</globalKey>
+        <inputFieldName>fMortgage</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>groupByFinancialAccountType</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>mortgageAccounts:recordList</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>610123a3-d17b-4652-b95a-acb7f210211d</globalKey>
+        <inputFieldName>fAutoLoans</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>groupByFinancialAccountType</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>autoLoanAccounts:recordList</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>8f0b3f53-326d-41ba-83bb-ab19143d09bd</globalKey>
+        <inputFieldName>fLoan</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>groupByFinancialAccountType</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>loanAccounts:recordList</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>HELOC</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>7aa000f3-a18f-40b0-8d88-30e77938c4f9</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>groupByFinancialAccountType</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>helocAccounts:groupName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Mortgage</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>619d326a-9d0e-45dc-be2d-03c214e5ae6f</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>groupByFinancialAccountType</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>mortgageAccounts:groupName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Investment</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>5c18898d-9aba-4cc6-9921-5a2274d2fb5c</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>groupByFinancialAccountType</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>investmentAccounts:groupName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Loans</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>bc2113e4-fa7d-47cf-b7ff-eb6f42da55c4</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>groupByFinancialAccountType</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>loanAccounts:groupName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Credit Cards</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>92b0ca78-641f-4c9e-b313-5f40b0c7ed5f</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>groupByFinancialAccountType</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>creditCardAccounts:groupName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;finAccts&quot; : [ {
+    &quot;lastFourDigits&quot; : &quot;7212&quot;,
+    &quot;ownershipType&quot; : &quot;Primary&quot;,
+    &quot;financialAccountType&quot; : &quot;Investment Account&quot;,
+    &quot;Id&quot; : &quot;a4l8X000000QSXFQA4&quot;,
+    &quot;Name&quot; : &quot;*Vanguard - V2343291&quot;,
+    &quot;paperlessDelivery&quot; : false,
+    &quot;overdraftProtection&quot; : false,
+    &quot;overdraftAllowed&quot; : false,
+    &quot;dateOpened&quot; : &quot;2022-07-05&quot;,
+    &quot;Managed&quot; : false,
+    &quot;lastTransactionDate&quot; : &quot;2022-02-17T20:00:00.000Z&quot;,
+    &quot;accountType&quot; : &quot;Mutual Fund&quot;,
+    &quot;accountNumber&quot; : &quot;987987212&quot;,
+    &quot;Balance&quot; : 40633
+  }, {
+    &quot;lastFourDigits&quot; : &quot;9954&quot;,
+    &quot;ownershipType&quot; : &quot;Primary&quot;,
+    &quot;financialAccountType&quot; : &quot;Credit Card&quot;,
+    &quot;Id&quot; : &quot;a4l8X000000QSWtQAO&quot;,
+    &quot;Name&quot; : &quot;Rewards Card&quot;,
+    &quot;paymentAmount&quot; : 0,
+    &quot;paperlessDelivery&quot; : false,
+    &quot;overdraftProtection&quot; : false,
+    &quot;overdraftAllowed&quot; : false,
+    &quot;dateOpened&quot; : &quot;2015-07-26&quot;,
+    &quot;minimumPayment&quot; : 150,
+    &quot;Managed&quot; : false,
+    &quot;lastTransactionDate&quot; : &quot;2023-04-21T20:00:00.000Z&quot;,
+    &quot;interestRate&quot; : 18.99,
+    &quot;accountType&quot; : &quot;Credit Card&quot;,
+    &quot;accountNumber&quot; : &quot;58419954&quot;,
+    &quot;balanceLastStatement&quot; : 2200,
+    &quot;Balance&quot; : 1200,
+    &quot;availableCredit&quot; : 10000
+  }, {
+    &quot;lastFourDigits&quot; : &quot;6985&quot;,
+    &quot;ownershipType&quot; : &quot;Primary&quot;,
+    &quot;financialAccountType&quot; : &quot;Loan Account&quot;,
+    &quot;Id&quot; : &quot;a4l8X000000QSWuQAO&quot;,
+    &quot;Name&quot; : &quot;LA 31236985&quot;,
+    &quot;paymentFrequency&quot; : &quot;Monthly&quot;,
+    &quot;paymentAmount&quot; : 0,
+    &quot;paperlessDelivery&quot; : false,
+    &quot;overdraftProtection&quot; : false,
+    &quot;overdraftAllowed&quot; : false,
+    &quot;dateOpened&quot; : &quot;2018-02-07&quot;,
+    &quot;minimumPayment&quot; : 180,
+    &quot;Managed&quot; : false,
+    &quot;loanTerm&quot; : 36,
+    &quot;lastTransactionDate&quot; : &quot;2023-03-21T20:00:00.000Z&quot;,
+    &quot;interestRate&quot; : 8.95,
+    &quot;accountType&quot; : &quot;Personal Loan&quot;,
+    &quot;accountNumber&quot; : &quot;31236985&quot;,
+    &quot;balanceLastStatement&quot; : 5300,
+    &quot;Balance&quot; : 4150
+  }, {
+    &quot;lastFourDigits&quot; : &quot;8198&quot;,
+    &quot;ownershipType&quot; : &quot;Primary&quot;,
+    &quot;financialAccountType&quot; : &quot;Savings Account&quot;,
+    &quot;Id&quot; : &quot;a4l8X000000QSWvQAO&quot;,
+    &quot;Name&quot; : &quot;SA 42848198&quot;,
+    &quot;paymentAmount&quot; : 0,
+    &quot;paperlessDelivery&quot; : false,
+    &quot;overdraftProtection&quot; : false,
+    &quot;overdraftAllowed&quot; : false,
+    &quot;dateOpened&quot; : &quot;2019-04-30&quot;,
+    &quot;minimumPayment&quot; : 0,
+    &quot;Managed&quot; : false,
+    &quot;lastTransactionDate&quot; : &quot;2023-03-13T20:00:00.000Z&quot;,
+    &quot;accountType&quot; : &quot;Savings&quot;,
+    &quot;accountNumber&quot; : &quot;42848198&quot;,
+    &quot;balanceLastStatement&quot; : 0,
+    &quot;Balance&quot; : 10000
+  }, {
+    &quot;Alerts&quot; : [ {
+      &quot;Subject&quot; : &quot;Payment Due Soon&quot;,
+      &quot;alertId&quot; : &quot;0qZ8X000000KzrTUAS&quot;
+    }, {
+      &quot;Subject&quot; : &quot;VISA Card Verification Failure&quot;,
+      &quot;alertId&quot; : &quot;0qZ8X000000KzrUUAS&quot;
+    }, {
+      &quot;Subject&quot; : &quot;Potential Fraud Alert&quot;,
+      &quot;alertId&quot; : &quot;0qZ8X000000KzrVUAS&quot;
+    } ],
+    &quot;lastFourDigits&quot; : &quot;2390&quot;,
+    &quot;ownershipType&quot; : &quot;Primary&quot;,
+    &quot;financialAccountType&quot; : &quot;Bank Account&quot;,
+    &quot;Id&quot; : &quot;a4l8X000000QSWzQAO&quot;,
+    &quot;Name&quot; : &quot;Classic Checking&quot;,
+    &quot;paperlessDelivery&quot; : false,
+    &quot;overdraftProtection&quot; : false,
+    &quot;overdraftAllowed&quot; : false,
+    &quot;dateOpened&quot; : &quot;2017-02-24&quot;,
+    &quot;Managed&quot; : false,
+    &quot;lastTransactionDate&quot; : &quot;2023-05-21T20:00:00.000Z&quot;,
+    &quot;accountType&quot; : &quot;Checking&quot;,
+    &quot;accountNumber&quot; : &quot;58412390&quot;,
+    &quot;Balance&quot; : 7796.18
+  }, {
+    &quot;Alerts&quot; : {
+      &quot;Subject&quot; : &quot;Payment Due Soon&quot;,
+      &quot;alertId&quot; : &quot;0qZ8X000000KzrRUAS&quot;
+    },
+    &quot;daysAgo&quot; : 8,
+    &quot;remainingDays&quot; : -8,
+    &quot;lastFourDigits&quot; : &quot;3762&quot;,
+    &quot;ownershipType&quot; : &quot;Primary&quot;,
+    &quot;financialAccountType&quot; : &quot;Bank Account&quot;,
+    &quot;Id&quot; : &quot;a4l8X000000QSX0QAO&quot;,
+    &quot;Name&quot; : &quot;Day to Day Banking&quot;,
+    &quot;paymentDueDate&quot; : &quot;2022-08-09&quot;,
+    &quot;paperlessDelivery&quot; : false,
+    &quot;overdraftProtection&quot; : false,
+    &quot;overdraftAllowed&quot; : false,
+    &quot;dateOpened&quot; : &quot;2019-11-23&quot;,
+    &quot;Managed&quot; : false,
+    &quot;lastTransactionDate&quot; : &quot;2023-05-19T20:00:00.000Z&quot;,
+    &quot;accountType&quot; : &quot;CD&quot;,
+    &quot;accountNumber&quot; : &quot;58413762&quot;,
+    &quot;Balance&quot; : 876.34
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>groupByFinancialAccountType_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

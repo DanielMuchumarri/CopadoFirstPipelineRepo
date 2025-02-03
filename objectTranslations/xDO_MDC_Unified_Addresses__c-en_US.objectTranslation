@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Unified Address</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Unified Address</value>
+    </caseValues>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>xDO_MDC_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>xDO_MDC_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>xDO_MDC_Contact__c</name>
+        <relationshipLabel><!-- Unified Address --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>xDO_MDC_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Postal Code --></label>
+        <name>xDO_MDC_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>xDO_MDC_State__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

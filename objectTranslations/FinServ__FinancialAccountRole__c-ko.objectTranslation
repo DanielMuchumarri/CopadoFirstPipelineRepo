@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>금융 계정 역할</value>
+    </caseValues>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>FinServ__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Editable --></label>
+        <name>FinServ__Editable__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>FinServ__EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Account --></label>
+        <name>FinServ__FinancialAccount__c</name>
+        <relationshipLabel><!-- Financial Account Roles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related Account --></label>
+        <name>FinServ__RelatedAccount__c</name>
+        <relationshipLabel><!-- Financial Account Roles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related Contact --></label>
+        <name>FinServ__RelatedContact__c</name>
+        <relationshipLabel><!-- Financial Account Roles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>FinServ__Role__c</name>
+        <picklistValues>
+            <masterLabel>Accountant</masterLabel>
+            <translation>회계사</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Additional Owner</masterLabel>
+            <translation>추가 소유자</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Administrator</masterLabel>
+            <translation>관리자</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advisor</masterLabel>
+            <translation>어드바이저</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Annuitant</masterLabel>
+            <translation>연금생활자</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appoint / Remove Authority</masterLabel>
+            <translation>권한 지정/박탈</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Authorized Agent</masterLabel>
+            <translation>인가된 에이전트</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Authorized Agent / Beneficial Owner</masterLabel>
+            <translation>인가된 에이전트/수익 소유자</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Authorized Individual</masterLabel>
+            <translation>인가된 개인</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Authorized Signer</masterLabel>
+            <translation>인가된 서명인</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beneficial Owner</masterLabel>
+            <translation>수익 소유자</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beneficiary</masterLabel>
+            <translation>수혜자</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Manager</masterLabel>
+            <translation>비즈니스 관리자</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Committee Member</masterLabel>
+            <translation>위원회 구성원</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conservator</masterLabel>
+            <translation>관리 위원</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Control Person</masterLabel>
+            <translation>지배자</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporation</masterLabel>
+            <translation>주식회사</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cosigner</masterLabel>
+            <translation>연서인</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custodian</masterLabel>
+            <translation>관리인</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deceased Grantor</masterLabel>
+            <translation>사망한 양도인</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decedent</masterLabel>
+            <translation>사망자</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discretionary</masterLabel>
+            <translation>선택제</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foundation</masterLabel>
+            <translation>재단</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Authority</masterLabel>
+            <translation>전권</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grantor</masterLabel>
+            <translation>양도인</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guardian</masterLabel>
+            <translation>후견인</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insured</masterLabel>
+            <translation>보험 계약자</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interested Party</masterLabel>
+            <translation>이해관계인</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joint Owner</masterLabel>
+            <translation>공동 소유자</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor Primary Owner</masterLabel>
+            <translation>미성년자 기본 소유자</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Original Depositor</masterLabel>
+            <translation>원 예금자</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>기타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Power of Attorney</masterLabel>
+            <translation>위임장</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary Owner</masterLabel>
+            <translation>기본 소유자</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proprietor</masterLabel>
+            <translation>소유주</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOD Beneficiary</masterLabel>
+            <translation>TOD 수혜자</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trustee</masterLabel>
+            <translation>신탁 관리자</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Source System ID --></label>
+        <name>FinServ__SourceSystemId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>FinServ__StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q Brix Record Type --></label>
+        <name>Q_Brix_Record_Type__c</name>
+    </fields>
+    <nameFieldLabel>역할 번호</nameFieldLabel>
+    <recordTypes>
+        <description><!-- Role occupied by an organizational entity, such as a corporation or LLC --></description>
+        <label><!-- Account Role --></label>
+        <name>FinServ__AccountRole</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Role occupied by a person --></description>
+        <label><!-- Contact Role --></label>
+        <name>FinServ__ContactRole</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- A Financial Account Role cannot be created as Inactive --></errorMessage>
+        <name>FinServ__CannotCreateInactiveRecord</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This record cannot be edited. To update role information, you can deactivate this record and create a new one. --></errorMessage>
+        <name>FinServ__FARCannotBeModified</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Inactive record cannot be edited. To update FAR, you can create a new one. --></errorMessage>
+        <name>FinServ__InactiveFARCannotBeEdited</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Inactive Financial Roles cannot be reactivated. --></errorMessage>
+        <name>FinServ__InactiveRecordCannotBeReactivated</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This record cannot be deactivated because ownership can be updated on the financial account only. --></errorMessage>
+        <name>FinServ__OwnershipRolesCannotBeDeactivated</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This record cannot be modified because ownership can be specified on the financial account only. --></errorMessage>
+        <name>FinServ__OwnershipRolesCannotBeModified</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Either Related Account or Related Contact is required. --></errorMessage>
+        <name>FinServ__RelatedAccountOrContactRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Role is required. --></errorMessage>
+        <name>FinServ__RoleIsMandatory</name>
+    </validationRules>
+</CustomObjectTranslation>

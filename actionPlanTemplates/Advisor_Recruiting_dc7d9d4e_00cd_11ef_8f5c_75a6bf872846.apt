@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isAdHocItemCreationEnabled>false</isAdHocItemCreationEnabled>
+    <name>Advisor Recruiting</name>
+    <targetEntityType>Opportunity</targetEntityType>
+    <uniqueName>Advisor_Recruiting_dc7d9d4e_00cd_11ef_8f5c_75a6bf872846</uniqueName>
+</ActionPlanTemplate>

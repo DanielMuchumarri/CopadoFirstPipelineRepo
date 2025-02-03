@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Relationships and Controllers</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Relationships and Controllers</value>
+    </caseValues>
+    <fields>
+        <label><!-- Authorized Signer for --></label>
+        <name>FINS_CIB_Authorized_Signer_for__c</name>
+        <picklistValues>
+            <masterLabel>Advanced Execution Services</masterLabel>
+            <translation><!-- Advanced Execution Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Convertibles</masterLabel>
+            <translation><!-- Convertibles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Access</masterLabel>
+            <translation><!-- Corporate Access --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Insights</masterLabel>
+            <translation><!-- Corporate Insights --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Default Swaps</masterLabel>
+            <translation><!-- Credit Default Swaps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emerging Markets</masterLabel>
+            <translation><!-- Emerging Markets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equities</masterLabel>
+            <translation><!-- Equities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equity Capital Markets</masterLabel>
+            <translation><!-- Equity Capital Markets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equity Derivatives</masterLabel>
+            <translation><!-- Equity Derivatives --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equity Swaps</masterLabel>
+            <translation><!-- Equity Swaps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FX Hedging Strategies</masterLabel>
+            <translation><!-- FX Hedging Strategies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FX NDF</masterLabel>
+            <translation><!-- FX NDF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FX Options</masterLabel>
+            <translation><!-- FX Options --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FX Products</masterLabel>
+            <translation><!-- FX Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed Income</masterLabel>
+            <translation><!-- Fixed Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed Income Capital Raising</masterLabel>
+            <translation><!-- Fixed Income Capital Raising --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fund Linked Products</masterLabel>
+            <translation><!-- Fund Linked Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Industry Experience</masterLabel>
+            <translation><!-- Industry Experience --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interest Rate Swaps</masterLabel>
+            <translation><!-- Interest Rate Swaps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mergers &amp; Acquisitions</masterLabel>
+            <translation><!-- Mergers &amp; Acquisitions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prime Services</masterLabel>
+            <translation><!-- Prime Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Funding</masterLabel>
+            <translation><!-- Private Funding --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Controlling % --></label>
+        <name>FINS_CIB_Controlling__c</name>
+    </fields>
+    <fields>
+        <label><!-- Direct Owner Of --></label>
+        <name>FINS_CIB_Direct_Owner_Of__c</name>
+        <relationshipLabel><!-- Relationships and Controllers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ownership % --></label>
+        <name>FINS_CIB_Ownership__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Entity Name --></label>
+        <name>FINS_CIB_Related_Entity_Name__c</name>
+        <relationshipLabel><!-- Relationships and Controllers (Related Entity Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related To Entity --></label>
+        <name>FINS_CIB_Related_To_Entity__c</name>
+        <relationshipLabel><!-- Relationships and Controllers (Related To Entity) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Relationship Type --></label>
+        <name>FINS_CIB_Relationship_Type__c</name>
+        <picklistValues>
+            <masterLabel>Authorized Signer</masterLabel>
+            <translation><!-- Authorized Signer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beneficiary</masterLabel>
+            <translation><!-- Beneficiary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Branch</masterLabel>
+            <translation><!-- Branch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Controller</masterLabel>
+            <translation><!-- Controller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custodian</masterLabel>
+            <translation><!-- Custodian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fund</masterLabel>
+            <translation><!-- Fund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Immediate</masterLabel>
+            <translation><!-- Immediate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intermediate</masterLabel>
+            <translation><!-- Intermediate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investment Manager</masterLabel>
+            <translation><!-- Investment Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KYC Associate</masterLabel>
+            <translation><!-- KYC Associate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Key Contact</masterLabel>
+            <translation><!-- Key Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Power of Attorney</masterLabel>
+            <translation><!-- Power of Attorney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subsidiary</masterLabel>
+            <translation><!-- Subsidiary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trustee</masterLabel>
+            <translation><!-- Trustee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trustor</masterLabel>
+            <translation><!-- Trustor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ultimate Beneficial Owner</masterLabel>
+            <translation><!-- Ultimate Beneficial Owner --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

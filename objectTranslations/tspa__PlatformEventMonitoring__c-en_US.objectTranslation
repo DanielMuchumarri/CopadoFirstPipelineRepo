@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Enable email to support --></label>
+        <name>tspa__EnableEmailToSupport__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable email to system admin --></label>
+        <name>tspa__EnableEmailToSystemAdmin__c</name>
+    </fields>
+    <fields>
+        <help><!-- The setting enables or disables the Platform Events Monitoring. Disabling this setting will stop the monitoring process, and disable all types of alerts (emails, logs, and warnings to the agent) if the platform events quota passes the thresholds. --></help>
+        <label><!-- Enable monitoring --></label>
+        <name>tspa__EnableMonitoring__c</name>
+    </fields>
+    <fields>
+        <help><!-- The settings set the maximum frequency that the email notification will be sent, set in hours. the recommended value is 12 hours. Minimum value is 1 hour. --></help>
+        <label><!-- Notification interval in hours --></label>
+        <name>tspa__NotificationIntervalsInHours__c</name>
+    </fields>
+    <fields>
+        <help><!-- The setting has the email address Visual Remote Assistant support which will get the email with a notification about the platform events quota threshold reached. It can have one email address. --></help>
+        <label><!-- Support email --></label>
+        <name>tspa__SupportEmail__c</name>
+    </fields>
+    <fields>
+        <help><!-- The setting has a list of emails that will get the email with a notification about the platform events quota thresholds passed. It can have up to three email addresses, the emails must be separated by commas without spaces. --></help>
+        <label><!-- System admin emails --></label>
+        <name>tspa__SystemAdminEmail__c</name>
+    </fields>
+    <fields>
+        <help><!-- Threshold 1 set the threshold in percentage from the org quota (either published platform events or delivered platform events) that will trigger log notifications and email alerts (based on email settings). 
+threshold 1 should be less than threshold 2. --></help>
+        <label><!-- Threshold 1 --></label>
+        <name>tspa__Threshold1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Threshold 2 set the threshold in percentage from the org quota (either published platform events or delivered platform events) that will trigger an agent warning on top of the logs and email alerts.
+Threshold 2 should be higher than threshold 1. --></help>
+        <label><!-- Threshold 2 --></label>
+        <name>tspa__Threshold2__c</name>
+    </fields>
+</CustomObjectTranslation>

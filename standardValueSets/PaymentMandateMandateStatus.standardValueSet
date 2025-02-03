@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Created</fullName>
+        <default>false</default>
+        <label>Created</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Submitted to Bank</fullName>
+        <default>false</default>
+        <label>Submitted to Bank</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Registered to Destination Bank</fullName>
+        <default>false</default>
+        <label>Registered to Destination Bank</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Rejected by Destination Bank</fullName>
+        <default>false</default>
+        <label>Rejected by Destination Bank</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cancelled</fullName>
+        <default>false</default>
+        <label>Cancelled</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Failed</fullName>
+        <default>false</default>
+        <label>Failed</label>
+    </standardValue>
+</StandardValueSet>

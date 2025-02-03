@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordActionDeployment xmlns="http://soap.sforce.com/2006/04/metadata">
+    <componentName>ActionLauncher</componentName>
+    <deploymentContexts>
+        <entityName>ResidentialLoanApplication</entityName>
+    </deploymentContexts>
+    <deploymentContexts>
+        <entityName>FINS_Lending_Loan_Application__c</entityName>
+    </deploymentContexts>
+    <deploymentContexts>
+        <entityName>FinServ__AssetsAndLiabilities__c</entityName>
+    </deploymentContexts>
+    <deploymentContexts>
+        <entityName>Case</entityName>
+    </deploymentContexts>
+    <deploymentContexts>
+        <entityName>VoiceCall</entityName>
+    </deploymentContexts>
+    <hasComponents>false</hasComponents>
+    <hasGuidedActions>true</hasGuidedActions>
+    <hasOmniscripts>true</hasOmniscripts>
+    <hasRecommendations>false</hasRecommendations>
+    <masterLabel>Mortgage RLA Actions</masterLabel>
+    <selectableItems>
+        <action>LendingDocumentRequestEnglish_1no722b3dd7t51kb6lyq1s0378</action>
+        <frequentActionSequenceNbr>0</frequentActionSequenceNbr>
+        <isFrequentAction>true</isFrequentAction>
+        <type>Omniscript</type>
+    </selectableItems>
+    <selectableItems>
+        <action>LendingEscrowModificationEnglish_xvg3gaeqqc041ey3mk6rqef0q</action>
+        <frequentActionSequenceNbr>1</frequentActionSequenceNbr>
+        <isFrequentAction>true</isFrequentAction>
+        <type>Omniscript</type>
+    </selectableItems>
+    <selectableItems>
+        <action>FINSComplaintMultiLanguage_1pn6tgob1wgun1emdbt6gftujy</action>
+        <frequentActionSequenceNbr>2</frequentActionSequenceNbr>
+        <isFrequentAction>true</isFrequentAction>
+        <type>Omniscript</type>
+    </selectableItems>
+</RecordActionDeployment>

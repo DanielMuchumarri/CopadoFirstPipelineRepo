@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>inov8__PMT_Resource_Availability_Compacy_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>inov8__PMT_Resource_Availability_Compacy_Layout</fullName>
+        <fields>inov8__Resource_Name_FY__c</fields>
+        <label>PMT Resource Availability Compacy Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Stores availability of a resource</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>inov8__Apr_Actual_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Apr Actual Hours</label>
+        <summarizedField>inov8__PMT_Resource_Allocation__c.inov8__Apr_Hours__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Resource_Allocation__c.inov8__Resource_Availability__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Apr_Allocation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Rolled up allocation for the month</description>
+        <label>Apr Allocation</label>
+        <summarizedField>inov8__PMT_Resource_Allocation__c.inov8__Apr__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Resource_Allocation__c.inov8__Resource_Availability__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Apr_Remaining__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Remaining availability for specified month</description>
+        <formula>inov8__Apr__c -  inov8__Apr_Allocation__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Apr Remaining</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Apr__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Availability for April month</description>
+        <label>Apr</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Aug_Actual_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Aug Actual Hours</label>
+        <summarizedField>inov8__PMT_Resource_Allocation__c.inov8__Aug_Hours__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Resource_Allocation__c.inov8__Resource_Availability__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Aug_Allocation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Rolled up allocation for the month</description>
+        <label>Aug Allocation</label>
+        <summarizedField>inov8__PMT_Resource_Allocation__c.inov8__Aug__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Resource_Allocation__c.inov8__Resource_Availability__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Aug_Remaining__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Remaining availability for specified month</description>
+        <formula>inov8__Aug__c -  inov8__Aug_Allocation__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Aug Remaining</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Aug__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Availability for August month</description>
+        <label>Aug</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Dec_Actual_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Dec Actual Hours</label>
+        <summarizedField>inov8__PMT_Resource_Allocation__c.inov8__Dec_Hours__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Resource_Allocation__c.inov8__Resource_Availability__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Dec_Allocation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Rolled up allocation for the month</description>
+        <label>Dec Allocation</label>
+        <summarizedField>inov8__PMT_Resource_Allocation__c.inov8__Dec__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Resource_Allocation__c.inov8__Resource_Availability__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Dec_Remaining__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Remaining availability for specified month</description>
+        <formula>inov8__Dec__c -  inov8__Dec_Allocation__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Dec Remaining</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Dec__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Availability for December month</description>
+        <label>Dec</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>inov8__End_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <formula>IF($CustomMetadata.inov8__PMT_Setting__mdt.inov8__Default.inov8__Start_Month_of_Fiscal_Year__c==1,
+DATE(
+VALUE(MID(TEXT(YEAR(TODAY())),1,2)
++ MID( inov8__Fiscal_Year__c,3,4))+1,
+$CustomMetadata.inov8__PMT_Setting__mdt.inov8__Default.inov8__Start_Month_of_Fiscal_Year__c,1)-1
+,
+DATE(
+VALUE(MID(TEXT(YEAR(TODAY())),1,2)
++ MID( inov8__Fiscal_Year__c,3,4)),
+$CustomMetadata.inov8__PMT_Setting__mdt.inov8__Default.inov8__Start_Month_of_Fiscal_Year__c,1)-1
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Feb_Actual_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Feb Actual Hours</label>
+        <summarizedField>inov8__PMT_Resource_Allocation__c.inov8__Feb_Hours__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Resource_Allocation__c.inov8__Resource_Availability__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Feb_Allocation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Rolled up allocation for the month</description>
+        <label>Feb Allocation</label>
+        <summarizedField>inov8__PMT_Resource_Allocation__c.inov8__Feb__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Resource_Allocation__c.inov8__Resource_Availability__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Feb_Remaining__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Remaining availability for specified month</description>
+        <formula>inov8__Feb__c -  inov8__Feb_Allocation__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Feb Remaining</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Feb__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Availability for February month</description>
+        <label>Feb</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Fiscal_Year__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The year for which availability is provided</description>
+        <externalId>false</externalId>
+        <label>Fiscal Year</label>
+        <length>10</length>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__Jan_Actual_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Jan Actual Hours</label>
+        <summarizedField>inov8__PMT_Resource_Allocation__c.inov8__Jan_Hours__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Resource_Allocation__c.inov8__Resource_Availability__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Jan_Allocation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Rolled up allocation for the month</description>
+        <label>Jan Allocation</label>
+        <summarizedField>inov8__PMT_Resource_Allocation__c.inov8__Jan__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Resource_Allocation__c.inov8__Resource_Availability__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Jan_Remaining__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Remaining availability for specified month</description>
+        <formula>inov8__Jan__c -  inov8__Jan_Allocation__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Jan Remaining</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Jan__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Availability for January month</description>
+        <label>Jan</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Jul_Actual_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Jul Actual Hours</label>
+        <summarizedField>inov8__PMT_Resource_Allocation__c.inov8__Jul_Hours__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Resource_Allocation__c.inov8__Resource_Availability__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Jul_Allocation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Rolled up allocation for the month</description>
+        <label>Jul Allocation</label>
+        <summarizedField>inov8__PMT_Resource_Allocation__c.inov8__Jul__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Resource_Allocation__c.inov8__Resource_Availability__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Jul_Remaining__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Remaining availability for specified month</description>
+        <formula>inov8__Jul__c -  inov8__Jul_Allocation__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Jul Remaining</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Jul__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Availability for July month</description>
+        <label>Jul</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Jun_Actual_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Jun Actual Hours</label>
+        <summarizedField>inov8__PMT_Resource_Allocation__c.inov8__Jun_Hours__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Resource_Allocation__c.inov8__Resource_Availability__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Jun_Allocation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Rolled up allocation for the month</description>
+        <label>Jun Allocation</label>
+        <summarizedField>inov8__PMT_Resource_Allocation__c.inov8__Jun__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Resource_Allocation__c.inov8__Resource_Availability__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Jun_Remaining__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Remaining availability for specified month</description>
+        <formula>inov8__Jun__c -  inov8__Jun_Allocation__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Jun Remaining</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Jun__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Availability for June month</description>
+        <label>Jun</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Mar_Actual_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Mar Actual Hours</label>
+        <summarizedField>inov8__PMT_Resource_Allocation__c.inov8__Mar_Hours__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Resource_Allocation__c.inov8__Resource_Availability__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Mar_Allocation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Rolled up allocation for the month</description>
+        <label>Mar Allocation</label>
+        <summarizedField>inov8__PMT_Resource_Allocation__c.inov8__Mar__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Resource_Allocation__c.inov8__Resource_Availability__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Mar_Remaining__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Remaining availability for specified month</description>
+        <formula>inov8__Mar__c - inov8__Mar_Allocation__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mar Remaining</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Mar__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Availability for March month</description>
+        <label>Mar</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>inov8__May_Actual_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <label>May Actual Hours</label>
+        <summarizedField>inov8__PMT_Resource_Allocation__c.inov8__May_Hours__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Resource_Allocation__c.inov8__Resource_Availability__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__May_Allocation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Rolled up allocation for the month</description>
+        <label>May Allocation</label>
+        <summarizedField>inov8__PMT_Resource_Allocation__c.inov8__May__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Resource_Allocation__c.inov8__Resource_Availability__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__May_Remaining__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Remaining availability for specified month</description>
+        <formula>inov8__May__c -  inov8__May_Allocation__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>May Remaining</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>inov8__May__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Availability for May month</description>
+        <label>May</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Nov_Actual_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Nov Actual Hours</label>
+        <summarizedField>inov8__PMT_Resource_Allocation__c.inov8__Nov_Hours__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Resource_Allocation__c.inov8__Resource_Availability__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Nov_Allocation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Rolled up allocation for the month</description>
+        <label>Nov Allocation</label>
+        <summarizedField>inov8__PMT_Resource_Allocation__c.inov8__Nov__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Resource_Allocation__c.inov8__Resource_Availability__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Nov_Remaining__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Remaining availability for specified month</description>
+        <formula>inov8__Nov__c -  inov8__Nov_Allocation__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Nov Remaining</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Nov__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Availability for November month</description>
+        <label>Nov</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Oct_Actual_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Oct Actual Hours</label>
+        <summarizedField>inov8__PMT_Resource_Allocation__c.inov8__Oct_Hours__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Resource_Allocation__c.inov8__Resource_Availability__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Oct_Allocation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Rolled up allocation for the month</description>
+        <label>Oct Allocation</label>
+        <summarizedField>inov8__PMT_Resource_Allocation__c.inov8__Oct__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Resource_Allocation__c.inov8__Resource_Availability__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Oct_Remaining__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Remaining availability for specified month</description>
+        <formula>inov8__Oct__c -  inov8__Oct_Allocation__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Oct Remaining</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Oct__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Availability for October month</description>
+        <label>Oct</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Resource_Name_FY__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(inov8__is_Dummy_Availability__c, &apos;Unallocated&apos;, inov8__User_Name__c) + &apos; - &apos;&amp; inov8__Fiscal_Year__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Resource Name &amp; FY</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__Sep_Actual_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Sep Actual Hours</label>
+        <summarizedField>inov8__PMT_Resource_Allocation__c.inov8__Sep_Hours__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Resource_Allocation__c.inov8__Resource_Availability__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Sep_Allocation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Rolled up allocation for the month</description>
+        <label>Sep Allocation</label>
+        <summarizedField>inov8__PMT_Resource_Allocation__c.inov8__Sep__c</summarizedField>
+        <summaryForeignKey>inov8__PMT_Resource_Allocation__c.inov8__Resource_Availability__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Sep_Remaining__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Remaining availability for specified month</description>
+        <formula>inov8__Sep__c -  inov8__Sep_Allocation__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sep Remaining</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Sep__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Availability for September month</description>
+        <label>Sep</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Start_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Calculates the start date using FYXX format</description>
+        <formula>If($CustomMetadata.inov8__PMT_Setting__mdt.inov8__Default.inov8__Start_Month_of_Fiscal_Year__c==1,
+DATE(
+VALUE(MID(TEXT(YEAR(TODAY())),1,2)
++
+MID(inov8__Fiscal_Year__c, 3, 2)),
+$CustomMetadata.inov8__PMT_Setting__mdt.inov8__Default.inov8__Start_Month_of_Fiscal_Year__c,1)
+,
+DATE(
+VALUE(MID(TEXT(YEAR(TODAY())),1,2)
++
+MID(inov8__Fiscal_Year__c, 3, 2))-1,
+$CustomMetadata.inov8__PMT_Setting__mdt.inov8__Default.inov8__Start_Month_of_Fiscal_Year__c,1)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>inov8__User_Department__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>inov8__User__r.Department</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>User Department</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__User_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This formula field is used by the resource allocation functionality</description>
+        <externalId>false</externalId>
+        <formula>IF(inov8__is_Dummy_Availability__c,&apos;DUM&apos;, CASESAFEID(inov8__User__r.Id))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>User Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__User_IsActive__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows user is active or not</description>
+        <formula>inov8__User__r.IsActive</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>User IsActive</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>inov8__User_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(inov8__is_Dummy_Availability__c,&apos;&apos;, inov8__User__r.FirstName + &apos; &apos; +  inov8__User__r.LastName)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>User Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>User for which availability is defined</description>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Resource_Availability</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>inov8__is_Dummy_Availability__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Checks if the user is present in the lookup, if not considers the availability as dummy</description>
+        <formula>IF(LEN(inov8__User__c)==0, true, false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>is Dummy Availability?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>PMT Resource Availability</label>
+    <listViews>
+        <fullName>inov8__All</fullName>
+        <columns>NAME</columns>
+        <columns>inov8__User_Name__c</columns>
+        <columns>inov8__Fiscal_Year__c</columns>
+        <columns>inov8__Feb__c</columns>
+        <columns>inov8__Mar__c</columns>
+        <columns>inov8__Apr__c</columns>
+        <columns>inov8__May__c</columns>
+        <columns>inov8__Jun__c</columns>
+        <columns>inov8__Jul__c</columns>
+        <columns>inov8__Aug__c</columns>
+        <columns>inov8__Sep__c</columns>
+        <columns>inov8__Oct__c</columns>
+        <columns>inov8__Nov__c</columns>
+        <columns>inov8__Dec__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Availability</label>
+    </listViews>
+    <nameField>
+        <displayFormat>RA-{000000}</displayFormat>
+        <label>Resource Availibility No</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>PMT Resource Availability</pluralLabel>
+    <searchLayouts>
+        <searchResultsAdditionalFields>inov8__Fiscal_Year__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>inov8__User__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>inov8__Availability_cannot_be_more_than_100</fullName>
+        <active>true</active>
+        <description>Validation to ensure availability</description>
+        <errorConditionFormula>inov8__Jan__c&lt;0 || inov8__Jan__c&gt;1 ||
+inov8__Feb__c&lt;0 || inov8__Feb__c&gt;1 ||
+inov8__Mar__c&lt;0 || inov8__Mar__c&gt;1 ||
+inov8__Apr__c&lt;0 || inov8__Apr__c&gt;1 ||
+inov8__May__c&lt;0 || inov8__May__c&gt;1 ||
+inov8__Jun__c&lt;0 || inov8__Jun__c&gt;1 ||
+inov8__Jul__c&lt;0 || inov8__Jul__c&gt;1 ||
+inov8__Aug__c&lt;0 || inov8__Aug__c&gt;1 ||
+inov8__Sep__c&lt;0 || inov8__Sep__c&gt;1 ||
+inov8__Oct__c&lt;0 || inov8__Oct__c&gt;1 ||
+inov8__Nov__c&lt;0 || inov8__Nov__c&gt;1 ||
+inov8__Dec__c&lt;0 || inov8__Nov__c&gt;1</errorConditionFormula>
+        <errorMessage>Availability must be in between 0 and 100</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>inov8__Fiscal_Year_format_as_FYXX</fullName>
+        <active>true</active>
+        <errorConditionFormula>!REGEX(inov8__Fiscal_Year__c ,&quot;^FY\\d{2}$&quot;)</errorConditionFormula>
+        <errorDisplayField>inov8__Fiscal_Year__c</errorDisplayField>
+        <errorMessage>Fiscal Year must be in the format of FYXX</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

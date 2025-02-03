@@ -1,0 +1,57 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Error",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "sectionConfig" : "{\"UUID\":\"8eac5aa4-e982-4afc-9af0-c9be5c1cb74b\",\"columns\":[{\"UUID\":\"4d57ef95-3d9c-436e-b46b-b52bcccfbcbe\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "b2c_lite_commerce:error",
+              "id" : "d0e5da79-28fe-4cde-839a-8eabad833f1f",
+              "type" : "component"
+            } ],
+            "id" : "4d57ef95-3d9c-436e-b46b-b52bcccfbcbe",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "8eac5aa4-e982-4afc-9af0-c9be5c1cb74b",
+          "type" : "component"
+        } ],
+        "id" : "7f0a4f8a-9ffe-4c11-9d79-5420826c6070",
+        "name" : "content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Error",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "fb9936e3-b4c0-4d48-986b-80c31f0e4c70",
+          "type" : "component"
+        } ],
+        "id" : "2e018df9-c98f-4a48-a4ed-b7149c8ea4ae",
+        "name" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "935772ae-6e48-40fb-bcf7-200c55c58a5c",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "error"
+  },
+  "urlName" : "error"
+}

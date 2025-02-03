@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata">
+    <dataset>Demo_Mortgage_Residential_Loan_Applications_ZZD_ERN</dataset>
+    <dimensions>
+        <field>Opportunity_StageName</field>
+        <isDerived>false</isDerived>
+        <label>Stage</label>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Id</field>
+        <isDerived>false</isDerived>
+        <recordDisplayFields>
+            <recordDisplayField>Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Name</field>
+        <isDerived>false</isDerived>
+        <recordDisplayFields>
+            <recordDisplayField>Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>LoanBucket</field>
+        <isDerived>false</isDerived>
+        <members>
+            <label>&lt;500K</label>
+            <member>1. &lt;500K</member>
+            <sortIndex>0</sortIndex>
+        </members>
+        <members>
+            <label>500K-999K</label>
+            <member>2. 500K-999K</member>
+            <sortIndex>1</sortIndex>
+        </members>
+        <members>
+            <label>1M+</label>
+            <member>3. 1M+</member>
+            <sortIndex>2</sortIndex>
+        </members>
+        <sortIndex>3</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>NumActivitiesBucket</field>
+        <isDerived>false</isDerived>
+        <label># Activities Bucket</label>
+        <members>
+            <label>None</label>
+            <member>1. None</member>
+            <sortIndex>0</sortIndex>
+        </members>
+        <members>
+            <label>1-2</label>
+            <member>2. 1-2</member>
+            <sortIndex>1</sortIndex>
+        </members>
+        <members>
+            <label>3-4</label>
+            <member>3. 3-4</member>
+            <sortIndex>2</sortIndex>
+        </members>
+        <members>
+            <label>5+</label>
+            <member>4. 5+</member>
+            <sortIndex>3</sortIndex>
+        </members>
+        <sortIndex>4</sortIndex>
+    </dimensions>
+    <measures>
+        <field>Opportunity_Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <field>LoanApplicationFinancial_LoanAmount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>1</sortIndex>
+    </measures>
+</WaveXmd>

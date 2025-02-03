@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants out of the box permission sets to the Admin User</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>FINS - Banking Base Access</label>
+    <permissionSets>Compliant_Data_Sharing_Manager</permissionSets>
+    <permissionSets>Compliant_Data_Sharing_User</permissionSets>
+    <permissionSets>Custom_Guidance_Centre_v3</permissionSets>
+    <permissionSets>FINS_Banking_Base</permissionSets>
+    <permissionSets>force__ServiceProcess</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

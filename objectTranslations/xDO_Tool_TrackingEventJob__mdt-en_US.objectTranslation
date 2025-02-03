@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>xDO Tool - Tracking Event Job</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>xDO Tool - Tracking Event Jobs</value>
+    </caseValues>
+    <fields>
+        <help><!-- Queueable batch size between 1 and 99. Defaults to 50 --></help>
+        <label><!-- Batch Size --></label>
+        <name>Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Class that extends from SDO_Tool_TrackingEventService.SDO_Tool_TrackingEventClient --></help>
+        <label><!-- Client Type --></label>
+        <name>Client_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Entry criteria for the job&apos;s Tracking Event records to be processed --></help>
+        <label><!-- Entry Stage --></label>
+        <name>Entry_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Mixpanel Event</masterLabel>
+            <translation><!-- Mixpanel Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mixpanel Profile</masterLabel>
+            <translation><!-- Mixpanel Profile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processed</masterLabel>
+            <translation><!-- Processed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Exit stage for the job&apos;s Tracking Event records that are successfully processed --></help>
+        <label><!-- Exit Stage --></label>
+        <name>Exit_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Mixpanel Event</masterLabel>
+            <translation><!-- Mixpanel Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mixpanel Profile</masterLabel>
+            <translation><!-- Mixpanel Profile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processed</masterLabel>
+            <translation><!-- Processed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Should the job be scheduled? --></help>
+        <label><!-- Is Schedulable? --></label>
+        <name>Is_Schedulable__c</name>
+    </fields>
+    <fields>
+        <help><!-- The scheduled job name. --></help>
+        <label><!-- Job Name --></label>
+        <name>Job_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Notification Time --></label>
+        <name>Last_Notification_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Named Credential used by the Client --></help>
+        <label><!-- Named Credential --></label>
+        <name>Named_Credential__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notification Emails --></label>
+        <name>Notification_Emails__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unique identifier for a target system environment --></help>
+        <label><!-- Project Id --></label>
+        <name>Project_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Friendly name identifier for a target system environment --></help>
+        <label><!-- Project Name --></label>
+        <name>Project_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Token --></label>
+        <name>Project_Token__c</name>
+    </fields>
+    <fields>
+        <help><!-- Class that extends from SDO_Tool_QueueableBase --></help>
+        <label><!-- Queueable Type --></label>
+        <name>Queueable_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Job schedule interval in minutes. Recommended value is 5 and must be greater than 3 --></help>
+        <label><!-- Schedule Interval --></label>
+        <name>Schedule_Interval__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

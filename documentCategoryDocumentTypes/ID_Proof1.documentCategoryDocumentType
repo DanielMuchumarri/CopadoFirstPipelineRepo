@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocumentCategoryDocumentType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <documentCategory>ID_Proof</documentCategory>
+    <documentType>Passport</documentType>
+    <masterLabel>ID Proof1</masterLabel>
+</DocumentCategoryDocumentType>

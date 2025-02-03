@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Thank You</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>We&apos;ve received the application and are currently reviewing it. We’ll notify the customer after the application has been processed and approved.</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>FSC_ONB_v1_Thank_You</developerName>
+    <name>Thank You</name>
+    <questionCategory>Financial</questionCategory>
+</AssessmentQuestion>

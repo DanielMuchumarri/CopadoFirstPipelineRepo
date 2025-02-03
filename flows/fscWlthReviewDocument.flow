@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <assignments>
+        <description>Reset the DocumentNotReviewedIndicator and DocumentRejectedStatus indicators to false.</description>
+        <name>ResetIndicators</name>
+        <label>Reset Indicators</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <assignmentItems>
+            <assignToReference>DocumentNotReviewedIndicator</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>DocumentRejectedStatus</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>IterateThroughDocumentChecklistItems</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns DocumentNotReviewedIndicator value to true.</description>
+        <name>SetDocumentNotReviewedIndicator</name>
+        <label>Set Document Not Reviewed Indicator</label>
+        <locationX>704</locationX>
+        <locationY>566</locationY>
+        <assignmentItems>
+            <assignToReference>DocumentNotReviewedIndicator</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>IterateThroughDocumentChecklistItems</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns DocumentRejectionStatus indicators value to true.</description>
+        <name>SetRejectedStatus</name>
+        <label>Set Rejected Status</label>
+        <locationX>264</locationX>
+        <locationY>674</locationY>
+        <assignmentItems>
+            <assignToReference>DocumentRejectedStatus</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>IterateThroughDocumentChecklistItems</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Determines if all the documents uploaded by the customer are reviewed or not.</description>
+        <name>WereAllDocumentReviewed</name>
+        <label>Were All Documents Reviewed?</label>
+        <locationX>550</locationX>
+        <locationY>458</locationY>
+        <defaultConnector>
+            <targetReference>SetDocumentNotReviewedIndicator</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Document Not Reviewed</defaultConnectorLabel>
+        <rules>
+            <name>DocumentReviewed</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughDocumentChecklistItems.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Accepted</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IterateThroughDocumentChecklistItems.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Rejected</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>WereDocumentsRejected</targetReference>
+            </connector>
+            <label>Document Reviewed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determines if all the documents uploaded by the customer were rejected.</description>
+        <name>WereDocumentsRejected</name>
+        <label>Were Documents Rejected?</label>
+        <locationX>396</locationX>
+        <locationY>566</locationY>
+        <defaultConnector>
+            <targetReference>IterateThroughDocumentChecklistItems</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Document Accepted</defaultConnectorLabel>
+        <rules>
+            <name>DocumentRejected</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughDocumentChecklistItems.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Rejected</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetRejectedStatus</targetReference>
+            </connector>
+            <label>Document Rejected</label>
+        </rules>
+    </decisions>
+    <description>Reviews the documents uploaded by the customer to check if the documents were reviewed and rejected. Passes the indicator values to the Document Status and Review Document Status flows.</description>
+    <environments>Default</environments>
+    <interviewLabel>FSC Wealth: Review Document {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FSC Wealth: Review Document</label>
+    <loops>
+        <description>Iterates through Document checklist Item Value from GetNewDocChecklistItemRecords.</description>
+        <name>IterateThroughDocumentChecklistItems</name>
+        <label>Iterate Through Document Checklist Items</label>
+        <locationX>176</locationX>
+        <locationY>350</locationY>
+        <collectionReference>GetNewDocChecklistItemRecords</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>WereAllDocumentReviewed</targetReference>
+        </nextValueConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Gets the Document Checklist Item record with a ParentRecordId and ID that matches the CaseId and  AllNewDocChecklistItemRecords that was passed into the flow.</description>
+        <name>GetNewDocChecklistItemRecords</name>
+        <label>Get New Doc Checklist Item Records</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>ResetIndicators</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ParentRecordId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>CaseId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Id</field>
+            <operator>In</operator>
+            <value>
+                <elementReference>AllNewDocChecklistItemRecordIds</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>DocumentChecklistItem</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>GetNewDocChecklistItemRecords</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Stores the Ids of all the New Document Checklist item records that were passed into the flow.</description>
+        <name>AllNewDocChecklistItemRecordIds</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the value of Case Id of the service catalog request extended attribute value record that was passed into the flow.</description>
+        <name>CaseId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the value of DocumentNotReviewedIndicator that indicates if all the documents were reviewed by the agent and passes it on to other flows.</description>
+        <name>DocumentNotReviewedIndicator</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the value of DocumentRejectionStatus that indicates if any of the document was rejected by the agent and passes it on to other flows.</description>
+        <name>DocumentRejectedStatus</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </variables>
+</Flow>

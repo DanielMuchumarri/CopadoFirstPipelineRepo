@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Demo Section</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Demo Sections</value>
+    </caseValues>
+    <fields>
+        <label><!-- Completed Exercises --></label>
+        <name>Completed_Exercises__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed Milestones --></label>
+        <name>Completed_Milestones__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed --></label>
+        <name>Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completion Percentage --></label>
+        <name>Completion_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Value --></label>
+        <name>Current_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q-Branch Demo Reference --></label>
+        <name>FINS_Q_Branch_Demo_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Program --></label>
+        <name>Program__c</name>
+        <relationshipLabel><!-- Demo Sections --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Target Value --></label>
+        <name>Target_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Milestones and Exercises --></label>
+        <name>Total_Milestones_and_Exercises__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

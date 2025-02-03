@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Individual Email Results</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Individual Email Results</value>
+    </caseValues>
+    <fields>
+        <label><!-- Bounced --></label>
+        <name>Bounced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clicked --></label>
+        <name>Clicked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sent --></label>
+        <name>Date_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Name --></label>
+        <name>Email_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opened --></label>
+        <name>Opened__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

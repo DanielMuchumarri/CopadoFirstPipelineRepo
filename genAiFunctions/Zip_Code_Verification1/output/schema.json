@@ -1,0 +1,25 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "IsAddressMatchFound" : {
+      "title" : "IsAddressMatchFound",
+      "description" : "If IsAddressMatchFound returns true the inform user that address is found and new credit card will be sent to the mailing address on Credit card.\n\nIf IsAddressMatchFound returns false the inform user that address is not found and ask user to enter the zip code again and verify.",
+      "lightning:type" : "lightning__booleanType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true
+    },
+    "finsAccountRec" : {
+      "title" : "finsAccountRec",
+      "description" : "Financial Account Record",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "FinServ__FinancialAccount__c"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

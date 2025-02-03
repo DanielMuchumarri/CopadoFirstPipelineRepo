@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionLauncherItemDef xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identifier>_1gul4jxnr4i321ba4r166jy9jy</identifier>
+    <itemActionType>Omniscript</itemActionType>
+    <itemCategory>dbBased</itemCategory>
+    <itemLanguage>English</itemLanguage>
+    <masterLabel>FSC/RequestLoanPayoffStatement/English</masterLabel>
+    <subType>RequestLoanPayoffStatement</subType>
+    <type>FSC</type>
+</ActionLauncherItemDef>

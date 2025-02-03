@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>FINS_CIB_Authorized_Signer_for__c</fullName>
+        <label>Authorized Signer for</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Advanced Execution Services</fullName>
+                    <default>false</default>
+                    <label>Advanced Execution Services</label>
+                </value>
+                <value>
+                    <fullName>Convertibles</fullName>
+                    <default>false</default>
+                    <label>Convertibles</label>
+                </value>
+                <value>
+                    <fullName>Corporate Access</fullName>
+                    <default>false</default>
+                    <label>Corporate Access</label>
+                </value>
+                <value>
+                    <fullName>Corporate Insights</fullName>
+                    <default>false</default>
+                    <label>Corporate Insights</label>
+                </value>
+                <value>
+                    <fullName>Credit Default Swaps</fullName>
+                    <default>false</default>
+                    <label>Credit Default Swaps</label>
+                </value>
+                <value>
+                    <fullName>Emerging Markets</fullName>
+                    <default>false</default>
+                    <label>Emerging Markets</label>
+                </value>
+                <value>
+                    <fullName>Equities</fullName>
+                    <default>false</default>
+                    <label>Equities</label>
+                </value>
+                <value>
+                    <fullName>Equity Capital Markets</fullName>
+                    <default>false</default>
+                    <label>Equity Capital Markets</label>
+                </value>
+                <value>
+                    <fullName>Equity Derivatives</fullName>
+                    <default>false</default>
+                    <label>Equity Derivatives</label>
+                </value>
+                <value>
+                    <fullName>Equity Swaps</fullName>
+                    <default>false</default>
+                    <label>Equity Swaps</label>
+                </value>
+                <value>
+                    <fullName>Fixed Income</fullName>
+                    <default>false</default>
+                    <label>Fixed Income</label>
+                </value>
+                <value>
+                    <fullName>Fixed Income Capital Raising</fullName>
+                    <default>false</default>
+                    <label>Fixed Income Capital Raising</label>
+                </value>
+                <value>
+                    <fullName>Fund Linked Products</fullName>
+                    <default>false</default>
+                    <label>Fund Linked Products</label>
+                </value>
+                <value>
+                    <fullName>FX Hedging Strategies</fullName>
+                    <default>false</default>
+                    <label>FX Hedging Strategies</label>
+                </value>
+                <value>
+                    <fullName>FX NDF</fullName>
+                    <default>false</default>
+                    <label>FX NDF</label>
+                </value>
+                <value>
+                    <fullName>FX Options</fullName>
+                    <default>false</default>
+                    <label>FX Options</label>
+                </value>
+                <value>
+                    <fullName>FX Products</fullName>
+                    <default>false</default>
+                    <label>FX Products</label>
+                </value>
+                <value>
+                    <fullName>Industry Experience</fullName>
+                    <default>false</default>
+                    <label>Industry Experience</label>
+                </value>
+                <value>
+                    <fullName>Interest Rate Swaps</fullName>
+                    <default>false</default>
+                    <label>Interest Rate Swaps</label>
+                </value>
+                <value>
+                    <fullName>Mergers &amp; Acquisitions</fullName>
+                    <default>false</default>
+                    <label>Mergers &amp; Acquisitions</label>
+                </value>
+                <value>
+                    <fullName>Prime Services</fullName>
+                    <default>false</default>
+                    <label>Prime Services</label>
+                </value>
+                <value>
+                    <fullName>Private Funding</fullName>
+                    <default>false</default>
+                    <label>Private Funding</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>FINS_CIB_Controlling__c</fullName>
+        <label>Controlling %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>FINS_CIB_Direct_Owner_Of__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>Direct Owner Of</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Relationships and Controllers</relationshipLabel>
+        <relationshipName>Relationships_and_Controllers</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>FINS_CIB_Ownership__c</fullName>
+        <label>Ownership %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>FINS_CIB_Related_Entity_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>Related Entity Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Relationships and Controllers (Related Entity Name)</relationshipLabel>
+        <relationshipName>Relationships_and_Controllers1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>FINS_CIB_Related_To_Entity__c</fullName>
+        <label>Related To Entity</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Relationships and Controllers (Related To Entity)</relationshipLabel>
+        <relationshipName>Relationships_and_Controllers2</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>FINS_CIB_Relationship_Type__c</fullName>
+        <label>Relationship Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Immediate</fullName>
+                    <default>false</default>
+                    <label>Immediate</label>
+                </value>
+                <value>
+                    <fullName>Intermediate</fullName>
+                    <default>false</default>
+                    <label>Intermediate</label>
+                </value>
+                <value>
+                    <fullName>Ultimate Beneficial Owner</fullName>
+                    <default>false</default>
+                    <label>Ultimate Beneficial Owner</label>
+                </value>
+                <value>
+                    <fullName>Controller</fullName>
+                    <default>false</default>
+                    <label>Controller</label>
+                </value>
+                <value>
+                    <fullName>Authorized Signer</fullName>
+                    <default>false</default>
+                    <label>Authorized Signer</label>
+                </value>
+                <value>
+                    <fullName>KYC Associate</fullName>
+                    <default>false</default>
+                    <label>KYC Associate</label>
+                </value>
+                <value>
+                    <fullName>Key Contact</fullName>
+                    <default>false</default>
+                    <label>Key Contact</label>
+                </value>
+                <value>
+                    <fullName>Custodian</fullName>
+                    <default>false</default>
+                    <label>Custodian</label>
+                </value>
+                <value>
+                    <fullName>Beneficiary</fullName>
+                    <default>false</default>
+                    <label>Beneficiary</label>
+                </value>
+                <value>
+                    <fullName>Trustee</fullName>
+                    <default>false</default>
+                    <label>Trustee</label>
+                </value>
+                <value>
+                    <fullName>Trustor</fullName>
+                    <default>false</default>
+                    <label>Trustor</label>
+                </value>
+                <value>
+                    <fullName>Investment Manager</fullName>
+                    <default>false</default>
+                    <label>Investment Manager</label>
+                </value>
+                <value>
+                    <fullName>Fund</fullName>
+                    <default>false</default>
+                    <label>Fund</label>
+                </value>
+                <value>
+                    <fullName>Subsidiary</fullName>
+                    <default>false</default>
+                    <label>Subsidiary</label>
+                </value>
+                <value>
+                    <fullName>Branch</fullName>
+                    <default>false</default>
+                    <label>Branch</label>
+                </value>
+                <value>
+                    <fullName>Power of Attorney</fullName>
+                    <default>false</default>
+                    <label>Power of Attorney</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <label>Relationships and Controllers</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Relationships and Controllers Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Relationships and Controllers</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

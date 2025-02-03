@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecommendationStrategy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contextRecordType>Case</contextRecordType>
+    <description>Used in SCSE Service Console on Case records</description>
+    <label>SCSE Case Strategy</label>
+    <recommendationLoad>
+        <label>Generate Appointment Invitation Link</label>
+        <name>Generate_Appointment_Invitation_Link</name>
+        <condition>
+            <field>Name</field>
+            <operator>CONTAINS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>Generate Appointment</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <union>
+        <childNode>Generate_Appointment_Invitation_Link</childNode>
+        <label>Output</label>
+        <name>Output_ff0001363a5e450ea264f2ce4a1e8a98</name>
+    </union>
+</RecommendationStrategy>

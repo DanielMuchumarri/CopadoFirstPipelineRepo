@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <description>This version does not attempt to grab and relate a case because the case is no longer created at the time of the call.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Start Date of Engagement</description>
+        <name>fmEIStartDate</name>
+        <dataType>DateTime</dataType>
+        <expression>DATETIMEVALUE(TODAY())</expression>
+    </formulas>
+    <formulas>
+        <description>Creates the inbound call title</description>
+        <name>fmInboundCallTitle</name>
+        <dataType>String</dataType>
+        <expression>&quot;Inbound Call from &quot; + {!$Record.Contact__r.FirstName} +&quot; &quot; + {!$Record.Contact__r.LastName}</expression>
+    </formulas>
+    <interviewLabel>Create Engagement Interaction from Voice Call {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Create Engagement Interaction from Voice Call</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>Creates the Engagement Interaction that will be related to the VC record.</description>
+        <name>Create_Engagement_Interaction</name>
+        <label>Create Engagement Interaction</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <connector>
+            <targetReference>Relate_the_EI_to_the_Voice_Call_Record</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>CommunicationChannel</field>
+            <value>
+                <stringValue>Voice Call</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Engagement_Title__c</field>
+            <value>
+                <elementReference>fmInboundCallTitle</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Friendly_URL_Text__c</field>
+            <value>
+                <stringValue>Related Voice Call</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>InitiatingAttendeeId</field>
+            <value>
+                <elementReference>$Record.Contact__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>StartDateTime</field>
+            <value>
+                <elementReference>$Record.CallStartDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type</field>
+            <value>
+                <stringValue>Inbound</stringValue>
+            </value>
+        </inputAssignments>
+        <object>EngagementInteraction</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordUpdates>
+        <name>Relate_the_EI_to_the_Voice_Call_Record</name>
+        <label>Relate the EI to the Voice Call Record</label>
+        <locationX>176</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Engagement_Interaction__c</field>
+            <value>
+                <elementReference>Create_Engagement_Interaction</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Create_Engagement_Interaction</targetReference>
+        </connector>
+        <object>VoiceCall</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <name>strVoiceCallRecordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>$Record.Id</elementReference>
+        </value>
+    </variables>
+</Flow>

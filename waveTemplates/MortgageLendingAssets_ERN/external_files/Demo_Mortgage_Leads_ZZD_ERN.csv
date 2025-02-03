@@ -1,0 +1,1001 @@
+ConvertedOppAmount,CreatedDate,IsConverted,LastProcessedDate,LeadActivities,LeadSource,Name,Owner,Owner_Name,Owner_SmallPhotoUrl,Rating,Status
+,2022-10-22,TRUE,2023-11-29,6,Employee Referral,Pearline Bellsham,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Working
+,2022-11-08,FALSE,2023-11-29,11,Purchased List,Charlean Cooney,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Converted
+,2022-10-20,FALSE,2023-11-29,16,Advertisement,Ronnie Lavigne,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Nurturing
+,2022-11-03,FALSE,2023-11-29,18,Other,Marti Simmig,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-10-30,FALSE,2023-11-29,12,Other,Sib Hawk,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Qualified
+,2022-11-07,TRUE,2023-11-29,14,Trade Show,Isis Hollyer,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,New
+14000,2022-10-20,FALSE,2023-11-29,16,Advertisement,Iolanthe Birchett,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Converted
+116000,2022-10-26,FALSE,2023-11-29,10,Other,Indira Crook,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Qualified
+49000,2022-11-09,FALSE,2023-11-29,15,Employee Referral,Augustus Simonaitis,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Nurturing - Contacted
+,2022-10-28,TRUE,2023-11-29,10,Employee Referral,Andy Smith (Sample),G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Working
+,2022-10-21,FALSE,2023-11-29,11,Other,Phyllida Blair,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working  - Contacted
+,2022-10-15,FALSE,2023-11-29,22,Other,Pauline Parell,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Nurturing
+,2022-10-26,FALSE,2023-11-29,15,Purchased List,Boyle,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Converted
+41000,2022-11-03,TRUE,2023-11-29,7,Other,Rhodie Domoney,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,New
+,2022-10-17,FALSE,2023-11-29,,Employee Referral,Gerry Wackley,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Qualified
+27000,2022-11-04,FALSE,2023-11-29,7,Advertisement,Joycelin Thrustle,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Nurturing - Contacted
+,2022-10-31,TRUE,2023-11-29,21,Other,Erasmus Satford,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working  - Contacted
+,2022-10-24,FALSE,2023-11-29,17,Employee Referral,Matthew Lanchester,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Working  - Contacted
+,2022-11-09,FALSE,2023-11-29,24,Advertisement,Conway Sarre,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Nurturing
+31000,2022-11-10,FALSE,2023-11-29,8,Other,Greer Weedon,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Converted
+,2022-10-24,TRUE,2023-11-29,12,Employee Referral,Amelina Rigardeau,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-10-20,FALSE,2023-11-29,8,Trade Show,Urbano Zorn,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Qualified
+,2022-11-01,FALSE,2023-11-29,8,Other,Ivory Rider,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working  - Contacted
+,2022-10-16,FALSE,2023-11-29,10,Purchased List,Jordan,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing - Contacted
+,2022-10-24,TRUE,2023-11-29,15,Other,McPherson,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,New
+,2022-11-09,FALSE,2023-11-29,18,Advertisement,Rycca Geoghegan,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working
+,2022-10-31,FALSE,2023-11-29,20,Other,Frasier Peploe,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Converted
+,2022-11-07,FALSE,2023-11-29,5,Employee Referral,Layla Denniston,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing
+,2022-10-28,FALSE,2023-11-29,9,Employee Referral,Christie Mathis,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-10-19,TRUE,2023-11-29,12,Advertisement,Bevon Ramstead,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Qualified
+,2022-10-24,FALSE,2023-11-29,15,Purchased List,Obama,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working
+23500,2022-11-02,FALSE,2023-11-29,18,Other,Kevyn Load,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Nurturing - Contacted
+,2022-10-26,TRUE,2023-11-29,5,Other,Lauryn Kener,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working  - Contacted
+,2022-10-19,FALSE,2023-11-29,5,Trade Show,Tomas Greenleaf,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Converted
+63000,2022-11-07,FALSE,2023-11-29,6,Other,Mateo Beig,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+,2022-10-29,FALSE,2023-11-29,6,Advertisement,Abramo Morrissey,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working
+,2022-10-26,TRUE,2023-11-29,15,Other,Sylvester Verrillo,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Qualified
+,2022-10-18,FALSE,2023-11-29,11,Employee Referral,Nickola Missington,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working  - Contacted
+,2022-11-09,FALSE,2023-11-29,11,Employee Referral,Adrien Filtness,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Nurturing
+50000,2022-11-01,FALSE,2023-11-29,22,Other,Rachel Adams (Sample),R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Converted
+,2022-10-23,TRUE,2023-11-29,8,Advertisement,Kandy Windrus,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Qualified
+,2022-10-14,FALSE,2023-11-29,6,Other,Calley Sawdy,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,New
+,2022-11-05,FALSE,2023-11-29,6,Purchased List,Jaquelyn Boow,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-10-28,FALSE,2023-11-29,6,Employee Referral,Brandea Starton,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Working
+,2022-11-09,TRUE,2023-11-29,8,Other,Penn Burford,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Working  - Contacted
+,2022-10-23,FALSE,2023-11-29,12,Employee Referral,Ximenes Haymes,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Nurturing
+40000,2022-11-08,FALSE,2023-11-29,5,Advertisement,Korry Ardron,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,New
+,2022-11-01,FALSE,2023-11-29,12,Other,Benedikta Esser,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-10-18,FALSE,2023-11-29,10,Employee Referral,Pennie Osboldstone,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Qualified
+,2022-10-25,TRUE,2023-11-29,5,Employee Referral,Lisetta Starrs,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Nurturing - Contacted
+,2022-10-31,FALSE,2023-11-29,12,Trade Show,Byran Vankin,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Working
+,2022-11-07,FALSE,2023-11-29,5,Purchased List,Eustace Gibbe,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Working  - Contacted
+30000,2022-10-18,FALSE,2023-11-29,10,Advertisement,Renae Meiner,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Nurturing
+,2022-10-25,TRUE,2023-11-29,,Employee Referral,Heda Grimshaw,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Qualified
+,2022-11-06,FALSE,2023-11-29,13,Other,Boote Tweddle,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-11-01,FALSE,2023-11-29,8,Other,Lesley Dominique,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Converted
+,2022-10-22,FALSE,2023-11-29,21,Employee Referral,Maia Porter,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Converted
+,2022-11-08,TRUE,2023-11-29,7,Advertisement,Dominique Bibey,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working  - Contacted
+,2022-10-30,FALSE,2023-11-29,21,Other,Reuven Sprigin,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,New
+,2022-10-18,FALSE,2023-11-29,5,Other,Shandra D'Alessio,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Converted
+,2022-10-20,TRUE,2023-11-29,19,Other,Kingsly Blackstone,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working
+,2022-11-06,FALSE,2023-11-29,,Employee Referral,Martie Spradbery,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing
+,2022-10-26,FALSE,2023-11-29,14,Purchased List,LutherKing,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Nurturing - Contacted
+,2022-10-29,FALSE,2023-11-29,12,Other,Laurene Bathurst,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+,2022-10-25,TRUE,2023-11-29,14,Employee Referral,Jesse Dincke,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+18500,2022-10-28,FALSE,2023-11-29,12,Other,Christabella Meckiff,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+,2022-11-07,FALSE,2023-11-29,14,Trade Show,Normand Carvilla,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Qualified
+,2022-10-20,FALSE,2023-11-29,,Advertisement,Dyna Schooley,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Working  - Contacted
+15500,2022-11-05,TRUE,2023-11-29,13,Advertisement,Ynes Oganian,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Qualified
+71000,2022-10-17,FALSE,2023-11-29,5,Employee Referral,Linnea Braybrookes,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,New
+,2022-10-25,FALSE,2023-11-29,14,Other,Kassey Devenny,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Working
+,2022-11-02,FALSE,2023-11-29,9,Other,Nikos Dennerley,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Nurturing - Contacted
+18000,2022-10-26,FALSE,2023-11-29,14,Employee Referral,Aguie Beckingham,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Working  - Contacted
+,2022-10-14,TRUE,2023-11-29,25,Purchased List,Moyra Milier,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+76400,2022-11-05,FALSE,2023-11-29,7,Other,Corly Randal,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-11-01,FALSE,2023-11-29,21,Advertisement,Viviana Verden,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Nurturing
+17500,2022-10-25,FALSE,2023-11-29,11,Other,Ddene Gail,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-10-20,TRUE,2023-11-29,12,Employee Referral,Sasha Slocom,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing
+,2022-11-07,FALSE,2023-11-29,11,Other,Kinnie Samter,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Qualified
+,2022-11-07,FALSE,2023-11-29,6,Advertisement,Alphonso Acey,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Working
+,2022-10-23,TRUE,2023-11-29,13,Employee Referral,Claudia Treagust,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Converted
+,2022-11-01,FALSE,2023-11-29,22,Purchased List,Ashley Gligorijevic,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,New
+79000,2022-11-02,FALSE,2023-11-29,18,Employee Referral,Camile Maylin,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Qualified
+,2022-11-07,FALSE,2023-11-29,6,Trade Show,Theo Chesman,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working
+,2022-10-31,FALSE,2023-11-29,15,Other,Fayina Chattaway,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Working  - Contacted
+,2022-10-21,TRUE,2023-11-29,21,Other,Anett Link,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Converted
+,2022-10-20,FALSE,2023-11-29,7,Employee Referral,Stafani Luquet,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Nurturing
+,2022-11-05,FALSE,2023-11-29,25,Advertisement,Sylvia Drysdall,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+,2022-10-16,FALSE,2023-11-29,14,Other,Reed Kleine,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Working  - Contacted
+107000,2022-10-29,TRUE,2023-11-29,20,Other,Trumpy,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Converted
+,2022-10-24,FALSE,2023-11-29,6,Purchased List,Cristina Ead,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Nurturing - Contacted
+,2022-11-04,FALSE,2023-11-29,10,Advertisement,Hope,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+,2022-10-21,FALSE,2023-11-29,9,Employee Referral,Shermie Schimann,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-10-20,TRUE,2023-11-29,,Other,Fremont Brunsden,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+25000,2022-11-03,FALSE,2023-11-29,14,Other,Enriqueta Mager,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Working
+,2022-11-06,FALSE,2023-11-29,13,Employee Referral,Le,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Working  - Contacted
+,2022-10-17,FALSE,2023-11-29,22,Advertisement,Clementina Treslove,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing
+,2022-10-28,TRUE,2023-11-29,10,Employee Referral,Thorny Hodcroft,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,New
+34000,2022-11-07,FALSE,2023-11-29,6,Other,Aniston,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-10-27,FALSE,2023-11-29,24,Other,Stillmann Doherty,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Working
+56200,2022-10-28,TRUE,2023-11-29,8,Trade Show,Whitman Ferrillio,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Converted
+,2022-10-23,FALSE,2023-11-29,,Employee Referral,Boony Emanuelov,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Qualified
+,2022-10-20,FALSE,2023-11-29,7,Other,Vincenty Eckhard,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Working  - Contacted
+,2022-11-07,FALSE,2023-11-29,24,Advertisement,Darelle Roddick,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Nurturing
+150000,2022-10-21,TRUE,2023-11-29,13,Other,Mariana Keuneke,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Converted
+,2022-10-20,FALSE,2023-11-29,11,Employee Referral,Shalom Semple,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,New
+,2022-10-28,FALSE,2023-11-29,8,Other,Adrianne Sprulls,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+,2022-11-09,FALSE,2023-11-29,10,Other,Saidee Ruprecht,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working  - Contacted
+19800,2022-10-22,FALSE,2023-11-29,5,Employee Referral,Lotti Macvey,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Working
+,2022-10-28,TRUE,2023-11-29,25,Advertisement,Jo Dayley,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing - Contacted
+,2022-10-15,FALSE,2023-11-29,11,Purchased List,Kelila Ruscoe,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Converted
+,2022-11-08,FALSE,2023-11-29,11,Purchased List,Spacey,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-10-28,FALSE,2023-11-29,9,Employee Referral,Elsi Faircliffe,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+,2022-11-05,TRUE,2023-11-29,7,Other,Dorine Rowberry,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+,2022-10-25,FALSE,2023-11-29,,Other,Aviva Gornal,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Nurturing
+,2022-10-31,FALSE,2023-11-29,23,Advertisement,Channa Tamsett,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Nurturing - Contacted
+17500,2022-10-20,TRUE,2023-11-29,11,Trade Show,Ezra Guage,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Working
+11500,2022-10-22,FALSE,2023-11-29,6,Other,Toni Wainwright,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-11-04,FALSE,2023-11-29,25,Other,Kerry Grist,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-10-30,FALSE,2023-11-29,5,Employee Referral,Alanna Brede,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working  - Contacted
+13000,2022-10-21,FALSE,2023-11-29,11,Employee Referral,Marcellus Disman,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Nurturing
+40800,2022-11-09,TRUE,2023-11-29,15,Purchased List,Judon Raxworthy,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Converted
+,2022-11-01,FALSE,2023-11-29,8,Other,Ali,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,New
+47200,2022-10-17,FALSE,2023-11-29,6,Advertisement,Whit Bodicam,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Qualified
+11500,2022-10-27,FALSE,2023-11-29,15,Other,Winnie Cradey,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working
+,2022-11-10,TRUE,2023-11-29,10,Employee Referral,Edmon Robelet,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Nurturing - Contacted
+,2022-10-28,FALSE,2023-11-29,11,Other,Hodge Tottle,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+,2022-10-20,FALSE,2023-11-29,9,Advertisement,Sigismund Fort,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Nurturing - Contacted
+,2022-10-26,FALSE,2023-11-29,8,Employee Referral,Picasso,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Qualified
+,2022-11-08,TRUE,2023-11-29,7,Other,Gardie Atthowe,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Nurturing
+,2022-10-29,FALSE,2023-11-29,19,Purchased List,Vivienne Daddow,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+,2022-10-15,FALSE,2023-11-29,5,Trade Show,Madonna Ralls,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,New
+,2022-10-24,TRUE,2023-11-29,20,Other,Ilse Nezey,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Working  - Contacted
+,2022-11-07,FALSE,2023-11-29,23,Employee Referral,Bobine Orrobin,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working  - Contacted
+,2022-10-14,FALSE,2023-11-29,22,Other,Gwyneth Hardman,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+,2022-10-30,FALSE,2023-11-29,11,Employee Referral,Camile Knolles-Green,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Converted
+33000,2022-10-23,TRUE,2023-11-29,15,Advertisement,Cortie Andreoletti,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working
+27000,2022-10-19,FALSE,2023-11-29,11,Advertisement,Cordie Hattigan,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing
+20000,2022-11-02,FALSE,2023-11-29,12,Other,Naomi de Quincey,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Nurturing - Contacted
+32000,2022-11-04,FALSE,2023-11-29,19,Other,Perry,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Converted
+,2022-11-09,TRUE,2023-11-29,9,Purchased List,Madelon Krystek,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+24500,2022-10-28,FALSE,2023-11-29,11,Other,Darbie Duffett,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,New
+27000,2022-10-27,FALSE,2023-11-29,9,Employee Referral,Gris Brisker,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing - Contacted
+,2022-10-15,FALSE,2023-11-29,9,Advertisement,Avrom Arnold,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Working
+,2022-10-26,FALSE,2023-11-29,5,Employee Referral,Giacopo Stodd,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working  - Contacted
+,2022-10-19,TRUE,2023-11-29,23,Other,Gerek Holhouse,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Working  - Contacted
+,2022-10-28,FALSE,2023-11-29,14,Other,Darwin,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Converted
+,2022-11-10,FALSE,2023-11-29,12,Employee Referral,Berni Brantzen,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Converted
+,2022-11-06,TRUE,2023-11-29,15,Trade Show,Tressa Dunderdale,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Qualified
+,2022-11-03,FALSE,2023-11-29,15,Other,Millicent Bishop,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Nurturing
+,2022-10-23,FALSE,2023-11-29,11,Employee Referral,Kardashian,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Nurturing - Contacted
+,2022-11-08,FALSE,2023-11-29,14,Advertisement,Edie Fingleton,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Working
+13000,2022-10-17,TRUE,2023-11-29,9,Purchased List,Agnes Minichi,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working  - Contacted
+12800,2022-10-30,FALSE,2023-11-29,9,Employee Referral,Arnaldo Izaks,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Qualified
+,2022-10-15,FALSE,2023-11-29,15,Other,Fonz Kahler,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing
+,2022-10-26,FALSE,2023-11-29,22,Other,Connery,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,New
+36000,2022-10-26,FALSE,2023-11-29,,Other,Einstein,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working
+,2022-11-07,TRUE,2023-11-29,5,Employee Referral,Em Curnnok,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+68000,2022-11-10,FALSE,2023-11-29,17,Other,Sandi Prugel,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working  - Contacted
+,2022-11-03,FALSE,2023-11-29,5,Advertisement,Shayne Fairn,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Nurturing - Contacted
+,2022-10-18,FALSE,2023-11-29,5,Advertisement,Cindi Eby,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Converted
+,2022-11-02,TRUE,2023-11-29,16,Employee Referral,Aubry Hartil,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+,2022-10-26,FALSE,2023-11-29,,Purchased List,Hilton,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Converted
+,2022-11-10,FALSE,2023-11-29,15,Other,Caz Broster,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Converted
+,2022-10-24,FALSE,2023-11-29,12,Advertisement,Niki Grigorkin,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working
+10500,2022-10-16,TRUE,2023-11-29,10,Employee Referral,Candice Tregear,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,New
+,2022-11-03,FALSE,2023-11-29,22,Trade Show,Hitler,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+13000,2022-11-05,FALSE,2023-11-29,12,Other,Julianna Sergeant,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Nurturing
+,2022-10-25,FALSE,2023-11-29,7,Employee Referral,Jillana Niland,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Qualified
+37500,2022-11-03,TRUE,2023-11-29,25,Other,Fknnedy,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Working  - Contacted
+,2022-10-14,FALSE,2023-11-29,10,Other,Baillie Lowman,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-11-09,FALSE,2023-11-29,7,Purchased List,Nicholson,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-11-02,FALSE,2023-11-29,12,Advertisement,Penelope Beagles,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Nurturing - Contacted
+,2022-10-20,TRUE,2023-11-29,13,Employee Referral,Andrea Kingsnode,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,New
+,2022-10-27,FALSE,2023-11-29,9,Other,Ingunna McCauley,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing
+,2022-11-02,FALSE,2023-11-29,25,Other,Rosene Seiler,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Working  - Contacted
+,2022-10-21,TRUE,2023-11-29,8,Advertisement,Clywd Morales,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-11-05,FALSE,2023-11-29,14,Employee Referral,Ailene Ropert,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Working
+,2022-10-18,FALSE,2023-11-29,5,Other,Grethel Aries,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+46000,2022-11-04,FALSE,2023-11-29,17,Other,Pooh Bennit,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Converted
+,2022-10-24,TRUE,2023-11-29,17,Trade Show,Justus Berlin,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Working  - Contacted
+26000,2022-11-01,FALSE,2023-11-29,9,Advertisement,Troy Newns,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+,2022-11-04,FALSE,2023-11-29,19,Employee Referral,Hadria Mahaddie,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing - Contacted
+,2022-10-16,FALSE,2023-11-29,24,Employee Referral,Junina Howieson,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Converted
+18000,2022-10-23,FALSE,2023-11-29,12,Purchased List,Joanna Dhenin,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Nurturing
+24500,2022-11-03,TRUE,2023-11-29,10,Other,Brennan Waylett,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working
+,2022-11-08,FALSE,2023-11-29,13,Other,Renelle Roch,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Qualified
+,2022-10-14,FALSE,2023-11-29,18,Employee Referral,Mufi Cutford,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Converted
+,2022-10-21,FALSE,2023-11-29,5,Other,Karie Marple,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,New
+,2022-11-02,TRUE,2023-11-29,25,Advertisement,Meryl Klawi,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing
+,2022-11-09,FALSE,2023-11-29,7,Purchased List,Bernadene Hammerich,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working
+,2022-11-03,FALSE,2023-11-29,13,Other,Sonnie Outlaw,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Converted
+,2022-10-19,FALSE,2023-11-29,10,Advertisement,Olivier Ellerker,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing - Contacted
+,2022-11-05,TRUE,2023-11-29,14,Employee Referral,Henrik Landrick,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Working  - Contacted
+,2022-10-29,FALSE,2023-11-29,7,Other,Aleda Zanotti,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+,2022-10-16,FALSE,2023-11-29,,Other,Benedicto Drake,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Qualified
+,2022-10-24,TRUE,2023-11-29,15,Employee Referral,Dalli Izchaki,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,New
+,2022-11-09,FALSE,2023-11-29,,Trade Show,Leon,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Working  - Contacted
+,2022-10-24,FALSE,2023-11-29,10,Employee Referral,Easter Karpe,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing
+,2022-10-30,FALSE,2023-11-29,14,Advertisement,Goldberg,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working
+30000,2022-10-26,TRUE,2023-11-29,15,Purchased List,Aprilette Conville,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-11-08,FALSE,2023-11-29,21,Other,Henrieta Goolding,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Qualified
+,2022-11-01,FALSE,2023-11-29,7,Other,Yolanthe Carbett,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Nurturing - Contacted
+,2022-10-15,FALSE,2023-11-29,13,Other,Albrecht de'-Ancy Willis,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Converted
+,2022-11-10,FALSE,2023-11-29,10,Other,Lammond Semorad,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working  - Contacted
+62000,2022-10-18,TRUE,2023-11-29,25,Employee Referral,Minta Gauthorpp,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Working
+,2022-10-31,FALSE,2023-11-29,17,Employee Referral,Carolee Slafford,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working  - Contacted
+,2022-11-10,FALSE,2023-11-29,10,Advertisement,Fayth Agglione,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Qualified
+,2022-10-24,FALSE,2023-11-29,6,Other,Clemmy Cullingford,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Nurturing
+,2022-10-18,TRUE,2023-11-29,15,Other,Mario Kitchenside,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing - Contacted
+,2022-10-23,FALSE,2023-11-29,15,Advertisement,Edeline Casserly,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,New
+,2022-11-02,FALSE,2023-11-29,10,Employee Referral,Elizabeth,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-11-08,FALSE,2023-11-29,23,Purchased List,Bevvy Fifoot,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Qualified
+,2022-10-29,TRUE,2023-11-29,22,Other,Enrica Colafate,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Working  - Contacted
+,2022-10-15,FALSE,2023-11-29,10,Other,Lea Pester,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Nurturing
+,2022-11-09,FALSE,2023-11-29,19,Advertisement,Rodge Kytter,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-10-22,TRUE,2023-11-29,11,Employee Referral,Lee Stonall,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Working
+,2022-11-03,FALSE,2023-11-29,10,Employee Referral,Otis Geraldo,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Nurturing - Contacted
+,2022-10-26,FALSE,2023-11-29,13,Trade Show,Langston Idale,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-11-10,FALSE,2023-11-29,8,Other,Elladine Williams,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Qualified
+,2022-10-20,FALSE,2023-11-29,13,Purchased List,Faustina Ashall,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Working  - Contacted
+,2022-10-29,TRUE,2023-11-29,22,Employee Referral,Torie Josefovic,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Converted
+,2022-10-19,FALSE,2023-11-29,9,Other,Fabian Stadding,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Converted
+12500,2022-11-08,FALSE,2023-11-29,5,Other,Cointon Korejs,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,New
+,2022-10-27,FALSE,2023-11-29,20,Employee Referral,Norine Meriguet,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-10-25,TRUE,2023-11-29,15,Advertisement,Modesta Dyton,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Nurturing
+17500,2022-10-31,FALSE,2023-11-29,7,Other,Harris Luckes,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+69000,2022-10-18,FALSE,2023-11-29,9,Other,Candice Comerford,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working  - Contacted
+,2022-10-22,FALSE,2023-11-29,22,Employee Referral,Thatcher,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Working
+,2022-10-31,TRUE,2023-11-29,13,Advertisement,Jobs,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Converted
+,2022-11-10,FALSE,2023-11-29,11,Trade Show,Rudolph Carvil,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Converted
+,2022-10-17,FALSE,2023-11-29,9,Employee Referral,Hannah Klewi,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,New
+,2022-10-28,FALSE,2023-11-29,8,Purchased List,Marita Mackie,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-10-21,TRUE,2023-11-29,20,Advertisement,Far Hick,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Converted
+,2022-11-10,FALSE,2023-11-29,9,Other,Sabra Dobrowski,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Converted
+,2022-11-10,FALSE,2023-11-29,12,Employee Referral,Stavros Ruston,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Qualified
+38000,2022-11-02,FALSE,2023-11-29,12,Other,Kaitlynn Gair,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing
+,2022-11-06,TRUE,2023-11-29,16,Advertisement,Rachael Le Huquet,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working
+,2022-10-14,FALSE,2023-11-29,8,Other,Daveta Outibridge,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Converted
+,2022-10-22,FALSE,2023-11-29,12,Employee Referral,Idalina Heatly,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Nurturing - Contacted
+,2022-10-19,TRUE,2023-11-29,10,Other,Malissa Roussell,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Qualified
+45000,2022-10-21,FALSE,2023-11-29,14,Purchased List,Janice Petchell,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working  - Contacted
+,2022-10-30,FALSE,2023-11-29,11,Other,Doroteya Kenion,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working
+,2022-11-08,FALSE,2023-11-29,17,Other,Hamil Bathowe,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Converted
+,2022-10-27,TRUE,2023-11-29,6,Advertisement,Genvieve Trimme,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,New
+34000,2022-10-19,FALSE,2023-11-29,10,Employee Referral,Cordy Dyment,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Working  - Contacted
+86000,2022-11-09,FALSE,2023-11-29,10,Employee Referral,Linc Migheli,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Working
+,2022-10-29,FALSE,2023-11-29,10,Trade Show,Iorgos Cramphorn,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Converted
+,2022-10-31,FALSE,2023-11-29,10,Other,Joanie Cusack,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Qualified
+133000,2022-11-05,TRUE,2023-11-29,10,Other,Jojo Vaugham,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-10-14,FALSE,2023-11-29,18,Advertisement,Farley Ortmann,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Nurturing
+,2022-10-30,FALSE,2023-11-29,8,Other,Rabi Ollier,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Nurturing
+11000,2022-10-21,FALSE,2023-11-29,20,Purchased List,Betsey Jedrasik,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Qualified
+10000,2022-10-24,TRUE,2023-11-29,14,Other,vanGogh,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Converted
+,2022-11-10,FALSE,2023-11-29,22,Advertisement,Zebadiah Baffin,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Working  - Contacted
+,2022-10-14,FALSE,2023-11-29,7,Other,Spears,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-11-06,FALSE,2023-11-29,12,Employee Referral,Carlo Greeveson,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,New
+,2022-10-28,TRUE,2023-11-29,7,Employee Referral,Bose DK,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+30000,2022-10-22,FALSE,2023-11-29,6,Other,Brade Sillett,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Nurturing
+,2022-11-02,FALSE,2023-11-29,11,Employee Referral,Ingemar Wincer,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working  - Contacted
+,2022-10-23,FALSE,2023-11-29,17,Advertisement,Clari Gladdish,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+,2022-10-19,TRUE,2023-11-29,6,Purchased List,Otha Boswood,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Converted
+,2022-11-10,FALSE,2023-11-29,10,Employee Referral,Garvey McChruiter,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Working
+,2022-10-14,FALSE,2023-11-29,7,Other,Williams,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Working
+,2022-10-30,FALSE,2023-11-29,11,Trade Show,Isac Gamble,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Nurturing - Contacted
+,2022-10-26,TRUE,2023-11-29,11,Employee Referral,Jorge Zoellner,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+75000,2022-11-08,FALSE,2023-11-29,24,Advertisement,Law Tapton,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Working  - Contacted
+17500,2022-10-30,FALSE,2023-11-29,19,Other,Catha Randell,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,New
+147000,2022-10-19,TRUE,2023-11-29,12,Other,Howie Farlam,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Nurturing
+,2022-11-10,FALSE,2023-11-29,13,Other,Ciel Rowland,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing - Contacted
+,2022-11-02,FALSE,2023-11-29,11,Purchased List,Alana Norrey,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-10-23,FALSE,2023-11-29,9,Advertisement,Kirsti Charlo,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Converted
+,2022-10-18,TRUE,2023-11-29,6,Employee Referral,Gilemette Moston,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working
+,2022-11-10,FALSE,2023-11-29,5,Other,Creighton Willgoss,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Converted
+,2022-10-21,FALSE,2023-11-29,14,Other,Taylor,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Working  - Contacted
+,2022-11-05,FALSE,2023-11-29,6,Employee Referral,Shirline Cranney,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Converted
+,2022-10-22,TRUE,2023-11-29,8,Other,Abbe Roncelli,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,New
+,2022-10-18,FALSE,2023-11-29,6,Advertisement,Sheelagh Spinley,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing
+,2022-11-01,FALSE,2023-11-29,5,Employee Referral,Kelsey Pragnall,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Nurturing - Contacted
+,2022-10-31,FALSE,2023-11-29,12,Trade Show,Khalil Anniwell,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Qualified
+,2022-10-24,FALSE,2023-11-29,21,Other,Wyatan Podd,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Qualified
+,2022-11-07,TRUE,2023-11-29,6,Purchased List,Catharina Labdon,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working
+,2022-10-18,FALSE,2023-11-29,10,Advertisement,Dur Twigge,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+,2022-11-09,FALSE,2023-11-29,25,Employee Referral,Michaela Dulen,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Working  - Contacted
+,2022-10-31,TRUE,2023-11-29,5,Other,Mandela,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working  - Contacted
+,2022-10-24,FALSE,2023-11-29,18,Other,Gabrielle Hallan,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing - Contacted
+28000,2022-10-14,FALSE,2023-11-29,9,Employee Referral,Aubrey McGilmartin,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Converted
+150000,2022-11-02,FALSE,2023-11-29,8,Other,Fredelia Normant,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Qualified
+,2022-10-21,FALSE,2023-11-29,16,Employee Referral,Nathalia Bestwerthick,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing
+50000,2022-11-10,TRUE,2023-11-29,14,Other,Pennie Cookley,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Working
+,2022-11-03,FALSE,2023-11-29,9,Advertisement,Dylan Steutly,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,New
+10800,2022-10-19,FALSE,2023-11-29,17,Employee Referral,Maison Clutten,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Converted
+13000,2022-10-26,TRUE,2023-11-29,13,Other,Kristine Drewery,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Converted
+,2022-11-03,FALSE,2023-11-29,23,Other,Gaby Sandbach,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Nurturing
+,2022-11-07,FALSE,2023-11-29,5,Purchased List,Chlo Gergus,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Nurturing - Contacted
+83000,2022-11-04,FALSE,2023-11-29,6,Advertisement,Percival Dwyer,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Working  - Contacted
+87000,2022-10-20,TRUE,2023-11-29,7,Other,Ranna Feragh,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Working
+,2022-11-07,FALSE,2023-11-29,10,Employee Referral,Nanice Wyrill,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-10-28,FALSE,2023-11-29,12,Trade Show,Bianka Farmery,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+,2022-10-25,FALSE,2023-11-29,14,Employee Referral,Chase Palmer,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,New
+,2022-10-26,TRUE,2023-11-29,15,Purchased List,Lucien Skerratt,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Converted
+48000,2022-10-17,FALSE,2023-11-29,17,Advertisement,Tonye Enefer,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Qualified
+,2022-11-06,FALSE,2023-11-29,8,Other,Pat Coltart,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing - Contacted
+30400,2022-11-02,FALSE,2023-11-29,12,Other,Jackman,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working  - Contacted
+30000,2022-10-21,TRUE,2023-11-29,13,Employee Referral,Field Miskin,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working
+14500,2022-11-03,FALSE,2023-11-29,9,Advertisement,Jacobo Peers,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing
+,2022-11-06,FALSE,2023-11-29,12,Other,Livy Crowche,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Qualified
+,2022-10-20,FALSE,2023-11-29,8,Other,Armstrong,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing - Contacted
+,2022-10-18,TRUE,2023-11-29,25,Employee Referral,Jocelyn Badwick,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Working  - Contacted
+,2022-10-28,FALSE,2023-11-29,7,Other,Ferris Camidge,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Nurturing
+,2022-11-10,FALSE,2023-11-29,7,Purchased List,Cordy Wildbore,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Converted
+15500,2022-10-24,FALSE,2023-11-29,14,Employee Referral,Frasquito Meller,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Converted
+16000,2022-10-30,TRUE,2023-11-29,25,Advertisement,Cruise,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working
+,2022-11-09,FALSE,2023-11-29,15,Other,Vivyan Sheaf,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Working  - Contacted
+,2022-10-17,FALSE,2023-11-29,7,Employee Referral,Sibella Neeve,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Converted
+25000,2022-10-22,FALSE,2023-11-29,9,Trade Show,Kristy Rotherham,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Qualified
+,2022-11-08,TRUE,2023-11-29,25,Advertisement,Jannel Huie,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing - Contacted
+100000,2022-10-15,FALSE,2023-11-29,13,Other,LloydWright,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing
+,2022-10-31,FALSE,2023-11-29,15,Other,Daisey Purviss,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Converted
+,2022-10-25,FALSE,2023-11-29,12,Other,Denys Eburah,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Qualified
+,2022-10-24,FALSE,2023-11-29,13,Purchased List,Griff Beccles,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working  - Contacted
+15500,2022-10-28,TRUE,2023-11-29,9,Employee Referral,Orland MacCrosson,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Working
+47000,2022-10-14,FALSE,2023-11-29,5,Employee Referral,Kidman,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,New
+,2022-11-07,FALSE,2023-11-29,7,Advertisement,Donella Colvine,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,New
+,2022-11-08,TRUE,2023-11-29,8,Other,Shannon Diviney,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-10-31,FALSE,2023-11-29,6,Other,Patin Morrid,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+,2022-10-17,FALSE,2023-11-29,12,Other,Chrystal Thalmann,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Qualified
+,2022-10-31,FALSE,2023-11-29,16,Employee Referral,Lesli Mackison,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Working  - Contacted
+42000,2022-10-26,TRUE,2023-11-29,12,Advertisement,Cary Reijmers,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Working
+,2022-10-27,FALSE,2023-11-29,17,Trade Show,Blisse Shemilt,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Nurturing
+,2022-11-10,FALSE,2023-11-29,7,Purchased List,Ulrich Stinson,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-11-09,FALSE,2023-11-29,6,Other,Pearl Ivanov,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-10-19,TRUE,2023-11-29,5,Other,Rosanna Bewick,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Qualified
+78000,2022-10-26,FALSE,2023-11-29,6,Employee Referral,Winifred Yearnes,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Converted
+,2022-11-02,FALSE,2023-11-29,8,Advertisement,Legra Wiffler,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Working  - Contacted
+,2022-11-06,FALSE,2023-11-29,12,Employee Referral,Janeczka Woollett,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing
+30000,2022-10-25,TRUE,2023-11-29,7,Other,Doroteya Iglesia,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Nurturing - Contacted
+20000,2022-10-17,FALSE,2023-11-29,17,Other,Peyton MacDermand,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+129000,2022-10-31,FALSE,2023-11-29,13,Employee Referral,Corly Sawdon,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Qualified
+34000,2022-10-30,FALSE,2023-11-29,13,Employee Referral,Berky Prickett,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,New
+50000,2022-10-15,FALSE,2023-11-29,12,Purchased List,Lindbergh,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working
+,2022-10-21,TRUE,2023-11-29,13,Advertisement,Brooks Glassard,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working  - Contacted
+,2022-11-10,FALSE,2023-11-29,7,Other,Aldrich Ubsdell,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Converted
+,2022-11-06,FALSE,2023-11-29,10,Employee Referral,Anatola Apthorpe,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-10-15,TRUE,2023-11-29,12,Other,Rourke De Clairmont,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Nurturing
+,2022-11-03,FALSE,2023-11-29,7,Other,Vernon Chatband,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing - Contacted
+,2022-11-04,FALSE,2023-11-29,15,Advertisement,Pincas Beauchop,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Working
+,2022-10-21,FALSE,2023-11-29,16,Other,Putin,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Qualified
+,2022-10-22,FALSE,2023-11-29,15,Employee Referral,Twyla Sheirlaw,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+14500,2022-10-30,TRUE,2023-11-29,11,Other,Jo ann Schimoni,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,New
+80000,2022-11-01,FALSE,2023-11-29,7,Purchased List,Sherwood Kloser,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working  - Contacted
+,2022-10-19,FALSE,2023-11-29,5,Trade Show,Adam Richman (Sample),Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Nurturing - Contacted
+,2022-10-25,TRUE,2023-11-29,,Other,Mimi Redolfi,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Converted
+,2022-10-18,FALSE,2023-11-29,11,Employee Referral,Shena Bard,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Qualified
+142000,2022-11-09,FALSE,2023-11-29,12,Employee Referral,Garvey Philipson,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing
+,2022-11-01,FALSE,2023-11-29,25,Advertisement,Halie Southerell,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working
+,2022-10-25,FALSE,2023-11-29,5,Advertisement,Brynn Tillot,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-11-05,TRUE,2023-11-29,10,Other,Barthel Serot,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+14500,2022-11-05,FALSE,2023-11-29,8,Employee Referral,Kerby Riccard,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,New
+,2022-10-30,FALSE,2023-11-29,15,Other,Stanton Dye,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing
+,2022-10-14,TRUE,2023-11-29,,Trade Show,Erroll Surpliss,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Working  - Contacted
+,2022-11-08,FALSE,2023-11-29,21,Other,Pansie Batrick,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Nurturing - Contacted
+,2022-10-21,FALSE,2023-11-29,10,Purchased List,Danny Ford,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+14500,2022-10-14,FALSE,2023-11-29,9,Other,Lillis Wathell,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Working
+,2022-10-26,FALSE,2023-11-29,7,Employee Referral,Harlie Carden,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Working  - Contacted
+,2022-11-07,TRUE,2023-11-29,22,Other,Gates,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Converted
+,2022-11-03,FALSE,2023-11-29,6,Advertisement,Sosanna Franzel,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing - Contacted
+,2022-10-14,FALSE,2023-11-29,14,Other,Brendon Philips,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+81000,2022-10-22,TRUE,2023-11-29,19,Employee Referral,Fern Glowach,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Nurturing
+,2022-11-01,FALSE,2023-11-29,13,Employee Referral,Cornelius Arondel,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,New
+,2022-10-29,FALSE,2023-11-29,20,Advertisement,Jervis Theze,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+50000,2022-11-08,FALSE,2023-11-29,,Other,Halie Meech,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Working  - Contacted
+,2022-10-23,TRUE,2023-11-29,21,Purchased List,Tanney Eyer,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Qualified
+,2022-10-17,FALSE,2023-11-29,14,Employee Referral,Huntlee Vurley,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Working
+,2022-11-07,FALSE,2023-11-29,10,Advertisement,Desiree Domino,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-10-29,FALSE,2023-11-29,5,Other,Mason Decort,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Converted
+,2022-11-09,TRUE,2023-11-29,8,Other,Virginie Bembrigg,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working  - Contacted
+,2022-10-29,FALSE,2023-11-29,13,Employee Referral,Jami Pallant,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Nurturing - Contacted
+,2022-10-14,FALSE,2023-11-29,7,Advertisement,Meara MacGuffog,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+95000,2022-10-23,FALSE,2023-11-29,16,Other,Osbert Rabier,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working
+,2022-10-21,FALSE,2023-11-29,21,Purchased List,Rory Kahler,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Converted
+,2022-11-04,TRUE,2023-11-29,8,Other,Sherwood Toomer,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Qualified
+,2022-10-17,FALSE,2023-11-29,6,Trade Show,Nicko Keilloh,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing
+,2022-10-30,FALSE,2023-11-29,,Other,Corrie Kivits,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,New
+53000,2022-11-09,FALSE,2023-11-29,5,Employee Referral,Fredra Petracek,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Nurturing - Contacted
+,2022-10-20,TRUE,2023-11-29,5,Advertisement,Shawnee Najara,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-10-27,FALSE,2023-11-29,7,Other,Laetitia Gorick,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Qualified
+,2022-10-31,FALSE,2023-11-29,6,Employee Referral,Raviv English,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Working
+,2022-10-25,FALSE,2023-11-29,19,Other,Genna Lepard,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Converted
+,2022-10-28,TRUE,2023-11-29,11,Employee Referral,Langston Andriessen,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing
+,2022-11-08,FALSE,2023-11-29,23,Purchased List,Galina Johl,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-11-04,FALSE,2023-11-29,11,Other,Ermin Munford,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Qualified
+,2022-10-28,TRUE,2023-11-29,9,Employee Referral,Hube Goble,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Converted
+,2022-10-25,FALSE,2023-11-29,14,Trade Show,Theda Gouny,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Working  - Contacted
+,2022-10-19,FALSE,2023-11-29,6,Advertisement,Dot Rutter,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing
+,2022-11-05,FALSE,2023-11-29,,Advertisement,Lothario Thomton,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working
+11000,2022-10-15,FALSE,2023-11-29,21,Other,Aurlie Muxworthy,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,New
+59800,2022-10-27,TRUE,2023-11-29,5,Other,Kassie Dade,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Nurturing - Contacted
+27000,2022-11-01,FALSE,2023-11-29,24,Other,Abraham Johnson,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+54600,2022-10-17,FALSE,2023-11-29,25,Employee Referral,Chuck Bratton,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Working  - Contacted
+,2022-11-05,TRUE,2023-11-29,6,Employee Referral,Judye Ramirez,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+7200,2022-10-25,FALSE,2023-11-29,10,Purchased List,Domenic Trewman,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working  - Contacted
+78000,2022-10-31,FALSE,2023-11-29,5,Advertisement,Elmer Burbank,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Nurturing
+29000,2022-10-17,FALSE,2023-11-29,16,Employee Referral,Astaire,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working
+,2022-10-30,FALSE,2023-11-29,14,Other,Lock Neate,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Converted
+,2022-10-23,TRUE,2023-11-29,6,Other,Arin Oleszcuk,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Qualified
+,2022-11-05,FALSE,2023-11-29,14,Advertisement,Neil Symonds,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+,2022-10-29,FALSE,2023-11-29,14,Other,Timmie Emmet,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working  - Contacted
+,2022-10-15,FALSE,2023-11-29,13,Employee Referral,Pierrette Van den Oord,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Nurturing - Contacted
+,2022-11-08,TRUE,2023-11-29,6,Other,Neala Hawke,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Converted
+,2022-10-25,FALSE,2023-11-29,15,Employee Referral,Shannan Colleer,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working
+,2022-11-07,FALSE,2023-11-29,8,Trade Show,Ashley Hunting,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,New
+,2022-10-27,TRUE,2023-11-29,17,Advertisement,Madison Dancey,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-11-02,FALSE,2023-11-29,20,Other,Washington,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-11-04,FALSE,2023-11-29,14,Purchased List,Buffett,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing
+,2022-10-31,FALSE,2023-11-29,,Employee Referral,Conroy Blondel,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,New
+,2022-10-14,FALSE,2023-11-29,15,Other,Charissa Minchell,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working  - Contacted
+,2022-10-15,TRUE,2023-11-29,8,Other,George Batters,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Converted
+,2022-10-23,FALSE,2023-11-29,22,Employee Referral,Newton,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Nurturing - Contacted
+,2022-10-28,FALSE,2023-11-29,,Advertisement,Crista Ganders,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Working
+,2022-10-21,FALSE,2023-11-29,14,Purchased List,Brunhilda Britee,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working  - Contacted
+,2022-10-15,TRUE,2023-11-29,21,Employee Referral,Heath Overell,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Nurturing
+,2022-11-05,FALSE,2023-11-29,14,Other,Giustino Beseke,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Qualified
+31000,2022-10-30,FALSE,2023-11-29,6,Advertisement,Denny Benditt,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+11500,2022-10-25,TRUE,2023-11-29,20,Other,Galven Duggon,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Converted
+,2022-11-07,FALSE,2023-11-29,15,Other,Jacklin Guynemer,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Qualified
+,2022-10-28,FALSE,2023-11-29,10,Trade Show,Jessie Northway,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,New
+,2022-10-15,FALSE,2023-11-29,21,Employee Referral,Zechariah Torri,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working  - Contacted
+,2022-11-08,TRUE,2023-11-29,12,Other,Norina Bartoli,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing
+55000,2022-10-26,FALSE,2023-11-29,,Employee Referral,Sherri Westell,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Qualified
+,2022-11-02,FALSE,2023-11-29,5,Advertisement,Daisi McVitie,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing - Contacted
+,2022-11-04,FALSE,2023-11-29,14,Purchased List,Augusta Coffin,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Working
+,2022-10-17,TRUE,2023-11-29,5,Other,Emilia Kenny,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Qualified
+,2022-10-24,FALSE,2023-11-29,9,Other,Urson Giral,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-11-06,FALSE,2023-11-29,7,Employee Referral,Jessi Woolford,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-11-01,FALSE,2023-11-29,7,Advertisement,Madalyn Polgreen,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Working  - Contacted
+,2022-10-16,TRUE,2023-11-29,17,Employee Referral,Gayelord Battin,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Working
+15000,2022-10-23,FALSE,2023-11-29,5,Other,Jacky Prati,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing
+125000,2022-11-02,FALSE,2023-11-29,25,Other,Thoma Di Domenico,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+17500,2022-11-04,FALSE,2023-11-29,5,Other,Tobit Godber,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Qualified
+,2022-10-22,FALSE,2023-11-29,9,Advertisement,Madeleine Sellner,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-10-19,TRUE,2023-11-29,11,Other,Gaynor McCrory,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Working  - Contacted
+,2022-10-30,FALSE,2023-11-29,10,Trade Show,Archibaldo McInnerny,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-11-07,FALSE,2023-11-29,22,Purchased List,Ambrose Dabell,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,New
+63800,2022-10-27,FALSE,2023-11-29,23,Employee Referral,Dede Connors,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Working
+,2022-10-18,TRUE,2023-11-29,5,Employee Referral,Welles,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Nurturing
+77700,2022-10-29,FALSE,2023-11-29,9,Other,Carly Affleck,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Qualified
+,2022-11-08,FALSE,2023-11-29,6,Advertisement,Darlene Deards,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Working  - Contacted
+37000,2022-11-05,TRUE,2023-11-29,6,Other,Isabelle Dmitrichenko,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing - Contacted
+,2022-10-21,FALSE,2023-11-29,6,Other,Anderson,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Converted
+,2022-10-17,FALSE,2023-11-29,9,Employee Referral,Andros Hanford,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,New
+,2022-10-29,FALSE,2023-11-29,19,Other,Starla Sissel,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Working
+,2022-10-23,FALSE,2023-11-29,14,Advertisement,Rahal Ericsson,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Qualified
+,2022-11-10,TRUE,2023-11-29,18,Purchased List,Raye Marriner,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Converted
+,2022-10-15,FALSE,2023-11-29,24,Other,Beckham,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing
+,2022-11-06,FALSE,2023-11-29,10,Employee Referral,Milicent Sandeman,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working  - Contacted
+15500,2022-10-22,TRUE,2023-11-29,20,Employee Referral,Erina Desouza,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+,2022-11-01,FALSE,2023-11-29,17,Advertisement,Ardra Docharty,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Qualified
+35000,2022-10-16,FALSE,2023-11-29,24,Other,Olenka Pasfield,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+15000,2022-11-02,FALSE,2023-11-29,13,Trade Show,Presley,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Nurturing - Contacted
+,2022-11-09,FALSE,2023-11-29,8,Employee Referral,Tedmund McBryde,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Working
+,2022-10-28,TRUE,2023-11-29,16,Purchased List,Valentino Saward,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Converted
+,2022-10-20,FALSE,2023-11-29,10,Other,Menard Biddy,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,New
+,2022-11-04,FALSE,2023-11-29,8,Advertisement,Danita Hubbart,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Nurturing - Contacted
+,2022-10-26,TRUE,2023-11-29,18,Other,Drucill Leinster,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing
+22000,2022-11-01,FALSE,2023-11-29,14,Other,Aurea Rottery,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Working  - Contacted
+,2022-10-21,FALSE,2023-11-29,13,Employee Referral,Jessie Constant,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+,2022-11-10,FALSE,2023-11-29,14,Employee Referral,Karlen Fairbrace,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Converted
+,2022-10-15,TRUE,2023-11-29,7,Advertisement,Lev Hellewell,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Converted
+,2022-10-29,FALSE,2023-11-29,5,Other,Jorge Sizey,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working  - Contacted
+79000,2022-10-21,FALSE,2023-11-29,9,Purchased List,Suess,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working
+,2022-11-10,FALSE,2023-11-29,7,Other,Doe Scraggs,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+,2022-10-25,TRUE,2023-11-29,6,Employee Referral,Caitlin Marder,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Converted
+53300,2022-10-20,FALSE,2023-11-29,7,Other,Dagny Mor,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing - Contacted
+,2022-10-31,FALSE,2023-11-29,7,Employee Referral,Jobye Grunnill,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing
+,2022-11-07,FALSE,2023-11-29,15,Advertisement,Lemuel Goulder,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Qualified
+,2022-10-29,TRUE,2023-11-29,10,Other,Pippo Bosche,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-10-24,FALSE,2023-11-29,14,Trade Show,Jeane Duignan,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working  - Contacted
+,2022-10-18,FALSE,2023-11-29,5,Other,Gelya Sharphurst,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Working
+30000,2022-11-05,FALSE,2023-11-29,15,Employee Referral,Lennon,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Nurturing
+,2022-10-14,TRUE,2023-11-29,14,Purchased List,Joseito Zanetti,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Qualified
+,2022-10-29,FALSE,2023-11-29,6,Other,Genia Tubritt,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,New
+,2022-10-25,FALSE,2023-11-29,11,Other,Garnet Perl,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing - Contacted
+46000,2022-11-10,FALSE,2023-11-29,15,Advertisement,Dania Lycett,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,New
+,2022-11-02,TRUE,2023-11-29,5,Other,Hitchcock,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Qualified
+,2022-10-16,FALSE,2023-11-29,11,Advertisement,Myrna Beckensall,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Working  - Contacted
+,2022-11-06,FALSE,2023-11-29,23,Employee Referral,Carolyne Liebrecht,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-10-30,FALSE,2023-11-29,15,Other,Marcelo Clendening,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Converted
+,2022-10-26,TRUE,2023-11-29,7,Employee Referral,Joly Guppy,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-10-25,FALSE,2023-11-29,10,Other,Perice Bellino,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Nurturing
+,2022-10-16,FALSE,2023-11-29,7,Employee Referral,Sibella Trevethan,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Working  - Contacted
+28000,2022-11-09,FALSE,2023-11-29,17,Advertisement,Raddie Gouldthorp,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Qualified
+,2022-10-22,TRUE,2023-11-29,22,Other,Louise Armell,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Converted
+,2022-11-07,FALSE,2023-11-29,15,Employee Referral,Ruthie Marvell,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Nurturing - Contacted
+,2022-10-16,FALSE,2023-11-29,12,Trade Show,Sonya Swadling,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-10-28,FALSE,2023-11-29,17,Other,Meier Drought,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Working
+,2022-11-03,FALSE,2023-11-29,16,Purchased List,Monroe,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Working
+141000,2022-10-27,TRUE,2023-11-29,9,Employee Referral,Shelton Gresswell,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Working  - Contacted
+12000,2022-10-20,FALSE,2023-11-29,12,Other,Chaddie Bwye,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Qualified
+,2022-11-01,FALSE,2023-11-29,20,Other,Twain,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing
+,2022-11-05,FALSE,2023-11-29,25,Advertisement,Streep,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Nurturing - Contacted
+,2022-11-07,TRUE,2023-11-29,6,Employee Referral,Clinton,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working
+,2022-10-25,FALSE,2023-11-29,14,Advertisement,George Parker,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,New
+,2022-11-02,FALSE,2023-11-29,8,Other,Reynolds Hodgon,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-10-19,FALSE,2023-11-29,5,Purchased List,Darrelle Goad,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Working  - Contacted
+,2022-11-06,TRUE,2023-11-29,21,Employee Referral,Andrej Janning,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing
+16500,2022-10-24,FALSE,2023-11-29,14,Other,Salomo Keaveney,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Converted
+47000,2022-10-31,FALSE,2023-11-29,12,Other,Haily Elt,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-11-05,TRUE,2023-11-29,6,Trade Show,Liuka Pickburn,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Nurturing - Contacted
+18500,2022-10-18,FALSE,2023-11-29,11,Employee Referral,Jarad Uccello,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Working
+33000,2022-10-26,FALSE,2023-11-29,12,Advertisement,Burty Franzewitch,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,New
+75000,2022-11-02,FALSE,2023-11-29,10,Other,Harley Werrit,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Converted
+,2022-10-14,FALSE,2023-11-29,23,Other,Caty Lindgren,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Qualified
+31000,2022-11-07,TRUE,2023-11-29,13,Purchased List,Godiva Arkil,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+,2022-10-21,FALSE,2023-11-29,10,Advertisement,Cowell,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Nurturing
+,2022-11-02,FALSE,2023-11-29,13,Employee Referral,Lamar Tingle,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Working  - Contacted
+81300,2022-11-06,TRUE,2023-11-29,12,Other,Shir Carneck,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Nurturing - Contacted
+,2022-10-20,FALSE,2023-11-29,11,Other,Emmy Mc Elory,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working
+,2022-11-03,FALSE,2023-11-29,9,Employee Referral,Cecilia Adshad,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Qualified
+,2022-11-10,FALSE,2023-11-29,11,Employee Referral,Phaedra Childers,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+69300,2022-10-25,TRUE,2023-11-29,5,Other,Caresa Sheere,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,New
+,2022-10-18,FALSE,2023-11-29,12,Advertisement,Derby Neesam,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-10-25,FALSE,2023-11-29,19,Purchased List,Farrell Maldin,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Nurturing
+,2022-11-09,FALSE,2023-11-29,9,Other,Brynn Mattiazzo,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Converted
+65900,2022-10-28,FALSE,2023-11-29,8,Trade Show,Ag Borkin,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Working  - Contacted
+,2022-10-31,TRUE,2023-11-29,7,Employee Referral,Gabriele Bemand,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Nurturing - Contacted
+,2022-10-16,FALSE,2023-11-29,6,Employee Referral,Dierdre Haggart,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working  - Contacted
+73500,2022-11-10,FALSE,2023-11-29,25,Advertisement,Ethelin Pifford,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+,2022-10-24,TRUE,2023-11-29,17,Other,Harmon Huetson,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Converted
+,2022-10-21,FALSE,2023-11-29,15,Other,West,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Converted
+,2022-11-02,FALSE,2023-11-29,6,Purchased List,Jenda Pordal,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,New
+30000,2022-11-06,FALSE,2023-11-29,5,Other,Noam Ricart,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working
+,2022-10-26,FALSE,2023-11-29,19,Advertisement,Simpson,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Nurturing
+14500,2022-10-18,TRUE,2023-11-29,6,Other,Carola Kynd,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-10-15,FALSE,2023-11-29,7,Employee Referral,Demetre Tivenan,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working
+,2022-10-29,FALSE,2023-11-29,11,Other,Marianna Tume,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Qualified
+,2022-11-07,TRUE,2023-11-29,19,Advertisement,Aldus Bourdice,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Working  - Contacted
+,2022-10-31,FALSE,2023-11-29,21,Employee Referral,Carola Lampke,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+,2022-10-27,FALSE,2023-11-29,11,Other,Gustav Cranmere,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Nurturing - Contacted
+,2022-10-17,FALSE,2023-11-29,13,Purchased List,Traci Gellately,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing
+44000,2022-10-24,TRUE,2023-11-29,8,Other,Milo Scobbie,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-10-29,FALSE,2023-11-29,20,Trade Show,Darcee Fayer,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+,2022-11-08,FALSE,2023-11-29,9,Advertisement,Magnum Hammell,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working
+,2022-10-20,FALSE,2023-11-29,20,Other,Kelly Autie,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Working  - Contacted
+,2022-11-06,TRUE,2023-11-29,12,Employee Referral,Alayne Antoniewicz,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Qualified
+,2022-10-25,FALSE,2023-11-29,5,Employee Referral,Raffaello Dunning,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Converted
+,2022-11-09,FALSE,2023-11-29,19,Other,Bing Flores,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Converted
+105000,2022-11-02,FALSE,2023-11-29,7,Employee Referral,Tracy Guilaem,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working  - Contacted
+33000,2022-10-14,FALSE,2023-11-29,9,Employee Referral,Nonie Lamerton,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,New
+15500,2022-11-01,TRUE,2023-11-29,6,Purchased List,Carrey,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Nurturing - Contacted
+,2022-10-22,FALSE,2023-11-29,14,Other,Clea Cerro,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Qualified
+33000,2022-11-10,FALSE,2023-11-29,10,Advertisement,Web Casement,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Working
+80000,2022-11-03,FALSE,2023-11-29,9,Other,Nicolis Varnam,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Nurturing
+,2022-10-18,TRUE,2023-11-29,11,Employee Referral,Hadrian Selcraig,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-11-05,FALSE,2023-11-29,10,Advertisement,Viviana Danilovitch,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,New
+,2022-10-21,FALSE,2023-11-29,9,Other,Saloma Juschka,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Converted
+,2022-10-29,TRUE,2023-11-29,6,Employee Referral,Olly Woonton,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Nurturing - Contacted
+,2022-11-05,FALSE,2023-11-29,23,Other,Lincoln,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing
+,2022-10-21,FALSE,2023-11-29,8,Other,Cecile Szepe,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Converted
+,2022-10-30,FALSE,2023-11-29,21,Trade Show,Jedidiah Crow,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Working  - Contacted
+57000,2022-10-26,FALSE,2023-11-29,13,Employee Referral,Lucretia Flaunders,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Working
+,2022-11-07,TRUE,2023-11-29,14,Purchased List,Rebbecca Chmarny,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Qualified
+,2022-10-16,FALSE,2023-11-29,14,Advertisement,Putnam Le Noir,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+46000,2022-10-20,FALSE,2023-11-29,17,Employee Referral,Nevile Greengrass,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Qualified
+,2022-10-29,FALSE,2023-11-29,12,Advertisement,Heffner,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,New
+,2022-11-04,TRUE,2023-11-29,24,Other,Karalynn Guisot,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Nurturing
+99000,2022-10-23,FALSE,2023-11-29,6,Other,Lexy Towns,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Converted
+,2022-10-18,FALSE,2023-11-29,6,Other,Whitman Ryson,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working  - Contacted
+22500,2022-11-08,FALSE,2023-11-29,6,Other,Lesli Slides,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Working  - Contacted
+,2022-10-29,TRUE,2023-11-29,7,Employee Referral,Thorvald Bevis,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+55000,2022-10-25,FALSE,2023-11-29,6,Purchased List,Andrea Bedell,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Nurturing - Contacted
+,2022-10-20,FALSE,2023-11-29,18,Advertisement,Pennie Sollas,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Working
+,2022-10-21,FALSE,2023-11-29,9,Employee Referral,Fax Fairlamb,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Converted
+,2022-10-30,TRUE,2023-11-29,13,Other,Agnes Byrcher,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Qualified
+,2022-11-08,FALSE,2023-11-29,23,Employee Referral,John Steele (Sample),G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing
+,2022-10-14,FALSE,2023-11-29,18,Other,Woodie Camelin,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working
+52000,2022-10-27,TRUE,2023-11-29,11,Advertisement,Depp,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Nurturing - Contacted
+,2022-10-29,FALSE,2023-11-29,21,Trade Show,Alyssa Bransden,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Working  - Contacted
+,2022-11-04,FALSE,2023-11-29,24,Other,Clevie Goodfield,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Qualified
+,2022-11-02,FALSE,2023-11-29,15,Employee Referral,Eldin Dyke,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,New
+,2022-10-15,TRUE,2023-11-29,9,Purchased List,Cirillo Hearle,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Converted
+,2022-10-24,FALSE,2023-11-29,6,Other,Obadiah Crust,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-10-30,FALSE,2023-11-29,8,Employee Referral,Ignace Carwithim,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Working  - Contacted
+30000,2022-11-04,FALSE,2023-11-29,5,Other,Pippo Friedlos,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing
+,2022-11-05,FALSE,2023-11-29,22,Other,Lila Rzehor,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Converted
+,2022-10-15,TRUE,2023-11-29,24,Employee Referral,Chrisse McKeaney,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+,2022-11-02,FALSE,2023-11-29,13,Advertisement,Dulcie Gourdon,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Working
+,2022-11-09,FALSE,2023-11-29,11,Advertisement,Kiley Leathe,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-10-26,TRUE,2023-11-29,10,Other,Fara Cotelard,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+46000,2022-10-21,FALSE,2023-11-29,8,Other,Spencer Shimwall,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Working  - Contacted
+,2022-11-03,FALSE,2023-11-29,15,Purchased List,Gussy Ronisch,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Nurturing
+27000,2022-11-04,FALSE,2023-11-29,15,Employee Referral,Ernie Blacklidge,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+12500,2022-10-19,TRUE,2023-11-29,23,Trade Show,Frederic Antal,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+,2022-10-23,FALSE,2023-11-29,,Employee Referral,Fred Jahnisch,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing - Contacted
+,2022-10-19,FALSE,2023-11-29,10,Other,Sarah Loehr (Sample),Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Converted
+,2022-10-31,FALSE,2023-11-29,9,Other,Jennifer Wall,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,New
+,2022-11-07,TRUE,2023-11-29,16,Advertisement,Mohandis Fawdrey,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working
+87800,2022-10-25,FALSE,2023-11-29,13,Other,Iggie Reedshaw,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-11-02,FALSE,2023-11-29,8,Advertisement,Norris Philipard,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing - Contacted
+48000,2022-11-05,FALSE,2023-11-29,13,Other,Demetri Knowlys,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,New
+,2022-10-25,TRUE,2023-11-29,9,Purchased List,West,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Working  - Contacted
+50000,2022-10-30,FALSE,2023-11-29,12,Other,Eilis Myerscough,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-10-19,FALSE,2023-11-29,13,Employee Referral,Carolus Aleksich,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+,2022-11-05,FALSE,2023-11-29,12,Employee Referral,Kristofor Straine,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+,2022-10-19,FALSE,2023-11-29,5,Advertisement,Darby Bartali,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Nurturing
+,2022-10-31,TRUE,2023-11-29,5,Employee Referral,Hugibert Hainsworth,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working
+,2022-11-08,FALSE,2023-11-29,15,Other,DaVinci,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing - Contacted
+,2022-10-24,FALSE,2023-11-29,7,Employee Referral,Janet Shelton,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working  - Contacted
+,2022-10-24,TRUE,2023-11-29,10,Trade Show,Bieber,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Converted
+,2022-11-03,FALSE,2023-11-29,9,Advertisement,Jewel Miliffe,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Converted
+,2022-11-05,FALSE,2023-11-29,8,Purchased List,Tuesday Sillick,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,New
+,2022-10-16,FALSE,2023-11-29,10,Employee Referral,Niall Ales,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing
+,2022-10-22,TRUE,2023-11-29,14,Other,Hildegaard Chappelle,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Working  - Contacted
+,2022-11-03,FALSE,2023-11-29,,Other,Roberts,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+,2022-10-17,FALSE,2023-11-29,12,Other,Artemus Skea,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Working
+,2022-11-06,FALSE,2023-11-29,6,Other,Alexine Ford,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-10-15,TRUE,2023-11-29,23,Employee Referral,Mindy Mariot,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Qualified
+106000,2022-11-01,FALSE,2023-11-29,11,Advertisement,Staford Bagnal,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Working
+,2022-10-22,FALSE,2023-11-29,6,Other,Blithe Lavielle,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing
+,2022-11-05,FALSE,2023-11-29,19,Purchased List,Mouse,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working  - Contacted
+,2022-10-18,TRUE,2023-11-29,13,Employee Referral,Alexi McGaugie,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing - Contacted
+,2022-11-05,FALSE,2023-11-29,22,Advertisement,Zsazsa Hempel,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+,2022-10-21,FALSE,2023-11-29,25,Trade Show,Daisi Schirok,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,New
+,2022-10-28,FALSE,2023-11-29,5,Employee Referral,Ford,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Converted
+,2022-10-22,TRUE,2023-11-29,22,Other,Mireielle Rolston,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-10-17,FALSE,2023-11-29,10,Other,Gretchen Kevlin,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Working  - Contacted
+,2022-10-28,FALSE,2023-11-29,5,Advertisement,Symon Hamnett,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Converted
+,2022-11-06,FALSE,2023-11-29,5,Employee Referral,Lorine Collinson,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working
+,2022-11-02,TRUE,2023-11-29,12,Other,Alasdair Arthars,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Nurturing - Contacted
+,2022-11-05,FALSE,2023-11-29,17,Other,Adriena Caselli,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Qualified
+,2022-10-26,FALSE,2023-11-29,9,Purchased List,Letterman,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Nurturing
+,2022-10-15,FALSE,2023-11-29,8,Other,Timberlake,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Converted
+,2022-10-23,FALSE,2023-11-29,20,Employee Referral,Aimee Shearer,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working  - Contacted
+136000,2022-10-31,TRUE,2023-11-29,13,Other,Jamison McCrillis,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Nurturing
+,2022-10-15,FALSE,2023-11-29,8,Advertisement,Terry Cuttelar,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Qualified
+,2022-11-02,FALSE,2023-11-29,22,Other,Ruthie Bilham,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working
+24500,2022-11-07,TRUE,2023-11-29,13,Employee Referral,Minogue,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Converted
+,2022-10-24,FALSE,2023-11-29,25,Other,Dale Spurdle,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,New
+33000,2022-11-06,FALSE,2023-11-29,5,Advertisement,Rhodie Eggar,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Qualified
+100000,2022-10-18,FALSE,2023-11-29,21,Trade Show,Albertina Gosforth,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+137000,2022-11-05,FALSE,2023-11-29,,Employee Referral,Matthiew Cathenod,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing - Contacted
+,2022-10-24,TRUE,2023-11-29,,Employee Referral,Isabel Pelosi,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working  - Contacted
+,2022-10-29,FALSE,2023-11-29,12,Other,Jordain Labb,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing
+,2022-11-02,FALSE,2023-11-29,15,Advertisement,Jerrold Siely,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Converted
+,2022-11-10,FALSE,2023-11-29,9,Other,Dino Bursnoll,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,New
+,2022-10-21,TRUE,2023-11-29,9,Employee Referral,Jeanne Crack,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Qualified
+,2022-10-16,FALSE,2023-11-29,15,Purchased List,Willy Duffell,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing - Contacted
+,2022-11-03,FALSE,2023-11-29,10,Other,Federer,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Converted
+,2022-10-19,FALSE,2023-11-29,9,Other,Janessa Watkiss,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Working
+,2022-10-23,TRUE,2023-11-29,5,Purchased List,Diana,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working  - Contacted
+79000,2022-11-07,FALSE,2023-11-29,22,Employee Referral,Carroll,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-11-08,FALSE,2023-11-29,19,Advertisement,Rubin Tanguy,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Nurturing
+69100,2022-10-24,TRUE,2023-11-29,12,Other,Cele Dyka,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Qualified
+,2022-10-30,FALSE,2023-11-29,9,Employee Referral,Wilhelmine Mattisson,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Working  - Contacted
+,2022-11-03,FALSE,2023-11-29,7,Other,Giralda Sickling,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working
+,2022-11-07,FALSE,2023-11-29,9,Advertisement,Monroe Duffield,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-10-20,FALSE,2023-11-29,24,Employee Referral,Janka Cisar,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,New
+,2022-10-14,TRUE,2023-11-29,5,Trade Show,Carly Cruikshanks,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing - Contacted
+31000,2022-11-06,FALSE,2023-11-29,16,Other,Alina Hartup,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Qualified
+,2022-10-22,FALSE,2023-11-29,5,Other,Emelda Ondrich,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-11-01,TRUE,2023-11-29,23,Employee Referral,Tamiko Pearcehouse,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Nurturing - Contacted
+,2022-10-19,FALSE,2023-11-29,15,Advertisement,Min Mussared,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing
+,2022-11-06,FALSE,2023-11-29,10,Purchased List,Meade Pitson,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working  - Contacted
+,2022-10-26,FALSE,2023-11-29,15,Employee Referral,Lem Emmison,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Qualified
+,2022-11-01,TRUE,2023-11-29,23,Other,Dun Damiata,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Working
+,2022-10-27,FALSE,2023-11-29,24,Other,Muffin Rosenshine,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Working
+,2022-10-18,FALSE,2023-11-29,7,Advertisement,Dickens,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-10-30,FALSE,2023-11-29,14,Employee Referral,Daniel Palke,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing - Contacted
+,2022-11-04,TRUE,2023-11-29,15,Other,Catharina Beale,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Nurturing
+,2022-10-24,FALSE,2023-11-29,23,Purchased List,Tallou Larvin,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Converted
+,2022-10-19,FALSE,2023-11-29,14,Other,Shay Eason,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+31000,2022-11-08,FALSE,2023-11-29,9,Advertisement,Yettie Mulvin,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,New
+26000,2022-10-31,FALSE,2023-11-29,11,Other,Ginevra Fraczek,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-11-09,TRUE,2023-11-29,15,Other,Adan Saldler,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working  - Contacted
+50000,2022-11-02,FALSE,2023-11-29,5,Trade Show,Tiffie Gruszecki,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Working  - Contacted
+,2022-10-21,FALSE,2023-11-29,23,Employee Referral,Hawking,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Converted
+,2022-10-19,TRUE,2023-11-29,25,Employee Referral,Andy Smith (Sample),G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Working
+39000,2022-11-04,FALSE,2023-11-29,22,Advertisement,Aldwin Barrabeale,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Nurturing
+,2022-11-03,FALSE,2023-11-29,16,Other,Elle Snailham,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Converted
+,2022-10-15,FALSE,2023-11-29,13,Other,Marieann Gladhill,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,New
+,2022-10-22,TRUE,2023-11-29,14,Purchased List,Morly Auletta,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Nurturing - Contacted
+57000,2022-10-29,FALSE,2023-11-29,18,Other,Bert Oda,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Working  - Contacted
+,2022-11-06,FALSE,2023-11-29,17,Employee Referral,Saunder Shatliffe,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Working
+,2022-10-21,FALSE,2023-11-29,11,Employee Referral,Zaneta Nottle,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+,2022-10-22,TRUE,2023-11-29,9,Advertisement,Nichol Hargerie,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-11-05,FALSE,2023-11-29,10,Other,Kenn Armin,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Nurturing
+,2022-11-01,FALSE,2023-11-29,14,Other,Spencer Matches,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Qualified
+,2022-10-17,FALSE,2023-11-29,25,Employee Referral,Allegra Tubby,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Qualified
+,2022-11-06,FALSE,2023-11-29,9,Advertisement,Harriott Jado,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+36000,2022-10-16,TRUE,2023-11-29,16,Employee Referral,Doy Bodemeaid,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Qualified
+,2022-11-01,FALSE,2023-11-29,10,Trade Show,Hesther Souley,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working
+106000,2022-10-26,FALSE,2023-11-29,6,Other,Ashlin Falkinder,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,New
+73000,2022-10-24,TRUE,2023-11-29,5,Other,Fee,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Working  - Contacted
+,2022-10-18,FALSE,2023-11-29,12,Other,Analise Le Pruvost,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Nurturing
+,2022-10-30,FALSE,2023-11-29,14,Employee Referral,Cyrus,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+,2022-11-06,FALSE,2023-11-29,10,Advertisement,Betty Huett,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-10-21,FALSE,2023-11-29,15,Other,Alvina Alywen,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-11-07,TRUE,2023-11-29,25,Employee Referral,Massimo Capron,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Working  - Contacted
+,2022-10-15,FALSE,2023-11-29,12,Purchased List,Cathrin Bridat,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Qualified
+63000,2022-10-30,FALSE,2023-11-29,12,Purchased List,Toe,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working
+,2022-11-01,FALSE,2023-11-29,8,Other,Kristin Prebble,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-10-22,TRUE,2023-11-29,13,Advertisement,Lu Courtier,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Nurturing
+,2022-11-06,FALSE,2023-11-29,13,Other,Juliet Demageard,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Nurturing - Contacted
+,2022-10-16,FALSE,2023-11-29,11,Other,Leola Beament,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Qualified
+,2022-10-21,FALSE,2023-11-29,,Trade Show,Karlee Reeman,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-11-02,TRUE,2023-11-29,24,Advertisement,Sherman Joscelyne,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working
+,2022-10-18,FALSE,2023-11-29,25,Other,Tailor Tibalt,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,New
+,2022-11-07,FALSE,2023-11-29,16,Employee Referral,Derrick Guy,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working  - Contacted
+,2022-10-31,TRUE,2023-11-29,5,Other,Orazio Featonby,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Converted
+,2022-11-06,FALSE,2023-11-29,16,Employee Referral,Mord Pasterfield,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Converted
+,2022-10-26,FALSE,2023-11-29,12,Employee Referral,Angelina Leetham,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working  - Contacted
+,2022-11-06,FALSE,2023-11-29,7,Other,Orwell,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Nurturing
+,2022-10-24,FALSE,2023-11-29,14,Employee Referral,Leno,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing - Contacted
+,2022-10-31,TRUE,2023-11-29,6,Advertisement,Clinton,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,New
+82000,2022-10-15,FALSE,2023-11-29,6,Other,Shakespeare,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working
+,2022-10-29,FALSE,2023-11-29,,Employee Referral,Hermann Lismer,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Qualified
+35900,2022-10-14,TRUE,2023-11-29,14,Other,Rona Chalker,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Qualified
+20000,2022-10-25,FALSE,2023-11-29,6,Purchased List,Nicki Hayden,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Nurturing - Contacted
+,2022-11-10,FALSE,2023-11-29,15,Advertisement,Peria Foukx,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working  - Contacted
+20500,2022-10-31,FALSE,2023-11-29,5,Purchased List,Reginald Grigore,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing
+22000,2022-10-15,TRUE,2023-11-29,24,Other,Eden MacFarland,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Converted
+57000,2022-11-10,FALSE,2023-11-29,7,Other,Carree Windress,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-10-26,FALSE,2023-11-29,5,Trade Show,Debra Nairy,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+16000,2022-11-01,FALSE,2023-11-29,12,Employee Referral,Holly Sawle,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Converted
+,2022-10-21,TRUE,2023-11-29,5,Employee Referral,Charmian Elphee,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Nurturing - Contacted
+33000,2022-11-04,FALSE,2023-11-29,15,Advertisement,Kandy Milsap,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Working
+,2022-10-20,FALSE,2023-11-29,7,Other,Shelia Wrathmall,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,New
+,2022-10-28,FALSE,2023-11-29,,Other,Celisse Dudny,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Converted
+,2022-11-05,TRUE,2023-11-29,9,Advertisement,Valentine Niven,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+63000,2022-10-17,FALSE,2023-11-29,,Other,Dacey Thick,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working  - Contacted
+,2022-10-24,FALSE,2023-11-29,18,Purchased List,Carin Christescu,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Nurturing
+,2022-11-03,FALSE,2023-11-29,10,Employee Referral,Odo Shiel,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+50000,2022-11-09,TRUE,2023-11-29,5,Employee Referral,Yasmin Stark,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Working
+,2022-10-25,FALSE,2023-11-29,14,Advertisement,Emmerich Kinder,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Qualified
+,2022-11-03,FALSE,2023-11-29,24,Employee Referral,Gail Cassedy,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Converted
+,2022-10-17,FALSE,2023-11-29,14,Other,Preston Rudkin,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working  - Contacted
+,2022-10-21,FALSE,2023-11-29,5,Other,Once,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Nurturing - Contacted
+,2022-11-09,TRUE,2023-11-29,14,Trade Show,Matteo Rizzi,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing
+38000,2022-11-04,FALSE,2023-11-29,8,Other,Alyosha Ivanin,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Qualified
+,2022-11-01,FALSE,2023-11-29,9,Employee Referral,Cori Tomkies,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working
+,2022-10-23,FALSE,2023-11-29,5,Advertisement,Morty Blazic,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Working  - Contacted
+,2022-10-19,TRUE,2023-11-29,6,Other,Columbus,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-10-28,FALSE,2023-11-29,7,Employee Referral,Sven Bowling,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Qualified
+,2022-11-08,FALSE,2023-11-29,,Other,Barthel Wettern,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Converted
+,2022-10-14,TRUE,2023-11-29,,Other,David Adelson (Sample),Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Converted
+,2022-11-04,FALSE,2023-11-29,,Purchased List,Cherlyn Hick,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing
+,2022-10-29,FALSE,2023-11-29,13,Advertisement,Dong Investment 1,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,New
+30000,2022-10-24,FALSE,2023-11-29,6,Employee Referral,Kaitlin Karlik,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Nurturing - Contacted
+,2022-10-16,FALSE,2023-11-29,18,Other,Patra,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working
+,2022-11-09,TRUE,2023-11-29,7,Employee Referral,Olenolin Calafate,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-10-28,FALSE,2023-11-29,10,Purchased List,Manisha Jha (Sample),G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+38000,2022-10-22,FALSE,2023-11-29,6,Advertisement,Janey Bloodworthe,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Qualified
+,2022-11-09,TRUE,2023-11-29,8,Other,Salim Warnock,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Working  - Contacted
+,2022-10-16,FALSE,2023-11-29,9,Trade Show,Thaxter Willgrass,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Nurturing
+12600,2022-10-22,FALSE,2023-11-29,6,Other,Keefe Trevaskis,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working  - Contacted
+,2022-11-01,FALSE,2023-11-29,9,Employee Referral,Lark Grasha,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,New
+,2022-10-15,FALSE,2023-11-29,9,Advertisement,Donna,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Qualified
+105000,2022-10-27,TRUE,2023-11-29,5,Employee Referral,Rowling,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working
+,2022-11-07,FALSE,2023-11-29,12,Other,Mina Ilyushkin,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Converted
+,2022-11-03,FALSE,2023-11-29,9,Purchased List,Earle Kitley,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working  - Contacted
+,2022-10-23,FALSE,2023-11-29,,Employee Referral,Reilly de Chastelain,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,New
+,2022-11-08,TRUE,2023-11-29,5,Other,Saxon Chawner,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing
+79000,2022-11-01,FALSE,2023-11-29,9,Advertisement,Reina Pitney,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Converted
+,2022-10-17,FALSE,2023-11-29,14,Other,Si Searson,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working
+,2022-11-07,FALSE,2023-11-29,20,Other,Waiter Scimonelli,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+25000,2022-10-16,TRUE,2023-11-29,5,Other,Cameron Guisler,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Nurturing - Contacted
+21000,2022-10-31,FALSE,2023-11-29,8,Employee Referral,Jasmin Lorroway,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working  - Contacted
+34000,2022-10-23,FALSE,2023-11-29,5,Advertisement,Riane Seakin,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+,2022-10-25,FALSE,2023-11-29,7,Other,Keelby O'Heffernan,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Qualified
+,2022-10-31,TRUE,2023-11-29,14,Purchased List,Jaimie Paradin,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing - Contacted
+,2022-10-16,FALSE,2023-11-29,13,Employee Referral,Neile Grunnill,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Nurturing
+,2022-11-07,FALSE,2023-11-29,7,Trade Show,Cindi Hail,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+,2022-11-10,FALSE,2023-11-29,5,Other,Darlleen Land,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working
+,2022-10-30,TRUE,2023-11-29,19,Employee Referral,Lindsey Cramphorn,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,New
+19000,2022-10-18,FALSE,2023-11-29,6,Other,Renaud Harborow,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Qualified
+,2022-10-22,FALSE,2023-11-29,15,Other,Gottfried Egiloff,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-11-02,FALSE,2023-11-29,11,Advertisement,Aretha Chstney,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Working  - Contacted
+45000,2022-10-26,TRUE,2023-11-29,18,Other,Sven Shearston,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Qualified
+,2022-11-05,FALSE,2023-11-29,10,Employee Referral,Adam Richman (Sample),G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing
+,2022-10-16,FALSE,2023-11-29,10,Purchased List,Ana Franzolini,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Working
+112000,2022-11-05,TRUE,2023-11-29,24,Employee Referral,Auberta Annott,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Converted
+60000,2022-11-03,FALSE,2023-11-29,9,Advertisement,Wallis Rosindill,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Working  - Contacted
+,2022-11-06,FALSE,2023-11-29,13,Other,Caz Probet,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,New
+77000,2022-10-18,FALSE,2023-11-29,8,Employee Referral,Percy Mattheissen,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+,2022-10-29,FALSE,2023-11-29,15,Other,Jordana Baigent,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Converted
+,2022-10-21,TRUE,2023-11-29,17,Other,Radcliffe,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Nurturing - Contacted
+,2022-10-24,FALSE,2023-11-29,14,Employee Referral,Lenard Laden,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Nurturing - Contacted
+,2022-11-05,FALSE,2023-11-29,13,Trade Show,Rosalind Stockall,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing
+,2022-10-22,TRUE,2023-11-29,9,Advertisement,Burnaby Kruszelnicki,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working  - Contacted
+,2022-10-14,FALSE,2023-11-29,15,Other,Tammara De Beauchamp,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing - Contacted
+12000,2022-10-31,FALSE,2023-11-29,20,Advertisement,Emili Shippam,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Converted
+58000,2022-11-07,FALSE,2023-11-29,10,Other,Gracia Rudman,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Working
+,2022-10-31,FALSE,2023-11-29,22,Employee Referral,Gretel Metts,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+,2022-10-22,TRUE,2023-11-29,13,Purchased List,Mehetabel Gherardesci,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Converted
+144000,2022-10-18,FALSE,2023-11-29,12,Employee Referral,Nikaniki McRory,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Nurturing - Contacted
+50000,2022-11-02,FALSE,2023-11-29,15,Other,Mohandas Plet,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Nurturing
+,2022-10-23,TRUE,2023-11-29,7,Other,Davey Aickin,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Working  - Contacted
+,2022-11-04,FALSE,2023-11-29,8,Employee Referral,Harmony Hanscome,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working
+,2022-11-10,FALSE,2023-11-29,14,Other,Janela Staig,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Qualified
+,2022-10-31,FALSE,2023-11-29,22,Purchased List,Demott Puve,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing - Contacted
+29000,2022-10-22,FALSE,2023-11-29,6,Advertisement,Annalee Beadell,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Converted
+,2022-10-18,TRUE,2023-11-29,13,Other,Sylvester Chittem,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-11-10,FALSE,2023-11-29,10,Other,Anne Fernie,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Working  - Contacted
+,2022-10-17,FALSE,2023-11-29,8,Trade Show,Simeon While,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+,2022-10-28,FALSE,2023-11-29,11,Employee Referral,Ringo Strotone,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working
+,2022-11-08,TRUE,2023-11-29,10,Advertisement,Williams,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,New
+25000,2022-10-16,FALSE,2023-11-29,8,Employee Referral,Marice Beasley,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,New
+,2022-10-26,FALSE,2023-11-29,15,Advertisement,Arman Hutchence,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing - Contacted
+,2022-10-22,FALSE,2023-11-29,5,Other,Blair Maden,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Qualified
+,2022-11-01,TRUE,2023-11-29,8,Purchased List,Elianora Jedrychowski,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Qualified
+,2022-11-08,FALSE,2023-11-29,25,Other,Dexter Middlemass,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-10-16,FALSE,2023-11-29,5,Employee Referral,Luci Witson,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Nurturing
+,2022-10-27,TRUE,2023-11-29,,Employee Referral,Evangelia Ricker,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-11-04,FALSE,2023-11-29,15,Other,Yves Ortet,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing
+,2022-11-03,FALSE,2023-11-29,6,Advertisement,Ken Leebetter,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working
+,2022-10-14,FALSE,2023-11-29,7,Other,Eastwood,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Nurturing - Contacted
+,2022-11-10,TRUE,2023-11-29,25,Employee Referral,Abbe Folds,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-11-03,FALSE,2023-11-29,18,Other,Traci Francescotti,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,New
+,2022-10-22,FALSE,2023-11-29,5,Advertisement,Buddy Ibbison,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working  - Contacted
+,2022-11-03,FALSE,2023-11-29,7,Purchased List,Caleb Greathead,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Working  - Contacted
+,2022-10-23,FALSE,2023-11-29,25,Other,Ric Agates,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Qualified
+70500,2022-10-20,TRUE,2023-11-29,25,Trade Show,Nickey Spon,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing - Contacted
+,2022-11-07,FALSE,2023-11-29,5,Employee Referral,Venita Lowdyane,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Nurturing
+99000,2022-11-03,FALSE,2023-11-29,5,Employee Referral,Silvana Babin,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+110000,2022-10-17,TRUE,2023-11-29,14,Other,Mata Healks,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Converted
+,2022-10-22,FALSE,2023-11-29,8,Other,Phillipe Symmers,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Working  - Contacted
+,2022-10-31,FALSE,2023-11-29,6,Other,Brynna Chritchley,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working
+,2022-11-08,FALSE,2023-11-29,7,Advertisement,Kubrik,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Converted
+80000,2022-10-27,TRUE,2023-11-29,5,Employee Referral,Rufe Dooly,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working
+,2022-11-03,FALSE,2023-11-29,19,Other,Theresa,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Qualified
+,2022-11-04,FALSE,2023-11-29,25,Advertisement,Marcelline Copping,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Working  - Contacted
+,2022-11-09,FALSE,2023-11-29,6,Other,Dew Phripp,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing - Contacted
+,2022-10-24,FALSE,2023-11-29,10,Purchased List,Brady Hutsby,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,New
+,2022-11-01,TRUE,2023-11-29,6,Employee Referral,Adelice Kennealy,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Converted
+29000,2022-10-16,FALSE,2023-11-29,24,Other,Eldin Best,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Qualified
+,2022-11-05,FALSE,2023-11-29,15,Employee Referral,Cobain,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+,2022-10-18,FALSE,2023-11-29,10,Trade Show,Kali Tillman,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Converted
+,2022-10-23,TRUE,2023-11-29,11,Advertisement,Pattison,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Working
+,2022-10-28,FALSE,2023-11-29,23,Other,Forrester Dodridge,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Working  - Contacted
+,2022-10-18,FALSE,2023-11-29,10,Employee Referral,Cheryl Linskill,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Nurturing - Contacted
+,2022-11-06,FALSE,2023-11-29,14,Other,Axel Filipic,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,New
+100000,2022-10-22,TRUE,2023-11-29,6,Purchased List,Theresita Biffin,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Converted
+,2022-10-31,FALSE,2023-11-29,5,Advertisement,Delores Saltman,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Nurturing
+28000,2022-10-17,FALSE,2023-11-29,19,Other,Jamie Ramsdell,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Converted
+,2022-10-22,FALSE,2023-11-29,,Other,Florance Blaydes,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Working  - Contacted
+19000,2022-10-31,TRUE,2023-11-29,13,Employee Referral,Disney,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+25000,2022-11-07,FALSE,2023-11-29,23,Advertisement,Moselle Cisland,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Qualified
+,2022-10-20,FALSE,2023-11-29,8,Employee Referral,Nem,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Nurturing
+,2022-11-09,FALSE,2023-11-29,,Other,Maryellen Beynke,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working
+,2022-11-01,TRUE,2023-11-29,5,Other,Gaga,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Converted
+,2022-11-07,FALSE,2023-11-29,5,Employee Referral,Danit Marchant,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Qualified
+,2022-10-14,FALSE,2023-11-29,14,Trade Show,Winfrey,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Converted
+,2022-10-26,FALSE,2023-11-29,8,Purchased List,JFox,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Nurturing
+,2022-10-31,TRUE,2023-11-29,6,Other,Jami de Lloyd,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Working  - Contacted
+,2022-10-22,FALSE,2023-11-29,6,Employee Referral,Godard Starmont,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-11-04,FALSE,2023-11-29,22,Advertisement,Diana Sandhill,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing
+44000,2022-10-31,TRUE,2023-11-29,15,Other,Rowland Hazleton,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Working
+,2022-10-19,FALSE,2023-11-29,9,Other,Melinde Backshall,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Converted
+,2022-11-07,FALSE,2023-11-29,6,Advertisement,Neddy Kleinplac,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Qualified
+,2022-10-24,FALSE,2023-11-29,11,Employee Referral,Hanks,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing - Contacted
+,2022-10-16,TRUE,2023-11-29,14,Other,Juliann Sotheron,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,New
+,2022-10-30,FALSE,2023-11-29,20,Purchased List,Lana Crowch,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Working
+37000,2022-11-06,FALSE,2023-11-29,12,Employee Referral,Frans Durtnell,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+,2022-10-22,FALSE,2023-11-29,13,Other,Reagen Horsewood,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,New
+29000,2022-11-03,FALSE,2023-11-29,5,Other,Marci Scarsbrooke,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Working  - Contacted
+,2022-11-06,TRUE,2023-11-29,16,Employee Referral,Irvin Dillicate,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Converted
+21000,2022-10-17,FALSE,2023-11-29,10,Advertisement,Nedi Oakman,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Converted
+,2022-10-27,FALSE,2023-11-29,7,Other,Dee dee Bagley,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-11-01,FALSE,2023-11-29,15,Employee Referral,Clyde Dunridge,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Nurturing
+,2022-11-07,TRUE,2023-11-29,25,Purchased List,Rory Spedroni,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working
+,2022-10-27,FALSE,2023-11-29,13,Other,Paco Oakenfull,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Working  - Contacted
+,2022-10-18,FALSE,2023-11-29,15,Trade Show,Andi Klejin,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+14000,2022-10-22,FALSE,2023-11-29,12,Employee Referral,Claudie Conor,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Nurturing
+,2022-11-08,TRUE,2023-11-29,5,Advertisement,Vinny Beynkn,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Working  - Contacted
+92000,2022-11-02,FALSE,2023-11-29,21,Other,Neill Westcarr,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Converted
+12500,2022-11-02,FALSE,2023-11-29,11,Advertisement,Austen,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+19500,2022-11-05,FALSE,2023-11-29,9,Employee Referral,Didi Mullenger,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,New
+,2022-10-14,TRUE,2023-11-29,5,Other,Janith Guerreau,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-10-20,FALSE,2023-11-29,15,Other,Mollie McAlinion,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Qualified
+,2022-10-31,FALSE,2023-11-29,9,Other,Bridie O'Boyle,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Working
+,2022-10-22,TRUE,2023-11-29,12,Purchased List,Harmonia Gatecliffe,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-10-26,FALSE,2023-11-29,6,Advertisement,Babara Kann,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Working  - Contacted
+,2022-11-05,FALSE,2023-11-29,10,Employee Referral,Kipp Brunskill,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+,2022-11-01,FALSE,2023-11-29,12,Employee Referral,Kiah Hawkeridge,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Nurturing
+,2022-11-07,TRUE,2023-11-29,13,Other,Winifred Franc,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-10-16,FALSE,2023-11-29,9,Other,Gus Mead,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Converted
+79800,2022-11-01,FALSE,2023-11-29,18,Other,See,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,New
+,2022-10-24,FALSE,2023-11-29,6,Employee Referral,Kristopher Crummey,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Working
+,2022-10-24,TRUE,2023-11-29,15,Trade Show,Peyton Cusworth,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Working  - Contacted
+129000,2022-11-09,FALSE,2023-11-29,13,Other,Morton Sholem,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+94000,2022-10-31,FALSE,2023-11-29,,Advertisement,Reine Tolworthy,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing - Contacted
+,2022-11-05,FALSE,2023-11-29,5,Purchased List,Ly Cristea,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Nurturing
+48700,2022-10-16,TRUE,2023-11-29,25,Employee Referral,Phoebe Gantlett,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Nurturing - Contacted
+,2022-10-24,FALSE,2023-11-29,12,Other,Jemima Guslon,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Converted
+,2022-10-29,FALSE,2023-11-29,12,Advertisement,Murray,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Qualified
+,2022-11-09,FALSE,2023-11-29,11,Employee Referral,Ninon Dell Casa,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Qualified
+,2022-10-23,FALSE,2023-11-29,8,Other,Marleah Faulo,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-10-15,TRUE,2023-11-29,5,Other,Papagena Muddle,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,New
+,2022-11-03,FALSE,2023-11-29,8,Employee Referral,Sumner Silverson,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing - Contacted
+,2022-10-14,FALSE,2023-11-29,8,Advertisement,Catherine Womersley,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Nurturing
+,2022-11-07,TRUE,2023-11-29,11,Trade Show,Neddy Skirling,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-10-23,FALSE,2023-11-29,22,Purchased List,Casar Wallhead,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Working
+27700,2022-10-31,FALSE,2023-11-29,8,Employee Referral,Marj Hindrick,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Working
+,2022-10-19,FALSE,2023-11-29,,Other,Timofei O'Sheilds,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Nurturing - Contacted
+,2022-11-05,FALSE,2023-11-29,6,Other,Jefferson Twigge,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-10-19,TRUE,2023-11-29,17,Advertisement,Linnell Smidmor,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working  - Contacted
+,2022-11-03,FALSE,2023-11-29,16,Employee Referral,Myles Osgar,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Qualified
+,2022-10-24,FALSE,2023-11-29,25,Other,Lira Snewin,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working  - Contacted
+,2022-10-27,FALSE,2023-11-29,24,Other,Eadie Bowness,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Qualified
+100000,2022-11-03,TRUE,2023-11-29,18,Advertisement,Margo Polle,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working  - Contacted
+,2022-11-09,FALSE,2023-11-29,6,Other,Dov Cash,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Nurturing
+,2022-10-20,FALSE,2023-11-29,17,Purchased List,Bridie McTeague,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Working
+,2022-11-08,FALSE,2023-11-29,5,Employee Referral,Amadeus,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-10-29,TRUE,2023-11-29,6,Other,Theodosia Leethem,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-10-23,FALSE,2023-11-29,5,Other,Janina Barensen,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+40000,2022-11-06,FALSE,2023-11-29,17,Advertisement,Marian Stanhope,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Qualified
+,2022-10-18,FALSE,2023-11-29,22,Employee Referral,Roscoe O'Lehane,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing
+,2022-11-03,TRUE,2023-11-29,,Employee Referral,Anestassia Fenich,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Converted
+50000,2022-11-05,FALSE,2023-11-29,7,Trade Show,Beethoven,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Working  - Contacted
+,2022-10-14,FALSE,2023-11-29,5,Purchased List,Corabel Maker,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working
+,2022-10-23,FALSE,2023-11-29,11,Advertisement,Merilee Izakoff,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,New
+,2022-10-23,TRUE,2023-11-29,11,Other,Petronilla Leele,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Nurturing - Contacted
+,2022-10-31,FALSE,2023-11-29,12,Employee Referral,Ivor Ludman,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working  - Contacted
+,2022-11-06,FALSE,2023-11-29,16,Other,Rooney O'Corren,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Converted
+,2022-10-20,TRUE,2023-11-29,5,Employee Referral,Martin,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Converted
+,2022-10-22,FALSE,2023-11-29,12,Advertisement,Ronnie Coatham,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Nurturing
+,2022-11-05,FALSE,2023-11-29,21,Other,Kirk Sleightholm,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing - Contacted
+24800,2022-10-30,FALSE,2023-11-29,10,Other,Clayborn Presslee,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Qualified
+,2022-10-25,FALSE,2023-11-29,23,Employee Referral,Jarrett McNeice,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-11-03,TRUE,2023-11-29,18,Purchased List,Izak Shankland,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Working
+,2022-11-08,FALSE,2023-11-29,10,Other,Mayne Maha,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,New
+,2022-10-19,FALSE,2023-11-29,15,Employee Referral,Pavel Waterland,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Qualified
+,2022-10-24,FALSE,2023-11-29,14,Advertisement,Ermanno Monroe,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-10-16,TRUE,2023-11-29,8,Trade Show,Warden Quarmby,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing - Contacted
+11000,2022-11-10,FALSE,2023-11-29,6,Other,Minerva Booton,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Working  - Contacted
+,2022-11-01,FALSE,2023-11-29,13,Other,Pepi Becerra,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working
+5300,2022-10-25,FALSE,2023-11-29,22,Advertisement,Sunny Melledy,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Converted
+,2022-10-18,TRUE,2023-11-29,6,Employee Referral,Love,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,New
+,2022-11-07,FALSE,2023-11-29,12,Other,Franklin,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+,2022-10-30,FALSE,2023-11-29,10,Other,Jefferson,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Nurturing
+,2022-10-28,FALSE,2023-11-29,11,Purchased List,Doris Kirby,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Working  - Contacted
+105000,2022-11-05,TRUE,2023-11-29,8,Other,Xever Batchelor,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Nurturing
+,2022-10-26,FALSE,2023-11-29,7,Other,Elwyn Harcourt,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,Qualified
+,2022-10-15,FALSE,2023-11-29,10,Advertisement,Rooney Petrello,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Working
+,2022-10-26,TRUE,2023-11-29,14,Employee Referral,Monica Pooly,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Converted
+22500,2022-11-10,FALSE,2023-11-29,9,Employee Referral,Damon,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,New
+34000,2022-10-30,FALSE,2023-11-29,13,Employee Referral,Jobina Clutterbuck,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Working  - Contacted
+,2022-10-16,FALSE,2023-11-29,5,Other,Kingston Birdall,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+,2022-10-26,TRUE,2023-11-29,9,Other,Horst Risebarer,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Converted
+,2022-11-08,FALSE,2023-11-29,13,Advertisement,Valentijn Redhole,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Qualified
+,2022-10-31,FALSE,2023-11-29,15,Trade Show,Anne Luton,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-11-01,FALSE,2023-11-29,17,Employee Referral,Jarrad Bampkin,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,Working  - Contacted
+76000,2022-10-14,FALSE,2023-11-29,25,Purchased List,Coraline Gergler,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing
+,2022-10-21,TRUE,2023-11-29,5,Other,Seward Darkin,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Working
+,2022-11-07,FALSE,2023-11-29,7,Employee Referral,Hollyanne Cromblehome,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-11-02,FALSE,2023-11-29,8,Advertisement,Jada Heavens,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Nurturing - Contacted
+,2022-10-26,FALSE,2023-11-29,7,Other,Jennine Westley,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing - Contacted
+13000,2022-10-19,TRUE,2023-11-29,6,Other,Scotti Rowland,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted
+127000,2022-11-10,FALSE,2023-11-29,5,Employee Referral,Floria Lomas,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Nurturing
+,2022-11-06,FALSE,2023-11-29,9,Advertisement,Biddie Stollenberg,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working  - Contacted
+,2022-10-17,TRUE,2023-11-29,24,Purchased List,Cleo Brookbank,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Working
+,2022-11-02,FALSE,2023-11-29,9,Other,Warhol,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Hot,New
+,2022-10-23,FALSE,2023-11-29,11,Employee Referral,Saul Mixworthy,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Converted
+,2022-10-30,FALSE,2023-11-29,9,Other,Robin Cliffe,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-10-27,FALSE,2023-11-29,6,Other,Rollo Joberne,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Qualified
+,2022-10-16,TRUE,2023-11-29,15,Employee Referral,Jonas Davydkov,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Converted
+,2022-10-28,FALSE,2023-11-29,24,Trade Show,Farly Bax,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing
+,2022-11-05,FALSE,2023-11-29,25,Advertisement,Bendick McMichan,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,New
+50000,2022-11-07,FALSE,2023-11-29,21,Other,Hank Hillett,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Cold,Converted
+,2022-10-24,TRUE,2023-11-29,7,Employee Referral,Jules Bengochea,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Working
+,2022-10-14,FALSE,2023-11-29,6,Advertisement,Myca Salzberger,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working  - Contacted
+,2022-11-10,FALSE,2023-11-29,7,Purchased List,Darin Challenor,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing - Contacted
+9300,2022-11-01,TRUE,2023-11-29,10,Employee Referral,Edison,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+33000,2022-10-20,FALSE,2023-11-29,10,Other,Rosalinde Pflieger,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Qualified
+37000,2022-11-07,FALSE,2023-11-29,6,Other,Daffy Hammerich,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Qualified
+19800,2022-11-01,FALSE,2023-11-29,5,Other,Charles,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Qualified
+,2022-10-21,FALSE,2023-11-29,17,Advertisement,Inga Cino,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Converted
+34000,2022-10-25,TRUE,2023-11-29,10,Employee Referral,Callida Loughan,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working  - Contacted
+14200,2022-11-10,FALSE,2023-11-29,21,Other,Maressa Gretham,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Nurturing
+,2022-10-17,FALSE,2023-11-29,15,Purchased List,Keller,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Working
+,2022-10-26,TRUE,2023-11-29,6,Employee Referral,Garrot Burgot,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Hot,New
+,2022-11-03,FALSE,2023-11-29,8,Other,Munmro Lockney,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Warm,Nurturing - Contacted
+,2022-11-05,FALSE,2023-11-29,9,Other,Jenny Emlin,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working  - Contacted
+,2022-10-19,FALSE,2023-11-29,15,Trade Show,Frederic Mahedy,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Cold,Qualified
+65000,2022-10-25,FALSE,2023-11-29,13,Advertisement,Giorgia Stubbin,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Nurturing
+94000,2022-10-28,TRUE,2023-11-29,8,Other,Tully Bilovus,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Working
+78000,2022-11-07,FALSE,2023-11-29,14,Employee Referral,Cliff Veronique,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Working  - Contacted
+,2022-10-15,FALSE,2023-11-29,15,Advertisement,Angelica Pepis,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Qualified
+,2022-10-28,TRUE,2023-11-29,9,Employee Referral,Celestine McMenamy,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing - Contacted
+,2022-10-30,FALSE,2023-11-29,6,Purchased List,Adolphe Syvret,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-10-21,FALSE,2023-11-29,13,Other,Tani Matysik,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Warm,Converted
+,2022-11-09,FALSE,2023-11-29,7,Employee Referral,Jonell Duchenne,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,New
+,2022-10-27,TRUE,2023-11-29,22,Other,Anita Rideout,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Nurturing
+,2022-11-02,FALSE,2023-11-29,12,Other,Pitt,Deepu CSEG,Tawnia Williams,https://finssummer20--c.documentforce.com/profilephoto/7293A000000Waco/T,Cold,Nurturing - Contacted
+,2022-10-14,FALSE,2023-11-29,12,Other,Minetta Rubury,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Warm,Working
+,2022-11-07,FALSE,2023-11-29,10,Employee Referral,Wang Anand,Qianwen Dong,Justin Chen,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaQ/T,Cold,Qualified
+90000,2022-10-19,TRUE,2023-11-29,12,Other,Willamina Normabell,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Working  - Contacted
+,2022-11-09,FALSE,2023-11-29,23,Advertisement,Alysa Gottschalk,G M,Thomas Oliver,https://finssummer20--c.documentforce.com/profilephoto/7294V0000008I1x/T,Hot,Converted
+,2022-10-28,FALSE,2023-11-29,14,Other,Shayna Gwioneth,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Warm,Converted
+,2022-10-21,FALSE,2023-11-29,18,Trade Show,Rycca Geoghegan,R CSEG,Sofia Lopez,https://finssummer20--c.documentforce.com/profilephoto/7293A000000WaaN/T,Hot,Converted

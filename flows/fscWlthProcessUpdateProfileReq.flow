@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <decisions>
+        <description>Checks if the status of the AsyncCalloutFailed variable is set to True to determine if the callout to the asynchronous Apex action failed.</description>
+        <name>IsAsyncCalloutFailedSetToTrue</name>
+        <label>Is AsyncCalloutFailed to True?</label>
+        <locationX>336</locationX>
+        <locationY>1277</locationY>
+        <defaultConnectorLabel>Other (Default Outcome)</defaultConnectorLabel>
+        <rules>
+            <name>IsFailed</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>AttemptUpdateProfileandDisplayCaseStatus.Outputs.CustomerAsyncCalloutFailed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>AttemptUpdateProfileandDisplayCaseStatus.Outputs.FinancialAccountAsyncCalloutFailed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ShowServiceRequestStatus</targetReference>
+            </connector>
+            <label>Is Failed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determines if the customer has selected the name to be updated.</description>
+        <name>IsNameToBeUpdated</name>
+        <label>Is Name to be Updated?</label>
+        <locationX>336</locationX>
+        <locationY>395</locationY>
+        <defaultConnector>
+            <targetReference>PerformUpdateProfileRequestandPostUpdateActions</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Name Not To Be Updated</defaultConnectorLabel>
+        <rules>
+            <name>NameToBeUpdated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ReviewUpdateProfileRequest.Outputs.NewFirstName</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>ReviewUpdateProfileRequest.Outputs.NewLastName</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>PerformGetDocumentChecklistItems</targetReference>
+            </connector>
+            <label>Name To Be Updated</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if the agent rejected the document or not.</description>
+        <name>WasDocumentRejected</name>
+        <label>Was Document Rejected?</label>
+        <locationX>182</locationX>
+        <locationY>719</locationY>
+        <defaultConnector>
+            <targetReference>PerformUpdateProfileRequestandPostUpdateActions</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Document Approved</defaultConnectorLabel>
+        <rules>
+            <name>DocumentRejected</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ReviewDocumentforProfileUpdateRequest.Outputs.DocumentRejectedStatus</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>PerformProfileUpdateWhenDocumentIsRejected</targetReference>
+            </connector>
+            <label>Document Rejected</label>
+        </rules>
+    </decisions>
+    <description>Allows a case owner to review the update profile related request, submits the change, and either updates the case record or notifies the case owner that the update failed.</description>
+    <environments>Default</environments>
+    <interviewLabel>FSC Wealth: Process Update Profile Requests {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FSC Wealth: Process Update Profile Requests</label>
+    <orchestratedStages>
+        <description>Verifies the document for Profile Update Request.</description>
+        <name>PerformDocumentVerificationforProfileUpdateRequest</name>
+        <label>Perform Document Verification for Profile Update Request</label>
+        <locationX>182</locationX>
+        <locationY>611</locationY>
+        <connector>
+            <targetReference>WasDocumentRejected</targetReference>
+        </connector>
+        <exitConditionLogic>and</exitConditionLogic>
+        <stageSteps>
+            <description>Allows a case owner to review the document for a profile update request.</description>
+            <name>ReviewDocumentforProfileUpdateRequest</name>
+            <actionName>fscWlthReviewDocumentStatus</actionName>
+            <actionType>stepInteractive</actionType>
+            <assignees>
+                <assignee>
+                    <elementReference>$Record.Case.Owner:User.Username</elementReference>
+                </assignee>
+                <assigneeType>User</assigneeType>
+            </assignees>
+            <canAssigneeEdit>false</canAssigneeEdit>
+            <entryConditionLogic>and</entryConditionLogic>
+            <exitConditionLogic>and</exitConditionLogic>
+            <inputParameters>
+                <name>AccountId</name>
+                <value>
+                    <elementReference>$Record.Case.Account.Id</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>CaseId</name>
+                <value>
+                    <elementReference>$Record.CaseId</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>CurrentFirstName</name>
+                <value>
+                    <elementReference>ReviewUpdateProfileRequest.Outputs.CurrentFirstName</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>CurrentLastName</name>
+                <value>
+                    <elementReference>ReviewUpdateProfileRequest.Outputs.CurrentLastName</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>NewDCIRecordIds</name>
+                <value>
+                    <elementReference>ReviewDocumentChecklistItems.Outputs.DocumentCheckListItemID</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>NewFirstName</name>
+                <value>
+                    <elementReference>ReviewUpdateProfileRequest.Outputs.NewFirstName</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>NewLastName</name>
+                <value>
+                    <elementReference>ReviewUpdateProfileRequest.Outputs.NewLastName</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>ActionInput__RecordId</name>
+                <value>
+                    <elementReference>$Record.CaseId</elementReference>
+                </value>
+            </inputParameters>
+            <label>Review Document for Profile Update Request</label>
+            <requiresAsyncProcessing>false</requiresAsyncProcessing>
+            <runAsUser>false</runAsUser>
+            <shouldLock>false</shouldLock>
+            <stepSubtype>InteractiveStep</stepSubtype>
+        </stageSteps>
+    </orchestratedStages>
+    <orchestratedStages>
+        <description>Gets all the Document Checklist Item records where Status is New and passes it to the other flows.</description>
+        <name>PerformGetDocumentChecklistItems</name>
+        <label>Perform Get Document Checklist Items</label>
+        <locationX>182</locationX>
+        <locationY>503</locationY>
+        <connector>
+            <targetReference>PerformDocumentVerificationforProfileUpdateRequest</targetReference>
+        </connector>
+        <exitConditionLogic>and</exitConditionLogic>
+        <stageSteps>
+            <description>Gets all the Document Checklist Item records where Status is New and passes it to the other flows.</description>
+            <name>ReviewDocumentChecklistItems</name>
+            <actionName>fscWlthGetNewDocChecklistItem</actionName>
+            <actionType>stepBackground</actionType>
+            <canAssigneeEdit>false</canAssigneeEdit>
+            <entryConditionLogic>and</entryConditionLogic>
+            <exitConditionLogic>and</exitConditionLogic>
+            <inputParameters>
+                <name>CaseId</name>
+                <value>
+                    <elementReference>$Record.CaseId</elementReference>
+                </value>
+            </inputParameters>
+            <label>Review Document Checklist Items</label>
+            <requiresAsyncProcessing>false</requiresAsyncProcessing>
+            <runAsUser>false</runAsUser>
+            <shouldLock>false</shouldLock>
+            <stepSubtype>BackgroundStep</stepSubtype>
+        </stageSteps>
+    </orchestratedStages>
+    <orchestratedStages>
+        <description>Allows the customer to resubmit the rejected documents.</description>
+        <name>PerformProfileUpdateWhenDocumentIsRejected</name>
+        <label>Perform Profile Update When Document Is Rejected</label>
+        <locationX>50</locationX>
+        <locationY>827</locationY>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>PerformGetDocumentChecklistItems</targetReference>
+        </connector>
+        <exitConditionLogic>and</exitConditionLogic>
+        <stageSteps>
+            <description>Allows customers to resubmit the rejected documents.</description>
+            <name>ResubmitRejectedDocuments</name>
+            <actionName>fscWlthResubmitRejectedDoc</actionName>
+            <actionType>stepInteractive</actionType>
+            <assignees>
+                <assignee>
+                    <elementReference>ReviewDocumentforProfileUpdateRequest.Outputs.CustomerUserName</elementReference>
+                </assignee>
+                <assigneeType>User</assigneeType>
+            </assignees>
+            <canAssigneeEdit>false</canAssigneeEdit>
+            <entryConditionLogic>and</entryConditionLogic>
+            <exitConditionLogic>and</exitConditionLogic>
+            <inputParameters>
+                <name>CaseID</name>
+                <value>
+                    <elementReference>$Record.CaseId</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>ActionInput__RecordId</name>
+                <value>
+                    <elementReference>$Record.CaseId</elementReference>
+                </value>
+            </inputParameters>
+            <label>Resubmit Rejected Documents</label>
+            <requiresAsyncProcessing>false</requiresAsyncProcessing>
+            <runAsUser>false</runAsUser>
+            <shouldLock>false</shouldLock>
+            <stepSubtype>InteractiveStep</stepSubtype>
+        </stageSteps>
+    </orchestratedStages>
+    <orchestratedStages>
+        <description>Send a profile update request and update the case status.</description>
+        <name>PerformUpdateProfileRequestandPostUpdateActions</name>
+        <label>Perform Update Profile Request and Post-Update Actions</label>
+        <locationX>336</locationX>
+        <locationY>1169</locationY>
+        <connector>
+            <targetReference>IsAsyncCalloutFailedSetToTrue</targetReference>
+        </connector>
+        <exitConditionLogic>and</exitConditionLogic>
+        <stageSteps>
+            <description>Calls an asynchronous Apex action to update a service catalog request record for update profile. Updates a specified case&apos;s status to closed if a profile update was successful. Otherwise, displays an error to the flow user.</description>
+            <name>AttemptUpdateProfileandDisplayCaseStatus</name>
+            <actionName>fscWlth_UpdtProfileForUpdtRqst</actionName>
+            <actionType>stepBackground</actionType>
+            <canAssigneeEdit>false</canAssigneeEdit>
+            <entryConditionLogic>and</entryConditionLogic>
+            <exitConditionLogic>and</exitConditionLogic>
+            <inputParameters>
+                <name>AccountEmail</name>
+                <value>
+                    <elementReference>ReviewUpdateProfileRequest.Outputs.AccountEmail</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>CaseId</name>
+                <value>
+                    <elementReference>$Record.CaseId</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>CustomerIntegrationDefinition</name>
+                <value>
+                    <stringValue>FSCWlth_UpdateProfileCustomer</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>FinancialAccountIntegrationDefinition</name>
+                <value>
+                    <stringValue>FSCWlth_UpdateProfileFinancialAccount</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>PersonContactId</name>
+                <value>
+                    <elementReference>ReviewUpdateProfileRequest.Outputs.PersonContactId</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>recordId</name>
+                <value>
+                    <elementReference>$Record.Id</elementReference>
+                </value>
+            </inputParameters>
+            <label>Attempt Update Profile and Display Case Status</label>
+            <requiresAsyncProcessing>true</requiresAsyncProcessing>
+            <runAsUser>false</runAsUser>
+            <shouldLock>false</shouldLock>
+            <stepSubtype>BackgroundStep</stepSubtype>
+        </stageSteps>
+    </orchestratedStages>
+    <orchestratedStages>
+        <description>Processes a profile update for a service catalog request.</description>
+        <name>ProcessUpdateProfile</name>
+        <label>Process Update Profile</label>
+        <locationX>336</locationX>
+        <locationY>287</locationY>
+        <connector>
+            <targetReference>IsNameToBeUpdated</targetReference>
+        </connector>
+        <exitConditionLogic>and</exitConditionLogic>
+        <stageSteps>
+            <description>Allows a case owner to review details and sends an email to the customer who raised a Profile Update request.</description>
+            <name>ReviewUpdateProfileRequest</name>
+            <actionName>fscWealth_ReviewUpdateProfile</actionName>
+            <actionType>stepBackground</actionType>
+            <canAssigneeEdit>false</canAssigneeEdit>
+            <entryConditionLogic>and</entryConditionLogic>
+            <exitConditionLogic>and</exitConditionLogic>
+            <inputParameters>
+                <name>InputRecordId</name>
+                <value>
+                    <elementReference>$Record.Id</elementReference>
+                </value>
+            </inputParameters>
+            <label>Review Update Profile Request</label>
+            <requiresAsyncProcessing>true</requiresAsyncProcessing>
+            <runAsUser>false</runAsUser>
+            <shouldLock>false</shouldLock>
+            <stepSubtype>BackgroundStep</stepSubtype>
+        </stageSteps>
+    </orchestratedStages>
+    <orchestratedStages>
+        <description>Shows the status of the service request to the user.</description>
+        <name>ShowServiceRequestStatus</name>
+        <label>Show Service Request Status</label>
+        <locationX>204</locationX>
+        <locationY>1385</locationY>
+        <exitConditionLogic>and</exitConditionLogic>
+        <stageSteps>
+            <description>Displays the result of the API callout made to the mulesoft interface.</description>
+            <name>APICalloutResult</name>
+            <actionName>fscWlth_AsynchApexCalloutSts</actionName>
+            <actionType>stepInteractive</actionType>
+            <assignees>
+                <assignee>
+                    <elementReference>$Record.Case.Owner:User.Username</elementReference>
+                </assignee>
+                <assigneeType>User</assigneeType>
+            </assignees>
+            <canAssigneeEdit>false</canAssigneeEdit>
+            <entryConditionLogic>and</entryConditionLogic>
+            <exitConditionLogic>and</exitConditionLogic>
+            <inputParameters>
+                <name>Status</name>
+                <value>
+                    <elementReference>AttemptUpdateProfileandDisplayCaseStatus.Outputs.Status</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>ActionInput__RecordId</name>
+                <value>
+                    <elementReference>$Record.CaseId</elementReference>
+                </value>
+            </inputParameters>
+            <label>API Callout Result</label>
+            <requiresAsyncProcessing>false</requiresAsyncProcessing>
+            <runAsUser>false</runAsUser>
+            <shouldLock>false</shouldLock>
+            <stepSubtype>InteractiveStep</stepSubtype>
+        </stageSteps>
+    </orchestratedStages>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Orchestrator</processType>
+    <start>
+        <locationX>210</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>ProcessUpdateProfile</targetReference>
+        </connector>
+        <filterFormula>{!$Record.SvcCatalogItemDefinition.DeveloperName}=&apos;FSCWlth_UpdateProfile&apos;</filterFormula>
+        <object>SvcCatalogRequest</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

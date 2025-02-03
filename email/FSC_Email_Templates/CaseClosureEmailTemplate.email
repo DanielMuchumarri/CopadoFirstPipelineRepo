@@ -1,0 +1,15 @@
+<div class="base" style="padding: 56px;margin: 0px;font-family: 'Segoe UI', Helvetica, Arial, sans-serif;background-color: #F4F5F4;">
+    <div class="container" style="padding: 0;margin: 8px auto;font-family: 'Segoe UI', Helvetica, Arial, sans-serif;background-color: #FFFFFF;border-radius: 5px;width: 660px;font-size: 16px;">
+        <a href=""><img src='https://244fscorg.file.force.com/servlet/servlet.ImageServer?id=015Hr000004Ulcv&oid=00DHr00000D9UFC&lastMod=1689143201000' width="660" height="206" alt="" style="padding: 0;margin: 0;font-family: 'Segoe UI', Helvetica, Arial, sans-serif;"></a>
+        <div class="content" style="padding: 32px;margin: 0;font-family: 'Segoe UI', Helvetica, Arial, sans-serif;line-height: 1.5;">
+            <p class="first-text-block" style="padding: 0;margin: 16px 0;font-family: 'Segoe UI', Helvetica, Arial, sans-serif;margin-bottom: 40px;">
+                Hello <strong style="padding: 0;margin: 0;font-family: 'Segoe UI', Helvetica, Arial, sans-serif;">{!Case.Account}</strong>,<br style="padding: 0;margin: 0;font-family: 'Segoe UI', Helvetica, Arial, sans-serif;">
+                We’ve processed your request to {!MID( Case.Subject , FIND('-' , Case.Subject )+1 , LEN(LEFT(Case.Subject, FIND('Service Request',Case.Subject) -1 )) - FIND('-',Case.Subject))} and the case <span style="font-weight: bold;color: #000000;padding: 0;margin: 0;font-family: 'Segoe UI', Helvetica, Arial, sans-serif;">{!Case.CaseNumber}</span> is now closed.
+            </p>
+            <p class="email-footer" style="padding: 0;margin: 16px 0;font-family: 'Segoe UI', Helvetica, Arial, sans-serif;margin-top: 40px;font-style: italic;">
+                Thank you, <br style="padding: 0;margin: 0;font-family: 'Segoe UI', Helvetica, Arial, sans-serif;">
+                Customer Support Team
+            </p>
+        </div>
+    </div>
+</div>

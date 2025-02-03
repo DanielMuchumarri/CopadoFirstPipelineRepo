@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description>The &quot;Lost Credit Card&quot; topic helps users report a lost credit card, block the card, and request a replacement. It handles user requests mentioning lost or stolen credit cards, blocking the card, and issuing a new one.</description>
+    <developerName>Lost_Credit_Card0</developerName>
+    <genAiFunctions>
+        <functionName>Query_Fins_Account_using_Last_4_digits_Account_Number</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Set_Credit_Card_On_Hold</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Update_Financial_Account</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Zip_Code_Verification</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>For the topic labeled &quot;Lost Credit Card,&quot; the instructions for the agent should be as follows:
+
+Always verify the user&apos;s identity before proceeding with any actions.
+Never disclose sensitive information without proper authentication.
+If the user reports a lost credit card, then immediately block the card and initiate the process for issuing a replacement.
+If the user requests information on the next steps, then provide clear and concise guidance on what to expect and how to proceed.</description>
+        <developerName>instruction_forthetopi0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_forthetopi0</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Lost Credit Card</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to handle user requests related to reporting a lost credit card. This includes blocking the lost card, issuing a replacement, and providing guidance on the next steps. You should recognize phrases like &quot;lost my credit card,&quot; &quot;block my card,&quot; and &quot;need a new card.&quot;</scope>
+</GenAiPlugin>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata">
+    <dataset>Equilar</dataset>
+    <dimensions>
+        <field>AI</field>
+        <isDerived>false</isDerived>
+        <label>Action</label>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Action</field>
+        <isDerived>false</isDerived>
+        <label>Type</label>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+</WaveXmd>

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{&quot;AccountCharacteristics&quot;:{&quot;BankInformation&quot;:{&quot;AbaNumber&quot;:&quot;234234324&quot;,&quot;AccountNumber&quot;:&quot;24242423&quot;,&quot;BankAccountType&quot;:&quot;Checking&quot;},&quot;DuplicateInformation&quot;:{&quot;ThirdPartyDocuments&quot;:null,&quot;ToAllAccountHolders&quot;:false,&quot;ToThirdParty&quot;:false},&quot;Edelivery&quot;:{&quot;edeliveryEnabled&quot;:false}},&quot;AccountSetup&quot;:{&quot;AccountType&quot;:&quot;Individual&quot;,&quot;Id&quot;:&quot;a0FDP00000ER7g22AD&quot;},&quot;AccountStakeholder&quot;:{&quot;StakeholderInformation&quot;:{&quot;PersonalInformation&quot;:{&quot;FirstNameStakeholder&quot;:&quot;1037&quot;,&quot;LastNameStakeholder&quot;:&quot;pm&quot;,&quot;MiddleNameStakeholder&quot;:null},&quot;StakeholderControlPerson&quot;:false,&quot;StakeholderEntityOwner&quot;:false}},&quot;ContextId&quot;:&quot;001DP00001oRpDgYAK&quot;,&quot;EntitiesThatAreAccountHolders&quot;:{&quot;EntityInformation&quot;:{&quot;EntityName&quot;:&quot;entityaccount1036&quot;},&quot;MailingAddressEntity&quot;:{&quot;SameAsLegalAddressEntity&quot;:false}},&quot;EntityAccountInformation&quot;:null,&quot;HouseholdId&quot;:&quot;001DP00001oRpDgYAK&quot;,&quot;PrimaryAccountHolder&quot;:{&quot;AccountHolder&quot;:{&quot;ControlPersonAccountHolder&quot;:true,&quot;CountryOfCitizenship&quot;:&quot;United States&quot;,&quot;DateOfBirth&quot;:&quot;2023-02-13&quot;,&quot;EmployerInformationAndAffiliates&quot;:{&quot;CompanySymbol&quot;:null,&quot;ControlPersonAffiliate&quot;:false,&quot;EmployedByFinra&quot;:false,&quot;EmployerName&quot;:&quot;testemp&quot;,&quot;ForeignPoliticalFigure&quot;:false,&quot;Id&quot;:&quot;a0ADP00000BlDCz2AN&quot;,&quot;SameAsEmployerFinra&quot;:false},&quot;EntityOwnerAccountHolder&quot;:false,&quot;FinancialAccountName&quot;:&quot;stake new Financial Account&quot;,&quot;FirstNameAccountHolder&quot;:&quot;stake&quot;,&quot;Id&quot;:&quot;001DP00001oRpD7YAK&quot;,&quot;IdExpirationDateAccountHolder&quot;:&quot;2023-02-13&quot;,&quot;IdNumberAccountHolder&quot;:&quot;2342&quot;,&quot;LastNameAccountHolder&quot;:&quot;new&quot;,&quot;MailingAddressAccountHolder&quot;:{&quot;SameAsLegalAddressAccountHolder&quot;:false},&quot;MiddleNameAccountHolder&quot;:&quot;m&quot;,&quot;SocialSecurityTaxpayerIdNumberAccountHolder&quot;:&quot;3523&quot;,&quot;StateCountryOfIdIssuanceAccountHolder&quot;:&quot;MN&quot;,&quot;TitleAccountHolder&quot;:&quot;snldfjn&quot;,&quot;TypeOfGovernmentIssuedIdAccountHolder&quot;:&quot;passport&quot;}},&quot;Suitability&quot;:{&quot;DecisionMakingExperience&quot;:{&quot;ConsultBroker&quot;:false,&quot;ConsultFamilyFriends&quot;:false,&quot;MakeOwnDecisions&quot;:false},&quot;FinancialPosition&quot;:{&quot;AccountFundingSource&quot;:null,&quot;EstimatedNetWorth&quot;:&quot;$0-$50,000&quot;},&quot;InvestmentProfile&quot;:{&quot;InvestmentPurpose&quot;:null},&quot;ProductKnowledge&quot;:{&quot;InvestmentProductExperience&quot;:null,&quot;InvestmentProductKnowledge&quot;:null}},&quot;language&quot;:&quot;English&quot;,&quot;omniProcessId&quot;:&quot;0jNDP0000004CYR2A2&quot;,&quot;omniscriptId&quot;:&quot;0jNDP0000004CYR2A2&quot;,&quot;runMode&quot;:&quot;preview&quot;,&quot;sId&quot;:&quot;0jNDP0000004CYR2A2&quot;,&quot;subType&quot;:&quot;Brokerage&quot;,&quot;theme&quot;:&quot;lightning&quot;,&quot;timeStamp&quot;:&quot;2023-02-14T04:36:08.659Z&quot;,&quot;type&quot;:&quot;Application&quot;,&quot;userCurrencyCode&quot;:&quot;USD&quot;,&quot;userId&quot;:&quot;005DP000007qs8NYAQ&quot;,&quot;userName&quot;:&quot;test-nkoomqdemzek@example.com&quot;,&quot;userProfile&quot;:&quot;System Administrator&quot;,&quot;userTimeZone&quot;:&quot;-480&quot;,&quot;userTimeZoneName&quot;:&quot;America/Los_Angeles&quot;}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>false</isActive>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>Load Account Holders</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>FSCRIAGetAccountContactRelations</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;AccountIds&quot; : &quot;=%StoreAccountIds:AccountIds%&quot;
+  },
+  &quot;additionalOutput&quot; : {
+    &quot;HouseholdId&quot; : &quot;=%Household:Id%&quot;
+  },
+  &quot;bundle&quot; : &quot;FSCRIAGetAccountContactRelations&quot;,
+  &quot;chainOnStep&quot; : true,
+  &quot;dataRaptor Input Parameters&quot; : [ ],
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;ignoreCache&quot; : false,
+  &quot;label&quot; : &quot;DataRaptorExtractAction1&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true
+}</propertySetConfig>
+        <sequenceNumber>10.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>FSCRIALoadAccountContactRelations</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;bundle&quot; : &quot;FSCRIALoadAccountContactRelations&quot;,
+  &quot;chainOnStep&quot; : true,
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;label&quot; : &quot;DataRaptorPostAction6&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;FSCRIAGetAccountContactRelations&quot;,
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true
+}</propertySetConfig>
+        <sequenceNumber>11.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>FSCRIALoadContingentBeneficiaries</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;bundle&quot; : &quot;FSCRIALoadContingentBeneficiaries&quot;,
+  &quot;chainOnStep&quot; : true,
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;IF(%BeneficiaryFboInformation:ContingentBeneficiaries:BeneficiaryFirstNameContingentBeneficiary% &lt;&gt; null &amp;&amp; %BeneficiaryFboInformation:ContingentBeneficiaries:BeneficiaryLastNameContingentBeneficiary% &lt;&gt; null, true, false)&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;label&quot; : &quot;DataRaptorPostAction4&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true
+}</propertySetConfig>
+        <sequenceNumber>8.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>FSCRIALoadOtherAccounts</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;bundle&quot; : &quot;FSCRIALoadOtherAccounts&quot;,
+  &quot;chainOnStep&quot; : true,
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;label&quot; : &quot;DataRaptorPostAction3&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true
+}</propertySetConfig>
+        <sequenceNumber>6.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>FSCRIALoadPrimaryBeneficiaries</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;bundle&quot; : &quot;FSCRIALoadPrimaryBeneficiaries&quot;,
+  &quot;chainOnStep&quot; : true,
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;IF(%BeneficiaryFboInformation:PrimaryBeneficiaries:BeneficiaryFirstNamePrimaryBeneficiary% &lt;&gt; null &amp;&amp; %BeneficiaryFboInformation:PrimaryBeneficiaries:BeneficiaryLastNamePrimaryBeneficiary% &lt;&gt; null, true, false)&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;label&quot; : &quot;DataRaptorPostAction5&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true
+}</propertySetConfig>
+        <sequenceNumber>7.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Household</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;chainOnStep&quot; : true,
+  &quot;disOnTplt&quot; : false,
+  &quot;elementValueMap&quot; : {
+    &quot;Id&quot; : &quot;=%ContextId%&quot;
+  },
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;label&quot; : &quot;SetValues1&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;show&quot; : null
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>FSCRIALoadEntityAccountInformation</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;HouseholdId&quot; : &quot;=%Household:Id%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;bundle&quot; : &quot;FSCRIALoadEntityAccountInformation&quot;,
+  &quot;chainOnStep&quot; : true,
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;label&quot; : &quot;DataRaptorPostAction2&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true
+}</propertySetConfig>
+            <sequenceNumber>5.0</sequenceNumber>
+            <type>DataRaptor Post Action</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>IsEntityAccountType</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;IF(%AccountSetup:AccountType% == \&quot;C Corporation\&quot; OR %AccountSetup:AccountType% == \&quot;S Corporation\&quot; OR %AccountSetup:AccountType% == \&quot;Partnership\&quot; OR %AccountSetup:AccountType% == \&quot;Unincorporated Association\&quot; OR %AccountSetup:AccountType% == \&quot;S Corporation LLC\&quot; OR %AccountSetup:AccountType% == \&quot;C Corporation LLC\&quot; OR %AccountSetup:AccountType% == \&quot;Trust Under Agreement\&quot; OR %AccountSetup:AccountType% == \&quot;Trust Under Will\&quot; OR %AccountSetup:AccountType% == \&quot;IRA\&quot; OR %AccountSetup:AccountType% == \&quot;Plan\&quot; OR %AccountSetup:AccountType% == \&quot;Trust\&quot; OR %AccountSetup:AccountType% == \&quot;Other\&quot;, true, false)&quot;,
+  &quot;isIfElseBlock&quot; : false,
+  &quot;label&quot; : &quot;ConditionalBlock2&quot;,
+  &quot;show&quot; : null
+}</propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Conditional Block</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>FSCRIALoadPrimaryAccountHolder</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;HouseholdId&quot; : &quot;=%Household:Id%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;bundle&quot; : &quot;FSCRIALoadPrimaryAccountHolder&quot;,
+  &quot;chainOnStep&quot; : true,
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;label&quot; : &quot;DataRaptorPostAction1&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>DataRaptor Post Action</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>IsPrimaryAccountType</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;IF(%AccountSetup:AccountType% == \&quot;Individual\&quot; OR %AccountSetup:AccountType% == \&quot;TOD - Individual\&quot; OR %AccountSetup:AccountType% == \&quot;TOD - Joint Tenants with Rights of Survivorship\&quot; OR %AccountSetup:AccountType% == \&quot;TOD - Joint Tenants in Entirety\&quot; OR %AccountSetup:AccountType% = \&quot;Tenants with Rights of Survivorship\&quot; OR %AccountSetup:AccountType% == \&quot;Tenants in Common\&quot; OR %AccountSetup:AccountType% == \&quot;Tenants in Entirety\&quot; OR %AccountSetup:AccountType% == \&quot;Community Property\&quot; OR %AccountSetup:AccountType% = \&quot;Usufruct\&quot; OR %AccountSetup:AccountType% == \&quot;UGMA\&quot; OR %AccountSetup:AccountType% == \&quot;UTMA\&quot; OR %AccountSetup:AccountType% == \&quot;Administrator\&quot; OR %AccountSetup:AccountType% == \&quot;Executor\&quot; OR %AccountSetup:AccountType% == \&quot;Personal Representative\&quot;, true, false)&quot;,
+  &quot;isIfElseBlock&quot; : false,
+  &quot;label&quot; : &quot;ConditionalBlock1&quot;,
+  &quot;show&quot; : null
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Conditional Block</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>StoreAccountIds</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;chainOnStep&quot; : true,
+  &quot;disOnTplt&quot; : false,
+  &quot;elementValueMap&quot; : {
+    &quot;AccountIds&quot; : &quot;=LISTMERGE(\&quot;Id\&quot;,LIST(%FSCRIALoadPrimaryAccountHolder:Account_1%),LIST(%FSCRIALoadEntityAccountInformation:Account_1%),LIST(%FSCRIALoadOtherAccounts:Account_1%),LIST(%FSCRIALoadOtherAccounts:Account_2%),LIST(%FSCRIALoadPrimaryBeneficiaries:Account_1%),LIST(%FSCRIALoadContingentBeneficiaries:Account_1%))&quot;
+  },
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;label&quot; : &quot;SetValues3&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;show&quot; : null
+}</propertySetConfig>
+        <sequenceNumber>9.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessKey>Application_Brokerage</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;chainableActualTimeLimit&quot; : 10,
+  &quot;chainableCpuLimit&quot; : 10000,
+  &quot;chainableDMLRowsLimit&quot; : 10000,
+  &quot;chainableDMLStatementsLimit&quot; : 150,
+  &quot;chainableHeapSizeLimit&quot; : 6,
+  &quot;chainableQueriesLimit&quot; : 100,
+  &quot;chainableQueryRowsLimit&quot; : 50000,
+  &quot;chainableSoslQueriesLimit&quot; : 20,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;description&quot; : &quot;&quot;,
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;mockResponseMap&quot; : { },
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 10,
+  &quot;queueableChainableQueriesLimit&quot; : 140,
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;rollbackOnError&quot; : true,
+  &quot;trackingCustomData&quot; : { },
+  &quot;ttlMinutes&quot; : 5
+}</propertySetConfig>
+    <subType>Brokerage</subType>
+    <type>Application</type>
+    <uniqueName>Application_Brokerage_Procedure_2</uniqueName>
+    <versionNumber>2.0</versionNumber>
+    <webComponentKey>8884a63b-0a16-744d-dbc4-a9bbe092d6e1</webComponentKey>
+</OmniIntegrationProcedure>

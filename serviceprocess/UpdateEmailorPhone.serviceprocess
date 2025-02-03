@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <processLabel>Update Email Or Phone</processLabel>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>current_email</developerName>
+        <groupApiName>section_5</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Current Email</label>
+        <sortOrder>1</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>new_email</developerName>
+        <groupApiName>section_5</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>New Email</label>
+        <sortOrder>2</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>current_phone_number</developerName>
+        <groupApiName>section_5</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Current Phone Number</label>
+        <sortOrder>3</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>new_phone_number</developerName>
+        <groupApiName>section_5</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>New Phone Number</label>
+        <sortOrder>4</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>current_mobile_number</developerName>
+        <groupApiName>section_5</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Current Mobile Number</label>
+        <sortOrder>5</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Extended</attributeType>
+        <dataType>Text</dataType>
+        <developerName>new_mobile_number</developerName>
+        <groupApiName>section_5</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>New Mobile Number</label>
+        <sortOrder>6</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessDependencies>
+        <dependencyReference>FSC_UpdateEmailorPhone</dependencyReference>
+        <type>IntegrationProviderDef</type>
+    </serviceProcessDependencies>
+    <serviceProcessDependencies>
+        <dependencyReference>ProcessEmailOrPhoneUpdate</dependencyReference>
+        <type>FlowDefinition</type>
+    </serviceProcessDependencies>
+    <serviceProcessDependencies>
+        <dependencyReference>FSC_UpdateEmailorPhone_English_2</dependencyReference>
+        <type>OmniScriptConfig</type>
+    </serviceProcessDependencies>
+    <serviceProcessItemGroups>
+        <apiName>section_5</apiName>
+        <groupName>Contact Update</groupName>
+        <sortOrder>5</sortOrder>
+    </serviceProcessItemGroups>
+    <usageType>Industry</usageType>
+</ServiceProcess>

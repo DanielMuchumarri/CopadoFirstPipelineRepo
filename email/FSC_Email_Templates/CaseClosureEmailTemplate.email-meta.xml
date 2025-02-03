@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Case Closure Email Template</name>
+    <style>none</style>
+    <subject>Your service request to {!MID( Case.Subject , FIND(&apos;-&apos; , Case.Subject )+1 , LEN(LEFT(Case.Subject, FIND(&apos;Service Request&apos;,Case.Subject) -1 )) - FIND(&apos;-&apos;,Case.Subject))} was closed</subject>
+    <textOnly>Hello {!Case.Account},
+We’ve processed your request to {!MID( Case.Subject , FIND(&apos;-&apos; , Case.Subject )+1 , LEN(LEFT(Case.Subject, FIND(&apos;Service Request&apos;,Case.Subject) -1 )) - FIND(&apos;-&apos;,Case.Subject))} and the case {!Case.CaseNumber} is now closed.
+
+Thank you,
+Customer Support Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

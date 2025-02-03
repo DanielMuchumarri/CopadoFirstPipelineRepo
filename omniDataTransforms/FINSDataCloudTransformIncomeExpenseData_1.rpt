@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>Transform the calculated insight data to show on the FSCDataCloudShowIncomeExpenses FlexCard.</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;QueryCalculatedInsightAvgDep1Year&quot; : {
+    &quot;error&quot; : &quot;OK&quot;,
+    &quot;errorCode&quot; : &quot;INVOKE-200&quot;,
+    &quot;calculatedInsightData&quot; : [ {
+      &quot;AverageDeposits__c&quot; : 1190.8333333333333,
+      &quot;TotalDeposits__c&quot; : 14290,
+      &quot;PartyName__c&quot; : &quot;Mingxi PA&quot;,
+      &quot;PartyId__c&quot; : &quot;001SB0000034OlBYAU&quot;,
+      &quot;EndDate__c&quot; : &quot;2023-09-30&quot;,
+      &quot;StartDate__c&quot; : &quot;2022-09-01&quot;
+    } ]
+  },
+  &quot;QueryCalculatedInsightAvgExp6Months&quot; : {
+    &quot;error&quot; : &quot;OK&quot;,
+    &quot;errorCode&quot; : &quot;INVOKE-200&quot;,
+    &quot;calculatedInsightData&quot; : [ {
+      &quot;AverageExpenses__c&quot; : 83.33333333333333,
+      &quot;TotalExpenses__c&quot; : 500,
+      &quot;PartyName__c&quot; : &quot;Mingxi PA&quot;,
+      &quot;PartyId__c&quot; : &quot;001SB0000034OlBYAU&quot;,
+      &quot;EndDate__c&quot; : &quot;2023-09-30&quot;,
+      &quot;StartDate__c&quot; : &quot;2023-04-01&quot;
+    } ]
+  },
+  &quot;QueryCalculatedInsightAvgDep1YearStatus&quot; : true,
+  &quot;ResponseAction4Status&quot; : true,
+  &quot;options&quot; : {
+    &quot;vlcFilesMap&quot; : null,
+    &quot;forceQueueable&quot; : false,
+    &quot;mockHttpResponse&quot; : null,
+    &quot;vlcApexResponse&quot; : true,
+    &quot;ParentInteractionToken&quot; : null,
+    &quot;useFuture&quot; : false,
+    &quot;isTestProcedure&quot; : false,
+    &quot;useQueueable&quot; : false,
+    &quot;disableMetadataCache&quot; : false,
+    &quot;resetCache&quot; : false,
+    &quot;vlcIPData&quot; : null,
+    &quot;OmniAnalyticsTrackingDebug&quot; : false,
+    &quot;ignoreCache&quot; : true,
+    &quot;isDebug&quot; : true,
+    &quot;queueableChainable&quot; : false,
+    &quot;useContinuation&quot; : false,
+    &quot;chainable&quot; : false,
+    &quot;shouldCommit&quot; : false,
+    &quot;vlcTestSuiteUniqueKey&quot; : null,
+    &quot;vlcTestUniqueKey&quot; : null,
+    &quot;vlcCacheKey&quot; : null,
+    &quot;useHttpCalloutMock&quot; : false,
+    &quot;continuationStepResult&quot; : null,
+    &quot;useQueueableApexRemoting&quot; : false
+  },
+  &quot;response&quot; : { },
+  &quot;QueryCalculatedInsightAvgDep3MonthsStatus&quot; : true,
+  &quot;QueryCalculatedInsightAvgDep3Months&quot; : {
+    &quot;error&quot; : &quot;OK&quot;,
+    &quot;errorCode&quot; : &quot;INVOKE-200&quot;,
+    &quot;calculatedInsightData&quot; : [ {
+      &quot;AverageDeposits__c&quot; : 430,
+      &quot;TotalDeposits__c&quot; : 1290,
+      &quot;PartyName__c&quot; : &quot;Mingxi PA&quot;,
+      &quot;PartyId__c&quot; : &quot;001SB0000034OlBYAU&quot;,
+      &quot;EndDate__c&quot; : &quot;2023-09-30&quot;,
+      &quot;StartDate__c&quot; : &quot;2023-07-01&quot;
+    } ]
+  },
+  &quot;QueryCalculatedInsightAvgDep6MonthsStatus&quot; : true,
+  &quot;QueryCalculatedInsightAvgExp3MonthsStatus&quot; : true,
+  &quot;QueryCalculatedInsightAvgExp1Year&quot; : {
+    &quot;error&quot; : &quot;OK&quot;,
+    &quot;errorCode&quot; : &quot;INVOKE-200&quot;,
+    &quot;calculatedInsightData&quot; : [ {
+      &quot;AverageExpenses__c&quot; : 41.666666666666664,
+      &quot;TotalExpenses__c&quot; : 500,
+      &quot;PartyName__c&quot; : &quot;Mingxi PA&quot;,
+      &quot;PartyId__c&quot; : &quot;001SB0000034OlBYAU&quot;,
+      &quot;EndDate__c&quot; : &quot;2023-09-30&quot;,
+      &quot;StartDate__c&quot; : &quot;2022-09-01&quot;
+    } ]
+  },
+  &quot;QueryCalculatedInsightAvgExp3Months&quot; : {
+    &quot;error&quot; : &quot;OK&quot;,
+    &quot;errorCode&quot; : &quot;INVOKE-200&quot;,
+    &quot;calculatedInsightData&quot; : [ {
+      &quot;AverageExpenses__c&quot; : 166.66666666666666,
+      &quot;TotalExpenses__c&quot; : 500,
+      &quot;PartyName__c&quot; : &quot;Mingxi PA&quot;,
+      &quot;PartyId__c&quot; : &quot;001SB0000034OlBYAU&quot;,
+      &quot;EndDate__c&quot; : &quot;2023-09-30&quot;,
+      &quot;StartDate__c&quot; : &quot;2023-07-01&quot;
+    } ]
+  },
+  &quot;AccountId&quot; : &quot;001SB0000034OlBYAU&quot;,
+  &quot;QueryCalculatedInsightAvgDep6Months&quot; : {
+    &quot;error&quot; : &quot;OK&quot;,
+    &quot;errorCode&quot; : &quot;INVOKE-200&quot;,
+    &quot;calculatedInsightData&quot; : [ {
+      &quot;AverageDeposits__c&quot; : 381.6666666666667,
+      &quot;TotalDeposits__c&quot; : 2290,
+      &quot;PartyName__c&quot; : &quot;Mingxi PA&quot;,
+      &quot;PartyId__c&quot; : &quot;001SB0000034OlBYAU&quot;,
+      &quot;EndDate__c&quot; : &quot;2023-09-30&quot;,
+      &quot;StartDate__c&quot; : &quot;2023-04-01&quot;
+    } ]
+  },
+  &quot;QueryCalculatedInsightAvgExp1YearStatus&quot; : true,
+  &quot;QueryCalculatedInsightAvgExp6MonthsStatus&quot; : true
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>FINSDataCloudTransformIncomeExpenseData</name>
+    <nullInputsIncludedInOutput>true</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FINSDataCloudTransformIncomeExpenseDataCustom0jI1Q000000gmEVUAYItem4</globalKey>
+        <inputFieldName>IncomeData:TotalDeposits__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FINSDataCloudTransformIncomeExpenseData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalIncome</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:IncomeData ISNOTBLANK | var:ExpenseData ISBLANK AND var:IncomeData:AverageDeposits__c | | var:IncomeData ISBLANK | var:ExpenseData ISNOTBLANK AND 0 var:ExpenseData:AverageExpenses__c - | | var:IncomeData ISNOTBLANK | var:ExpenseData ISNOTBLANK AND var:IncomeData:AverageDeposits__c var:ExpenseData:AverageExpenses__c - var:null IF IF IF</formulaConverted>
+        <formulaExpression>IF(ISNOTBLANK(IncomeData) AND ISBLANK(ExpenseData), (IncomeData:AverageDeposits__c), IF(ISBLANK(IncomeData) AND ISNOTBLANK(ExpenseData), 0 - (ExpenseData:AverageExpenses__c), IF(ISNOTBLANK(IncomeData) AND ISNOTBLANK(ExpenseData), (IncomeData:AverageDeposits__c) - (ExpenseData:AverageExpenses__c), null)))</formulaExpression>
+        <formulaResultPath>AverageMonthlySurplus</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>FINSDataCloudTransformIncomeExpenseDataCustom0jI1Q000000gmEVUAYItem5</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FINSDataCloudTransformIncomeExpenseData</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FINSDataCloudTransformIncomeExpenseDataCustom0jI1Q000000gmEVUAYItem6</globalKey>
+        <inputFieldName>TotalSurplus</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FINSDataCloudTransformIncomeExpenseData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalSurplus</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:IncomeData ISNOTBLANK | var:ExpenseData ISBLANK AND var:IncomeData:TotalDeposits__c | | var:IncomeData ISBLANK | var:ExpenseData ISNOTBLANK AND 0 var:ExpenseData:TotalExpenses__c - | | var:IncomeData ISNOTBLANK | var:ExpenseData ISNOTBLANK AND var:IncomeData:TotalDeposits__c var:ExpenseData:TotalExpenses__c - var:null IF IF IF</formulaConverted>
+        <formulaExpression>IF(ISNOTBLANK(IncomeData) AND ISBLANK(ExpenseData), (IncomeData:TotalDeposits__c), IF(ISBLANK(IncomeData) AND ISNOTBLANK(ExpenseData), 0 - (ExpenseData:TotalExpenses__c), IF(ISNOTBLANK(IncomeData) AND ISNOTBLANK(ExpenseData), (IncomeData:TotalDeposits__c) - (ExpenseData:TotalExpenses__c), null)))</formulaExpression>
+        <formulaResultPath>TotalSurplus</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>FINSDataCloudTransformIncomeExpenseDataCustom0jI1Q000000gmEVUAYItem7</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FINSDataCloudTransformIncomeExpenseData</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FINSDataCloudTransformIncomeExpenseDataCustom0jI1Q000000gmEVUAYItem0</globalKey>
+        <inputFieldName>IncomeData:AverageDeposits__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FINSDataCloudTransformIncomeExpenseData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AverageMonthlyIncome</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FINSDataCloudTransformIncomeExpenseDataCustom0jI1Q000000gmEVUAYItem1</globalKey>
+        <inputFieldName>ExpenseData:AverageExpenses__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FINSDataCloudTransformIncomeExpenseData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AverageMonthlyExpense</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FINSDataCloudTransformIncomeExpenseDataCustom0jI1Q000000gmEVUAYItem2</globalKey>
+        <inputFieldName>AverageMonthlySurplus</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FINSDataCloudTransformIncomeExpenseData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AverageMonthlySurplus</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FINSDataCloudTransformIncomeExpenseDataCustom0jI1Q000000gmEVUAYItem3</globalKey>
+        <inputFieldName>ExpenseData:TotalExpenses__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FINSDataCloudTransformIncomeExpenseData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalExpense</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;CalculatedInsightsTransformAction&quot; : [ ],
+  &quot;ExpenseData&quot; : [ {
+    &quot;AverageExpenses__c&quot; : 4604.333333333333,
+    &quot;TotalExpenses__c&quot; : 13813,
+    &quot;PartyName__c&quot; : &quot;Simon Maurice&quot;,
+    &quot;PartyId__c&quot; : &quot;001SB000003ECqnYAG&quot;,
+    &quot;EndDate__c&quot; : &quot;2023-10-31&quot;,
+    &quot;StartDate__c&quot; : &quot;2023-08-01&quot;
+  } ],
+  &quot;IncomeData&quot; : [ {
+    &quot;AverageDeposits__c&quot; : 11485.333333333334,
+    &quot;TotalDeposits__c&quot; : 34456,
+    &quot;PartyName__c&quot; : &quot;Simon Maurice&quot;,
+    &quot;PartyId__c&quot; : &quot;001SB000003ECqnYAG&quot;,
+    &quot;EndDate__c&quot; : &quot;2023-10-31&quot;,
+    &quot;StartDate__c&quot; : &quot;2023-08-01&quot;
+  } ],
+  &quot;AccountId&quot; : &quot;001SB000003ECqnYAG&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>FINSDataCloudTransformIncomeExpenseData_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordActionDeployment xmlns="http://soap.sforce.com/2006/04/metadata">
+    <componentName>ActionLauncher</componentName>
+    <deploymentContexts>
+        <entityName>Opportunity</entityName>
+    </deploymentContexts>
+    <hasComponents>false</hasComponents>
+    <hasGuidedActions>true</hasGuidedActions>
+    <hasOmniscripts>true</hasOmniscripts>
+    <hasRecommendations>false</hasRecommendations>
+    <masterLabel>WM - Opportunity - General</masterLabel>
+    <selectableItems>
+        <action>FinServ__NewTask</action>
+        <frequentActionSequenceNbr>1</frequentActionSequenceNbr>
+        <isFrequentAction>true</isFrequentAction>
+        <type>QuickAction</type>
+    </selectableItems>
+    <selectableItems>
+        <action>SDO_Send_Email</action>
+        <frequentActionSequenceNbr>0</frequentActionSequenceNbr>
+        <isFrequentAction>false</isFrequentAction>
+        <type>QuickAction</type>
+    </selectableItems>
+    <selectableItems>
+        <action>FinServ__LogACall</action>
+        <frequentActionSequenceNbr>0</frequentActionSequenceNbr>
+        <isFrequentAction>true</isFrequentAction>
+        <type>QuickAction</type>
+    </selectableItems>
+    <selectableItems>
+        <action>FinServ__NewEvent</action>
+        <frequentActionSequenceNbr>2</frequentActionSequenceNbr>
+        <isFrequentAction>true</isFrequentAction>
+        <type>QuickAction</type>
+    </selectableItems>
+</RecordActionDeployment>

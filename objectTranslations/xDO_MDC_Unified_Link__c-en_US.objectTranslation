@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Unified Link Individual</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Unified Link Individuals</value>
+    </caseValues>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Source --></label>
+        <name>xDO_MDC_Data_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual Id --></label>
+        <name>xDO_MDC_individual_Id__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ManagedTopics xmlns="http://soap.sforce.com/2006/04/metadata">
+    <managedTopic>
+        <fullName>SDO - Consumer.Content:Maintenance</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>Maintenance</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription>System maintenance reduces your TCO, optimizes the return from your system, and maximizes reliability.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>SDO - Consumer.Content:Solar</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>Solar</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription>Energy production from the solar system&apos;s most abundant source. From panels to inverters to passive systems, this is your source.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>SDO - Consumer.Content:Storage</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>Storage</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription>Flexible battery banks and energy management solutions to balance generation capacity with consumption.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>SDO - Consumer.Content:Wind</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>Wind</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription>High output wind systems designed to help optimize your renewables mix.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>SDO - Consumer.Featured:Getting Started</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Getting Started</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription>Get up and running quickly with advice from the Community.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>SDO - Consumer.Featured:Installation</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Installation</name>
+        <parentName></parentName>
+        <position>4</position>
+        <topicDescription>Installation practices, system design, and approaches.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>SDO - Consumer.Featured:Maintenance</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Maintenance</name>
+        <parentName></parentName>
+        <position>5</position>
+        <topicDescription>System maintenance reduces your TCO, optimizes the return from your system, and maximizes reliability.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>SDO - Consumer.Featured:Solar</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Solar</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription>Energy production from the solar system&apos;s most abundant source. From panels to inverters to passive systems, this is your source.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>SDO - Consumer.Featured:Storage</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Storage</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription>Flexible battery banks and energy management solutions to balance generation capacity with consumption.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>SDO - Consumer.Featured:Wind</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Wind</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription>High output wind systems designed to help optimize your renewables mix.</topicDescription>
+    </managedTopic>
+</ManagedTopics>

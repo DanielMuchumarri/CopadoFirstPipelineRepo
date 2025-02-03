@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata">
+    <dataset>CasesHistoryAgentsPersonal_ZZD_ERN</dataset>
+    <dimensions>
+        <field>Client_Name</field>
+        <isDerived>false</isDerived>
+        <label>Client</label>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Case_Number</field>
+        <isDerived>false</isDerived>
+        <label>Case</label>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>CaseId</field>
+        <isDerived>false</isDerived>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>CSAT_Trend</field>
+        <isDerived>false</isDerived>
+        <label>CSAT Old</label>
+        <sortIndex>3</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Stage</field>
+        <isDerived>false</isDerived>
+        <label>Status</label>
+        <sortIndex>4</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>CSAT_Trend_bucket</field>
+        <isDerived>false</isDerived>
+        <label>CSAT Trend</label>
+        <sortIndex>5</sortIndex>
+    </dimensions>
+    <measures>
+        <field>CSAT</field>
+        <formatCustomFormat>[&quot;#%&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>0</sortIndex>
+    </measures>
+</WaveXmd>

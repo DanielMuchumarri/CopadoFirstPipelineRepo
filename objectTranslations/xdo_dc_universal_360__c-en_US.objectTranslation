@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Universal 360</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Universal 360s</value>
+    </caseValues>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label for Field 8 --></label>
+        <name>xdo_Label_for_Field_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field 10 --></label>
+        <name>xdo_dc_Field_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field 11 --></label>
+        <name>xdo_dc_Field_11__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field 12 --></label>
+        <name>xdo_dc_Field_12__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field 13 --></label>
+        <name>xdo_dc_Field_13__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field 14 --></label>
+        <name>xdo_dc_Field_14__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field 15 Image --></label>
+        <name>xdo_dc_Field_15_Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field 16 Number --></label>
+        <name>xdo_dc_Field_16_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field 17 Number --></label>
+        <name>xdo_dc_Field_17_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field 18 Number --></label>
+        <name>xdo_dc_Field_18_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field 19 Number --></label>
+        <name>xdo_dc_Field_19_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field 1 --></label>
+        <name>xdo_dc_Field_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field 2 --></label>
+        <name>xdo_dc_Field_2_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field 3 --></label>
+        <name>xdo_dc_Field_3_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field 4 Address --></label>
+        <name>xdo_dc_Field_4_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field 5 --></label>
+        <name>xdo_dc_Field_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field 6 --></label>
+        <name>xdo_dc_Field_6_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field 7 --></label>
+        <name>xdo_dc_Field_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field 8 --></label>
+        <name>xdo_dc_Field_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field 9 --></label>
+        <name>xdo_dc_Field_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- Header Subtitle --></label>
+        <name>xdo_dc_Header_Subtitle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon For Field 10 --></label>
+        <name>xdo_dc_Icon_For_Field_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon for Field 11 --></label>
+        <name>xdo_dc_Icon_for_Field_11__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon for Field 12 --></label>
+        <name>xdo_dc_Icon_for_Field_12__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon for Field 13 --></label>
+        <name>xdo_dc_Icon_for_Field_13__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon for Field 14 --></label>
+        <name>xdo_dc_Icon_for_Field_14__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon for Field 16 Number --></label>
+        <name>xdo_dc_Icon_for_Field_16_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon for Field 17 --></label>
+        <name>xdo_dc_Icon_for_Field_17__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon for Field 18 --></label>
+        <name>xdo_dc_Icon_for_Field_18__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon for Field 19 --></label>
+        <name>xdo_dc_Icon_for_Field_19__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon for Field 1 --></label>
+        <name>xdo_dc_Icon_for_Field_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon for Field 2 Email --></label>
+        <name>xdo_dc_Icon_for_Field_2_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon for Field 3 Phone --></label>
+        <name>xdo_dc_Icon_for_Field_3_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon for Field 4 Address --></label>
+        <name>xdo_dc_Icon_for_Field_4_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon for Field 5 --></label>
+        <name>xdo_dc_Icon_for_Field_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon for Field 6 Number --></label>
+        <name>xdo_dc_Icon_for_Field_6_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon for Field 7 --></label>
+        <name>xdo_dc_Icon_for_Field_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon for Field 8 --></label>
+        <name>xdo_dc_Icon_for_Field_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon for Field 9 --></label>
+        <name>xdo_dc_Icon_for_Field_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image for Universal 360 Name --></label>
+        <name>xdo_dc_Icon_for_Universal_360_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label for Field 10 --></label>
+        <name>xdo_dc_Label_for_Field_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label for Field 11 --></label>
+        <name>xdo_dc_Label_for_Field_11__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label for Field 12 --></label>
+        <name>xdo_dc_Label_for_Field_12__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label for Field 13 --></label>
+        <name>xdo_dc_Label_for_Field_13__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label for Field 14 --></label>
+        <name>xdo_dc_Label_for_Field_14__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label for Field 16 Number --></label>
+        <name>xdo_dc_Label_for_Field_16_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label for Field 17 --></label>
+        <name>xdo_dc_Label_for_Field_17__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label for Field 18 --></label>
+        <name>xdo_dc_Label_for_Field_18__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label for Field 19 --></label>
+        <name>xdo_dc_Label_for_Field_19__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label for Field 1 --></label>
+        <name>xdo_dc_Label_for_Field_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label for Field 2 Email --></label>
+        <name>xdo_dc_Label_for_Field_2_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label for Field 3 Phone --></label>
+        <name>xdo_dc_Label_for_Field_3_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label for Field 4 Address --></label>
+        <name>xdo_dc_Label_for_Field_4_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label for Field 5 --></label>
+        <name>xdo_dc_Label_for_Field_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label for Field 6 Number --></label>
+        <name>xdo_dc_Label_for_Field_6_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label for Field 7 --></label>
+        <name>xdo_dc_Label_for_Field_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label for Field 9 --></label>
+        <name>xdo_dc_Label_for_Field_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- Progress bar for Field 17 --></label>
+        <name>xdo_dc_Progress_bar_for_Field_17__c</name>
+    </fields>
+    <fields>
+        <label><!-- Progress bar for Field 18 --></label>
+        <name>xdo_dc_Progress_bar_for_Field_18__c</name>
+    </fields>
+    <fields>
+        <label><!-- Progress bar for Field 19 --></label>
+        <name>xdo_dc_Progress_bar_for_Field_19__c</name>
+    </fields>
+    <fields>
+        <label><!-- Section 1 Active --></label>
+        <name>xdo_dc_Section_1_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Section 2 Active --></label>
+        <name>xdo_dc_Section_2_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Section 3 Active --></label>
+        <name>xdo_dc_Section_3_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Section KPI Active --></label>
+        <name>xdo_dc_Section_KPI_Active__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

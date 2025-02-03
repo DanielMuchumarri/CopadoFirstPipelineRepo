@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IntegrationProviderDef xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <apexClass>FSCWlthBeneficiaryDetailsSrvcIntegPrvd</apexClass>
+    <developerName>FSCWlth_GetBeneficiaryDetails</developerName>
+    <integrationProviderAttributes>
+        <dataType>String</dataType>
+        <developerName>FSC_wealth_integrations_V1_0_0</developerName>
+        <label>Get Beneficiaries Named Credential</label>
+        <required>true</required>
+        <stringValue>FSC_wealth_integrations_V1_0_0</stringValue>
+        <trueOrFalseValue>false</trueOrFalseValue>
+    </integrationProviderAttributes>
+    <providerLabel>FSCWlth_GetBeneficiaryDetails</providerLabel>
+    <type>Apex</type>
+</IntegrationProviderDef>

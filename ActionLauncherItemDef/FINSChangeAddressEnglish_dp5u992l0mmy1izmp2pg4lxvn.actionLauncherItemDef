@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionLauncherItemDef xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identifier>_dp5u992l0mmy1izmp2pg4lxvn</identifier>
+    <itemActionType>Omniscript</itemActionType>
+    <itemCategory>dbBased</itemCategory>
+    <itemLanguage>English</itemLanguage>
+    <masterLabel>FINS/ChangeAddress/English</masterLabel>
+    <subType>ChangeAddress</subType>
+    <type>FINS</type>
+</ActionLauncherItemDef>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <additionalInformation>By proceeding with the account opening process, you acknowledge that you have reviewed the terms and conditions of the bank.</additionalInformation>
+        <description>I consent to the above disclosure statement</description>
+        <isActive>true</isActive>
+        <name>Disclosure</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Disclosure</questionText>
+        <responseValues>I consent to the above disclosure statement</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Disclosure</dataType>
+    <developerName>FSC_ONB_v1_Disclosure</developerName>
+    <name>Disclosure</name>
+    <questionCategory>Financial</questionCategory>
+</AssessmentQuestion>

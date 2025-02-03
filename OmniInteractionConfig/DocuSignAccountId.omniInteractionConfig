@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniInteractionConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>DocuSignAccountId</masterLabel>
+    <value>23d723ce-7729-495e-b1d7-b08c5b498817</value>
+</OmniInteractionConfig>

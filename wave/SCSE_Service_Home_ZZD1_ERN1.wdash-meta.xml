@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDashboard xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <content xsi:nil="true"/>
+    <application>MortgageLendingAssets_ERN</application>
+    <dateVersion>1</dateVersion>
+    <description>Shown on the home page in the SCSE Service Console App.</description>
+    <masterLabel>FINS SCSE Service Home</masterLabel>
+    <templateAssetSourceName>SCSE_Service_Home_ZZD1_ERN</templateAssetSourceName>
+</WaveDashboard>

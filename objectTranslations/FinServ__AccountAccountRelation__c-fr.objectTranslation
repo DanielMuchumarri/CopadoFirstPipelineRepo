@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Relation de compte à compte</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Relations de compte à compte</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Related Accounts --></label>
+        <name>WM_Household_RelatedAccounts</name>
+    </fieldSets>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q-Branch Demo Reference --></label>
+        <name>FINS_Q_Branch_Demo_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>FinServ__Account__c</name>
+        <relationshipLabel><!-- Account Account Relations (Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>FinServ__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Association Type --></label>
+        <name>FinServ__AssociationType__c</name>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation>Groupe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member</masterLabel>
+            <translation>Membre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peer</masterLabel>
+            <translation>Pair</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Declaration Type --></label>
+        <name>FinServ__DeclarationType__c</name>
+        <picklistValues>
+            <masterLabel>Official Register</masterLabel>
+            <translation>Registre officiel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self declaration</masterLabel>
+            <translation>Auto-déclaration</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>FinServ__EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>FinServ__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- InverseRelationship --></label>
+        <name>FinServ__InverseRelationship__c</name>
+        <relationshipLabel><!-- Account Account Relations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Shareholder --></label>
+        <name>FinServ__IsShareholder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Account --></label>
+        <name>FinServ__RelatedAccount__c</name>
+        <relationshipLabel><!-- Account Account Relations (Related Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related Role --></label>
+        <name>FinServ__Role__c</name>
+        <relationshipLabel><!-- Account Account Relations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Shareholder Hierarchy Level --></label>
+        <name>FinServ__ShareholderHierarchyLevel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shareholder Hierarchy Role --></label>
+        <name>FinServ__ShareholderHierarchyRole__c</name>
+        <picklistValues>
+            <masterLabel>Ultimate Beneficial Owner</masterLabel>
+            <translation>Propriétaire bénéficiaire ultime</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Shareholder Type --></label>
+        <name>FinServ__ShareholderType__c</name>
+        <picklistValues>
+            <masterLabel>Voting Rights</masterLabel>
+            <translation>Droits de vote</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Source System ID --></label>
+        <name>FinServ__SourceSystemId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>FinServ__StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Share Percent --></label>
+        <name>FinServ__TotalSharePercent__c</name>
+    </fields>
+    <fields>
+        <label><!-- UCIN External ID --></label>
+        <name>UCIN_External_ID__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nom de la relation du compte</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- This record can&apos;t be edited. To update relationship information, you can deactivate this record and create a new one. --></errorMessage>
+        <name>FinServ__AARCanOnlyBeDeactivated</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account and Related Account must be different entities. --></errorMessage>
+        <name>FinServ__AccountAndRelatedAccountCannotBeSame</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account can&apos;t be a part of an individual. --></errorMessage>
+        <name>FinServ__AccountCannotBeAnIndividual</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Account-Account Relationship cannot be created as Inactive. --></errorMessage>
+        <name>FinServ__CannotCreateInactiveRecord</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Inactive record can&apos;t be edited. To update relationship information, you can create a new one. --></errorMessage>
+        <name>FinServ__InactiveAARCannotBeEdited</name>
+    </validationRules>
+</CustomObjectTranslation>

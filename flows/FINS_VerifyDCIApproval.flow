@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <assignments>
+        <description>Sets the status of the isDocumentChecklistItemAccepted variable to True.</description>
+        <name>SetAsAccepted</name>
+        <label>Set As Accepted</label>
+        <locationX>754</locationX>
+        <locationY>755</locationY>
+        <assignmentItems>
+            <assignToReference>isDocumentChecklistItemAccepted</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>IterateThroughDCI</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Sets the status of the isDocumentChecklistItemAccepted variable to False.</description>
+        <name>SetAsNotAccepted</name>
+        <label>Set As Not Accepted</label>
+        <locationX>1018</locationX>
+        <locationY>755</locationY>
+        <assignmentItems>
+            <assignToReference>isDocumentChecklistItemAccepted</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>When an error occurs during the flow execution, sets the isFlowFailed variable to True and stores the error message in the errorMessage variable.</description>
+        <name>SetIsFlowFailedToTrue</name>
+        <label>Set isFlowFailed to True</label>
+        <locationX>666</locationX>
+        <locationY>1355</locationY>
+        <assignmentItems>
+            <assignToReference>isFlowFailed</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>errorMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>If the GetDocumentChecklistItem element doesn’t return any records, sets the IsFlowFailed variable to True and stores the error message returned in the ErrorMessage variable.</description>
+        <name>SetNullFlowFailed</name>
+        <label>Set Flow to Failed</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <assignmentItems>
+            <assignToReference>isFlowFailed</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>errorMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>We couldn&apos;t find any DCI related this record.</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>Checks if the isDocumentChecklistItemAccepted is to True for all Document Checklist Items returned from the GetDocumentChecklistItems element.</description>
+        <name>AreAllDocumentChecklistItemsAccepted</name>
+        <label>Are All Document Checklist Items Accepted?</label>
+        <locationX>666</locationX>
+        <locationY>1139</locationY>
+        <defaultConnectorLabel>No (Default)</defaultConnectorLabel>
+        <rules>
+            <name>AllDocumentChecklistItemsAreAccepted</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>isDocumentChecklistItemAccepted</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>UpdatePartyProfile</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if the status of the Document Checklist Item record returned by the GetDocumentChecklistItems element is Accepted or not.</description>
+        <name>IsTheDocumentChecklistItemStatusAccepted</name>
+        <label>Is the Document Checklist Item Status Accepted?</label>
+        <locationX>886</locationX>
+        <locationY>647</locationY>
+        <defaultConnector>
+            <targetReference>SetAsNotAccepted</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No (Default)</defaultConnectorLabel>
+        <rules>
+            <name>IsAccepted</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateThroughDCI.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Accepted</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetAsAccepted</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if the GetDocumentChecklist element returned any records that matched the filter criteria.</description>
+        <name>WereDocumentChecklistItemsReturned</name>
+        <label>Check Get All DCI Is Null</label>
+        <locationX>358</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>IterateThroughDCI</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Yes (Default)</defaultConnectorLabel>
+        <rules>
+            <name>DocumentChecklistItemsWereReturned</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GetDocumentChecklistItems</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetNullFlowFailed</targetReference>
+            </connector>
+            <label>No</label>
+        </rules>
+    </decisions>
+    <description>Checks if the status of the Document Checklist Item for the Party Profile record is Accepted or not and updates the stage of the Party Profile record accordingly.</description>
+    <environments>Default</environments>
+    <interviewLabel>Onboarding: Check the Document Checklist Item Status and Update Party Profile Stage {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Onboarding: Check the Document Checklist Item Status and Update Party Profile Stage</label>
+    <loops>
+        <description>Iterates over the records that were returned by the GetDocumentChecklistItems element and repeats actions in the loop for each record.</description>
+        <name>IterateThroughDCI</name>
+        <label>Iterate Through Document Checklist Items</label>
+        <locationX>666</locationX>
+        <locationY>539</locationY>
+        <collectionReference>GetDocumentChecklistItems</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>IsTheDocumentChecklistItemStatusAccepted</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>AreAllDocumentChecklistItemsAccepted</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Gets all Document Checklist Items whose ParentRecordIDs match the ParentRecordID of the Document Checklist Item associated with the Party Profile record that triggered the flow.</description>
+        <name>GetDocumentChecklistItems</name>
+        <label>Get Document Checklist Items</label>
+        <locationX>358</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>WereDocumentChecklistItemsReturned</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>SetIsFlowFailedToTrue</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ParentRecordId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ParentRecordId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Id</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>DocumentChecklistItem</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Updates the stage of the Party Profile record associated with the Document Checklist Item whose ID matches the ParentRecordID of the Document Checklist Item passed into the flow to Risk Assessment.</description>
+        <name>UpdatePartyProfile</name>
+        <label>Update Party Profile</label>
+        <locationX>402</locationX>
+        <locationY>1247</locationY>
+        <faultConnector>
+            <targetReference>SetIsFlowFailedToTrue</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ParentRecordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Stage</field>
+            <value>
+                <stringValue>Risk Assessment</stringValue>
+            </value>
+        </inputAssignments>
+        <object>PartyProfile</object>
+    </recordUpdates>
+    <sourceTemplate>fsc_onboarding__VerifyDCIApproval</sourceTemplate>
+    <start>
+        <locationX>232</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>GetDocumentChecklistItems</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ParentRecordId</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Accepted</stringValue>
+            </value>
+        </filters>
+        <object>DocumentChecklistItem</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Stores the error message if an exception occurs during flow execution.</description>
+        <name>errorMessage</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Stores a boolean value that indicates whether the document checklist item is accepted.</description>
+        <name>isDocumentChecklistItemAccepted</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores a boolean value that indicates whether the flow execution failed.</description>
+        <name>isFlowFailed</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>Annuity</fullName>
+        <default>false</default>
+        <label>Annuity</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Auto</fullName>
+        <default>false</default>
+        <label>Auto</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Boat</fullName>
+        <default>false</default>
+        <label>Boat</label>
+    </standardValue>
+    <standardValue>
+        <fullName>BOP (Business Owners)</fullName>
+        <default>false</default>
+        <label>BOP (Business Owners)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Collector Car</fullName>
+        <default>false</default>
+        <label>Collector Car</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Commercial Property</fullName>
+        <default>false</default>
+        <label>Commercial Property</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Condo</fullName>
+        <default>false</default>
+        <label>Condo</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cyber</fullName>
+        <default>false</default>
+        <label>Cyber</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Disability</fullName>
+        <default>false</default>
+        <label>Disability</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fixed Annuity</fullName>
+        <default>false</default>
+        <label>Fixed Annuity</label>
+    </standardValue>
+    <standardValue>
+        <fullName>General Liability</fullName>
+        <default>false</default>
+        <label>General Liability</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Health &amp; Dental</fullName>
+        <default>false</default>
+        <label>Health &amp; Dental</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Home</fullName>
+        <default>false</default>
+        <label>Home</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Life</fullName>
+        <default>false</default>
+        <label>Life</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mental Health</fullName>
+        <default>false</default>
+        <label>Mental Health</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Motorcycle</fullName>
+        <default>false</default>
+        <label>Motorcycle</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Property</fullName>
+        <default>false</default>
+        <label>Property</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Renters</fullName>
+        <default>false</default>
+        <label>Renters</label>
+    </standardValue>
+    <standardValue>
+        <fullName>RV</fullName>
+        <default>false</default>
+        <label>RV</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Small Business</fullName>
+        <default>false</default>
+        <label>Small Business</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Specialty</fullName>
+        <default>false</default>
+        <label>Specialty</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Term Insurance</fullName>
+        <default>false</default>
+        <label>Term Insurance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Term Life</fullName>
+        <default>false</default>
+        <label>Term Life</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Umbrella</fullName>
+        <default>false</default>
+        <label>Umbrella</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Universal Life</fullName>
+        <default>false</default>
+        <label>Universal Life</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Variable Annuity</fullName>
+        <default>false</default>
+        <label>Variable Annuity</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Whole Life</fullName>
+        <default>false</default>
+        <label>Whole Life</label>
+    </standardValue>
+</StandardValueSet>

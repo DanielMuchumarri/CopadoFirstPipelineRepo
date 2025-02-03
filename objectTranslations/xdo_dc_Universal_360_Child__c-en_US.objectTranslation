@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Universal 360 Child</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Universal 360 Childs</value>
+    </caseValues>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Universal 360 Id --></label>
+        <name>xdo_dc_Universal_360_Id__c</name>
+        <relationshipLabel><!-- Universal 360 Childs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Link Any Record Id --></label>
+        <name>xdo_dc_Universal_Record_Id__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

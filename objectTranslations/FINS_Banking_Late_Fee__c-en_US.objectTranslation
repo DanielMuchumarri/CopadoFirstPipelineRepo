@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Late Fee</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Late Fees</value>
+    </caseValues>
+    <fields>
+        <label><!-- Days Outstanding --></label>
+        <name>Days_Outstanding__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of instruments --></label>
+        <name>Instruments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mockup Coaching --></label>
+        <name>Mockup_Coaching__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mockup Prediction --></label>
+        <name>Mockup_Prediction__c</name>
+    </fields>
+    <fields>
+        <help><!-- Person&apos;s name who owes the fee --></help>
+        <label><!-- Person/Entity&apos;s Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Paid off? --></label>
+        <name>Paid_off__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total amount due, whether it&apos;s a flat fee or a moving aggregate that gets bigger over a course of time --></help>
+        <label><!-- Running Amount Due --></label>
+        <name>Running_Amount_Due__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of touchpoints --></label>
+        <name>Touchpoints__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Brokerage</masterLabel>
+            <translation><!-- Brokerage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Business Interest</masterLabel>
+            <translation><!-- Commercial Business Interest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consulting Service Unpaid</masterLabel>
+            <translation><!-- Consulting Service Unpaid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan Payment Overdue</masterLabel>
+            <translation><!-- Loan Payment Overdue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overdraft</masterLabel>
+            <translation><!-- Overdraft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrongful Use Penalty</masterLabel>
+            <translation><!-- Wrongful Use Penalty --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Years with us --></label>
+        <name>Years_with_us__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

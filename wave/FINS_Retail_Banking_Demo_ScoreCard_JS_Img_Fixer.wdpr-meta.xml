@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveRecipe xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <content xsi:nil="true"/>
+    <dataflow>FINS_Retail_Banking_Demo_ScoreCard_JS_Img_Fixer</dataflow>
+    <format>R3</format>
+    <masterLabel>FINS Retail Banking Demo - ScoreCard JS Img Fixer</masterLabel>
+</WaveRecipe>

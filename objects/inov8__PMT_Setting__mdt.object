@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>inov8__Allocation_Trigger_Status__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Activates/deactivates the trigger which automates the project sharing. Keep this false, if your sharing model is public read/write for project</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Activates/deactivates the trigger which automates the project sharing. Keep this false, if your sharing model is public read/write for project</inlineHelpText>
+        <label>Allocation Trigger Status</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>inov8__Default_Availability_for_Scheduler__c</fullName>
+        <defaultValue>100</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The default availability percentage assigned to the users while creating the availabilities</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The default availability percentage assigned to the users while creating the availabilities</inlineHelpText>
+        <label>Default Availability for Scheduler</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__Resource_Planning_Years_in_Advance__c</fullName>
+        <defaultValue>2</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The rolling number of years for which the availability is created by the scheduler in advance, so that resource planning can be done in advance for those many number of years</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The rolling number of years for which the availability is created by the scheduler in advance, so that resource planning can be done in advance for those many number of years</inlineHelpText>
+        <label>Resource Planning # Years in Advance</label>
+        <precision>2</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inov8__Start_Month_of_Fiscal_Year__c</fullName>
+        <defaultValue>2</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This indicates the start of the fiscal year. For example, if value is 2 which means year starts from Feb, 3 for Mar, and so on</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>This indicates the start of the fiscal year. For example, if value is 2 which means year starts from Feb, 3 for Mar, and so on</inlineHelpText>
+        <label>Start Month of Fiscal Year</label>
+        <precision>2</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>PMT Setting</label>
+    <pluralLabel>PMT Settings</pluralLabel>
+    <validationRules>
+        <fullName>inov8__Default_Availability_btwn_1_to_100</fullName>
+        <active>true</active>
+        <description>The default availability should be between 0 to 100</description>
+        <errorConditionFormula>inov8__Default_Availability_for_Scheduler__c &lt;0 ||  inov8__Default_Availability_for_Scheduler__c &gt; 100</errorConditionFormula>
+        <errorDisplayField>inov8__Default_Availability_for_Scheduler__c</errorDisplayField>
+        <errorMessage>The default availability should be between 0 to 100</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>inov8__RP_Years_in_advance_greater_than_0</fullName>
+        <active>true</active>
+        <description>Resource planning years in advance should be greater than 0</description>
+        <errorConditionFormula>inov8__Resource_Planning_Years_in_Advance__c &lt; 0</errorConditionFormula>
+        <errorDisplayField>inov8__Resource_Planning_Years_in_Advance__c</errorDisplayField>
+        <errorMessage>Resource planning years in advance should be greater than 0</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>inov8__Start_Month_between_1_and_12</fullName>
+        <active>true</active>
+        <description>Start month for fiscal year setting should be in between 1 and 12</description>
+        <errorConditionFormula>inov8__Start_Month_of_Fiscal_Year__c &lt; 1 || inov8__Start_Month_of_Fiscal_Year__c &gt; 12</errorConditionFormula>
+        <errorDisplayField>inov8__Start_Month_of_Fiscal_Year__c</errorDisplayField>
+        <errorMessage>Start month for fiscal year setting should be in between 1 and 12</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

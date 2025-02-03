@@ -1,0 +1,7 @@
+Dear&nbsp;{{{Recipient.FirstName}}},&nbsp;
+<br /> 
+<br /> Thank you for your interest in our company! &nbsp;It seems like you may be a good fit for our solutions. &nbsp;My name is {{{Sender.FirstName}}}, and I'm here to help you learn more about what we do and to answer any questions you may have. &nbsp;Do you have time today for a quick chat? &nbsp;&nbsp;
+<br /> 
+<br /> Regards,&nbsp;
+<br /> {{{Sender.Name}}}&nbsp;
+<br /> Account Executive

@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Assumptions --></label>
+        <name>inov8__Assumptions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Business objectives: Requested solution description and expected result. Mention if this is a global solution or call out if there is any variation by region. --></help>
+        <label><!-- Business Case --></label>
+        <name>inov8__Business_Case__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days to go --></label>
+        <name>inov8__Days_to_go__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date Rollup --></label>
+        <name>inov8__Deadline__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>inov8__Deadline_formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date from parent phase --></label>
+        <name>inov8__Deadline_parent_phase__c</name>
+    </fields>
+    <fields>
+        <help><!-- A general description of the project. --></help>
+        <label><!-- Description --></label>
+        <name>inov8__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration --></label>
+        <name>inov8__Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Fiscal Year --></label>
+        <name>inov8__End_Fiscal_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fiscal Year Difference --></label>
+        <name>inov8__Fiscal_Year_Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Go Live Date --></label>
+        <name>inov8__Go_Live_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- objective, issue being addressed, target, how will the project be measured. --></help>
+        <label><!-- Goal Statement --></label>
+        <name>inov8__Goal_Statement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Health Comment --></label>
+        <name>inov8__Health_Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Health --></label>
+        <name>inov8__Health_Icon__c</name>
+    </fields>
+    <fields>
+        <label><!-- In Scope --></label>
+        <name>inov8__In_Scope__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial End Date --></label>
+        <name>inov8__Initial_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Start Date --></label>
+        <name>inov8__Initial_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identify and explain the risk if this request is not deployed --></help>
+        <label><!-- Issues &amp; Risks --></label>
+        <name>inov8__Issues_Risk__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>inov8__Kickoff_formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level of Effort --></label>
+        <name>inov8__Level_of_Effort__c</name>
+        <picklistValues>
+            <masterLabel>Large</masterLabel>
+            <translation><!-- Large --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small</masterLabel>
+            <translation><!-- Small --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Out of Scope --></label>
+        <name>inov8__Out_of_Scope__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner&apos;s Department --></label>
+        <name>inov8__Owner_s_Department__c</name>
+    </fields>
+    <fields>
+        <label><!-- PMO Contact --></label>
+        <name>inov8__PMO_Contact__c</name>
+        <relationshipLabel><!-- PMT Projects --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Path to Green --></label>
+        <name>inov8__Path_to_Green__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percentage Completion % --></label>
+        <name>inov8__Percentage_Completion__c</name>
+    </fields>
+    <fields>
+        <label><!-- Portfolio --></label>
+        <name>inov8__Portfolio__c</name>
+        <picklistValues>
+            <masterLabel>F&amp;S</masterLabel>
+            <translation><!-- F&amp;S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Entity</masterLabel>
+            <translation><!-- New Entity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P2P</masterLabel>
+            <translation><!-- P2P --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q2O</masterLabel>
+            <translation><!-- Q2O --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R2R</masterLabel>
+            <translation><!-- R2R --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- What process/system limitations are causing this activity. Describe your pain points. --></help>
+        <label><!-- Problem Statement --></label>
+        <name>inov8__Problem_Statement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process(es) Impacted --></label>
+        <name>inov8__Processes_Impacted__c</name>
+        <picklistValues>
+            <masterLabel>Accruals</masterLabel>
+            <translation><!-- Accruals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commissions</masterLabel>
+            <translation><!-- Commissions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comp &amp; Ben</masterLabel>
+            <translation><!-- Comp &amp; Ben --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed Assets</masterLabel>
+            <translation><!-- Fixed Assets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inter-Co</masterLabel>
+            <translation><!-- Inter-Co --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prepaids</masterLabel>
+            <translation><!-- Prepaids --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revenue</masterLabel>
+            <translation><!-- Revenue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T&amp;E</masterLabel>
+            <translation><!-- T&amp;E --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Program --></label>
+        <name>inov8__Program_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Program --></label>
+        <name>inov8__Program__c</name>
+        <relationshipLabel><!-- PMT Projects --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Category --></label>
+        <name>inov8__Project_Category__c</name>
+        <picklistValues>
+            <masterLabel>IT</masterLabel>
+            <translation><!-- IT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non IT</masterLabel>
+            <translation><!-- Non IT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SteerCo</masterLabel>
+            <translation><!-- SteerCo --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project Completion --></label>
+        <name>inov8__Project_Completion_Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project End Month --></label>
+        <name>inov8__Project_End_Month__c</name>
+    </fields>
+    <fields>
+        <help><!-- On Track = Will meet deadline / At Risk = At risk for missing deadline / Late = Will miss deadline --></help>
+        <label><!-- Project Health --></label>
+        <name>inov8__Project_Health__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Initiator --></label>
+        <name>inov8__Project_Initiator__c</name>
+        <picklistValues>
+            <masterLabel>F&amp;S</masterLabel>
+            <translation><!-- F&amp;S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT</masterLabel>
+            <translation><!-- IT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation><!-- Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax</masterLabel>
+            <translation><!-- Tax --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project Lead --></label>
+        <name>inov8__Project_Lead__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Owner --></label>
+        <name>inov8__Project_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Size --></label>
+        <name>inov8__Project_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Start Month --></label>
+        <name>inov8__Project_Start_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Current Stage --></label>
+        <name>inov8__Project_Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discovery</masterLabel>
+            <translation><!-- Discovery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Execute</masterLabel>
+            <translation><!-- Execute --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initiate</masterLabel>
+            <translation><!-- Initiate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transition</masterLabel>
+            <translation><!-- Transition --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Qtr of Completion --></label>
+        <name>inov8__Qtr_of_Completion__c</name>
+    </fields>
+    <fields>
+        <label><!-- Release Changes --></label>
+        <name>inov8__Release_Changes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Release Date --></label>
+        <name>inov8__Release_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Release Qtr --></label>
+        <name>inov8__Release_Qtr__c</name>
+    </fields>
+    <fields>
+        <label><!-- Roadmap Status --></label>
+        <name>inov8__Roadmap_Status__c</name>
+        <picklistValues>
+            <masterLabel>Committed</masterLabel>
+            <translation><!-- Committed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deferred</masterLabel>
+            <translation><!-- Deferred --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Funded</masterLabel>
+            <translation><!-- Funded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incremental</masterLabel>
+            <translation><!-- Incremental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non funded</masterLabel>
+            <translation><!-- Non funded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Runrate</masterLabel>
+            <translation><!-- Runrate --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SOX Comment --></label>
+        <name>inov8__SOX_Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- SOX Impact --></label>
+        <name>inov8__SOX_Impact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sponsor --></label>
+        <name>inov8__Sponsor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date Rollup --></label>
+        <name>inov8__Start_Date_Rollup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date from parent phase --></label>
+        <name>inov8__Start_Date_from_parent_phase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Fiscal Year --></label>
+        <name>inov8__Start_Fiscal_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sum Wheigted % --></label>
+        <name>inov8__Sum_Wheigted_perc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sum of Task Duration --></label>
+        <name>inov8__Sum_of_Task_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sum of sum of percentage completion --></label>
+        <name>inov8__Sum_of_sum_of_percentage_completion__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sum of task count child project --></label>
+        <name>inov8__Sum_of_task_count_child_project__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sum of tasks count --></label>
+        <name>inov8__Sum_of_tasks_count__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please hold &apos;Ctrl&apos; for selecting multiple options --></help>
+        <label><!-- System(s) Impacted --></label>
+        <name>inov8__SystemsImpacted__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <sharingReasons>
+        <label><!-- Project Member --></label>
+        <name>inov8__Project_Member</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- Initial End date must be after Initial Start date. --></errorMessage>
+        <name>inov8__InitialStartDate_should_be_less</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Path to Green field should be used only for Late, At Risk or On Hold projects. Please use Health Comment for On Track projects --></errorMessage>
+        <name>inov8__Path_to_Green_should_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SOX Comment should be blank if SOX Impact is not checked --></errorMessage>
+        <name>inov8__SOX_Comment_Blank_SOX_Impact_unchecked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SOX Comment should not be blank if SOX Impact is checked --></errorMessage>
+        <name>inov8__SOX_comment_not_null_when_SOX_checked</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDashboard xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <content xsi:nil="true"/>
+    <application>MortgageLendingAssets_ERN</application>
+    <dateVersion>1</dateVersion>
+    <description>Mortgage/Lending demo</description>
+    <masterLabel>Mortgage Executive: Performance / Pipeline</masterLabel>
+    <templateAssetSourceName>FY19_Mortgage_Executive_Performance_Pipeline_US_ESV1_ERN</templateAssetSourceName>
+</WaveDashboard>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Apex Class --></label>
+        <name>inov8__Apex_Class__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Message --></label>
+        <name>inov8__Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Method Name --></label>
+        <name>inov8__Method_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesforce Record Id --></label>
+        <name>inov8__Salesforce_Record_Id__c</name>
+    </fields>
+</CustomObjectTranslation>

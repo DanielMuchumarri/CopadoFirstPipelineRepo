@@ -1,0 +1,624 @@
+AccountID,Active_Campaign,Attrition_Risk_Score,Balance_Change,CSAT_Score,Customer_Name,Last_Contact,LeadDate,LeadRank,LeadSource,NPS_Score,Previous_Balance,Product,Relationship_Balance,Segment,Wallet_Share_Percent
+001Hu00002vQCICIA4,No,37.0,Increase,69,Rachel Morris,35,6/15/23,3,Email,4.0,41379.76628,Wealth,58000,Premier,89.937952
+001Hu00002vQCICIA4,Yes,53.0,Increase,81,Nicholas Palmer,37,6/15/23,5,Walk-In,,27725.67982,Wealth,34000,Premier,60.681552
+001Hu00002vQCICIA4,Yes,3.0,Increase,92,Sharon Weber,78,6/15/23,5,Walk-In,8.0,31465.41429,Wealth,41000,Mass Market,43.239157
+001Hu00002vQCICIA4,Yes,92.0,Increase,63,Joseph Garcia,106,6/15/23,5,Walk-In,8.0,39322.7893,Wealth,62000,Mass Market,4.90954
+001Hu00002vQCICIA4,Yes,87.0,Decrease,69,Sarah Jimenez,177,6/15/23,5,Web,10.0,11864.31711,Wealth,20355,Mass Market,70.128469
+001Hu00002vQCICIA4,Yes,91.0,Increase,97,Theresa Miller,115,6/15/23,5,Walk-In,10.0,45518.31581,Wealth,55000,Plus,95.923816
+001Hu00002vQCICIA4,Yes,74.0,Decrease,76,Allen Mclean,20,6/15/23,5,Print Ad,8.0,54290.0118,Wealth,67000,Plus,80.696556
+001Hu00002vQCICIA4,No,76.0,Decrease,87,James Hernandez,127,6/15/23,5,Phone Call,,45557.78243,Wealth,45296,Premier,74.363444
+001Hu00002vQCICIA4,No,69.0,Decrease,87,Lisa Harris,79,6/15/23,5,Phone Call,5.0,50025.48201,Wealth,48939,Plus,52.009243
+001Hu00002vQCICIA4,No,67.0,Decrease,65,Michael Lopez,20,6/15/23,5,Print Ad,3.0,51155.40495,Wealth,46475,Plus,64.100988
+001Hu00002vQCICIA4,No,67.0,Decrease,93,Patrick Green,105,6/15/23,5,Email,6.0,22511.79701,Wealth,21298,Mass Market,30.990234
+001Hu00002vQCICIA4,Yes,6.0,Increase,81,Kelly Le,177,6/15/23,5,Phone Call,9.0,45462.52545,Wealth,45658,Mass Market,94.779787
+001Hu00002vQCICIA4,Yes,43.0,Increase,99,Michael Murillo,91,6/15/23,5,Print Ad,3.0,3335.37596,Wealth,3607,Mass Market,16.118064
+001Hu00002vQCICIA4,Yes,30.0,Decrease,71,Carl Wilcox,119,6/15/23,5,Walk-In,7.0,32300.98496,Wealth,28404,Mass Market,65.348747
+001Hu00002vQCICIA4,Yes,34.0,Decrease,61,Cole Richardson,114,6/15/23,5,Email,10.0,39076.44729,Wealth,37602,Mass Market,12.251046
+001Hu00002vQCICIA4,Yes,49.0,Increase,66,Melinda French,171,6/15/23,5,Phone Call,5.0,10833.33963,Wealth,11839,Premier,48.838067
+001Hu00002vQCICIA4,No,1.0,Decrease,85,Aaron Mendoza,57,6/15/23,5,Phone Call,2.0,43982.31057,Wealth,40951,Mass Market,10.258351
+001Hu00002vQCICIA4,Yes,6.0,Increase,74,Shannon Copeland,170,6/15/23,5,Walk-In,8.0,28625.07326,Wealth,30042,Plus,82.862337
+001Hu00002vQCICIA4,No,23.0,Decrease,78,Heather Weiss,36,6/15/23,5,Print Ad,6.0,40309.6403,Wealth,38295,Plus,11.557977
+001Hu00002vQCICIA4,No,48.0,Decrease,85,Christine Terry,111,6/15/23,5,Print Ad,5.0,33922.03614,Wealth,30883,Mass Market,54.568633
+001Hu00002vQCICIA4,Yes,67.0,Decrease,83,Ashley Weber,65,6/15/23,5,Web,5.0,40102.17019,Wealth,36493,Mass Market,71.872641
+001Hu00002vQCICIA4,Yes,44.0,Increase,94,Andrew Phillips,69,6/15/23,5,Print Ad,3.0,17607.05178,Wealth,20367,Mass Market,98.750354
+001Hu00002vQCICIA4,Yes,3.0,Decrease,69,Mary Solomon,78,6/15/23,5,Email,5.0,28229.77676,Wealth,26723,Mass Market,16.916028
+001Hu00002vQCICIA4,No,2.0,Increase,92,Jeremy Harrell,158,6/15/23,5,Email,4.0,12954.09994,Wealth,28000,Premier,83.734108
+001Hu00002vQCICIA4,No,8.0,Increase,62,Craig Mata,163,6/15/23,5,Web,1.0,33818.37805,Wealth,36911,Plus,23.324232
+001Hu00002vQCICIA4,No,46.0,Increase,62,Carol Wolfe,117,6/15/23,5,Print Ad,7.0,42875.99238,Wealth,45249,Premier,65.08835
+001Hu00002vQCICIA4,No,61.0,Decrease,84,Melvin Solis MD,69,6/15/23,5,Web,6.0,22253.76479,Wealth,21504,Mass Market,20.479709
+001Hu00002vQCICIA4,No,75.0,Increase,67,Vanessa Wilson,97,6/15/23,5,Web,3.0,40247.15741,Wealth,56000,Premier,43.232458
+001Hu00002vQCICIA4,No,96.0,Decrease,84,Mark Watkins,168,6/15/23,5,Web,,42151.05469,Wealth,40601,Mass Market,25.927378
+001Hu00002vQCICIA4,No,41.0,Decrease,89,Justin Harris,139,6/15/23,5,Email,2.0,3333.380064,Wealth,14850,Mass Market,36.363864
+001Hu00002vQCICIA4,No,41.0,Increase,77,Michael Newman,16,6/15/23,5,Walk-In,9.0,21843.50427,Wealth,22068,Mass Market,90.157227
+001Hu00002vQCICIA4,Yes,65.0,Decrease,76,Eric Jones,118,6/15/23,5,Email,,7516.647446,Wealth,18000,Mass Market,89.703584
+001Hu00002vQCICIA4,Yes,38.0,Decrease,79,Catherine Coleman,159,6/15/23,5,Email,10.0,43943.35842,Wealth,62000,Mass Market,36.506715
+001Hu00002vQCICIA4,No,65.0,Increase,73,Edward Freeman,177,6/15/23,5,Email,1.0,41558.87063,Wealth,46731,Mass Market,61.877682
+001Hu00002vQCICIA4,Yes,94.0,Increase,82,Christopher Wilson,140,6/15/23,5,Walk-In,7.0,36545.2033,Wealth,38326,Mass Market,94.008437
+001Hu00002vQCICIA4,Yes,17.0,Decrease,93,Hannah Henry,59,6/15/23,5,Print Ad,4.0,20118.36782,Wealth,19499,Premier,51.576316
+001Hu00002vQCICIA4,Yes,3.0,Decrease,88,Jonathan Williams,2,6/15/23,5,Print Ad,7.0,35815.37914,Wealth,35721,Mass Market,60.546813
+001Hu00002vQCICIA4,No,11.0,Decrease,83,Christian Acosta,76,6/15/23,5,Web,5.0,37645.93271,Wealth,35144,Mass Market,71.209233
+001Hu00002vQCICIA4,Yes,20.0,Increase,70,Dana Washington,118,6/15/23,5,Print Ad,3.0,17604.09153,Wealth,20682,Premier,79.113879
+001Hu00002vQCICIA4,No,32.0,Decrease,98,Michael Lee,116,6/15/23,5,Walk-In,,24222.58696,Wealth,22202,Mass Market,10.711914
+001Hu00002vQCICIA4,No,33.0,Decrease,87,Jeremy Cooper,51,6/15/23,5,Email,6.0,37649.00813,Wealth,35618,Mass Market,45.919813
+001Hu00002vQCICIA4,Yes,10.0,Decrease,64,Matthew Gray,137,6/15/23,5,Walk-In,6.0,24020.9018,Wealth,22639,Mass Market,2.310601
+001Hu00002vQCICIA4,No,42.0,Increase,75,Deborah Abbott,100,6/15/23,5,Email,4.0,27795.35329,Wealth,48000,Mass Market,29.060798
+001Hu00002vQCICIA4,No,87.0,Increase,67,Jason Smith,149,6/15/23,5,Print Ad,4.0,15695.1611,Wealth,45000,Plus,25.271004
+001Hu00002vQCICIA4,No,20.0,Decrease,63,Jeffrey Rivera,129,6/15/23,5,Phone Call,9.0,54640.99104,Wealth,49055,Mass Market,78.787091
+001Hu00002vQCICIA4,No,94.0,Decrease,66,Calvin Lawson,176,6/15/23,5,Email,7.0,28661.00981,Wealth,28236,Mass Market,50.721986
+001Hu00002vQCICIA4,No,27.0,Decrease,86,Alejandra Dickerson,129,6/15/23,5,Email,7.0,19421.76252,Wealth,39000,Plus,28.55098
+001Hu00002vQCICIA4,Yes,53.0,Decrease,68,Tina Morales,170,6/15/23,5,Print Ad,4.0,12579.58758,Wealth,12116,Plus,45.587433
+001Hu00002vQCICIA4,Yes,35.0,Decrease,61,Timothy Mckee,127,6/15/23,5,Print Ad,7.0,9187.741388,Wealth,8551,Premier,3.097213
+001Hu00002vQCICIA4,Yes,47.0,Increase,88,Timothy Jennings,138,6/15/23,5,Print Ad,3.0,19714.09216,Wealth,22134,Premier,31.62652
+001Hu00002vQCICIA4,No,99.0,Decrease,95,Matthew Cummings,15,6/15/23,5,Walk-In,3.0,9402.93201,Wealth,16000,Mass Market,44.982597
+001Hu00002vQCICIA4,Yes,99.0,Increase,76,Victoria Ruiz,130,6/15/23,5,Print Ad,10.0,25062.02529,Wealth,28442,Mass Market,94.929884
+001Hu00002vQCICIA4,Yes,46.0,Increase,63,Heather Gilbert,174,6/15/23,5,Web,,39623.81123,Wealth,46208,Mass Market,68.911772
+001Hu00002vQCICIA4,Yes,3.0,Decrease,89,Joshua Bush,85,6/15/23,5,Email,9.0,20295.65162,Wealth,27000,Mass Market,55.87688
+001Hu00002vQCICIA4,No,62.0,Decrease,86,Randy Howard,129,6/15/23,5,Web,3.0,8730.736078,Wealth,19000,Plus,81.391455
+001Hu00002vQCICIA4,No,32.0,Decrease,97,Randy Wilson,89,6/15/23,5,Walk-In,8.0,10623.31154,Wealth,11000,Premier,36.750777
+001Hu00002vQCICIA4,Yes,16.0,Decrease,83,Cynthia Martinez,90,6/15/23,5,Print Ad,6.0,19071.79819,Wealth,23000,Premier,8.276737
+001Hu00002vQCICIA4,Yes,52.0,Decrease,91,Jeffrey Villa,36,6/15/23,5,Print Ad,4.0,20286.58627,Wealth,18082,Plus,87.962355
+001Hu00002vQCICIA4,Yes,68.0,Decrease,95,James Perez,39,6/15/23,5,Email,7.0,15555.80064,Wealth,14649,Mass Market,95.763878
+001Hu00002vQCICIA4,No,39.0,Increase,79,Scott Graves,65,6/15/23,5,Phone Call,9.0,26392.92994,Wealth,29735,Mass Market,91.698248
+001Hu00002vQCICIA4,No,28.0,Increase,98,Ruth Thomas,136,6/15/23,5,Web,2.0,10969.14951,Wealth,11693,Premier,78.844079
+001Hu00002vQCICIA4,No,1.0,Increase,61,Patrick Harvey,36,6/15/23,5,Web,3.0,40281.87724,Wealth,40717,Plus,49.101377
+001Hu00002vQCICIA4,Yes,97.0,Decrease,80,Gina Smith,150,6/15/23,5,Email,7.0,34884.79322,Wealth,31370,Mass Market,66.33108
+001Hu00002vQCICIA4,No,37.0,Decrease,96,Jose Moreno,19,6/15/23,5,Email,3.0,54081.91049,Wealth,49218,Premier,34.451949
+001Hu00002vQCICIA4,No,100.0,Decrease,84,Michael Fischer,3,6/15/23,5,Web,6.0,46036.0456,Wealth,40557,Plus,12.052306
+001Hu00002vQCICIA4,Yes,,Increase,96,Tyler Sawyer,129,6/15/23,5,Email,1.0,32244.26408,Wealth,33771,Mass Market,80.127091
+001Hu00002vQCICIA4,No,84.0,Decrease,80,Rachel Caldwell,64,6/15/23,5,Walk-In,8.0,49906.07828,Wealth,48356,Mass Market,75.471149
+001Hu00002vQCICIA4,Yes,66.0,Decrease,98,Taylor Hopkins,56,6/15/23,5,Walk-In,5.0,47220.24043,Wealth,44195,Mass Market,93.272957
+001Hu00002vQCICIA4,No,49.0,Increase,92,Mary Dorsey,124,6/15/23,5,Phone Call,4.0,14946.50282,Wealth,15230,Mass Market,4.262406
+001Hu00002vQCICIA4,Yes,14.0,Decrease,61,Brandon Adams,66,6/15/23,5,Email,3.0,9534.063961,Wealth,9211,Plus,88.654922
+001Hu00002vQCICIA4,Yes,20.0,Decrease,69,Erin Allen,170,6/15/23,5,Phone Call,1.0,40958.21902,Wealth,40249,Plus,10.048493
+001Hu00002vQCICIA4,No,40.0,Increase,63,Amber Gibbs,122,6/15/23,5,Web,4.0,38685.2833,Wealth,38793,Plus,68.347037
+001Hu00002vQCICIA4,Yes,7.0,Decrease,61,Melissa Boone,99,6/15/23,5,Phone Call,6.0,18736.25312,Wealth,16773,Plus,55.05159
+001Hu00002vQCICIA4,No,38.0,Decrease,87,Justin Baker,40,6/15/23,5,Web,5.0,14936.95115,Wealth,14355,Mass Market,48.596088
+001Hu00002vQCICIA4,Yes,24.0,Decrease,81,Brandy Frank,10,6/15/23,5,Web,4.0,20899.22715,Wealth,20125,Mass Market,7.550383
+001Hu00002vQCICIA4,No,95.0,Decrease,77,Kim Harper,39,6/15/23,5,Web,4.0,34614.32888,Wealth,32930,Mass Market,74.501663
+001Hu00002vQCICIA4,No,85.0,Decrease,67,Taylor Davis,115,6/15/23,5,Email,2.0,26808.10153,Wealth,24259,Mass Market,87.106223
+001Hu00002vQCICIA4,No,68.0,Increase,88,Jennifer Johnson,90,6/15/23,5,Email,1.0,17318.57947,Wealth,20197,Plus,66.017479
+001Hu00002vQCICIA4,Yes,77.0,Increase,75,Tom Johnson,159,6/15/23,5,Walk-In,10.0,28809.9956,Wealth,32214,Premier,39.852333
+001Hu00002vQCICIA4,No,80.0,Increase,98,Stephanie Nelson,163,6/15/23,5,Email,,14829.30701,Wealth,17187,Plus,88.614944
+001Hu00002vQCICIA4,No,39.0,Increase,67,Jerry Gray,43,6/15/23,5,Walk-In,,47782.40509,Wealth,48382,Plus,99.639145
+001Hu00002vQCICIA4,No,66.0,Decrease,80,Connor Peterson,59,6/15/23,5,Print Ad,5.0,39950.88928,Wealth,37192,Premier,7.701196
+001Hu00002vQCICIA4,Yes,95.0,Increase,75,Ruth Vasquez,20,6/15/23,5,Phone Call,,31763.0342,Wealth,33552,Plus,93.142738
+001Hu00002vQCICIA4,No,65.0,Decrease,60,Laura Hernandez,14,6/15/23,5,Walk-In,8.0,8043.484753,Wealth,7638,Premier,74.280201
+001Hu00002vQCICIA4,Yes,58.0,Increase,78,Devin Baker,6,6/15/23,5,Print Ad,,18251.32555,Wealth,21061,Mass Market,63.643527
+001Hu00002vQCICIA4,Yes,14.0,Decrease,92,James Taylor,131,6/15/23,5,Phone Call,3.0,39492.17461,Wealth,35317,Plus,60.143683
+001Hu00002vQCICIA4,Yes,26.0,Decrease,93,Thomas Curtis,80,6/15/23,5,Phone Call,8.0,33982.88877,Wealth,31158,Mass Market,25.756953
+001Hu00002vQCICIA4,No,89.0,Decrease,99,Mr. Christopher Gross,86,6/15/23,5,Email,10.0,27793.02029,Wealth,26558,Mass Market,38.6749
+001Hu00002vQCICIA4,No,93.0,Increase,73,Bobby White,117,6/15/23,5,Email,7.0,30144.99694,Wealth,34377,Premier,61.014642
+001Hu00002vQCICIA4,No,94.0,Decrease,66,Edward Johnson,17,6/15/23,5,Web,8.0,22959.0919,Wealth,22133,Premier,49.561784
+001Hu00002vQCICIA4,No,87.0,Increase,63,Cody Dyer,59,6/15/23,5,Email,10.0,42119.23597,Wealth,42551,Premier,81.110127
+001Hu00002vQCICIA4,Yes,6.0,Increase,60,Russell Hubbard,180,6/15/23,5,Print Ad,4.0,23205.79157,Wealth,25832,Mass Market,20.82863
+001Hu00002vQCICIA4,Yes,6.0,Increase,66,Lisa Williams,116,6/15/23,5,Print Ad,5.0,41638.6549,Wealth,43822,Premier,92.527556
+001Hu00002vQCICIA4,No,83.0,Decrease,93,Andrew Henry,99,6/15/23,5,Email,2.0,3823.78093,Small Business,3453,Mass Market,28.709347
+001Hu00002vQCICIA4,No,100.0,Decrease,98,Kenneth Mitchell,28,6/15/23,5,Email,9.0,50583.07203,Small Business,47328,Premier,12.951306
+001Hu00002vQCICIA4,Yes,70.0,Increase,69,Angela Harris,22,6/15/23,5,Walk-In,7.0,43804.06966,Small Business,49970,Plus,66.354409
+001Hu00002vQCICIA4,Yes,46.0,Increase,63,Sara Robertson,97,6/15/23,5,Walk-In,3.0,6960.536297,Small Business,7913,Premier,9.416973
+001Hu00002vQCICIA4,Yes,85.0,Decrease,98,Kyle Jordan,68,6/15/23,5,Phone Call,1.0,16404.4595,Small Business,14288,Mass Market,24.004248
+001Hu00002vQCICIA4,Yes,64.0,Increase,77,Larry Caldwell,52,6/15/23,5,Print Ad,8.0,42430.72103,Small Business,48346,Mass Market,58.331806
+001Hu00002vQCICIA4,No,23.0,Decrease,65,David Daniels,171,6/15/23,5,Email,5.0,41422.54447,Small Business,39971,Mass Market,68.898535
+001Hu00002vQCICIA4,No,97.0,Decrease,80,Thomas Hawkins,26,6/15/23,5,Email,3.0,11991.77683,Small Business,10482,Mass Market,51.373552
+001Hu00002vQCICIA4,No,41.0,Decrease,84,Jeffrey Stevens,171,6/15/23,5,Print Ad,10.0,39941.05567,Small Business,36416,Premier,40.43901
+001Hu00002vQCICIA4,No,50.0,Decrease,62,Aaron Osborne,89,6/15/23,5,Email,,16335.44713,Small Business,15278,Plus,52.891386
+001Hu00002vQCICIA4,Yes,79.0,Increase,67,Danielle Lee MD,56,6/15/23,5,Print Ad,10.0,35488.58205,Small Business,41642,Mass Market,2.835803
+001Hu00002vQCICIA4,Yes,85.0,Decrease,64,Kenneth Rogers,52,6/15/23,5,Web,9.0,19451.38504,Small Business,17822,Mass Market,28.097201
+001Hu00002vQCICIA4,Yes,59.0,Increase,98,Ann Cooper,164,6/15/23,5,Walk-In,5.0,27536.68133,Small Business,29133,Premier,86.954001
+001Hu00002vQCICIA4,Yes,1.0,Increase,66,David Jenkins,93,6/15/23,5,Web,6.0,33807.08783,Small Business,35302,Mass Market,36.262319
+001Hu00002vQCICIA4,No,11.0,Decrease,98,Jeffrey Montgomery,151,6/15/23,5,Web,10.0,52925.64019,Small Business,46948,Plus,12.210472
+001Hu00002vQCICIA4,Yes,66.0,Increase,70,Kathy Watkins,59,6/15/23,5,Phone Call,4.0,45774.65384,Small Business,49676,Premier,88.467538
+001Hu00002vQCICIA4,Yes,21.0,Decrease,96,Lori James,165,6/15/23,5,Phone Call,10.0,23632.73314,Small Business,22139,Mass Market,29.32418
+001Hu00002vQCICIA4,Yes,2.0,Increase,80,Megan Pruitt,124,6/15/23,5,Print Ad,6.0,16707.78071,Small Business,17578,Premier,72.817284
+001Hu00002vQCICIA4,Yes,75.0,Increase,70,Lisa Woods,123,6/15/23,5,Print Ad,8.0,4938.800812,Small Business,4939,Mass Market,30.553542
+001Hu00002vQCICIA4,Yes,17.0,Decrease,86,Alice Ray,147,6/15/23,5,Web,8.0,13136.88972,Small Business,12642,Mass Market,9.1279
+001Hu00002vQCICIA4,Yes,14.0,Decrease,66,Melissa Smith,92,6/15/23,5,Walk-In,9.0,27510.97287,Small Business,26480,Mass Market,90.089167
+001Hu00002vQCICIA4,Yes,23.0,Increase,70,Cory Turner,111,6/15/23,5,Phone Call,1.0,47283.26011,Small Business,49387,Premier,97.995278
+001Hu00002vQCICIA4,Yes,27.0,Increase,67,Maria Miller,24,6/15/23,5,Phone Call,8.0,18137.32321,Small Business,20128,Premier,57.471422
+001Hu00002vQCICIA4,No,76.0,Decrease,80,Margaret Williams,20,6/15/23,5,Print Ad,3.0,37387.40117,Small Business,34619,Plus,91.772522
+001Hu00002vQCICIA4,Yes,60.0,Increase,82,Martin Melendez,38,6/15/23,5,Web,2.0,24982.79128,Small Business,26176,Premier,60.692702
+001Hu00002vQCICIA4,Yes,99.0,Increase,95,Jerry Barnes,117,6/15/23,5,Phone Call,8.0,26671.51868,Small Business,31161,Mass Market,28.295553
+001Hu00002vQCICIA4,Yes,19.0,Decrease,61,Emily Martinez,162,6/15/23,5,Web,1.0,40118.44301,Small Business,37317,Premier,11.388557
+001Hu00002vQCICIA4,Yes,76.0,Decrease,73,William Gonzalez,60,6/15/23,5,Email,1.0,52909.30614,Small Business,47297,Plus,93.731837
+001Hu00002vQCICIA4,No,53.0,Decrease,86,Christine Pineda MD,148,6/15/23,5,Print Ad,10.0,26576.48237,Small Business,25929,Mass Market,29.813635
+001Hu00002vQCICIA4,No,6.0,Increase,94,Kevin Reyes,173,6/15/23,5,Phone Call,3.0,3337.699384,Small Business,3612,Mass Market,17.114636
+001Hu00002vQCICIA4,No,79.0,Increase,77,Daniel Thompson,79,6/15/23,5,Walk-In,8.0,5551.632881,Small Business,6215,Premier,69.728805
+001Hu00002vQCICIA4,Yes,6.0,Increase,72,Victor Gonzales,1,6/15/23,5,Phone Call,4.0,35810.66133,Small Business,40731,Plus,12.424095
+001Hu00002vQCICIA4,Yes,9.0,Decrease,99,Heather Gordon MD,160,6/15/23,5,Print Ad,4.0,10585.93641,Small Business,9948,Mass Market,73.74881
+001Hu00002vQCICIA4,Yes,43.0,Increase,83,Bonnie Hays,4,6/15/23,5,Walk-In,1.0,25859.67323,Small Business,28535,Premier,48.014876
+001Hu00002vQCICIA4,Yes,42.0,Decrease,76,Laura Hall,62,6/15/23,5,Walk-In,4.0,18777.34781,Small Business,16369,Mass Market,79.156524
+001Hu00002vQCICIA4,Yes,17.0,Increase,63,Amber Williams,116,6/15/23,5,Web,5.0,32032.21385,Small Business,35692,Mass Market,3.042462
+001Hu00002vQCICIA4,Yes,56.0,Decrease,98,Alicia Villa,162,6/15/23,5,Print Ad,10.0,32596.94261,Small Business,29216,Plus,79.808523
+001Hu00002vQCICIA4,Yes,27.0,Decrease,71,Vanessa Armstrong,87,6/15/23,5,Print Ad,5.0,16254.79686,Small Business,16232,Mass Market,21.87222
+001Hu00002vQCICIA4,Yes,36.0,Increase,68,April Lane,102,6/15/23,5,Phone Call,9.0,36881.84934,Small Business,38517,Premier,21.647993
+001Hu00002vQCICIA4,Yes,59.0,Increase,74,Joseph Taylor,80,6/15/23,5,Walk-In,6.0,13386.03718,Small Business,15618,Plus,76.52019
+001Hu00002vQCICIA4,No,87.0,Increase,100,Monica Schneider,109,6/15/23,5,Phone Call,2.0,22042.34081,Small Business,22483,Mass Market,72.556417
+001Hu00002vQCICIA4,Yes,14.0,Decrease,93,Michael Parker,60,6/15/23,5,Walk-In,5.0,26412.58789,Small Business,23043,Premier,31.302392
+001Hu00002vQCICIA4,Yes,30.0,Increase,91,Leah Brown,14,6/15/23,5,Email,2.0,20390.48802,Small Business,20522,Premier,26.681282
+001Hu00002vQCICIA4,Yes,18.0,Increase,96,Richard Griffith,79,6/15/23,5,Phone Call,9.0,8843.552483,Small Business,8991,Mass Market,56.101255
+001Hu00002vQCICIA4,No,2.0,Decrease,61,Jeffrey Hicks,73,6/15/23,5,Phone Call,6.0,44151.1288,Small Business,39560,Plus,96.999583
+001Hu00002vQCICIA4,No,83.0,Increase,83,Donald Bell,20,6/15/23,5,Phone Call,,9589.17261,Small Business,10460,Plus,89.953377
+001Hu00002vQCICIA4,No,1.0,Decrease,78,Richard Franco,149,6/15/23,5,Web,10.0,38086.52767,Small Business,37699,Plus,80.820567
+001Hu00002vQCICIA4,Yes,99.0,Decrease,84,Nicole Kelly,114,6/15/23,5,Web,10.0,21051.24834,Small Business,19493,Plus,96.402645
+001Hu00002vQCICIA4,Yes,70.0,Decrease,86,James Boyer,128,6/15/23,5,Print Ad,8.0,43497.34012,Small Business,42568,Mass Market,8.747827
+001Hu00002vQCICIA4,Yes,99.0,Decrease,70,Jonathan Hooper,162,6/15/23,5,Phone Call,6.0,29860.50546,Small Business,27014,Plus,98.937463
+001Hu00002vQCICIA4,Yes,42.0,Decrease,73,Eddie Johnson,28,6/15/23,5,Print Ad,,24799.12538,Small Business,22093,Mass Market,34.906057
+001Hu00002vQCICIA4,No,1.0,Decrease,67,Kylie Shepherd,137,6/15/23,5,Phone Call,2.0,35465.51257,Small Business,32233,Mass Market,53.138607
+001Hu00002vQCICIA4,Yes,37.0,Decrease,83,Jerry Curtis,69,6/15/23,5,Phone Call,9.0,53000.04716,Small Business,47272,Mass Market,21.674461
+001Hu00002vQCICIA4,Yes,88.0,Increase,100,Beth Soto,157,6/15/23,5,Print Ad,10.0,9248.008442,Small Business,10776,Plus,24.726153
+001Hu00002vQCICIA4,No,68.0,Increase,89,Christina Baker,143,6/15/23,5,Web,7.0,2960.262723,Small Business,3362,Premier,43.326657
+001Hu00002vQCICIA4,No,100.0,Increase,69,Jessica Jones,129,6/15/23,5,Email,6.0,27995.63832,Small Business,31968,Mass Market,61.204027
+001Hu00002vQCICIA4,Yes,66.0,Increase,85,Joseph Mathews,147,6/15/23,5,Web,8.0,7885.324803,Small Business,9166,Plus,93.364478
+001Hu00002vQCICIA4,Yes,6.0,Decrease,88,Henry Walker,142,6/15/23,5,Email,10.0,37133.49509,Small Business,34816,Mass Market,24.922535
+001Hu00002vQCICIA4,Yes,31.0,Increase,61,Brett Mayo,65,6/15/23,5,Web,8.0,43332.89777,Small Business,45774,Mass Market,54.781287
+001Hu00002vQCICIA4,No,84.0,Decrease,69,Shawn Johnson,94,6/15/23,5,Walk-In,1.0,8252.887966,Small Business,7731,Plus,75.644347
+001Hu00002vQCICIA4,Yes,54.0,Increase,81,Monica Williamson,75,6/15/23,5,Email,6.0,30689.82276,Small Business,32431,Mass Market,22.356422
+001Hu00002vQCICIA4,Yes,65.0,Decrease,83,Jordan Patrick,143,6/15/23,5,Email,2.0,33766.53493,Small Business,31961,Mass Market,89.176591
+001Hu00002vQCICIA4,No,20.0,Increase,72,Daniel Davis MD,1,6/15/23,5,Walk-In,3.0,16417.62263,Small Business,17681,Plus,55.430462
+001Hu00002vQCICIA4,Yes,97.0,Increase,77,Julie Hunt,111,6/15/23,5,Email,1.0,6317.340155,Small Business,6800,Premier,33.266893
+001Hu00002vQCICIA4,No,2.0,Increase,71,Kathryn Oneill,23,6/15/23,5,Email,,25304.94649,Small Business,28753,Mass Market,99.380848
+001Hu00002vQCICIA4,Yes,5.0,Increase,63,Mr. Joseph Bailey,59,6/15/23,5,Web,1.0,42366.27001,Small Business,43328,Mass Market,76.666775
+001Hu00002vQCICIA4,No,1.0,Increase,62,Tom Jarvis,39,6/15/23,5,Print Ad,7.0,34233.38482,Small Business,34756,Plus,34.149927
+001Hu00002vQCICIA4,No,68.0,Increase,77,Patrick Medina,45,6/15/23,5,Web,7.0,29731.0565,Small Business,34348,Mass Market,69.372234
+001Hu00002vQCICIA4,Yes,74.0,Increase,60,Amanda Lowe,163,6/15/23,5,Email,2.0,27432.33194,Small Business,31727,Plus,8.121367
+001Hu00002vQCICIA4,Yes,63.0,Decrease,69,Mr. Sean Love,137,6/15/23,5,Print Ad,2.0,16676.61506,Small Business,16282,Mass Market,76.127635
+001Hu00002vQCICIA4,No,59.0,Decrease,66,Sara Boyer,112,6/15/23,5,Web,,22250.40108,Small Business,19358,Premier,16.54364
+001Hu00002vQCICIA4,Yes,59.0,Increase,69,Christina Gibson,87,6/15/23,5,Walk-In,7.0,42375.4002,Small Business,45173,Plus,12.613362
+001Hu00002vQCICIA4,No,49.0,Increase,68,David Jones,150,6/15/23,5,Email,,35720.5859,Small Business,35998,Plus,53.566228
+001Hu00002vQCICIA4,No,56.0,Decrease,74,Micheal Cole,34,6/15/23,5,Email,5.0,18980.08704,Small Business,17075,Mass Market,88.854404
+001Hu00002vQCICIA4,Yes,48.0,Increase,90,Crystal Mckinney,85,6/15/23,5,Walk-In,2.0,35165.10386,Small Business,39428,Mass Market,83.750138
+001Hu00002vQCICIA4,No,55.0,Increase,93,Anita Lee,31,6/15/23,5,Phone Call,5.0,41851.37416,Small Business,47652,Premier,27.092888
+001Hu00002vQCICIA4,No,18.0,Decrease,78,Kevin Smith,80,6/15/23,5,Walk-In,2.0,8044.170825,Small Business,7953,Mass Market,0.238724
+001Hu00002vQCICIA4,No,46.0,Increase,95,Kevin Cook,123,6/15/23,5,Walk-In,10.0,34838.17718,Small Business,39529,Premier,12.707744
+001Hu00002vQCICIA4,No,94.0,Increase,89,Heather Hall,124,6/15/23,5,Print Ad,4.0,37070.12216,Small Business,40095,Mass Market,73.69105
+001Hu00002vQCICIA4,No,51.0,Decrease,83,William Morton,118,6/15/23,5,Web,3.0,22793.29952,Savings,21190,Mass Market,16.327149
+001Hu00002vQCICIA4,No,1.0,Decrease,96,Shelly Smith,95,6/15/23,5,Web,,52851.05612,Savings,48225,Mass Market,40.937388
+001Hu00002vQCICIA4,No,30.0,Decrease,83,Mr. Erik Thompson,149,6/15/23,5,Email,3.0,48409.1713,Savings,44498,Plus,48.067567
+001Hu00002vQCICIA4,No,92.0,Increase,93,Michael Robertson,97,6/15/23,5,Walk-In,,8270.031012,Savings,8430,Mass Market,10.039024
+001Hu00002vQCICIA4,No,96.0,Decrease,61,Gail Allen,58,6/15/23,5,Walk-In,,7381.963162,Savings,7274,Premier,23.294844
+001Hu00002vQCICIA4,No,50.0,Decrease,97,Valerie Mccall,88,6/15/23,5,Print Ad,9.0,42264.51293,Savings,37448,Premier,82.484476
+001Hu00002vQCICIA4,Yes,39.0,Increase,78,Jose Baker,124,6/15/23,5,Walk-In,7.0,14669.57521,Savings,17014,Plus,23.183544
+001Hu00002vQCICIA4,No,18.0,Increase,93,Mrs. Katherine Jackson,18,6/15/23,5,Phone Call,,5501.768945,Savings,6398,Premier,12.265159
+001Hu00002vQCICIA4,No,5.0,Increase,62,Tracy Schmidt,124,6/15/23,5,Walk-In,4.0,33898.30501,Savings,35235,Mass Market,38.393268
+001Hu00002vQCICIA4,Yes,79.0,Decrease,80,Jason Booth,104,6/15/23,5,Phone Call,5.0,55329.25121,Savings,48889,Premier,10.166636
+001Hu00002vQCICIA4,No,53.0,Decrease,80,Jerry Ware,173,6/15/23,5,Walk-In,3.0,11560.53584,Savings,11253,Mass Market,90.283157
+001Hu00002vQCICIA4,Yes,52.0,Decrease,79,Kyle Hicks,154,6/15/23,5,Web,9.0,27683.30329,Savings,26431,Mass Market,81.851291
+001Hu00002vQCICIA4,Yes,36.0,Decrease,97,Gregory Davis,149,6/15/23,5,Phone Call,9.0,36000.0,Savings,30757,Mass Market,16.058979
+001Hu00002vQCICIA4,No,86.0,Increase,67,Dalton Miller,137,6/15/23,5,Web,5.0,24714.44511,Savings,26378,Plus,80.642599
+001Hu00002vQCICIA4,No,62.0,Increase,67,Elizabeth Wells,20,6/15/23,5,Email,7.0,35861.63058,Savings,37061,Mass Market,48.24986
+001Hu00002vQCICIA4,Yes,93.0,Decrease,82,Connor Brown,94,6/15/23,5,Walk-In,,28703.1649,Savings,28086,Mass Market,34.277904
+001Hu00002vQCICIA4,No,36.0,Increase,66,Richard Parker,105,6/15/23,5,Email,10.0,12816.32405,Savings,13225,Mass Market,27.136467
+001Hu00002vQCICIA4,Yes,22.0,Increase,88,Matthew Patterson,21,6/15/23,5,Web,7.0,48000.0,Savings,47349,Mass Market,79.877945
+001Hu00002vQCICIA4,No,67.0,Decrease,99,Wanda Craig,51,6/15/23,5,Email,2.0,10500.25037,Savings,9237,Mass Market,53.960406
+001Hu00002vQCICIA4,Yes,86.0,Decrease,62,Luis Perkins,146,6/15/23,5,Email,10.0,16227.85134,Savings,16150,Mass Market,25.909368
+001Hu00002vQCICIA4,No,85.0,Decrease,97,Jose Reed,20,6/15/23,5,Print Ad,4.0,13000.0,Savings,8600,Mass Market,14.041241
+001Hu00002vQCICIA4,No,4.0,Decrease,60,Matthew Ramirez,28,6/15/23,5,Phone Call,6.0,32631.38044,Savings,31420,Plus,34.044814
+001Hu00002vQCICIA4,Yes,98.0,Decrease,60,Emily Beasley,44,6/15/23,5,Web,,45009.40579,Savings,40870,Mass Market,88.720935
+001Hu00002vQCICIA4,Yes,33.0,Increase,61,David Campbell,108,6/15/23,5,Print Ad,8.0,10655.07941,Savings,12132,Mass Market,94.991587
+001Hu00002vQCICIA4,No,45.0,Increase,60,Jackson White,47,6/15/23,5,Email,8.0,14370.03275,Savings,14669,Mass Market,75.372766
+001Hu00002vQCICIA4,Yes,88.0,Increase,90,Robert Greene,72,6/15/23,5,Walk-In,9.0,33540.97728,Savings,37613,Premier,50.513881
+001Hu00002vQCICIA4,No,80.0,Increase,77,Caitlyn Spears,135,6/15/23,5,Phone Call,5.0,32200.01477,Savings,35111,Mass Market,64.109098
+001Hu00002vQCICIA4,No,61.0,Increase,66,Rebecca Wilson,92,6/15/23,5,Email,5.0,23000.0,Savings,16258,Plus,83.268868
+001Hu00002vQCICIA4,Yes,95.0,Decrease,73,Stephanie Carr,139,6/15/23,5,Walk-In,3.0,40549.51493,Savings,36687,Mass Market,80.270238
+001Hu00002vQCICIA4,No,23.0,Increase,83,Jennifer Compton,116,6/15/23,5,Email,8.0,17515.94136,Savings,19281,Plus,35.173293
+001Hu00002vQCICIA4,Yes,95.0,Increase,73,Kari Chavez,163,6/15/23,5,Web,2.0,21117.87982,Savings,22872,Premier,15.490424
+001Hu00002vQCICIA4,No,45.0,Decrease,95,David Gray,122,6/15/23,5,Email,9.0,45954.11013,Savings,43830,Premier,42.653401
+001Hu00002vQCICIA4,No,11.0,Increase,72,Victoria Rivera,67,6/15/23,5,Walk-In,2.0,27811.34276,Savings,28894,Plus,27.715197
+001Hu00002vQCICIA4,No,48.0,Decrease,94,Angel Moore,37,6/15/23,5,Email,1.0,22200.19107,Savings,21377,Mass Market,6.317004
+001Hu00002vQCICIA4,No,83.0,Increase,77,Haley Kennedy,114,6/15/23,5,Web,7.0,29000.0,Savings,26953,Mass Market,4.265746
+001Hu00002vQCICIA4,No,67.0,Decrease,64,Tina Richardson,169,6/15/23,5,Email,3.0,13050.11151,Savings,11469,Plus,37.731385
+001Hu00002vQCICIA4,Yes,21.0,Decrease,65,Craig Alexander II,48,6/15/23,5,Print Ad,9.0,48725.07453,Savings,44323,Premier,59.678999
+001Hu00002vQCICIA4,Yes,39.0,Decrease,82,John Watson,85,6/15/23,5,Print Ad,1.0,41822.26804,Savings,37540,Mass Market,12.399283
+001Hu00002vQCICIA4,No,11.0,Increase,62,Laura Wilson,116,6/15/23,5,Web,10.0,12000.0,Savings,7261,Premier,74.143353
+001Hu00002vQCICIA4,Yes,16.0,Decrease,72,Julia Stephens,36,6/15/23,5,Email,5.0,6665.574816,Savings,6057,Mass Market,37.226523
+001Hu00002vQCICIA4,Yes,88.0,Decrease,97,Anthony Underwood,162,6/15/23,5,Phone Call,,8997.008891,Savings,8356,Mass Market,99.882154
+001Hu00002vQCICIA4,No,20.0,Decrease,89,Margaret Porter,151,6/15/23,5,Web,8.0,39620.96736,Savings,35351,Premier,33.74833
+001Hu00002vQCICIA4,Yes,38.0,Decrease,88,Sean Ramirez,153,6/15/23,5,Email,6.0,10849.13469,Savings,9999,Premier,33.64131
+001Hu00002vQCICIA4,Yes,70.0,Decrease,95,Kathryn Young,90,6/15/23,5,Walk-In,4.0,41882.93331,Savings,39585,Premier,26.501827
+001Hu00002vQCICIA4,No,54.0,Decrease,98,Kristen Snyder,151,6/15/23,5,Walk-In,4.0,29348.04049,Savings,28618,Mass Market,28.430504
+001Hu00002vQCICIA4,No,27.0,Decrease,97,Jessica Moore,151,6/15/23,5,Phone Call,3.0,42489.44846,Savings,40658,Plus,89.423156
+001Hu00002vQCICIA4,No,79.0,Increase,74,Scott Foster,78,6/15/23,5,Email,6.0,12620.95439,Savings,13521,Mass Market,49.134906
+001Hu00002vQCICIA4,Yes,93.0,Decrease,83,Tiffany Henry,49,6/15/23,5,Walk-In,9.0,36000.0,Savings,27432,Premier,11.898936
+001Hu00002vQCICIA4,No,50.0,Increase,97,Tony Solis,143,6/15/23,5,Phone Call,1.0,18093.38048,Savings,18523,Mass Market,65.635492
+001Hu00002vQCICIA4,No,22.0,Decrease,74,David Santos,129,6/15/23,5,Phone Call,9.0,42810.79924,Savings,39825,Plus,39.064965
+001Hu00002vQCICIA4,Yes,52.0,Decrease,82,Ricky Ibarra,49,6/15/23,5,Web,,23698.98238,Savings,21359,Plus,67.35488
+001Hu00002vQCICIA4,Yes,,Increase,99,Kimberly Robinson,117,6/15/23,5,Print Ad,1.0,31000.0,Savings,27051,Premier,99.018442
+001Hu00002vQCICIA4,Yes,72.0,Increase,91,Eric Sandoval,62,6/15/23,5,Web,8.0,35718.78671,Savings,39430,Mass Market,78.23448
+001Hu00002vQCICIA4,Yes,99.0,Decrease,78,Brittany Jones,4,6/15/23,5,Phone Call,2.0,5481.534165,Savings,5112,Premier,17.674401
+001Hu00002vQCICIA4,Yes,52.0,Increase,86,Kristen Wilson,133,6/15/23,5,Phone Call,5.0,13799.18938,Savings,14730,Premier,41.483022
+001Hu00002vQCICIA4,No,,Decrease,64,Jennifer Roth,96,6/15/23,5,Print Ad,5.0,10221.7668,Savings,9212,Premier,45.219801
+001Hu00002vQCICIA4,No,95.0,Increase,61,Madison Kemp,127,6/15/23,5,Phone Call,6.0,11211.71926,Savings,11891,Mass Market,55.881609
+001Hu00002vQCICIA4,Yes,42.0,Decrease,85,Katherine Parrish,79,6/15/23,5,Web,8.0,35786.69783,Savings,31169,Premier,6.930681
+001Hu00002vQCICIA4,No,59.0,Decrease,95,John Wilson,41,6/15/23,5,Email,6.0,14671.23283,Savings,14086,Mass Market,79.174044
+001Hu00002vQCICIA4,Yes,39.0,Decrease,77,Victoria Leblanc,160,6/15/23,5,Email,8.0,45397.42662,Savings,45330,Premier,8.608945
+001Hu00002vQCICIA4,No,67.0,Increase,60,Dean Clark,28,6/15/23,5,Print Ad,9.0,10177.27003,Savings,10384,Premier,31.55993
+001Hu00002vQCICIA4,No,17.0,Increase,79,Mary Curry,21,6/15/23,5,Email,8.0,10643.25341,Savings,11283,Plus,9.302929
+001Hu00002vQCICIA4,No,26.0,Increase,87,Sherry Johnson,158,6/15/23,5,Walk-In,5.0,46174.50023,Savings,46564,Mass Market,48.39121
+001Hu00002vQCICIA4,Yes,46.0,Decrease,79,Robert Lopez,41,6/15/23,5,Walk-In,8.0,25506.58414,Savings,25169,Plus,42.140824
+001Hu00002vQCICIA4,No,50.0,Increase,75,Robin Mendoza,109,6/15/23,5,Web,5.0,17795.16284,Savings,19403,Mass Market,29.088264
+001Hu00002vQCICIA4,Yes,62.0,Increase,89,Melissa Edwards,6,6/15/23,5,Web,1.0,33017.89036,Savings,36020,Premier,73.301589
+001Hu00002vQCICIA4,Yes,18.0,Increase,66,Danny Smith,116,6/15/23,5,Phone Call,4.0,18949.0716,Savings,20141,Mass Market,3.105973
+001Hu00002vQCICIA4,No,38.0,Increase,80,Alex Preston,102,6/15/23,5,Email,5.0,13596.78696,Savings,14301,Mass Market,89.422053
+001Hu00002vQCICIA4,Yes,24.0,Increase,68,Cynthia Hernandez,36,6/15/23,5,Phone Call,6.0,14324.42577,Savings,15480,Premier,68.033126
+001Hu00002vQCICIA4,Yes,44.0,Increase,83,Nancy Boyd,78,6/15/23,5,Web,2.0,29301.9781,Savings,31002,Plus,6.873172
+001Hu00002vQCICIA4,Yes,35.0,Decrease,84,Theresa Cochran,26,6/15/23,5,Web,1.0,30170.55082,Savings,27130,Premier,83.17746
+001Hu00002vQCICIA4,Yes,12.0,Increase,68,Alicia Clark,17,6/15/23,2,Phone Call,3.0,29117.97476,Residential,32069,Mass Market,96.725002
+001Hu00002vQCICIA4,Yes,21.0,Increase,78,Regina Ross,159,6/15/23,5,Web,9.0,37965.97661,Residential,41490,Mass Market,54.313661
+001Hu00002vQCICIA4,Yes,62.0,Decrease,74,Mr. Devin Wall,175,6/15/23,5,Phone Call,3.0,48483.72463,Residential,42305,Premier,59.428157
+001Hu00002vQCICIA4,No,96.0,Decrease,63,Daniel Costa,166,6/15/23,5,Web,,51925.94636,Residential,45397,Mass Market,34.443899
+001Hu00002vQCICIA4,Yes,60.0,Increase,75,Madison Williams,66,6/15/23,5,Print Ad,10.0,42501.0455,Residential,49610,Mass Market,66.158106
+001Hu00002vQCICIA4,Yes,63.0,Decrease,86,Allison Johnson,20,6/15/23,5,Print Ad,10.0,15937.20494,Residential,13932,Mass Market,72.479896
+001Hu00002vQCICIA4,Yes,44.0,Increase,76,Christina Adams,105,6/15/23,5,Email,1.0,43269.20224,Residential,45954,Mass Market,36.980022
+001Hu00002vQCICIA4,No,91.0,Decrease,99,Allen Morris,169,6/15/23,5,Print Ad,8.0,26315.59677,Residential,24416,Mass Market,88.732401
+001Hu00002vQCICIA4,No,10.0,Decrease,78,Brendan Sanchez,31,6/15/23,5,Web,3.0,28325.38662,Residential,25339,Mass Market,42.024655
+001Hu00002vQCICIA4,No,62.0,Decrease,94,Christina Hunter,44,6/15/23,5,Email,10.0,53174.27185,Residential,46565,Mass Market,47.649493
+001Hu00002vQCICIA4,No,61.0,Increase,89,Michael Scott,155,6/15/23,5,Web,2.0,4480.009346,Residential,5270,Mass Market,17.00197
+001Hu00002vQCICIA4,Yes,13.0,Increase,75,Robert Fisher,23,6/15/23,5,Phone Call,4.0,42013.99518,Residential,47774,Mass Market,38.299678
+001Hu00002vQCICIA4,Yes,34.0,Decrease,67,Sean Benton,78,6/15/23,5,Email,10.0,37192.41472,Residential,33167,Premier,92.523486
+001Hu00002vQCICIA4,Yes,45.0,Increase,82,Dawn Blankenship,46,6/15/23,5,Web,,21133.73414,Residential,23542,Plus,94.975997
+001Hu00002vQCICIA4,Yes,5.0,Increase,100,Kayla Berger,140,6/15/23,5,Web,1.0,10625.40436,Residential,12173,Plus,51.070166
+001Hu00002vQCICIA4,No,25.0,Increase,68,Frederick Roberts,78,6/15/23,5,Print Ad,1.0,6587.630805,Residential,6812,Premier,14.76967
+001Hu00002vQCICIA4,Yes,95.0,Increase,73,Miguel Adkins,65,6/15/23,5,Print Ad,1.0,26861.39074,Residential,29359,Mass Market,29.645298
+001Hu00002vQCICIA4,Yes,66.0,Decrease,87,Rachel Walsh,70,6/15/23,5,Walk-In,5.0,55026.10285,Residential,48793,Premier,43.238538
+001Hu00002vQCICIA4,No,40.0,Decrease,98,Andrea Rodriguez,157,6/15/23,5,Phone Call,7.0,19197.96007,Residential,17047,Premier,41.156521
+001Hu00002vQCICIA4,No,90.0,Decrease,87,Christina Ryan,20,6/15/23,5,Phone Call,6.0,11252.54625,Residential,9853,Mass Market,84.618246
+001Hu00002vQCICIA4,No,65.0,Decrease,97,Cheyenne Harvey,19,6/15/23,5,Phone Call,10.0,42866.85596,Residential,40630,Plus,65.524211
+001Hu00002vQCICIA4,Yes,68.0,Decrease,89,David Roberts,125,6/15/23,5,Web,3.0,52499.18308,Residential,48291,Plus,69.182371
+001Hu00002vQCICIA4,No,69.0,Increase,89,Jason Ramirez,170,6/15/23,5,Phone Call,6.0,19643.1596,Residential,20951,Premier,21.969858
+001Hu00002vQCICIA4,No,19.0,Increase,88,Erica Reyes,131,6/15/23,5,Phone Call,4.0,27280.40379,Residential,29771,Mass Market,66.731812
+001Hu00002vQCICIA4,Yes,16.0,Decrease,68,James Taylor,80,6/15/23,5,Walk-In,5.0,31795.5988,Residential,31340,Plus,93.207755
+001Hu00002vQCICIA4,Yes,7.0,Increase,74,Mark Campbell,154,6/15/23,5,Web,5.0,7084.572515,Residential,8318,Mass Market,29.826673
+001Hu00002vQCICIA4,No,10.0,Decrease,81,Gary Stevens,125,6/15/23,5,Walk-In,3.0,23151.41533,Residential,22987,Premier,67.295023
+001Hu00002vQCICIA4,No,88.0,Decrease,84,Kayla Smith,88,6/15/23,5,Walk-In,8.0,34273.62235,Residential,31663,Premier,15.116577
+001Hu00002vQCICIA4,No,79.0,Increase,92,Ray Zimmerman,97,6/15/23,5,Web,7.0,15667.33822,Residential,16600,Mass Market,6.560598
+001Hu00002vQCICIA4,Yes,38.0,Decrease,66,John Chapman,160,6/15/23,5,Walk-In,5.0,12532.37597,Residential,11659,Mass Market,69.71416
+001Hu00002vQCICIA4,Yes,24.0,Increase,100,Tina Casey,100,6/15/23,5,Walk-In,10.0,29134.95428,Residential,33034,Mass Market,79.826202
+001Hu00002vQCICIA4,Yes,56.0,Decrease,76,Joshua Stewart,167,6/15/23,5,Phone Call,2.0,7130.442877,Residential,6955,Premier,24.108291
+001Hu00002vQCICIA4,Yes,79.0,Increase,63,Angela Carter,61,6/15/23,5,Email,7.0,21475.63434,Residential,24258,Premier,5.069686
+001Hu00002vQCICIA4,No,70.0,Decrease,83,Beverly Moore,146,6/15/23,5,Print Ad,7.0,19963.67459,Residential,19282,Premier,69.990331
+001Hu00002vQCICIA4,No,65.0,Increase,97,Kaylee Washington,39,6/15/23,5,Print Ad,,24080.62143,Residential,27222,Mass Market,98.343563
+001Hu00002vQCICIA4,Yes,61.0,Decrease,84,Bailey Hodges,133,6/15/23,5,Email,4.0,4795.173745,Residential,4210,Mass Market,75.249651
+001Hu00002vQCICIA4,Yes,3.0,Decrease,76,Megan Scott,115,6/15/23,5,Walk-In,4.0,20708.10091,Residential,18550,Mass Market,22.852128
+001Hu00002vQCICIA4,No,23.0,Decrease,64,Tyler Patel,2,6/15/23,5,Print Ad,5.0,40211.95509,Residential,37179,Mass Market,30.190494
+001Hu00002vQCICIA4,No,62.0,Decrease,90,Diana Crane,78,6/15/23,5,Print Ad,8.0,7637.458935,Residential,6717,Plus,93.856996
+001Hu00002vQCICIA4,Yes,91.0,Increase,72,Corey Phillips,177,6/15/23,5,Web,6.0,28864.77555,Residential,33015,Plus,79.770187
+001Hu00002vQCICIA4,No,88.0,Decrease,98,Andrew Khan,66,6/15/23,5,Web,4.0,49762.49187,Residential,48116,Premier,32.516134
+001Hu00002vQCICIA4,Yes,47.0,Decrease,66,Candace Howard,30,6/15/23,5,Web,9.0,48723.18622,Residential,45631,Premier,55.965763
+001Hu00002vQCICIA4,Yes,5.0,Decrease,100,Hayley Hoffman,7,6/15/23,5,Web,8.0,49894.37806,Residential,44473,Premier,23.894917
+001Hu00002vQCICIA4,Yes,19.0,Increase,81,Diana Robinson,163,6/15/23,5,Phone Call,7.0,20195.83573,Residential,22779,Plus,71.741928
+001Hu00002vQCICIA4,Yes,45.0,Increase,92,Mark Pearson,85,6/15/23,5,Print Ad,9.0,21597.97442,Residential,22308,Mass Market,52.444697
+001Hu00002vQCICIA4,Yes,64.0,Decrease,66,Cameron Hayes,176,6/15/23,5,Phone Call,,49147.65475,Residential,46866,Plus,5.95045
+001Hu00002vQCICIA4,No,14.0,Increase,77,Tammy Tran,149,6/15/23,5,Print Ad,10.0,44705.88695,Residential,46551,Mass Market,17.664594
+001Hu00002vQCICIA4,Yes,72.0,Decrease,67,Carlos Nicholson,47,6/15/23,5,Print Ad,10.0,32619.38022,Residential,29956,Premier,24.772488
+001Hu00002vQCICIA4,No,46.0,Increase,74,Connie Smith,72,6/15/23,5,Email,4.0,14715.08443,Residential,15976,Premier,92.415996
+001Hu00002vQCICIA4,No,,Increase,90,Matthew Townsend,149,6/15/23,5,Email,3.0,21297.16875,Residential,22893,Mass Market,61.357355
+001Hu00002vQCICIA4,Yes,70.0,Increase,93,John Lee,116,6/15/23,5,Print Ad,10.0,37072.28314,Residential,40864,Premier,38.600753
+001Hu00002vQCICIA4,Yes,21.0,Increase,85,Tiffany Parrish,7,6/15/23,5,Print Ad,5.0,30282.06615,Residential,34449,Mass Market,68.165236
+001Hu00002vQCICIA4,No,30.0,Decrease,100,Travis Dominguez,46,6/15/23,5,Web,4.0,38183.49558,Residential,33371,Mass Market,33.198345
+001Hu00002vQCICIA4,Yes,31.0,Increase,88,Michael Turner,125,6/15/23,5,Email,3.0,13248.85764,Residential,14480,Premier,63.390271
+001Hu00002vQCICIA4,No,68.0,Decrease,86,Amy Wilson,88,6/15/23,5,Print Ad,6.0,28563.61134,Residential,26160,Plus,59.016754
+001Hu00002vQCICIA4,No,57.0,Increase,82,Shannon Patterson,67,6/15/23,5,Web,3.0,10788.50849,Residential,12083,Mass Market,20.782619
+001Hu00002vQCICIA4,No,8.0,Increase,72,Andrea Duke,82,6/15/23,5,Email,8.0,10794.65876,Residential,10822,Premier,43.9293
+001Hu00002vQCICIA4,No,22.0,Decrease,80,Mark Martin,72,6/15/23,5,Web,3.0,28153.51043,Residential,26142,Mass Market,82.957853
+001Hu00002vQCICIA4,Yes,84.0,Decrease,88,Karen Gonzalez,143,6/15/23,5,Print Ad,2.0,14240.57189,Residential,12927,Mass Market,28.960521
+001Hu00002vQCICIA4,No,63.0,Increase,75,Steven Burns,145,6/15/23,5,Phone Call,2.0,7879.216381,Residential,7880,Mass Market,8.425112
+001Hu00002vQCICIA4,Yes,72.0,Increase,98,Mariah Brown,132,6/15/23,5,Print Ad,10.0,10142.14367,Residential,10939,Plus,42.812494
+001Hu00002vQCICIA4,No,17.0,Increase,99,Amber Martinez,2,6/15/23,5,Email,5.0,14144.05613,Residential,16068,Mass Market,90.35221
+001Hu00002vQCICIA4,No,79.0,Increase,74,Joseph Baker,140,6/15/23,5,Phone Call,10.0,19292.54758,Residential,19931,Mass Market,50.367809
+001Hu00002vQCICIA4,No,50.0,Decrease,99,Allen Adams,133,6/15/23,5,Web,7.0,42315.13949,Residential,40331,Mass Market,89.746213
+001Hu00002vQCICIA4,Yes,77.0,Decrease,78,Teresa White PhD,37,6/15/23,5,Web,2.0,48765.76479,Residential,44323,Plus,64.108358
+001Hu00002vQCICIA4,Yes,34.0,Decrease,75,James Holt,87,6/15/23,5,Email,1.0,14459.01758,Residential,14112,Mass Market,67.499652
+001Hu00002vQCICIA4,No,66.0,Decrease,67,Nicole Wood,154,6/15/23,5,Phone Call,9.0,7280.050493,Residential,6462,Mass Market,5.628107
+001Hu00002vQCICIA4,No,22.0,Decrease,80,Sarah Chen,142,6/15/23,5,Email,5.0,52783.05544,Residential,49975,Premier,42.664362
+001Hu00002vQCICIA4,No,28.0,Decrease,80,Teresa Rogers,169,6/15/23,5,Walk-In,7.0,44012.69449,Residential,43524,Mass Market,80.466711
+001Hu00002vQCICIA4,Yes,13.0,Increase,64,Fernando Novak,8,6/15/23,5,Walk-In,9.0,29558.31374,Residential,34459,Premier,52.347619
+001Hu00002vQCICIA4,No,85.0,Increase,65,Mark Wood,47,6/15/23,5,Email,9.0,18144.17223,Residential,20735,Mass Market,31.904555
+001Hu00002vQCICIA4,Yes,,Increase,81,Victoria Wright,117,6/15/23,5,Web,,18048.4764,Residential,18549,Premier,56.119838
+001Hu00002vQCICIA4,Yes,73.0,Increase,89,Dorothy Davis,32,6/15/23,5,Email,4.0,29913.41476,Residential,30031,Premier,60.170353
+001Hu00002vQCICIA4,No,88.0,Increase,90,Melissa Reyes,91,6/15/23,5,Print Ad,1.0,29122.67272,Residential,30020,Mass Market,43.623497
+001Hu00002vQCICIA4,Yes,8.0,Increase,66,Allen Allen,138,6/15/23,5,Print Ad,10.0,6401.463761,Residential,7427,Mass Market,17.295972
+001Hu00002vQCICIA4,Yes,64.0,Increase,76,James Berger,176,6/15/23,5,Web,5.0,20340.79521,Residential,23470,Plus,1.467948
+001Hu00002vQCICIA4,No,13.0,Decrease,75,Stephanie Wang,24,6/15/23,5,Email,,20748.60967,Residential,19500,Premier,53.220077
+001Hu00002vQCICIA4,Yes,96.0,Decrease,66,Cody Mckay,119,6/15/23,5,Print Ad,7.0,21654.2369,Residential,21292,Plus,83.585717
+001Hu00002vQCICIA4,No,73.0,Increase,61,Veronica Obrien,71,6/15/23,5,Web,4.0,10991.67999,Residential,12157,Premier,44.10604
+001Hu00002vQCICIA4,Yes,100.0,Decrease,81,Robert Hall,173,6/15/23,5,Walk-In,9.0,31965.19624,Residential,28217,Plus,33.987621
+001Hu00002vQCICIA4,Yes,61.0,Decrease,85,Patrick Oconnor,22,6/15/23,5,Web,10.0,36719.77783,Residential,34127,Mass Market,51.6019
+001Hu00002vQCICIA4,No,36.0,Increase,74,Darren Patrick,53,6/15/23,5,Email,10.0,28748.54076,Residential,28922,Plus,79.962556
+001Hu00002vQCICIA4,Yes,9.0,Decrease,67,Donna Rodriguez,45,6/15/23,4,Print Ad,5.0,3611.19792,Loans,48000,Premier,64.713134
+001Hu00002vQCICIA4,Yes,44.0,Decrease,75,Victoria Peterson,156,6/15/23,5,Web,6.0,45841.66212,Loans,42683,Mass Market,99.408572
+001Hu00002vQCICIA4,Yes,69.0,Increase,79,Frank Turner,142,6/15/23,5,Web,6.0,28972.95197,Loans,29714,Premier,37.227777
+001Hu00002vQCICIA4,No,7.0,Decrease,94,Linda Espinoza,142,6/15/23,5,Walk-In,2.0,17765.75557,Loans,17041,Mass Market,75.302317
+001Hu00002vQCICIA4,Yes,80.0,Increase,84,Ryan Palmer,79,6/15/23,5,Email,4.0,33697.08245,Loans,38370,Plus,7.573449
+001Hu00002vQCICIA4,No,98.0,Decrease,96,Jerry Ortega,129,6/15/23,5,Email,4.0,21467.10483,Loans,42000,Mass Market,6.086174
+001Hu00002vQCICIA4,Yes,87.0,Increase,82,Barbara Ferguson,158,6/15/23,5,Walk-In,2.0,15130.58861,Loans,15596,Mass Market,97.745
+001Hu00002vQCICIA4,No,1.0,Increase,68,Sean Francis,116,6/15/23,5,Web,4.0,9250.654108,Loans,10291,Premier,0.491418
+001Hu00002vQCICIA4,No,31.0,Increase,69,Erin Anderson,52,6/15/23,5,Phone Call,7.0,4407.134178,Loans,5098,Plus,48.258966
+001Hu00002vQCICIA4,Yes,81.0,Decrease,61,Jeffery Guzman,82,6/15/23,5,Phone Call,5.0,21218.74941,Loans,20766,Mass Market,21.497601
+001Hu00002vQCICIA4,No,69.0,Decrease,98,Tyler Osborne,41,6/15/23,5,Phone Call,1.0,13364.80524,Loans,18000,Mass Market,10.176781
+001Hu00002vQCICIA4,No,89.0,Increase,83,Tammy Rowe,103,6/15/23,5,Web,5.0,19835.18138,Loans,22315,Mass Market,76.337942
+001Hu00002vQCICIA4,Yes,89.0,Increase,90,Meghan Rush,44,6/15/23,5,Email,5.0,13070.26539,Loans,13369,Premier,49.770197
+001Hu00002vQCICIA4,Yes,64.0,Decrease,74,Donna Wilson,9,6/15/23,5,Print Ad,4.0,22327.88926,Loans,19554,Premier,26.591531
+001Hu00002vQCICIA4,Yes,95.0,Increase,75,Ariel Doyle,8,6/15/23,5,Print Ad,5.0,10464.94422,Loans,10834,Plus,44.837112
+001Hu00002vQCICIA4,No,93.0,Decrease,92,Lisa Bryant,120,6/15/23,5,Walk-In,,6446.610959,Loans,7520,Plus,18.481922
+001Hu00002vQCICIA4,No,89.0,Increase,62,Anthony Marshall,16,6/15/23,5,Email,7.0,25049.31866,Loans,26903,Plus,2.163647
+001Hu00002vQCICIA4,Yes,14.0,Increase,65,Sean Bryant,76,6/15/23,5,Phone Call,7.0,38032.5472,Loans,54000,Mass Market,60.706223
+001Hu00002vQCICIA4,No,47.0,Decrease,76,Peter Brown,150,6/15/23,5,Phone Call,2.0,11611.32417,Loans,10170,Plus,53.220504
+001Hu00002vQCICIA4,Yes,21.0,Increase,96,Heather Anderson,154,6/15/23,5,Web,7.0,12516.97378,Loans,13485,Premier,67.291951
+001Hu00002vQCICIA4,Yes,98.0,Decrease,71,Anthony Frank,67,6/15/23,5,Web,5.0,5622.924005,Loans,5129,Plus,27.298877
+001Hu00002vQCICIA4,No,44.0,Increase,93,Jon Beasley,41,6/15/23,5,Phone Call,4.0,12539.76533,Loans,14302,Premier,8.94403
+001Hu00002vQCICIA4,No,25.0,Increase,88,Jill Williams,130,6/15/23,5,Print Ad,4.0,23083.49081,Loans,24260,Mass Market,18.072066
+001Hu00002vQCICIA4,No,43.0,Increase,74,Steven Wheeler,134,6/15/23,5,Phone Call,2.0,20601.04014,Loans,22351,Plus,77.654904
+001Hu00002vQCICIA4,Yes,79.0,Increase,61,Veronica Cooper,2,6/15/23,5,Phone Call,8.0,15507.41282,Loans,17025,Mass Market,28.367443
+001Hu00002vQCICIA4,No,91.0,Decrease,88,Paula Thomas,28,6/15/23,5,Web,4.0,7764.49145,Loans,13000,Mass Market,23.602369
+001Hu00002vQCICIA4,No,68.0,Decrease,87,Jamie Parrish,175,6/15/23,5,Phone Call,6.0,32004.80184,Loans,30095,Mass Market,51.793547
+001Hu00002vQCICIA4,Yes,68.0,Increase,81,Paul Murphy,161,6/15/23,5,Email,9.0,40279.0962,Loans,43536,Plus,49.761482
+001Hu00002vQCICIA4,Yes,48.0,Decrease,66,Jackson Bell,68,6/15/23,5,Print Ad,7.0,51416.67851,Loans,48404,Premier,80.505078
+001Hu00002vQCICIA4,No,33.0,Increase,80,Matthew Smith,10,6/15/23,5,Phone Call,6.0,39669.03177,Loans,41810,Premier,97.962268
+001Hu00002vQCICIA4,Yes,94.0,Decrease,73,Rachel Anderson,108,6/15/23,5,Web,1.0,3701.312007,Loans,3551,Plus,89.841279
+001Hu00002vQCICIA4,No,93.0,Decrease,72,Cynthia Fitzgerald,177,6/15/23,5,Email,1.0,22710.14601,Loans,20256,Mass Market,40.905064
+001Hu00002vQCICIA4,Yes,80.0,Decrease,68,Jenna Johnson,8,6/15/23,5,Email,10.0,27983.23185,Loans,38000,Plus,20.788061
+001Hu00002vQCICIA4,No,65.0,Decrease,80,James Farmer,102,6/15/23,5,Email,2.0,8313.609621,Loans,7298,Premier,0.346808
+001Hu00002vQCICIA4,No,59.0,Decrease,70,Sheryl Cruz,163,6/15/23,5,Phone Call,2.0,25618.43713,Loans,24085,Plus,79.80081
+001Hu00002vQCICIA4,No,34.0,Increase,70,Mary Barber,39,6/15/23,5,Print Ad,1.0,39175.23254,Loans,41062,Premier,65.973646
+001Hu00002vQCICIA4,Yes,88.0,Increase,96,James Delgado,168,6/15/23,5,Email,6.0,38550.56766,Loans,39381,Premier,86.287232
+001Hu00002vQCICIA4,No,96.0,Increase,65,Stephen Anderson,148,6/15/23,5,Print Ad,10.0,31173.0223,Loans,42000,Premier,89.56909
+001Hu00002vQCICIA4,Yes,9.0,Decrease,94,Nancy Jordan,130,6/15/23,5,Email,6.0,32784.22581,Loans,31112,Mass Market,65.607646
+001Hu00002vQCICIA4,Yes,26.0,Decrease,83,Kayla House,162,6/15/23,5,Walk-In,9.0,12001.49274,Loans,11066,Mass Market,91.921738
+001Hu00002vQCICIA4,Yes,65.0,Increase,96,Jamie Wilson,80,6/15/23,5,Phone Call,1.0,8423.233066,Loans,8718,Premier,14.045496
+001Hu00002vQCICIA4,No,5.0,Increase,96,Rebecca Espinoza,70,6/15/23,5,Email,7.0,13801.31132,Loans,16048,Mass Market,13.731982
+001Hu00002vQCICIA4,No,33.0,Increase,93,Jose Rhodes,81,6/15/23,5,Phone Call,3.0,4692.298471,Loans,5305,Mass Market,81.166138
+001Hu00002vQCICIA4,No,29.0,Decrease,72,Timothy Rodriguez,91,6/15/23,5,Email,6.0,55466.3746,Loans,48313,Plus,24.096076
+001Hu00002vQCICIA4,Yes,19.0,Decrease,63,Lynn Parks,132,6/15/23,5,Email,8.0,24725.89083,Loans,36000,Plus,92.320862
+001Hu00002vQCICIA4,No,44.0,Decrease,79,Jose Smith,65,6/15/23,5,Walk-In,9.0,19697.32072,Loans,24000,Premier,82.790172
+001Hu00002vQCICIA4,Yes,44.0,Increase,63,Kathleen Miles,138,6/15/23,5,Print Ad,8.0,32570.37214,Loans,34640,Mass Market,89.798845
+001Hu00002vQCICIA4,Yes,3.0,Increase,97,Michael Anderson,14,6/15/23,5,Walk-In,1.0,30701.50403,Loans,33457,Mass Market,26.243348
+001Hu00002vQCICIA4,No,56.0,Decrease,96,William Erickson,79,6/15/23,5,Email,1.0,3710.139263,Loans,3618,Premier,61.509401
+001Hu00002vQCICIA4,Yes,55.0,Decrease,72,Katie Williams,75,6/15/23,5,Print Ad,1.0,6301.877452,Loans,12000,Plus,12.382119
+001Hu00002vQCICIA4,Yes,13.0,Decrease,82,Timothy Simpson,158,6/15/23,5,Print Ad,7.0,55589.63663,Loans,48601,Premier,37.629116
+001Hu00002vQCICIA4,Yes,33.0,Increase,80,Steven Herring,93,6/15/23,5,Print Ad,4.0,13905.246,Loans,15744,Mass Market,45.896718
+001Hu00002vQCICIA4,No,29.0,Decrease,83,Brian Wright,158,6/15/23,5,Walk-In,9.0,45985.59232,Loans,41903,Mass Market,87.016534
+001Hu00002vQCICIA4,No,65.0,Decrease,70,Karen Fletcher,126,6/15/23,5,Print Ad,,43265.35544,Loans,40261,Premier,66.50004
+001Hu00002vQCICIA4,Yes,,Increase,93,Brenda Wolfe,56,6/15/23,5,Email,,7018.483942,Loans,7296,Premier,65.627757
+001Hu00002vQCICIA4,Yes,29.0,Increase,70,Dylan Moore,1,6/15/23,5,Walk-In,10.0,19692.04165,Loans,22379,Premier,56.679765
+001Hu00002vQCICIA4,Yes,24.0,Decrease,86,Brooke Meyer,25,6/15/23,5,Walk-In,,50343.49851,Loans,47857,Premier,31.809258
+001Hu00002vQCICIA4,Yes,82.0,Increase,100,Francis Williams,90,6/15/23,5,Walk-In,9.0,5350.1259,Loans,5901,Premier,93.8822
+001Hu00002vQCICIA4,Yes,,Increase,60,Kimberly Parks,110,6/15/23,5,Print Ad,4.0,21900.68621,Loans,24899,Mass Market,93.169513
+001Hu00002vQCICIA4,No,91.0,Decrease,82,Crystal Moore,127,6/15/23,5,Print Ad,5.0,7505.752628,Loans,6799,Premier,25.833773
+001Hu00002vQCICIA4,No,63.0,Decrease,73,Gloria Coleman,26,6/15/23,5,Walk-In,,11494.29125,Loans,11004,Plus,3.37848
+001Hu00002vQCICIA4,Yes,9.0,Increase,99,Peter Quinn,129,6/15/23,5,Print Ad,1.0,4064.859262,Loans,4456,Mass Market,10.566498
+001Hu00002vQCICIA4,Yes,67.0,Increase,94,Jason Singh,132,6/15/23,5,Phone Call,9.0,25331.49295,Loans,27828,Plus,77.354944
+001Hu00002vQCICIA4,Yes,21.0,Increase,65,Diana Moore,174,6/15/23,5,Web,7.0,26728.77717,Loans,30753,Premier,37.649339
+001Hu00002vQCICIA4,Yes,70.0,Increase,95,Ryan Dillon,26,6/15/23,5,Phone Call,4.0,13359.26702,Loans,15494,Mass Market,45.752822
+001Hu00002vQCICIA4,No,89.0,Decrease,82,Jamie Ayers,129,6/15/23,5,Print Ad,1.0,3505.505224,Loans,3097,Mass Market,4.254186
+001Hu00002vQCICIA4,No,2.0,Decrease,85,Stephen Coleman Jr.,142,6/15/23,5,Print Ad,,37567.92211,Loans,35054,Mass Market,96.651106
+001Hu00002vQCICIA4,No,45.0,Decrease,95,Mary Carter,80,6/15/23,5,Email,10.0,30194.15478,Loans,29424,Premier,48.038226
+001Hu00002vQCICIA4,Yes,80.0,Decrease,86,Sandra Mathis,31,6/15/23,5,Walk-In,,51971.64797,Loans,45376,Premier,58.478861
+001Hu00002vQCICIA4,Yes,37.0,Decrease,95,Dillon Ponce,65,6/15/23,5,Email,2.0,14614.26413,Loans,13548,Mass Market,57.237927
+001Hu00002vQCICIA4,Yes,36.0,Increase,80,Brianna Williams,113,6/15/23,5,Email,6.0,25906.50304,Loans,29677,Premier,90.354422
+001Hu00002vQCICIA4,Yes,45.0,Decrease,76,Lauren Hahn,164,6/15/23,5,Email,1.0,28159.62832,Loans,27449,Premier,56.373156
+001Hu00002vQCICIA4,Yes,42.0,Decrease,81,Terry Boyd,143,6/15/23,5,Web,9.0,34704.96623,Loans,33136,Premier,18.81958
+001Hu00002vQCICIA4,No,100.0,Increase,86,Steven Moore,26,6/15/23,5,Web,,20243.14812,Loans,20745,Plus,40.3024
+001Hu00002vQCICIA4,No,63.0,Decrease,94,Roger Johnson,116,6/15/23,5,Phone Call,,50210.41587,Loans,47621,Mass Market,45.670341
+001Hu00002vQCICIA4,Yes,85.0,Decrease,73,Kathryn Johnson,46,6/15/23,5,Web,7.0,38643.22454,Loans,36486,Mass Market,96.720671
+001Hu00002vQCICIA4,Yes,26.0,Increase,92,John Jenkins,27,6/15/23,5,Web,3.0,44321.53377,Loans,48358,Premier,92.570023
+001Hu00002vQCICIA4,No,86.0,Decrease,82,Charles Robinson,129,6/15/23,5,Print Ad,9.0,20302.37009,Loans,19620,Mass Market,74.034638
+001Hu00002vQCICIA4,No,46.0,Decrease,69,Caitlin Robinson,112,6/15/23,5,Web,,19417.32429,Loans,18520,Plus,78.904589
+001Hu00002vQCICIA4,No,3.0,Decrease,88,Rebecca Dorsey,153,6/15/23,5,Email,,22640.17838,Loans,21166,Mass Market,93.236014
+001Hu00002vQCICIA4,No,43.0,Increase,86,James Love,172,6/15/23,5,Email,,18292.55059,Loans,18573,Premier,37.903821
+001Hu00002vQCICIA4,Yes,43.0,Decrease,100,James Montgomery,44,6/15/23,5,Web,4.0,36950.79161,Loans,33309,Mass Market,91.444231
+001Hu00002vQCICIA4,Yes,43.0,Decrease,63,John Hood,16,6/15/23,5,Email,3.0,18488.01964,Loans,16085,Mass Market,66.334279
+001Hu00002vQCICIA4,Yes,19.0,Increase,92,Robert Rodgers,44,6/15/23,5,Email,8.0,3140.886683,Loans,3443,Mass Market,83.034333
+001Hu00002vQCICIA4,Yes,21.0,Increase,66,Andrea Ray,107,6/15/23,5,Walk-In,3.0,38780.04671,Loans,39402,Plus,94.368226
+001Hu00002vQCICIA4,No,17.0,Decrease,67,Amanda Rush,45,6/15/23,5,Walk-In,10.0,46023.41205,Loans,44340,Mass Market,1.644016
+001Hu00002vQCICIA4,Yes,58.0,Increase,91,Jordan Nichols,87,6/15/23,5,Phone Call,1.0,36644.16443,Loans,39734,Plus,30.516543
+001Hu00002vQCICIA4,No,22.0,Decrease,89,Robert Miller,28,6/15/23,5,Email,8.0,4633.047405,Loans,4217,Premier,40.845214
+001Hu00002vQCICIA4,No,64.0,Increase,97,Justin Kane Jr.,77,6/15/23,5,Phone Call,6.0,4676.852155,Loans,5473,Premier,58.453914
+001Hu00002vQCICIA4,Yes,53.0,Increase,96,Mark Orozco,175,6/15/23,5,Web,,27582.12659,Loans,28164,Mass Market,18.407398
+001Hu00002vQCICIA4,Yes,56.0,Increase,76,Mr. Angel Lopez,156,6/15/23,4,Print Ad,8.0,4941.039874,Credit Cards,5221,Mass Market,61.330142
+001Hu00002vQCICIA4,Yes,54.0,Decrease,94,Derek Zimmerman,5,6/15/23,5,Walk-In,3.0,14935.24453,Credit Cards,14720,Premier,5.692033
+001Hu00002vQCICIA4,Yes,91.0,Decrease,79,Theresa Clark,96,6/15/23,5,Walk-In,2.0,3496.397796,Credit Cards,3169,Premier,18.370024
+001Hu00002vQCICIA4,Yes,50.0,Increase,94,Joel Castro,64,6/15/23,5,Email,2.0,7267.400663,Credit Cards,8203,Mass Market,86.860975
+001Hu00002vQCICIA4,No,4.0,Increase,72,Ricky Reed,74,6/15/23,5,Print Ad,2.0,39984.17711,Credit Cards,40118,Premier,84.273806
+001Hu00002vQCICIA4,No,38.0,Decrease,92,Melissa Garcia,113,6/15/23,5,Phone Call,3.0,5178.062687,Credit Cards,4860,Plus,15.985996
+001Hu00002vQCICIA4,No,58.0,Decrease,60,Joshua Snow,177,6/15/23,5,Email,7.0,33353.67297,Credit Cards,33032,Mass Market,11.995684
+001Hu00002vQCICIA4,No,61.0,Decrease,88,Taylor Franco,122,6/15/23,5,Web,2.0,24319.98413,Credit Cards,23800,Mass Market,59.82977
+001Hu00002vQCICIA4,Yes,48.0,Decrease,91,Steve Gomez,125,6/15/23,5,Email,6.0,3872.114004,Credit Cards,3699,Premier,30.121727
+001Hu00002vQCICIA4,Yes,28.0,Increase,92,Cynthia Bishop,9,6/15/23,5,Phone Call,4.0,5203.889065,Credit Cards,5684,Plus,49.583901
+001Hu00002vQCICIA4,Yes,,Decrease,85,Randall Fowler,108,6/15/23,5,Print Ad,10.0,19226.19081,Credit Cards,17101,Mass Market,60.285113
+001Hu00002vQCICIA4,No,10.0,Increase,75,Daniel Garcia,53,6/15/23,5,Walk-In,4.0,12234.3433,Credit Cards,13257,Plus,63.846532
+001Hu00002vQCICIA4,No,99.0,Increase,84,Richard Miller,84,6/15/23,5,Walk-In,4.0,35919.36435,Credit Cards,40539,Premier,76.393826
+001Hu00002vQCICIA4,Yes,90.0,Increase,93,Zoe Jacobs,17,6/15/23,5,Phone Call,8.0,33800.24864,Credit Cards,34594,Mass Market,37.878136
+001Hu00002vQCICIA4,No,70.0,Increase,79,Caleb Duke,27,6/15/23,5,Web,3.0,16687.37029,Credit Cards,17860,Plus,25.727947
+001Hu00002vQCICIA4,Yes,23.0,Decrease,67,Ronald Hull,142,6/15/23,5,Walk-In,1.0,5159.313978,Credit Cards,4799,Mass Market,20.764246
+001Hu00002vQCICIA4,Yes,7.0,Decrease,90,Jason Morales,165,6/15/23,5,Web,4.0,10860.55529,Credit Cards,10085,Plus,29.722901
+001Hu00002vQCICIA4,No,18.0,Increase,83,Kathleen Greer,135,6/15/23,5,Email,5.0,4241.001588,Credit Cards,4944,Mass Market,74.487658
+001Hu00002vQCICIA4,No,90.0,Decrease,69,Kayla Arroyo,42,6/15/23,5,Walk-In,3.0,17717.859,Credit Cards,16739,Premier,12.030163
+001Hu00002vQCICIA4,Yes,21.0,Increase,95,Ashley Powell,42,6/15/23,5,Email,7.0,5072.639255,Credit Cards,5074,Plus,10.259893
+001Hu00002vQCICIA4,Yes,1.0,Increase,93,Christopher Stephenson,12,6/15/23,5,Print Ad,6.0,21405.11685,Credit Cards,21751,Premier,90.182638
+001Hu00002vQCICIA4,Yes,75.0,Decrease,79,Jeremy Williams,3,6/15/23,5,Walk-In,10.0,3983.071056,Credit Cards,3660,Mass Market,88.874564
+001Hu00002vQCICIA4,Yes,53.0,Increase,89,Patrick Walker,40,6/15/23,5,Email,6.0,17759.48324,Credit Cards,19674,Plus,25.225358
+001Hu00002vQCICIA4,Yes,17.0,Decrease,88,Kaitlyn Sanchez,138,6/15/23,5,Phone Call,5.0,12205.37239,Credit Cards,11430,Plus,26.590588
+001Hu00002vQCICIA4,Yes,41.0,Increase,67,Amanda Ross,26,6/15/23,5,Email,10.0,45138.79143,Credit Cards,47757,Plus,75.262139
+001Hu00002vQCICIA4,Yes,77.0,Increase,82,Christopher Lopez,27,6/15/23,5,Phone Call,,44054.06463,Credit Cards,45208,Premier,88.399636
+001Hu00002vQCICIA4,No,69.0,Decrease,94,Angela Kane,27,6/15/23,5,Web,9.0,44596.07533,Credit Cards,43433,Plus,85.761225
+001Hu00002vQCICIA4,Yes,57.0,Decrease,80,Kevin Stevens,23,6/15/23,5,Email,5.0,46509.39672,Credit Cards,42898,Plus,4.29954
+001Hu00002vQCICIA4,Yes,31.0,Increase,60,Daniel Obrien,171,6/15/23,5,Web,7.0,30386.19169,Credit Cards,34163,Premier,91.743979
+001Hu00002vQCICIA4,Yes,44.0,Increase,71,Corey Rogers,113,6/15/23,5,Walk-In,8.0,36805.97785,Credit Cards,41847,Mass Market,55.561057
+001Hu00002vQCICIA4,Yes,42.0,Increase,77,Margaret Trevino,115,6/15/23,5,Print Ad,8.0,42704.60985,Credit Cards,46560,Mass Market,76.750412
+001Hu00002vQCICIA4,Yes,56.0,Increase,96,Alisha Murphy,82,6/15/23,5,Email,6.0,14088.54592,Credit Cards,15762,Plus,60.395749
+001Hu00002vQCICIA4,Yes,74.0,Increase,71,Terri Carr,165,6/15/23,5,Email,6.0,34024.40458,Credit Cards,34868,Mass Market,40.758411
+001Hu00002vQCICIA4,Yes,44.0,Decrease,81,Elizabeth Huber,45,6/15/23,5,Phone Call,9.0,8295.841366,Credit Cards,8227,Mass Market,74.065413
+001Hu00002vQCICIA4,No,68.0,Increase,78,Matthew Osborn,43,6/15/23,5,Email,6.0,18156.26352,Credit Cards,19376,Mass Market,45.11461
+001Hu00002vQCICIA4,No,82.0,Increase,91,Herbert Vaughan,128,6/15/23,5,Walk-In,8.0,27841.50957,Credit Cards,28241,Plus,57.323934
+001Hu00002vQCICIA4,Yes,71.0,Increase,69,Megan Wilson,48,6/15/23,5,Walk-In,6.0,46192.07722,Credit Cards,46333,Mass Market,25.6007
+001Hu00002vQCICIA4,No,31.0,Decrease,73,Roy Dean,59,6/15/23,5,Phone Call,2.0,28331.5706,Credit Cards,25784,Premier,5.712472
+001Hu00002vQCICIA4,No,29.0,Decrease,77,Paul Adams,180,6/15/23,5,Web,3.0,21902.55978,Credit Cards,21764,Plus,54.184736
+001Hu00002vQCICIA4,Yes,42.0,Decrease,86,Beverly White,30,6/15/23,5,Walk-In,5.0,7768.042882,Credit Cards,7293,Mass Market,1.916474
+001Hu00002vQCICIA4,No,52.0,Increase,71,Mrs. Natasha Watson,73,6/15/23,5,Walk-In,8.0,27666.97337,Credit Cards,28976,Mass Market,41.018073
+001Hu00002vQCICIA4,No,11.0,Decrease,77,Ann Alvarado,2,6/15/23,5,Web,9.0,55212.47304,Credit Cards,48547,Premier,61.373395
+001Hu00002vQCICIA4,Yes,60.0,Decrease,73,Ruth Campos,35,6/15/23,5,Email,9.0,31116.38237,Credit Cards,30809,Mass Market,4.927673
+001Hu00002vQCICIA4,No,41.0,Decrease,77,Joe Bailey,152,6/15/23,5,Phone Call,10.0,14571.1414,Credit Cards,13835,Mass Market,8.371918
+001Hu00002vQCICIA4,Yes,85.0,Decrease,70,Herbert Hughes,85,6/15/23,5,Walk-In,4.0,21165.23669,Credit Cards,19819,Premier,62.124736
+001Hu00002vQCICIA4,No,84.0,Decrease,96,Luis Small,5,6/15/23,5,Walk-In,2.0,36314.6054,Credit Cards,34362,Mass Market,55.073636
+001Hu00002vQCICIA4,No,31.0,Decrease,61,Tiffany Hall,20,6/15/23,5,Print Ad,3.0,4346.274519,Credit Cards,4158,Mass Market,79.540515
+001Hu00002vQCICIA4,Yes,46.0,Increase,100,Heather Lutz,59,6/15/23,5,Walk-In,8.0,10370.20317,Credit Cards,11872,Mass Market,44.031273
+001Hu00002vQCICIA4,No,90.0,Decrease,91,Lisa Sanders,174,6/15/23,5,Walk-In,8.0,30534.9028,Credit Cards,28839,Mass Market,59.706218
+001Hu00002vQCICIA4,No,92.0,Increase,77,Angela Aguilar,101,6/15/23,5,Phone Call,6.0,27704.22711,Credit Cards,27805,Mass Market,31.538822
+001Hu00002vQCICIA4,Yes,13.0,Increase,67,Annette Elliott,45,6/15/23,5,Walk-In,,32985.06607,Credit Cards,38036,Mass Market,74.866769
+001Hu00002vQCICIA4,No,16.0,Decrease,95,Maria Owens,5,6/15/23,5,Web,7.0,54212.02533,Credit Cards,49816,Mass Market,8.755671
+001Hu00002vQCICIA4,No,91.0,Decrease,88,Dennis Dixon,178,6/15/23,5,Print Ad,10.0,25913.45148,Credit Cards,22714,Mass Market,55.885524
+001Hu00002vQCICIA4,No,53.0,Decrease,64,Theodore Moreno,64,6/15/23,5,Walk-In,1.0,36994.38001,Credit Cards,36961,Mass Market,40.706558
+001Hu00002vQCICIA4,Yes,43.0,Decrease,91,Denise Sullivan,49,6/15/23,5,Walk-In,10.0,27194.95218,Credit Cards,26232,Premier,58.772211
+001Hu00002vQCICIA4,No,90.0,Decrease,73,Martin Thomas,5,6/15/23,5,Email,3.0,8947.798414,Credit Cards,7852,Plus,34.502648
+001Hu00002vQCICIA4,Yes,86.0,Decrease,61,Danny Jacobson,81,6/15/23,5,Print Ad,4.0,15944.93453,Credit Cards,14696,Plus,23.994295
+001Hu00002vQCICIA4,Yes,40.0,Decrease,66,Anthony Jenkins,162,6/15/23,5,Phone Call,1.0,26910.64307,Credit Cards,26678,Mass Market,13.268699
+001Hu00002vQCICIA4,No,37.0,Increase,98,Linda Cook,150,6/15/23,5,Walk-In,5.0,7257.236026,Credit Cards,8344,Mass Market,99.78275
+001Hu00002vQCICIA4,Yes,27.0,Decrease,90,Steven Beard,60,6/15/23,5,Web,8.0,19570.79063,Credit Cards,18876,Plus,31.818411
+001Hu00002vQCICIA4,Yes,73.0,Increase,72,John Hall,164,6/15/23,5,Print Ad,2.0,26952.80058,Credit Cards,30072,Premier,36.319396
+001Hu00002vQCICIA4,Yes,24.0,Decrease,81,Luis Williams,28,6/15/23,5,Walk-In,7.0,49747.34472,Credit Cards,48058,Premier,30.016264
+001Hu00002vQCICIA4,Yes,65.0,Decrease,100,Timothy Melton,79,6/15/23,5,Web,9.0,15091.59969,Credit Cards,14048,Plus,12.902293
+001Hu00002vQCICIA4,No,10.0,Decrease,85,Bryan Gonzalez,156,6/15/23,5,Phone Call,2.0,18768.14923,Credit Cards,17847,Premier,96.410969
+001Hu00002vQCICIA4,No,90.0,Decrease,91,Corey Odonnell,118,6/15/23,5,Print Ad,8.0,18591.49331,Credit Cards,17314,Mass Market,5.778968
+001Hu00002vQCICIA4,No,57.0,Decrease,81,Ryan Mcguire,143,6/15/23,5,Email,9.0,23851.76688,Credit Cards,23046,Mass Market,5.488107
+001Hu00002vQCICIA4,No,90.0,Decrease,87,Elizabeth Cannon,28,6/15/23,5,Email,4.0,40416.09142,Credit Cards,36757,Plus,46.816061
+001Hu00002vQCICIA4,No,55.0,Decrease,95,Brian Webb,111,6/15/23,5,Phone Call,2.0,44469.63468,Credit Cards,43173,Mass Market,41.157741
+001Hu00002vQCICIA4,No,46.0,Decrease,76,Darryl Espinoza,86,6/15/23,5,Web,10.0,14155.4008,Credit Cards,13584,Mass Market,81.408272
+001Hu00002vQCICIA4,Yes,83.0,Decrease,68,Devon Yates,93,6/15/23,5,Phone Call,6.0,46307.40621,Credit Cards,40840,Mass Market,63.909642
+001Hu00002vQCICIA4,No,14.0,Decrease,77,Krista Castaneda,101,6/15/23,5,Web,,24347.20763,Credit Cards,22769,Mass Market,7.835658
+001Hu00002vQCICIA4,No,10.0,Increase,70,Roy Conrad,179,6/15/23,5,Walk-In,4.0,33059.26006,Credit Cards,34213,Mass Market,24.047489
+001Hu00002vQCICIA4,No,93.0,Increase,79,Connie Boyer MD,10,6/15/23,5,Web,9.0,46693.36802,Credit Cards,47966,Mass Market,23.978021
+001Hu00002vQCICIA4,Yes,99.0,Decrease,77,Ronald Olson,119,6/15/23,5,Phone Call,5.0,43269.30286,Credit Cards,39892,Plus,46.964259
+001Hu00002vQCICIA4,No,35.0,Increase,79,Catherine Graves,100,6/15/23,5,Phone Call,2.0,20994.12265,Credit Cards,23727,Premier,73.133066
+001Hu00002vQCICIA4,No,6.0,Decrease,78,Jessica Walker,57,6/15/23,5,Walk-In,8.0,22672.01887,Credit Cards,21430,Plus,96.166814
+001Hu00002vQCICIA4,No,29.0,Increase,88,Lindsey Castro,143,6/15/23,5,Walk-In,1.0,18459.88537,Credit Cards,19190,Mass Market,86.699208
+001Hu00002vQCICIA4,Yes,56.0,Increase,66,Alyssa Carrillo,171,6/15/23,5,Print Ad,8.0,41446.29736,Credit Cards,47219,Premier,22.973781
+001Hu00002vQCICIA4,No,8.0,Decrease,92,Thomas Mcpherson,122,6/15/23,5,Email,7.0,9949.650746,Credit Cards,9166,Premier,36.076196
+001Hu00002vQCICIA4,Yes,33.0,Decrease,69,Jennifer Vincent,162,6/15/23,5,Print Ad,2.0,12330.04732,Credit Cards,11033,Mass Market,29.596493
+001Hu00002vQCICIA4,Yes,23.0,Decrease,86,Barbara Mitchell,32,6/15/23,5,Email,9.0,30204.21593,Credit Cards,30119,Mass Market,69.572712
+001Hu00002vQCICIA4,No,86.0,Increase,83,Mrs. Dawn Jones DDS,108,6/15/23,5,Walk-In,7.0,5876.200001,Credit Cards,6753,Plus,39.2842
+001Hu00002vQCICIA4,No,50.0,Increase,74,Wendy Garza,174,6/15/23,5,Email,3.0,8339.195657,Credit Cards,8740,Mass Market,71.221105
+001Hu00002vQCICIA4,No,65.0,Decrease,95,Connor Abbott,145,6/15/23,5,Print Ad,9.0,42488.04689,Credit Cards,41197,Premier,22.730978
+001Hu00002vQCICIA4,No,62.0,Decrease,65,Nancy Patel,172,6/15/23,5,Web,9.0,48385.56394,Credit Cards,48132,Mass Market,78.357737
+001Hu00002vQCICIA4,No,56.0,Increase,74,Jason Bruce,10,6/15/23,5,Print Ad,8.0,40741.83033,Credit Cards,41524,Premier,16.810765
+001Hu00002vQCICIA4,Yes,51.0,Increase,87,Michael Potter,147,6/15/23,5,Email,2.0,43152.99075,Credit Cards,43311,Mass Market,90.586379
+001Hu00002vQCICIA4,Yes,29.0,Increase,92,John Holland,105,6/15/23,5,Web,6.0,21759.47369,Credit Cards,23924,Mass Market,38.293274
+001Hu00002vQCICIA4,No,61.0,Increase,96,Robin Henry,7,6/15/23,5,Phone Call,3.0,3360.862776,Credit Cards,3701,Plus,13.956452
+001Hu00002vQCICIA4,Yes,56.0,Decrease,71,Brian Gibbs,59,6/15/23,5,Print Ad,3.0,49447.71197,Credit Cards,47075,Plus,83.488129
+001Hu00002vQCICIA4,No,87.0,Increase,82,Kelli Ramirez,69,6/15/23,5,Walk-In,7.0,20609.48833,Credit Cards,22730,Premier,41.719732
+001Hu00002vQCICIA4,Yes,30.0,Decrease,87,Virginia Bradley,66,6/15/23,5,Print Ad,9.0,31367.40554,Credit Cards,30209,Mass Market,31.698851
+001Hu00002vQCICIA4,No,37.0,Increase,77,Mark Shea,113,6/15/23,5,Phone Call,,10893.07483,Credit Cards,10945,Premier,98.926425
+001Hu00002vQCICIA4,Yes,5.0,Decrease,61,Travis Roman,153,6/15/23,5,Web,6.0,14771.96894,Credit Cards,13504,Mass Market,75.881586
+001Hu00002vQCICIA4,No,14.0,Increase,79,Jennifer Weber,88,6/15/23,5,Email,5.0,24565.63012,Credit Cards,27459,Plus,75.480812
+001Hu00002vQCICIA4,No,43.0,Decrease,78,Brenda Rosales,105,6/15/23,5,Walk-In,9.0,29341.59871,Credit Cards,26613,Mass Market,90.977921
+001Hu00002vQCICIA4,Yes,61.0,Decrease,67,Daniel Stevens,180,6/15/23,5,Web,9.0,36494.7623,Credit Cards,32823,Premier,35.442296
+001Hu00002vQCICIA4,Yes,58.0,Increase,87,Michael Calderon,44,6/15/23,5,Email,10.0,9792.181351,Credit Cards,9895,Mass Market,0.742491
+001Hu00002vQCICIA4,Yes,34.0,Decrease,83,Carol Phillips,137,6/15/23,5,Print Ad,5.0,22039.25607,Credit Cards,21097,Plus,52.964228
+001Hu00002vQCICIA4,No,82.0,Increase,79,Gary Lucero,66,6/15/23,5,Email,8.0,5792.360538,Credit Cards,6731,Mass Market,85.760959
+001Hu00002vQCICIA4,No,31.0,Increase,73,Thomas Washington,20,6/15/23,5,Print Ad,5.0,17228.20249,Credit Cards,18004,Mass Market,95.602995
+001Hu00002vQCICIA4,No,77.0,Decrease,88,Maria Griffith,86,6/15/23,5,Phone Call,1.0,17410.34326,Credit Cards,15966,Premier,53.043959
+001Hu00002vQCICIA4,Yes,45.0,Decrease,87,Jacqueline Warner,12,6/15/23,5,Phone Call,,22036.88853,Credit Cards,21179,Plus,85.215269
+001Hu00002vQCICIA4,Yes,87.0,Decrease,91,Christine Henderson,21,6/15/23,5,Email,10.0,37505.00527,Credit Cards,33221,Plus,95.68305
+001Hu00002vQCICIA4,No,48.0,Increase,91,Kelly Cox,84,6/15/23,5,Phone Call,,15337.32423,Credit Cards,15951,Plus,27.541718
+001Hu00002vQCICIA4,Yes,35.0,Decrease,97,Jonathan Walters,67,6/15/23,5,Phone Call,5.0,14404.12362,Credit Cards,12758,Mass Market,53.939874
+001Hu00002vQCICIA4,No,75.0,Increase,63,Jessica Welch,160,6/15/23,5,Walk-In,8.0,32658.90559,Credit Cards,37814,Plus,50.902642
+001Hu00002vQCICIA4,No,59.0,Increase,90,Jennifer Taylor,147,6/15/23,5,Print Ad,10.0,19249.08497,Credit Cards,20379,Plus,70.981279
+001Hu00002vQCICIA4,No,92.0,Decrease,69,James Cooper,30,6/15/23,5,Email,10.0,14264.76638,Credit Cards,12551,Mass Market,35.993503
+001Hu00002vQCICIA4,No,79.0,Increase,67,Mr. Eduardo Williams,111,6/15/23,5,Print Ad,4.0,13328.83777,Credit Cards,14933,Mass Market,57.665395
+001Hu00002vQCICIA4,Yes,53.0,Increase,96,James Foster,12,6/15/23,5,Print Ad,,23768.3057,Credit Cards,24602,Plus,30.201036
+001Hu00002vQCICIA4,No,77.0,Decrease,72,Julie Morris,103,6/15/23,1,Web,9.0,56694.91603,Checking,49883,Plus,70.148472
+001Hu00002vQCICIA4,No,44.0,Increase,67,Karen Hernandez,17,6/15/23,5,Walk-In,9.0,39649.98264,Checking,41814,Mass Market,66.316341
+001Hu00002vQCICIA4,No,56.0,Increase,72,Emily Hall,159,6/15/23,5,Web,9.0,15172.27222,Checking,17783,Mass Market,60.126931
+001Hu00002vQCICIA4,No,15.0,Decrease,100,Angela Hall,42,6/15/23,5,Web,7.0,34000.0,Checking,22387,Mass Market,89.594454
+001Hu00002vQCICIA4,No,17.0,Increase,64,Charles Smith DVM,59,6/15/23,5,Print Ad,8.0,28778.86472,Checking,33662,Plus,8.937692
+001Hu00002vQCICIA4,No,88.0,Increase,95,Brenda French,112,6/15/23,5,Web,,17000.0,Checking,12611,Premier,72.046868
+001Hu00002vQCICIA4,No,94.0,Decrease,68,John Santos,137,6/15/23,5,Print Ad,3.0,11330.33218,Checking,10962,Mass Market,83.927832
+001Hu00002vQCICIA4,Yes,73.0,Decrease,60,Stephanie Meadows,116,6/15/23,5,Print Ad,1.0,9785.191298,Checking,8653,Premier,19.324899
+001Hu00002vQCICIA4,No,83.0,Increase,71,Keith Parker,77,6/15/23,5,Walk-In,,32000.0,Checking,20616,Plus,91.853426
+001Hu00002vQCICIA4,No,52.0,Increase,98,Sean Horton,72,6/15/23,5,Walk-In,3.0,8879.907964,Checking,10367,Plus,48.607632
+001Hu00002vQCICIA4,No,87.0,Increase,94,Christopher Bell,94,6/15/23,5,Walk-In,7.0,22273.16252,Checking,22516,Mass Market,81.273091
+001Hu00002vQCICIA4,No,27.0,Increase,83,Jessica Miles,126,6/15/23,5,Walk-In,4.0,28444.33835,Checking,30828,Premier,93.403427
+001Hu00002vQCICIA4,Yes,51.0,Increase,99,Mrs. Jodi Garcia MD,92,6/15/23,5,Phone Call,9.0,26000.0,Checking,18106,Mass Market,63.087728
+001Hu00002vQCICIA4,Yes,58.0,Increase,77,Cynthia Tate,59,6/15/23,5,Email,10.0,18460.56774,Checking,20427,Plus,0.212004
+001Hu00002vQCICIA4,Yes,80.0,Decrease,81,James Montes,16,6/15/23,5,Phone Call,3.0,8820.050714,Checking,8293,Premier,63.418437
+001Hu00002vQCICIA4,Yes,94.0,Increase,88,William Watson,174,6/15/23,5,Walk-In,2.0,12000.0,Checking,8409,Premier,30.937139
+001Hu00002vQCICIA4,No,66.0,Decrease,96,Elizabeth Hopkins,78,6/15/23,5,Print Ad,3.0,20408.18731,Checking,17758,Mass Market,99.599521
+001Hu00002vQCICIA4,No,99.0,Increase,85,Hannah Powell,129,6/15/23,5,Web,,6470.954319,Checking,6722,Premier,80.349249
+001Hu00002vQCICIA4,Yes,18.0,Increase,69,Becky Smith,19,6/15/23,5,Walk-In,4.0,8285.877008,Checking,8430,Mass Market,62.933024
+001Hu00002vQCICIA4,No,54.0,Decrease,79,Allison Hunter,175,6/15/23,5,Phone Call,5.0,56944.37633,Checking,49754,Mass Market,36.543077
+001Hu00002vQCICIA4,No,72.0,Increase,94,Susan Wilson,8,6/15/23,5,Web,3.0,24205.622,Checking,25307,Mass Market,73.615513
+001Hu00002vQCICIA4,Yes,57.0,Increase,66,Carl Nolan,150,6/15/23,5,Phone Call,10.0,56000.0,Checking,43900,Mass Market,76.975827
+001Hu00002vQCICIA4,No,28.0,Increase,83,Judith Thompson,148,6/15/23,5,Walk-In,7.0,37755.42497,Checking,43165,Plus,74.90691
+001Hu00002vQCICIA4,Yes,92.0,Increase,63,Breanna Acevedo,60,6/15/23,5,Print Ad,,8138.851152,Checking,8337,Plus,90.744278
+001Hu00002vQCICIA4,No,34.0,Increase,83,John Gilbert,104,6/15/23,5,Email,10.0,28188.01819,Checking,32816,Mass Market,7.454815
+001Hu00002vQCICIA4,Yes,3.0,Increase,92,Ashley Buchanan,35,6/15/23,5,Web,10.0,10089.49517,Checking,10765,Plus,66.971085
+001Hu00002vQCICIA4,No,90.0,Decrease,98,Kathryn Douglas,108,6/15/23,5,Walk-In,,27476.11741,Checking,27080,Mass Market,85.20716
+001Hu00002vQCICIA4,Yes,55.0,Increase,83,Jonathan Moore,43,6/15/23,5,Walk-In,7.0,18060.35952,Checking,21063,Premier,22.130291
+001Hu00002vQCICIA4,No,43.0,Decrease,80,Brandon Smith,180,6/15/23,5,Email,9.0,22659.4009,Checking,21309,Premier,74.297746
+001Hu00002vQCICIA4,Yes,5.0,Decrease,65,Donald Harrington,155,6/15/23,5,Print Ad,4.0,50894.54585,Checking,48574,Mass Market,59.100439
+001Hu00002vQCICIA4,Yes,76.0,Decrease,84,Alan Thomas,42,6/15/23,5,Print Ad,9.0,42493.2345,Checking,42287,Plus,48.777899
+001Hu00002vQCICIA4,No,68.0,Decrease,96,Monica Martinez,30,6/15/23,5,Walk-In,8.0,25863.77822,Checking,22552,Mass Market,69.433592
+001Hu00002vQCICIA4,Yes,35.0,Increase,88,Robert Marquez,39,6/15/23,5,Web,9.0,10019.7914,Checking,11005,Mass Market,54.064209
+001Hu00002vQCICIA4,Yes,,Increase,63,Justin Lloyd Jr.,85,6/15/23,5,Print Ad,8.0,23336.33649,Checking,23903,Mass Market,57.269646
+001Hu00002vQCICIA4,No,16.0,Increase,78,Jennifer Baker DDS,180,6/15/23,5,Phone Call,7.0,24015.33254,Checking,27762,Mass Market,22.668412
+001Hu00002vQCICIA4,No,14.0,Decrease,71,William Stanley,53,6/15/23,5,Print Ad,8.0,40717.43239,Checking,39984,Mass Market,92.037004
+001Hu00002vQCICIA4,No,67.0,Increase,72,Christopher Chang,89,6/15/23,5,Walk-In,8.0,11597.25666,Checking,11775,Premier,21.705402
+001Hu00002vQCICIA4,No,82.0,Decrease,89,Anthony Jones,39,6/15/23,5,Phone Call,3.0,4942.561722,Checking,4931,Premier,17.106468
+001Hu00002vQCICIA4,No,93.0,Decrease,95,Kathleen Patrick,9,6/15/23,5,Email,6.0,21187.27075,Checking,20074,Plus,79.477496
+001Hu00002vQCICIA4,Yes,99.0,Decrease,62,Lauren Hayes,37,6/15/23,5,Web,2.0,53112.48884,Checking,46235,Plus,76.808218
+001Hu00002vQCICIA4,No,6.0,Increase,71,Sabrina Pham,145,6/15/23,5,Print Ad,9.0,38325.23163,Checking,43956,Plus,76.532442
+001Hu00002vQCICIA4,No,99.0,Decrease,91,Mikayla Ramos,126,6/15/23,5,Walk-In,7.0,47547.07149,Checking,45223,Plus,9.041044
+001Hu00002vQCICIA4,Yes,42.0,Increase,90,Keith Jones,114,6/15/23,5,Web,6.0,38260.47478,Checking,43710,Mass Market,15.893056
+001Hu00002vQCICIA4,No,64.0,Increase,75,Megan Hanson,76,6/15/23,5,Walk-In,10.0,3478.820228,Checking,3902,Premier,30.94749
+001Hu00002vQCICIA4,No,74.0,Increase,74,Kyle Vargas,94,6/15/23,5,Email,5.0,29645.6795,Checking,31823,Mass Market,82.339783
+001Hu00002vQCICIA4,Yes,52.0,Increase,97,Jonathan Larsen,132,6/15/23,5,Print Ad,9.0,9436.007654,Checking,10564,Premier,4.144681
+001Hu00002vQCICIA4,Yes,30.0,Increase,80,Megan Green,170,6/15/23,5,Email,,11520.10884,Checking,13543,Mass Market,83.577193
+001Hu00002vQCICIA4,No,76.0,Increase,72,Christine Sandoval,53,6/15/23,5,Web,8.0,38555.47073,Checking,38979,Mass Market,43.768679
+001Hu00002vQCICIA4,No,58.0,Increase,84,Michelle Nelson,121,6/15/23,5,Phone Call,1.0,5747.540511,Checking,5981,Plus,22.805258
+001Hu00002vQCICIA4,No,51.0,Increase,91,Carol Nelson,133,6/15/23,5,Email,6.0,33735.77142,Checking,39482,Mass Market,1.253706
+001Hu00002vQCICIA4,Yes,89.0,Decrease,92,Matthew Brown,33,6/15/23,5,Walk-In,6.0,27025.5319,Checking,26415,Mass Market,41.471047
+001Hu00002vQCICIA4,No,100.0,Increase,99,Caitlyn Moore,47,6/15/23,5,Print Ad,1.0,3954.45044,Checking,4442,Mass Market,26.620025
+001Hu00002vQCICIA4,No,8.0,Increase,99,Kelly Allen,111,6/15/23,5,Print Ad,2.0,37399.73753,Checking,37857,Premier,0.863705
+001Hu00002vQCICIA4,No,57.0,Increase,81,Carolyn Hanson,165,6/15/23,5,Phone Call,3.0,27442.50579,Checking,29676,Mass Market,96.012604
+001Hu00002vQCICIA4,Yes,62.0,Decrease,85,Willie Crane,122,6/15/23,5,Web,10.0,51056.66308,Checking,47638,Mass Market,73.752512
+001Hu00002vQCICIA4,No,87.0,Increase,79,John Harrington,21,6/15/23,5,Email,4.0,5249.651956,Checking,5906,Plus,47.889309
+001Hu00002vQCICIA4,No,9.0,Decrease,93,Mr. Jonathan Reynolds,7,6/15/23,5,Print Ad,,39210.13158,Checking,35396,Mass Market,49.796312
+001Hu00002vQCICIA4,No,18.0,Decrease,69,David Trujillo,69,6/15/23,5,Print Ad,,6547.173432,Checking,6143,Mass Market,3.354854
+001Hu00002vQCICIA4,No,44.0,Decrease,67,Bryan Leonard,51,6/15/23,5,Walk-In,9.0,23463.57402,Checking,23060,Mass Market,71.372955
+001Hu00002vQCICIA4,Yes,49.0,Increase,83,Lindsay Dixon,114,6/15/23,5,Email,2.0,29760.55325,Checking,34435,Premier,2.7537
+001Hu00002vQCICIA4,Yes,58.0,Increase,71,Charles Sanchez,153,6/15/23,5,Print Ad,2.0,19724.33031,Checking,22293,Plus,3.555988
+001Hu00002vQCICIA4,No,98.0,Decrease,75,Donald Ponce,171,6/15/23,5,Web,4.0,21360.81358,Checking,18822,Mass Market,19.253402
+001Hu00002vQCICIA4,Yes,3.0,Increase,81,Nicole Hicks MD,28,6/15/23,5,Web,8.0,19957.08727,Checking,21594,Premier,95.678062
+001Hu00002vQCICIA4,Yes,39.0,Decrease,65,Colin Jones,110,6/15/23,5,Email,7.0,40001.20934,Checking,35308,Mass Market,94.077383
+001Hu00002vQCICIA4,Yes,39.0,Increase,92,Amanda Gordon,33,6/15/23,5,Email,2.0,3104.192618,Checking,3137,Mass Market,50.227287
+001Hu00002vQCICIA4,Yes,91.0,Increase,61,Richard Nelson,162,6/15/23,5,Print Ad,6.0,22829.36151,Checking,26112,Plus,48.931909
+001Hu00002vQCICIA4,Yes,47.0,Decrease,75,Sarah Sanchez,142,6/15/23,5,Walk-In,2.0,25008.11345,Checking,22377,Premier,65.186411
+001Hu00002vQCICIA4,Yes,98.0,Increase,87,Janice Bailey,159,6/15/23,5,Email,4.0,7691.518841,Checking,7841,Mass Market,7.97066
+001Hu00002vQCICIA4,Yes,28.0,Decrease,71,Sarah Miller,130,6/15/23,5,Email,3.0,20390.91255,Checking,17977,Mass Market,12.668852
+001Hu00002vQCICIA4,No,97.0,Decrease,60,Jennifer Hinton,88,6/15/23,5,Web,7.0,28036.65526,Checking,26239,Mass Market,34.226599
+001Hu00002vQCICIA4,Yes,23.0,Increase,68,Dr. Kyle Savage,171,6/15/23,5,Email,1.0,33428.9032,Checking,38578,Mass Market,68.760595
+001Hu00002vQCICIA4,Yes,15.0,Decrease,62,Ellen Braun,123,6/15/23,5,Phone Call,,43107.47033,Checking,38350,Premier,77.687299
+001Hu00002vQCICIA4,No,22.0,Decrease,79,Crystal Moore MD,175,6/15/23,5,Phone Call,5.0,49101.11442,Checking,42793,Mass Market,97.25884
+001Hu00002vQCICIA4,No,32.0,Increase,83,Scott Walker,168,6/15/23,5,Email,1.0,8117.864191,Checking,9259,Mass Market,46.144215
+001Hu00002vQCICIA4,No,99.0,Decrease,90,Vanessa Gibbs,159,6/15/23,5,Phone Call,,41705.907,Checking,38467,Mass Market,62.275722
+001Hu00002vQCICIA4,Yes,96.0,Decrease,87,Melissa Gibson,56,6/15/23,5,Print Ad,8.0,53449.99232,Checking,48828,Plus,72.679
+001Hu00002vQCICIA4,No,25.0,Decrease,80,Kristin Short,98,6/15/23,5,Phone Call,1.0,36953.55997,Checking,36101,Mass Market,45.423444
+001Hu00002vQCICIA4,Yes,89.0,Increase,66,Kayla Espinoza,15,6/15/23,5,Print Ad,1.0,35731.64161,Checking,39217,Mass Market,83.424516
+001Hu00002vQCICIA4,No,26.0,Decrease,90,Carrie Vargas,83,6/15/23,5,Phone Call,5.0,22625.30599,Checking,22398,Mass Market,4.262245
+001Hu00002vQCICIA4,Yes,16.0,Increase,67,Maria Kaiser,116,6/15/23,5,Walk-In,9.0,7219.494953,Checking,8027,Mass Market,13.733173
+001Hu00002vQCICIA4,Yes,87.0,Increase,89,Joshua Thomas,141,6/15/23,5,Web,10.0,30032.82961,Checking,33199,Mass Market,12.859252
+001Hu00002vQCICIA4,No,10.0,Increase,76,Courtney Brooks,91,6/15/23,5,Phone Call,4.0,41048.0606,Checking,45990,Premier,44.18728
+001Hu00002vQCICIA4,Yes,3.0,Decrease,78,Mario Cole,166,6/15/23,5,Email,10.0,45103.14322,Checking,43093,Mass Market,45.399566
+001Hu00002vQCICIA4,Yes,45.0,Increase,74,Jonathan Williams,139,6/15/23,5,Web,3.0,20786.4101,Checking,21950,Mass Market,12.686768
+001Hu00002vQCICIA4,No,53.0,Decrease,62,Steven Sanders,34,6/15/23,5,Walk-In,,53304.2118,Checking,49759,Mass Market,13.625423
+001Hu00002vQCICIA4,No,58.0,Increase,91,Christopher Sullivan,66,6/15/23,5,Web,2.0,48000.0,Checking,35737,Mass Market,29.867683
+001Hu00002vQCICIA4,Yes,93.0,Increase,70,Jason Rodriguez,21,6/15/23,5,Print Ad,,28000.0,Checking,21866,Mass Market,9.78167
+001Hu00002vQCICIA4,Yes,90.0,Increase,69,Sarah Davis,145,6/15/23,5,Walk-In,9.0,7000.0,Checking,3543,Mass Market,98.770995
+001Hu00002vQCICIA4,Yes,4.0,Decrease,71,Sarah Hensley,176,6/15/23,5,Email,3.0,42000.0,Checking,29291,Premier,52.696121
+001Hu00002vQCICIA4,Yes,35.0,Decrease,98,Charles Murray,74,6/15/23,5,Print Ad,5.0,22482.8418,Checking,20202,Mass Market,37.622669
+001Hu00002vQCICIA4,Yes,69.0,Decrease,97,Rachel Campbell,22,6/15/23,5,Email,5.0,42219.65124,Checking,39235,Mass Market,14.693196
+001Hu00002vQCICIA4,No,23.0,Increase,68,Colton Levine,140,6/15/23,5,Web,7.0,43004.02837,Checking,44121,Mass Market,76.974752
+001Hu00002vQCICIA4,Yes,100.0,Increase,64,David Rodriguez,96,6/15/23,5,Walk-In,2.0,73000.0,Checking,43221,Plus,97.55827
+001Hu00002vQCICIA4,Yes,14.0,Increase,81,Linda Harrington,12,6/15/23,5,Web,10.0,8000.0,Checking,3729,Premier,54.50614
+001Hu00002vQCICIA4,Yes,33.0,Increase,95,Crystal Sims,150,6/15/23,5,Email,6.0,34348.88293,Checking,38121,Mass Market,14.972456
+001Hu00002vQCICIA4,Yes,15.0,Decrease,88,Patricia King MD,28,6/15/23,5,Web,1.0,22768.85481,Checking,22222,Plus,98.48261
+001Hu00002vQCICIA4,Yes,82.0,Decrease,90,Colton Johnson,7,6/15/23,5,Web,10.0,26942.8186,Checking,23704,Mass Market,67.892271

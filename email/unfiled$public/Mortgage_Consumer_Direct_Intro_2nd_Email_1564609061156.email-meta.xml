@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sent directly after Second Call</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Mortgage - Consumer Direct Intro 2nd Email</name>
+    <relatedEntityType>Lead</relatedEntityType>
+    <style>none</style>
+    <subject>Re: Great Mortgage Rates with Cirrus Bank</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

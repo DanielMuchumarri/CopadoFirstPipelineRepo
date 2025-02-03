@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentAsset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isVisibleByExternalUsers>false</isVisibleByExternalUsers>
+    <language>en_US</language>
+    <masterLabel>powered_by_ea_grey_2xpngpng</masterLabel>
+    <relationships>
+        <insightsApplication>
+            <access>VIEWER</access>
+            <name>Commercial_Banking_RM_AOTP</name>
+        </insightsApplication>
+        <insightsApplication>
+            <access>VIEWER</access>
+            <name>Commercial_Banking_Analytics</name>
+        </insightsApplication>
+    </relationships>
+    <versions>
+        <version>
+            <number>1</number>
+            <pathOnClient>powered_by_ea_grey_2xpng.png</pathOnClient>
+        </version>
+    </versions>
+</ContentAsset>

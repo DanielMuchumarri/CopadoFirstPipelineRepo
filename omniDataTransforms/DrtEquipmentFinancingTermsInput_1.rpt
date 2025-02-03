@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;omniscriptId&quot; : &quot;0jNHs000000Lw1zMAC&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;type&quot; : &quot;Lending&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;sId&quot; : &quot;0jNHs000000Lw1zMAC&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;subType&quot; : &quot;EquipmentLoan&quot;,
+  &quot;timeStamp&quot; : &quot;2023-12-08T23:42:40.060Z&quot;,
+  &quot;userProfile&quot; : &quot;*FINS - Internal - Admin&quot;,
+  &quot;userTimeZoneName&quot; : &quot;America/Los_Angeles&quot;,
+  &quot;userTimeZone&quot; : &quot;-480&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;sk@summer23.demo&quot;,
+  &quot;userId&quot; : &quot;005Hs00000CvCt4IAF&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNHs000000Lw1zMAC&quot;,
+  &quot;localTimeZoneName&quot; : &quot;America/Phoenix&quot;,
+  &quot;StepLoanInfo&quot; : {
+    &quot;BlockLoan&quot; : {
+      &quot;FormulaLoanAmount&quot; : 174091,
+      &quot;PaymentAmount&quot; : null,
+      &quot;InterestRate&quot; : null,
+      &quot;InterestRateMonthly&quot; : 0,
+      &quot;CurrencyPurchasePrice&quot; : 330656,
+      &quot;CurrencyDownPayment&quot; : 156565,
+      &quot;SelectLoanTerm&quot; : &quot;120&quot;
+    },
+    &quot;RadioLoanType&quot; : &quot;Loan&quot;
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DrtEquipmentFinancingTermsInput</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DrtEquipmentFinancingTermsInputCustom2349</globalKey>
+        <inputFieldName>StepLoanInfo:BlockLoan:FormulaLoanAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DrtEquipmentFinancingTermsInput</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Input:LoanAmount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DrtEquipmentFinancingTermsInputCustom7789</globalKey>
+        <inputFieldName>StepLoanInfo:BlockLoan:SelectLoanTerm</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DrtEquipmentFinancingTermsInput</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Input:Term</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;omniscriptId&quot; : &quot;0jNHs000000Lw1zMAC&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;type&quot; : &quot;Lending&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;sId&quot; : &quot;0jNHs000000Lw1zMAC&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;subType&quot; : &quot;EquipmentLoan&quot;,
+  &quot;timeStamp&quot; : &quot;2023-12-08T23:42:40.060Z&quot;,
+  &quot;userProfile&quot; : &quot;*FINS - Internal - Admin&quot;,
+  &quot;userTimeZoneName&quot; : &quot;America/Los_Angeles&quot;,
+  &quot;userTimeZone&quot; : &quot;-480&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;sk@summer23.demo&quot;,
+  &quot;userId&quot; : &quot;005Hs00000CvCt4IAF&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNHs000000Lw1zMAC&quot;,
+  &quot;localTimeZoneName&quot; : &quot;America/Phoenix&quot;,
+  &quot;StepLoanInfo&quot; : {
+    &quot;BlockLoan&quot; : {
+      &quot;FormulaLoanAmount&quot; : 174091,
+      &quot;PaymentAmount&quot; : null,
+      &quot;InterestRate&quot; : null,
+      &quot;InterestRateMonthly&quot; : 0,
+      &quot;CurrencyPurchasePrice&quot; : 330656,
+      &quot;CurrencyDownPayment&quot; : 156565,
+      &quot;SelectLoanTerm&quot; : &quot;120&quot;
+    },
+    &quot;RadioLoanType&quot; : &quot;Loan&quot;
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DrtEquipmentFinancingTermsInput_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata">
+    <dataset>LoanProduction_ZZD_ERN</dataset>
+    <measures>
+        <field>Loans</field>
+        <formatDecimalDigits>2</formatDecimalDigits>
+        <isDerived>false</isDerived>
+        <label>Loans</label>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <field>Avg_Interest</field>
+        <formatDecimalDigits>2</formatDecimalDigits>
+        <isDerived>false</isDerived>
+        <label>Avg Interest</label>
+        <sortIndex>1</sortIndex>
+    </measures>
+    <measures>
+        <field>Amount</field>
+        <formatDecimalDigits>2</formatDecimalDigits>
+        <isDerived>false</isDerived>
+        <label>Amount</label>
+        <sortIndex>2</sortIndex>
+    </measures>
+    <measures>
+        <field>Fees</field>
+        <formatDecimalDigits>2</formatDecimalDigits>
+        <isDerived>false</isDerived>
+        <label>Fees</label>
+        <sortIndex>3</sortIndex>
+    </measures>
+</WaveXmd>

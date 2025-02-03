@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>FSC_DM_AdditionalQ2</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Provide more details about the transaction, such as the location, merchant name, or transaction date?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextArea</dataType>
+    <developerName>FSC_DM_v1_AdditionalQ2</developerName>
+    <name>FSC_DM_AdditionalQ2</name>
+    <questionCategory>Financial</questionCategory>
+</AssessmentQuestion>

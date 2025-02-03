@@ -1,0 +1,15 @@
+{
+  "required" : [ "Last4Digits" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Last4Digits" : {
+      "title" : "Last4Digits",
+      "description" : "Last 4 digits of account number of Financial Account Object",
+      "const" : "",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

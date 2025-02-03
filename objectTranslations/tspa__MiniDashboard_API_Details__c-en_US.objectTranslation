@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Add Community Endpoint --></label>
+        <name>tspa__Add_Community_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- ApiKey --></label>
+        <name>tspa__ApiKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- ApiSecret --></label>
+        <name>tspa__ApiSecret__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auth Endpoint --></label>
+        <name>tspa__Auth_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- AvailableCountryCodes --></label>
+        <name>tspa__AvailableCountryCodes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Available Tags --></label>
+        <name>tspa__Available_Tags__c</name>
+    </fields>
+    <fields>
+        <label><!-- Backup Endpoint --></label>
+        <name>tspa__Backup_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- ChatterImage --></label>
+        <name>tspa__ChatterImage__c</name>
+    </fields>
+    <fields>
+        <label><!-- DNS SSO url --></label>
+        <name>tspa__DNS_SSO_url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Retention Endpoint --></label>
+        <name>tspa__Data_Retention_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete Images URL --></label>
+        <name>tspa__DeleteImagesUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete Recordings URL --></label>
+        <name>tspa__Delete_Recordings_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- DomainStatus --></label>
+        <name>tspa__DomainStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Domain Name --></label>
+        <name>tspa__Domain_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- GeoLocation Endpoint --></label>
+        <name>tspa__EnableGeolocation_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Session Endpoint --></label>
+        <name>tspa__End_Session_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Session Redirection Endpoint --></label>
+        <name>tspa__End_Session_Redirection_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Export Endpoint --></label>
+        <name>tspa__Export_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- FaceMeet Endpoint --></label>
+        <name>tspa__FaceMeet_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- FeatureStatus --></label>
+        <name>tspa__FeatureStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- History Auth Endpoint --></label>
+        <name>tspa__History_Auth_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- History Pull Endpoint --></label>
+        <name>tspa__History_Pull_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hourly Published Platform Events --></label>
+        <name>tspa__Hourly_Published_Platform_Events__c</name>
+    </fields>
+    <fields>
+        <label><!-- Import Endpoint --></label>
+        <name>tspa__Import_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Used Published Platform Events Time --></label>
+        <name>tspa__Last_Used_Published_Platform_Events_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Magic Marker Endpoint --></label>
+        <name>tspa__Magic_Marker_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remove  Community Endpoint --></label>
+        <name>tspa__Remove_Community_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Restore Endpoint --></label>
+        <name>tspa__Restore_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revoke Account Endpoint --></label>
+        <name>tspa__Revoke_Account_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- SSO URL --></label>
+        <name>tspa__SSO_URL_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Save Customers Email Addresses Endpoint --></label>
+        <name>tspa__SaveCustomersEmailAddresses_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Save Customers Phone Numbers Endpoint --></label>
+        <name>tspa__SaveCustomersPhoneNumbers_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- SelectedCountryCode --></label>
+        <name>tspa__SelectedCountryCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session Initiation Endpoint --></label>
+        <name>tspa__Session_Initiation_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session Recording Endpoint --></label>
+        <name>tspa__Session_Recording_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session Report Endpoint --></label>
+        <name>tspa__Session_Report_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session Type Endpoint --></label>
+        <name>tspa__Session_Type_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- ShareFile --></label>
+        <name>tspa__ShareFile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Save Session Images Endpoint --></label>
+        <name>tspa__ShowImageVisibility_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- SmsRetry  Endpoint --></label>
+        <name>tspa__SmsRetry_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store Configuration Endpoint --></label>
+        <name>tspa__Store_Configuration_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Terms &amp; Conditions Endpoint --></label>
+        <name>tspa__Terms_Conditions_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Used Published Platform Events --></label>
+        <name>tspa__Used_Published_Platform_Events__c</name>
+    </fields>
+    <fields>
+        <label><!-- UserTokenEndpoint --></label>
+        <name>tspa__UserTokenEndpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- VJ Base Url --></label>
+        <name>tspa__VJBaseUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Video Background Image --></label>
+        <name>tspa__VideoBackgroundImage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visual Journey Session Type Endpoint --></label>
+        <name>tspa__Visual_Journey_Session_Type_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- 3 Way session Endpoint --></label>
+        <name>tspa__X3_Way_session_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- acsURL --></label>
+        <name>tspa__acsURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- apiURL --></label>
+        <name>tspa__apiURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cloud Front Image Base Url --></label>
+        <name>tspa__cloudFrontImageBaseUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- createUserEndpoint --></label>
+        <name>tspa__createUserEndpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Desktop Show Url --></label>
+        <name>tspa__desktopShowUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Session Redirection Url --></label>
+        <name>tspa__endSessionRedirectionUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image Base Url --></label>
+        <name>tspa__imageBaseUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- packageUpgrade --></label>
+        <name>tspa__packageUpgrade__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recording Base Url --></label>
+        <name>tspa__recordingBaseUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stats API URL --></label>
+        <name>tspa__statsApiUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- userCreatedInTechSee --></label>
+        <name>tspa__userCreatedInTechSee__c</name>
+    </fields>
+</CustomObjectTranslation>

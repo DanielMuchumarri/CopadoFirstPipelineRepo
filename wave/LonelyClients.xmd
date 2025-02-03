@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata">
+    <dataset>LonelyClients</dataset>
+    <dimensions>
+        <field>AI</field>
+        <isDerived>false</isDerived>
+        <label>Strength</label>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>RelStrength</field>
+        <isDerived>false</isDerived>
+        <label>Description</label>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>ClientName</field>
+        <isDerived>false</isDerived>
+        <label>Client Name</label>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>AccountContacts</field>
+        <isDerived>false</isDerived>
+        <label>Contacts</label>
+        <sortIndex>3</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>AccountTeam</field>
+        <isDerived>false</isDerived>
+        <label>Account Team</label>
+        <sortIndex>4</sortIndex>
+    </dimensions>
+    <measures>
+        <field>DaysSinceLastInteraction</field>
+        <isDerived>false</isDerived>
+        <label>Days Since Last Int.</label>
+        <sortIndex>0</sortIndex>
+    </measures>
+</WaveXmd>

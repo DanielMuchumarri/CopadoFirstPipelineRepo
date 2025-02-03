@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assetIcon>/analytics/wave/web/proto/images/app/icons/16.png</assetIcon>
+    <folder>FINS_Retail_Banking_Demo_5Y6XH_MFG</folder>
+    <masterLabel>FINS_Retail_Banking_Demo_5Y6XH_MFG</masterLabel>
+    <shares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>AllInternalUsers</sharedTo>
+        <sharedToType>Organization</sharedToType>
+    </shares>
+    <shares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>daniel.muchumarri@ltimindtree.com2024/11/20_10-50-14.demo</sharedTo>
+        <sharedToType>User</sharedToType>
+    </shares>
+    <templateOrigin>FINS_Retail_Banking_Demo_5Y6XH_MFG</templateOrigin>
+    <templateVersion>1.0</templateVersion>
+</WaveApplication>

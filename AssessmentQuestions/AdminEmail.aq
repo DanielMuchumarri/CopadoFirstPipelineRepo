@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>AdminEmail</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Email</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Email</dataType>
+    <developerName>AdminEmail</developerName>
+    <name>AdminEmail</name>
+    <questionCategory>Demographic</questionCategory>
+    <relatedQuestion>CompanyAdministrator</relatedQuestion>
+</AssessmentQuestion>

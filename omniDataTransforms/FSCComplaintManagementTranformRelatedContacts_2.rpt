@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>FSCComplaintManagementTranformRelatedContacts</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCComplaintManagementTranformRelatedContactsCustom0jI4V000000KzztUACItem0</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCComplaintManagementTranformRelatedContacts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>relatedContacts</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;contactId&quot; | var:resultContacts LIST | var:contactDetails LIST LISTMERGE</formulaConverted>
+        <formulaExpression>LISTMERGE(&quot;contactId&quot;, LIST(resultContacts), LIST(contactDetails))</formulaExpression>
+        <formulaResultPath>relatedContacts</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>FSCComplaintManagementTranformRelatedContactsCustom0jI4V000000KzztUACItem1</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCComplaintManagementTranformRelatedContacts</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCComplaintManagementTranformRelatedContactsCustom0jI4V000000KzztUACItem2</globalKey>
+        <inputFieldName>relatedContacts</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCComplaintManagementTranformRelatedContacts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>relatedContacts</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;roleId&quot; | var:contacts LIST | var:roleDetails LIST LISTMERGE</formulaConverted>
+        <formulaExpression>LISTMERGE(&quot;roleId&quot;, LIST(contacts), LIST(roleDetails))</formulaExpression>
+        <formulaResultPath>resultContacts</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>FSCComplaintManagementTranformRelatedContactsCustom0jI4V000000KzztUACItem3</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCComplaintManagementTranformRelatedContacts</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <overrideKey>fsccomplaintmanagement__FSCComplaintManagementTranformRelatedContacts_1</overrideKey>
+    <previewJsonData>{
+  &quot;contacts&quot; : [ {
+    &quot;roleId&quot; : &quot;a0QRO000000CrBZ2A0&quot;,
+    &quot;contactId&quot; : &quot;003RO000003Suj1YAC&quot;
+  } ],
+  &quot;contactDetails&quot; : [ {
+    &quot;contactName&quot; : &quot;Rose Gonzalez&quot;,
+    &quot;contactId&quot; : &quot;003RO000003Suj1YAC&quot;
+  } ],
+  &quot;roleDetails&quot; : [ {
+    &quot;roleName&quot; : &quot;Dependent&quot;,
+    &quot;roleId&quot; : &quot;a0QRO000000CrBZ2A0&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>FSCComplaintManagementTranformRelatedContacts_2</uniqueName>
+    <versionNumber>2.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>EinsteinGPT Configuration</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>EinsteinGPT Configuration</value>
+    </caseValues>
+    <fields>
+        <label><!-- Unknown Answer Response --></label>
+        <name>AssistantUnknownAnswerResponse__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Featured Account --></label>
+        <name>SalesFeaturedAccount__c</name>
+        <relationshipLabel><!-- EinsteinGPT Configuration --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Use Open AI --></label>
+        <name>SalesUseOpenAI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent Name --></label>
+        <name>ServiceAgentName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Summary --></label>
+        <name>ServiceCaseSummary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Avatar --></label>
+        <name>ServiceContactAvatar__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Email --></label>
+        <name>ServiceContactEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Initials --></label>
+        <name>ServiceContactInitials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>ServiceContactName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Phone --></label>
+        <name>ServiceContactPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Knowledge Article Content --></label>
+        <name>ServiceKnowledgeArticleContent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Knowledge Article Title --></label>
+        <name>ServiceKnowledgeArticleTitle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Starting Message --></label>
+        <name>ServiceStartingMessage__c</name>
+        <relationshipLabel><!-- EinsteinGPT Configuration --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Use Avatar --></label>
+        <name>ServiceUseAvatar__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

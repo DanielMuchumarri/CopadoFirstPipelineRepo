@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <assignments>
+        <name>Set_Status_to_OnHold</name>
+        <label>Set Status to OnHold</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <assignmentItems>
+            <assignToReference>finsAccountRec.FinServ__Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>On Hold</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Financial_Account_Record</targetReference>
+        </connector>
+    </assignments>
+    <environments>Default</environments>
+    <interviewLabel>Set Credit Card On Hold {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Set Credit Card On Hold</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Financial_Account_Record</name>
+        <label>Update Financial Account Record</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <inputReference>finsAccountRec</inputReference>
+    </recordUpdates>
+    <runInMode>SystemModeWithoutSharing</runInMode>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Set_Status_to_OnHold</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>finsAccountRec</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>FinServ__FinancialAccount__c</objectType>
+    </variables>
+</Flow>

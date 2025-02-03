@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Custom Activity</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Custom Activities</value>
+    </caseValues>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>xDO_MDC_Contact__c</name>
+        <relationshipLabel><!-- Custom Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Hex code for activity icon color --></help>
+        <label><!-- Icon Color --></label>
+        <name>xDO_MDC_Icon_Color__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Ago --></label>
+        <name>xDO_MDC_days_ago__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Lightning Design System name of the icon. Names are written in the format &apos;utility:down&apos; where &apos;utility&apos; is the category, and &apos;down&apos; is the specific icon to be displayed. --></help>
+        <label><!-- Icon --></label>
+        <name>xDO_MDC_icon__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description of activity, displays under title --></help>
+        <label><!-- Description --></label>
+        <name>xDO_MDC_message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>xDO_MDC_order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time --></label>
+        <name>xDO_MDC_time__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

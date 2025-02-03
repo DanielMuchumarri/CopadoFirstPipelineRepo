@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <decisions>
+        <description>Checks for the status of the asynchronous Apex action callout.</description>
+        <name>IsCalloutStatusSetToFailed</name>
+        <label>Is Callout Status Set to Failed?</label>
+        <locationX>233</locationX>
+        <locationY>305</locationY>
+        <defaultConnectorLabel>Other (Default Outcome)</defaultConnectorLabel>
+        <rules>
+            <name>IsFailed</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>The Service request succeeded partially. It succeeded on credit but failed on debit card.</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>The Service request succeeded partially. It succeeded on debit but failed on credit card.</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>The Service Request failed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Failure</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ShowServiceRequestStatus</targetReference>
+            </connector>
+            <label>Is Failed</label>
+        </rules>
+    </decisions>
+    <description>Checks for the status of the asynchronous Apex action callout to update a service catalog request record and shows the status to the user.</description>
+    <environments>Default</environments>
+    <interviewLabel>Show Asynchronous Apex Action Callout Status {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Show Asynchronous Apex Action Callout Status</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <description>Displays the status of the Service Request</description>
+        <name>ShowServiceRequestStatus</name>
+        <label>Show Service Request Status</label>
+        <locationX>737</locationX>
+        <locationY>491</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>StatusInformation</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;color: rgb(224, 10, 10);&quot;&gt;{!Status}&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <sourceTemplate>serviceprocess__confirm_fee_reversal</sourceTemplate>
+    <start>
+        <locationX>590</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>IsCalloutStatusSetToFailed</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Stores the status of the asynchronous Apex action callout.</description>
+        <name>Status</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>Status</elementReference>
+        </value>
+    </variables>
+</Flow>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDataset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <application>Capital_Markets</application>
+    <masterLabel>Data_Equities_Clients_and_Activity_Recency_12_23_19</masterLabel>
+    <type>default</type>
+</WaveDataset>

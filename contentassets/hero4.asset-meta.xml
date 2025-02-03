@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentAsset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <format>ZippedVersions</format>
+    <isVisibleByExternalUsers>false</isVisibleByExternalUsers>
+    <language>en_US</language>
+    <masterLabel>hero4</masterLabel>
+    <originNetwork>FINS - Commercial Banking</originNetwork>
+    <relationships>
+        <network>
+            <access>VIEWER</access>
+            <name>FINS - Commercial Banking</name>
+        </network>
+        <workspace>
+            <access>INFERRED</access>
+            <isManagingWorkspace>true</isManagingWorkspace>
+            <name>sfdc_asset_company_assets</name>
+        </workspace>
+    </relationships>
+    <versions>
+        <version>
+            <number>1</number>
+            <pathOnClient>hero4.png</pathOnClient>
+            <zipEntry>hero4.png</zipEntry>
+        </version>
+        <version>
+            <number>2</number>
+            <pathOnClient>hero4.jpg</pathOnClient>
+            <zipEntry>hero4.jpg</zipEntry>
+        </version>
+    </versions>
+</ContentAsset>

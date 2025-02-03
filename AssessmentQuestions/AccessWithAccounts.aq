@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>AccessWithAccounts</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Which accounts would you like to access through Cash Management Services?</questionText>
+        <responseValues>Commercial Checking - 5564115654
+Commercial Checking - 9876136546
+Commercial Savings - 12354565
+Enterprise Investments - 06546875
+Corporate Pensions - 6564698
+ForEx USD - 7315843213</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Multiselect</dataType>
+    <developerName>AccessWithAccounts</developerName>
+    <name>AccessWithAccounts</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

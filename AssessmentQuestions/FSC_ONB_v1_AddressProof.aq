@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Address Proof</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Address Proof</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>File</dataType>
+    <developerName>FSC_ONB_v1_AddressProof</developerName>
+    <name>Address Proof</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

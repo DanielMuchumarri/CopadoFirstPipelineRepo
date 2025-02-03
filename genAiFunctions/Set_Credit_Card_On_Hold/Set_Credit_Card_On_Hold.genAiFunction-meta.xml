@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>The output from the Query Fins Account Using Last 4 Digits Account Number should be passed to this as input</description>
+    <invocationTarget>Set_Credit_Card_On_Hold</invocationTarget>
+    <invocationTargetType>flow</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <masterLabel>Set Credit Card On Hold</masterLabel>
+</GenAiFunction>

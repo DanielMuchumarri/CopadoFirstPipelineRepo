@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Created by Lightning App Builder</description>
+    <flexiPage>FINS_Retail_Banking_EA_for_FSC</flexiPage>
+    <label>EA for FSC (RB)</label>
+    <motif>Custom31: Car</motif>
+</CustomTab>

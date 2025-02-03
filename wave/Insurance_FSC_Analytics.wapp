@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Demo app with data based off of the Insurance Analytics Accelerator dataflow.   Uses Michael Lowe&apos;s demo accelerator which allows you to configure datas by editing the control files for Agent Names, Locations and Insurance Products.</description>
+    <folder>Insurance_FSC_Analytics</folder>
+    <masterLabel>FSC - Insurance Analytics Accelerator</masterLabel>
+    <shares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>AllInternalUsers</sharedTo>
+        <sharedToType>Organization</sharedToType>
+    </shares>
+</WaveApplication>

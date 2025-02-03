@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bot xmlns="http://soap.sforce.com/2006/04/metadata">
+    <botVersions>
+        <fullName>v1</fullName>
+        <articleAnswersGPTEnabled>false</articleAnswersGPTEnabled>
+        <botDialogs>
+            <botSteps>
+                <botMessages>
+                    <message>Hi, I&apos;m an AI service assistant. How can I help you?</message>
+                    <messageIdentifier>b616c5d6-e0c1-4af8-9c97-590716eb54cc</messageIdentifier>
+                </botMessages>
+                <stepIdentifier>f7082829-cb97-4135-adad-01dee3a428dd</stepIdentifier>
+                <type>Message</type>
+            </botSteps>
+            <botSteps>
+                <stepIdentifier>b600839b-1d33-4b13-8c3f-0dbd71b86098</stepIdentifier>
+                <type>Wait</type>
+            </botSteps>
+            <developerName>Welcome</developerName>
+            <isPlaceholderDialog>false</isPlaceholderDialog>
+            <label>Hi! I&apos;m your helpful bot.</label>
+            <showInFooterMenu>false</showInFooterMenu>
+        </botDialogs>
+        <botDialogs>
+            <botSteps>
+                <botMessages>
+                    <message>Sorry, it looks like something has gone wrong.</message>
+                    <messageIdentifier>a03e3f43-b027-4afd-af36-ac0330cd19bf</messageIdentifier>
+                </botMessages>
+                <stepIdentifier>573103b9-c325-4c27-93e9-e0960e154dc9</stepIdentifier>
+                <type>Message</type>
+            </botSteps>
+            <botSteps>
+                <stepIdentifier>90721b1d-ecb6-4b73-bfbc-d9f5ad0d0155</stepIdentifier>
+                <type>Wait</type>
+            </botSteps>
+            <developerName>Error_Handling</developerName>
+            <isPlaceholderDialog>false</isPlaceholderDialog>
+            <label>Unfortunately, a system error occurred. Let us start again.</label>
+            <showInFooterMenu>false</showInFooterMenu>
+        </botDialogs>
+        <botDialogs>
+            <botSteps>
+                <botMessages>
+                    <message>One moment while I connect you to the next available service representative.</message>
+                    <messageIdentifier>8c076a91-454b-4e7b-b1bc-bbcc8bc28fba</messageIdentifier>
+                </botMessages>
+                <stepIdentifier>c090f4f9-8e34-44ee-8989-edc3eb5d41bd</stepIdentifier>
+                <type>Message</type>
+            </botSteps>
+            <botSteps>
+                <conversationSystemMessage>
+                    <type>Transfer</type>
+                </conversationSystemMessage>
+                <stepIdentifier>0d2016d3-0922-4c91-9f35-2be33f41390c</stepIdentifier>
+                <type>SystemMessage</type>
+            </botSteps>
+            <developerName>Transfer_To_Agent</developerName>
+            <isPlaceholderDialog>false</isPlaceholderDialog>
+            <label>Transfer To Agent</label>
+            <showInFooterMenu>false</showInFooterMenu>
+        </botDialogs>
+        <citationsEnabled>false</citationsEnabled>
+        <company>A leading insurance company that deals with auto and home insurance</company>
+        <conversationDefinitionPlanners>
+            <genAiPlannerName>Insurance_Claims_Agent</genAiPlannerName>
+        </conversationDefinitionPlanners>
+        <entryDialog>Welcome</entryDialog>
+        <intentDisambiguationEnabled>false</intentDisambiguationEnabled>
+        <intentV3Enabled>false</intentV3Enabled>
+        <knowledgeActionEnabled>false</knowledgeActionEnabled>
+        <knowledgeFallbackEnabled>false</knowledgeFallbackEnabled>
+        <role>An AI customer service agent whose job is to help customers with support questions or other issues.</role>
+        <smallTalkEnabled>false</smallTalkEnabled>
+        <toneType>Casual</toneType>
+    </botVersions>
+</Bot>

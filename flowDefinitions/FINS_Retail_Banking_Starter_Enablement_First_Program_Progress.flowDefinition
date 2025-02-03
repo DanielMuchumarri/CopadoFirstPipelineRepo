@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Important Note: 
+The formula in the entry criteria of this flow is getting corrupted during the trialforce process. Replace the formula with the criteria below prior to reactivating to ensure it works as intended.
+
+{!$Record.FinServ__ReferredByUser__r.External_ID__c} = &quot;User.001&quot; || {!$Record.FinServ__ReferredByUser__r.External_ID__c} = &quot;FSC_User.002&quot;</description>
+    <masterLabel>FINS Retail Banking - Enablement First Program Progress</masterLabel>
+</FlowDefinition>

@@ -1,0 +1,114 @@
+{
+  "type" : "sfdc_cms__themeLayout",
+  "title" : "Checkout Layout",
+  "contentBody" : {
+    "component" : {
+      "attributes" : { },
+      "children" : [ {
+        "children" : [ {
+          "attributes" : { },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "cmsPickerState" : "{\"title\":\"\",\"alt\":\"\",\"url\":\"https://i.imgur.com/skn5UYh.png\",\"isFromCms\":false}"
+              },
+              "definition" : "b2c_lite_commerce:storeLogoCms",
+              "id" : "7084bad7-bb9c-4fbb-8fa2-4c9dfebc6097",
+              "type" : "component"
+            } ],
+            "id" : "9e423ad6-16ed-4f69-8a8c-3185b77e32c0",
+            "name" : "storeLogo",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "showTotalCount" : false
+              },
+              "definition" : "b2c_lite_commerce:cartBadge",
+              "id" : "5cb7fe49-6b73-4bfc-87bb-cf7dd72f4fad",
+              "type" : "component"
+            } ],
+            "id" : "3efb6541-6184-4db1-898d-37076a2580e2",
+            "name" : "cart",
+            "type" : "region"
+          } ],
+          "definition" : "b2c_lite_commerce:checkoutHeader",
+          "id" : "056909df-c1d4-4c73-bb64-0e6300c77a8e",
+          "type" : "component"
+        } ],
+        "id" : "f535aa5c-b659-4d38-8e96-af8fa8640a28",
+        "name" : "header",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : { },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "backgroundImageConfig" : "",
+                "backgroundImageOverlay" : "rgba(0,0,0,0)",
+                "sectionConfig" : "{\"UUID\":\"ba8d7bc1-bdae-44c4-86a0-aee79bd28ac7\",\"columns\":[{\"UUID\":\"1a983949-38a6-4e38-a4e0-3d6ca2054e73\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"4\",\"seedComponents\":null},{\"UUID\":\"6220d504-fc19-4828-8159-967825ac4195\",\"columnName\":\"Column 2\",\"columnKey\":\"col2\",\"columnWidth\":\"4\",\"seedComponents\":null},{\"UUID\":\"ca67e1fe-c4ab-4b7b-b76e-812be84ea26e\",\"columnName\":\"Column 3\",\"columnKey\":\"col3\",\"columnWidth\":\"4\",\"seedComponents\":null}]}"
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "maxDepth" : "1"
+                  },
+                  "definition" : "b2c_lite_commerce:linkList",
+                  "id" : "e30397d4-4b74-4012-9f6a-fa2f1e73b12d",
+                  "type" : "component"
+                } ],
+                "id" : "1a983949-38a6-4e38-a4e0-3d6ca2054e73",
+                "name" : "col1",
+                "title" : "Column 1",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "maxDepth" : "1"
+                  },
+                  "definition" : "b2c_lite_commerce:linkList",
+                  "id" : "17a1c861-0c17-425d-9b7c-30e653e9da3e",
+                  "type" : "component"
+                } ],
+                "id" : "6220d504-fc19-4828-8159-967825ac4195",
+                "name" : "col2",
+                "title" : "Column 2",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "cmsPickerState" : "{}"
+                  },
+                  "definition" : "b2c_lite_commerce:storeLogoCms",
+                  "id" : "af8cda57-237f-414d-9628-9fe0bbda4def",
+                  "type" : "component"
+                } ],
+                "id" : "ca67e1fe-c4ab-4b7b-b76e-812be84ea26e",
+                "name" : "col3",
+                "title" : "Column 3",
+                "type" : "region"
+              } ],
+              "definition" : "community_layout:section",
+              "id" : "ba8d7bc1-bdae-44c4-86a0-aee79bd28ac7",
+              "type" : "component"
+            } ],
+            "id" : "e29dcf45-199b-4ef6-ae4b-bad23f632024",
+            "name" : "content",
+            "type" : "region"
+          } ],
+          "definition" : "b2c_lite_commerce:commerceFooter",
+          "id" : "d2d19671-6516-494f-a756-f5dbcd4f0dd5",
+          "type" : "component"
+        } ],
+        "id" : "a28fedee-64ca-493b-819c-b19fb94692b0",
+        "name" : "footer",
+        "type" : "region"
+      } ],
+      "definition" : "b2c_lite_commerce:commerceLayout",
+      "id" : "44c38336-e1b9-4fc4-b202-ee2285f7a115",
+      "type" : "component"
+    }
+  },
+  "urlName" : "checkout-layout"
+}

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <description>Simple loan calculator created by Umair Ilyas to use in quick actions, in-line record pages, or on SF Mobile.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>Formula_Loan_Calculator_With_Discount</name>
+        <dataType>Currency</dataType>
+        <expression>IF(ISBLANK({!Discount.value}) ,
+
+{!Principal_Amount} * ({!Interest_Rate}/12/100) * ((1 + ({!Interest_Rate}/12/100)) ^ {!Loan_Term.value}) / (((1 + ({!Interest_Rate}/12/100)) ^ {!Loan_Term.value}) - 1) , 
+
+({!Principal_Amount} * ({!Interest_Rate}/12/100) * ((1 + ({!Interest_Rate}/12/100)) ^ {!Loan_Term.value}) / (((1 + ({!Interest_Rate}/12/100)) ^ {!Loan_Term.value}) - 1))
+
+-
+
+(
+{!Principal_Amount} * ({!Interest_Rate}/12/100) * ((1 + ({!Interest_Rate}/12/100)) ^ {!Loan_Term.value}) / (((1 + ({!Interest_Rate}/12/100)) ^ {!Loan_Term.value}) - 1)
+*
+({!Discount.value} / 100)
+)
+)</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>Loan Calculator {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Loan Calculator</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordUpdates>
+        <description>Take the loan calculation and write it to the &quot;Next Steps&quot; field on the Opportunity.</description>
+        <name>Update_Opportunity</name>
+        <label>Update Opportunity</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>NextStep</field>
+            <value>
+                <stringValue>Loan monthly payment will be {!Formula_Loan_Calculator_With_Discount}</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordUpdates>
+    <screens>
+        <name>Loan_Calculator</name>
+        <label>Loan Calculator</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Update_Opportunity</targetReference>
+        </connector>
+        <fields>
+            <name>Loan_Calculator_Section1</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>Loan_Calculator_Section1_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Principal_Amount</name>
+                    <dataType>Currency</dataType>
+                    <fieldText>Enter Principal Amount</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>false</isRequired>
+                    <scale>0</scale>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>Loan_Calculator_Section1_Column2</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Interest_Rate</name>
+                    <dataType>Number</dataType>
+                    <fieldText>Enter Interest Rate</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>false</isRequired>
+                    <scale>2</scale>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>4</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>Loan_Calculator_Section1_Column3</name>
+                <fieldType>Region</fieldType>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>2</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <fields>
+            <name>Loan_Calculator_Section2</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>Loan_Calculator_Section2_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Loan_Term</name>
+                    <extensionName>flowruntime:slider</extensionName>
+                    <fieldType>ComponentInstance</fieldType>
+                    <inputParameters>
+                        <name>label</name>
+                        <value>
+                            <stringValue>Loan Term (In Months)</stringValue>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>max</name>
+                        <value>
+                            <numberValue>72.0</numberValue>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>min</name>
+                        <value>
+                            <numberValue>12.0</numberValue>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>value</name>
+                        <value>
+                            <numberValue>12.0</numberValue>
+                        </value>
+                    </inputParameters>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <storeOutputAutomatically>true</storeOutputAutomatically>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>5</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>Loan_Calculator_Section2_Column2</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Discount</name>
+                    <extensionName>flowruntime:slider</extensionName>
+                    <fieldType>ComponentInstance</fieldType>
+                    <inputParameters>
+                        <name>label</name>
+                        <value>
+                            <stringValue>Select a Discount</stringValue>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>max</name>
+                        <value>
+                            <numberValue>50.0</numberValue>
+                        </value>
+                    </inputParameters>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <storeOutputAutomatically>true</storeOutputAutomatically>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>4</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>Loan_Calculator_Section2_Column3</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Discount_Error_Message</name>
+                    <fieldText>&lt;p&gt;&lt;strong style=&quot;color: rgb(255, 0, 0); font-size: 12px;&quot;&gt;Discount is greater than 25% requires approval.&lt;/strong&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                    <visibilityRule>
+                        <conditionLogic>and</conditionLogic>
+                        <conditions>
+                            <leftValueReference>Discount.value</leftValueReference>
+                            <operator>GreaterThan</operator>
+                            <rightValue>
+                                <numberValue>25.0</numberValue>
+                            </rightValue>
+                        </conditions>
+                    </visibilityRule>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>3</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <fields>
+            <name>Loan_Calculator_Section3</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>Loan_Calculator_Section3_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Loan_Calculation</name>
+                    <dataType>Currency</dataType>
+                    <defaultValue>
+                        <elementReference>Formula_Loan_Calculator_With_Discount</elementReference>
+                    </defaultValue>
+                    <fieldText>Calculated Monthly Payment</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>false</isRequired>
+                    <scale>0</scale>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>Loan_Calculator_Section3_Column2</name>
+                <fieldType>Region</fieldType>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <nextOrFinishButtonLabel>Add to Opportunity</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Loan_Calculator</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

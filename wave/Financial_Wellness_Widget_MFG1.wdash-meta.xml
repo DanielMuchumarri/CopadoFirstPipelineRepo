@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDashboard xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <content xsi:nil="true"/>
+    <application>FINS_Retail_Banking_Demo_5Y6XH_MFG</application>
+    <dateVersion>1</dateVersion>
+    <masterLabel>Financial Wellness Widget</masterLabel>
+    <templateAssetSourceName>Financial_Wellness_Widget_MFG</templateAssetSourceName>
+</WaveDashboard>

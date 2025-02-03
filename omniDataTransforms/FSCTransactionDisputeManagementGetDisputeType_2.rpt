@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>FSCTransactionDisputeManagementGetDisputeType</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCTransactionDisputeManagementGetDisputeTypeCustom0jI4V00000002swUAAItem1</globalKey>
+        <inputFieldName>disputeType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCTransactionDisputeManagementGetDisputeType</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>disputeType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:disputeSubType &apos;Charged/\/\/Multiple/\/\/Times&apos; == var:disputeSubType &apos;Outstanding/\/\/Charge/\/\/on/\/\/Original/\/\/Payment/\/\/Method&apos; == || var:disputeSubType &apos;Overcharged&apos; == || var:disputeSubType &apos;Account/\/\/Debited/\/\/but/\/\/No/\/\/Cash/\/\/Dispensed/\/\/by/\/\/ATM&apos; == || &apos;Processing/\/\/Error&apos; var:null IF</formulaConverted>
+        <formulaExpression>IF(%disputeSubType% == &apos;Charged Multiple Times&apos; ||
+   %disputeSubType% == &apos;Outstanding Charge on Original Payment Method&apos; ||
+   %disputeSubType% == &apos;Overcharged&apos; ||
+   %disputeSubType% == &apos;Account Debited but No Cash Dispensed by ATM&apos;,
+   &apos;Processing Error&apos;, null)</formulaExpression>
+        <formulaResultPath>disputeType</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>FSCTransactionDisputeManagementGetDisputeTypeCustom0jI4V00000002swUAAItem2</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCTransactionDisputeManagementGetDisputeType</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:disputeSubType &apos;Undelivered/\/\/Product/\/\/or/\/\/Service&apos; == var:disputeSubType &apos;Failed/\/\/Transaction&apos; == || var:disputeSubType &apos;Refund/\/\/Not/\/\/Processed&apos; == || var:disputeSubType &apos;Products/\/\/or/\/\/Services/\/\/Not/\/\/as/\/\/Described&apos; == || var:disputeSubType &apos;Defective/\/\/Product&apos; == || &apos;Consumer/\/\/Dispute&apos; var:null IF</formulaConverted>
+        <formulaExpression>IF(%disputeSubType% == &apos;Undelivered Product or Service&apos; ||
+   %disputeSubType% == &apos;Failed Transaction&apos; ||
+   %disputeSubType% == &apos;Refund Not Processed&apos; ||
+   %disputeSubType% == &apos;Products or Services Not as Described&apos; ||
+   %disputeSubType% == &apos;Defective Product&apos;,
+   &apos;Consumer Dispute&apos;, null)</formulaExpression>
+        <formulaResultPath>disputeType</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>FSCTransactionDisputeManagementGetDisputeTypeCustom0jI4V00000002swUAAItem3</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCTransactionDisputeManagementGetDisputeType</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:disputeSubType &apos;Fraudulent/\/\/Transaction&apos; == var:disputeSubType &apos;Disclosed/\/\/OTP,/\/\/Card,/\/\/or/\/\/Account/\/\/Details&apos; == || var:disputeSubType &apos;Lost/\/\/or/\/\/Stolen/\/\/Card&apos; == || &apos;Fraud&apos; var:null IF</formulaConverted>
+        <formulaExpression>IF(%disputeSubType% == &apos;Fraudulent Transaction&apos; ||
+   %disputeSubType% == &apos;Disclosed OTP, Card, or Account Details&apos; ||
+   %disputeSubType% == &apos;Lost or Stolen Card&apos;,
+   &apos;Fraud&apos;, null)</formulaExpression>
+        <formulaResultPath>disputeType</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>FSCTransactionDisputeManagementGetDisputeTypeCustom0jI4V00000002swUAAItem0</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCTransactionDisputeManagementGetDisputeType</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <overrideKey>disputemanagement__FSCTransactionDisputeManagementGetDisputeType_1</overrideKey>
+    <previewJsonData>{
+  &quot;disputeSubType&quot; : &quot;Credit Amount not Recieved from Merchant&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>FSCTransactionDisputeManagementGetDisputeType_2</uniqueName>
+    <versionNumber>2.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

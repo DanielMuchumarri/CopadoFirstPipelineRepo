@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- ActiveSessionTypeMobile --></label>
+        <name>tspa__ActiveSessionTypeMobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- ActiveSessionTypeTablet --></label>
+        <name>tspa__ActiveSessionTypeTablet__c</name>
+    </fields>
+    <fields>
+        <label><!-- ActiveSessionType --></label>
+        <name>tspa__ActiveSession__c</name>
+    </fields>
+    <fields>
+        <label><!-- Modified Value --></label>
+        <name>tspa__Modified_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Value --></label>
+        <name>tspa__Original_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- SortOrder --></label>
+        <name>tspa__SortOrder__c</name>
+    </fields>
+</CustomObjectTranslation>

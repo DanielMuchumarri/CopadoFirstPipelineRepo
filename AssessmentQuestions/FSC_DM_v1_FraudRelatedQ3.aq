@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>FSC_DM_FraudRelatedQ3</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Did you receive any phishing emails or suspicious communication related to your account?</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>FSC_DM_v1_FraudRelatedQ3</developerName>
+    <name>FSC_DM_FraudRelatedQ3</name>
+    <questionCategory>Financial</questionCategory>
+</AssessmentQuestion>

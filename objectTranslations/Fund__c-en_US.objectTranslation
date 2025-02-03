@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Fund</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Funds</value>
+    </caseValues>
+    <fields>
+        <label><!-- Close Date --></label>
+        <name>Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Co-Invest --></label>
+        <name>Co_Invest__c</name>
+    </fields>
+    <fields>
+        <label><!-- Committed Capital --></label>
+        <name>Committed_Capital__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed --></label>
+        <name>FINS_Private_Equity_Closed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fund EIN --></label>
+        <name>FINS_Private_Equity_Fund_EIN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Management Fee --></label>
+        <name>FINS_Private_Equity_Management_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Size --></label>
+        <name>FINS_Private_Equity_Target_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Term (in years) --></label>
+        <name>FINS_Private_Equity_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Investments Made --></label>
+        <name>FINS_Private_Equity_Total_Investments_Ma__c</name>
+    </fields>
+    <fields>
+        <label><!-- Formation Date --></label>
+        <name>Formation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fund Info --></label>
+        <name>Fund_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fund Target Amount --></label>
+        <name>Fund_Target_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fund Type --></label>
+        <name>Fund_Type__c</name>
+        <picklistValues>
+            <masterLabel>Credit</masterLabel>
+            <translation><!-- Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distressed</masterLabel>
+            <translation><!-- Distressed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equity</masterLabel>
+            <translation><!-- Equity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fund of Funds</masterLabel>
+            <translation><!-- Fund of Funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hedge</masterLabel>
+            <translation><!-- Hedge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mutual</masterLabel>
+            <translation><!-- Mutual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Equity</masterLabel>
+            <translation><!-- Private Equity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Estate</masterLabel>
+            <translation><!-- Real Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secondaries</masterLabel>
+            <translation><!-- Secondaries --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fundraising Pipeline --></label>
+        <name>Fundraising_Pipeline__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fundraising Status --></label>
+        <name>Fundraising_Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepting New Capital</masterLabel>
+            <translation><!-- Accepting New Capital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- $ Invested --></label>
+        <name>Invested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Investors --></label>
+        <name>Number_of_Investors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offering Type --></label>
+        <name>Offering_Type__c</name>
+        <picklistValues>
+            <masterLabel>Private</masterLabel>
+            <translation><!-- Private --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public</masterLabel>
+            <translation><!-- Public --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pending Deals --></label>
+        <name>Pending_Deals__c</name>
+    </fields>
+    <fields>
+        <label><!-- $ Remaining to Goal --></label>
+        <name>Remaining_to_Goal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fundraise in Progress</masterLabel>
+            <translation><!-- Fundraise in Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inception</masterLabel>
+            <translation><!-- Inception --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investing</masterLabel>
+            <translation><!-- Investing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liquidating</masterLabel>
+            <translation><!-- Liquidating --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- # of Deals Invested --></label>
+        <name>of_Deals_Invested__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionLauncherItemDef xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identifier>_1sr552hew9avy1auizbkpaxy7e</identifier>
+    <itemActionType>Omniscript</itemActionType>
+    <itemCategory>dbBased</itemCategory>
+    <itemLanguage>English</itemLanguage>
+    <masterLabel>Commercial/AccountChange/English</masterLabel>
+    <subType>AccountChange</subType>
+    <type>Commercial</type>
+</ActionLauncherItemDef>

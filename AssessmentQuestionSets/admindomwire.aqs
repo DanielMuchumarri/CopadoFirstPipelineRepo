@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionDeveloperNames>Title</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>FirstName</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>AccessWithAccounts</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>RequestedLynxOriginationLimit</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>StandingOrderFile</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>LastName</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>AccountForFee</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>StandingOrders</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>IntegrationServices</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>StandardingOrderUploadQuestion</assessmentQuestionDeveloperNames>
+    <developerName>admindomwire</developerName>
+    <name>Domestic Wire Transfer Service Enrollment</name>
+</AssessmentQuestionSet>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>Grabs the case details for the RegE DocuSign affidavit.</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;ContextId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userTimeZone&quot; : null,
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;vlcTimeTracking&quot; : {
+    &quot;drGetCaseParticipantDetails&quot; : null
+  }
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;AccountNum&quot; : &quot;TestAccountNum&quot;,
+  &quot;CardNumber&quot; : &quot;TestCardNum&quot;,
+  &quot;FeesToBeRefunded&quot; : 50,
+  &quot;pcEmail&quot; : &quot;dnelson@vlocity.com&quot;,
+  &quot;pcPhone&quot; : &quot;416-464-3176&quot;,
+  &quot;userInitials&quot; : &quot;DN&quot;
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>GetCaseDetailsForAffidavit</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>fa524ff1-ba44-4eed-8cc3-6b920d061cf8</globalKey>
+        <inputFieldName>Case:Account.Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetCaseDetailsForAffidavit</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AccountNum2</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>02e616c7-e6c1-47fe-ac87-e5956d5e943e</globalKey>
+        <inputFieldName>Case:Account.AccountNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetCaseDetailsForAffidavit</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AccountNum</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:User:FirstName 0 1 SUBSTRING | var:User:LastName 0 1 SUBSTRING CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(SUBSTRING(User:FirstName,0,1),SUBSTRING(User:LastName,0,1))</formulaExpression>
+        <formulaResultPath>userinitials</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>ee367b98-487d-4a80-bf2f-696d7bb7f4bc</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetCaseDetailsForAffidavit</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&quot;$Vlocity.UserId&quot;</filterValue>
+        <globalKey>fbefa7e5-64f9-4ef7-9dc6-4e0b46534168</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>User</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetCaseDetailsForAffidavit</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>User</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>caseId</filterValue>
+        <globalKey>5fc0c1b3-9e78-4295-82ed-f40d9ed49795</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>Case</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetCaseDetailsForAffidavit</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Case</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>aa8efbc1-2790-4692-9566-327642718277</globalKey>
+        <inputFieldName>Case:Account.PersonEmail</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetCaseDetailsForAffidavit</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>pcEmail</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>4a863dc1-dfa3-4513-afa9-7c09897629be</globalKey>
+        <inputFieldName>Case:Account.Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetCaseDetailsForAffidavit</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>accountName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>d9c70458-0223-45c6-baa7-e11c134496a8</globalKey>
+        <inputFieldName>Case:Requested_Amount__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetCaseDetailsForAffidavit</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Currency</outputFieldFormat>
+        <outputFieldName>FeesToBeRefunded</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>b25baa89-1747-4331-968f-2e679d32da06</globalKey>
+        <inputFieldName>Case:Card_Number__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetCaseDetailsForAffidavit</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CardNumber2</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>5413777e-0f35-45e0-bf84-d98efa21961a</globalKey>
+        <inputFieldName>userinitials</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetCaseDetailsForAffidavit</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>userInitials</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>51ed29d3-86fb-426d-8d8f-7a129a829018</globalKey>
+        <inputFieldName>Case:Account.PersonHomePhone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetCaseDetailsForAffidavit</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>pcPhone</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>dc908d3a-3e80-4605-99ce-d045cfaa22d2</globalKey>
+        <inputFieldName>Case:Card_Number__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetCaseDetailsForAffidavit</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CardNumber</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;caseId&quot; : &quot;5005f000001iMBlAAM&quot;,
+  &quot;userName&quot; : &quot;Duane Nelson&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>-1.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>GetCaseDetailsForAffidavit_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

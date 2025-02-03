@@ -1,0 +1,414 @@
+{
+  "version" : "59.0",
+  "nodes" : {
+    "LOAD_DATASET0" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "AccountTeam", "ClientName", "AccountID", "RelStrength", "AI", "LastProcessedDate", "AccountContacts", "LastInteractionDate", "DaysSinceLastInteraction" ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "LonelyClients",
+          "name" : "LonelyClients"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET1" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Action", "Company", "Description", "CompanyID", "AI", "ContactID", "Contact" ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Investment Banking Equilar",
+          "name" : "Equilar"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "REPLACE0" : {
+      "action" : "formula",
+      "sources" : [ "LOAD_DATASET0" ],
+      "schema" : {
+        "fields" : [ {
+          "name" : "AI_replace",
+          "newProperties" : {
+            "name" : "AI"
+          }
+        } ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "AI" ]
+        }
+      },
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "AI_replace",
+          "label" : "AI",
+          "formulaExpression" : "replace(AI, 'fins-fy23-prod', 'fins-nextgen-banking')",
+          "precision" : 255
+        } ]
+      }
+    },
+    "REPLACE1" : {
+      "action" : "formula",
+      "sources" : [ "REPLACE0" ],
+      "schema" : {
+        "fields" : [ {
+          "name" : "AI_replace",
+          "newProperties" : {
+            "name" : "AI"
+          }
+        } ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "AI" ]
+        }
+      },
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "AI_replace",
+          "label" : "AI",
+          "formulaExpression" : "replace(AI, 'fins-fy23-prod', 'fins-nextgen-banking')",
+          "precision" : 255
+        } ]
+      }
+    },
+    "REPLACE2" : {
+      "action" : "formula",
+      "sources" : [ "REPLACE1" ],
+      "schema" : {
+        "fields" : [ {
+          "name" : "AI_replace",
+          "newProperties" : {
+            "name" : "AI"
+          }
+        } ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "AI" ]
+        }
+      },
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "AI_replace",
+          "label" : "AI",
+          "formulaExpression" : "replace(AI, 'fins-fy23-prod', 'fins-nextgen-banking')",
+          "precision" : 255
+        } ]
+      }
+    },
+    "REPLACE3" : {
+      "action" : "formula",
+      "sources" : [ "LOAD_DATASET1" ],
+      "schema" : {
+        "fields" : [ {
+          "name" : "AI_replace",
+          "newProperties" : {
+            "name" : "AI"
+          }
+        } ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "AI" ]
+        }
+      },
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "AI_replace",
+          "label" : "AI",
+          "formulaExpression" : "replace(AI, 'fins-fy23-prod', 'fins-nextgen-banking')",
+          "precision" : 255
+        } ]
+      }
+    },
+    "REPLACE4" : {
+      "action" : "formula",
+      "sources" : [ "REPLACE5" ],
+      "schema" : {
+        "fields" : [ {
+          "name" : "AI_replace",
+          "newProperties" : {
+            "name" : "AI"
+          }
+        } ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "AI" ]
+        }
+      },
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "AI_replace",
+          "label" : "AI",
+          "formulaExpression" : "replace(AI, 'fins-fy23-prod', 'fins-nextgen-banking')",
+          "precision" : 255
+        } ]
+      }
+    },
+    "REPLACE5" : {
+      "action" : "formula",
+      "sources" : [ "REPLACE3" ],
+      "schema" : {
+        "fields" : [ {
+          "name" : "AI_replace",
+          "newProperties" : {
+            "name" : "AI"
+          }
+        } ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "AI" ]
+        }
+      },
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "AI_replace",
+          "label" : "AI",
+          "formulaExpression" : "replace(AI, 'fins-fy23-prod', 'fins-nextgen-banking')",
+          "precision" : 255
+        } ]
+      }
+    },
+    "REPLACE6" : {
+      "action" : "formula",
+      "sources" : [ "REPLACE4" ],
+      "schema" : {
+        "fields" : [ {
+          "name" : "AI_replace",
+          "newProperties" : {
+            "name" : "AI"
+          }
+        } ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "AI" ]
+        }
+      },
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "AI_replace",
+          "label" : "AI",
+          "formulaExpression" : "replace(AI, 'fins-fy23-prod', 'fins-nextgen-banking')",
+          "precision" : 255
+        } ]
+      }
+    },
+    "REPLACE7" : {
+      "action" : "formula",
+      "sources" : [ "REPLACE6" ],
+      "schema" : {
+        "fields" : [ {
+          "name" : "AI_replace",
+          "newProperties" : {
+            "name" : "AI"
+          }
+        } ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "AI" ]
+        }
+      },
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "AI_replace",
+          "label" : "AI",
+          "formulaExpression" : "replace(AI, 'fins-fy23-prod', 'fins-nextgen-banking')",
+          "precision" : 255
+        } ]
+      }
+    },
+    "OUTPUT0" : {
+      "action" : "save",
+      "sources" : [ "REPLACE2" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "LonelyClients",
+          "name" : "LonelyClients",
+          "folderName" : "IB_Demo"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "OUTPUT1" : {
+      "action" : "save",
+      "sources" : [ "REPLACE7" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Investment Banking Equilar",
+          "name" : "Equilar",
+          "folderName" : "IB_Demo"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    }
+  },
+  "ui" : {
+    "nodes" : {
+      "LOAD_DATASET0" : {
+        "label" : "LonelyClients",
+        "type" : "LOAD_DATASET",
+        "top" : 112,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET1" : {
+        "label" : "Investment Banking Equilar",
+        "type" : "LOAD_DATASET",
+        "top" : 252,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "TRANSFORM0" : {
+        "label" : "Transform 0",
+        "type" : "TRANSFORM",
+        "top" : 112,
+        "left" : 252,
+        "graph" : {
+          "REPLACE0" : {
+            "parameters" : {
+              "type" : "REPLACE_UI"
+            },
+            "label" : "Replace"
+          },
+          "REPLACE1" : {
+            "parameters" : {
+              "type" : "REPLACE_UI"
+            },
+            "label" : "Replace"
+          },
+          "REPLACE2" : {
+            "parameters" : {
+              "type" : "REPLACE_UI"
+            },
+            "label" : "Replace"
+          }
+        },
+        "connectors" : [ {
+          "source" : "REPLACE0",
+          "target" : "REPLACE1"
+        }, {
+          "source" : "REPLACE1",
+          "target" : "REPLACE2"
+        } ]
+      },
+      "TRANSFORM1" : {
+        "label" : "Transform 1",
+        "type" : "TRANSFORM",
+        "top" : 252,
+        "left" : 252,
+        "graph" : {
+          "REPLACE3" : {
+            "parameters" : {
+              "type" : "REPLACE_UI"
+            },
+            "label" : "Replace"
+          },
+          "REPLACE4" : {
+            "parameters" : {
+              "type" : "REPLACE_UI"
+            },
+            "label" : "Replace"
+          },
+          "REPLACE5" : {
+            "parameters" : {
+              "type" : "REPLACE_UI"
+            },
+            "label" : "Replace"
+          },
+          "REPLACE6" : {
+            "parameters" : {
+              "type" : "REPLACE_UI"
+            },
+            "label" : "Replace"
+          },
+          "REPLACE7" : {
+            "parameters" : {
+              "type" : "REPLACE_UI"
+            },
+            "label" : "Replace"
+          }
+        },
+        "connectors" : [ {
+          "source" : "REPLACE5",
+          "target" : "REPLACE4"
+        }, {
+          "source" : "REPLACE3",
+          "target" : "REPLACE5"
+        }, {
+          "source" : "REPLACE4",
+          "target" : "REPLACE6"
+        }, {
+          "source" : "REPLACE6",
+          "target" : "REPLACE7"
+        } ]
+      },
+      "OUTPUT0" : {
+        "label" : "Output 0",
+        "type" : "OUTPUT",
+        "top" : 112,
+        "left" : 392
+      },
+      "OUTPUT1" : {
+        "label" : "Output 1",
+        "type" : "OUTPUT",
+        "top" : 252,
+        "left" : 392
+      }
+    },
+    "connectors" : [ {
+      "source" : "LOAD_DATASET0",
+      "target" : "TRANSFORM0"
+    }, {
+      "source" : "LOAD_DATASET1",
+      "target" : "TRANSFORM1"
+    }, {
+      "source" : "TRANSFORM0",
+      "target" : "OUTPUT0"
+    }, {
+      "source" : "TRANSFORM1",
+      "target" : "OUTPUT1"
+    } ],
+    "hiddenColumns" : [ ]
+  },
+  "runMode" : "full"
+}

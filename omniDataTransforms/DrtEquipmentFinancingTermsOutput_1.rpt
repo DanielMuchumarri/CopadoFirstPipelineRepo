@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;omniscriptId&quot; : &quot;0jNHs000000Lw1zMAC&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;type&quot; : &quot;Lending&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;sId&quot; : &quot;0jNHs000000Lw1zMAC&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;subType&quot; : &quot;EquipmentLoan&quot;,
+  &quot;timeStamp&quot; : &quot;2023-12-08T21:19:21.811Z&quot;,
+  &quot;userProfile&quot; : &quot;*FINS - Internal - Admin&quot;,
+  &quot;userTimeZoneName&quot; : &quot;America/Los_Angeles&quot;,
+  &quot;userTimeZone&quot; : &quot;-480&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;sk@summer23.demo&quot;,
+  &quot;userId&quot; : &quot;005Hs00000CvCt4IAF&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNHs000000Lw1zMAC&quot;,
+  &quot;localTimeZoneName&quot; : &quot;America/Phoenix&quot;,
+  &quot;StepLoanInfo&quot; : {
+    &quot;FormulaLoanAmount&quot; : 299478,
+    &quot;RadioLoanType&quot; : &quot;Loan&quot;,
+    &quot;CurrencyPurchasePrice&quot; : 330000,
+    &quot;CurrencyDownPayment&quot; : 30522,
+    &quot;SelectLoanTerm&quot; : &quot;120&quot;
+  },
+  &quot;output&quot; : [ {
+    &quot;calculationResults&quot; : [ {
+      &quot;ID&quot; : &quot;Input&quot;,
+      &quot;FinalRate&quot; : 5.459
+    } ],
+    &quot;aggregationResults&quot; : { }
+  } ]
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DrtEquipmentFinancingTermsOutput</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DrtEquipmentFinancingTermsOutputCustom8012</globalKey>
+        <inputFieldName>output:calculationResults:FinalRate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DrtEquipmentFinancingTermsOutput</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FinalRate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;vlcTimeTracking&quot; : {
+    &quot;StepLoanType&quot; : null,
+    &quot;StepLiabilitiesAssets&quot; : null,
+    &quot;StepBusinessInfo&quot; : null,
+    &quot;StepEquipmentInfo&quot; : null,
+    &quot;StepLoanInfo&quot; : null,
+    &quot;StepSuccess&quot; : null,
+    &quot;StepPersonalInfo&quot; : null,
+    &quot;NavigateAction1&quot; : null,
+    &quot;IPLiabilities&quot; : null,
+    &quot;Save-Responses&quot; : null,
+    &quot;Step1&quot; : null,
+    &quot;SetValues2&quot; : null,
+    &quot;SetContextComponentValues&quot; : null
+  },
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;userTimeZone&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;ContextId&quot; : null,
+  &quot;StepLoanType&quot; : {
+    &quot;Block7&quot; : { },
+    &quot;Block8&quot; : { },
+    &quot;Block5&quot; : { },
+    &quot;Block6&quot; : { }
+  },
+  &quot;StepLiabilitiesAssets&quot; : {
+    &quot;EditBlockAssets&quot; : {
+      &quot;TextAssetDescription&quot; : null,
+      &quot;CurrencyAssetValue&quot; : null
+    },
+    &quot;TradeLines&quot; : {
+      &quot;Balance&quot; : null,
+      &quot;DebtType&quot; : null,
+      &quot;MonthlyPayment&quot; : null
+    }
+  },
+  &quot;StepBusinessInfo&quot; : {
+    &quot;NumberAcreage&quot; : null,
+    &quot;NumberBusniessYears&quot; : null,
+    &quot;TextAreaBusinessDescription&quot; : null,
+    &quot;TextBusinessName&quot; : null,
+    &quot;BlockBusinessDocs&quot; : {
+      &quot;ImageBusinessDoc2&quot; : [ {
+        &quot;data&quot; : null,
+        &quot;size&quot; : null,
+        &quot;filename&quot; : null
+      } ],
+      &quot;SelectDocType&quot; : null,
+      &quot;ImageBusinessDoc1&quot; : [ {
+        &quot;data&quot; : null,
+        &quot;size&quot; : null,
+        &quot;filename&quot; : null
+      } ]
+    },
+    &quot;Disclosure1&quot; : null
+  },
+  &quot;StepEquipmentInfo&quot; : {
+    &quot;Block3&quot; : { },
+    &quot;Block2&quot; : { }
+  },
+  &quot;StepLoanInfo&quot; : {
+    &quot;NbrRate&quot; : null,
+    &quot;RadioLoanType&quot; : null,
+    &quot;SelectLoanTerm&quot; : null,
+    &quot;FormulaLoanAmount&quot; : null,
+    &quot;CurrencyDownPayment&quot; : null,
+    &quot;CurrencyPaymentAmount&quot; : null,
+    &quot;CurrencyPurchasePrice&quot; : null
+  },
+  &quot;StepSuccess&quot; : { },
+  &quot;StepPersonalInfo&quot; : {
+    &quot;BlockContactInfo&quot; : {
+      &quot;SelectPhoneType2&quot; : null,
+      &quot;TextPhone1&quot; : null,
+      &quot;TextPhone2&quot; : null,
+      &quot;SelectPhoneType1&quot; : null,
+      &quot;Email&quot; : null
+    },
+    &quot;BlockPersonalInfo&quot; : {
+      &quot;ImageID&quot; : [ {
+        &quot;data&quot; : null,
+        &quot;size&quot; : null,
+        &quot;filename&quot; : null
+      } ],
+      &quot;TextFirstName&quot; : null,
+      &quot;TextLastName&quot; : null,
+      &quot;TextMiddleName&quot; : null,
+      &quot;TextSSN&quot; : null,
+      &quot;DateBirthDate&quot; : null,
+      &quot;Block1&quot; : { }
+    },
+    &quot;BlockIDInfo&quot; : {
+      &quot;TextIDNumber&quot; : null,
+      &quot;TextIDState&quot; : null,
+      &quot;DateIDExpire&quot; : null,
+      &quot;DateIDIssue&quot; : null
+    },
+    &quot;BlockAddressInfo&quot; : {
+      &quot;TextState&quot; : null,
+      &quot;TextStreet&quot; : null,
+      &quot;CheckboxSameAddress&quot; : null,
+      &quot;NumberPostalCode&quot; : null,
+      &quot;TextCity&quot; : null,
+      &quot;TextMailCity&quot; : null,
+      &quot;TextMailStreet&quot; : null,
+      &quot;TextMailState&quot; : null,
+      &quot;TextMailZipCode&quot; : null
+    }
+  },
+  &quot;Step1&quot; : {
+    &quot;Race&quot; : null,
+    &quot;Bankruptcy_Equipment_Financing&quot; : null,
+    &quot;Women_Owned_Business_Status&quot; : null,
+    &quot;Veteran&quot; : null,
+    &quot;Businessownership&quot; : null,
+    &quot;Minority_Owned_Business_Status&quot; : null,
+    &quot;Legal_Action_Equipment_Financing&quot; : null,
+    &quot;Gender&quot; : null
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DrtEquipmentFinancingTermsOutput_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

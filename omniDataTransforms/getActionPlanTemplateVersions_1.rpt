@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>Gets the Action Plan Template versions in preparation of creating action plans for the RegE process.</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;ContextId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userTimeZone&quot; : null,
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;vlcTimeTracking&quot; : {
+    &quot;drGetActionPlanTemplateVersionIds&quot; : null
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>getActionPlanTemplateVersions</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&quot;Final&quot;</filterValue>
+        <globalKey>01463642-6dbc-4ea7-8f70-834f4c1af7eb</globalKey>
+        <inputFieldName>Status</inputFieldName>
+        <inputObjectName>ActionPlanTemplateVersion</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getActionPlanTemplateVersions</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>actionPlanTemplateVersion</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&quot;Provisional Credit&quot;</filterValue>
+        <globalKey>8b6ded1a-ef04-4555-bfd2-04c96a9c9c23</globalKey>
+        <inputFieldName>Name</inputFieldName>
+        <inputObjectName>ActionPlanTemplateVersion</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getActionPlanTemplateVersions</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>actionPlanTemplateVersion</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>2bc67dac-0a34-4783-88b1-9aacebf6af36</globalKey>
+        <inputFieldName>actionPlanTemplateVersion:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getActionPlanTemplateVersions</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>actionPlanTemplateVersion:templateVersionId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>b11ff90e-4698-400c-aedc-8632705d266e</globalKey>
+        <inputFieldName>caseId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getActionPlanTemplateVersions</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>actionPlanTemplateVersion:caseId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>15897142-1fc1-4209-8129-6e4d55f745e7</globalKey>
+        <inputFieldName>actionPlanTemplateVersion:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getActionPlanTemplateVersions</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>actionPlanTemplateVersion:Name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>1.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&quot;Research and Investigation&quot;</filterValue>
+        <globalKey>284d2640-24a7-42f1-9535-9d76d0c339da</globalKey>
+        <inputFieldName>Name</inputFieldName>
+        <inputObjectName>ActionPlanTemplateVersion</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getActionPlanTemplateVersions</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>actionPlanTemplateVersion</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>1.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&quot;Final&quot;</filterValue>
+        <globalKey>5c2db60f-3be6-4c06-86db-30283e1fc37f</globalKey>
+        <inputFieldName>Status</inputFieldName>
+        <inputObjectName>ActionPlanTemplateVersion</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getActionPlanTemplateVersions</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>actionPlanTemplateVersion</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;caseId&quot; : &quot;5004S000004C6KRQA0&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>getActionPlanTemplateVersions_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningBolt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <category>FinancialServices</category>
+    <lightningBoltFeatures>
+        <order>1</order>
+        <title>FINS - Commercial Banking</title>
+    </lightningBoltFeatures>
+    <lightningBoltImages>
+        <image>Screenshot_20231013_at_090227</image>
+        <order>1</order>
+    </lightningBoltImages>
+    <lightningBoltItems>
+        <name>Commercial_Banking</name>
+        <type>CommunityTemplateDefinition</type>
+    </lightningBoltItems>
+    <masterLabel>FINS - Commercial</masterLabel>
+    <publisher>FINS - Commercial Banking</publisher>
+    <summary>FINS - Commercial Banking</summary>
+</LightningBolt>

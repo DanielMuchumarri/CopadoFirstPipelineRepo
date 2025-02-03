@@ -1,0 +1,301 @@
+Account_ID,Current_Balance,Customer_Name,Customer_Tier,Days_Since_Last_Interaction,LifetimeValue,Likelihood_to_buy,OppAmount,OppType,Probability,Product,Service
+001Hu00002vQCICIA4,16779.11,Sophia Miller,Plus,2. 31-60,,1. High,1677.911,Relationship Banking,83,Checking,Loan Growth
+001Hu00002vQCICIA4,70137.01,Jane Jones,Premium,1. <30,,1. High,7013.701,Relationship Banking,77,Checking,Loan Growth
+001Hu00002vQCICIA4,84329.96,Daniel Miller,Plus,1. <30,,1. High,8432.996,Relationship Banking,85,Checking,Loan Growth
+001Hu00002vQCICIA4,17378.78,Emily Johnson,Plus,2. 31-60,,1. High,1737.878,Relationship Banking,97,Checking,Loan Growth
+001Hu00002vQCICIA4,42729.58,Michael Davis,Mass Market,2. 31-60,,1. High,4272.958,Relationship Banking,75,Checking,Loan Growth
+001Hu00002vQCICIA4,36838.37,Sarah Davis,Premium,2. 31-60,,1. High,3683.837,Relationship Banking,90,Checking,Loan Growth
+001Hu00002vQCICIA4,46582.77,Andrew Jones,Mass Market,1. <30,,1. High,4658.277,Relationship Banking,97,Checking,Loan Growth
+001Hu00002vQCICIA4,88502.19,Ava Smith,Premium,1. <30,,1. High,8850.219,Relationship Banking,77,Checking,Loan Growth
+001Hu00002vQCICIA4,34261.86,Andrew Martinez,Premium,1. <30,,1. High,3426.186,Relationship Banking,76,Checking,Loan Growth
+001Hu00002vQCICIA4,95604.41,Jane Smith,Premium,3. 61-90,,1. High,9560.441,Relationship Banking,90,Checking,Loan Growth
+001Hu00002vQCICIA4,33963.22,Isabella Williams,Mass Market,3. 61-90,,3. Low,3396.322,Relationship Banking,46,Checking,Loan Growth
+001Hu00002vQCICIA4,90203.35,Andrew Davis,Premium,2. 31-60,,3. Low,9020.335,Relationship Banking,54,Checking,Loan Growth
+001Hu00002vQCICIA4,89857.39,Andrew Davis,Plus,2. 31-60,,3. Low,8985.739,Relationship Banking,45,Checking,Loan Growth
+001Hu00002vQCICIA4,96573.18,Christopher Davis,Plus,1. <30,,3. Low,9657.318,Relationship Banking,42,Checking,Loan Growth
+001Hu00002vQCICIA4,44657.5,Emma Martinez,Mass Market,4. 90+,,3. Low,4465.75,Relationship Banking,54,Checking,Loan Growth
+001Hu00002vQCICIA4,16047.71,Emma Davis,Plus,2. 31-60,,3. Low,1604.771,Relationship Banking,49,Checking,Loan Growth
+001Hu00002vQCICIA4,6142.52,Sarah Miller,Premium,4. 90+,,3. Low,614.252,Relationship Banking,46,Checking,Loan Growth
+001Hu00002vQCICIA4,4782.48,John Williams,Premium,3. 61-90,,3. Low,478.248,Relationship Banking,49,Checking,Loan Growth
+001Hu00002vQCICIA4,82901.44,Olivia Smith,Premium,4. 90+,,3. Low,8290.144,Relationship Banking,42,Checking,Loan Growth
+001Hu00002vQCICIA4,8658.03,Michael Smith,Premium,3. 61-90,,3. Low,865.803,Relationship Banking,55,Checking,Loan Growth
+001Hu00002vQCICIA4,43971.93,Michael Garcia,Mass Market,3. 61-90,,3. Low,4397.193,Relationship Banking,46,Checking,Loan Growth
+001Hu00002vQCICIA4,39405.41,Michael Rodriguez,Mass Market,2. 31-60,,2. Medium,3940.541,Relationship Banking,62,Checking,Loan Growth
+001Hu00002vQCICIA4,86724.56,Michael Brown,Mass Market,2. 31-60,,2. Medium,8672.456,Relationship Banking,75,Checking,Loan Growth
+001Hu00002vQCICIA4,72240.35,Sophia Rodriguez,Mass Market,3. 61-90,,2. Medium,7224.035,Relationship Banking,67,Checking,Loan Growth
+001Hu00002vQCICIA4,36283.52,John Smith,Plus,4. 90+,,2. Medium,3628.352,Relationship Banking,71,Checking,Loan Growth
+001Hu00002vQCICIA4,7893.86,Sarah Garcia,Plus,4. 90+,,2. Medium,789.386,Relationship Banking,75,Checking,Loan Growth
+001Hu00002vQCICIA4,92935.4,Emily Miller,Mass Market,2. 31-60,,2. Medium,9293.54,Relationship Banking,67,Checking,Loan Growth
+001Hu00002vQCICIA4,18849.71,Daniel Johnson,Plus,2. 31-60,,2. Medium,1884.971,Relationship Banking,74,Checking,Loan Growth
+001Hu00002vQCICIA4,59710.07,Ava Williams,Premium,1. <30,,2. Medium,5971.007,Relationship Banking,67,Checking,Loan Growth
+001Hu00002vQCICIA4,13417.82,Sarah Rodriguez,Mass Market,1. <30,,2. Medium,1341.782,Relationship Banking,72,Checking,Loan Growth
+001Hu00002vQCICIA4,13049.07,Olivia Miller,Premium,4. 90+,,2. Medium,1304.907,Relationship Banking,63,Checking,Loan Growth
+001Hu00002vQCICIA4,62226.43,David Smith,Plus,1. <30,,2. Medium,6222.643,Relationship Banking,72,Checking,Loan Growth
+001Hu00002vQCICIA4,70168.64,Michael Brown,Premium,2. 31-60,,2. Medium,7016.864,Relationship Banking,70,Checking,Loan Growth
+001Hu00002vQCICIA4,28713.28,Emily Rodriguez,Mass Market,3. 61-90,,2. Medium,2871.328,Relationship Banking,64,Checking,Loan Growth
+001Hu00002vQCICIA4,86573.56,Olivia Martinez,Premium,1. <30,,2. Medium,8657.356,Relationship Banking,64,Checking,Loan Growth
+001Hu00002vQCICIA4,4203.15,Ava Williams,Mass Market,2. 31-60,,2. Medium,420.315,Relationship Banking,68,Checking,Loan Growth
+001Hu00002vQCICIA4,23370.74,Daniel Garcia,Premium,3. 61-90,,2. Medium,2337.074,Relationship Banking,66,Checking,Loan Growth
+001Hu00002vQCICIA4,7831.66,Emma Williams,Plus,2. 31-60,,1. High,783.166,Lending,99,Credit Cards,Deposit Growth
+001Hu00002vQCICIA4,97911.7,John Davis,Plus,1. <30,,1. High,9791.17,Lending,82,Credit Cards,Deposit Growth
+001Hu00002vQCICIA4,48616.85,John Davis,Mass Market,2. 31-60,,1. High,4861.685,Lending,91,Credit Cards,Deposit Growth
+001Hu00002vQCICIA4,73078.86,Isabella Brown,Premium,1. <30,,1. High,7307.886,Lending,77,Credit Cards,Deposit Growth
+001Hu00002vQCICIA4,49010.01,Andrew Davis,Plus,1. <30,,1. High,4901.001,Lending,99,Credit Cards,Deposit Growth
+001Hu00002vQCICIA4,87749.46,Sarah Jones,Mass Market,1. <30,,1. High,8774.946,Lending,89,Credit Cards,Deposit Growth
+001Hu00002vQCICIA4,45752.01,Olivia Miller,Mass Market,1. <30,,1. High,4575.201,Lending,91,Credit Cards,Deposit Growth
+001Hu00002vQCICIA4,41493.59,Isabella Jones,Premium,3. 61-90,,1. High,4149.359,Lending,85,Credit Cards,Deposit Growth
+001Hu00002vQCICIA4,63464.84,Olivia Garcia,Mass Market,1. <30,,1. High,6346.484,Lending,92,Credit Cards,Deposit Growth
+001Hu00002vQCICIA4,59194.36,Daniel Martinez,Mass Market,4. 90+,,3. Low,5919.436,Lending,40,Credit Cards,Deposit Growth
+001Hu00002vQCICIA4,67940.69,Isabella Brown,Mass Market,2. 31-60,,3. Low,6794.069,Lending,41,Credit Cards,Deposit Growth
+001Hu00002vQCICIA4,69406.52,Jane Brown,Mass Market,1. <30,,3. Low,6940.652,Lending,52,Credit Cards,Deposit Growth
+001Hu00002vQCICIA4,59747.43,Emily Jones,Premium,4. 90+,,3. Low,5974.743,Lending,52,Credit Cards,Deposit Growth
+001Hu00002vQCICIA4,57879.61,David Garcia,Mass Market,2. 31-60,,3. Low,5787.961,Lending,52,Credit Cards,Deposit Growth
+001Hu00002vQCICIA4,62310.82,Emma Davis,Plus,4. 90+,,3. Low,6231.082,Lending,41,Credit Cards,Deposit Growth
+001Hu00002vQCICIA4,50040.96,Sophia Johnson,Mass Market,4. 90+,,3. Low,5004.096,Lending,49,Credit Cards,Deposit Growth
+001Hu00002vQCICIA4,50032.42,Emily Johnson,Mass Market,1. <30,,3. Low,5003.242,Lending,55,Credit Cards,Deposit Growth
+001Hu00002vQCICIA4,2790.64,David Martinez,Premium,2. 31-60,,3. Low,279.064,Lending,45,Credit Cards,Deposit Growth
+001Hu00002vQCICIA4,76400.65,Jane Rodriguez,Premium,1. <30,,2. Medium,7640.065,Lending,72,Credit Cards,Deposit Growth
+001Hu00002vQCICIA4,29300.91,Ava Davis,Plus,2. 31-60,,2. Medium,2930.091,Lending,75,Credit Cards,Deposit Growth
+001Hu00002vQCICIA4,71710.94,Isabella Miller,Plus,3. 61-90,,2. Medium,7171.094,Lending,70,Credit Cards,Deposit Growth
+001Hu00002vQCICIA4,96576.56,John Rodriguez,Plus,2. 31-60,,2. Medium,9657.656,Lending,75,Credit Cards,Deposit Growth
+001Hu00002vQCICIA4,15253.02,Olivia Jones,Premium,3. 61-90,,2. Medium,1525.302,Lending,62,Credit Cards,Deposit Growth
+001Hu00002vQCICIA4,40023.56,Jane Miller,Plus,3. 61-90,,2. Medium,4002.356,Lending,72,Credit Cards,Deposit Growth
+001Hu00002vQCICIA4,80769.6,Christopher Miller,Plus,4. 90+,,1. High,8076.96,Lending,88,Loans,Deposit Growth
+001Hu00002vQCICIA4,53753.63,Isabella Martinez,Plus,4. 90+,,1. High,5375.363,Lending,83,Loans,Deposit Growth
+001Hu00002vQCICIA4,58598.63,Jane Williams,Premium,1. <30,,1. High,5859.863,Lending,76,Loans,Deposit Growth
+001Hu00002vQCICIA4,46908.39,Jane Garcia,Premium,4. 90+,,1. High,4690.839,Lending,89,Loans,Deposit Growth
+001Hu00002vQCICIA4,40371.89,Michael Rodriguez,Plus,1. <30,,1. High,4037.189,Lending,97,Loans,Deposit Growth
+001Hu00002vQCICIA4,40438.69,David Williams,Plus,3. 61-90,,1. High,4043.869,Lending,84,Loans,Deposit Growth
+001Hu00002vQCICIA4,40391.23,Emma Smith,Premium,2. 31-60,,1. High,4039.123,Lending,81,Loans,Deposit Growth
+001Hu00002vQCICIA4,34834.55,Andrew Williams,Mass Market,2. 31-60,,1. High,3483.455,Lending,91,Loans,Deposit Growth
+001Hu00002vQCICIA4,66647.28,Sarah Jones,Mass Market,4. 90+,,1. High,6664.728,Lending,90,Loans,Deposit Growth
+001Hu00002vQCICIA4,58092.81,Olivia Davis,Mass Market,1. <30,,1. High,5809.281,Lending,81,Loans,Deposit Growth
+001Hu00002vQCICIA4,29903.95,James Miller,Plus,1. <30,,1. High,2990.395,Lending,99,Loans,Deposit Growth
+001Hu00002vQCICIA4,92490.62,John Rodriguez,Plus,1. <30,,1. High,9249.062,Lending,87,Loans,Deposit Growth
+001Hu00002vQCICIA4,40145.31,Michael Garcia,Premium,4. 90+,,1. High,4014.531,Lending,86,Loans,Deposit Growth
+001Hu00002vQCICIA4,47506.69,Isabella Smith,Mass Market,4. 90+,,1. High,4750.669,Lending,99,Loans,Deposit Growth
+001Hu00002vQCICIA4,92289.48,Andrew Miller,Plus,4. 90+,,1. High,9228.948,Lending,86,Loans,Deposit Growth
+001Hu00002vQCICIA4,90379.94,Daniel Smith,Mass Market,4. 90+,,3. Low,9037.994,Lending,43,Loans,Deposit Growth
+001Hu00002vQCICIA4,35200.94,Christopher Jones,Premium,1. <30,,3. Low,3520.094,Lending,44,Loans,Deposit Growth
+001Hu00002vQCICIA4,5736.11,Sarah Garcia,Plus,2. 31-60,,3. Low,573.611,Lending,48,Loans,Deposit Growth
+001Hu00002vQCICIA4,91552.15,Emily Davis,Plus,1. <30,,3. Low,9155.215,Lending,45,Loans,Deposit Growth
+001Hu00002vQCICIA4,64571.24,Michael Miller,Premium,3. 61-90,,3. Low,6457.124,Lending,45,Loans,Deposit Growth
+001Hu00002vQCICIA4,9209.9,Christopher Jones,Mass Market,1. <30,,3. Low,920.99,Lending,49,Loans,Deposit Growth
+001Hu00002vQCICIA4,88770.12,Andrew Smith,Premium,4. 90+,,3. Low,8877.012,Lending,42,Loans,Deposit Growth
+001Hu00002vQCICIA4,14373.13,Matthew Davis,Plus,2. 31-60,,3. Low,1437.313,Lending,43,Loans,Deposit Growth
+001Hu00002vQCICIA4,42374.61,Daniel Davis,Plus,4. 90+,,3. Low,4237.461,Lending,51,Loans,Deposit Growth
+001Hu00002vQCICIA4,91417.69,Sophia Jones,Plus,4. 90+,,3. Low,9141.769,Lending,46,Loans,Deposit Growth
+001Hu00002vQCICIA4,40098.76,John Martinez,Plus,1. <30,,3. Low,4009.876,Lending,54,Loans,Deposit Growth
+001Hu00002vQCICIA4,91751.36,David Smith,Mass Market,1. <30,,2. Medium,9175.136,Lending,73,Loans,Deposit Growth
+001Hu00002vQCICIA4,46166.11,Michael Johnson,Plus,3. 61-90,,2. Medium,4616.611,Lending,68,Loans,Deposit Growth
+001Hu00002vQCICIA4,47952.31,Daniel Garcia,Mass Market,4. 90+,,2. Medium,4795.231,Lending,66,Loans,Deposit Growth
+001Hu00002vQCICIA4,19549.99,Christopher Williams,Plus,1. <30,,2. Medium,1954.999,Lending,72,Loans,Deposit Growth
+001Hu00002vQCICIA4,63236.63,Michael Rodriguez,Premium,3. 61-90,,2. Medium,6323.663,Lending,74,Loans,Deposit Growth
+001Hu00002vQCICIA4,89259.14,Michael Brown,Premium,2. 31-60,,2. Medium,8925.914,Lending,73,Loans,Deposit Growth
+001Hu00002vQCICIA4,2208.8,Andrew Smith,Mass Market,1. <30,,2. Medium,220.88,Lending,63,Loans,Deposit Growth
+001Hu00002vQCICIA4,7100.81,Emily Smith,Premium,4. 90+,,2. Medium,710.081,Lending,60,Loans,Deposit Growth
+001Hu00002vQCICIA4,43345.19,John Smith,Premium,3. 61-90,,2. Medium,4334.519,Lending,67,Loans,Deposit Growth
+001Hu00002vQCICIA4,10115.62,John Martinez,Plus,2. 31-60,,1. High,1011.562,Residential,83,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,57801.14,Isabella Rodriguez,Mass Market,4. 90+,,1. High,5780.114,Residential,85,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,96512.77,Andrew Jones,Mass Market,4. 90+,,1. High,9651.277,Residential,76,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,16638.25,David Martinez,Premium,1. <30,,1. High,1663.825,Residential,91,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,32268.01,John Smith,Premium,3. 61-90,,1. High,3226.801,Residential,75,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,75511.94,Michael Smith,Plus,2. 31-60,,1. High,7551.194,Residential,98,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,33113.12,Olivia Smith,Mass Market,2. 31-60,,1. High,3311.312,Residential,75,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,15207.72,John Miller,Premium,2. 31-60,,1. High,1520.772,Residential,95,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,68199.06,Daniel Miller,Mass Market,3. 61-90,,1. High,6819.906,Residential,91,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,43986.89,Jane Rodriguez,Plus,3. 61-90,,1. High,4398.689,Residential,78,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,49120.47,David Rodriguez,Mass Market,3. 61-90,,3. Low,4912.047,Residential,41,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,4395.59,Daniel Martinez,Mass Market,3. 61-90,,3. Low,439.559,Residential,49,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,99298.57,Matthew Williams,Mass Market,2. 31-60,,3. Low,9929.857,Residential,54,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,39474.72,Michael Garcia,Plus,3. 61-90,,3. Low,3947.472,Residential,47,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,74846.14,John Jones,Premium,2. 31-60,,3. Low,7484.614,Residential,43,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,67434.29,Matthew Rodriguez,Premium,1. <30,,3. Low,6743.429,Residential,47,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,65551.36,Sophia Rodriguez,Mass Market,3. 61-90,,3. Low,6555.136,Residential,47,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,7609.87,Andrew Rodriguez,Mass Market,3. 61-90,,3. Low,760.987,Residential,44,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,10169.72,Ava Smith,Premium,2. 31-60,,2. Medium,1016.972,Residential,67,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,45372.2,James Jones,Mass Market,3. 61-90,,2. Medium,4537.22,Residential,72,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,8006.26,Sarah Johnson,Mass Market,2. 31-60,,2. Medium,800.626,Residential,74,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,11603.17,John Smith,Plus,2. 31-60,,2. Medium,1160.317,Residential,60,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,14274.81,Ava Brown,Premium,3. 61-90,,2. Medium,1427.481,Residential,71,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,56351.53,Olivia Rodriguez,Mass Market,4. 90+,,2. Medium,5635.153,Residential,61,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,84691.66,Isabella Williams,Mass Market,2. 31-60,,2. Medium,8469.166,Residential,69,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,46327.18,Olivia Martinez,Mass Market,4. 90+,,2. Medium,4632.718,Residential,60,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,2596.07,Sophia Smith,Mass Market,4. 90+,,2. Medium,259.607,Residential,74,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,52457.17,Jane Jones,Mass Market,4. 90+,,2. Medium,5245.717,Residential,62,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,72388.26,Jane Garcia,Mass Market,1. <30,,2. Medium,7238.826,Residential,65,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,42124.8,Olivia Williams,Premium,3. 61-90,,2. Medium,4212.48,Residential,71,Mortgage,Deposit Growth
+001Hu00002vQCICIA4,71909.74,Olivia Rodriguez,Mass Market,1. <30,,1. High,7190.974,Relationship Banking,80,Savings,Loan Growth
+001Hu00002vQCICIA4,62574.42,David Rodriguez,Plus,1. <30,,1. High,6257.442,Relationship Banking,93,Savings,Loan Growth
+001Hu00002vQCICIA4,91811.39,David Rodriguez,Mass Market,2. 31-60,,1. High,9181.139,Relationship Banking,93,Savings,Loan Growth
+001Hu00002vQCICIA4,96144.92,Ava Rodriguez,Plus,3. 61-90,,1. High,9614.492,Relationship Banking,99,Savings,Loan Growth
+001Hu00002vQCICIA4,22089.43,Sarah Davis,Plus,4. 90+,,1. High,2208.943,Relationship Banking,88,Savings,Loan Growth
+001Hu00002vQCICIA4,12531.66,David Jones,Plus,4. 90+,,1. High,1253.166,Relationship Banking,92,Savings,Loan Growth
+001Hu00002vQCICIA4,71065.11,Michael Davis,Premium,2. 31-60,,1. High,7106.511,Relationship Banking,91,Savings,Loan Growth
+001Hu00002vQCICIA4,77849.02,Julie Morris,Premium,4. 90+,,1. High,7784.902,Relationship Banking,76,Savings,Loan Growth
+001Hu00002vQCICIA4,86739.07,Emily Smith,Mass Market,1. <30,,1. High,8673.907,Relationship Banking,92,Savings,Loan Growth
+001Hu00002vQCICIA4,39785.33,Sarah Garcia,Mass Market,3. 61-90,,1. High,3978.533,Relationship Banking,83,Savings,Loan Growth
+001Hu00002vQCICIA4,39898.48,Matthew Williams,Mass Market,4. 90+,,1. High,3989.848,Relationship Banking,78,Savings,Loan Growth
+001Hu00002vQCICIA4,49587.37,Matthew Rodriguez,Plus,3. 61-90,,1. High,4958.737,Relationship Banking,98,Savings,Loan Growth
+001Hu00002vQCICIA4,61334.95,Daniel Garcia,Premium,3. 61-90,,1. High,6133.495,Relationship Banking,94,Savings,Loan Growth
+001Hu00002vQCICIA4,59112.98,Sophia Garcia,Mass Market,1. <30,,1. High,5911.298,Relationship Banking,90,Savings,Loan Growth
+001Hu00002vQCICIA4,42519.1,Daniel Rodriguez,Premium,3. 61-90,,1. High,4251.91,Relationship Banking,81,Savings,Loan Growth
+001Hu00002vQCICIA4,44412.83,Andrew Martinez,Mass Market,1. <30,,1. High,4441.283,Relationship Banking,96,Savings,Loan Growth
+001Hu00002vQCICIA4,18880.44,Christopher Rodriguez,Mass Market,2. 31-60,,1. High,1888.044,Relationship Banking,78,Savings,Loan Growth
+001Hu00002vQCICIA4,68614.81,Sophia Rodriguez,Premium,4. 90+,,1. High,6861.481,Relationship Banking,98,Savings,Loan Growth
+001Hu00002vQCICIA4,96104.9,Ava Johnson,Plus,4. 90+,,1. High,9610.49,Relationship Banking,85,Savings,Loan Growth
+001Hu00002vQCICIA4,41753.55,David Garcia,Plus,1. <30,,1. High,4175.355,Relationship Banking,76,Savings,Loan Growth
+001Hu00002vQCICIA4,55405.21,James Jones,Mass Market,2. 31-60,,1. High,5540.521,Relationship Banking,81,Savings,Loan Growth
+001Hu00002vQCICIA4,32684.02,Emily Brown,Premium,1. <30,,1. High,3268.402,Relationship Banking,92,Savings,Loan Growth
+001Hu00002vQCICIA4,40080.33,Isabella Johnson,Premium,1. <30,,1. High,4008.033,Relationship Banking,82,Savings,Loan Growth
+001Hu00002vQCICIA4,82255.5,Sophia Smith,Mass Market,2. 31-60,,3. Low,8225.55,Relationship Banking,46,Savings,Loan Growth
+001Hu00002vQCICIA4,13236.22,John Martinez,Premium,3. 61-90,,3. Low,1323.622,Relationship Banking,51,Savings,Loan Growth
+001Hu00002vQCICIA4,34158.43,Emily Davis,Mass Market,2. 31-60,,3. Low,3415.843,Relationship Banking,43,Savings,Loan Growth
+001Hu00002vQCICIA4,93931.52,Andrew Garcia,Mass Market,3. 61-90,,3. Low,9393.152,Relationship Banking,54,Savings,Loan Growth
+001Hu00002vQCICIA4,8884.6,Matthew Miller,Premium,2. 31-60,,3. Low,888.46,Relationship Banking,48,Savings,Loan Growth
+001Hu00002vQCICIA4,32105.76,Emily Martinez,Plus,4. 90+,,3. Low,3210.576,Relationship Banking,41,Savings,Loan Growth
+001Hu00002vQCICIA4,22771.47,Emily Smith,Mass Market,2. 31-60,,3. Low,2277.147,Relationship Banking,50,Savings,Loan Growth
+001Hu00002vQCICIA4,97588.41,John Smith,Premium,3. 61-90,,3. Low,9758.841,Relationship Banking,48,Savings,Loan Growth
+001Hu00002vQCICIA4,55985.01,James Smith,Plus,3. 61-90,,3. Low,5598.501,Relationship Banking,43,Savings,Loan Growth
+001Hu00002vQCICIA4,55691.64,Michael Williams,Mass Market,4. 90+,,3. Low,5569.164,Relationship Banking,47,Savings,Loan Growth
+001Hu00002vQCICIA4,44719.04,Emma Smith,Plus,3. 61-90,,3. Low,4471.904,Relationship Banking,41,Savings,Loan Growth
+001Hu00002vQCICIA4,80863.27,Emma Williams,Premium,3. 61-90,,3. Low,8086.327,Relationship Banking,52,Savings,Loan Growth
+001Hu00002vQCICIA4,78153.54,Sarah Johnson,Premium,3. 61-90,,2. Medium,7815.354,Relationship Banking,71,Savings,Loan Growth
+001Hu00002vQCICIA4,95292.49,Olivia Miller,Plus,2. 31-60,,2. Medium,9529.249,Relationship Banking,74,Savings,Loan Growth
+001Hu00002vQCICIA4,34041.07,Michael Jones,Premium,1. <30,,2. Medium,3404.107,Relationship Banking,63,Savings,Loan Growth
+001Hu00002vQCICIA4,93008.45,Andrew Brown,Mass Market,4. 90+,,2. Medium,9300.845,Relationship Banking,63,Savings,Loan Growth
+001Hu00002vQCICIA4,77106.5,Michael Brown,Mass Market,2. 31-60,,2. Medium,7710.65,Relationship Banking,61,Savings,Loan Growth
+001Hu00002vQCICIA4,70353.45,Michael Davis,Premium,1. <30,,2. Medium,7035.345,Relationship Banking,69,Savings,Loan Growth
+001Hu00002vQCICIA4,91290.17,James Smith,Mass Market,4. 90+,,2. Medium,9129.017,Relationship Banking,73,Savings,Loan Growth
+001Hu00002vQCICIA4,50064.45,Emma Jones,Premium,2. 31-60,,2. Medium,5006.445,Relationship Banking,64,Savings,Loan Growth
+001Hu00002vQCICIA4,95916.05,Sarah Davis,Plus,4. 90+,,2. Medium,9591.605,Relationship Banking,66,Savings,Loan Growth
+001Hu00002vQCICIA4,28921.96,Olivia Johnson,Premium,4. 90+,,2. Medium,2892.196,Relationship Banking,60,Savings,Loan Growth
+001Hu00002vQCICIA4,85932.61,Olivia Johnson,Premium,4. 90+,,2. Medium,8593.261,Relationship Banking,64,Savings,Loan Growth
+001Hu00002vQCICIA4,62755.57,Emma Brown,Premium,3. 61-90,,2. Medium,6275.557,Relationship Banking,62,Savings,Loan Growth
+001Hu00002vQCICIA4,62546.56,Ava Garcia,Plus,4. 90+,,2. Medium,6254.656,Relationship Banking,67,Savings,Loan Growth
+001Hu00002vQCICIA4,46706.13,Sarah Garcia,Plus,3. 61-90,,2. Medium,4670.613,Relationship Banking,67,Savings,Loan Growth
+001Hu00002vQCICIA4,24876.52,Daniel Miller,Plus,4. 90+,,2. Medium,2487.652,Relationship Banking,74,Savings,Loan Growth
+001Hu00002vQCICIA4,2633.27,Daniel Johnson,Plus,4. 90+,,2. Medium,263.327,Relationship Banking,69,Savings,Loan Growth
+001Hu00002vQCICIA4,42735.26,Matthew Rodriguez,Premium,2. 31-60,,1. High,4273.526,Business,89,Small Business,Loan Growth
+001Hu00002vQCICIA4,29296.7,Matthew Jones,Premium,3. 61-90,,1. High,2929.67,Business,79,Small Business,Loan Growth
+001Hu00002vQCICIA4,78101.03,John Rodriguez,Mass Market,2. 31-60,,1. High,7810.103,Business,90,Small Business,Loan Growth
+001Hu00002vQCICIA4,61765.21,Emily Garcia,Mass Market,1. <30,,1. High,6176.521,Business,80,Small Business,Loan Growth
+001Hu00002vQCICIA4,88233.76,Emma Davis,Premium,3. 61-90,,1. High,8823.376,Business,88,Small Business,Loan Growth
+001Hu00002vQCICIA4,43853.09,Matthew Williams,Plus,1. <30,,1. High,4385.309,Business,83,Small Business,Loan Growth
+001Hu00002vQCICIA4,60196.4,Jane Rodriguez,Premium,1. <30,,1. High,6019.64,Business,78,Small Business,Loan Growth
+001Hu00002vQCICIA4,69400.47,Jane Davis,Plus,4. 90+,,1. High,6940.047,Business,84,Small Business,Loan Growth
+001Hu00002vQCICIA4,6445.9,Emma Brown,Premium,1. <30,,1. High,644.59,Business,93,Small Business,Loan Growth
+001Hu00002vQCICIA4,84401.54,James Miller,Plus,2. 31-60,,1. High,8440.154,Business,96,Small Business,Loan Growth
+001Hu00002vQCICIA4,77753.33,James Smith,Premium,1. <30,,1. High,7775.333,Business,86,Small Business,Loan Growth
+001Hu00002vQCICIA4,6033.42,Andrew Martinez,Plus,2. 31-60,,1. High,603.342,Business,96,Small Business,Loan Growth
+001Hu00002vQCICIA4,76421.44,Julie Morris,Mass Market,4. 90+,,1. High,7642.144,Business,92,Small Business,Loan Growth
+001Hu00002vQCICIA4,35784.53,Jane Garcia,Premium,1. <30,,1. High,3578.453,Business,77,Small Business,Loan Growth
+001Hu00002vQCICIA4,77362.35,Jane Williams,Premium,1. <30,,1. High,7736.235,Business,75,Small Business,Loan Growth
+001Hu00002vQCICIA4,24180.42,Jane Miller,Plus,1. <30,,1. High,2418.042,Business,99,Small Business,Loan Growth
+001Hu00002vQCICIA4,62708.42,Emma Johnson,Mass Market,3. 61-90,,1. High,6270.842,Business,93,Small Business,Loan Growth
+001Hu00002vQCICIA4,86036.35,Olivia Martinez,Mass Market,3. 61-90,,1. High,8603.635,Business,92,Small Business,Loan Growth
+001Hu00002vQCICIA4,33860.7,Matthew Miller,Premium,2. 31-60,,3. Low,3386.07,Business,54,Small Business,Loan Growth
+001Hu00002vQCICIA4,66519.21,Emma Martinez,Mass Market,4. 90+,,3. Low,6651.921,Business,44,Small Business,Loan Growth
+001Hu00002vQCICIA4,79859.0,Andrew Smith,Premium,2. 31-60,,3. Low,7985.9,Business,40,Small Business,Loan Growth
+001Hu00002vQCICIA4,88565.64,Sarah Smith,Premium,3. 61-90,,3. Low,8856.564,Business,50,Small Business,Loan Growth
+001Hu00002vQCICIA4,35238.4,Andrew Smith,Mass Market,4. 90+,,3. Low,3523.84,Business,55,Small Business,Loan Growth
+001Hu00002vQCICIA4,99209.98,James Garcia,Plus,2. 31-60,,3. Low,9920.998,Business,40,Small Business,Loan Growth
+001Hu00002vQCICIA4,58255.0,Sophia Miller,Premium,4. 90+,,3. Low,5825.5,Business,44,Small Business,Loan Growth
+001Hu00002vQCICIA4,39761.34,James Martinez,Premium,1. <30,,3. Low,3976.134,Business,43,Small Business,Loan Growth
+001Hu00002vQCICIA4,82843.53,Emily Davis,Plus,2. 31-60,,3. Low,8284.353,Business,55,Small Business,Loan Growth
+001Hu00002vQCICIA4,3809.73,Emma Miller,Premium,4. 90+,,3. Low,380.973,Business,48,Small Business,Loan Growth
+001Hu00002vQCICIA4,53249.81,Olivia Davis,Premium,3. 61-90,,3. Low,5324.981,Business,47,Small Business,Loan Growth
+001Hu00002vQCICIA4,52785.91,Ava Rodriguez,Mass Market,3. 61-90,,3. Low,5278.591,Business,40,Small Business,Loan Growth
+001Hu00002vQCICIA4,50140.65,James Miller,Premium,4. 90+,,2. Medium,5014.065,Business,64,Small Business,Loan Growth
+001Hu00002vQCICIA4,75020.24,James Garcia,Mass Market,1. <30,,2. Medium,7502.024,Business,70,Small Business,Loan Growth
+001Hu00002vQCICIA4,40220.97,Matthew Jones,Premium,4. 90+,,2. Medium,4022.097,Business,67,Small Business,Loan Growth
+001Hu00002vQCICIA4,93249.61,Jane Williams,Plus,4. 90+,,2. Medium,9324.961,Business,68,Small Business,Loan Growth
+001Hu00002vQCICIA4,66920.92,Jane Rodriguez,Mass Market,4. 90+,,2. Medium,6692.092,Business,70,Small Business,Loan Growth
+001Hu00002vQCICIA4,52932.19,Ava Miller,Mass Market,2. 31-60,,2. Medium,5293.219,Business,60,Small Business,Loan Growth
+001Hu00002vQCICIA4,29122.19,Christopher Garcia,Premium,1. <30,,2. Medium,2912.219,Business,67,Small Business,Loan Growth
+001Hu00002vQCICIA4,54596.77,Jane Johnson,Premium,3. 61-90,,2. Medium,5459.677,Business,68,Small Business,Loan Growth
+001Hu00002vQCICIA4,57256.89,Ava Smith,Mass Market,2. 31-60,,2. Medium,5725.689,Business,64,Small Business,Loan Growth
+001Hu00002vQCICIA4,78594.91,Jane Davis,Premium,3. 61-90,,2. Medium,7859.491,Business,75,Small Business,Loan Growth
+001Hu00002vQCICIA4,18241.59,Daniel Davis,Plus,3. 61-90,,2. Medium,1824.159,Business,69,Small Business,Loan Growth
+001Hu00002vQCICIA4,70886.86,Emma Williams,Premium,2. 31-60,,2. Medium,7088.686,Business,62,Small Business,Loan Growth
+001Hu00002vQCICIA4,54894.6,Emma Martinez,Plus,3. 61-90,,2. Medium,5489.46,Business,62,Small Business,Loan Growth
+001Hu00002vQCICIA4,28362.96,Michael Jones,Premium,4. 90+,,2. Medium,2836.296,Business,69,Small Business,Loan Growth
+001Hu00002vQCICIA4,56762.92,Jane Smith,Mass Market,4. 90+,,2. Medium,5676.292,Business,69,Small Business,Loan Growth
+001Hu00002vQCICIA4,69327.74,Sarah Brown,Premium,1. <30,,2. Medium,6932.774,Business,65,Small Business,Loan Growth
+001Hu00002vQCICIA4,27654.13,David Davis,Premium,2. 31-60,,2. Medium,2765.413,Business,69,Small Business,Loan Growth
+001Hu00002vQCICIA4,55047.1,Emily Jones,Plus,4. 90+,,2. Medium,5504.71,Business,73,Small Business,Loan Growth
+001Hu00002vQCICIA4,60159.79,Emily Martinez,Plus,2. 31-60,,2. Medium,6015.979,Business,73,Small Business,Loan Growth
+001Hu00002vQCICIA4,82450.15,John Smith,Mass Market,4. 90+,,2. Medium,8245.015,Business,73,Small Business,Loan Growth
+001Hu00002vQCICIA4,86269.25,Isabella Garcia,Premium,2. 31-60,,2. Medium,8626.925,Business,61,Small Business,Loan Growth
+001Hu00002vQCICIA4,63140.67,Daniel Williams,Mass Market,3. 61-90,,2. Medium,6314.067,Business,60,Small Business,Loan Growth
+001Hu00002vQCICIA4,8350.84,Emma Brown,Plus,2. 31-60,,2. Medium,835.084,Business,62,Small Business,Loan Growth
+001Hu00002vQCICIA4,49758.28,Daniel Johnson,Premium,4. 90+,,2. Medium,4975.828,Business,63,Small Business,Loan Growth
+001Hu00002vQCICIA4,17715.13,Isabella Williams,Plus,2. 31-60,,2. Medium,1771.513,Business,73,Small Business,Loan Growth
+001Hu00002vQCICIA4,46193.64,Isabella Rodriguez,Premium,2. 31-60,,2. Medium,4619.364,Business,72,Small Business,Loan Growth
+001Hu00002vQCICIA4,3556.78,James Miller,Premium,4. 90+,,2. Medium,355.678,Business,74,Small Business,Loan Growth
+001Hu00002vQCICIA4,19432.09,Isabella Martinez,Premium,2. 31-60,,1. High,1943.209,Investments,94,Wealth,Partner Referrals
+001Hu00002vQCICIA4,14699.94,James Rodriguez,Mass Market,4. 90+,,1. High,1469.994,Investments,78,Wealth,Partner Referrals
+001Hu00002vQCICIA4,88419.66,Christopher Garcia,Premium,1. <30,,1. High,8841.966,Investments,85,Wealth,Partner Referrals
+001Hu00002vQCICIA4,81829.4,Sophia Garcia,Plus,4. 90+,,1. High,8182.94,Investments,81,Wealth,Partner Referrals
+001Hu00002vQCICIA4,27438.58,James Garcia,Plus,3. 61-90,,1. High,2743.858,Investments,88,Wealth,Partner Referrals
+001Hu00002vQCICIA4,52261.07,Sarah Brown,Mass Market,4. 90+,,1. High,5226.107,Investments,79,Wealth,Partner Referrals
+001Hu00002vQCICIA4,51136.26,Michael Johnson,Premium,3. 61-90,,1. High,5113.626,Investments,80,Wealth,Partner Referrals
+001Hu00002vQCICIA4,50919.63,Daniel Williams,Plus,4. 90+,,1. High,5091.963,Investments,94,Wealth,Partner Referrals
+001Hu00002vQCICIA4,44296.87,Ava Martinez,Mass Market,2. 31-60,,1. High,4429.687,Investments,81,Wealth,Partner Referrals
+001Hu00002vQCICIA4,63426.23,Christopher Garcia,Premium,1. <30,,1. High,6342.623,Investments,86,Wealth,Partner Referrals
+001Hu00002vQCICIA4,23459.97,John Williams,Plus,1. <30,,1. High,2345.997,Investments,94,Wealth,Partner Referrals
+001Hu00002vQCICIA4,20319.21,Andrew Jones,Mass Market,2. 31-60,,1. High,2031.921,Investments,79,Wealth,Partner Referrals
+001Hu00002vQCICIA4,51125.99,Andrew Miller,Mass Market,2. 31-60,,1. High,5112.599,Investments,86,Wealth,Partner Referrals
+001Hu00002vQCICIA4,1331.54,David Johnson,Mass Market,3. 61-90,,1. High,133.154,Investments,75,Wealth,Partner Referrals
+001Hu00002vQCICIA4,61426.59,John Miller,Plus,2. 31-60,,1. High,6142.659,Investments,76,Wealth,Partner Referrals
+001Hu00002vQCICIA4,92096.94,Sophia Brown,Plus,3. 61-90,,1. High,9209.694,Investments,81,Wealth,Partner Referrals
+001Hu00002vQCICIA4,83257.53,Sarah Johnson,Plus,4. 90+,,1. High,8325.753,Investments,75,Wealth,Partner Referrals
+001Hu00002vQCICIA4,34329.02,Sarah Martinez,Mass Market,4. 90+,,1. High,3432.902,Investments,76,Wealth,Partner Referrals
+001Hu00002vQCICIA4,66040.15,Michael Davis,Mass Market,3. 61-90,,1. High,6604.015,Investments,90,Wealth,Partner Referrals
+001Hu00002vQCICIA4,56522.34,Jane Johnson,Plus,2. 31-60,,1. High,5652.234,Investments,86,Wealth,Partner Referrals
+001Hu00002vQCICIA4,25851.76,Andrew Davis,Mass Market,3. 61-90,,1. High,2585.176,Investments,81,Wealth,Partner Referrals
+001Hu00002vQCICIA4,2178.09,Ava Williams,Premium,3. 61-90,,1. High,217.809,Investments,78,Wealth,Partner Referrals
+001Hu00002vQCICIA4,35509.61,Jane Garcia,Plus,3. 61-90,,3. Low,3550.961,Investments,55,Wealth,Partner Referrals
+001Hu00002vQCICIA4,32469.13,Christopher Smith,Premium,4. 90+,,3. Low,3246.913,Investments,43,Wealth,Partner Referrals
+001Hu00002vQCICIA4,47520.94,Michael Johnson,Mass Market,1. <30,,3. Low,4752.094,Investments,49,Wealth,Partner Referrals
+001Hu00002vQCICIA4,2810.09,Sophia Miller,Plus,4. 90+,,3. Low,281.009,Investments,41,Wealth,Partner Referrals
+001Hu00002vQCICIA4,73183.71,David Brown,Plus,2. 31-60,,3. Low,7318.371,Investments,55,Wealth,Partner Referrals
+001Hu00002vQCICIA4,98015.37,James Williams,Premium,2. 31-60,,3. Low,9801.537,Investments,51,Wealth,Partner Referrals
+001Hu00002vQCICIA4,31875.74,Ava Rodriguez,Plus,1. <30,,3. Low,3187.574,Investments,41,Wealth,Partner Referrals
+001Hu00002vQCICIA4,71748.14,Sarah Jones,Plus,1. <30,,3. Low,7174.814,Investments,51,Wealth,Partner Referrals
+001Hu00002vQCICIA4,5870.51,Matthew Williams,Premium,3. 61-90,,3. Low,587.051,Investments,40,Wealth,Partner Referrals
+001Hu00002vQCICIA4,24722.44,Michael Smith,Premium,2. 31-60,,3. Low,2472.244,Investments,44,Wealth,Partner Referrals
+001Hu00002vQCICIA4,75748.71,Jane Davis,Premium,3. 61-90,,3. Low,7574.871,Investments,47,Wealth,Partner Referrals
+001Hu00002vQCICIA4,42721.61,Sarah Martinez,Mass Market,3. 61-90,,3. Low,4272.161,Investments,44,Wealth,Partner Referrals
+001Hu00002vQCICIA4,26128.97,David Smith,Premium,2. 31-60,,3. Low,2612.897,Investments,53,Wealth,Partner Referrals
+001Hu00002vQCICIA4,75640.37,Emily Jones,Plus,3. 61-90,,3. Low,7564.037,Investments,40,Wealth,Partner Referrals
+001Hu00002vQCICIA4,32539.47,Ava Johnson,Mass Market,2. 31-60,,3. Low,3253.947,Investments,50,Wealth,Partner Referrals
+001Hu00002vQCICIA4,11882.71,Jane Garcia,Premium,3. 61-90,,3. Low,1188.271,Investments,40,Wealth,Partner Referrals
+001Hu00002vQCICIA4,95524.19,Emily Davis,Plus,3. 61-90,,3. Low,9552.419,Investments,51,Wealth,Partner Referrals
+001Hu00002vQCICIA4,95042.15,Sarah Jones,Premium,1. <30,,3. Low,9504.215,Investments,55,Wealth,Partner Referrals
+001Hu00002vQCICIA4,52838.89,David Martinez,Mass Market,1. <30,,3. Low,5283.889,Investments,48,Wealth,Partner Referrals
+001Hu00002vQCICIA4,95386.54,Emily Smith,Mass Market,3. 61-90,,3. Low,9538.654,Investments,53,Wealth,Partner Referrals
+001Hu00002vQCICIA4,74946.75,Olivia Smith,Mass Market,3. 61-90,,3. Low,7494.675,Investments,55,Wealth,Partner Referrals
+001Hu00002vQCICIA4,62373.1,Emily Rodriguez,Premium,3. 61-90,,3. Low,6237.31,Investments,52,Wealth,Partner Referrals
+001Hu00002vQCICIA4,57580.62,Ava Jones,Premium,1. <30,,3. Low,5758.062,Investments,42,Wealth,Partner Referrals
+001Hu00002vQCICIA4,93319.8,John Brown,Premium,3. 61-90,,2. Medium,9331.98,Investments,60,Wealth,Partner Referrals
+001Hu00002vQCICIA4,16644.17,Emma Smith,Plus,3. 61-90,,2. Medium,1664.417,Investments,61,Wealth,Partner Referrals
+001Hu00002vQCICIA4,63732.97,James Davis,Plus,3. 61-90,,2. Medium,6373.297,Investments,72,Wealth,Partner Referrals
+001Hu00002vQCICIA4,11569.97,Christopher Garcia,Plus,4. 90+,,2. Medium,1156.997,Investments,69,Wealth,Partner Referrals
+001Hu00002vQCICIA4,64408.73,James Smith,Mass Market,2. 31-60,,2. Medium,6440.873,Investments,70,Wealth,Partner Referrals
+001Hu00002vQCICIA4,64115.13,Matthew Williams,Mass Market,4. 90+,,2. Medium,6411.513,Investments,61,Wealth,Partner Referrals
+001Hu00002vQCICIA4,25207.04,Matthew Smith,Mass Market,1. <30,,2. Medium,2520.704,Investments,62,Wealth,Partner Referrals
+001Hu00002vQCICIA4,24804.61,David Martinez,Premium,3. 61-90,,2. Medium,2480.461,Investments,68,Wealth,Partner Referrals
+001Hu00002vQCICIA4,65499.88,Christopher Johnson,Mass Market,2. 31-60,,2. Medium,6549.988,Investments,64,Wealth,Partner Referrals
+001Hu00002vQCICIA4,4275.93,John Garcia,Premium,4. 90+,,2. Medium,427.593,Investments,75,Wealth,Partner Referrals
+001Hu00002vQCICIA4,82624.92,Olivia Williams,Plus,3. 61-90,,2. Medium,8262.492,Investments,63,Wealth,Partner Referrals
+001Hu00002vQCICIA4,31171.66,Sarah Miller,Mass Market,2. 31-60,,2. Medium,3117.166,Investments,67,Wealth,Partner Referrals
+001Hu00002vQCICIA4,82128.01,Emily Martinez,Plus,1. <30,,2. Medium,8212.801,Investments,62,Wealth,Partner Referrals
+001Hu00002vQCICIA4,80757.17,Sarah Brown,Premium,1. <30,,2. Medium,8075.717,Investments,66,Wealth,Partner Referrals
+001Hu00002vQCICIA4,73390.64,John Rodriguez,Premium,2. 31-60,,2. Medium,7339.064,Investments,65,Wealth,Partner Referrals
+001Hu00002vQCICIA4,57997.25,David Miller,Premium,1. <30,,2. Medium,5799.725,Investments,66,Wealth,Partner Referrals
+001Hu00002vQCICIA4,14065.4,Daniel Garcia,Premium,2. 31-60,,2. Medium,1406.54,Investments,66,Wealth,Partner Referrals
+001Hu00002vQCICIA4,19484.3,Emily Martinez,Premium,4. 90+,,2. Medium,1948.43,Investments,61,Wealth,Partner Referrals
+001Hu00002vQCICIA4,65085.21,John Davis,Premium,3. 61-90,,2. Medium,6508.521,Investments,69,Wealth,Partner Referrals
+001Hu00002vQCICIA4,79919.36,Daniel Jones,Mass Market,2. 31-60,,2. Medium,7991.936,Investments,61,Wealth,Partner Referrals
+001Hu00002vQCICIA4,81295.1,Sophia Johnson,Plus,1. <30,,2. Medium,8129.51,Investments,65,Wealth,Partner Referrals

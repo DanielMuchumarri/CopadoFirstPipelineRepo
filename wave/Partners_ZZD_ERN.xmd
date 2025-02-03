@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata">
+    <dataset>Partners_ZZD_ERN</dataset>
+    <dimensions>
+        <field>Broker</field>
+        <isDerived>false</isDerived>
+        <label>Broker</label>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Image</field>
+        <isDerived>false</isDerived>
+        <label>Image</label>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Partner</field>
+        <isDerived>false</isDerived>
+        <label>Partner</label>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+    <measures>
+        <field>Lead_Quality</field>
+        <formatDecimalDigits>2</formatDecimalDigits>
+        <isDerived>false</isDerived>
+        <label>Lead Quality</label>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <field>Conversions</field>
+        <formatDecimalDigits>0</formatDecimalDigits>
+        <isDerived>false</isDerived>
+        <label>Conversions</label>
+        <sortIndex>1</sortIndex>
+    </measures>
+    <measures>
+        <field>Total_Opportunities</field>
+        <formatDecimalDigits>0</formatDecimalDigits>
+        <isDerived>false</isDerived>
+        <label>Total Opportunities</label>
+        <sortIndex>2</sortIndex>
+    </measures>
+    <measures>
+        <field>Stack_Rank</field>
+        <formatDecimalDigits>0</formatDecimalDigits>
+        <isDerived>false</isDerived>
+        <label>Stack Rank</label>
+        <sortIndex>3</sortIndex>
+    </measures>
+    <measures>
+        <field>Total_Leads</field>
+        <formatDecimalDigits>0</formatDecimalDigits>
+        <isDerived>false</isDerived>
+        <label>Total Leads</label>
+        <sortIndex>4</sortIndex>
+    </measures>
+    <measures>
+        <field>Total_Loans</field>
+        <formatDecimalDigits>2</formatDecimalDigits>
+        <isDerived>false</isDerived>
+        <label>Total Loans</label>
+        <sortIndex>5</sortIndex>
+    </measures>
+</WaveXmd>

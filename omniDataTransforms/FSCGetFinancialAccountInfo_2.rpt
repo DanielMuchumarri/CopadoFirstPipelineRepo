@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>FSCGetFinancialAccountInfo</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:financialAccounts:FinServ__FinancialAccountNumber__c var:numLength 4 - var:numLength SUBSTRING</formulaConverted>
+        <formulaExpression>SUBSTRING(financialAccounts:FinServ__FinancialAccountNumber__c, numLength-4, numLength)</formulaExpression>
+        <formulaResultPath>ConvertedFinancialAccountNumber</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>FSCGetFinancialAccountInfoCustom0jIDo000000CqRkMAKItem4</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCGetFinancialAccountInfo</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCGetFinancialAccountInfoCustom0jIDo000000CqRkMAKItem0</globalKey>
+        <inputFieldName>ConvertedFinancialAccountNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCGetFinancialAccountInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ConvertedFinancialAccountNumber</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>AccountId</filterValue>
+        <globalKey>FSCGetFinancialAccountInfoCustom0jIDo000000CqRkMAKItem1</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>FinServ__FinancialAccount__c</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCGetFinancialAccountInfo</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>financialAccounts</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCGetFinancialAccountInfoCustom0jIDo000000CqRkMAKItem2</globalKey>
+        <inputFieldName>financialAccounts:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCGetFinancialAccountInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AccountName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:financialAccounts:FinServ__FinancialAccountNumber__c &quot;&lt;EOS&gt;&quot; + &quot;&lt;EOS&gt;&quot; STRINGINDEXOF</formulaConverted>
+        <formulaExpression>STRINGINDEXOF(financialAccounts:FinServ__FinancialAccountNumber__c + &quot;&lt;EOS&gt;&quot;, &quot;&lt;EOS&gt;&quot;)</formulaExpression>
+        <formulaResultPath>numLength</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>FSCGetFinancialAccountInfoCustom0jIDo000000CqRkMAKItem3</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCGetFinancialAccountInfo</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <overrideKey>fscserviceprocess__FSCGetFinancialAccountInfo_1</overrideKey>
+    <previewJsonData>{
+  &quot;0&quot; : {
+    &quot;AccountId&quot; : &quot;a0FRO000000DPbH2AW&quot;
+  },
+  &quot;1&quot; : {
+    &quot;AccountId&quot; : &quot;a0FRO000000DPbM2AW&quot;
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>FSCGetFinancialAccountInfo_2</uniqueName>
+    <versionNumber>2.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

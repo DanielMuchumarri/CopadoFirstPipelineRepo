@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Data Type --></label>
+        <name>tspa__Data_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>tspa__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Desktop Sharing --></label>
+        <name>tspa__Desktop_Sharing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dutch Value --></label>
+        <name>tspa__Dutch_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- FaceMeet --></label>
+        <name>tspa__FaceMeet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Api Name --></label>
+        <name>tspa__Field_Api_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- French Value --></label>
+        <name>tspa__French_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- German Value --></label>
+        <name>tspa__German_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Greek Value --></label>
+        <name>tspa__Greek_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hebrew Value --></label>
+        <name>tspa__Hebrew_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hungarian Value --></label>
+        <name>tspa__Hungarian_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Italian Value --></label>
+        <name>tspa__Italian_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Japanese Value --></label>
+        <name>tspa__Japanese_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Korean Value --></label>
+        <name>tspa__Korean_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label --></label>
+        <name>tspa__Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mirroring --></label>
+        <name>tspa__Mirroring__c</name>
+    </fields>
+    <fields>
+        <label><!-- Photo --></label>
+        <name>tspa__Photo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Polish Value --></label>
+        <name>tspa__Polish_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Portuguese Value --></label>
+        <name>tspa__Portuguese_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Russian Value --></label>
+        <name>tspa__Russian_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session with Observer --></label>
+        <name>tspa__Session_with_Observer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Slovak Value --></label>
+        <name>tspa__Slovak_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>tspa__Sort_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spanish Value --></label>
+        <name>tspa__Spanish_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Swedish --></label>
+        <name>tspa__Swedish__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thai Value --></label>
+        <name>tspa__Thai_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Turkish Value --></label>
+        <name>tspa__Turkish_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- English Value --></label>
+        <name>tspa__Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Video And Audio --></label>
+        <name>tspa__Video_And_Audio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Video Application --></label>
+        <name>tspa__Video_Application__c</name>
+    </fields>
+    <fields>
+        <label><!-- Video Session --></label>
+        <name>tspa__Video_Session__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visual Journey --></label>
+        <name>tspa__Visual_Journey__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PresenceUserConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <profiles>
+            <profile>admin</profile>
+        </profiles>
+        <users>
+            <user>daniel.muchumarri@ltimindtree.com2024/11/20_10-50-14.demo</user>
+        </users>
+    </assignments>
+    <capacity>10</capacity>
+    <enableAutoAccept>false</enableAutoAccept>
+    <enableDecline>false</enableDecline>
+    <enableDeclineReason>false</enableDeclineReason>
+    <enableDisconnectSound>true</enableDisconnectSound>
+    <enableRequestSound>true</enableRequestSound>
+    <label>ABC Bank Presence Configuration</label>
+</PresenceUserConfig>

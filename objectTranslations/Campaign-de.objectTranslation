@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- DB Days --></label>
+        <name>DB_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- DB --></label>
+        <name>EDY_ORGCUSTOM__DB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Name --></label>
+        <name>EDY_ORGCUSTOM__Old_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Offer --></label>
+        <name>Primary_Offer__c</name>
+        <picklistValues>
+            <masterLabel>Case Study</masterLabel>
+            <translation><!-- Case Study --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Us Form</masterLabel>
+            <translation><!-- Contact Us Form --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Demo</masterLabel>
+            <translation><!-- Demo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Free Trial</masterLabel>
+            <translation><!-- Free Trial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webinar</masterLabel>
+            <translation><!-- Webinar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whitepaper</masterLabel>
+            <translation><!-- Whitepaper --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Budget Variance --></label>
+        <name>SDO_Pardot_BudgetVariance__c</name>
+    </fields>
+    <fields>
+        <label><!-- EndDate db days --></label>
+        <name>db_days_EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- StartDate db days --></label>
+        <name>db_days_StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Campaign Id --></label>
+        <name>pi__Pardot_Campaign_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Has Dependencies --></label>
+        <name>pi__Pardot_Has_Dependencies__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Campaigns led and used by partners to market to their customers. --></description>
+        <label><!-- Partner-Led Campaign --></label>
+        <name>Partner_Led_Campaign</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Child Campaign to a parent campaign --></description>
+        <label><!-- Child Campaign --></label>
+        <name>SDO_Marketing_ChildCampaign</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Top level Campaign --></description>
+        <label><!-- Parent Campaign --></label>
+        <name>SDO_Marketing_ParentCampaign</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- Mass_Delete_Records --></label>
+        <name>Mass_Delete_Records</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ViewAllCampaignMembers --></label>
+        <name>ViewAllCampaignMembers</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ViewCampaignInfluenceReport --></label>
+        <name>ViewCampaignInfluenceReport</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_ExactTarget_Email --></label>
+        <name>et4ae5__Send_ExactTarget_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ViewCampaignInfluenceReport --></label>
+        <name>et4ae5__ViewCampaignInfluenceReport</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+</CustomObjectTranslation>

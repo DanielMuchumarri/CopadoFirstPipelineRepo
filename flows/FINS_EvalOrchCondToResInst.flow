@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <assignments>
+        <description>When an error occurs during the flow execution, sets the isFlowFailed variable to True and stores the error message in the errorMessage variable.</description>
+        <name>SetIsFlowFailedToTrue</name>
+        <label>Set isFlowFailed to True</label>
+        <locationX>842</locationX>
+        <locationY>539</locationY>
+        <assignmentItems>
+            <assignToReference>errorMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>isFlowFailed</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>Checks the Status of the last Flow Orchestration Inst Related Obj record. If the Status is Finished With Errors, the flow creates a Flow Orchestration Inst Related Obj record. If the status is not Finished With Errors, the flow triggers the Orchestration Event record to resume the orchestration.</description>
+        <name>IsStatusOfFlowOrchInstRelaObjFsnhWithErr</name>
+        <label>Is the Status of the Flow Orchestration Inst Related Obj Finished with Errors?</label>
+        <locationX>578</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Other (Default)</defaultConnectorLabel>
+        <rules>
+            <name>IsNotFinishedWithErrors</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>FinishedWithErrors</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>CreateOrchestrationEvent</targetReference>
+            </connector>
+            <label>No</label>
+        </rules>
+        <rules>
+            <name>IsFinishedWithErrors</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>FinishedWithErrors</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>CreateFlowOrchestrationInstRelatedObj</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>Checks the status of the Flow Orchestration Inst Related Obj record and determines whether to restart or resume the orchestration instance run.</description>
+    <environments>Default</environments>
+    <interviewLabel>Onboarding: Set Orchestration Conditions to Restart or Resume Flow Orchestration Instance {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Onboarding: Set Orchestration Conditions to Restart or Resume Flow Orchestration Instance</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>Creates a Flow Orchestration Instance Related Object record and stores the RelatedObjectID from the Flow Orchestration Instance Related Object record that triggered the flow. The flow then updates status of the new Flow Orchestration Instance Related Object record to In Progress.</description>
+        <name>CreateFlowOrchestrationInstRelatedObj</name>
+        <label>Create Flow Orchestration Inst Related Obj</label>
+        <locationX>578</locationX>
+        <locationY>431</locationY>
+        <faultConnector>
+            <targetReference>SetIsFlowFailedToTrue</targetReference>
+        </faultConnector>
+        <inputAssignments>
+            <field>RelatedObjectId</field>
+            <value>
+                <elementReference>$Record.RelatedObjectId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>InProgress</stringValue>
+            </value>
+        </inputAssignments>
+        <object>FlowOrchestrationInstRelaObj</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <description>Creates an Orchestration Event record to resume the flow orchestration instance run and stores the ID of the flow orchestration instance in the OrchestrationInstanceID variable.</description>
+        <name>CreateOrchestrationEvent</name>
+        <label>Create Orchestration Event</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>SetIsFlowFailedToTrue</targetReference>
+        </faultConnector>
+        <inputAssignments>
+            <field>OrchestrationInstanceId</field>
+            <value>
+                <elementReference>$Record.FlowOrchestrationInstanceId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>FlowOrchestrationEvent</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <sourceTemplate>fsc_onboarding__EvalOrchCondToResInst</sourceTemplate>
+    <start>
+        <locationX>452</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>IsStatusOfFlowOrchInstRelaObjFsnhWithErr</targetReference>
+        </connector>
+        <filterLogic>(1 OR 4) AND (2 OR 3)</filterLogic>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Restarted</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>RelatedObjectId</field>
+            <operator>StartsWith</operator>
+            <value>
+                <stringValue>0xU</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>RelatedObjectId</field>
+            <operator>StartsWith</operator>
+            <value>
+                <stringValue>13X</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>FinishedWithErrors</stringValue>
+            </value>
+        </filters>
+        <object>FlowOrchestrationInstRelaObj</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Stores the error message if an exception occurs during flow execution.</description>
+        <name>errorMessage</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Stores a boolean value that indicates whether the flow execution failed.</description>
+        <name>isFlowFailed</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </variables>
+</Flow>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Application</fullName>
+        <default>false</default>
+        <label>Application</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Document Upload</fullName>
+        <default>false</default>
+        <label>Document Upload</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Submitted</fullName>
+        <default>false</default>
+        <label>Submitted</label>
+    </standardValue>
+    <standardValue>
+        <fullName>In Review</fullName>
+        <default>false</default>
+        <label>In Review</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Need More Info</fullName>
+        <default>false</default>
+        <label>Need More Info</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Approved</fullName>
+        <default>false</default>
+        <label>Approved</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Rejected</fullName>
+        <default>false</default>
+        <label>Rejected</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract Generation</fullName>
+        <default>false</default>
+        <label>Contract Generation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Awaiting Signature</fullName>
+        <default>false</default>
+        <label>Awaiting Signature</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Signature Complete</fullName>
+        <default>false</default>
+        <label>Signature Complete</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Loan Booked</fullName>
+        <default>false</default>
+        <label>Loan Booked</label>
+    </standardValue>
+</StandardValueSet>

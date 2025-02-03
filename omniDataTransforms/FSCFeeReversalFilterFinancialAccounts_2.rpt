@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>FSCFeeReversalFilterFinancialAccounts</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCFeeReversalFilterFinancialAccountsCustom0jIDo000000CqQrMAKItem0</globalKey>
+        <inputFieldName>FinancialAccounts</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCFeeReversalFilterFinancialAccounts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>FAs</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:FinancialAccounts LIST &apos;RecordTypeName==&quot;Checking/\/\/Account&quot;/\/\/OR/\/\/RecordTypeName==&quot;Savings/\/\/Account&quot;/\/\/OR/\/\/RecordTypeName==&quot;Credit/\/\/Card&quot;&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(FinancialAccounts),&apos;RecordTypeName==&quot;Checking Account&quot; OR RecordTypeName==&quot;Savings Account&quot; OR RecordTypeName==&quot;Credit Card&quot;&apos;)</formulaExpression>
+        <formulaResultPath>FAs</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>FSCFeeReversalFilterFinancialAccountsCustom0jIDo000000CqQrMAKItem1</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCFeeReversalFilterFinancialAccounts</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <overrideKey>fscserviceprocess__FSCFeeReversalFilterFinancialAccounts_1</overrideKey>
+    <previewJsonData>{
+  &quot;FinancialAccounts&quot; : [ {
+    &quot;Name&quot; : &quot;529-MORRIS-eTrade Education Plan&quot;,
+    &quot;AccountName&quot; : &quot;Julie Morris&quot;,
+    &quot;SourceSystemId&quot; : &quot;&quot;,
+    &quot;Id&quot; : &quot;a7k4S000000XhwvQAC&quot;,
+    &quot;RecordTypeName&quot; : &quot;Bank Account&quot;,
+    &quot;AccountId&quot; : &quot;0014S00000BP9rJQAT&quot;,
+    &quot;PrimaryOwner&quot; : &quot;0014S00000BP9rJQAT&quot;
+  }, {
+    &quot;Name&quot; : &quot;Stratus Checking&quot;,
+    &quot;AccountName&quot; : &quot;Julie Morris&quot;,
+    &quot;SourceSystemId&quot; : &quot;&quot;,
+    &quot;Id&quot; : &quot;a7k4S000000XhwaQAC&quot;,
+    &quot;RecordTypeName&quot; : &quot;Bank Account&quot;,
+    &quot;FinancialAccountNumber&quot; : &quot;1234467&quot;,
+    &quot;AccountId&quot; : &quot;0014S00000BP9rJQAT&quot;,
+    &quot;PrimaryOwner&quot; : &quot;0014S00000BP9rJQAT&quot;
+  }, {
+    &quot;Name&quot; : &quot;Everyday Checking Account&quot;,
+    &quot;AccountName&quot; : &quot;Julie Morris&quot;,
+    &quot;SourceSystemId&quot; : &quot;&quot;,
+    &quot;Id&quot; : &quot;a7k4S000000XhwbQAC&quot;,
+    &quot;RecordTypeName&quot; : &quot;Bank Account&quot;,
+    &quot;FinancialAccountNumber&quot; : &quot;0723789981&quot;,
+    &quot;AccountId&quot; : &quot;0014S00000BP9rJQAT&quot;,
+    &quot;PrimaryOwner&quot; : &quot;0014S00000BP9rJQAT&quot;
+  }, {
+    &quot;Name&quot; : &quot;30 yr Fixed Mortgage&quot;,
+    &quot;AccountName&quot; : &quot;Julie Morris&quot;,
+    &quot;SourceSystemId&quot; : &quot;&quot;,
+    &quot;Id&quot; : &quot;a7k4S000000XhwcQAC&quot;,
+    &quot;RecordTypeName&quot; : &quot;Bank Account&quot;,
+    &quot;FinancialAccountNumber&quot; : &quot;83787823&quot;,
+    &quot;AccountId&quot; : &quot;0014S00000BP9rJQAT&quot;,
+    &quot;PrimaryOwner&quot; : &quot;0014S00000BP9rJQAT&quot;
+  }, {
+    &quot;Name&quot; : &quot;Business Savings Account&quot;,
+    &quot;AccountName&quot; : &quot;Julie Morris&quot;,
+    &quot;SourceSystemId&quot; : &quot;&quot;,
+    &quot;Id&quot; : &quot;a7k4S000000XhwdQAC&quot;,
+    &quot;RecordTypeName&quot; : &quot;Bank Account&quot;,
+    &quot;FinancialAccountNumber&quot; : &quot;738239889&quot;,
+    &quot;AccountId&quot; : &quot;0014S00000BP9rJQAT&quot;,
+    &quot;PrimaryOwner&quot; : &quot;0014S00000BP9rJQAT&quot;
+  }, {
+    &quot;Name&quot; : &quot;High Yield Savings Account&quot;,
+    &quot;AccountName&quot; : &quot;Julie Morris&quot;,
+    &quot;SourceSystemId&quot; : &quot;&quot;,
+    &quot;Id&quot; : &quot;a7k4S000000XhweQAC&quot;,
+    &quot;RecordTypeName&quot; : &quot;Bank Account&quot;,
+    &quot;FinancialAccountNumber&quot; : &quot;7383288923&quot;,
+    &quot;AccountId&quot; : &quot;0014S00000BP9rJQAT&quot;,
+    &quot;PrimaryOwner&quot; : &quot;0014S00000BP9rJQAT&quot;
+  }, {
+    &quot;Name&quot; : &quot;Julie Morris Credit Card&quot;,
+    &quot;AccountName&quot; : &quot;Julie Morris&quot;,
+    &quot;SourceSystemId&quot; : &quot;&quot;,
+    &quot;Id&quot; : &quot;a7k4S000000XhwfQAC&quot;,
+    &quot;RecordTypeName&quot; : &quot;Bank Account&quot;,
+    &quot;FinancialAccountNumber&quot; : &quot;0797123456&quot;,
+    &quot;AccountId&quot; : &quot;0014S00000BP9rJQAT&quot;,
+    &quot;PrimaryOwner&quot; : &quot;0014S00000BP9rJQAT&quot;
+  }, {
+    &quot;Name&quot; : &quot;Classic Savings Account&quot;,
+    &quot;AccountName&quot; : &quot;Julie Morris&quot;,
+    &quot;SourceSystemId&quot; : &quot;&quot;,
+    &quot;Id&quot; : &quot;a7k4S000000XhwjQAC&quot;,
+    &quot;RecordTypeName&quot; : &quot;Bank Account&quot;,
+    &quot;FinancialAccountNumber&quot; : &quot;575875769&quot;,
+    &quot;AccountId&quot; : &quot;0014S00000BP9rJQAT&quot;,
+    &quot;PrimaryOwner&quot; : &quot;0014S00000BP9rJQAT&quot;
+  }, {
+    &quot;Name&quot; : &quot;Morris Family Mortgage&quot;,
+    &quot;AccountName&quot; : &quot;Julie Morris&quot;,
+    &quot;SourceSystemId&quot; : &quot;&quot;,
+    &quot;Id&quot; : &quot;a7k4S000000XhwpQAC&quot;,
+    &quot;RecordTypeName&quot; : &quot;Bank Account&quot;,
+    &quot;FinancialAccountNumber&quot; : &quot;M12319494&quot;,
+    &quot;AccountId&quot; : &quot;0014S00000BP9rJQAT&quot;,
+    &quot;PrimaryOwner&quot; : &quot;0014S00000BP9rJQAT&quot;
+  }, {
+    &quot;Name&quot; : &quot;Julie Morris Debit Card&quot;,
+    &quot;AccountName&quot; : &quot;Julie Morris&quot;,
+    &quot;SourceSystemId&quot; : &quot;&quot;,
+    &quot;Id&quot; : &quot;a7k4S000000XhwuQAC&quot;,
+    &quot;RecordTypeName&quot; : &quot;Bank Account&quot;,
+    &quot;FinancialAccountNumber&quot; : &quot;07971239899&quot;,
+    &quot;AccountId&quot; : &quot;0014S00000BP9rJQAT&quot;,
+    &quot;PrimaryOwner&quot; : &quot;0014S00000BP9rJQAT&quot;
+  }, {
+    &quot;Name&quot; : &quot;ROTH IRA-MORRIS&quot;,
+    &quot;AccountName&quot; : &quot;Julie Morris&quot;,
+    &quot;SourceSystemId&quot; : &quot;&quot;,
+    &quot;Id&quot; : &quot;a7k4S000000XhwxQAC&quot;,
+    &quot;RecordTypeName&quot; : &quot;Bank Account&quot;,
+    &quot;AccountId&quot; : &quot;0014S00000BP9rJQAT&quot;,
+    &quot;PrimaryOwner&quot; : &quot;0014S00000BP9rJQAT&quot;
+  }, {
+    &quot;Name&quot; : &quot;401k-MORRIS Corporate-eTrade&quot;,
+    &quot;AccountName&quot; : &quot;Julie Morris&quot;,
+    &quot;SourceSystemId&quot; : &quot;&quot;,
+    &quot;Id&quot; : &quot;a7k4S000000XhwyQAC&quot;,
+    &quot;RecordTypeName&quot; : &quot;Bank Account&quot;,
+    &quot;AccountId&quot; : &quot;0014S00000BP9rJQAT&quot;,
+    &quot;PrimaryOwner&quot; : &quot;0014S00000BP9rJQAT&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>FSCFeeReversalFilterFinancialAccounts_2</uniqueName>
+    <versionNumber>2.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

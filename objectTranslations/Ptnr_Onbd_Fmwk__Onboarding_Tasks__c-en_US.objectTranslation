@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Based on Action Type, insert an HTTPS external URL or embeddable video link, record ID, or object name --></help>
+        <label><!-- Action Params --></label>
+        <name>Ptnr_Onbd_Fmwk__Action_Params__c</name>
+    </fields>
+    <fields>
+        <label><!-- Action Type --></label>
+        <name>Ptnr_Onbd_Fmwk__Action_Type__c</name>
+        <picklistValues>
+            <masterLabel>Create Record</masterLabel>
+            <translation><!-- Create Record --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Display Video</masterLabel>
+            <translation><!-- Display Video --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Link</masterLabel>
+            <translation><!-- Link --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Navigate to Object</masterLabel>
+            <translation><!-- Navigate to Object --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Button Label --></label>
+        <name>Ptnr_Onbd_Fmwk__Button_Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- Short summary of tasks, such as Forms or Meet the Team. --></help>
+        <label><!-- Category --></label>
+        <name>Ptnr_Onbd_Fmwk__Category__c</name>
+    </fields>
+    <fields>
+        <help><!-- Action is considered complete after a member clicks the tile. --></help>
+        <label><!-- Complete Task When Action clicked? --></label>
+        <name>Ptnr_Onbd_Fmwk__Complete_Task_When_Action_clicked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Ptnr_Onbd_Fmwk__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration (in Days) --></label>
+        <name>Ptnr_Onbd_Fmwk__Duration_in_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- Complete URL of the tile image --></help>
+        <label><!-- Image Name --></label>
+        <name>Ptnr_Onbd_Fmwk__Image_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onboarding Plan --></label>
+        <name>Ptnr_Onbd_Fmwk__Onboarding_Plan__c</name>
+        <relationshipLabel><!-- Onboarding Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Multiple tasks can have the same sequence number if they apply to different audiences. --></help>
+        <label><!-- Seq # --></label>
+        <name>Ptnr_Onbd_Fmwk__Seq__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the audience group the task is applicable for and pick a Seq# accordingly. By default actions are applicable to all audience groups in your partner&apos;s hierarchy if one exists --></help>
+        <label><!-- Which roles is this task for? --></label>
+        <name>Ptnr_Onbd_Fmwk__Which_roles_is_this_task_for__c</name>
+    </fields>
+</CustomObjectTranslation>

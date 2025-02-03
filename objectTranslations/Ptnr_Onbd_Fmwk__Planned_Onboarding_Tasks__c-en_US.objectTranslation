@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned To --></label>
+        <name>Ptnr_Onbd_Fmwk__Assigned_To__c</name>
+        <relationshipLabel><!-- Contact Onboarding Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Ptnr_Onbd_Fmwk__Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Computed Status --></label>
+        <name>Ptnr_Onbd_Fmwk__Computed_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Ptnr_Onbd_Fmwk__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration (in Days) --></label>
+        <name>Ptnr_Onbd_Fmwk__Duration_in_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Predecessor Task Number --></label>
+        <name>Ptnr_Onbd_Fmwk__Predecessor_Task_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Seq # --></label>
+        <name>Ptnr_Onbd_Fmwk__Seq__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Ptnr_Onbd_Fmwk__Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Task Due Date --></label>
+        <name>Ptnr_Onbd_Fmwk__Task_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template Task --></label>
+        <name>Ptnr_Onbd_Fmwk__TemplateTask__c</name>
+        <relationshipLabel><!-- Contact Onboarding Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Template Step Image --></label>
+        <name>Ptnr_Onbd_Fmwk__Template_Step_Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- URL --></label>
+        <name>Ptnr_Onbd_Fmwk__URL__c</name>
+    </fields>
+</CustomObjectTranslation>

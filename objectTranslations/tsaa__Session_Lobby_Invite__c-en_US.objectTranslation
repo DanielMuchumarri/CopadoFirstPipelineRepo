@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Appointment Status --></label>
+        <name>tsaa__AppointmentStatus__c</name>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cannot Complete</masterLabel>
+            <translation><!-- Cannot Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deleted</masterLabel>
+            <translation><!-- Deleted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dispatched</masterLabel>
+            <translation><!-- Dispatched --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Session Link --></label>
+        <name>tsaa__CustomerSessionLink__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Name --></label>
+        <name>tsaa__Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- End --></label>
+        <name>tsaa__End__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>tsaa__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Language --></label>
+        <name>tsaa__Language__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lobby Link --></label>
+        <name>tsaa__LobbyLink__c</name>
+    </fields>
+    <fields>
+        <label><!-- Login Agent --></label>
+        <name>tsaa__LoginAgent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Name --></label>
+        <name>tsaa__ObjectName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record ID --></label>
+        <name>tsaa__RecordId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session ID --></label>
+        <name>tsaa__SessionId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start --></label>
+        <name>tsaa__Start__c</name>
+    </fields>
+</CustomObjectTranslation>

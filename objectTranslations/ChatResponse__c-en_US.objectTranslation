@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Chat Response</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Chat Responses</value>
+    </caseValues>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Chat --></label>
+        <name>EndChat__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Keyword --></label>
+        <name>Keyword__c</name>
+    </fields>
+    <fields>
+        <help><!-- bookend-start  // inbound  //  outbound  //  bookend-end --></help>
+        <label><!-- Message Type --></label>
+        <name>MessageType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prompt --></label>
+        <name>Prompt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response --></label>
+        <name>Response__c</name>
+    </fields>
+    <fields>
+        <help><!-- in milliseconds --></help>
+        <label><!-- Typing Time --></label>
+        <name>TypingTime__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

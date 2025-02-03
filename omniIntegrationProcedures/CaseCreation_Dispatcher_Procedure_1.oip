@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{
+    &quot;Action1&quot;: null,
+    &quot;Adjustment&quot;: null,
+    &quot;CaseDetails&quot;: {
+        &quot;fAccountSupportFlag&quot;: true,
+        &quot;fReplaceCardFlag&quot;: true,
+        &quot;msCaseTypes&quot;: &quot;Card Replacement;General&quot;,
+        &quot;rdoPriority&quot;: &quot;High&quot;,
+        &quot;selAccountAccess&quot;: &quot;Checking &amp; Saving&quot;,
+        &quot;selOrigin&quot;: &quot;Phone&quot;,
+        &quot;selPinInformation&quot;: &quot;Same&quot;,
+        &quot;selRequestMethod&quot;: &quot;Oral&quot;
+    },
+    &quot;Fraud&quot;: {
+        &quot;curPortionDisputed&quot;: 10,
+        &quot;disSectionI&quot;: true,
+        &quot;disSectionII&quot;: null,
+        &quot;fDaysSinceLastStatement&quot;: 38,
+        &quot;fRegEFlag&quot;: true,
+        &quot;fTrxWithdrawalPlusTrxDeposit&quot;: 123.45,
+        &quot;rdoOrderDispute&quot;: &quot;Yes&quot;,
+        &quot;rdoRecurringCharge&quot;: &quot;No&quot;,
+        &quot;rdoSubscriptionCharge&quot;: &quot;Yes&quot;,
+        &quot;rdoSuspiciousActivity&quot;: &quot;No&quot;,
+        &quot;selSection&quot;: &quot;SectionI&quot;,
+        &quot;txtAreaMoreDetails&quot;: &quot;skdlfjsdlkfjdslkfj sdklfjslkd sdlkjflksajflkasjdf dslkjf&quot;
+    },
+    &quot;Transactions&quot;: {
+        &quot;fNumberSelected&quot;: 1,
+        &quot;rdoNextActions&quot;: &quot;Fraud&quot;,
+        &quot;selMore&quot;: null,
+        &quot;selStatements&quot;: &quot;12345999&quot;,
+        &quot;taAccounts-Block&quot;: {
+            &quot;taAccounts&quot;: &quot;Classic Checking - 58412390&quot;
+        },
+        &quot;trxs&quot;: [
+            {
+                &quot;StatementId&quot;: &quot;12345678&quot;,
+                &quot;TrxBalance&quot;: 59566.88,
+                &quot;TrxDate&quot;: &quot;2020-08-31&quot;,
+                &quot;TrxDesc&quot;: &quot;GINOS PIZZA&quot;,
+                &quot;TrxSourceCode&quot;: &quot;DEB&quot;,
+                &quot;TrxUID&quot;: &quot;100115011&quot;,
+                &quot;TrxWithdrawals&quot;: 567.89,
+                &quot;checked&quot;: true,
+                &quot;filtered&quot;: false,
+                &quot;finAccountId&quot;: &quot;a4l4W0000026TmTQAU&quot;,
+                &quot;rowid&quot;: 6,
+                &quot;tagname&quot;: &quot;cb_6&quot;
+            }
+        ]
+    },
+    &quot;accountId&quot;: &quot;0014W000024fX5xQAE&quot;,
+    &quot;contactId&quot;: &quot;0034W00002DFUmzQAH&quot;,
+    &quot;financialAccountDropdownData&quot;: [
+        {
+            &quot;NameAndNumber&quot;: &quot;Day to Day Banking - 58413762&quot;,
+            &quot;RecordTypeName&quot;: &quot;Bank Account&quot;,
+            &quot;financialAccountId&quot;: &quot;a4l4W0000026TmUQAU&quot;
+        },
+        {
+            &quot;NameAndNumber&quot;: &quot;Classic Checking - 58412390&quot;,
+            &quot;RecordTypeName&quot;: &quot;Bank Account&quot;,
+            &quot;financialAccountId&quot;: &quot;a4l4W0000026TmTQAU&quot;
+        },
+        {
+            &quot;NameAndNumber&quot;: &quot;Rewards Card - 58419954&quot;,
+            &quot;RecordTypeName&quot;: &quot;Credit Card&quot;,
+            &quot;financialAccountId&quot;: &quot;a4l4W0000026TmNQAU&quot;
+        },
+        {
+            &quot;NameAndNumber&quot;: &quot;SA 42848198 - 42848198&quot;,
+            &quot;RecordTypeName&quot;: &quot;Savings Account&quot;,
+            &quot;financialAccountId&quot;: &quot;a4l4W0000026TmPQAU&quot;
+        }
+    ],
+    &quot;financialAccountId&quot;: &quot;a4l4W0000026TmTQAU&quot;,
+    &quot;financialAccountName&quot;: &quot;Classic Checking&quot;,
+    &quot;financialAccountNumber&quot;: &quot;58412390&quot;,
+    &quot;financialAccountType&quot;: &quot;Checking&quot;,
+    &quot;lastStatementDate&quot;: &quot;2020-08-27T04:00:00.000Z&quot;,
+    &quot;omnidesignerChannelId&quot;: &quot;omni-designer-channel-id-1601840061395&quot;,
+    &quot;timeStamp&quot;: &quot;2020-10-04T19:34:29.489Z&quot;,
+    &quot;trxSelected&quot;: 6,
+    &quot;trxs&quot;: [
+        {
+            &quot;StatementId&quot;: &quot;12345678&quot;,
+            &quot;TrxBalance&quot;: 55796.18,
+            &quot;TrxDate&quot;: &quot;2020-09-03&quot;,
+            &quot;TrxDeposits&quot;: 5678.9,
+            &quot;TrxDesc&quot;: &quot;SPOUSEEMP PAY&quot;,
+            &quot;TrxSourceCode&quot;: &quot;EFT&quot;,
+            &quot;TrxUID&quot;: &quot;10013014&quot;,
+            &quot;finAccountId&quot;: &quot;a4l4W0000026TmTQAU&quot;
+        },
+        {
+            &quot;StatementId&quot;: &quot;12345678&quot;,
+            &quot;TrxBalance&quot;: 50117.28,
+            &quot;TrxDate&quot;: &quot;2020-09-01&quot;,
+            &quot;TrxDesc&quot;: &quot;TD VISA PREAUTH PYMT&quot;,
+            &quot;TrxSourceCode&quot;: &quot;CC&quot;,
+            &quot;TrxUID&quot;: &quot;10012878&quot;,
+            &quot;TrxWithdrawals&quot;: 9876.5,
+            &quot;finAccountId&quot;: &quot;a4l4W0000026TmTQAU&quot;
+        },
+        {
+            &quot;StatementId&quot;: &quot;12345678&quot;,
+            &quot;TrxBalance&quot;: 59993.78,
+            &quot;TrxDate&quot;: &quot;2020-09-01&quot;,
+            &quot;TrxDesc&quot;: &quot;MANULIFE MSP&quot;,
+            &quot;TrxSourceCode&quot;: &quot;SCH&quot;,
+            &quot;TrxUID&quot;: &quot;100121111&quot;,
+            &quot;TrxWithdrawals&quot;: 53.1,
+            &quot;finAccountId&quot;: &quot;a4l4W0000026TmTQAU&quot;
+        },
+        {
+            &quot;StatementId&quot;: &quot;12345678&quot;,
+            &quot;TrxBalance&quot;: 60046.88,
+            &quot;TrxDate&quot;: &quot;2020-08-31&quot;,
+            &quot;TrxDeposits&quot;: 29.95,
+            &quot;TrxDesc&quot;: &quot;ACCT BAL REBATE&quot;,
+            &quot;TrxSourceCode&quot;: &quot;INT&quot;,
+            &quot;TrxUID&quot;: &quot;100118012&quot;,
+            &quot;finAccountId&quot;: &quot;a4l4W0000026TmTQAU&quot;
+        },
+        {
+            &quot;StatementId&quot;: &quot;12345678&quot;,
+            &quot;TrxBalance&quot;: 60046.88,
+            &quot;TrxDate&quot;: &quot;2020-08-31&quot;,
+            &quot;TrxDeposits&quot;: 480,
+            &quot;TrxDesc&quot;: &quot;SUN LIFE MSP&quot;,
+            &quot;TrxSourceCode&quot;: &quot;EFT&quot;,
+            &quot;TrxUID&quot;: &quot;100117088&quot;,
+            &quot;finAccountId&quot;: &quot;a4l4W0000026TmTQAU&quot;
+        },
+        {
+            &quot;StatementId&quot;: &quot;12345678&quot;,
+            &quot;TrxBalance&quot;: 60016.93,
+            &quot;TrxDate&quot;: &quot;2020-08-31&quot;,
+            &quot;TrxDesc&quot;: &quot;MONTHLY ACCOUNT FEE&quot;,
+            &quot;TrxSourceCode&quot;: &quot;FEE&quot;,
+            &quot;TrxUID&quot;: &quot;100118011&quot;,
+            &quot;TrxWithdrawals&quot;: 29.95,
+            &quot;finAccountId&quot;: &quot;a4l4W0000026TmTQAU&quot;
+        },
+        {
+            &quot;StatementId&quot;: &quot;12345678&quot;,
+            &quot;TrxBalance&quot;: 59566.88,
+            &quot;TrxDate&quot;: &quot;2020-08-31&quot;,
+            &quot;TrxDesc&quot;: &quot;GINOS PIZZA&quot;,
+            &quot;TrxSourceCode&quot;: &quot;DEB&quot;,
+            &quot;TrxUID&quot;: &quot;100115011&quot;,
+            &quot;TrxWithdrawals&quot;: 567.89,
+            &quot;finAccountId&quot;: &quot;a4l4W0000026TmTQAU&quot;
+        },
+        {
+            &quot;StatementId&quot;: &quot;12345678&quot;,
+            &quot;TrxBalance&quot;: 60099.77,
+            &quot;TrxDate&quot;: &quot;2020-08-28&quot;,
+            &quot;TrxDeposits&quot;: 11.3,
+            &quot;TrxDesc&quot;: &quot;E-TRANSFER CA***6fy&quot;,
+            &quot;TrxSourceCode&quot;: &quot;ETR&quot;,
+            &quot;TrxUID&quot;: &quot;100112034&quot;,
+            &quot;finAccountId&quot;: &quot;a4l4W0000026TmTQAU&quot;
+        },
+        {
+            &quot;StatementId&quot;: &quot;12345678&quot;,
+            &quot;TrxBalance&quot;: 60134.77,
+            &quot;TrxDate&quot;: &quot;2020-08-28&quot;,
+            &quot;TrxDeposits&quot;: 35,
+            &quot;TrxDesc&quot;: &quot;CANADA LIFE INS&quot;,
+            &quot;TrxSourceCode&quot;: &quot;EFT&quot;,
+            &quot;TrxUID&quot;: &quot;100112102&quot;,
+            &quot;finAccountId&quot;: &quot;a4l4W0000026TmTQAU&quot;
+        },
+        {
+            &quot;StatementId&quot;: &quot;12345678&quot;,
+            &quot;TrxBalance&quot;: 60088.47,
+            &quot;TrxDate&quot;: &quot;2020-08-28&quot;,
+            &quot;TrxDeposits&quot;: 4567.8,
+            &quot;TrxDesc&quot;: &quot;A S YOUREMPLOYER PAY&quot;,
+            &quot;TrxSourceCode&quot;: &quot;EFT&quot;,
+            &quot;TrxUID&quot;: &quot;100112021&quot;,
+            &quot;finAccountId&quot;: &quot;a4l4W0000026TmTQAU&quot;
+        },
+        {
+            &quot;StatementId&quot;: &quot;12345999&quot;,
+            &quot;TrxBalance&quot;: 55520.67,
+            &quot;TrxDate&quot;: &quot;2020-08-27&quot;,
+            &quot;TrxDesc&quot;: &quot;SEND E-TFR CA***ZhK&quot;,
+            &quot;TrxSourceCode&quot;: &quot;ETR&quot;,
+            &quot;TrxUID&quot;: &quot;100110909&quot;,
+            &quot;TrxWithdrawals&quot;: 60,
+            &quot;finAccountId&quot;: &quot;a4l4W0000026TmTQAU&quot;
+        },
+        {
+            &quot;StatementId&quot;: &quot;12345999&quot;,
+            &quot;TrxBalance&quot;: 55580.67,
+            &quot;TrxDate&quot;: &quot;2020-08-26&quot;,
+            &quot;TrxDesc&quot;: &quot;SEND E-TFR CA***M8t&quot;,
+            &quot;TrxSourceCode&quot;: &quot;ETR&quot;,
+            &quot;TrxUID&quot;: &quot;100110234&quot;,
+            &quot;TrxWithdrawals&quot;: 160,
+            &quot;finAccountId&quot;: &quot;a4l4W0000026TmTQAU&quot;
+        },
+        {
+            &quot;StatementId&quot;: &quot;12345999&quot;,
+            &quot;TrxBalance&quot;: 55740.67,
+            &quot;TrxDate&quot;: &quot;2020-08-25&quot;,
+            &quot;TrxDesc&quot;: &quot;LIFE FORCE PHYS _F&quot;,
+            &quot;TrxSourceCode&quot;: &quot;SCH&quot;,
+            &quot;TrxUID&quot;: &quot;10009999&quot;,
+            &quot;TrxWithdrawals&quot;: 80,
+            &quot;finAccountId&quot;: &quot;a4l4W0000026TmTQAU&quot;
+        },
+        {
+            &quot;StatementId&quot;: &quot;12345999&quot;,
+            &quot;TrxBalance&quot;: 55820.67,
+            &quot;TrxDate&quot;: &quot;2020-08-25&quot;,
+            &quot;TrxDesc&quot;: &quot;SEND E-TFR CA***ZKS&quot;,
+            &quot;TrxSourceCode&quot;: &quot;ETR&quot;,
+            &quot;TrxUID&quot;: &quot;10003040&quot;,
+            &quot;TrxWithdrawals&quot;: 10,
+            &quot;finAccountId&quot;: &quot;a4l4W0000026TmTQAU&quot;
+        },
+        {
+            &quot;StatementId&quot;: &quot;12345999&quot;,
+            &quot;TrxBalance&quot;: 55830.67,
+            &quot;TrxDate&quot;: &quot;2020-08-24&quot;,
+            &quot;TrxDesc&quot;: &quot;CERTAS H&amp;A INS INS&quot;,
+            &quot;TrxSourceCode&quot;: &quot;EFT&quot;,
+            &quot;TrxUID&quot;: &quot;10000001&quot;,
+            &quot;TrxWithdrawals&quot;: 543.21,
+            &quot;finAccountId&quot;: &quot;a4l4W0000026TmTQAU&quot;
+        }
+    ],
+    &quot;userCurrencyCode&quot;: &quot;USD&quot;,
+    &quot;userId&quot;: &quot;0054W00000BPTa5QAH&quot;,
+    &quot;userName&quot;: &quot;duane@bankingdisputedemo123456.com&quot;,
+    &quot;userProfile&quot;: &quot;Custom: System Administrator&quot;,
+    &quot;userTimeZone&quot;: &quot;-420&quot;
+}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>ipCaseDispatcher</name>
+    <omniProcessElements>
+        <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>drCreateAccountSupportCase</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;bundle&quot; : &quot;createAccountSupportCase&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;CaseDetails:fAccountSupportFlag==true&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;label&quot; : &quot;DataRaptorPostAction1&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;drTransformCaseData&quot;,
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true
+}</propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>drCreateRequestNewCardCase</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;bundle&quot; : &quot;createCardReplacementCase&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;CaseDetails:fReplaceCardFlag==true&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;label&quot; : &quot;DataRaptorPostAction1&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;drTransformCaseData&quot;,
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true
+}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>drIOTBotChatterPostAccountSupport</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;body&quot; : &quot;=\&quot;New Reg E fraud investigation launched.\&quot;&quot;,
+    &quot;parentId&quot; : &quot;%drCreateAccountSupportCase:Case_1:Id%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;bundle&quot; : &quot;postFeedParentIdAndBodyOnly&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;CaseDetails:fAccountSupportFlag==true || Fraud:fRegEFlag==true&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;label&quot; : &quot;DataRaptorPostAction3&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true
+}</propertySetConfig>
+        <sequenceNumber>5.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>drIOTBotChatterPostAutoSettle</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;body&quot; : &quot;=\&quot;Claim amount is lower than threshold. Automated write-off initiated.\&quot;&quot;,
+    &quot;parentId&quot; : &quot;%drCreateAccountSupportCase:Case_1:Id%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;bundle&quot; : &quot;postFeedParentIdAndBodyOnly&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;Fraud:fRegEFlag==true &amp;&amp; svThresholds:AutomatedWriteOffThreshold&gt;=drTransformCaseData:ClaimAmount &amp;&amp; drTransformCaseData:ClaimAmount&gt;0&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;label&quot; : &quot;DataRaptorPostAction3&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true
+}</propertySetConfig>
+        <sequenceNumber>6.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>drIOTBotChatterPostClaimThresholdExceeded</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;body&quot; : &quot;=\&quot;%svThresholds:ThresholdDisplay% has been exceeded (%drTransformCaseData:ClaimAmountCurrencyDisplay%). No automated write-off.\&quot;&quot;,
+    &quot;parentId&quot; : &quot;%drCreateAccountSupportCase:Case_1:Id%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;bundle&quot; : &quot;postFeedParentIdAndBodyOnly&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;Fraud:fRegEFlag==true &amp;&amp; svThresholds:AutomatedWriteOffThreshold&lt;drTransformCaseData:ClaimAmount&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;label&quot; : &quot;DataRaptorPostAction3&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true
+}</propertySetConfig>
+        <sequenceNumber>7.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>drTransformCaseData</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;bundle&quot; : &quot;transformInvestigationToDisputeCase&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;ignoreCache&quot; : false,
+  &quot;label&quot; : &quot;DataRaptorTransformAction1&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>DataRaptor Transform Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>EmailAction</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;OrgWideEmailAddress&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;attachmentList&quot; : &quot;&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;contentVersionList&quot; : &quot;&quot;,
+  &quot;disOnTplt&quot; : false,
+  &quot;emailInformation&quot; : {
+    &quot;bccAddressList&quot; : [ ],
+    &quot;ccAddressList&quot; : [ ],
+    &quot;emailBody&quot; : &quot;&quot;,
+    &quot;emailSubject&quot; : &quot;&quot;,
+    &quot;setHtmlBody&quot; : false,
+    &quot;toAddressList&quot; : [ &quot;&quot; ]
+  },
+  &quot;emailTemplateInformation&quot; : {
+    &quot;emailTargetObjectId&quot; : &quot;%contactId%&quot;,
+    &quot;emailTemplateName&quot; : &quot;Case_Update_Transaction_Dispute&quot;,
+    &quot;saveAsActivity&quot; : false,
+    &quot;whatId&quot; : &quot;%drCreateAccountSupportCase:Case_1:Id%&quot;
+  },
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;label&quot; : &quot;EmailAction1&quot;,
+  &quot;show&quot; : null,
+  &quot;staticDocList&quot; : [ ],
+  &quot;useTemplate&quot; : true
+}</propertySetConfig>
+        <sequenceNumber>8.0</sequenceNumber>
+        <type>Email Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ipCreateActionItems</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;caseId&quot; : &quot;%drCreateAccountSupportCase:Case_1:Id%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;integrationProcedureKey&quot; : &quot;CreateRegECaseActionPlans_CreateRegECaseActionPlans&quot;,
+  &quot;remoteOptions&quot; : {
+    &quot;useFuture&quot; : true,
+    &quot;preTransformBundle&quot; : &quot;&quot;,
+    &quot;postTransformBundle&quot; : &quot;&quot;
+  },
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;disableChainable&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;label&quot; : &quot;IntegrationProcedureAction1&quot;,
+  &quot;show&quot; : null,
+  &quot;preTransformBundle&quot; : &quot;&quot;,
+  &quot;postTransformBundle&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>9.0</sequenceNumber>
+        <type>Integration Procedure Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ResponseAction1</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;additionalOutput&quot; : {
+    &quot;accountSupportCaseId&quot; : &quot;%drCreateAccountSupportCase:Case_1:Id%&quot;,
+    &quot;newCardCaseId&quot; : &quot;%drCreateRequestNewCardCase:Case_1:Id%&quot;,
+    &quot;showSummary&quot; : true
+  },
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;label&quot; : &quot;ResponseAction1&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : true,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true,
+  &quot;vlcResponseHeaders&quot; : { }
+}</propertySetConfig>
+        <sequenceNumber>10.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>svThresholds</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;elementValueMap&quot; : {
+    &quot;AutomatedWriteOffThreshold&quot; : 50,
+    &quot;ThresholdDisplay&quot; : &quot;$50&quot;
+  },
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;label&quot; : &quot;SetValues1&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;show&quot; : null
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessKey>CaseCreation_Dispatcher</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;trackingCustomData&quot; : { },
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;description&quot; : &quot;&quot;,
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;rollbackOnError&quot; : false,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;ttlMinutes&quot; : 5,
+  &quot;mockResponseMap&quot; : { }
+}</propertySetConfig>
+    <subType>Dispatcher</subType>
+    <type>CaseCreation</type>
+    <uniqueName>CaseCreation_Dispatcher_Procedure_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <webComponentKey>24fb5ed0-4612-e3e2-469e-8f758e15f20e</webComponentKey>
+</OmniIntegrationProcedure>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDataset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <application>Wealth_Management_TCRM_Stephanie_Shaw</application>
+    <masterLabel>SFC_Practice_BookEA</masterLabel>
+    <type>default</type>
+</WaveDataset>

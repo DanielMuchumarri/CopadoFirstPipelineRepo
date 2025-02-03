@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>FSC_DM_AdditionalQ3</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Can you provide any supporting document?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>File</dataType>
+    <developerName>FSC_DM_v1_AdditionalQ3</developerName>
+    <name>FSC_DM_AdditionalQ3</name>
+    <questionCategory>Financial</questionCategory>
+</AssessmentQuestion>

@@ -1,0 +1,17 @@
+{
+  "required" : [ "finAccountRec" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "finAccountRec" : {
+      "title" : "finAccountRec",
+      "description" : "Update the Credit Card Financial Account record Status field value to Cancelled only if the current status is on hold. If the current status is active then call the action that sets the status to on hold.",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "FinServ__FinancialAccount__c"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

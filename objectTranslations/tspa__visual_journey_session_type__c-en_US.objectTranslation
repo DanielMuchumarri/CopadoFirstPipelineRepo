@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Is Language Active --></label>
+        <name>tspa__Is_Language_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Language --></label>
+        <name>tspa__Language__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile --></label>
+        <name>tspa__Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Modified Value --></label>
+        <name>tspa__Modified_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Value --></label>
+        <name>tspa__Original_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tablet --></label>
+        <name>tspa__Tablet__c</name>
+    </fields>
+    <fields>
+        <label><!-- alias --></label>
+        <name>tspa__alias__c</name>
+    </fields>
+    <fields>
+        <label><!-- isActive --></label>
+        <name>tspa__isActive__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>FSCRIALoadPrimaryBeneficiaries</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadPrimaryBeneficiariesCustom9064</globalKey>
+        <inputFieldName>BeneficiaryFboInformation:PrimaryBeneficiaries:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadPrimaryBeneficiaries</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadPrimaryBeneficiariesCustom9605</globalKey>
+        <inputFieldName>BeneficiaryFboInformation:PrimaryBeneficiaries:BeneficiaryType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadPrimaryBeneficiaries</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BeneficiaryType__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadPrimaryBeneficiariesCustom1106</globalKey>
+        <inputFieldName>BeneficiaryFboInformation:PrimaryBeneficiaries:SharePercentagePrimaryBeneficiary</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadPrimaryBeneficiaries</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SharePercentage__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadPrimaryBeneficiariesCustom9636</globalKey>
+        <inputFieldName>BeneficiaryFboInformation:PrimaryBeneficiaries:BeneficiaryFirstNamePrimaryBeneficiary</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadPrimaryBeneficiaries</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FirstName</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadPrimaryBeneficiariesCustom7175</globalKey>
+        <inputFieldName>BeneficiaryFboInformation:PrimaryBeneficiaries:CountryOfCitizenshipOrganizationPrimaryBeneficiary</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadPrimaryBeneficiaries</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FinServ__PrimaryCitizenship__pc</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadPrimaryBeneficiariesCustom6856</globalKey>
+        <inputFieldName>BeneficiaryFboInformation:PrimaryBeneficiaries:BeneficiaryLastNamePrimaryBeneficiary</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadPrimaryBeneficiaries</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>LastName</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Beneficiary</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadPrimaryBeneficiariesCustom3949</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadPrimaryBeneficiaries</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Role__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadPrimaryBeneficiariesCustom8247</globalKey>
+        <inputFieldName>BeneficiaryFboInformation:PrimaryBeneficiaries:DateOfBirthTrustPrimaryBeneficiary</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadPrimaryBeneficiaries</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>DateOfTrust__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadPrimaryBeneficiariesCustom3698</globalKey>
+        <inputFieldName>BeneficiaryFboInformation:PrimaryBeneficiaries:SocialSecurityTaxpayerIdNumberPrimaryBeneficiary</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadPrimaryBeneficiaries</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FinServ__LastFourDigitSSN__pc</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadPrimaryBeneficiariesCustom7334</globalKey>
+        <inputFieldName>BeneficiaryFboInformation:PrimaryBeneficiaries:RecordTypeId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadPrimaryBeneficiaries</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RecordTypeId</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;SELECT/\/\/Id/\/\/FROM/\/\/RecordType/\/\/where/\/\/sObjectType/\/\/=/\/\/&apos;Account&apos;/\/\/AND/\/\/DeveloperName/\/\/=/\/\/&apos;RIAClient&apos;&quot; QUERY</formulaConverted>
+        <formulaExpression>QUERY(&quot;SELECT Id FROM RecordType where sObjectType = &apos;Account&apos; AND DeveloperName = &apos;RIAClient&apos;&quot;)</formulaExpression>
+        <formulaResultPath>BeneficiaryFboInformation:PrimaryBeneficiaries:RecordTypeId</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>FSCRIALoadPrimaryBeneficiariesCustom7138</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadPrimaryBeneficiaries</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;omniscriptId&quot; : &quot;0jNDP0000004CYR2A2&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;type&quot; : &quot;Application&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;sId&quot; : &quot;0jNDP0000004CYR2A2&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;subType&quot; : &quot;Brokerage&quot;,
+  &quot;timeStamp&quot; : &quot;2023-01-24T17:46:05.392Z&quot;,
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;userTimeZoneName&quot; : &quot;America/Los_Angeles&quot;,
+  &quot;userTimeZone&quot; : &quot;-480&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;test-nkoomqdemzek@example.com&quot;,
+  &quot;userId&quot; : &quot;005DP000007qs8NYAQ&quot;,
+  &quot;PrimaryAccountHolder&quot; : {
+    &quot;AccountHolder&quot; : {
+      &quot;MailingAddressAccountHolder&quot; : {
+        &quot;SameAsLegalAddressAccountHolder&quot; : false
+      },
+      &quot;EmployerInformationAndAffiliates&quot; : {
+        &quot;ForeignPoliticalFigure&quot; : false,
+        &quot;ControlPersonAffiliate&quot; : false,
+        &quot;CompanySymbol&quot; : null,
+        &quot;EmployedByFinra&quot; : false,
+        &quot;SameAsEmployerFinra&quot; : false
+      },
+      &quot;FirstNameAccountHolder&quot; : &quot;John&quot;,
+      &quot;MiddleNameAccountHolder&quot; : null,
+      &quot;LastNameAccountHolder&quot; : &quot;Doe&quot;
+    }
+  },
+  &quot;EntityAccountInformation&quot; : null,
+  &quot;AccountSetup&quot; : {
+    &quot;AccountType&quot; : &quot;Individual&quot;
+  },
+  &quot;Suitability&quot; : {
+    &quot;FinancialPosition&quot; : {
+      &quot;AccountFundingSource&quot; : null,
+      &quot;AnnualIncome&quot; : &quot;$0-$25,000&quot;
+    },
+    &quot;InvestmentProfile&quot; : {
+      &quot;InvestmentPurpose&quot; : null,
+      &quot;RiskTolerance&quot; : &quot;Aggressive&quot;
+    },
+    &quot;ProductKnowledge&quot; : {
+      &quot;InvestmentProductKnowledge&quot; : null,
+      &quot;InvestmentProductExperience&quot; : null
+    },
+    &quot;DecisionMakingExperience&quot; : {
+      &quot;ConsultBroker&quot; : false,
+      &quot;MakeOwnDecisions&quot; : false,
+      &quot;ConsultFamilyFriends&quot; : false
+    }
+  },
+  &quot;AccountCharacteristics&quot; : {
+    &quot;DuplicateInformation&quot; : {
+      &quot;ToAllAccountHolders&quot; : false,
+      &quot;ToThirdParty&quot; : false,
+      &quot;ThirdPartyDocuments&quot; : null
+    },
+    &quot;Edelivery&quot; : {
+      &quot;edeliveryEnabled&quot; : true
+    },
+    &quot;ServiceInstuctions&quot; : {
+      &quot;Proceeds&quot; : &quot;Hold in core account investment vehicle (if specified) or in brokerage account&quot;
+    },
+    &quot;BankInformation&quot; : {
+      &quot;BankAccountType&quot; : &quot;Checking&quot;,
+      &quot;AbaNumber&quot; : &quot;123123123&quot;,
+      &quot;AccountNumber&quot; : &quot;1231231233&quot;
+    }
+  },
+  &quot;BeneficiaryFboInformation&quot; : {
+    &quot;PrimaryBeneficiaries&quot; : {
+      &quot;BeneficiaryType&quot; : &quot;Non-Spouse&quot;,
+      &quot;BeneficiaryFirstNamePrimaryBeneficiary&quot; : &quot;Bruce&quot;,
+      &quot;BeneficiaryLastNamePrimaryBeneficiary&quot; : &quot;Wayne&quot;
+    },
+    &quot;ContingentBeneficiaries&quot; : {
+      &quot;BeneficiaryTypeContingentBeneficiary&quot; : &quot;Non-Spouse&quot;,
+      &quot;BeneficiaryFirstNameContingentBeneficiary&quot; : &quot;Alfred&quot;,
+      &quot;BeneficiaryLastNameContingentBeneficiary&quot; : &quot;Pennyworth&quot;
+    }
+  },
+  &quot;EntitiesThatAreAccountHolders&quot; : {
+    &quot;MailingAddressEntity&quot; : {
+      &quot;SameAsLegalAddressEntity&quot; : false
+    },
+    &quot;EntityInformation&quot; : {
+      &quot;EntityName&quot; : &quot;entity name&quot;
+    }
+  },
+  &quot;AccountStakeholder&quot; : {
+    &quot;StakeholderInformation&quot; : {
+      &quot;stakeholderControlPerson&quot; : &quot;No&quot;,
+      &quot;StakeholderEntityHolder&quot; : &quot;No&quot;,
+      &quot;PersonalInformation&quot; : {
+        &quot;FirstNameStakeholder&quot; : &quot;John&quot;,
+        &quot;MiddleNameStakeholder&quot; : null,
+        &quot;LastNameStakeholder&quot; : &quot;Smith&quot;
+      }
+    }
+  },
+  &quot;omniScriptId&quot; : &quot;0jNDP0000004CYR2A2&quot;,
+  &quot;elementName&quot; : &quot;IntegrationProcedureAction1&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>true</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>FSCRIALoadPrimaryBeneficiaries_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

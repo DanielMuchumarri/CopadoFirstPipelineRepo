@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Einstein Response</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Einstein Responses</value>
+    </caseValues>
+    <fields>
+        <label><!-- Answer --></label>
+        <name>Answer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Interactive Page State --></label>
+        <name>ChangeInteractivePageState__c</name>
+    </fields>
+    <fields>
+        <label><!-- Content Region State --></label>
+        <name>ContentRegionState__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- The LWC directory name, no dashes. --></help>
+        <label><!-- LWC Name --></label>
+        <name>LWCName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question --></label>
+        <name>Question__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response Delay --></label>
+        <name>ResponseDelay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Record Id --></label>
+        <name>TargetRecordId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use LWC Override --></label>
+        <name>UseLWCOverride__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

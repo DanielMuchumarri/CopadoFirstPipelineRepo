@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Training Course</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Training Courses</value>
+    </caseValues>
+    <fields>
+        <help><!-- Indicates whether a course can be registered for. Shows TRUE if the status is &apos;Available for Registration&apos; and the course starts in the future. --></help>
+        <label><!-- Available for Registration --></label>
+        <name>Available_for_Registration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Detailed curriculum for this course. --></help>
+        <label><!-- Course Curriculum --></label>
+        <name>Course_Curriculum__c</name>
+    </fields>
+    <fields>
+        <help><!-- Gives a way to flag a particular course in course listings. --></help>
+        <label><!-- Course Flag --></label>
+        <name>Course_Flag__c</name>
+    </fields>
+    <fields>
+        <help><!-- Format of the training course: Online, in person, etc. --></help>
+        <label><!-- Course Format --></label>
+        <name>Course_Format__c</name>
+        <picklistValues>
+            <masterLabel>In-Person</masterLabel>
+            <translation><!-- In-Person --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online</masterLabel>
+            <translation><!-- Online --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- URL to an image representing this course. Will be used on pages in Lightning Community and Salesforce CMS. --></help>
+        <label><!-- Course Image --></label>
+        <name>Course_Image__c</name>
+    </fields>
+    <fields>
+        <help><!-- Course status. Only courses that are Available for Registration should appear to end users. --></help>
+        <label><!-- Course Status --></label>
+        <name>Course_Status__c</name>
+        <picklistValues>
+            <masterLabel>Archived</masterLabel>
+            <translation><!-- Archived --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Available for Registration</masterLabel>
+            <translation><!-- Available for Registration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Can be used with Salesforce CMS and other ways to do course listings to control the order of display of this course in relation to others. --></help>
+        <label><!-- Display Priority --></label>
+        <name>Display_Priority__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- A brief description of the course. --></help>
+        <label><!-- Short Description --></label>
+        <name>Short_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Start date &amp; time for the course. --></help>
+        <label><!-- Starts --></label>
+        <name>Starts__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total number of people who have completed this course. --></help>
+        <label><!-- Total Completed --></label>
+        <name>Total_Completed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of people enrolled in this course. --></help>
+        <label><!-- Total Enrolled --></label>
+        <name>Total_Enrolled__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

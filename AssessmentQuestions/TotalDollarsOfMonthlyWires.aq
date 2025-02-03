@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>TotalDollarsOfMonthlyWires</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>How many total dollars do you anticipate wiring each month?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Currency</dataType>
+    <developerName>TotalDollarsOfMonthlyWires</developerName>
+    <name>TotalDollarsOfMonthlyWires</name>
+    <questionCategory>Financial</questionCategory>
+</AssessmentQuestion>

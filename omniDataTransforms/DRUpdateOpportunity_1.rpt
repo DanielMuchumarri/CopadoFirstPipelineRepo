@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;ContextId&quot; : &quot;13XHo000000KzfEMAS&quot;,
+  &quot;omniscriptId&quot; : &quot;0jNHo00000092b7MAA&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;type&quot; : &quot;CIBOnboarding&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;sId&quot; : &quot;0jNHo00000092b7MAA&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;subType&quot; : &quot;AssociateReview&quot;,
+  &quot;timeStamp&quot; : &quot;2023-11-30T17:44:08.045Z&quot;,
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;userTimeZoneName&quot; : &quot;America/Los_Angeles&quot;,
+  &quot;userTimeZone&quot; : &quot;-480&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;projectteam@246onboarding-fy24.com&quot;,
+  &quot;userId&quot; : &quot;005Ho00000AmMGqIAN&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNHo00000092b7MAA&quot;,
+  &quot;localTimeZoneName&quot; : &quot;America/Chicago&quot;,
+  &quot;LegalandCredit&quot; : {
+    &quot;LegalStatus&quot; : &quot;Approved&quot;
+  },
+  &quot;OpportunityId&quot; : &quot;006Ho00000S7kc2IAB&quot;,
+  &quot;OpportunityName&quot; : &quot;CIB - Integrated Onboarding Opp&quot;,
+  &quot;ContactId&quot; : &quot;003Ho00001n9WYzIAM&quot;,
+  &quot;ApplicationFormId&quot; : &quot;13XHo000000KzfEMAS&quot;,
+  &quot;ApplicationFormName&quot; : &quot;AF-00000012&quot;,
+  &quot;AccountId&quot; : &quot;001Ho00001CUAN5IAP&quot;,
+  &quot;ProductRequestDetails&quot; : {
+    &quot;ProductsorServicesRequested&quot; : {
+      &quot;ProductType&quot; : &quot;Equities&quot;,
+      &quot;ProductFamily&quot; : &quot;Derivatives&quot;
+    },
+    &quot;Select1&quot; : &quot;Authorized Signer&quot;,
+    &quot;RequesterTelephone&quot; : &quot;(344) 555-0197&quot;,
+    &quot;FullLegalName&quot; : &quot;Acme Partners&quot;,
+    &quot;RequesterFirstName&quot; : &quot;Paul&quot;,
+    &quot;RequesterEmail&quot; : &quot;ppartner@example.com&quot;,
+    &quot;RequesterLastName&quot; : &quot;Partner&quot;,
+    &quot;RequesterJobTitle&quot; : &quot;Account Executive&quot;
+  },
+  &quot;CustomerDueDiligence&quot; : {
+    &quot;FINS_CIB_Booking_Entity__c&quot; : &quot;United States&quot;,
+    &quot;FINS_CIB_Are_you_bulk_uploading_funds__c&quot; : null,
+    &quot;TargetCompletionDate&quot; : &quot;2023-12-06&quot;,
+    &quot;FullLegalName2&quot; : &quot;Acme Partners&quot;,
+    &quot;CountryofDomicile&quot; : &quot;United States&quot;,
+    &quot;EntityType&quot; : &quot;Investment Manager&quot;,
+    &quot;PrincipalBusinessFunction&quot; : &quot;Investment Management&quot;,
+    &quot;BusinessDescription&quot; : &quot;Testing 12/29&quot;
+  },
+  &quot;StpDoddFrank&quot; : {
+    &quot;Dodd_Frank_US_Person_Classification&quot; : null,
+    &quot;Affiliate_Conduit&quot; : null,
+    &quot;US_Person_Guarantees&quot; : null,
+    &quot;Financial_Entity_Guarantees&quot; : null,
+    &quot;Swap_Dealer_Affiliations&quot; : null
+  },
+  &quot;assessmentId&quot; : &quot;0U3Ho000000XonGKAS&quot;,
+  &quot;FullRiskandScreening&quot; : {
+    &quot;FINS_CIB_Overridden_KYC_Risk_Rating__c2&quot; : null,
+    &quot;FINS_CIB_KYC_Risk_Rating__c2&quot; : &quot;Low&quot;,
+    &quot;FINS_CIB_Override_KYC_Risk_Rating__c2&quot; : &quot;No&quot;,
+    &quot;FINS_CIB_Screening_Results__c2&quot; : &quot;No Hits&quot;,
+    &quot;FINS_CIB_Screening_Risk_Rating__c2&quot; : &quot;Low&quot;,
+    &quot;FINS_CIB_PEP_Status__c2&quot; : &quot;No PEPs&quot;
+  },
+  &quot;StepDocuments&quot; : {
+    &quot;FileISDAMasterAgreement&quot; : null,
+    &quot;FileBilateralAgreement&quot; : null,
+    &quot;FileAmendmenttoISDAMasterAgreement&quot; : null,
+    &quot;FileUSTaxForm&quot; : null,
+    &quot;ProofofRegulation&quot; : null,
+    &quot;ProofofSourceofFunds&quot; : null
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRUpdateOpportunity</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRUpdateOpportunity3704169238578907</globalKey>
+        <inputFieldName>ContextId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRUpdateOpportunity</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Opportunity</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRUpdateOpportunity9146665599459094</globalKey>
+        <inputFieldName>StepPersonalInfo:BlockContactInfo:Email</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRUpdateOpportunity</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Contact_Email_1__c</outputFieldName>
+        <outputObjectName>Opportunity</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRUpdateOpportunity5543756320409476</globalKey>
+        <inputFieldName>BasicDetails:BusinessDescription</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRUpdateOpportunity</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FINS_CIB_Business_Description__c</outputFieldName>
+        <outputObjectName>Opportunity</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRUpdateOpportunity46892048652877394</globalKey>
+        <inputFieldName>OpportunityStage</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRUpdateOpportunity</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>StageName</outputFieldName>
+        <outputObjectName>Opportunity</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRUpdateOpportunity6056486817114219</globalKey>
+        <inputFieldName>BasicDetails:TargetCompletionDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRUpdateOpportunity</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CloseDate</outputFieldName>
+        <outputObjectName>Opportunity</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRUpdateOpportunity5476041269693377</globalKey>
+        <inputFieldName>LegalandCredit:LegalStatus</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRUpdateOpportunity</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FINS_CIB_Legal_Status__c</outputFieldName>
+        <outputObjectName>Opportunity</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRUpdateOpportunity8637610423761408</globalKey>
+        <inputFieldName>ProductRequestDetails:ProductType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRUpdateOpportunity</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FINS_CIB_Product_Type__c</outputFieldName>
+        <outputObjectName>Opportunity</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRUpdateOpportunity5482873172063081</globalKey>
+        <inputFieldName>ProductRequestDetails:ProductFamily</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRUpdateOpportunity</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FINS_CIB_Product_Family__c</outputFieldName>
+        <outputObjectName>Opportunity</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRUpdateOpportunity2222536094801244</globalKey>
+        <inputFieldName>ProductRequestDetails:BlkChooseCurrentSigner:TAAuthorizedSigner-Block:ContactId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRUpdateOpportunity</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SDO_Sales_Primary_Contact__c</outputFieldName>
+        <outputObjectName>Opportunity</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRUpdateOpportunity07909615374920431</globalKey>
+        <inputFieldName>StepLoanInfo:FormulaLoanAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRUpdateOpportunity</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FINS_Lending_Max_Loan__c</outputFieldName>
+        <outputObjectName>Opportunity</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRUpdateOpportunity4088571231240563</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRUpdateOpportunity</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Opportunity</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRUpdateOpportunity2096212251289824</globalKey>
+        <inputFieldName>StpLoanInformation:TACollateral</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRUpdateOpportunity</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FINS_Collateral__c</outputFieldName>
+        <outputObjectName>Opportunity</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRUpdateOpportunity9144487823779837</globalKey>
+        <inputFieldName>StpLoanInformation:RadioTerm</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRUpdateOpportunity</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FINS_Term__c</outputFieldName>
+        <outputObjectName>Opportunity</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;ContextId&quot; : &quot;13XHo000000KzfEMAS&quot;,
+  &quot;omniscriptId&quot; : &quot;0jNHo00000092b7MAA&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;type&quot; : &quot;CIBOnboarding&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;sId&quot; : &quot;0jNHo00000092b7MAA&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;subType&quot; : &quot;AssociateReview&quot;,
+  &quot;timeStamp&quot; : &quot;2023-11-30T17:44:08.045Z&quot;,
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;userTimeZoneName&quot; : &quot;America/Los_Angeles&quot;,
+  &quot;userTimeZone&quot; : &quot;-480&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;projectteam@246onboarding-fy24.com&quot;,
+  &quot;userId&quot; : &quot;005Ho00000AmMGqIAN&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNHo00000092b7MAA&quot;,
+  &quot;localTimeZoneName&quot; : &quot;America/Chicago&quot;,
+  &quot;LegalandCredit&quot; : {
+    &quot;LegalStatus&quot; : &quot;Approved&quot;
+  },
+  &quot;OpportunityId&quot; : &quot;006Ho00000S7kc2IAB&quot;,
+  &quot;OpportunityName&quot; : &quot;CIB - Integrated Onboarding Opp&quot;,
+  &quot;ContactId&quot; : &quot;003Ho00001n9WYzIAM&quot;,
+  &quot;ApplicationFormId&quot; : &quot;13XHo000000KzfEMAS&quot;,
+  &quot;ApplicationFormName&quot; : &quot;AF-00000012&quot;,
+  &quot;AccountId&quot; : &quot;001Ho00001CUAN5IAP&quot;,
+  &quot;ProductRequestDetails&quot; : {
+    &quot;ProductsorServicesRequested&quot; : {
+      &quot;ProductType&quot; : &quot;Equities&quot;,
+      &quot;ProductFamily&quot; : &quot;Derivatives&quot;
+    },
+    &quot;Select1&quot; : &quot;Authorized Signer&quot;,
+    &quot;RequesterTelephone&quot; : &quot;(344) 555-0197&quot;,
+    &quot;FullLegalName&quot; : &quot;Acme Partners&quot;,
+    &quot;RequesterFirstName&quot; : &quot;Paul&quot;,
+    &quot;RequesterEmail&quot; : &quot;ppartner@example.com&quot;,
+    &quot;RequesterLastName&quot; : &quot;Partner&quot;,
+    &quot;RequesterJobTitle&quot; : &quot;Account Executive&quot;
+  },
+  &quot;CustomerDueDiligence&quot; : {
+    &quot;FINS_CIB_Booking_Entity__c&quot; : &quot;United States&quot;,
+    &quot;FINS_CIB_Are_you_bulk_uploading_funds__c&quot; : null,
+    &quot;TargetCompletionDate&quot; : &quot;2023-12-06&quot;,
+    &quot;FullLegalName2&quot; : &quot;Acme Partners&quot;,
+    &quot;CountryofDomicile&quot; : &quot;United States&quot;,
+    &quot;EntityType&quot; : &quot;Investment Manager&quot;,
+    &quot;PrincipalBusinessFunction&quot; : &quot;Investment Management&quot;,
+    &quot;BusinessDescription&quot; : &quot;Testing 12/29&quot;
+  },
+  &quot;StpDoddFrank&quot; : {
+    &quot;Dodd_Frank_US_Person_Classification&quot; : null,
+    &quot;Affiliate_Conduit&quot; : null,
+    &quot;US_Person_Guarantees&quot; : null,
+    &quot;Financial_Entity_Guarantees&quot; : null,
+    &quot;Swap_Dealer_Affiliations&quot; : null
+  },
+  &quot;assessmentId&quot; : &quot;0U3Ho000000XonGKAS&quot;,
+  &quot;FullRiskandScreening&quot; : {
+    &quot;FINS_CIB_Overridden_KYC_Risk_Rating__c2&quot; : null,
+    &quot;FINS_CIB_KYC_Risk_Rating__c2&quot; : &quot;Low&quot;,
+    &quot;FINS_CIB_Override_KYC_Risk_Rating__c2&quot; : &quot;No&quot;,
+    &quot;FINS_CIB_Screening_Results__c2&quot; : &quot;No Hits&quot;,
+    &quot;FINS_CIB_Screening_Risk_Rating__c2&quot; : &quot;Low&quot;,
+    &quot;FINS_CIB_PEP_Status__c2&quot; : &quot;No PEPs&quot;
+  },
+  &quot;StepDocuments&quot; : {
+    &quot;FileISDAMasterAgreement&quot; : null,
+    &quot;FileBilateralAgreement&quot; : null,
+    &quot;FileAmendmenttoISDAMasterAgreement&quot; : null,
+    &quot;FileUSTaxForm&quot; : null,
+    &quot;ProofofRegulation&quot; : null,
+    &quot;ProofofSourceofFunds&quot; : null
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DRUpdateOpportunity_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

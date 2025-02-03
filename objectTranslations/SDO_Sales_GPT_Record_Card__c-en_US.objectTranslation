@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sales GPT Record Card</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sales GPT Record Cards</value>
+    </caseValues>
+    <fields>
+        <label><!-- Card Icon Name --></label>
+        <name>Card_Icon_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Title --></label>
+        <name>Card_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Simulated Reply --></label>
+        <name>Sales_GPT_Simulated_Reply__c</name>
+        <relationshipLabel><!-- Sales GPT Record Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Style --></label>
+        <name>Style__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>FSCRIALoadOtherAccounts</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom1772</globalKey>
+        <inputFieldName>AccountStakeholder:StakeholderInformation:LegalAddressStakeholder:CityStakeholder</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingCity</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom7384</globalKey>
+        <inputFieldName>AccountStakeholder:StakeholderInformation:PersonalInformation:IdNumberStakeholder</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IdNumber__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom9591</globalKey>
+        <inputFieldName>EntitiesThatAreAccountHolders:MailingAddressEntity:CountryMailingEntity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>ShippingCountry</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom8584</globalKey>
+        <inputFieldName>AccountStakeholder:StakeholderInformation:PersonalInformation:CitizenshipStatusStakeholder</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CitizenshipStatus__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Stakeholder</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom1</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Role__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom4180</globalKey>
+        <inputFieldName>EntitiesThatAreAccountHolders:MailingAddressEntity:StateProvinceMailingEntity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>ShippingState</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom4438</globalKey>
+        <inputFieldName>EntitiesThatAreAccountHolders:EntityInformation:StateCountryOfOrganization</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>CountryOfOrganization__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom2877</globalKey>
+        <inputFieldName>EntitiesThatAreAccountHolders:LegalAddressEntity:CityLegalEntity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>BillingCity</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom4474</globalKey>
+        <inputFieldName>AccountStakeholder:StakeholderInformation:PersonalInformation:TypeOfGovernmentIssuedIdStakeholder</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TypeOfGovernmentIssuedId__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom3017</globalKey>
+        <inputFieldName>EntitiesThatAreAccountHolders:LegalAddressEntity:ZipPostalCodeLegalEntity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>BillingPostalCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom8409</globalKey>
+        <inputFieldName>EntitiesThatAreAccountHolders:EntityInformation:TaxpayerIdNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>FinServ__LastFourDigitSSN__pc</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom348</globalKey>
+        <inputFieldName>EntitiesThatAreAccountHolders:EntityInformation:CountryOfTaxResidence</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>CountryOfTaxResidency__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom9796</globalKey>
+        <inputFieldName>EntitiesThatAreAccountHolders:EntityInformation:EntityName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>LastName</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom2266</globalKey>
+        <inputFieldName>AccountStakeholder:StakeholderInformation:PersonalInformation:SocialSecurityTaxpayerIdNumberStakeholder</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FinServ__LastFourDigitSSN__pc</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Entity as Account</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom8752</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Role__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom4655</globalKey>
+        <inputFieldName>EntitiesThatAreAccountHolders:LegalAddressEntity:CountryLegalEntity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>BillingCountry</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom2745</globalKey>
+        <inputFieldName>EntitiesThatAreAccountHolders:LegalAddressEntity:StateProvinceLegalEntity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>BillingState</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom2944</globalKey>
+        <inputFieldName>EntitiesThatAreAccountHolders:EntityInformation:TypeOfGovernmentIssuedIdEntity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>TypeOfGovernmentIssuedId__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom95</globalKey>
+        <inputFieldName>AccountStakeholder:StakeholderInformation:LegalAddressStakeholder:ZipPostalCodeStakeholder</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingPostalCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom1984</globalKey>
+        <inputFieldName>EntitiesThatAreAccountHolders:MailingAddressEntity:CityMailingEntity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>ShippingCity</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom8096</globalKey>
+        <inputFieldName>EntitiesThatAreAccountHolders:EntityInformation:IdNumberEntity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>IdNumber__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom5726</globalKey>
+        <inputFieldName>AccountStakeholder:StakeholderInformation:StakeholderControlPerson</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ControlPerson__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom855</globalKey>
+        <inputFieldName>AccountStakeholder:StakeholderInformation:PersonalInformation:LastNameStakeholder</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>LastName</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom7931</globalKey>
+        <inputFieldName>EntitiesThatAreAccountHolders:MailingAddressEntity:ZipPostalCodeMailingEntity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>ShippingPostalCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom2775</globalKey>
+        <inputFieldName>AccountStakeholder:StakeholderInformation:PersonalInformation:AccountStakeholderType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>StakeholderType__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;SELECT/\/\/Id/\/\/FROM/\/\/RecordType/\/\/where/\/\/sObjectType/\/\/=/\/\/&apos;Account&apos;/\/\/AND/\/\/DeveloperName/\/\/=/\/\/&apos;RIAClient&apos;&quot; QUERY</formulaConverted>
+        <formulaExpression>QUERY(&quot;SELECT Id FROM RecordType where sObjectType = &apos;Account&apos; AND DeveloperName = &apos;RIAClient&apos;&quot;)</formulaExpression>
+        <formulaResultPath>AccountStakeholder:StakeholderInformation:RecordTypeId</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>FSCRIALoadOtherAccountsCustom6755</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;SELECT/\/\/Id/\/\/FROM/\/\/RecordType/\/\/where/\/\/sObjectType/\/\/=/\/\/&apos;Account&apos;/\/\/AND/\/\/DeveloperName/\/\/=/\/\/&apos;RIAClient&apos;&quot; QUERY</formulaConverted>
+        <formulaExpression>QUERY(&quot;SELECT Id FROM RecordType where sObjectType = &apos;Account&apos; AND DeveloperName = &apos;RIAClient&apos;&quot;)</formulaExpression>
+        <formulaResultPath>EntitiesThatAreAccountHolders:RecordTypeId</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>FSCRIALoadOtherAccountsCustom7159</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom4822</globalKey>
+        <inputFieldName>AccountStakeholder:StakeholderInformation:PersonalInformation:MiddleNameStakeholder</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>MiddleName</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom4476</globalKey>
+        <inputFieldName>AccountStakeholder:StakeholderInformation:PersonalInformation:FirstNameStakeholder</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FirstName</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom3768</globalKey>
+        <inputFieldName>AccountStakeholder:StakeholderInformation:PersonalInformation:PercentageOfOwnershipStakeholder</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SharePercentage__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom9595</globalKey>
+        <inputFieldName>AccountStakeholder:StakeholderInformation:PersonalInformation:StateOfIdIssuanceStakeholder</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>StateCountryOfIdIssuance__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom7993</globalKey>
+        <inputFieldName>AccountStakeholder:StakeholderInformation:RecordTypeId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RecordTypeId</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom9079</globalKey>
+        <inputFieldName>AccountStakeholder:StakeholderInformation:LegalAddressStakeholder:CountryStakeholder</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingCountry</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom1088</globalKey>
+        <inputFieldName>AccountStakeholder:StakeholderInformation:PersonalInformation:TitleStakeholder</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonTitle</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom7316</globalKey>
+        <inputFieldName>EntitiesThatAreAccountHolders:MailingAddressEntity:AddressMailingEntity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>ShippingStreet</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom8476</globalKey>
+        <inputFieldName>AccountStakeholder:StakeholderInformation:PersonalInformation:DateOfBirthStakeholder</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonBirthdate</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom1263</globalKey>
+        <inputFieldName>EntitiesThatAreAccountHolders:RecordTypeId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>RecordTypeId</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom4039</globalKey>
+        <inputFieldName>AccountStakeholder:StakeholderInformation:PersonalInformation:CountryOfCitizenshipStakeholder</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FinServ__PrimaryCitizenship__pc</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom8181</globalKey>
+        <inputFieldName>AccountStakeholder:StakeholderInformation:PersonalInformation:IdExpirationDateStakeholder</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IdExpirationDate__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom6010</globalKey>
+        <inputFieldName>EntitiesThatAreAccountHolders:LegalAddressEntity:AddressLegalEntity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>BillingStreet</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom6278</globalKey>
+        <inputFieldName>AccountStakeholder:StakeholderInformation:LegalAddressStakeholder:StateProvinceStakeholder</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingState</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom2461</globalKey>
+        <inputFieldName>EntitiesThatAreAccountHolders:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom4746</globalKey>
+        <inputFieldName>EntitiesThatAreAccountHolders:EntityInformation:StateCountryOfIdIssuanceEntity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>StateCountryOfIdIssuance__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom3191</globalKey>
+        <inputFieldName>AccountStakeholder:StakeholderInformation:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom4256</globalKey>
+        <inputFieldName>AccountStakeholder:StakeholderInformation:StakeholderEntityOwner</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EntityOwner__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIALoadOtherAccountsCustom6293</globalKey>
+        <inputFieldName>AccountStakeholder:StakeholderInformation:LegalAddressStakeholder:AddressStakeholder</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIALoadOtherAccounts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingStreet</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;ContextId&quot; : &quot;001DP00001oSaCEYA0&quot;,
+  &quot;omniscriptId&quot; : &quot;0jNDP0000004CYR2A2&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;type&quot; : &quot;Application&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;sId&quot; : &quot;0jNDP0000004CYR2A2&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;subType&quot; : &quot;Brokerage&quot;,
+  &quot;timeStamp&quot; : &quot;2023-02-16T19:56:25.027Z&quot;,
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;userTimeZoneName&quot; : &quot;America/Los_Angeles&quot;,
+  &quot;userTimeZone&quot; : &quot;-480&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;test-nkoomqdemzek@example.com&quot;,
+  &quot;userId&quot; : &quot;005DP000007qs8NYAQ&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNDP0000004CYR2A2&quot;,
+  &quot;PrimaryAccountHolder&quot; : {
+    &quot;AccountHolder&quot; : {
+      &quot;ControlPersonAccountHolder&quot; : false,
+      &quot;EntityOwnerAccountHolder&quot; : false,
+      &quot;EmployerInformationAndAffiliates&quot; : {
+        &quot;ForeignPoliticalFigure&quot; : false,
+        &quot;ControlPersonAffiliate&quot; : false,
+        &quot;CompanySymbol&quot; : null,
+        &quot;EmployedByFinra&quot; : false,
+        &quot;Id&quot; : &quot;a0ADP00000BlKUc2AN&quot;,
+        &quot;EmployerName&quot; : &quot;1213pmemployer&quot;
+      },
+      &quot;Id&quot; : &quot;001DP00001oSaEEYA0&quot;,
+      &quot;FinancialAccountName&quot; : &quot;1213pm account 1213pm account Financial Account&quot;,
+      &quot;CountryOfCitizenship&quot; : &quot;United States&quot;,
+      &quot;MailingAddressAccountHolder&quot; : {
+        &quot;ZipPostalCodeMailingAccountHolder&quot; : &quot;55426&quot;,
+        &quot;CountryMailingAccountHolder&quot; : &quot;United States&quot;,
+        &quot;CityLegalMailingAccountHolder&quot; : &quot;sds&quot;,
+        &quot;StateProvinceMailingAccountHolder&quot; : &quot;MN&quot;,
+        &quot;AddressMailingAccountHolder&quot; : &quot;123 fake st&quot;
+      },
+      &quot;LegalAddressAccountHolder&quot; : {
+        &quot;CountryLegalAccountHolder&quot; : &quot;United States&quot;,
+        &quot;ZipPostalCodeLegalAccountHolder&quot; : &quot;55426&quot;,
+        &quot;StateProvinceLegalAccountHolder&quot; : &quot;MN&quot;,
+        &quot;AddressLegalAccountHolder&quot; : &quot;123 fake st&quot;,
+        &quot;CityLegalAccountHolder&quot; : &quot;sdfs&quot;
+      },
+      &quot;LastNameAccountHolder&quot; : &quot;1213pm account&quot;,
+      &quot;FirstNameAccountHolder&quot; : &quot;1213pm account&quot;
+    }
+  },
+  &quot;EntityAccountInformation&quot; : null,
+  &quot;HouseholdId&quot; : &quot;001DP00001oSaCEYA0&quot;,
+  &quot;AccountSetup&quot; : {
+    &quot;Id&quot; : &quot;a0FDP00000ERBGK2A5&quot;,
+    &quot;AccountType&quot; : &quot;Individual&quot;
+  },
+  &quot;Suitability&quot; : {
+    &quot;FinancialPosition&quot; : {
+      &quot;AccountFundingSource&quot; : null
+    },
+    &quot;InvestmentProfile&quot; : {
+      &quot;InvestmentPurpose&quot; : null
+    },
+    &quot;ProductKnowledge&quot; : {
+      &quot;InvestmentProductKnowledge&quot; : null,
+      &quot;InvestmentProductExperience&quot; : null
+    },
+    &quot;DecisionMakingExperience&quot; : {
+      &quot;ConsultBroker&quot; : false,
+      &quot;MakeOwnDecisions&quot; : false,
+      &quot;ConsultFamilyFriends&quot; : false
+    }
+  },
+  &quot;AccountCharacteristics&quot; : {
+    &quot;DuplicateInformation&quot; : {
+      &quot;ToAllAccountHolders&quot; : false,
+      &quot;ToThirdParty&quot; : false,
+      &quot;ThirdPartyDocuments&quot; : null
+    },
+    &quot;Edelivery&quot; : {
+      &quot;edeliveryEnabled&quot; : false
+    }
+  },
+  &quot;BeneficiaryFboInformation&quot; : {
+    &quot;PrimaryBeneficiaries&quot; : {
+      &quot;Id&quot; : &quot;001DP00001oSaNjYAK&quot;,
+      &quot;BeneficiaryLastNamePrimaryBeneficiary&quot; : &quot;1213pmbene&quot;,
+      &quot;BeneficiaryFirstNamePrimaryBeneficiary&quot; : &quot;1213pmbene&quot;,
+      &quot;BeneficiaryType&quot; : &quot;Non-Spouse&quot;,
+      &quot;CountryOfCitizenshipOrganizationPrimaryBeneficiary&quot; : &quot;United States&quot;
+    },
+    &quot;ContingentBeneficiaries&quot; : {
+      &quot;Id&quot; : &quot;001DP00001oSaaRYAS&quot;,
+      &quot;BeneficiaryTypeContingentBeneficiary&quot; : &quot;Spouse&quot;,
+      &quot;CountryOfCitizenshipOrganizationContingentBeneficiary&quot; : &quot;United States&quot;,
+      &quot;BeneficiaryLastNameContingentBeneficiary&quot; : &quot;skdjfbsk&quot;,
+      &quot;BeneficiaryFirstNameContingentBeneficiary&quot; : &quot;ksjdbksbfk&quot;
+    }
+  },
+  &quot;EntitiesThatAreAccountHolders&quot; : {
+    &quot;Id&quot; : &quot;001DP00001oSaNiYAK&quot;,
+    &quot;EntityInformation&quot; : {
+      &quot;EntityName&quot; : &quot;1213pmentity&quot;
+    },
+    &quot;LegalAddressEntity&quot; : {
+      &quot;AddressLegalEntity&quot; : &quot;123 fake st&quot;,
+      &quot;CityLegalEntity&quot; : &quot;minnepolis&quot;,
+      &quot;StateProvinceLegalEntity&quot; : &quot;mn&quot;,
+      &quot;ZipPostalCodeLegalEntity&quot; : &quot;55426&quot;,
+      &quot;CountryLegalEntity&quot; : &quot;United States&quot;
+    },
+    &quot;MailingAddressEntity&quot; : {
+      &quot;AddressMailingEntity&quot; : &quot;123 Fake St&quot;,
+      &quot;CityMailingEntity&quot; : &quot;Minneapolis&quot;,
+      &quot;StateProvinceMailingEntity&quot; : &quot;MN&quot;,
+      &quot;ZipPostalCodeMailingEntity&quot; : &quot;55426&quot;,
+      &quot;CountryMailingEntity&quot; : &quot;United States&quot;
+    }
+  },
+  &quot;AccountStakeholder&quot; : {
+    &quot;StakeholderInformation&quot; : {
+      &quot;StakeholderControlPerson&quot; : false,
+      &quot;StakeholderEntityOwner&quot; : false,
+      &quot;Id&quot; : &quot;001DP00001oSaNhYAK&quot;,
+      &quot;PersonalInformation&quot; : {
+        &quot;LastNameStakeholder&quot; : &quot;1213pmholder&quot;,
+        &quot;CountryOfCitizenshipStakeholder&quot; : &quot;United States&quot;,
+        &quot;FirstNameStakeholder&quot; : &quot;1213pmstatke&quot;
+      },
+      &quot;LegalAddressStakeholder&quot; : {
+        &quot;AddressStakeholder&quot; : &quot;123 fake t&quot;,
+        &quot;CityStakeholder&quot; : &quot;Minneapolis&quot;,
+        &quot;StateProvinceStakeholder&quot; : &quot;MN&quot;,
+        &quot;ZipPostalCodeStakeholder&quot; : &quot;55426&quot;,
+        &quot;CountryStakeholder&quot; : &quot;United States&quot;
+      }
+    }
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>true</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>FSCRIALoadOtherAccounts_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

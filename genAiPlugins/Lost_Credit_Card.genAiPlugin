@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description>User requests that related to lost credit cards</description>
+    <developerName>Lost_Credit_Card</developerName>
+    <genAiFunctions>
+        <functionName>Query_Fins_Account_using_Last_4_digits_Account_Number</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Set_Credit_Card_On_Hold</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Update_Financial_Account</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Zip_Code_Verification1</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If the user says to put the card on hold then ask user to enter the last 4 digits of his credit card number. when addressing the user use his name from MessagingSession.First_Name__c session variable.</description>
+        <developerName>instruction_iftheusers0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_iftheusers0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user says that he lost his credit card then ask user to enter last 4 digits of his credit card number. when addressing the user use his name from MessagingSession.First_Name__c session variable.</description>
+        <developerName>instruction_iftheusers1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_iftheusers1</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Lost Credit Card</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to resolve the issue related to lost credit card</scope>
+</GenAiPlugin>

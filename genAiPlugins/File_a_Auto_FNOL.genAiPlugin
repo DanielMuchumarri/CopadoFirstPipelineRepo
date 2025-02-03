@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description>This topic allows a user to file a FNOL (First Note of Loss) or a Claim.</description>
+    <developerName>File_a_Auto_FNOL</developerName>
+    <genAiFunctions>
+        <functionName>LTI_Fetch_Account_Id</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>LTI_Create_Claim2</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>You should use the &apos;LTI Fetch Account Id&apos; action to retrieve an accountId passing in the email address provided by the user</description>
+        <developerName>instruction_youshouldu0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_youshouldu0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Once that is done, use the &apos;LTI Create Claim&apos; action to create the claim, passing in the Account Id of the user and a claim number which is &apos;CL-&apos; folllowed by 5 random digits generated from the milliseconds of the current time.</description>
+        <developerName>instruction_oncethatis1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_oncethatis1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user asks to retry with a different email address then ask for the new email address and execute the &apos;LTI Fetch Account Id&apos; action again</description>
+        <developerName>instruction_iftheusera2</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_iftheusera2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Once the claim is created add a hyperlink to the screen with the claim number as the text and the account Id preceded by a / as the href. So &lt;a href =&quot;https://login.salesforce.com/{accountId}/&quot;&gt;claimNumber&lt;/a&gt;</description>
+        <developerName>instruction_oncethecla3</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_oncethecla3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>always ouput links as HTML Hyperlinks</description>
+        <developerName>instruction_alwaysoupu4</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_alwaysoupu4</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>File a Auto FNOL</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to get a user email from a user to determine the person account for that user and then file a claim using the person account Id of the user.</scope>
+</GenAiPlugin>

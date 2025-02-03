@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Investment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Investments</value>
+    </caseValues>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>FINS_Private_Equity_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Equity Asset --></label>
+        <name>FINS_Private_Equity_Equity_Asset__c</name>
+        <relationshipLabel><!-- Investments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Fund --></label>
+        <name>FINS_Private_Equity_Fund__c</name>
+        <relationshipLabel><!-- Investments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Investor --></label>
+        <name>FINS_Private_Equity_Investor__c</name>
+        <relationshipLabel><!-- Investments Made --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Investment Opportunity --></label>
+        <name>Investment_Opportunity__c</name>
+        <relationshipLabel><!-- Investments Made On Deal --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

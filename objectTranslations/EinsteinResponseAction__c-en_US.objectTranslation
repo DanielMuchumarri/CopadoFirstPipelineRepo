@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Einstein Response Action</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Einstein Response Actions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Action Target --></label>
+        <name>ActionTarget__c</name>
+        <picklistValues>
+            <masterLabel>Einstein Message</masterLabel>
+            <translation><!-- Einstein Message --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Field Update</masterLabel>
+            <translation><!-- Field Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Record Page</masterLabel>
+            <translation><!-- Record Page --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Content --></label>
+        <name>Content__c</name>
+    </fields>
+    <fields>
+        <label><!-- Einstein Response Card --></label>
+        <name>EinsteinResponseCard__c</name>
+        <relationshipLabel><!-- Einstein Response Actions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Einstein Response --></label>
+        <name>EinsteinResponse__c</name>
+        <relationshipLabel><!-- Einstein Response Actions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon Name --></label>
+        <name>IconName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Message Keyword --></label>
+        <name>NextMessageKeyword__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Position --></label>
+        <name>Position__c</name>
+        <picklistValues>
+            <masterLabel>left</masterLabel>
+            <translation><!-- left --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>right</masterLabel>
+            <translation><!-- right --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Target Field Name --></label>
+        <name>TargetFieldName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Record Id --></label>
+        <name>TargetRecordId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Variant --></label>
+        <name>Variant__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecommendationStrategy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contextRecordType>MessagingSession</contextRecordType>
+    <description>Used on Messaging Session in Digital Engagement app</description>
+    <label>Digital Engagement - Messaging Strategy</label>
+    <recommendationLoad>
+        <label>loadSignUpAutomaticBillPay</label>
+        <name>loadSignUpAutomaticBillPay</name>
+        <condition>
+            <field>Name</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>Sign Up for Automatic Bill Pay</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <recommendationLoad>
+        <label>loadHomeLoanOffer</label>
+        <name>loadHomeLoanOffer</name>
+        <condition>
+            <field>Name</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>Home Improvement Loan Offer</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <union>
+        <childNode>loadSignUpAutomaticBillPay</childNode>
+        <childNode>loadHomeLoanOffer</childNode>
+        <label>Output</label>
+        <name>Output_66f05d776e8d4d70b5c683e13d114c48</name>
+    </union>
+</RecommendationStrategy>

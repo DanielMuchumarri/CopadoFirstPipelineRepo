@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- Eveniment de suprapunere --></value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- Evenimentul de suprapunere --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- Evenimente de suprapunere --></value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- Evenimentele de suprapunere --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Evenimentului de suprapunere --></value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Evenimentului de suprapunere --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Evenimentelor de suprapunere --></value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Evenimentelor de suprapunere --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Absence_Type_Name --></label>
+        <name>FSL__Absence_Type_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- End --></label>
+        <name>FSL__End__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event_Type --></label>
+        <name>FSL__Event_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overlap_Length_ in_ Minutes --></label>
+        <name>FSL__Overlap_Length_in_Minutes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record_ID --></label>
+        <name>FSL__Record_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource_ID --></label>
+        <name>FSL__Resource_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource_Time_Zone --></label>
+        <name>FSL__Resource_Time_Zone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start --></label>
+        <name>FSL__Start__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>FSL__Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory_ID --></label>
+        <name>FSL__Territory_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory_Name --></label>
+        <name>FSL__Territory_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- User_ID --></label>
+        <name>FSL__User_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work_Type_ID --></label>
+        <name>FSL__Work_Type_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work_Type_Name --></label>
+        <name>FSL__Work_Type_Name__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

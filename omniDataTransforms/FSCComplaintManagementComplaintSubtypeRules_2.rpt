@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>FSCComplaintManagementComplaintSubtypeRules</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ComplaintCategory &apos;General/\/\/Admin//\/\/Customer/\/\/Service&apos; == | &apos;Instructions/\/\/Not/\/\/Followed&apos; &apos;Service/\/\/Request/\/\/Delay&apos; &apos;Other/\/\/Customer/\/\/Service&apos; &apos;Other/\/\/General/\/\/Admin&apos; &apos;Account/\/\/Opening&apos; &apos;Account/\/\/Closure&apos; LIST var:null IF</formulaConverted>
+        <formulaExpression>IF(%ComplaintCategory% == &apos;General Admin/ Customer Service&apos;,LIST(&apos;Instructions Not Followed&apos;,&apos;Service Request Delay&apos;,&apos;Other Customer Service&apos;,&apos;Other General Admin&apos;,&apos;Account Opening&apos;,&apos;Account Closure&apos;
+),null)</formulaExpression>
+        <formulaResultPath>ComplaintSubCategories</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>FSCComplaintManagementComplaintSubtypeRulesCustom0jI4V000000L00wUACItem0</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCComplaintManagementComplaintSubtypeRules</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ComplaintCategory &apos;Information,/\/\/Charges,/\/\/or/\/\/Product/\/\/Performance&apos; == | &apos;Dispute/\/\/Over/\/\/Charges&apos; &apos;Product/\/\/Performance&apos; &apos;Product/\/\/Features&apos; &apos;Product/\/\/Disclosure/\/\/Information&apos; LIST var:null IF</formulaConverted>
+        <formulaExpression>IF(%ComplaintCategory% == &apos;Information, Charges, or Product Performance&apos;,LIST(&apos;Dispute Over Charges&apos;,&apos;Product Performance&apos;,&apos;Product Features&apos;,&apos;Product Disclosure Information&apos;
+),null)</formulaExpression>
+        <formulaResultPath>ComplaintSubCategories</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>FSCComplaintManagementComplaintSubtypeRulesCustom0jI4V000000L00wUACItem3</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCComplaintManagementComplaintSubtypeRules</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ComplaintCategory &apos;Others&apos; == | &apos;Others&apos; LIST var:null IF</formulaConverted>
+        <formulaExpression>IF(%ComplaintCategory% == &apos;Others&apos;,LIST(&apos;Others&apos;
+),null)</formulaExpression>
+        <formulaResultPath>ComplaintSubCategories</formulaResultPath>
+        <formulaSequence>10.0</formulaSequence>
+        <globalKey>FSCComplaintManagementComplaintSubtypeRulesCustom0jI4V000000L00wUACItem2</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCComplaintManagementComplaintSubtypeRules</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ComplaintCategory &apos;Lending/\/\///\/\/Credit&apos; == | &apos;Credit/\/\/Limit/\/\/Changed&apos; &apos;Credit/\/\/Report&apos; &apos;Credit/\/\/Score&apos; LIST var:null IF</formulaConverted>
+        <formulaExpression>IF(%ComplaintCategory% == &apos;Lending / Credit&apos;,LIST(&apos;Credit Limit Changed&apos;,&apos;Credit Report&apos;,&apos;Credit Score&apos;
+),null)</formulaExpression>
+        <formulaResultPath>ComplaintSubCategories</formulaResultPath>
+        <formulaSequence>9.0</formulaSequence>
+        <globalKey>FSCComplaintManagementComplaintSubtypeRulesCustom0jI4V000000L00wUACItem4</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCComplaintManagementComplaintSubtypeRules</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ComplaintCategory &apos;Transaction/\/\/Related&apos; == | &apos;Unauthorised/\/\/Transaction(s)&apos; &apos;Fraud/\/\/Handling&apos; &apos;Payment/\/\/Related/\/\/Issue&apos; &apos;Auto/\/\/Debit/\/\/Mandate&apos; &apos;Cash/\/\/not/\/\/Dispensed&apos; LIST var:null IF</formulaConverted>
+        <formulaExpression>IF(%ComplaintCategory% == &apos;Transaction Related&apos;,LIST(&apos;Unauthorised Transaction(s)&apos;,&apos;Fraud Handling&apos;,&apos;Payment Related Issue&apos;,&apos;Auto Debit Mandate&apos;,&apos;Cash not Dispensed&apos;
+),null)</formulaExpression>
+        <formulaResultPath>ComplaintSubCategories</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>FSCComplaintManagementComplaintSubtypeRulesCustom0jI4V000000L00wUACItem5</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCComplaintManagementComplaintSubtypeRules</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ComplaintCategory &apos;Advising,/\/\/Selling/\/\/and/\/\/Arranging&apos; == | &apos;Unsuitable/\/\/Advice&apos; &apos;Unclear/\/\/Guidance&apos; &apos;Unclear/\/\/Arrangement&apos; LIST var:null IF</formulaConverted>
+        <formulaExpression>IF(%ComplaintCategory% == &apos;Advising, Selling and Arranging&apos;,LIST(&apos;Unsuitable Advice&apos;,&apos;Unclear Guidance&apos;,&apos;Unclear Arrangement&apos;
+),null)</formulaExpression>
+        <formulaResultPath>ComplaintSubCategories</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>FSCComplaintManagementComplaintSubtypeRulesCustom0jI4V000000L00wUACItem6</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCComplaintManagementComplaintSubtypeRules</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ComplaintCategory &apos;Digital/\/\/or/\/\/Technology&apos; == | &apos;Online/\/\/Banking/\/\/-/\/\/Features/\/\/or/\/\/Functionality&apos; &apos;Mobile/\/\/Banking/\/\/-/\/\/Features/\/\/or/\/\/Functionality&apos; LIST var:null IF</formulaConverted>
+        <formulaExpression>IF(%ComplaintCategory% == &apos;Digital or Technology&apos;,LIST(&apos;Online Banking - Features or Functionality&apos;,&apos;Mobile Banking - Features or Functionality&apos;
+),null)</formulaExpression>
+        <formulaResultPath>ComplaintSubCategories</formulaResultPath>
+        <formulaSequence>5.0</formulaSequence>
+        <globalKey>FSCComplaintManagementComplaintSubtypeRulesCustom0jI4V000000L00wUACItem7</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCComplaintManagementComplaintSubtypeRules</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCComplaintManagementComplaintSubtypeRulesCustom0jI4V000000L00wUACItem8</globalKey>
+        <inputFieldName>ComplaintSubCategories</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCComplaintManagementComplaintSubtypeRules</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ComplaintSubCategories</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ComplaintCategory &apos;Marketing/\/\/or/\/\/Corporate/\/\/Communications&apos; == | &apos;Misleading/\/\/Advertising&apos; LIST var:null IF</formulaConverted>
+        <formulaExpression>IF(%ComplaintCategory% == &apos;Marketing or Corporate Communications&apos;,LIST(&apos;Misleading Advertising&apos;
+),null)</formulaExpression>
+        <formulaResultPath>ComplaintSubCategories</formulaResultPath>
+        <formulaSequence>6.0</formulaSequence>
+        <globalKey>FSCComplaintManagementComplaintSubtypeRulesCustom0jI4V000000L00wUACItem9</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCComplaintManagementComplaintSubtypeRules</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ComplaintCategory &apos;Accessibility/\/\/Issues&apos; == | &apos;Inaccessible/\/\/ATMs&apos; &apos;Inaccessible/\/\/Branch/\/\/Entrances&apos; &apos;Inaccessible/\/\/Website&apos; &apos;Inaccessible/\/\/Mobile/\/\/banking/\/\/features&apos; LIST var:null IF</formulaConverted>
+        <formulaExpression>IF(%ComplaintCategory% == &apos;Accessibility Issues&apos;,LIST(&apos;Inaccessible ATMs&apos;,&apos;Inaccessible Branch Entrances&apos;,&apos;Inaccessible Website&apos;,&apos;Inaccessible Mobile banking features&apos;
+),null)</formulaExpression>
+        <formulaResultPath>ComplaintSubCategories</formulaResultPath>
+        <formulaSequence>7.0</formulaSequence>
+        <globalKey>FSCComplaintManagementComplaintSubtypeRulesCustom0jI4V000000L00wUACItem10</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCComplaintManagementComplaintSubtypeRules</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ComplaintCategory &apos;Financial/\/\/Hardship/\/\/or/\/\/Collections&apos; == | &apos;Unacknowledged/\/\/Debt/\/\/Collection/\/\/Attempt&apos; &apos;Communication/\/\/Tactics&apos; &apos;Missing/\/\/Debt/\/\/Notification&apos; LIST var:null IF</formulaConverted>
+        <formulaExpression>IF(%ComplaintCategory% == &apos;Financial Hardship or Collections&apos;,LIST(&apos;Unacknowledged Debt Collection Attempt&apos;,&apos;Communication Tactics&apos;,&apos;Missing Debt Notification&apos;
+),null)</formulaExpression>
+        <formulaResultPath>ComplaintSubCategories</formulaResultPath>
+        <formulaSequence>8.0</formulaSequence>
+        <globalKey>FSCComplaintManagementComplaintSubtypeRulesCustom0jI4V000000L00wUACItem1</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCComplaintManagementComplaintSubtypeRules</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <overrideKey>fsccomplaintmanagement__FSCComplaintManagementComplaintSubtypeRules_1</overrideKey>
+    <previewJsonData>{
+  &quot;ComplaintCategory&quot; : &quot;Marketing or Corporate Communications&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>FSCComplaintManagementComplaintSubtypeRules_2</uniqueName>
+    <versionNumber>2.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

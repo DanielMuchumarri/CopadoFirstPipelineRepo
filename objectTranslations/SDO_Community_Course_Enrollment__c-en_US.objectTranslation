@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Course Enrollment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Course Enrollments</value>
+    </caseValues>
+    <fields>
+        <help><!-- Salesforce ID of the contact (if any) representing the enrolled user. --></help>
+        <label><!-- Contact Id --></label>
+        <name>Contact_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Returns TRUE when the currently logged-in user is the one enrolled in the course. --></help>
+        <label><!-- Current User&apos;s Enrollment --></label>
+        <name>Current_User_s_Enrollment__c</name>
+    </fields>
+    <fields>
+        <help><!-- User record of the enrollee. --></help>
+        <label><!-- Enrolled User --></label>
+        <lookupFilter>
+            <errorMessage><!-- Please select an internal, customer, or partner user to enroll. --></errorMessage>
+        </lookupFilter>
+        <name>Enrolled_User__c</name>
+        <relationshipLabel><!-- Course Enrollments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Enrollment Status --></label>
+        <name>Enrollment_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Which training course is this enrollment for? --></help>
+        <label><!-- Training Course --></label>
+        <name>Training_Course__c</name>
+        <relationshipLabel><!-- Enrollment --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

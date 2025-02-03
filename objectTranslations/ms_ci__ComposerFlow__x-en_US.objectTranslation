@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Flow Name --></label>
+        <name>ms_ci__Flow_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flow Owner Id --></label>
+        <name>ms_ci__Flow_Owner_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flow Owner --></label>
+        <name>ms_ci__Flow_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified Date --></label>
+        <name>ms_ci__Last_Modified_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>ms_ci__Status__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- New_Flow --></label>
+        <name>ms_ci__New_Flow</name>
+    </webLinks>
+</CustomObjectTranslation>

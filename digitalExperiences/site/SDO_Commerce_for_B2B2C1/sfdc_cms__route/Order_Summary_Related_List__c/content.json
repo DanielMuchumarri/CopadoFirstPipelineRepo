@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Order Summary Related List",
+  "contentBody" : {
+    "activeViewId" : "Order_Summary_Related_List_1",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "relatedlist-1Os",
+    "urlPrefix" : "ordersummary"
+  },
+  "urlName" : "order-summary-related-list"
+}

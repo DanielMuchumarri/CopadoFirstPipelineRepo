@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Knowledge</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Knowledge</value>
+    </caseValues>
+    <fields>
+        <label><!-- Article Confidence --></label>
+        <name>Article_Confidence__c</name>
+        <picklistValues>
+            <masterLabel>Archived</masterLabel>
+            <translation><!-- Archived --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Validated</masterLabel>
+            <translation><!-- Not Validated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validated</masterLabel>
+            <translation><!-- Validated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work in Progress</masterLabel>
+            <translation><!-- Work in Progress --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Provides a URL to an icon representing the type of knowledge article. --></help>
+        <label><!-- Article Type Icon URL --></label>
+        <name>Article_Type_Icon_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chat Answer --></label>
+        <name>Chat_Answer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details --></label>
+        <name>FAQ_Answer__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>FAQ_External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Comments --></label>
+        <name>FAQ_Internal_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question --></label>
+        <name>FAQ_Question__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicated whether this article should be featured in the org&apos;s communities CMS collections. --></help>
+        <label><!-- Featured in Communities --></label>
+        <name>Featured_in_Communities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cause --></label>
+        <name>KCSArticle_Cause__c</name>
+    </fields>
+    <fields>
+        <label><!-- Environment --></label>
+        <name>KCSArticle_Environment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue --></label>
+        <name>KCSArticle_Issue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolution --></label>
+        <name>KCSArticle_Resolution__c</name>
+    </fields>
+    <fields>
+        <label><!-- OpenGraph Image --></label>
+        <name>OpenGraph_Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- OpenGraph Type --></label>
+        <name>OpenGraph_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- OpenGraph Url --></label>
+        <name>OpenGraph_Url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requires Revision --></label>
+        <name>Requires_Revision__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visible in Commerce Sites --></label>
+        <name>SDO_Commerce_Visible_in_Commerce_Sites__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Cirrus --></label>
+        <name>SDO_Knowledge_Cirrus</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- FAQ --></label>
+        <name>SDO_Knowledge_FAQ</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- KCSArticle --></label>
+        <name>SDO_Knowledge_KCSArticle</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Update_Address --></label>
+        <name>Update_Address</name>
+    </webLinks>
+</CustomObjectTranslation>

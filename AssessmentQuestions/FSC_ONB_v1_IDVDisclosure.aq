@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>IDV Disclosure</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>By scanning the QR code or clicking the link, you consent to us collecting your personal information through a partner website. This information is necessary to verify your identity and secure the transaction. We will handle your information with care and adhere to strict privacy regulations.</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>FSC_ONB_v1_IDVDisclosure</developerName>
+    <name>IDV Disclosure</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

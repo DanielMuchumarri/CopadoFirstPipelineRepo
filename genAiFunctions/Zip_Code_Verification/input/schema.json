@@ -1,0 +1,24 @@
+{
+  "required" : [ "zipCode" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "finsAccountRec" : {
+      "title" : "finsAccountRec",
+      "description" : "The output from the Query Fins Account Using Last 4 Digits Account Number should be passed to this as input",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "FinServ__FinancialAccount__c"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "zipCode" : {
+      "title" : "zipCode",
+      "description" : "Pass the zip code value that user enters to this variable",
+      "lightning:type" : "lightning__numberType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

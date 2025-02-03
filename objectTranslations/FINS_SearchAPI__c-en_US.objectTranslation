@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Google Search API</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Google Search API</value>
+    </caseValues>
+    <fields>
+        <label><!-- EngineId --></label>
+        <name>EngineId__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

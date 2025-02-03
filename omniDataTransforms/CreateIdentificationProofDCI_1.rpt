@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;vlcTimeTracking&quot; : {
+    &quot;FetchPriorAssessment&quot; : null,
+    &quot;AssessmentComplete&quot; : null,
+    &quot;DataRaptorPostAction1&quot; : null,
+    &quot;DataRaptorPostAction2&quot; : null,
+    &quot;Add Employment Information&quot; : null,
+    &quot;View Confirmation&quot; : null,
+    &quot;Upload Documents&quot; : null,
+    &quot;Account Funding&quot; : null,
+    &quot;Provide Disclosure and Consent&quot; : null,
+    &quot;Services Requested&quot; : null,
+    &quot;Add Address Details&quot; : null,
+    &quot;Add Primary Information&quot; : null,
+    &quot;Save-Responses&quot; : null,
+    &quot;Verify Your Identity&quot; : null
+  },
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;userTimeZone&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;ContextId&quot; : null,
+  &quot;AssessmentComplete&quot; : {
+    &quot;QRCode2&quot; : null
+  },
+  &quot;Add Employment Information&quot; : {
+    &quot;Employment_Information&quot; : {
+      &quot;FSC_ONB_Employment_Type&quot; : null,
+      &quot;FSC_ONB_JobTitle&quot; : null,
+      &quot;FSC_ONB_EndDate&quot; : null,
+      &quot;FSC_ONB_GrossAnnualIncome&quot; : null,
+      &quot;FSC_ONB_StartDate&quot; : null,
+      &quot;FSC_ONB_Employment_Name&quot; : null,
+      &quot;FSC_ONB_WorkerType&quot; : null
+    }
+  },
+  &quot;View Confirmation&quot; : { },
+  &quot;Upload Documents&quot; : {
+    &quot;FSC_ONB_v1_IDProof&quot; : [ {
+      &quot;data&quot; : null,
+      &quot;size&quot; : null,
+      &quot;filename&quot; : null
+    } ],
+    &quot;FSC_ONB_v1_AddressProof&quot; : [ {
+      &quot;data&quot; : null,
+      &quot;size&quot; : null,
+      &quot;filename&quot; : null
+    } ]
+  },
+  &quot;Account Funding&quot; : {
+    &quot;FSC_BankRoutingNumber&quot; : null,
+    &quot;FSC_ONB_NameontheAccount&quot; : null
+  },
+  &quot;Provide Disclosure and Consent&quot; : {
+    &quot;FSC_ONB_v1_Disclosure&quot; : null,
+    &quot;Signature1&quot; : null
+  },
+  &quot;Services Requested&quot; : {
+    &quot;FSC_ONB_CheckbookRequired&quot; : null,
+    &quot;FSC_ONB_ElectronicStmtOptin&quot; : null,
+    &quot;Mode_of_Operation&quot; : null,
+    &quot;FSC_ONB_ATMCardRequested&quot; : null
+  },
+  &quot;Add Address Details&quot; : {
+    &quot;Address&quot; : {
+      &quot;Address_Type&quot; : null,
+      &quot;Address_Country&quot; : null,
+      &quot;Address_State&quot; : null,
+      &quot;Address_Zip&quot; : null,
+      &quot;Address_City&quot; : null,
+      &quot;Address_Street&quot; : null
+    }
+  },
+  &quot;Add Primary Information&quot; : {
+    &quot;FSC_ONB_v1_Prefix&quot; : null,
+    &quot;FSC_ONB_v1_Suffix&quot; : null,
+    &quot;FSC_ONB_v1_FirstName&quot; : null,
+    &quot;FSC_ONB_v1_Phone&quot; : null,
+    &quot;FSC_ONB_v1_Gender&quot; : null,
+    &quot;FSC_ONB_v1_PrimaryTaxIdType&quot; : null,
+    &quot;FSC_ONB_v1_PrimaryTaxIdNumber&quot; : null,
+    &quot;FSC_ONB_v1_DateOfBirth&quot; : null,
+    &quot;FSC_ONB_v1_Nationality&quot; : null,
+    &quot;FSC_ONB_v1_BirthCountry&quot; : null,
+    &quot;FSC_ONB_v1_DomicileCountry&quot; : null,
+    &quot;FSC_ONB_v1_Email&quot; : null,
+    &quot;FSC_ONB_v1_EmploymentIndustry&quot; : null,
+    &quot;FSC_ONB_v1_PrimaryIdType&quot; : null,
+    &quot;FSC_ONB_v1_PrimaryId&quot; : null,
+    &quot;FSC_ONB_v1_PrimaryIdName&quot; : null,
+    &quot;FSC_ONB_v1_FundSource&quot; : null,
+    &quot;FSC_ONB_v1_ResidentType&quot; : null,
+    &quot;FSC_ONB_v1_LastName&quot; : null
+  },
+  &quot;Verify Your Identity&quot; : {
+    &quot;QRCode&quot; : null
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>CreateIdentificationProofDCI</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateIdentificationProofDCICustom0jIB00000004iOcMAIItem3</globalKey>
+        <inputFieldName>Upload Documents:FSC_ONB_v1_IDProof:data</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateIdentificationProofDCI</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>ContentDocumentId</outputFieldName>
+        <outputObjectName>ContentDocumentLink</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>CreateIdentificationProofDCICustom0jIB00000004iOcMAIItem4</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedFieldName>Id</linkedFieldName>
+        <linkedObjectSequence>1.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>CreateIdentificationProofDCI</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>LinkedEntityId</outputFieldName>
+        <outputObjectName>ContentDocumentLink</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>CreateIdentificationProofDCICustom0jIB00000004iOcMAIItem5</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>CreateIdentificationProofDCI</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>ContentDocumentLink</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Identification Proof</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateIdentificationProofDCICustom0jIB00000004iOcMAIItem0</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateIdentificationProofDCI</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Name</outputFieldName>
+        <outputObjectName>DocumentChecklistItem</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>CreateIdentificationProofDCICustom0jIB00000004iOcMAIItem1</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>CreateIdentificationProofDCI</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>DocumentChecklistItem</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateIdentificationProofDCICustom0jIB00000004iOcMAIItem2</globalKey>
+        <inputFieldName>PartyProfileId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateIdentificationProofDCI</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ParentRecordId</outputFieldName>
+        <outputObjectName>DocumentChecklistItem</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;PartyProfileId&quot; : &quot;0xUB0000000CalJMAS&quot;,
+  &quot;vlcTimeTracking&quot; : {
+    &quot;FetchPriorAssessment&quot; : null,
+    &quot;AssessmentComplete&quot; : null,
+    &quot;DataRaptorPostAction1&quot; : null,
+    &quot;DataRaptorPostAction2&quot; : null,
+    &quot;Add Employment Information&quot; : null,
+    &quot;View Confirmation&quot; : null,
+    &quot;Upload Documents&quot; : null,
+    &quot;Account Funding&quot; : null,
+    &quot;Provide Disclosure and Consent&quot; : null,
+    &quot;Services Requested&quot; : null,
+    &quot;Add Address Details&quot; : null,
+    &quot;Add Primary Information&quot; : null,
+    &quot;Save-Responses&quot; : null,
+    &quot;Verify Your Identity&quot; : null
+  },
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;userTimeZone&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;ContextId&quot; : null,
+  &quot;AssessmentComplete&quot; : {
+    &quot;QRCode2&quot; : null
+  },
+  &quot;Add Employment Information&quot; : {
+    &quot;Employment_Information&quot; : {
+      &quot;FSC_ONB_Employment_Type&quot; : null,
+      &quot;FSC_ONB_JobTitle&quot; : null,
+      &quot;FSC_ONB_EndDate&quot; : null,
+      &quot;FSC_ONB_GrossAnnualIncome&quot; : null,
+      &quot;FSC_ONB_StartDate&quot; : null,
+      &quot;FSC_ONB_Employment_Name&quot; : null,
+      &quot;FSC_ONB_WorkerType&quot; : null
+    }
+  },
+  &quot;View Confirmation&quot; : { },
+  &quot;Upload Documents&quot; : {
+    &quot;FSC_ONB_v1_IDProof&quot; : [ {
+      &quot;data&quot; : null,
+      &quot;size&quot; : null,
+      &quot;filename&quot; : null
+    } ],
+    &quot;FSC_ONB_v1_AddressProof&quot; : [ {
+      &quot;data&quot; : null,
+      &quot;size&quot; : null,
+      &quot;filename&quot; : null
+    } ]
+  },
+  &quot;Account Funding&quot; : {
+    &quot;FSC_BankRoutingNumber&quot; : null,
+    &quot;FSC_ONB_NameontheAccount&quot; : null
+  },
+  &quot;Provide Disclosure and Consent&quot; : {
+    &quot;FSC_ONB_v1_Disclosure&quot; : null,
+    &quot;Signature1&quot; : null
+  },
+  &quot;Services Requested&quot; : {
+    &quot;FSC_ONB_CheckbookRequired&quot; : null,
+    &quot;FSC_ONB_ElectronicStmtOptin&quot; : null,
+    &quot;Mode_of_Operation&quot; : null,
+    &quot;FSC_ONB_ATMCardRequested&quot; : null
+  },
+  &quot;Add Address Details&quot; : {
+    &quot;Address&quot; : {
+      &quot;Address_Type&quot; : null,
+      &quot;Address_Country&quot; : null,
+      &quot;Address_State&quot; : null,
+      &quot;Address_Zip&quot; : null,
+      &quot;Address_City&quot; : null,
+      &quot;Address_Street&quot; : null
+    }
+  },
+  &quot;Add Primary Information&quot; : {
+    &quot;FSC_ONB_v1_Prefix&quot; : null,
+    &quot;FSC_ONB_v1_Suffix&quot; : null,
+    &quot;FSC_ONB_v1_FirstName&quot; : null,
+    &quot;FSC_ONB_v1_Phone&quot; : null,
+    &quot;FSC_ONB_v1_Gender&quot; : null,
+    &quot;FSC_ONB_v1_PrimaryTaxIdType&quot; : null,
+    &quot;FSC_ONB_v1_PrimaryTaxIdNumber&quot; : null,
+    &quot;FSC_ONB_v1_DateOfBirth&quot; : null,
+    &quot;FSC_ONB_v1_Nationality&quot; : null,
+    &quot;FSC_ONB_v1_BirthCountry&quot; : null,
+    &quot;FSC_ONB_v1_DomicileCountry&quot; : null,
+    &quot;FSC_ONB_v1_Email&quot; : null,
+    &quot;FSC_ONB_v1_EmploymentIndustry&quot; : null,
+    &quot;FSC_ONB_v1_PrimaryIdType&quot; : null,
+    &quot;FSC_ONB_v1_PrimaryId&quot; : null,
+    &quot;FSC_ONB_v1_PrimaryIdName&quot; : null,
+    &quot;FSC_ONB_v1_FundSource&quot; : null,
+    &quot;FSC_ONB_v1_ResidentType&quot; : null,
+    &quot;FSC_ONB_v1_LastName&quot; : null
+  },
+  &quot;Verify Your Identity&quot; : {
+    &quot;QRCode&quot; : null
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>CreateIdentificationProofDCI_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

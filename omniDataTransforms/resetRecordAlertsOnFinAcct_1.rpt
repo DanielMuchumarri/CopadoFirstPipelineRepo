@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>For the given account and financial account, reactivates all alerts, removes snoozeuntil fields, and rolls the valid until date to today + 60 days</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;recordAlert&quot; : [ {
+    &quot;Subject&quot; : &quot;Payment Due Soon&quot;,
+    &quot;Id&quot; : &quot;0qZ8X000000KzrTUAS&quot;
+  }, {
+    &quot;Subject&quot; : &quot;VISA Card Verification Failure&quot;,
+    &quot;Id&quot; : &quot;0qZ8X000000KzrUUAS&quot;
+  }, {
+    &quot;Subject&quot; : &quot;Potential Fraud Alert&quot;,
+    &quot;Id&quot; : &quot;0qZ8X000000KzrVUAS&quot;
+  } ]
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>resetRecordAlertsOnFinAcct</name>
+    <nullInputsIncludedInOutput>true</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>71683ed3-bf9b-4a3f-8ad0-a2a2db0499c6</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>resetRecordAlertsOnFinAcct</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>RecordAlert</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>$Vlocity.N_DAYS_FROM_NOW:60</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>36023387-ba2a-4a72-b215-7f373e9ddefc</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>resetRecordAlertsOnFinAcct</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ValidUntilDate</outputFieldName>
+        <outputObjectName>RecordAlert</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>aa51b605-9b5d-41c4-9e56-34cd05d74da2</globalKey>
+        <inputFieldName>recordAlert:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>resetRecordAlertsOnFinAcct</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>RecordAlert</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>be4e4cc4-5ed4-4ca2-8bf3-9af74e26d730</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>resetRecordAlertsOnFinAcct</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SnoozeUntilDate</outputFieldName>
+        <outputObjectName>RecordAlert</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>$Vlocity.TRUE</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f4db98d1-31fa-4824-9be5-81c2c7b57a53</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>resetRecordAlertsOnFinAcct</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IsActive</outputFieldName>
+        <outputObjectName>RecordAlert</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;recordAlert&quot; : [ {
+    &quot;Subject&quot; : &quot;Payment Due Soon&quot;,
+    &quot;Id&quot; : &quot;0qZB00000008W7rMAE&quot;
+  }, {
+    &quot;Subject&quot; : &quot;VISA Card Verification Failure&quot;,
+    &quot;Id&quot; : &quot;0qZB00000008W7sMAE&quot;
+  }, {
+    &quot;Subject&quot; : &quot;Potential Fraud Alert&quot;,
+    &quot;Id&quot; : &quot;0qZB00000008W7tMAE&quot;
+  } ],
+  &quot;ActionPlan&quot; : [ {
+    &quot;Id&quot; : &quot;07rB0000000M3geIAC&quot;
+  }, {
+    &quot;Id&quot; : &quot;07rB0000000M3gfIAC&quot;
+  } ],
+  &quot;Case&quot; : {
+    &quot;Id&quot; : &quot;500B0000009Ie4eIAC&quot;
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>resetRecordAlertsOnFinAcct_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

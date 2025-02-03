@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Accept Date/Time --></label>
+        <name>tspa__AcceptDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accepted By Agent --></label>
+        <name>tspa__AcceptedByAgent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent Work Status --></label>
+        <name>tspa__AgentWorkStatus__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assigned</masterLabel>
+            <translation><!-- Assigned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DeclinedOnPushTimeout</masterLabel>
+            <translation><!-- DeclinedOnPushTimeout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opened</masterLabel>
+            <translation><!-- Opened --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transferred</masterLabel>
+            <translation><!-- Transferred --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unavailable</masterLabel>
+            <translation><!-- Unavailable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Apple Store Configuration --></label>
+        <name>tspa__AppleStoreConfiguration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned Date/Time --></label>
+        <name>tspa__AssignedDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancellation Date/Time --></label>
+        <name>tspa__CancellationDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancellation Reason --></label>
+        <name>tspa__Cancellation_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel Id --></label>
+        <name>tspa__Channel_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Datetime --></label>
+        <name>tspa__CloseDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Community Id --></label>
+        <name>tspa__Community_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Community URL --></label>
+        <name>tspa__Community_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Creation Timestamp --></label>
+        <name>tspa__CreationTimestamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Audio --></label>
+        <name>tspa__EnableAudio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Live Agent --></label>
+        <name>tspa__Live_Agent__c</name>
+        <relationshipLabel><!-- Visual Remote Assistant-Support Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- RecordId --></label>
+        <name>tspa__RecordId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Redirect --></label>
+        <name>tspa__Redirect__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session Active --></label>
+        <name>tspa__Session_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session Initiated --></label>
+        <name>tspa__Session_Initiated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session Type --></label>
+        <name>tspa__Session_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session --></label>
+        <name>tspa__Session__c</name>
+        <relationshipLabel><!-- Visual Remote Assistant-Support Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>tspa__Status__c</name>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

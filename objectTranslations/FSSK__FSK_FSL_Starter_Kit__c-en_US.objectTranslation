@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Actual Times --></label>
+        <name>FSSK__ActualTimes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Times on Gantt --></label>
+        <name>FSSK__Actual_Times_on_Gantt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Add Asset to Maintenance Plan --></label>
+        <name>FSSK__Add_Asset_to_Maintenance_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assign Resource On Service Appointment --></label>
+        <name>FSSK__Assign_Resource_On_Service_Appointment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancelation Notification --></label>
+        <name>FSSK__Cancelation_Notification__c</name>
+    </fields>
+    <fields>
+        <help><!-- Dispatcher --></help>
+        <label><!-- Community Dispatcher License --></label>
+        <name>FSSK__Community_Dispatcher_License__c</name>
+    </fields>
+    <fields>
+        <label><!-- Community Dispatcher Permission --></label>
+        <name>FSSK__Community_Dispatcher_Permission__c</name>
+    </fields>
+    <fields>
+        <label><!-- Create FSL Resource From User --></label>
+        <name>FSSK__Create_FSL_Resource_From_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Notification Type Id --></label>
+        <name>FSSK__Custom_Notification_Type_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of days until the first asset maintenance work order date --></help>
+        <label><!-- Days Until First Maintenance --></label>
+        <name>FSSK__Days_Until_First_Maintenance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dispatched Notification --></label>
+        <name>FSSK__Dispatched_Notification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dispatcher License Permission ID --></label>
+        <name>FSSK__Dispatcher_License_Permission_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dispatcher PSL ID --></label>
+        <name>FSSK__Dispatcher_PSL_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dispatcher Permissions ID --></label>
+        <name>FSSK__Dispatcher_Permissions_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Emergency Dispatched Notification --></label>
+        <name>FSSK__Emergency_Dispatched_Notification__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field stores the Services Appointment statues API Name that indicates changes relates to end time actions --></help>
+        <label><!-- Ending Status --></label>
+        <name>FSSK__EndingStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Excluded SR on SA Rejection --></label>
+        <name>FSSK__Excluded_SR_on_SA_Rejection__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Number of Hours to notify Technician for dispatched Service Appointment --></help>
+        <label><!-- Hours for Dispatched Notification --></label>
+        <name>FSSK__Hours_for_Dispatched_Notification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile Canned Custom Notification --></label>
+        <name>FSSK__Mobile_Canned_Custom_Notification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile License Permission ID --></label>
+        <name>FSSK__Mobile_License_Permission_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile PSL ID --></label>
+        <name>FSSK__Mobile_PSL_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile Status Satiation --></label>
+        <name>FSSK__Mobile_Status_Satiation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Populate Work Order Lookup --></label>
+        <name>FSSK__Populate_Work_Order_Lookup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remove Licenses on Resource Deactivation --></label>
+        <name>FSSK__Remove_Licenses_on_Deactivation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource License Permission ID --></label>
+        <name>FSSK__Resource_License_Permission_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Permissions ID --></label>
+        <name>FSSK__Resource_Permissions_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduling PSL ID --></label>
+        <name>FSSK__Scheduling_PSL_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Set Gantt Label --></label>
+        <name>FSSK__Set_Gantt_Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field stores the Services Appointment statues API Name that indicates changes relates to start time actions --></help>
+        <label><!-- Starting Status --></label>
+        <name>FSSK__StartingStatus__c</name>
+    </fields>
+    <fields>
+        <help><!-- The status that represents a successful asset installation --></help>
+        <label><!-- Successful Asset Installation Status --></label>
+        <name>FSSK__Successful_Asset_Installation_Status__c</name>
+    </fields>
+</CustomObjectTranslation>

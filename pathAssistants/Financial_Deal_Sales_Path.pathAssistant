@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>FinancialDeal</entityName>
+    <fieldName>Stage</fieldName>
+    <masterLabel>Financial Deal Sales Path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>MandatedDate</fieldNames>
+        <fieldNames>ReceivedFee</fieldNames>
+        <fieldNames>TotalExpectedFee</fieldNames>
+        <fieldNames>TransactionValue</fieldNames>
+        <picklistValueName>Execution</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>MandatedDate</fieldNames>
+        <fieldNames>TotalExpectedFee</fieldNames>
+        <fieldNames>FinancialDealCode</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Executive committee approvals.&lt;/li&gt;&lt;li&gt;Engage Onboarding team.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Mandate</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>FinancialDealType</fieldNames>
+        <fieldNames>Role</fieldNames>
+        <fieldNames>TotalExpense</fieldNames>
+        <fieldNames>ConflictStatus</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Create pitch book.&lt;/li&gt;&lt;li&gt;Monitor expenses.&lt;/li&gt;&lt;li&gt;Identify Decision Makers.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Pitch</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

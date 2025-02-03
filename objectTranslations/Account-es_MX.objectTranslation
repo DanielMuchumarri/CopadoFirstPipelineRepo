@@ -1,0 +1,2062 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Financial Accounts Summary --></label>
+        <name>FSC_Banker_Profile_Fin_Acct_Summary</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Emergency Account Fields --></label>
+        <name>FSL__Emergency_Account_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Gantt Lightbox --></label>
+        <name>FSL__Gantt_Lightbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- MapAnything Click2Create --></label>
+        <name>MapAnything_Click2Create</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Financial Accounts Summary --></label>
+        <name>WM_Client_Profile_Fin_Acct_Summary</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Household Summary --></label>
+        <name>WM_Client_Profile_Relations_HH_Summary</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Relationship Group Members --></label>
+        <name>WM_Client_Relationship_Group_Member</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Relationship Groups --></label>
+        <name>WM_Client_Relationship_Groups</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Account Plan --></label>
+        <name>Account_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Claim --></label>
+        <name>Claim__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact Information Validated --></label>
+        <name>Contact_Information_Validated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Date --></label>
+        <name>CreatedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Limit --></label>
+        <name>CreditLimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Balance --></label>
+        <name>Credit_Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Remaining --></label>
+        <name>Credit_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Year Revenue Goal --></label>
+        <name>Current_Year_Revenue_Goal__c</name>
+    </fields>
+    <fields>
+        <label><!-- DB --></label>
+        <name>EDY_ORGCUSTOM__DB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Name --></label>
+        <name>EDY_ORGCUSTOM__Old_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eligible for Home Improvement Offer --></label>
+        <name>Eligible_for_Home_Improvement_Offer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Expenses --></label>
+        <name>FINS_AnnualExpenses__c</name>
+        <picklistValues>
+            <masterLabel>$0-$50,000</masterLabel>
+            <translation><!-- $0-$50,000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$100,000-$250,000</masterLabel>
+            <translation><!-- $100,000-$250,000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$250,000-$500,000</masterLabel>
+            <translation><!-- $250,000-$500,000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$50,000-$100,000</masterLabel>
+            <translation><!-- $50,000-$100,000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over $500,000</masterLabel>
+            <translation><!-- Over $500,000 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Assets Under Management --></label>
+        <name>FINS_Assets_Under_Management__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assets --></label>
+        <name>FINS_Assets__c</name>
+    </fields>
+    <fields>
+        <label><!-- B2B Client Profile Summary --></label>
+        <name>FINS_B2B_Client_Profile_Summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Markets --></label>
+        <name>FINS_CIB_New_Markets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Capital Appreciation --></label>
+        <name>FINS_CapitalAppreciationRank__c</name>
+    </fields>
+    <fields>
+        <label><!-- ClientSummaryRich --></label>
+        <name>FINS_ClientSummaryRich__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Profile Summary --></label>
+        <name>FINS_Client_Profile_Summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency YTD --></label>
+        <name>FINS_Currency_YTD__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose the insight you&apos;d like to display for this account --></help>
+        <label><!-- Einstein - Account Insights --></label>
+        <name>FINS_Einstein_Account_Insights__c</name>
+        <picklistValues>
+            <masterLabel>Company Cost Cutting</masterLabel>
+            <translation><!-- Company Cost Cutting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company Expanding</masterLabel>
+            <translation><!-- Company Expanding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leadership Change</masterLabel>
+            <translation><!-- Leadership Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merger &amp; Acquisition</masterLabel>
+            <translation><!-- Merger &amp; Acquisition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No communication</masterLabel>
+            <translation><!-- No communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect unresponsive</masterLabel>
+            <translation><!-- Prospect unresponsive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the date for the first article you&apos;d like to display --></help>
+        <label><!-- Einstein - Article 1 Date --></label>
+        <name>FINS_Einstein_Article_1_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the source for the first article you&apos;d like to display --></help>
+        <label><!-- Einstein - Article 1 Source --></label>
+        <name>FINS_Einstein_Article_1_Source__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the title for the first article you&apos;d like to display --></help>
+        <label><!-- Einstein - Article 1 Title --></label>
+        <name>FINS_Einstein_Article_1_Title__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the URL for the first article you&apos;d like to display --></help>
+        <label><!-- Einstein - Article 1 URL --></label>
+        <name>FINS_Einstein_Article_1_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date for the second article you&apos;d like to display --></help>
+        <label><!-- Einstein - Article 2 Date --></label>
+        <name>FINS_Einstein_Article_2_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the source for the second article you&apos;d like to display --></help>
+        <label><!-- Einstein - Article 2 Source --></label>
+        <name>FINS_Einstein_Article_2_Source__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the title for the second article you&apos;d like to display --></help>
+        <label><!-- Einstein - Article 2 Title --></label>
+        <name>FINS_Einstein_Article_2_Title__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the URL for the second article you&apos;d like to display --></help>
+        <label><!-- Einstein - Article 2 URL --></label>
+        <name>FINS_Einstein_Article_2_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date for the third article you&apos;d like to display --></help>
+        <label><!-- Einstein - Article 3 Date --></label>
+        <name>FINS_Einstein_Article_3_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the source for the third article you&apos;d like to display --></help>
+        <label><!-- Einstein - Article 3 Source --></label>
+        <name>FINS_Einstein_Article_3_Source__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the title for the third article you&apos;d like to display --></help>
+        <label><!-- Einstein - Article 3 Title --></label>
+        <name>FINS_Einstein_Article_3_Title__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the URL for the third article you&apos;d like to display --></help>
+        <label><!-- Einstein - Article 3 URL --></label>
+        <name>FINS_Einstein_Article_3_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Plan Existing --></label>
+        <name>FINS_Financial_Plan_Existing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Foreign Currency Experience --></label>
+        <name>FINS_ForeignCurrencyExperience__c</name>
+    </fields>
+    <fields>
+        <label><!-- Foreign Currency Knowledge --></label>
+        <name>FINS_ForeignCurrencyKnowledge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Foreign Currency Percentage --></label>
+        <name>FINS_ForeignCurrencyPercentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Foreign Securities Experience --></label>
+        <name>FINS_ForeignSecuritiesExperience__c</name>
+    </fields>
+    <fields>
+        <label><!-- Foreign Securities Knowledge --></label>
+        <name>FINS_ForeignSecuritiesKnowledge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Foreign Securities Percentage --></label>
+        <name>FINS_ForeignSecuritiesPercentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Preferred Gender Pronoun --></help>
+        <label><!-- PGP --></label>
+        <name>FINS_Insurance_PGP__c</name>
+        <picklistValues>
+            <masterLabel>He/Him/His</masterLabel>
+            <translation><!-- He/Him/His --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>She/Her/Hers</masterLabel>
+            <translation><!-- She/Her/Hers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>They/Them/Theirs</masterLabel>
+            <translation><!-- They/Them/Theirs --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Transaction --></label>
+        <name>FINS_Last_Transaction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Point of Entry --></label>
+        <name>FINS_Lending_Point_of_Entry__c</name>
+        <picklistValues>
+            <masterLabel>Car Loan</masterLabel>
+            <translation><!-- Car Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Loan</masterLabel>
+            <translation><!-- Commercial Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Card</masterLabel>
+            <translation><!-- Credit Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant Services</masterLabel>
+            <translation><!-- Merchant Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mortgage</masterLabel>
+            <translation><!-- Mortgage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Loan</masterLabel>
+            <translation><!-- Personal Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Savings Account</masterLabel>
+            <translation><!-- Savings Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasury Management</masterLabel>
+            <translation><!-- Treasury Management --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lines of Business --></label>
+        <name>FINS_Lines_of_Business__c</name>
+        <picklistValues>
+            <masterLabel>Boiler &amp; Machinery</masterLabel>
+            <translation><!-- Boiler &amp; Machinery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Auto &amp; Trucking</masterLabel>
+            <translation><!-- Commercial Auto &amp; Trucking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Property</masterLabel>
+            <translation><!-- Commercial Property --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cyber</masterLabel>
+            <translation><!-- Cyber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environmental Liability</masterLabel>
+            <translation><!-- Environmental Liability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Excess Casualty &amp; Umbrella</masterLabel>
+            <translation><!-- Excess Casualty &amp; Umbrella --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Liability</masterLabel>
+            <translation><!-- General Liability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group Benefits</masterLabel>
+            <translation><!-- Group Benefits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inland Marine</masterLabel>
+            <translation><!-- Inland Marine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Management &amp; Professional Liability</masterLabel>
+            <translation><!-- Management &amp; Professional Liability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ocean Marine</masterLabel>
+            <translation><!-- Ocean Marine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Business Owner&apos;s Policy</masterLabel>
+            <translation><!-- Small Business Owner&apos;s Policy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surety Bonds</masterLabel>
+            <translation><!-- Surety Bonds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workers Compensation</masterLabel>
+            <translation><!-- Workers Compensation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Financial Plan New --></label>
+        <name>FINS_New_Financial_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Paused Card --></label>
+        <name>FINS_Paused_Card__c</name>
+    </fields>
+    <fields>
+        <label><!-- Investment Focus --></label>
+        <name>FINS_Private_Equity_Investment_Focus__c</name>
+        <picklistValues>
+            <masterLabel>Commercial Real Estate</masterLabel>
+            <translation><!-- Commercial Real Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Early Start Up Fund</masterLabel>
+            <translation><!-- Early Start Up Fund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fund of Funds</masterLabel>
+            <translation><!-- Fund of Funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Growth Fund</masterLabel>
+            <translation><!-- Growth Fund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mixed Use Properties</masterLabel>
+            <translation><!-- Mixed Use Properties --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential Real Estate</masterLabel>
+            <translation><!-- Residential Real Estate --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pronouns --></label>
+        <name>FINS_Pronouns__c</name>
+        <picklistValues>
+            <masterLabel>He/Him/His</masterLabel>
+            <translation><!-- He/Him/His --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>She/Her/Hers</masterLabel>
+            <translation><!-- She/Her/Hers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>They/Them/Theirs</masterLabel>
+            <translation><!-- They/Them/Theirs --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Q-Branch Demo Reference --></label>
+        <name>FINS_Q_Branch_Demo_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value Indicator --></label>
+        <name>FINS_Rating_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Plan --></label>
+        <name>FINS_Relationship_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of Requests (Last 30 Days) --></label>
+        <name>FINS_Requests_Last_30__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Income --></label>
+        <name>FINS_Retail_Annual_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Value --></label>
+        <name>FINS_Retail_Customer_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liabilities --></label>
+        <name>FINS_Retail_Liabilities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Worth --></label>
+        <name>FINS_Retail_Net_Worth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Income --></label>
+        <name>FINS_Retail_Other_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal Assets --></label>
+        <name>FINS_Retail_Personal_Assets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Social Name --></label>
+        <name>FINS_Social_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Expenses --></label>
+        <name>FINS_SpecialExpenses__c</name>
+        <picklistValues>
+            <masterLabel>$0-$50,000</masterLabel>
+            <translation><!-- $0-$50,000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$100,000-$250,000</masterLabel>
+            <translation><!-- $100,000-$250,000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$50,000-$100,000</masterLabel>
+            <translation><!-- $50,000-$100,000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over $250,000</masterLabel>
+            <translation><!-- Over $250,000 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stocks Percentage --></label>
+        <name>FINS_StocksPercentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary of Activities --></label>
+        <name>FINS_Summary_of_Activities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary of Financial Accounts --></label>
+        <name>FINS_Summary_of_Financial_Accounts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary of Financial Goals and Plans --></label>
+        <name>FINS_Summary_of_Financial_Goals_Plans__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary of Interaction Summaries --></label>
+        <name>FINS_Summary_of_Interaction_Summaries__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary of Invoices --></label>
+        <name>FINS_Summary_of_Invoices__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary of Open Cases --></label>
+        <name>FINS_Summary_of_Open_Cases__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary of Opportunities --></label>
+        <name>FINS_Summary_of_Opportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary of Orders --></label>
+        <name>FINS_Summary_of_Orders__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>FINS_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- 12 Months Sales Trend --></label>
+        <name>FINS_X12_Months_Sales_Trend__c</name>
+    </fields>
+    <fields>
+        <label><!-- 90 Day Sales Trend --></label>
+        <name>FINS_X90_Day_Sales_Trend__c</name>
+    </fields>
+    <fields>
+        <label><!-- Years to Retirement --></label>
+        <name>FINS_Years_to_Retirement__c</name>
+    </fields>
+    <fields>
+        <label><!-- IDO Flags --></label>
+        <name>FinServ_IDO_Flags__c</name>
+    </fields>
+    <fields>
+        <label><!-- AUM --></label>
+        <name>FinServ__AUM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Number --></label>
+        <name>FinServ__BankNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Borrowing History --></label>
+        <name>FinServ__BorrowingHistory__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation>Excelente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited to No History</masterLabel>
+            <translation>Limitado a sin historial</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moderate</masterLabel>
+            <translation>Moderada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor</masterLabel>
+            <translation>Malo</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Borrowing Priorities --></label>
+        <name>FinServ__BorrowingPriorities__c</name>
+        <picklistValues>
+            <masterLabel>Build Equity</masterLabel>
+            <translation>Acumulación de capital</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debt Consolidation</masterLabel>
+            <translation>Consolidación de deuda</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation>Educación</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investments</masterLabel>
+            <translation>Inversiones</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Large Capital Purchases</masterLabel>
+            <translation>Adquisiciones de capital grandes</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property Purchase</masterLabel>
+            <translation>Compra de propiedad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renovations</masterLabel>
+            <translation>Renovaciones</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Branch Code --></label>
+        <name>FinServ__BranchCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Name --></label>
+        <name>FinServ__BranchName__c</name>
+    </fields>
+    <fields>
+        <help>Incluye todas las reclamaciones (independientemente de su estado), incluyendo las que están resueltas, siempre que la póliza relacionada esté activa.</help>
+        <label><!-- Claims on Household Policies --></label>
+        <name>FinServ__ClaimsOnHouseholdPolicies__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>FinServ__ClientCategory__c</name>
+        <picklistValues>
+            <masterLabel>Bronze</masterLabel>
+            <translation>Bronze</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold</masterLabel>
+            <translation>Gold</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum</masterLabel>
+            <translation>Platinum</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver</masterLabel>
+            <translation>Silver</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Conversion DateTime --></label>
+        <name>FinServ__ConversionDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Rating --></label>
+        <name>FinServ__CreditRating__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation>Excelente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fair</masterLabel>
+            <translation>Aceptable</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation>Buena</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor</masterLabel>
+            <translation>Malo</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Credit Score --></label>
+        <name>FinServ__CreditScore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer ID --></label>
+        <name>FinServ__CustomerID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Segment --></label>
+        <name>FinServ__CustomerSegment__c</name>
+        <picklistValues>
+            <masterLabel>Borrower</masterLabel>
+            <translation>Prestatario</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Long Term Growth</masterLabel>
+            <translation>Crecimiento a largo plazo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mass Affluent</masterLabel>
+            <translation>Altos ingresos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mass Market</masterLabel>
+            <translation>Mercado general</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Millennial</masterLabel>
+            <translation>Milenio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transactional</masterLabel>
+            <translation>Transaccional</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth Accumulation</masterLabel>
+            <translation>Acumulación de riqueza</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Type --></label>
+        <name>FinServ__CustomerType__c</name>
+        <picklistValues>
+            <masterLabel>Borrower</masterLabel>
+            <translation>Prestatario</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investor</masterLabel>
+            <translation>Inversor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relational</masterLabel>
+            <translation>Relacional</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transaction</masterLabel>
+            <translation>Transacción</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Financial Interests --></label>
+        <name>FinServ__FinancialInterests__c</name>
+        <picklistValues>
+            <masterLabel>College Planning</masterLabel>
+            <translation>Planificación universitaria</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energy</masterLabel>
+            <translation>Energía</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed Income</masterLabel>
+            <translation>Renta fija</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Municipal Bonds</masterLabel>
+            <translation>Bonos municipales</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retirement</masterLabel>
+            <translation>Jubilación</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology</masterLabel>
+            <translation>Tecnología</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Es el conteo de las pólizas en propiedad de los miembros del domicilio. Por ejemplo, si el domicilio principal de Rachel Adam tiene tres miembros, incluyendo Rachel, y cada uno de ellos tiene dos pólizas, este campo mostrará un valor de 6.</help>
+        <label><!-- Household Policies --></label>
+        <name>FinServ__HouseholdPolicies__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual ID --></label>
+        <name>FinServ__IndividualId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual Type --></label>
+        <name>FinServ__IndividualType__c</name>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation>Grupo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation>Individuo</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Insurance Customer Since --></label>
+        <name>FinServ__InsuranceCustomerSince__c</name>
+    </fields>
+    <fields>
+        <label><!-- Investment Experience --></label>
+        <name>FinServ__InvestmentExperience__c</name>
+        <picklistValues>
+            <masterLabel>Experienced</masterLabel>
+            <translation>Con experiencia</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inexperienced</masterLabel>
+            <translation>Sin experiencia</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moderately Experienced</masterLabel>
+            <translation>Con algo de experiencia</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moderately Inexperienced</masterLabel>
+            <translation>Con algo de inexperiencia</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Investment Objectives --></label>
+        <name>FinServ__InvestmentObjectives__c</name>
+        <picklistValues>
+            <masterLabel>Aggressive Growth</masterLabel>
+            <translation>Crecimiento agresivo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Balanced</masterLabel>
+            <translation>Equilibrado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conservative Income</masterLabel>
+            <translation>Ingresos conservadores</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Growth</masterLabel>
+            <translation>Crecimiento</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Income</masterLabel>
+            <translation>Ingresos</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- KYC Date --></label>
+        <name>FinServ__KYCDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- KYC Status --></label>
+        <name>FinServ__KYCStatus__c</name>
+        <picklistValues>
+            <masterLabel>Completed - Invalid</masterLabel>
+            <translation>Completado - No válido</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed - Valid</masterLabel>
+            <translation>Completado - Válido</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation>Vencido</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Queue</masterLabel>
+            <translation>En cola</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In progress</masterLabel>
+            <translation>En curso</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overdue</masterLabel>
+            <translation>Vencidas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Required</masterLabel>
+            <translation>Requerido</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Interaction --></label>
+        <name>FinServ__LastInteraction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Review --></label>
+        <name>FinServ__LastReview__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Transaction Date - Joint Owner --></label>
+        <name>FinServ__LastTransactionDateJointOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Transaction Date - Primary Owner --></label>
+        <name>FinServ__LastTransactionDatePrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Transaction Date --></label>
+        <name>FinServ__LastTransactionDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Used Channel --></label>
+        <name>FinServ__LastUsedChannel__c</name>
+        <picklistValues>
+            <masterLabel>Branch</masterLabel>
+            <translation>Sucursal</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Center</masterLabel>
+            <translation>Centro de llamadas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile</masterLabel>
+            <translation>Móvil</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Otra</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation>Web</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Relationship Length --></label>
+        <name>FinServ__LengthOfRelationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lifetime Value --></label>
+        <name>FinServ__LifetimeValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Segment --></label>
+        <name>FinServ__MarketingSegment__c</name>
+        <picklistValues>
+            <masterLabel>Female Investor</masterLabel>
+            <translation>Inversor femenino</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High Net Worth</masterLabel>
+            <translation>Patrimonio neto elevado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mass Affluent</masterLabel>
+            <translation>Altos ingresos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Millennial</masterLabel>
+            <translation>Milenio</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Net Worth --></label>
+        <name>FinServ__NetWorth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Interaction --></label>
+        <name>FinServ__NextInteraction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Review --></label>
+        <name>FinServ__NextReview__c</name>
+    </fields>
+    <fields>
+        <label><!-- Important Notes --></label>
+        <name>FinServ__Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal Interests --></label>
+        <name>FinServ__PersonalInterests__c</name>
+        <picklistValues>
+            <masterLabel>Biking</masterLabel>
+            <translation>Ciclismo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College Basketball</masterLabel>
+            <translation>Baloncesto universitario</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cooking</masterLabel>
+            <translation>Cocina</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environment</masterLabel>
+            <translation>Entorno</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hiking</masterLabel>
+            <translation>Senderismo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wine</masterLabel>
+            <translation>Enología</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact --></label>
+        <name>FinServ__PrimaryContact__c</name>
+        <relationshipLabel><!-- Accounts (Primary Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External Referrer --></label>
+        <name>FinServ__ReferredByContact__c</name>
+        <relationshipLabel><!-- My Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Internal Referrer --></label>
+        <name>FinServ__ReferredByUser__c</name>
+        <relationshipLabel><!-- Accounts (Internal Referrer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Relationship Start Date --></label>
+        <name>FinServ__RelationshipStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Review Frequency --></label>
+        <name>FinServ__ReviewFrequency__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation>Anualmente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation>Mensualmente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation>Trimestral</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Risk Tolerance --></label>
+        <name>FinServ__RiskTolerance__c</name>
+        <picklistValues>
+            <masterLabel>Aggressive</masterLabel>
+            <translation>Agresiva</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conservative</masterLabel>
+            <translation>Conservadora</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moderate</masterLabel>
+            <translation>Moderada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>Ninguno</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Service Model --></label>
+        <name>FinServ__ServiceModel__c</name>
+        <picklistValues>
+            <masterLabel>Tier 1</masterLabel>
+            <translation>Nivel 1</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 2</masterLabel>
+            <translation>Nivel 2</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 3</masterLabel>
+            <translation>Nivel 3</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Source System ID --></label>
+        <name>FinServ__SourceSystemId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>FinServ__Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation>Activo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation>Cerradas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deceased</masterLabel>
+            <translation>Fallecido</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliquent</masterLabel>
+            <translation>Delictivo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dormant</masterLabel>
+            <translation>Latente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation>Inactivo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onboarding</masterLabel>
+            <translation>Incorporación</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation>Cliente potencial</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Time Horizon --></label>
+        <name>FinServ__TimeHorizon__c</name>
+        <picklistValues>
+            <masterLabel>Long Term</masterLabel>
+            <translation>Largo plazo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium Term</masterLabel>
+            <translation>Medio plazo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Short Term</masterLabel>
+            <translation>Corto plazo</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total AUM Joint Owner --></label>
+        <name>FinServ__TotalAUMJointOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total AUM Primary Owner --></label>
+        <name>FinServ__TotalAUMPrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Bank Deposits Joint Owner --></label>
+        <name>FinServ__TotalBankDepositsJointOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Bank Deposits Primary Owner --></label>
+        <name>FinServ__TotalBankDepositsPrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Bank Deposits --></label>
+        <name>FinServ__TotalBankDeposits__c</name>
+    </fields>
+    <fields>
+        <help>Incluye el monto pagado de todas las reclamaciones (independientemente de su estado), incluyendo las que están resueltas, siempre que la póliza relacionada esté activa.</help>
+        <label><!-- Total Claim Amount Paid --></label>
+        <name>FinServ__TotalClaimAmountPaid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Financial Accounts Joint Owner --></label>
+        <name>FinServ__TotalFinAcctsJointOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Financial Accounts Primary Owner --></label>
+        <name>FinServ__TotalFinAcctsPrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Financial Accounts --></label>
+        <name>FinServ__TotalFinancialAccounts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Held Financial Accounts Joint --></label>
+        <name>FinServ__TotalHeldFinAcctsJointOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Held Financial Accounts Primary --></label>
+        <name>FinServ__TotalHeldFinAcctsPrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <help>Es la suma de la prima escrita en bruto (GWP) para todas las pólizas activas en propiedad del domicilio en estos momentos.</help>
+        <label><!-- Total Household Premiums --></label>
+        <name>FinServ__TotalHouseholdPremiums__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Insurance Joint Owner --></label>
+        <name>FinServ__TotalInsuranceJointOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Insurance Primary Owner --></label>
+        <name>FinServ__TotalInsurancePrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Insurance --></label>
+        <name>FinServ__TotalInsurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Investments Joint Owner --></label>
+        <name>FinServ__TotalInvestmentsJointOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Investments Primary Owner --></label>
+        <name>FinServ__TotalInvestmentsPrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Investments --></label>
+        <name>FinServ__TotalInvestments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Liabilities Joint Owner --></label>
+        <name>FinServ__TotalLiabilitiesJointOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Liabilities Primary Owner --></label>
+        <name>FinServ__TotalLiabilitiesPrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Liabilities --></label>
+        <name>FinServ__TotalLiabilities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Nonfinancial Assets Joint Owner --></label>
+        <name>FinServ__TotalNonfinancialAssetsJointOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Nonfinancial Assets Primary Owner --></label>
+        <name>FinServ__TotalNonfinancialAssetsPrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Nonfinancial Assets --></label>
+        <name>FinServ__TotalNonfinancialAssets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Fin. Accounts - Joint Owner --></label>
+        <name>FinServ__TotalNumberOfFinAccountsJointOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Fin. Accounts - Primary Owner --></label>
+        <name>FinServ__TotalNumberOfFinAccountsPrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Number of Financial Accounts --></label>
+        <name>FinServ__TotalNumberOfFinAccounts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Outstanding Credit - Joint Owner --></label>
+        <name>FinServ__TotalOutstandingCreditJointOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Outstanding Credit - Primary Owner --></label>
+        <name>FinServ__TotalOutstandingCreditPrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Outstanding Credit --></label>
+        <name>FinServ__TotalOutstandingCredit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Premium --></label>
+        <name>FinServ__TotalPremium__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Revenue --></label>
+        <name>FinServ__TotalRevenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wallet Share --></label>
+        <name>FinServ__WalletShare__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Automatic Bill Pay --></label>
+        <name>Has_Automatic_Bill_Pay__c</name>
+    </fields>
+    <fields>
+        <label><!-- FEIN/Tax ID --></label>
+        <name>INS_FEIN_Tax_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Transaction --></label>
+        <name>Last_Transaction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Year Revenue Generated --></label>
+        <name>Last_Year_Revenue_Generated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Conversion Rate --></label>
+        <name>Lead_Conversion_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Create a Visit Window that indicates the ideal visit days and times for a specific customer.  Maps Advanced will ensure all future visits are made within these windows during routing optimization.  Created by: Aaron Bendickson Aug, 18 2023 --></help>
+        <label><!-- Maps Advanced Route Visit Windows --></label>
+        <name>Maps_Advanced_Route_Visit_Windows__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- NAICS Code --></label>
+        <name>NAICS_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Need Contact Info Verification --></label>
+        <name>Need_Contact_Info_Verification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lost Opportunities --></label>
+        <name>Number_Closed_Lost_Opportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed Opportunities --></label>
+        <name>Number_Closed_Opportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Won Opportunities --></label>
+        <name>Number_Closed_Won_Opportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active Leads --></label>
+        <name>Number_Leads_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Converted Leads --></label>
+        <name>Number_Leads_Converted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Leads --></label>
+        <name>Number_Leads_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Win Rate --></label>
+        <name>Opportunity_Win_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Ownership --></label>
+        <name>Ownership__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Certification --></label>
+        <name>Partner_Certification__c</name>
+        <picklistValues>
+            <masterLabel>Certified Partner</masterLabel>
+            <translation><!-- Certified Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elite Partner</masterLabel>
+            <translation><!-- Elite Partner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Partner Program Level --></label>
+        <name>Partner_Program_Level__c</name>
+        <picklistValues>
+            <masterLabel>Bronze</masterLabel>
+            <translation><!-- Bronze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold</masterLabel>
+            <translation><!-- Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum</masterLabel>
+            <translation><!-- Platinum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver</masterLabel>
+            <translation><!-- Silver --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Partnership Status --></label>
+        <name>Partnership_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onboarding</masterLabel>
+            <translation><!-- Onboarding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspended</masterLabel>
+            <translation><!-- Suspended --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Paused Card --></label>
+        <name>Paused_Card__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onboarding Template --></label>
+        <name>Ptnr_Onbd_Fmwk__Onboarding_Plan__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Q Brix Record Type --></label>
+        <name>Q_Brix_Record_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quip URL --></label>
+        <name>Quip_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Plan --></label>
+        <name>Relationship_Plan__c</name>
+    </fields>
+    <fields>
+        <help>Opción para combinar las cantidades de múltiples activos para el mismo producto en una partida cuando se genera el presupuesto de renovación.</help>
+        <label><!-- Combine Asset Quantities --></label>
+        <name>SBQQ__AssetQuantitiesCombined__c</name>
+    </fields>
+    <fields>
+        <help>Active esta opción para combinar activos y suscripciones de múltiples contratos con plazos compartidos. Cada contrato con plazos compartidos genera de forma predeterminada un grupo separado en el presupuesto de renovación.</help>
+        <label><!-- Combine Co-Termed Contracts --></label>
+        <name>SBQQ__CoTermedContractsCombined__c</name>
+    </fields>
+    <fields>
+        <help>Determina el momento en que los contratos terminan de forma compartida</help>
+        <label><!-- Co-Termination Event --></label>
+        <name>SBQQ__CoTerminationEvent__c</name>
+        <picklistValues>
+            <masterLabel>Add-on</masterLabel>
+            <translation>Complemento</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation>Renovación</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Determina el modo en que los contratos de servicios y suscripciones terminan de forma compartida para este cliente.</help>
+        <label><!-- Contract Co-Termination --></label>
+        <name>SBQQ__ContractCoTermination__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation>Siempre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never</masterLabel>
+            <translation>Nunca</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prompt</masterLabel>
+            <translation>Preguntar</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Oportunidad predeterminada para esta cuenta empleada en un módulo de comercio electrónico para obtener la lista de precios del cliente y asociarla con presupuestos de &quot;carrito de la compra&quot;.</help>
+        <label><!-- Default Opportunity --></label>
+        <name>SBQQ__DefaultOpportunity__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Seleccione esta opción si no se deben heredar los precios contratados desde la cuenta principal.</help>
+        <label><!-- Ignore Parent Contracted Prices --></label>
+        <name>SBQQ__IgnoreParentContractedPrices__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione la casilla de verificación para mantener la jerarquía del paquete en presupuestos de renovación y correcciones.</help>
+        <label><!-- Preserve Bundle Structure --></label>
+        <name>SBQQ__PreserveBundle__c</name>
+    </fields>
+    <fields>
+        <help>Ingrese la fecha hasta la que se deben mantener los precios.</help>
+        <label><!-- Price Hold End --></label>
+        <name>SBQQ__PriceHoldEnd__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione Basado en activos para hacer que las renovaciones se basen en los activos de una cuenta o seleccione Basado en contratos para hacer que las renovaciones se basen en los contratos creados desde un presupuesto.</help>
+        <label><!-- Renewal Model --></label>
+        <name>SBQQ__RenewalModel__c</name>
+        <picklistValues>
+            <masterLabel>Asset Based</masterLabel>
+            <translation>Basado en activos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract Based</masterLabel>
+            <translation>Basado en contratos</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Utilice &quot;Igual&quot; para mantener el mismo precio pagado la última vez. Utilice &quot;Lista&quot; para utilizar el precio de lista actual. Utilice &quot;Incremento&quot; para utilizar el precio pagado la última vez más un incremento.</help>
+        <label><!-- Renewal Pricing Method --></label>
+        <name>SBQQ__RenewalPricingMethod__c</name>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation>Lista</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Same</masterLabel>
+            <translation>Igual</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uplift</masterLabel>
+            <translation>Incremento</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Se selecciona si esta cuenta tiene certificados activos</help>
+        <label><!-- Tax-Exempt --></label>
+        <name>SBQQ__TaxExempt__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>No</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>Sí</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account Priority --></label>
+        <name>SDO_Account_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latest Sentiment --></label>
+        <name>SDO_Analytics_Latest_Sentiment__c</name>
+        <picklistValues>
+            <masterLabel>Negative</masterLabel>
+            <translation><!-- Negative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Positive</masterLabel>
+            <translation><!-- Positive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Application Date --></label>
+        <name>SDO_Application_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Since Activity --></label>
+        <name>SDO_Days_Since_Activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Location --></label>
+        <name>SDO_Default_Location__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Default price book for work orders --></help>
+        <label><!-- Default Price Book --></label>
+        <name>SDO_Default_Price_Book__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Adv Maps User Assignment --></label>
+        <name>SDO_MAPS_Adv_Maps_User_Assignment__c</name>
+        <relationshipLabel><!-- Accounts (Adv Maps User Assignment) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Dataset Split --></label>
+        <name>SDO_MAPS_Dataset_Split__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Since Last Visit --></label>
+        <name>SDO_MAPS_Days_Since_Last_Visit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Segment --></label>
+        <name>SDO_MAPS_Segment_c__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Tier --></label>
+        <name>SDO_MAPS_Service_Tier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tag --></label>
+        <name>SDO_MAPS_Tag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Tier --></label>
+        <name>SDO_MAPS_Tier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Per Visit --></label>
+        <name>SDO_MAPS_Time_Per_Visit_c__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visit Frequency --></label>
+        <name>SDO_MAPS_Visit_Frequency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps - User Territory --></label>
+        <name>SDO_Maps_AA_User_Territory__c</name>
+        <relationshipLabel><!-- Accounts (Maps - User Territory) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Maps Region --></label>
+        <name>SDO_Maps_District__c</name>
+    </fields>
+    <fields>
+        <label><!-- TAM --></label>
+        <name>SDO_Maps_TAM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Name --></label>
+        <name>SDO_Maps_Territory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active Leads --></label>
+        <name>SDO_Number_Leads_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Converted Leads --></label>
+        <name>SDO_Number_Leads_Converted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open Opportunities --></label>
+        <name>SDO_Number_Open_Opportunities__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the customer has defined visiting hours, select them here. --></help>
+        <label><!-- Operating Hours --></label>
+        <name>SDO_Operating_Hours__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Partner Certification --></label>
+        <name>SDO_Partner_Certification__c</name>
+        <picklistValues>
+            <masterLabel>Certified Partner</masterLabel>
+            <translation><!-- Certified Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elite Partner</masterLabel>
+            <translation><!-- Elite Partner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Partner Geographic Coverage --></label>
+        <name>SDO_Partner_Geographic_Coverage__c</name>
+        <picklistValues>
+            <masterLabel>APAC</masterLabel>
+            <translation><!-- APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation><!-- EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LACA</masterLabel>
+            <translation><!-- LACA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North America</masterLabel>
+            <translation><!-- North America --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Partner Program Level --></label>
+        <name>SDO_Partner_Program_Level__c</name>
+        <picklistValues>
+            <masterLabel>Bronze</masterLabel>
+            <translation><!-- Bronze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold</masterLabel>
+            <translation><!-- Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum</masterLabel>
+            <translation><!-- Platinum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver</masterLabel>
+            <translation><!-- Silver --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Partner Type --></label>
+        <name>SDO_Partner_Type__c</name>
+        <picklistValues>
+            <masterLabel>Alliance Partner</masterLabel>
+            <translation><!-- Alliance Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributor</masterLabel>
+            <translation><!-- Distributor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reseller</masterLabel>
+            <translation><!-- Reseller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service &amp; Support Specialist</masterLabel>
+            <translation><!-- Service &amp; Support Specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Provider</masterLabel>
+            <translation><!-- Service Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System Integrator</masterLabel>
+            <translation><!-- System Integrator --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Partnership Status --></label>
+        <name>SDO_Partnership_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspended</masterLabel>
+            <translation><!-- Suspended --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the default field service entitlement to use for this account and all of its assets --></help>
+        <label><!-- Default Field Entitlement --></label>
+        <name>SDO_SFS_Default_Field_Entitlement__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- What service territory is this account located in --></help>
+        <label><!-- Service Territory --></label>
+        <name>SDO_SFS_Service_Territory__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ShippingGeo --></label>
+        <name>SDO_SFS_ShippingGeo__c</name>
+    </fields>
+    <fields>
+        <help><!-- Default work type to use for this account for field service activity --></help>
+        <label><!-- Work Type --></label>
+        <name>SDO_SFS_Work_Type__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Work Type for Quote Creation --></label>
+        <name>SDO_SFS_Work_Type_for_Quote_Creation__c</name>
+        <relationshipLabel><!-- Accounts (Work Type for Quote Creation) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Closed Lost Opptys --></label>
+        <name>SDO_Sales_Closed_Lost_Opptys__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed Won Opptys --></label>
+        <name>SDO_Sales_Closed_Won_Opptys__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is automatically calculated from closed opportunities. --></help>
+        <label><!-- Total Sales --></label>
+        <name>SDO_Sales_Closed_Won_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Year Revenue Goal --></label>
+        <name>SDO_Sales_Current_Year_Revenue_Goal__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Goal Attainment --></label>
+        <name>SDO_Sales_Goal_Attainment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Conversion Rate --></label>
+        <name>SDO_Sales_Lead_Conversion_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead To Opportunity Close Rate --></label>
+        <name>SDO_Sales_Lead_To_Opportunity_Close_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lost Opportunities --></label>
+        <name>SDO_Sales_Num_Closed_Lost_Opportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Won Opportunities --></label>
+        <name>SDO_Sales_Num_Closed_Won_Opportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed Opportunities --></label>
+        <name>SDO_Sales_Number_Closed_Opportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Leads --></label>
+        <name>SDO_Sales_Number_Leads_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open Oppty Value --></label>
+        <name>SDO_Sales_Open_Oppty_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open Opptys --></label>
+        <name>SDO_Sales_Open_Opptys__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Win Rate --></label>
+        <name>SDO_Sales_Opportunity_Win_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value Indicator --></label>
+        <name>SDO_Sales_Rating_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>SDO_Sales_Region__c</name>
+        <picklistValues>
+            <masterLabel>Central</masterLabel>
+            <translation><!-- Central --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East</masterLabel>
+            <translation><!-- East --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West</masterLabel>
+            <translation><!-- West --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Value Closed Won Opportunities --></label>
+        <name>SDO_Sales_Value_Closed_Won_Opportunties__c</name>
+    </fields>
+    <fields>
+        <help><!-- What does this customer think of us? --></help>
+        <label><!-- Customer Satisfaction Index --></label>
+        <name>SDO_Service_Customer_Satisfaction_Index__c</name>
+        <picklistValues>
+            <masterLabel>A - Extremely Satisfied - Customer Evangelist</masterLabel>
+            <translation><!-- A - Extremely Satisfied - Customer Evangelist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B - Satisfied</masterLabel>
+            <translation><!-- B - Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C - Neutral</masterLabel>
+            <translation><!-- C - Neutral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D - Dissatisfied - At risk of losing business</masterLabel>
+            <translation><!-- D - Dissatisfied - At risk of losing business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F - Unsatisfactory - Losing Business</masterLabel>
+            <translation><!-- F - Unsatisfactory - Losing Business --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Value of Open Opportunities --></label>
+        <name>SDO_Value_Open_Opportunties__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>SDO_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- YTD Revenue Generated --></label>
+        <name>SDO_YTD_Revenue_Generated__c</name>
+    </fields>
+    <fields>
+        <help><!-- Does this individual have impaired hearing? --></help>
+        <label><!-- TDD / TTY --></label>
+        <name>TDD_TTY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier --></label>
+        <name>Tier__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Value Closed Won Opportunities --></label>
+        <name>Value_Closed_Won_Opportunties__c</name>
+    </fields>
+    <fields>
+        <label><!-- analyticsdemo_batch_id__c --></label>
+        <name>analyticsdemo_batch_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Contact --></label>
+        <name>blng__BillToContact__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer Profile Id --></label>
+        <name>blng__CustomerProfileId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Payment Type --></label>
+        <name>blng__DefaultPaymentType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Assignment Rule --></label>
+        <name>maps__AssignmentRule__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <label><!-- Business Account --></label>
+        <name>Business_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Business Entity or an Organization --></description>
+        <label><!-- Entity --></label>
+        <name>FINS_Entity</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A business or an organization --></description>
+        <label><!-- Business --></label>
+        <name>FinServ__IndustriesBusiness</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A grouping of related people and institutions --></description>
+        <label><!-- Household --></label>
+        <name>FinServ__IndustriesHousehold</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A person who is a prospect or a client --></description>
+        <label><!-- Individual --></label>
+        <name>FinServ__IndustriesIndividual</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- An institution that is a prospect or a client --></description>
+        <label><!-- Institution --></label>
+        <name>FinServ__IndustriesInstitution</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Partner accounts with additional, channel-related information like the Partner Scorecard. --></description>
+        <label><!-- Partner --></label>
+        <name>SDO_Account_Partner</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Primary Account record type used for most account records. --></description>
+        <label><!-- Account --></label>
+        <name>SDO_Account_Simple</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Internal referrers must be internal Salesforce users. --></errorMessage>
+        <name>FinServ__NonPortalUserReferrer</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Individual record type can&apos;t be changed --></errorMessage>
+        <name>FinServ__NotAllowingConversionFromIndividual</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The record type can&apos;t be changed to Individual. --></errorMessage>
+        <name>FinServ__NotAllowingConversionToIndividual</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enter an internal referrer or an external referrer. You can list only one referrer for each referral. --></errorMessage>
+        <name>FinServ__SingleReferredByEntryByRecord</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- AccountOnboarding --></label>
+        <name>AccountOnboarding</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CPQ_Utilities --></label>
+        <name>CPQ_Utilities</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- AddMember --></label>
+        <name>FinServ__AddMember</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- AddRelation --></label>
+        <name>FinServ__AddRelation</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Map_It --></label>
+        <name>Map_It</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Delete_Records --></label>
+        <name>Mass_Delete_Records</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Quick_Quote --></label>
+        <name>Quick_Quote</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Assets --></label>
+        <name>SBQQ__Amend_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Renew_Assets --></label>
+        <name>SBQQ__Renew_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SDO_OMS_Order_on_Behalf --></label>
+        <name>SDO_OMS_Order_on_Behalf</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreditCenter --></label>
+        <name>blng__CreditCenter</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- PaymentVirtualTerminal --></label>
+        <name>blng__PaymentVirtualTerminal</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Refund --></label>
+        <name>blng__Refund</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ExactTarget_Resubscribe --></label>
+        <name>et4ae5__ExactTarget_Resubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ExactTarget_Unsubscribe --></label>
+        <name>et4ae5__ExactTarget_Unsubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_ExactTarget_Email --></label>
+        <name>et4ae5__Send_ExactTarget_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_ExactTarget_Analytics --></label>
+        <name>et4ae5__View_ExactTarget_Analytics</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- AdvRouteVisitWindows --></label>
+        <name>maps__AdvRouteVisitWindows</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_To_Prospect_Insight --></label>
+        <name>pi__Send_To_Prospect_Insight</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_Slack --></label>
+        <name>slackv2__Send_to_Slack</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Slack_Alerts --></label>
+        <name>slackv2__Slack_Alerts</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants out of the box permission sets to the Admin User</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>FINS - Financial Service Cloud Base</label>
+    <permissionSets>FINS_Base</permissionSets>
+    <permissionSets>FinServ__FinancialServicesCloudStandard</permissionSets>
+    <permissionSets>PSL_Document_Checklist</permissionSets>
+    <permissionSets>PSL_Industry_Service_Excellence</permissionSets>
+    <permissionSets>force__BREDesigner</permissionSets>
+    <permissionSets>force__DocumentChecklist</permissionSets>
+    <permissionSets>force__ExplainabilityServicePSL</permissionSets>
+    <permissionSets>force__FSCInsurance</permissionSets>
+    <permissionSets>force__FinancialServicesCloudExtension</permissionSets>
+    <permissionSets>force__GenieAdmin</permissionSets>
+    <permissionSets>force__GenieUser</permissionSets>
+    <permissionSets>force__IndustriesServiceExcellence</permissionSets>
+    <permissionSets>force__Mortgage</permissionSets>
+    <permissionSets>force__PersonalizedFinancialEngagementAdmin</permissionSets>
+    <permissionSets>force__ServiceProcess</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

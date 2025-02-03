@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Welcome To FSC!</masterLabel>
+    <promptVersions>
+        <body>&lt;p&gt;&lt;span style=&quot;color: rgb(250, 250, 250);&quot;&gt;You made it! Welcome to &lt;/span&gt;&lt;strong style=&quot;color: rgb(250, 250, 250);&quot;&gt;Cumulus Bank&apos;s Retail Banking Platform&lt;/strong&gt;&lt;span style=&quot;color: rgb(250, 250, 250);&quot;&gt;. Spend a few minutes reviewing the video before you get started!&lt;/span&gt;&lt;/p&gt;</body>
+        <customApplication>FINS_Retail_Banking_Console</customApplication>
+        <delayDays>1</delayDays>
+        <description>Dreamforce In-App Guidance Walkthrough &apos;23</description>
+        <displayType>DockedComposer</displayType>
+        <header>Welcome to Training!</header>
+        <isPublished>true</isPublished>
+        <masterLabel>Welcome To FSC! Step 1</masterLabel>
+        <publishedDate>2023-07-21</publishedDate>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>true</shouldIgnoreGlobalDelay>
+        <startDate>2022-08-11</startDate>
+        <stepNumber>1</stepNumber>
+        <targetPageKey1>home</targetPageKey1>
+        <targetPageType>standard__namedPage</targetPageType>
+        <themeColor>Theme1</themeColor>
+        <themeSaturation>Dark</themeSaturation>
+        <timesToDisplay>30</timesToDisplay>
+        <title>Welcome to Day 1 in FSC!!</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+        <videoLink>https://www.youtube.com/embed/OAE6b4gSun4</videoLink>
+    </promptVersions>
+    <promptVersions>
+        <body>&lt;p&gt;Spend some time reviewing &lt;strong&gt;Key Metric&lt;/strong&gt;s around your personal book of business, where there may be &lt;strong&gt;Whitespace&lt;/strong&gt;, your current &lt;strong&gt;Opportunities&lt;/strong&gt; and your Clients &lt;strong&gt;Financial Health&lt;/strong&gt;!&lt;/p&gt;</body>
+        <customApplication>FINS_Retail_Banking_Console</customApplication>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayType>Targeted</displayType>
+        <isPublished>false</isPublished>
+        <masterLabel>Welcome To FSC! Step 2</masterLabel>
+        <referenceElementContext>{&quot;scope&quot;:{&quot;attributes&quot;:{&quot;id&quot;:&quot;wave_waveDashboard&quot;}},&quot;version&quot;:2}</referenceElementContext>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <stepNumber>2</stepNumber>
+        <targetPageKey1>home</targetPageKey1>
+        <targetPageType>standard__namedPage</targetPageType>
+        <title>Snapshot of your Book of Business</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+    <promptVersions>
+        <body>&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Regularly reviewing your scorecard drives success. Gain insights, identify strengths and opportunities, optimize strategies, and stay aligned with goals. Maximize performance, exceed targets, and achieve exceptional results.&lt;/p&gt;</body>
+        <customApplication>FINS_Retail_Banking_Console</customApplication>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayType>Targeted</displayType>
+        <isPublished>false</isPublished>
+        <masterLabel>Welcome To FSC! Step 3</masterLabel>
+        <referenceElementContext>{&quot;scope&quot;:{&quot;attributes&quot;:{&quot;id&quot;:&quot;c_SDO_Service_ActivityScorecardComponent&quot;}},&quot;version&quot;:2}</referenceElementContext>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <stepNumber>3</stepNumber>
+        <targetPageKey1>home</targetPageKey1>
+        <targetPageType>standard__namedPage</targetPageType>
+        <title>Review your Scorecard</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+    <promptVersions>
+        <body>&lt;p&gt;Accelerate your productivity with the launchpad, a gateway to efficient list views. Gain instant access, streamline data navigation, and boost workflow efficiency.&lt;/p&gt;</body>
+        <customApplication>FINS_Retail_Banking_Console</customApplication>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayType>Targeted</displayType>
+        <isPublished>false</isPublished>
+        <masterLabel>Welcome To FSC! Step 4</masterLabel>
+        <referenceElementContext>{&quot;scope&quot;:{&quot;attributes&quot;:{&quot;id&quot;:&quot;runtime_mobilesapp_launchPadTileList&quot;}},&quot;version&quot;:2}</referenceElementContext>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <stepNumber>4</stepNumber>
+        <targetPageKey1>home</targetPageKey1>
+        <targetPageType>standard__namedPage</targetPageType>
+        <title>Launchpad for Quick Action</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+    <promptVersions>
+        <body>&lt;p&gt;Here, you&apos;ll be able to view your book of business &amp;amp; have the ability to add or remove columns, add filter criteria and take action!&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Click on an Account to continue!&lt;/p&gt;</body>
+        <customApplication>FINS_Retail_Banking_Console</customApplication>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayPosition>TopCenter</displayPosition>
+        <displayType>FloatingPanel</displayType>
+        <isPublished>false</isPublished>
+        <masterLabel>Welcome To FSC! Step 5</masterLabel>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <stepNumber>5</stepNumber>
+        <targetPageKey1>Account</targetPageKey1>
+        <targetPageKey2>list</targetPageKey2>
+        <targetPageType>standard__objectPage</targetPageType>
+        <title>Account List View!</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+    <promptVersions>
+        <body>&lt;p&gt;Welcome to the Customer 360! You will be able to get a complete view of your Customer upon landing on this page. &lt;/p&gt;</body>
+        <customApplication>FINS_Retail_Banking_Console</customApplication>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayPosition>MiddleCenter</displayPosition>
+        <displayType>FloatingPanel</displayType>
+        <isPublished>false</isPublished>
+        <masterLabel>Welcome To FSC! Step 6</masterLabel>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <stepNumber>6</stepNumber>
+        <targetPageKey1>Account</targetPageKey1>
+        <targetPageKey2>view</targetPageKey2>
+        <targetPageType>standard__recordPage</targetPageType>
+        <title>Welcome to the C360!</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+    <promptVersions>
+        <body>&lt;p&gt;Welcome to the Bi-Directional Highway for transactional and 3rd party data to help guide bankers to value based action and provide more value to your customer.&lt;/p&gt;</body>
+        <customApplication>FINS_Retail_Banking_Console</customApplication>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayType>Targeted</displayType>
+        <isPublished>false</isPublished>
+        <masterLabel>Welcome To FSC! Step 7</masterLabel>
+        <referenceElementContext>{&quot;scope&quot;:{&quot;attributes&quot;:{&quot;id&quot;:&quot;c_GenieHighlightCard&quot;}},&quot;version&quot;:2}</referenceElementContext>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <stepNumber>7</stepNumber>
+        <targetPageKey1>Account</targetPageKey1>
+        <targetPageKey2>view</targetPageKey2>
+        <targetPageType>standard__recordPage</targetPageType>
+        <title>Client Profile Card</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+    <promptVersions>
+        <body>&lt;p&gt;Within these sub-tabs boost retail banking efficiency with embedded tools like Timeline, EinsteinGPT, and Slack. Automate tasks, streamline processes, and deliver personalized experiences. Bankers have a centralized place for engagements which is home for every interaction and their outcomes.&lt;/p&gt;</body>
+        <customApplication>FINS_Retail_Banking_Console</customApplication>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayType>Targeted</displayType>
+        <isPublished>false</isPublished>
+        <masterLabel>Welcome To FSC! Step 8</masterLabel>
+        <referenceElementContext>{&quot;scope&quot;:{&quot;attributes&quot;:{&quot;id&quot;:&quot;flexipage_tabset2&quot;}},&quot;version&quot;:2}</referenceElementContext>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <stepNumber>8</stepNumber>
+        <targetPageKey1>Account</targetPageKey1>
+        <targetPageKey2>view</targetPageKey2>
+        <targetPageType>standard__recordPage</targetPageType>
+        <title>Drive Efficiency with GPT Embedded</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+    <promptVersions>
+        <body>&lt;p&gt;Within these subtabs, you&apos;ll be able to find Customer Details, Life Events, Goals, Interaction Summaries, Relationship Maps and more!&lt;/p&gt;</body>
+        <customApplication>FINS_Retail_Banking_Console</customApplication>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayType>Targeted</displayType>
+        <elementRelativePosition>TopCenter</elementRelativePosition>
+        <isPublished>false</isPublished>
+        <masterLabel>Welcome To FSC! Step 9</masterLabel>
+        <referenceElementContext>{&quot;scope&quot;:{&quot;attributes&quot;:{&quot;id&quot;:&quot;flexipage_tabset&quot;}},&quot;version&quot;:2}</referenceElementContext>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <stepNumber>9</stepNumber>
+        <targetPageKey1>Account</targetPageKey1>
+        <targetPageKey2>view</targetPageKey2>
+        <targetPageType>standard__recordPage</targetPageType>
+        <title>Key Customer Information</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+    <promptVersions>
+        <actionButtonLabel>Learn More About FSC!</actionButtonLabel>
+        <actionButtonLink>https://trailhead.salesforce.com/content/learn/modules/fsc_basics</actionButtonLink>
+        <body>&lt;p&gt;Personalized recommendations empower retail bankers to deliver tailored finance solutions. Enhance satisfaction, drive decisions, and forge lasting relationships. Elevate banking experiences through impactful personalized finance recommendations.&lt;/p&gt;</body>
+        <customApplication>FINS_Retail_Banking_Console</customApplication>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayType>Targeted</displayType>
+        <isPublished>false</isPublished>
+        <masterLabel>Welcome To FSC! Step 10</masterLabel>
+        <referenceElementContext>{&quot;scope&quot;:{&quot;attributes&quot;:{&quot;id&quot;:&quot;flexipage_tabset3&quot;}},&quot;version&quot;:2}</referenceElementContext>
+        <shouldDisplayActionButton>true</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <stepNumber>10</stepNumber>
+        <targetPageKey1>Account</targetPageKey1>
+        <targetPageKey2>view</targetPageKey2>
+        <targetPageType>standard__recordPage</targetPageType>
+        <title>Supercharge Financial Guidance</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

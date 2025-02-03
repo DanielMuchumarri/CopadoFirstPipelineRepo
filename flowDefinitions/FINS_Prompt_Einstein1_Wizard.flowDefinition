@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>1</activeVersionNumber>
+    <description>Provide users a wizard-like screen to select which Prompt Template to invoke - added DocGen</description>
+    <masterLabel>Client Summary</masterLabel>
+</FlowDefinition>

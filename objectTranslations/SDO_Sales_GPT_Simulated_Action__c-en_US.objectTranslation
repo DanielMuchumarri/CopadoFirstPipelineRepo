@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sales GPT Simulated Action</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sales GPT Simulated Actions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Email Body --></label>
+        <name>Email_Body__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Subject --></label>
+        <name>Email_Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email To --></label>
+        <name>Email_To__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flow API Name --></label>
+        <name>Flow_API_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Reply --></label>
+        <name>Sales_GPT_Next_Reply__c</name>
+        <relationshipLabel><!-- Sales GPT Simulated Actions (Sales GPT Next Reply) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Simulated Reply --></label>
+        <name>Sales_GPT_Simulated_Reply__c</name>
+        <relationshipLabel><!-- Sales GPT Simulated Actions (Sales GPT Simulated Replies) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Target Field Api Name --></label>
+        <name>Target_Field_Api_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Record Id --></label>
+        <name>Target_Record_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Copy to Clipboard</masterLabel>
+            <translation><!-- Copy to Clipboard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edit Record</masterLabel>
+            <translation><!-- Edit Record --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Composer</masterLabel>
+            <translation><!-- Email Composer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Field Update</masterLabel>
+            <translation><!-- Field Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Launch Flow</masterLabel>
+            <translation><!-- Launch Flow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open URL</masterLabel>
+            <translation><!-- Open URL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Toggle Next Reply</masterLabel>
+            <translation><!-- Toggle Next Reply --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- URL --></label>
+        <name>URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update With --></label>
+        <name>Update_With__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

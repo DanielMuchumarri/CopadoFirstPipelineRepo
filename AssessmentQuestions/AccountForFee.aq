@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>AccountForFee</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Account for Treasury Management fees?</questionText>
+        <responseValues>5564115654
+9876136546
+12354565</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Select</dataType>
+    <developerName>AccountForFee</developerName>
+    <name>AccountForFee</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

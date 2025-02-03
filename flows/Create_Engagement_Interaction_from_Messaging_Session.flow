@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <description>This generates and Engagement Record for a Live Agent Chat Session.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>EIStartDateTime</name>
+        <dataType>DateTime</dataType>
+        <expression>DATETIMEVALUE({!$Record.CreatedDate})</expression>
+    </formulas>
+    <formulas>
+        <name>FullChatTranscriptUrl</name>
+        <dataType>String</dataType>
+        <expression>{!varT_BaseURL} +&quot;/lightning/r/MessagingSession/&quot;+{!$Record.Id}+&quot;/view&quot;</expression>
+    </formulas>
+    <interviewLabel>Create Engagement Interaction from Messaging Session {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Create Engagement Interaction from Live Messaging Session</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Engagement_Interaction</name>
+        <label>Create Engagement Interaction</label>
+        <locationX>615</locationX>
+        <locationY>587</locationY>
+        <connector>
+            <targetReference>Relate_Messaging_Session_to_New_EI</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>CommunicationChannel</field>
+            <value>
+                <stringValue>Web Chat</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Engagement_Title__c</field>
+            <value>
+                <stringValue>Live Messaging Session</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Friendly_URL_Text__c</field>
+            <value>
+                <stringValue>Live Message Session</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>InitiatingAttendeeId</field>
+            <value>
+                <elementReference>$Record.MessagingEndUser.Account.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Interaction_URL__c</field>
+            <value>
+                <elementReference>FullChatTranscriptUrl</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>StartDateTime</field>
+            <value>
+                <elementReference>EIStartDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type</field>
+            <value>
+                <stringValue>Live Agent Messaging</stringValue>
+            </value>
+        </inputAssignments>
+        <object>EngagementInteraction</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <description>This is used for creating the BaseURL</description>
+        <name>Get_Messaging_Session_Record</name>
+        <label>Get Messaging Session Record</label>
+        <locationX>615</locationX>
+        <locationY>371</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Create_Engagement_Interaction</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>MessagingSession</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Relate_Messaging_Session_to_New_EI</name>
+        <label>Relate Messaging Session to New EI</label>
+        <locationX>615</locationX>
+        <locationY>695</locationY>
+        <inputAssignments>
+            <field>Engagement_Interaction__c</field>
+            <value>
+                <elementReference>Create_Engagement_Interaction</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>489</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Get_Messaging_Session_Record</targetReference>
+        </connector>
+        <object>MessagingSession</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <name>varT_BaseURL</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>varT_messagingSessionFullUrl</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+</Flow>

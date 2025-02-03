@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Confirm the credit card details of the user, by displaying a message with all credit card account details.</description>
+    <invocationTarget>Confirm_Credit_Card_Details</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <masterLabel>Confirm Credit Card Details</masterLabel>
+</GenAiFunction>

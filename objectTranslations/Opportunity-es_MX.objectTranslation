@@ -1,0 +1,1249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Deal Desk --></label>
+        <name>sbaa__DealDesk</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Status --></label>
+        <name>ApprovalStatus__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recalled</masterLabel>
+            <translation><!-- Recalled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Any comments from Credit Manager and above --></help>
+        <label><!-- Approval Feedback --></label>
+        <name>Approval_Feedback__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closing Countdown --></label>
+        <name>CloseDate_TODAY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Email --></label>
+        <name>Contact_Email_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Terms --></label>
+        <name>Contract_Terms__c</name>
+        <picklistValues>
+            <masterLabel>Non-Standard</masterLabel>
+            <translation><!-- Non-Standard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DB Amount --></label>
+        <name>DB_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- DB Days --></label>
+        <name>DB_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Date --></label>
+        <name>DateTimeCreated__c</name>
+    </fields>
+    <fields>
+        <help><!-- What: This is the number of days before or after the close date the opportunity is predicted to close.  It is calculated by subtracting the Close Date from the Predicted Close Date. This is from the SDO. DO NOT REMOVE. --></help>
+        <label><!-- ED Close Date Delta --></label>
+        <name>ED_Close_Date_Delta__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED Leading Causes --></label>
+        <name>ED_Leading_Causes__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the number of DAYS after the Created Date that this opportunity is targeted to close. --></help>
+        <label><!-- ED Predicted Time to Close --></label>
+        <name>ED_Outcome__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is calculated by adding the number of days in the &quot;ED Predicted Time to Close&quot; field to the CREATED DATE. --></help>
+        <label><!-- ED Predicted Close Date --></label>
+        <name>ED_Predicted_Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED Prescription --></label>
+        <name>ED_Prescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engagement Interaction --></label>
+        <name>Engagement_Interaction__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Check this box to change the results of Einstein Opportunity DIscovery. --></help>
+        <label><!-- Executive Meeting --></label>
+        <name>Exec_Meeting__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agency/Broker --></label>
+        <name>FINS_Agency_Broker__c</name>
+        <relationshipLabel><!-- Opportunities (Agency/Broker) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Application Received Date --></label>
+        <name>FINS_Application_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Client Age --></label>
+        <name>FINS_Average_Client_Age__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the reason why the opportunity is trending up. --></help>
+        <label><!-- Einstein - Deal Boosting Reason --></label>
+        <name>FINS_Boosting_Reason__c</name>
+        <picklistValues>
+            <masterLabel>A higher than usual number of internal participants</masterLabel>
+            <translation><!-- A higher than usual number of internal participants --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A higher than usual number of prospect participants</masterLabel>
+            <translation><!-- A higher than usual number of prospect participants --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>An increase in email volume</masterLabel>
+            <translation><!-- An increase in email volume --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>An increase in number of meetings</masterLabel>
+            <translation><!-- An increase in number of meetings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emails content</masterLabel>
+            <translation><!-- Emails content --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Borrower --></label>
+        <name>FINS_Borrower__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Business Unit --></label>
+        <name>FINS_Business_Unit__c</name>
+        <picklistValues>
+            <masterLabel>Large</masterLabel>
+            <translation><!-- Large --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Middle Market</masterLabel>
+            <translation><!-- Middle Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small/Select</masterLabel>
+            <translation><!-- Small/Select --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specialty</masterLabel>
+            <translation><!-- Specialty --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CRD # --></label>
+        <name>FINS_CRD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Plan --></label>
+        <name>FINS_Commercial_Banking_Close_Plan__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this to add the &apos;Competitor Mentioned&apos; insight to this oppty --></help>
+        <label><!-- Einstein - Competitor Mentioned --></label>
+        <name>FINS_Competitor_Mentioned__c</name>
+    </fields>
+    <fields>
+        <help><!-- What competitor did they mention? --></help>
+        <label><!-- Einstein - Competitor they Mentioned --></label>
+        <name>FINS_Competitor_they_Mentioned__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contact to email --></help>
+        <label><!-- Einstein - Contact to Email --></label>
+        <name>FINS_Contact_to_email__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Custodian --></label>
+        <name>FINS_Custodian__c</name>
+        <picklistValues>
+            <masterLabel>Fidelity</masterLabel>
+            <translation><!-- Fidelity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pershing</masterLabel>
+            <translation><!-- Pershing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Schwab</masterLabel>
+            <translation><!-- Schwab --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Deal Approved Date --></label>
+        <name>FINS_Deal_Approved_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this to add the &apos;Deal Slowing&apos; insight to this oppty --></help>
+        <label><!-- Einstein - Deal Slowing --></label>
+        <name>FINS_Deal_Slowing__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this to add the &apos;Deal Boosting&apos; insight to this oppty --></help>
+        <label><!-- Einstein - Deal Boosting --></label>
+        <name>FINS_Deal_boosting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decision Role --></label>
+        <name>FINS_Decision_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- EBITDA --></label>
+        <name>FINS_EBITDA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Body for email template --></help>
+        <label><!-- Einstein - Email Body --></label>
+        <name>FINS_Email_Body__c</name>
+    </fields>
+    <fields>
+        <help><!-- Subject for the email template --></help>
+        <label><!-- Einstein - Email Subject --></label>
+        <name>FINS_Email_Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exec Briefing --></label>
+        <name>FINS_Exec_Briefing__c</name>
+    </fields>
+    <fields>
+        <label><!-- GP Commitment --></label>
+        <name>FINS_GP_Commitment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>FINS_Gender__c</name>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation><!-- Female --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation><!-- Male --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prefer Not to Respond</masterLabel>
+            <translation><!-- Prefer Not to Respond --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Initial Pitch Date --></label>
+        <name>FINS_Initial_Pitch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- PolicyCenter Update --></label>
+        <name>FINS_Insurance_PolicyCenter_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rating State --></label>
+        <name>FINS_Insurance_Rating_State__c</name>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Subject for the last activity in the insights --></help>
+        <label><!-- Einstein - Last Activity Subject --></label>
+        <name>FINS_Last_Activity_Subject__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the text to be displayed with the last activity in the insight --></help>
+        <label><!-- Einstein - Last Activity Text --></label>
+        <name>FINS_Last_Activity_Text__c</name>
+    </fields>
+    <fields>
+        <help><!-- What was the last activity this insight tracked? --></help>
+        <label><!-- Einstein - Last Activity Type --></label>
+        <name>FINS_Last_Activity_Type__c</name>
+        <picklistValues>
+            <masterLabel>Call</masterLabel>
+            <translation><!-- Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approved Amount --></label>
+        <name>FINS_Lending_Approved_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Rate --></label>
+        <name>FINS_Lending_Interest_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan --></label>
+        <name>FINS_Lending_Loan__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Max Loan Amount --></label>
+        <name>FINS_Lending_Max_Loan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Loan --></label>
+        <name>FINS_Lending_Type_of_Loan__c</name>
+        <picklistValues>
+            <masterLabel>Auto Loan</masterLabel>
+            <translation><!-- Auto Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer Durable Loan</masterLabel>
+            <translation><!-- Consumer Durable Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education Loan</masterLabel>
+            <translation><!-- Education Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold Loan</masterLabel>
+            <translation><!-- Gold Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Loan</masterLabel>
+            <translation><!-- Home Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan Against Property</masterLabel>
+            <translation><!-- Loan Against Property --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Loan</masterLabel>
+            <translation><!-- Personal Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SME Loan</masterLabel>
+            <translation><!-- SME Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suvidha Loan</masterLabel>
+            <translation><!-- Suvidha Loan --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- LinkedIn --></label>
+        <name>FINS_LinkedIn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin --></label>
+        <name>FINS_Margin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the contact who mentioned the competitor --></help>
+        <label><!-- Einstein - Name of Contact --></label>
+        <name>FINS_Name_of_Contact__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this to add the &apos;No Communication&apos; insight to this oppty --></help>
+        <label><!-- Einstein - No Communication --></label>
+        <name>FINS_No_Communication__c</name>
+    </fields>
+    <fields>
+        <label><!-- P/E Ratio --></label>
+        <name>FINS_P_E_Ratio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>FINS_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fund --></label>
+        <name>FINS_Private_Equity_Fund__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- NDA Date --></label>
+        <name>FINS_Private_Equity_NDA_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Budget --></label>
+        <name>FINS_Project_Budget__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Description --></label>
+        <name>FINS_Project_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this to display the &apos;prospect unresponsive&apos; insight on this oppty --></help>
+        <label><!-- Einstein - Prospect Unresponsive --></label>
+        <name>FINS_Prospect_Unresponsive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q-Branch Demo Reference --></label>
+        <name>FINS_Q_Branch_Demo_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Due By --></label>
+        <name>FINS_Quote_Due_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Einstein - Re-engaged --></label>
+        <name>FINS_Re_engaged__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal Date --></label>
+        <name>FINS_Renewal_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Amount of money for account, mortgage, retirement assets, loan, credit card or other financial services product. --></help>
+        <label><!-- Requested Amount --></label>
+        <name>FINS_Requested_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Residence Type --></label>
+        <name>FINS_Residence_Type__c</name>
+        <picklistValues>
+            <masterLabel>Company Leased</masterLabel>
+            <translation><!-- Company Leased --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owned</masterLabel>
+            <translation><!-- Owned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rented</masterLabel>
+            <translation><!-- Rented --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Revenue Frequency --></label>
+        <name>FINS_Revenue_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One Time</masterLabel>
+            <translation><!-- One Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Revenue Type --></label>
+        <name>FINS_Revenue_Type__c</name>
+        <picklistValues>
+            <masterLabel>New Client</masterLabel>
+            <translation><!-- New Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New: Existing Client, New LoB</masterLabel>
+            <translation><!-- New: Existing Client, New LoB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal: Existing Client, Existing LoB</masterLabel>
+            <translation><!-- Renewal: Existing Client, Existing LoB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Run-Off</masterLabel>
+            <translation><!-- Run-Off --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Services Discussed --></label>
+        <name>FINS_Services_Discussed__c</name>
+        <picklistValues>
+            <masterLabel>Audit Services</masterLabel>
+            <translation><!-- Audit Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Risk/D&amp;O</masterLabel>
+            <translation><!-- Executive Risk/D&amp;O --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HR Consulting</masterLabel>
+            <translation><!-- HR Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M&amp;A Advisory</masterLabel>
+            <translation><!-- M&amp;A Advisory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Risk Assessment</masterLabel>
+            <translation><!-- Risk Assessment --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Einstein - Deal Slowing Reason --></label>
+        <name>FINS_Slowing_Reason__c</name>
+        <picklistValues>
+            <masterLabel>A decrease in email volume</masterLabel>
+            <translation><!-- A decrease in email volume --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A decrease in number of meetings</masterLabel>
+            <translation><!-- A decrease in number of meetings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A lower than usual number of internal participants</masterLabel>
+            <translation><!-- A lower than usual number of internal participants --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A lower than usual number of prospect participants</masterLabel>
+            <translation><!-- A lower than usual number of prospect participants --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emails content</masterLabel>
+            <translation><!-- Emails content --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Einstein - Task Overdue --></label>
+        <name>FINS_Task_Overdue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tech Stack --></label>
+        <name>FINS_Tech_Stack__c</name>
+        <picklistValues>
+            <masterLabel>Addepar</masterLabel>
+            <translation><!-- Addepar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Black Diamond</masterLabel>
+            <translation><!-- Black Diamond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emoney</masterLabel>
+            <translation><!-- Emoney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moneyguide Pro</masterLabel>
+            <translation><!-- Moneyguide Pro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orion</masterLabel>
+            <translation><!-- Orion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redtail</masterLabel>
+            <translation><!-- Redtail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce</masterLabel>
+            <translation><!-- Salesforce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tamarac</masterLabel>
+            <translation><!-- Tamarac --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Einstein - Time Consuming Oppty --></label>
+        <name>FINS_Time_Consuming_Oppty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total AUM --></label>
+        <name>FINS_Total_AUM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Einstein - Winning Unlikely --></label>
+        <name>FINS_Winning_Unlikely__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of Households --></label>
+        <name>FINS_of_Households__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Account --></label>
+        <name>FinServ__FinancialAccount__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Household --></label>
+        <name>FinServ__Household__c</name>
+        <relationshipLabel><!-- Household Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External Referrer --></label>
+        <name>FinServ__ReferredByContact__c</name>
+        <relationshipLabel><!-- My Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Internal Referrer --></label>
+        <name>FinServ__ReferredByUser__c</name>
+        <relationshipLabel><!-- Opportunities (Internal Referrer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Check this box to change the results of Einstein Opportunity Discovery --></help>
+        <label><!-- Interactive Demo --></label>
+        <name>Interactive_Demo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Rate Type --></label>
+        <name>Interest_Rate_Type__c</name>
+        <picklistValues>
+            <masterLabel>Fixed</masterLabel>
+            <translation><!-- Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Variable</masterLabel>
+            <translation><!-- Variable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Activity --></label>
+        <name>LastActivityDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified Date --></label>
+        <name>LastModifiedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Managed by --></label>
+        <name>Managed_by__c</name>
+        <relationshipLabel><!-- Opportunities (Managed by) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Portfolio Manager --></label>
+        <name>Portfolio_Manager__c</name>
+        <relationshipLabel><!-- Opportunities (Portfolio Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Products__c</name>
+        <picklistValues>
+            <masterLabel>GC1000 series</masterLabel>
+            <translation><!-- GC1000 series --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC10001</masterLabel>
+            <translation><!-- GC10001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC20002</masterLabel>
+            <translation><!-- GC20002 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC5000 series</masterLabel>
+            <translation><!-- GC5000 series --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC50000</masterLabel>
+            <translation><!-- GC50000 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Q Brix Record Type --></label>
+        <name>Q_Brix_Record_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Real Estate Agent --></label>
+        <name>Real_Estate_Agent__c</name>
+        <relationshipLabel><!-- Opportunities (Real Estate Agent) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Recommended by --></label>
+        <name>Recommended_by__c</name>
+        <relationshipLabel><!-- Opportunities (Recommended by) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Relationship Manager --></label>
+        <name>Relationship_Manager__c</name>
+        <relationshipLabel><!-- Opportunities (Relationship Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Búsqueda de consulta de su contrato corregido.</help>
+        <label><!-- Amended Contract --></label>
+        <name>SBQQ__AmendedContract__c</name>
+        <relationshipLabel><!-- Amendment Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Salesforce CPQ utiliza este campo para convertir automáticamente activos y suscripciones.</help>
+        <label><!-- Contracted --></label>
+        <name>SBQQ__Contracted__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione esta casilla de verificación para crear precios contratados sin crear un contrato.</help>
+        <label><!-- Create Contracted Prices --></label>
+        <name>SBQQ__CreateContractedPrices__c</name>
+    </fields>
+    <fields>
+        <help>El identificador exclusivo para la transacción Corrección: Presupuesto repetido, que es el Id. del presupuesto principal original.</help>
+        <label><!-- Order Group ID --></label>
+        <name>SBQQ__OrderGroupID__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione esta casilla de verificación para crear automáticamente un pedido a partir del presupuesto principal.</help>
+        <label><!-- Ordered --></label>
+        <name>SBQQ__Ordered__c</name>
+    </fields>
+    <fields>
+        <help>Salesforce CPQ esta opción para apuntar al presupuesto principal de esta oportunidad.</help>
+        <label><!-- Primary Quote --></label>
+        <name>SBQQ__PrimaryQuote__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quote Pricebook Id --></label>
+        <name>SBQQ__QuotePricebookId__c</name>
+    </fields>
+    <fields>
+        <help>Indica que esta oportunidad es una oportunidad de renovación.</help>
+        <label><!-- Renewal --></label>
+        <name>SBQQ__Renewal__c</name>
+    </fields>
+    <fields>
+        <help>El contrato que esta oportunidad de renovación está renovando. Si se resumen varios contratos en esta oportunidad, esta opción apunta al contrato principal.</help>
+        <label><!-- Renewed Contract --></label>
+        <name>SBQQ__RenewedContract__c</name>
+        <relationshipLabel><!-- Renewal Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Dataset Split --></label>
+        <name>SDO_MAPS_Dataset_Split__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tag Opportunity --></label>
+        <name>SDO_MAPS_Tag_Opportunity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is B2BMA Plus Data --></label>
+        <name>SDO_Pardot_Is_B2BMA_Plus_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close_Plan_Quip --></label>
+        <name>SDO_Quip_Close_Plan_Quip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Order --></label>
+        <name>SDO_SFS_Work_Order__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Competitor --></label>
+        <name>SDO_Sales_Competitor__c</name>
+        <picklistValues>
+            <masterLabel>Competitor A</masterLabel>
+            <translation><!-- Competitor A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor B</masterLabel>
+            <translation><!-- Competitor B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor C</masterLabel>
+            <translation><!-- Competitor C --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Complete ROI Analysis --></label>
+        <name>SDO_Sales_Complete_ROI_Analysis__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Terms --></label>
+        <name>SDO_Sales_Contract_Terms__c</name>
+        <picklistValues>
+            <masterLabel>Non-Standard</masterLabel>
+            <translation><!-- Non-Standard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Discount % --></label>
+        <name>SDO_Sales_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Owner --></label>
+        <name>SDO_Sales_Partner_Owner__c</name>
+        <relationshipLabel><!-- Partner Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact --></label>
+        <name>SDO_Sales_Primary_Contact__c</name>
+        <relationshipLabel><!-- Opportunities (Primary Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Budgeted? --></label>
+        <name>SDO_Sales_Project_Budgeted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Manager Contact --></label>
+        <name>SDO_Sales_Project_Manager_Contact__c</name>
+        <relationshipLabel><!-- Opportunities (Project Manager Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reason Lost --></label>
+        <name>SDO_Sales_Reason_Lost__c</name>
+        <picklistValues>
+            <masterLabel>No Decision</masterLabel>
+            <translation><!-- No Decision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation><!-- Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Issues</masterLabel>
+            <translation><!-- Product Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relationship</masterLabel>
+            <translation><!-- Relationship --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stalled Opportunity --></label>
+        <name>SDO_Sales_Stalled_Opportunity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Value --></label>
+        <name>SDO_Sales_Status_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Winning Competitor --></label>
+        <name>SDO_Sales_Winning_Competitor__c</name>
+        <picklistValues>
+            <masterLabel>Competitor A</masterLabel>
+            <translation><!-- Competitor A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor B</masterLabel>
+            <translation><!-- Competitor B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor C</masterLabel>
+            <translation><!-- Competitor C --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>SDO_Service_Case__c</name>
+        <relationshipLabel><!-- Related Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Stalled Opportunity --></label>
+        <name>Stalled_Opportunity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary of Residential Loan Application --></label>
+        <name>Summary_of_Residential_Loan_Application__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Endorsement</masterLabel>
+            <translation><!-- Endorsement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Existing Customer</masterLabel>
+            <translation><!-- Existing Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Customer</masterLabel>
+            <translation><!-- New Customer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- analyticsdemo_batch_id__c --></label>
+        <name>analyticsdemo_batch_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- CloseDate db days --></label>
+        <name>db_days_CloseDate__c</name>
+    </fields>
+    <fields>
+        <help>Estado general de la aprobación de esta oportunidad</help>
+        <label><!-- Approval Status --></label>
+        <name>sbaa__ApprovalStatus__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Aprobada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>Pendiente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recalled</masterLabel>
+            <translation>Recuperada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>Rechazada</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Se emplea con aprobaciones nativas para indicar el paso en el que está el proceso de aprobación de esta oportunidad.</help>
+        <label><!-- Approval Step --></label>
+        <name>sbaa__ApprovalStep__c</name>
+    </fields>
+    <fields>
+        <help>Se emplea con aprobadores nativos e indica qué aprobador es responsable de aprobar la oportunidad.</help>
+        <label><!-- Approver --></label>
+        <name>sbaa__Approver__c</name>
+        <relationshipLabel><!-- Opportunities (Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Se utiliza con aprobaciones nativas para indicar si se aprobó este paso</help>
+        <label><!-- Step Approved --></label>
+        <name>sbaa__StepApproved__c</name>
+    </fields>
+    <fields>
+        <help>Fecha en la que el registro se envió para su aprobación</help>
+        <label><!-- Submitted Date --></label>
+        <name>sbaa__SubmittedDate__c</name>
+    </fields>
+    <fields>
+        <help>Usuario que solicita aprobación para la oportunidad.</help>
+        <label><!-- Submitted User --></label>
+        <name>sbaa__SubmittedUser__c</name>
+        <relationshipLabel><!-- Opportunities (Submitted User) --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <description><!-- Opportunities created by or for partners. --></description>
+        <label><!-- Channel (Partner) --></label>
+        <name>ChannelPartner</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Advisor Candidate - M&amp;A --></label>
+        <name>FINS_Advisor_Candidate_M_A</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CIB - Onboarding --></label>
+        <name>FINS_CIB_Onboarding</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Lending: Commercial Banking - Commercial Loan Opportunity --></description>
+        <label><!-- Commercial Banking - Lending --></label>
+        <name>FINS_Commercial_Banking_Lending</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Commercial Banking - Small Business Loan --></label>
+        <name>FINS_Commercial_Banking_Small_Business_Loan</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Commercial Banking - Treasury Services OpportunitIy --></description>
+        <label><!-- Commercial Banking - Treasury Management --></label>
+        <name>FINS_Commercial_Banking_Treasury_Management</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Onboarding --></label>
+        <name>FINS_Onboarding</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Designated record type for FSC4A story and Wealth Mgt. Console --></description>
+        <label><!-- Wealth Management - General --></label>
+        <name>FINS_Wealth_Management_General</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Lending - Mortgage: for capturing Lending and Mortgage records --></description>
+        <label><!-- Lending - Mortgage --></label>
+        <name>FSC_Lending_Mortgage</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- General --></label>
+        <name>FinServ__General</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Retirement Planning --></label>
+        <name>FinServ__RetirementPlanning</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Opportunity (Wallet Share) --></label>
+        <name>FinServ__WalletShareOpportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Simple Opportunities with products. --></description>
+        <label><!-- Simple Opportunity --></label>
+        <name>SimpleOpportunity</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Internal referrers must be internal Salesforce users. --></errorMessage>
+        <name>FinServ__NonPortalUserReferrer</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enter an internal referrer or an external referrer. You can list only one referrer for each referral. --></errorMessage>
+        <name>FinServ__SingleReferredByEntryByRecord</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Mass_Delete_Records --></label>
+        <name>Mass_Delete_Records</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Assets --></label>
+        <name>SBQQ__Amend_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Contract --></label>
+        <name>SBQQ__Amend_Contract</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreateOrder --></label>
+        <name>SBQQ__CreateOrder</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Include_Document --></label>
+        <name>SBQQ__Include_Document</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- PreviewApprovals --></label>
+        <name>sbaa__PreviewApprovals</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RecallApprovals --></label>
+        <name>sbaa__RecallApprovals</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ResendRequestEmail --></label>
+        <name>sbaa__ResendRequestEmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SubmitForApproval --></label>
+        <name>sbaa__SubmitForApproval</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_Slack --></label>
+        <name>slackv2__Send_to_Slack</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Slack_Alerts --></label>
+        <name>slackv2__Slack_Alerts</name>
+    </webLinks>
+</CustomObjectTranslation>

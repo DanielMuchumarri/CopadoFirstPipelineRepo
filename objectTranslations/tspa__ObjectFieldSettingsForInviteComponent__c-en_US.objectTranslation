@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Customer Name --></label>
+        <name>tspa__Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference Number Field --></label>
+        <name>tspa__Customer_Refrence_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Digital Engagement --></label>
+        <name>tspa__Digital_Engagement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Field --></label>
+        <name>tspa__Email_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is knowledgebase --></label>
+        <name>tspa__Is_knowledgebase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Knowledgebase Filter --></label>
+        <name>tspa__Knowledgebase_Filter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Knowledgebase Result --></label>
+        <name>tspa__Knowledgebase_Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- Language Field --></label>
+        <name>tspa__Language_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Message Type --></label>
+        <name>tspa__Message_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone Number Field --></label>
+        <name>tspa__Phone_Number_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session Type Field --></label>
+        <name>tspa__Session_Type_Field__c</name>
+    </fields>
+</CustomObjectTranslation>

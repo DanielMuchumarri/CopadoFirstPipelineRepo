@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>FSCComplaintManagementGetFinancialAccounts</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>REFERENCE</filterDataType>
+        <filterGroup>1.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>AccountId</filterValue>
+        <globalKey>FSCComplaintManagementGetFinancialAccountsCustom0jI4V000000L00NUASItem0</globalKey>
+        <inputFieldName>FinServ__JointOwner__c</inputFieldName>
+        <inputObjectName>FinServ__FinancialAccount__c</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCComplaintManagementGetFinancialAccounts</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>finAccounts</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>STRING</filterDataType>
+        <filterGroup>1.0</filterGroup>
+        <filterOperator>IN</filterOperator>
+        <filterValue>AccountType</filterValue>
+        <globalKey>FSCComplaintManagementGetFinancialAccountsCustom0jI4V000000L00NUASItem1</globalKey>
+        <inputFieldName>FinServ__RecordTypeName__c</inputFieldName>
+        <inputObjectName>FinServ__FinancialAccount__c</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCComplaintManagementGetFinancialAccounts</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>finAccounts</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>STRING</filterDataType>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>IN</filterOperator>
+        <filterValue>AccountType</filterValue>
+        <globalKey>FSCComplaintManagementGetFinancialAccountsCustom0jI4V000000L00NUASItem2</globalKey>
+        <inputFieldName>FinServ__RecordTypeName__c</inputFieldName>
+        <inputObjectName>FinServ__FinancialAccount__c</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCComplaintManagementGetFinancialAccounts</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>finAccounts</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCComplaintManagementGetFinancialAccountsCustom0jI4V000000L00NUASItem3</globalKey>
+        <inputFieldName>FinServ__RecordTypeName__c</inputFieldName>
+        <inputObjectName>FinServ__FinancialAccount__c</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCComplaintManagementGetFinancialAccounts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>finAccounts</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>REFERENCE</filterDataType>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>AccountId</filterValue>
+        <globalKey>FSCComplaintManagementGetFinancialAccountsCustom0jI4V000000L00NUASItem4</globalKey>
+        <inputFieldName>FinServ__PrimaryOwner__c</inputFieldName>
+        <inputObjectName>FinServ__FinancialAccount__c</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCComplaintManagementGetFinancialAccounts</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>finAccounts</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCComplaintManagementGetFinancialAccountsCustom0jI4V000000L00NUASItem5</globalKey>
+        <inputFieldName>FinServ__FinancialAccountNumber__c</inputFieldName>
+        <inputObjectName>FinServ__FinancialAccount__c</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCComplaintManagementGetFinancialAccounts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>finAccounts</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <overrideKey>fsccomplaintmanagement__FSCComplaintManagementGetFinancialAccounts_1</overrideKey>
+    <previewJsonData>{
+  &quot;AccountId&quot; : &quot;001xx000003GvelAAC&quot;,
+  &quot;AccountType&quot; : [ &quot;Savings&quot;, &quot;Credit Card&quot;, &quot;Checking&quot; ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Turbo Extract</type>
+    <uniqueName>FSCComplaintManagementGetFinancialAccounts_2</uniqueName>
+    <versionNumber>2.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

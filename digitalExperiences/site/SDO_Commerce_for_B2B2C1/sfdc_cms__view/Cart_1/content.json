@@ -1,0 +1,184 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Cart",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "d6282327-2e04-4856-87c6-e9b2d1171066",
+          "type" : "component"
+        } ],
+        "id" : "0ea796b4-07a3-417d-a4fa-acaa65601018",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "sectionConfig" : "{\"UUID\":\"235076b2-0c2b-4399-96eb-941aa670e6e4\",\"columns\":[{\"UUID\":\"0bc41c79-60a5-42a6-9acb-71119ea8c3d9\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"8\",\"seedComponents\":null},{\"UUID\":\"804bfcf0-0a4b-42c7-993b-1b722c692430\",\"columnName\":\"Column 2\",\"columnKey\":\"col2\",\"columnWidth\":\"4\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "browseStep" : 1,
+                "emptyCartBodyLabel" : "Continue Shopping",
+                "emptyCartHeaderLabel" : "Your cart is empty right now",
+                "headerText" : "Shop By Category",
+                "negotiatedTextSize" : "medium",
+                "originalTextSize" : "small",
+                "pageSize" : 4,
+                "showNegotiatedPrice" : true,
+                "showOriginalPrice" : true,
+                "showPricePerUnit" : true,
+                "showProductImage" : true,
+                "showSku" : true,
+                "skuLabel" : "SKU#"
+              },
+              "definition" : "b2c_lite_commerce:cartContents",
+              "id" : "3d9d0342-b37b-4adf-9ee4-7001c4007885",
+              "type" : "component"
+            } ],
+            "id" : "0bc41c79-60a5-42a6-9acb-71119ea8c3d9",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "componentHeader" : "Summary",
+                "discountAmountFontSize" : "small",
+                "originalTextSize" : "small",
+                "promotionsLabel" : "Promotions",
+                "shippingLabel" : "Shipping",
+                "shippingTextSize" : "small",
+                "showDiscountAmount" : true,
+                "showOriginalPrice" : false,
+                "showShippingPrice" : true,
+                "showSubtotalPrice" : true,
+                "showTaxIncludedLabel" : true,
+                "showTaxPrice" : true,
+                "subtotalLabel" : "Subtotal",
+                "subtotalTextSize" : "small",
+                "taxIncludedLabel" : "Tax Included",
+                "taxIncludedLabelTextSize" : "small",
+                "taxLabel" : "Tax",
+                "taxTextSize" : "small",
+                "totalLabel" : "Total",
+                "totalTextSize" : "medium"
+              },
+              "definition" : "b2c_lite_commerce:cartSummary",
+              "id" : "3abeed39-fba1-4552-a43c-43fc734fc01d",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "appliedCouponsFontSize" : "medium",
+                "applyCouponButtonBorderRadius" : "4px",
+                "applyCouponButtonText" : "Apply",
+                "couponFormPlaceholderText" : "Enter a coupon code...",
+                "couponInputBoxBorderRadius" : "4px",
+                "revealCouponFormButtonFontSize" : "small",
+                "revealCouponFormButtonText" : "Enter a coupon code",
+                "showRevealCouponFormButton" : false,
+                "showTermsAndConditions" : true,
+                "termsAndConditionsTitleText" : "Terms and Conditions"
+              },
+              "definition" : "commerce_unified_coupons:cartAppliedCoupons",
+              "id" : "1e99ab27-cb72-475d-81bb-fc2bbac3d538",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "appliedPromotionsFontSize" : "small",
+                "appliedPromotionsTitleFontSize" : "medium",
+                "appliedPromotionsTitleText" : "Promotions",
+                "showDiscountAmount" : true,
+                "showTermsAndConditions" : true,
+                "termsAndConditionsTitleText" : "Terms and Conditions"
+              },
+              "definition" : "commerce_unified_promotions:cartAppliedPromotions",
+              "id" : "423d20d5-efc6-4be3-a6e0-c1db8bb46ee2",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "buttonAlignItems" : "left",
+                "buttonBorderRadius" : 0,
+                "buttonMaxWidth" : 100,
+                "buttonText" : "Checkout"
+              },
+              "definition" : "b2c_lite_commerce:checkoutButton",
+              "id" : "69507a6e-bf28-4308-8896-9ebb2d719d3c",
+              "type" : "component"
+            } ],
+            "id" : "804bfcf0-0a4b-42c7-993b-1b722c692430",
+            "name" : "col2",
+            "title" : "Column 2",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "235076b2-0c2b-4399-96eb-941aa670e6e4",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "sectionConfig" : "{\"UUID\":\"42a65c3e-7092-4042-a296-f2c95cf93c86\",\"columns\":[{\"UUID\":\"fb19d474-eff2-4782-a884-f564f7ecaaec\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "callToActionButtonLabel" : "Add To Cart",
+                "displayName" : true,
+                "displayPrice" : true,
+                "displayQuantitySelectorAndCallToActionButton" : false,
+                "headerText" : "Customers Also Bought",
+                "manualCategoryId" : "",
+                "manualProductId" : "",
+                "maxProductsVisible" : "4",
+                "minProductsVisible" : "2",
+                "priceToDisplay" : "strikethrough",
+                "quantitySelectorLabel" : "qty",
+                "selectedAnchorType" : "productCart",
+                "selectedRecNameCategoryManual" : "most-viewed-by-category",
+                "selectedRecNameCategoryRecord" : "most-viewed-by-category",
+                "selectedRecNameNoContext" : "recently-viewed",
+                "selectedRecNameProductCart" : "upsell",
+                "selectedRecNameProductManual" : "similar-products",
+                "selectedRecNameProductRecord" : "similar-products"
+              },
+              "definition" : "b2c_lite_commerce:einsteinProductRecommendations",
+              "id" : "439cb5f9-2d58-4e68-8993-e7e9d9064fba",
+              "type" : "component"
+            } ],
+            "id" : "fb19d474-eff2-4782-a884-f564f7ecaaec",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "42a65c3e-7092-4042-a296-f2c95cf93c86",
+          "type" : "component"
+        } ],
+        "id" : "c9f45444-f1b3-4518-ad8c-c1f6381c60cd",
+        "name" : "content",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "c458481a-e2c9-4bf0-8c8a-58ff73a33659",
+      "type" : "component"
+    },
+    "dataProviders" : [ {
+      "definition" : "sfdc_cms__commerceCartDataProvider",
+      "sfdcExpressionKey" : "Cart",
+      "attributes" : { }
+    } ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "current-cart"
+  },
+  "urlName" : "cart"
+}

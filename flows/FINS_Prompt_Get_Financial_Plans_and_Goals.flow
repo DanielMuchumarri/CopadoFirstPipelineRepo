@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <assignments>
+        <description>Add a note to the prompt template with the financial goal details</description>
+        <name>Add_Note_about_Financial_Goal_Details</name>
+        <elementSubtype>AddPromptInstructions</elementSubtype>
+        <label>Add Note about Financial Goal Details</label>
+        <locationX>138</locationX>
+        <locationY>974</locationY>
+        <assignmentItems>
+            <assignToReference>$Output.Prompt</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>{!Loop_through_every_Financial_Goals.Name}{!Loop_through_every_Financial_Goals.Type}{!Loop_through_every_Financial_Goals.Status}{!Loop_through_every_Financial_Goals.StartDate}
+</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_through_every_Financial_Goals</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Add to the prompt template that there are no Financial Goal records</description>
+        <name>Add_Note_about_no_Financial_Goals</name>
+        <elementSubtype>AddPromptInstructions</elementSubtype>
+        <label>Add Note about no Financial Goals</label>
+        <locationX>314</locationX>
+        <locationY>866</locationY>
+        <assignmentItems>
+            <assignToReference>$Output.Prompt</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>This Client currently does not have any financial goals aligned with us.
+</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Add a note that there are no financial plan records</description>
+        <name>Add_Note_about_no_Financial_Plans_or_Goals</name>
+        <elementSubtype>AddPromptInstructions</elementSubtype>
+        <label>Add Note about no Financial Plans or Goals</label>
+        <locationX>578</locationX>
+        <locationY>350</locationY>
+        <assignmentItems>
+            <assignToReference>$Output.Prompt</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>This Client currently does not have any financial plans or financial goals aligned with us.
+</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Assign a Financial Plan ID</description>
+        <name>Assign_Financial_Plan_IDs</name>
+        <label>Assign Financial Plan IDs</label>
+        <locationX>270</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>FinancialPlanIDs</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Loop_through_every_Financial_Plan.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_through_every_Financial_Plan</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Has_Financial_Goals</name>
+        <label>Has Financial Goals?</label>
+        <locationX>182</locationX>
+        <locationY>758</locationY>
+        <defaultConnector>
+            <targetReference>Add_Note_about_no_Financial_Goals</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No Financial Goals Present</defaultConnectorLabel>
+        <rules>
+            <name>Financial_Goals_Present</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Financial_Goals</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_through_every_Financial_Goals</targetReference>
+            </connector>
+            <label>Financial Goals Present</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Step to verify if the account record has any financial plans</description>
+        <name>Has_Financial_Plans</name>
+        <label>Has Financial Plans?</label>
+        <locationX>380</locationX>
+        <locationY>242</locationY>
+        <defaultConnector>
+            <targetReference>Add_Note_about_no_Financial_Plans_or_Goals</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Financial_Plans</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_through_every_Financial_Plan</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>FINS Prompt - Get Financial Plans and Goals {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FINS Prompt - Get Financial Plans and Goals</label>
+    <loops>
+        <name>Loop_through_every_Financial_Goals</name>
+        <label>Loop through every Financial Goals</label>
+        <locationX>50</locationX>
+        <locationY>866</locationY>
+        <collectionReference>Get_Financial_Goals</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Add_Note_about_Financial_Goal_Details</targetReference>
+        </nextValueConnector>
+    </loops>
+    <loops>
+        <description>Step to loop though every financial plan record</description>
+        <name>Loop_through_every_Financial_Plan</name>
+        <label>Loop through every Financial Plan</label>
+        <locationX>182</locationX>
+        <locationY>350</locationY>
+        <collectionReference>Get_Financial_Plans</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assign_Financial_Plan_IDs</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Get_Financial_Goals</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>PromptFlow</processType>
+    <recordLookups>
+        <description>Step to fetch financial goal records</description>
+        <name>Get_Financial_Goals</name>
+        <label>Get Financial Goals</label>
+        <locationX>182</locationX>
+        <locationY>650</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Has_Financial_Goals</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>FinancialPlanId</field>
+            <operator>In</operator>
+            <value>
+                <elementReference>FinancialPlanIDs</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>FinancialGoal</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Step to Fetch all Financial Plans on the account record</description>
+        <name>Get_Financial_Plans</name>
+        <label>Get Financial Plans</label>
+        <locationX>380</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Has_Financial_Plans</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Input.RelatedEntity.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>FinancialPlan</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <capabilityTypes>
+            <name>PromptTemplateType://einstein_gpt__fieldCompletion</name>
+            <capabilityName>PromptTemplateType://einstein_gpt__fieldCompletion</capabilityName>
+            <inputs>
+                <name>RelatedEntity</name>
+                <capabilityInputName>RelatedEntity</capabilityInputName>
+                <dataType>SOBJECT://Account</dataType>
+                <isCollection>false</isCollection>
+            </inputs>
+        </capabilityTypes>
+        <connector>
+            <targetReference>Get_Financial_Plans</targetReference>
+        </connector>
+        <triggerType>Capability</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>Financial_Plan_IDs</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>FinancialPlanIDs</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>PlanIDs</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

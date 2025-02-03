@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Recording Id --></label>
+        <name>tspa__Recording_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recording Name --></label>
+        <name>tspa__Recording_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recording Start Time --></label>
+        <name>tspa__Recording_Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recording Status --></label>
+        <name>tspa__Recording_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deleted</masterLabel>
+            <translation><!-- Deleted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error State</masterLabel>
+            <translation><!-- Error State --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Deletion</masterLabel>
+            <translation><!-- Pending Deletion --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Recording URL --></label>
+        <name>tspa__Recording_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- ReferenceId --></label>
+        <name>tspa__ReferenceId__c</name>
+    </fields>
+    <fields>
+        <label><!-- SessionId --></label>
+        <name>tspa__SessionId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>tspa__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>tspa__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- URL --></label>
+        <name>tspa__URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visual Remote Assistant Reports --></label>
+        <name>tspa__Visual_Remote_Assistant_Reports__c</name>
+        <relationshipLabel><!-- Visual Remote Assistant Recordings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- accountId --></label>
+        <name>tspa__accountId__c</name>
+    </fields>
+    <fields>
+        <label><!-- customer Number --></label>
+        <name>tspa__customer_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- recording End Time --></label>
+        <name>tspa__recording_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- sessionShortId --></label>
+        <name>tspa__sessionShortId__c</name>
+    </fields>
+    <fields>
+        <label><!-- session End Time --></label>
+        <name>tspa__session_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- type --></label>
+        <name>tspa__type__c</name>
+    </fields>
+    <fields>
+        <label><!-- userId --></label>
+        <name>tspa__userId__c</name>
+    </fields>
+</CustomObjectTranslation>

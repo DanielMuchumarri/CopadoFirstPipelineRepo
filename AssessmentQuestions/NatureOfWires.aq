@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>NatureOfWires</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>What are nature/reason for the wires you originate?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>NatureOfWires</developerName>
+    <name>NatureOfWires</name>
+    <questionCategory>Financial</questionCategory>
+</AssessmentQuestion>

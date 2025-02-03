@@ -1,0 +1,250 @@
+Category,Closing_Date,Id,Likelihood_Score,Loan_Amount,Name,Opportunity_Date,Product,Rate,Rate_Type,SubProduct,Term
+Residential,2022-08-27 00:00:00,a4l5f000000JMR4AAO,0.94,750000,Rhoda Hepburn,2022-05-19 00:00:00,Mortgage,0.04,Fixed,Conventional,30 Year
+Residential,2022-10-04 00:00:00,a4l5f000000JMR4AAO,0.64,453000,Rod Lynde,2022-06-06 00:00:00,Mortgage,0.04,Fixed,FHA,15 Year
+Residential,2022-08-13 00:00:00,a4l5f000000JMR4AAO,0.64,781000,Rodger Cumbee,2022-04-25 00:00:00,Mortgage,0.05,Fixed,VA,30 Year
+Residential,2022-10-01 00:00:00,a4l5f000000JMR4AAO,0.64,693000,Mana He,2022-06-03 00:00:00,Mortgage,0.03,Variable,FHA,15 Year
+Residential,2022-06-24 00:00:00,a4l5f000000JMR4AAO,0.79,462000,Rhea Wisozk,2022-03-16 00:00:00,Mortgage,0.05,Variable,VA,30 Year
+Residential,2022-09-08 00:00:00,a4l5f000000JMR4AAO,0.8,877000,Myrna Marks,2022-06-10 00:00:00,Mortgage,0.04,Variable,VA,15 Year
+Residential,2022-09-09 00:00:00,a4l5f000000JMR4AAO,0.65,679000,Skylar Bogisich,2022-06-01 00:00:00,Mortgage,0.05,Fixed,FHA,30 Year
+Home Equity,2022-08-22 00:00:00,a4l5f000000JMR4AAO,0.66,631000,Mertie Kohler,2022-05-04 00:00:00,HELOC,0.05,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-06-18 00:00:00,a4l5f000000JMR4AAO,0.87,814000,Irma Halvorson,2022-02-28 00:00:00,HELOC,0.05,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-06-03 00:00:00,a4l5f000000JMR4AAO,0.94,622000,Rowland Hintz,2022-02-03 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-08-01 00:00:00,a4l5f000000JMR4AAO,0.86,678000,Katarina Rutherford,2022-04-13 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-09-10 00:00:00,a4l5f000000JMR4AAO,0.69,487000,Coralie Trantow,2022-05-23 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-08-13 00:00:00,a4l5f000000JMR4AAO,0.68,703000,Maddison Wintheiser,2022-04-15 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-08-06 00:00:00,a4l5f000000JMR4AAO,0.74,952000,Kaela Strosin,2022-04-28 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-07-20 00:00:00,a4l5f000000JMR4AAO,0.87,939000,Chase Fadel,2022-04-11 00:00:00,HELOC,0.05,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-05-24 00:00:00,a4l5f000000JMR4AAO,0.64,709000,Cleveland Little,2022-02-13 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-09-10 00:00:00,a4l5f000000JMR4AAO,0.63,394000,Cassandra Corwin,2022-05-23 00:00:00,HELOC,0.03,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-08-27 00:00:00,a4l5f000000JMR4AAO,0.88,495000,Greta Lang,2022-04-29 00:00:00,HELOC,0.05,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-07-08 00:00:00,a4l5f000000JMR4AAO,0.84,432000,Phyllis Shields,2022-03-30 00:00:00,HELOC,0.03,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-08-23 00:00:00,a4l5f000000JMR4AAO,0.62,755000,Malcolm Quitzon,2022-04-25 00:00:00,HELOC,0.05,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-06-22 00:00:00,a4l5f000000JMR4AAO,0.61,418000,Wilbert Bednar,2022-03-04 00:00:00,HELOC,0.05,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-09-28 00:00:00,a4l5f000000JMR4AAO,0.94,612000,Sam Champlin,2022-06-10 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-09-07 00:00:00,a4l5f000000JMR4AAO,0.67,516000,Makayla Rolfson,2022-05-20 00:00:00,HELOC,0.05,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-10-07 00:00:00,a4l5f000000JMR4AAO,0.69,592000,Neha Hammes,2022-06-09 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-09-15 00:00:00,a4l5f000000JMR4AAO,0.6,958000,Vern Trantow,2022-06-07 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-06-02 00:00:00,a4l5f000000JMR4AAO,0.82,782000,Kieran Greenfelder,2022-02-22 00:00:00,HELOC,0.05,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-06-03 00:00:00,a4l5f000000JMR4AAO,0.82,609000,Howard Dietrich,2022-02-13 00:00:00,HELOC,0.05,Variable,HELOC,10 Draw / 20 Repay
+Residential,2022-08-27 00:00:00,a4l5f000000JMR4AAO,0.86,812000,Abbigail Brown,2022-05-19 00:00:00,Mortgage,0.04,Variable,Conventional,30 Year
+Residential,2022-08-10 00:00:00,a4l5f000000JMR4AAO,0.79,569000,Rasheed Sipes,2022-04-22 00:00:00,Mortgage,0.02,Variable,Conventional,15 Year
+Residential,2022-07-13 00:00:00,a4l5f000000JMR4AAO,0.6,707000,Leda Mann,2022-04-04 00:00:00,Mortgage,0.03,Fixed,Conventional,15 Year
+Residential,2022-07-06 00:00:00,a4l5f000000JMR4AAO,0.64,682000,Oran Keeling,2022-03-28 00:00:00,Mortgage,0.04,Variable,Conventional,30 Year
+Residential,2022-06-06 00:00:00,a4l5f000000JMR4AAO,0.75,421000,Mellie Bernier,2022-02-06 00:00:00,Mortgage,0.04,Fixed,VA,30 Year
+Residential,2022-07-19 00:00:00,a4l5f000000JMR4AAO,0.63,447000,Norris Jacobs,2022-03-21 00:00:00,Mortgage,0.02,Variable,VA,15 Year
+Residential,2022-06-01 00:00:00,a4l5f000000JMR4AAO,0.88,769000,Ramon Marks,2022-02-11 00:00:00,Mortgage,0.03,Fixed,Conventional,15 Year
+Residential,2022-09-25 00:00:00,a4l5f000000JMR4AAO,0.87,548000,Verona Hills,2022-06-07 00:00:00,Mortgage,0.06,Fixed,VA,30 Year
+Residential,2022-06-02 00:00:00,a4l5f000000JMR4AAO,0.61,931000,Koby Ritchie,2022-02-02 00:00:00,Mortgage,0.03,Variable,FHA,15 Year
+Residential,2022-07-23 00:00:00,a4l5f000000JMR4AAO,0.76,528000,Vicenta Torp,2022-04-14 00:00:00,Mortgage,0.04,Fixed,Conventional,15 Year
+Residential,2022-06-08 00:00:00,a4l5f000000JMR4AAO,0.93,452000,Michaela Harvey,2022-02-18 00:00:00,Mortgage,0.05,Fixed,FHA,30 Year
+Residential,2022-07-20 00:00:00,a4l5f000000JMR4AAO,0.92,555000,Rick Ullrich,2022-04-01 00:00:00,Mortgage,0.05,Fixed,VA,30 Year
+Residential,2022-10-08 00:00:00,a4l5f000000JMR4AAO,0.68,980000,Moises Welch,2022-06-10 00:00:00,Mortgage,0.05,Variable,FHA,30 Year
+Residential,2022-05-13 00:00:00,a4l5f000000JMR4AAO,0.83,619000,Lilian Gutkowski,2022-02-02 00:00:00,Mortgage,0.04,Variable,Conventional,30 Year
+Residential,2022-09-18 00:00:00,a4l5f000000JMR4AAO,0.92,657000,Rebeca Ortiz,2022-05-31 00:00:00,Mortgage,0.03,Variable,Conventional,15 Year
+Residential,2022-05-26 00:00:00,a4l5f000000JMR4AAO,0.79,814000,Sallie Gleason,2022-02-05 00:00:00,Mortgage,0.04,Variable,FHA,30 Year
+Residential,2022-07-02 00:00:00,a4l5f000000JMR4AAO,0.6,448000,Julius Barton,2022-03-14 00:00:00,Mortgage,0.04,Fixed,Conventional,15 Year
+Residential,2022-06-21 00:00:00,a4l5f000000JMR4AAO,0.84,484000,Norris Beahan,2022-03-13 00:00:00,Mortgage,0.02,Variable,FHA,15 Year
+Residential,2022-08-21 00:00:00,a4l5f000000JMR4AAO,0.82,965000,Morton Eichmann,2022-04-23 00:00:00,Mortgage,0.06,Fixed,Conventional,30 Year
+Residential,2022-08-26 00:00:00,a4l5f000000JMR4AAO,0.87,568000,Sam Sporer,2022-04-28 00:00:00,Mortgage,0.04,Variable,FHA,15 Year
+Residential,2022-08-20 00:00:00,a4l5f000000JMR4AAO,0.87,743000,Raven Steuber,2022-04-22 00:00:00,Mortgage,0.04,Fixed,VA,30 Year
+Residential,2022-06-10 00:00:00,a4l5f000000JMR4AAO,0.91,487000,Bria Kulas,2022-02-20 00:00:00,Mortgage,0.03,Fixed,VA,15 Year
+Residential,2022-08-02 00:00:00,a4l5f000000JMR4AAO,0.89,956000,Mohamed Powlowski,2022-04-24 00:00:00,Mortgage,0.04,Variable,Conventional,30 Year
+Residential,2022-09-08 00:00:00,a4l5f000000JMR4AAO,0.86,970000,Maxie Harber,2022-05-31 00:00:00,Mortgage,0.06,Fixed,VA,30 Year
+Residential,2022-06-19 00:00:00,a4l5f000000JMR4AAO,0.66,957000,Raul Langosh,2022-03-01 00:00:00,Mortgage,0.04,Variable,Conventional,30 Year
+Residential,2022-07-01 00:00:00,a4l5f000000JMR4AAO,0.9,667000,Neha Yundt,2022-03-23 00:00:00,Mortgage,0.05,Fixed,Conventional,30 Year
+Residential,2022-09-21 00:00:00,a4l5f000000JMR4AAO,0.83,366000,Rickie Feil,2022-06-13 00:00:00,Mortgage,0.05,Fixed,FHA,30 Year
+Residential,2022-07-18 00:00:00,a4l5f000000JMR4AAO,0.81,460000,Sylvester Funk,2022-04-09 00:00:00,Mortgage,0.03,Variable,Conventional,15 Year
+Residential,2022-08-23 00:00:00,a4l5f000000JMR4AAO,0.68,745000,Myrl Wisoky,2022-05-15 00:00:00,Mortgage,0.03,Variable,VA,15 Year
+Residential,2022-06-25 00:00:00,a4l5f000000JMR4AAO,0.77,813000,Rebeca Hartmann,2022-03-17 00:00:00,Mortgage,0.05,Fixed,Conventional,30 Year
+Residential,2022-09-13 00:00:00,a4l5f000000JMR4AAO,0.92,577000,Kelton Okuneva,2022-06-05 00:00:00,Mortgage,0.05,Fixed,Conventional,30 Year
+Residential,2022-09-18 00:00:00,a4l5f000000JMR4AAO,0.69,384000,Kayla Johnston,2022-06-10 00:00:00,Mortgage,0.05,Variable,Conventional,30 Year
+Residential,2022-09-02 00:00:00,a4l5f000000JMR4AAO,0.66,961000,Mustafa Turner,2022-05-05 00:00:00,Mortgage,0.04,Fixed,VA,30 Year
+Residential,2022-09-09 00:00:00,a4l5f000000JMR4AAO,0.65,608000,Etha Parker,2022-06-01 00:00:00,Mortgage,0.04,Fixed,FHA,30 Year
+Residential,2022-09-09 00:00:00,a4l5f000000JMR4AAO,0.62,734000,Marcia Jacobs,2022-05-22 00:00:00,Mortgage,0.03,Fixed,Conventional,15 Year
+Residential,2022-07-26 00:00:00,a4l5f000000JMR4AAO,0.89,512000,Rachel Kub,2022-04-07 00:00:00,Mortgage,0.05,Fixed,Conventional,30 Year
+Residential,2022-08-13 00:00:00,a4l5f000000JMR4AAO,0.6,680000,Lyla Bailey,2022-04-25 00:00:00,Mortgage,0.05,Variable,FHA,30 Year
+Residential,2022-06-06 00:00:00,a4l5f000000JMR4AAO,0.77,548000,Rebeca Bartoletti,2022-02-26 00:00:00,Mortgage,0.03,Variable,FHA,15 Year
+Residential,2022-08-14 00:00:00,a4l5f000000JMR4AAO,0.77,990000,Lavonne Fadel,2022-04-16 00:00:00,Mortgage,0.05,Fixed,FHA,30 Year
+Residential,2022-07-26 00:00:00,a4l5f000000JMR4AAO,0.9,737000,Jennings Sporer,2022-03-28 00:00:00,Mortgage,0.04,Variable,FHA,30 Year
+Residential,2022-06-26 00:00:00,a4l5f000000JMR4AAO,0.83,399000,Emmalee Wiza,2022-03-18 00:00:00,Mortgage,0.06,Fixed,Conventional,30 Year
+Residential,2022-08-30 00:00:00,a4l5f000000JMR4AAO,0.95,373000,Major Olson,2022-05-22 00:00:00,Mortgage,0.04,Variable,FHA,30 Year
+Residential,2022-10-03 00:00:00,a4l5f000000JMR4AAO,0.82,597000,Nico Schmitt,2022-06-05 00:00:00,Mortgage,0.06,Fixed,Conventional,30 Year
+Residential,2022-06-04 00:00:00,a4l5f000000JMR4AAO,0.64,967000,Maximilian Wiza,2022-02-24 00:00:00,Mortgage,0.04,Fixed,Conventional,15 Year
+Residential,2022-07-05 00:00:00,a4l5f000000JMR4AAO,0.76,959000,Kenyatta Crist,2022-03-27 00:00:00,Mortgage,0.04,Fixed,VA,30 Year
+Residential,2022-06-14 00:00:00,a4l5f000000JMR4AAO,0.78,502000,Julien Schneider,2022-02-14 00:00:00,Mortgage,0.05,Variable,VA,30 Year
+Residential,2022-07-26 00:00:00,a4l5f000000JMR4AAO,0.78,749000,Rasheed Bernier,2022-03-28 00:00:00,Mortgage,0.04,Fixed,FHA,30 Year
+Residential,2022-08-21 00:00:00,a4l5f000000JMR4AAO,0.85,858000,Margarita Howe,2022-05-13 00:00:00,Mortgage,0.04,Fixed,Conventional,15 Year
+Residential,2022-06-21 00:00:00,a4l5f000000JMR4AAO,0.7,423000,Samir Nitzsche,2022-03-03 00:00:00,Mortgage,0.03,Fixed,Conventional,15 Year
+Residential,2022-07-01 00:00:00,a4l5f000000JMR4AAO,0.82,663000,Maverick Koepp,2022-03-13 00:00:00,Mortgage,0.05,Fixed,FHA,30 Year
+Residential,2022-08-08 00:00:00,a4l5f000000JMR4AAO,0.64,728000,Lolita Quigley,2022-04-20 00:00:00,Mortgage,0.03,Variable,Conventional,15 Year
+Residential,2022-08-15 00:00:00,a4l5f000000JMR4AAO,0.84,850000,Montana Ondricka,2022-04-27 00:00:00,Mortgage,0.05,Variable,VA,30 Year
+Residential,2022-07-28 00:00:00,a4l5f000000JMR4AAO,0.9,960000,Leone Bailey,2022-03-30 00:00:00,Mortgage,0.03,Fixed,Conventional,15 Year
+Residential,2022-06-16 00:00:00,a4l5f000000JMR4AAO,0.73,543000,Lawrence Sipes,2022-02-26 00:00:00,Mortgage,0.05,Variable,Conventional,30 Year
+Residential,2022-05-22 00:00:00,a4l5f000000JMR4AAO,0.63,813000,Jon Wuckert,2022-02-01 00:00:00,Mortgage,0.04,Variable,Conventional,15 Year
+Residential,2022-05-27 00:00:00,a4l5f000000JMR4AAO,0.92,642000,Nathanial Kiehn,2022-02-16 00:00:00,Mortgage,0.03,Fixed,Conventional,15 Year
+Residential,2022-06-05 00:00:00,a4l5f000000JMR4AAO,0.88,619000,Lauretta Fay,2022-02-05 00:00:00,Mortgage,0.04,Fixed,Conventional,30 Year
+Residential,2022-08-25 00:00:00,a4l5f000000JMR4AAO,0.8,580000,Ewell Oberbrunner,2022-05-07 00:00:00,Mortgage,0.05,Fixed,FHA,30 Year
+Residential,2022-07-06 00:00:00,a4l5f000000JMR4AAO,0.93,968000,Mervin Koelpin,2022-03-18 00:00:00,Mortgage,0.04,Fixed,Conventional,30 Year
+Residential,2022-08-14 00:00:00,a4l5f000000JMR4AAO,0.89,421000,Salvador Hyatt,2022-04-26 00:00:00,Mortgage,0.04,Variable,Conventional,30 Year
+Residential,2022-06-29 00:00:00,a4l5f000000JMR4AAO,0.74,376000,Colton Nikolaus,2022-03-21 00:00:00,Mortgage,0.03,Fixed,Conventional,15 Year
+Residential,2022-09-18 00:00:00,a4l5f000000JMR4AAO,0.62,454000,Makenna Torphy,2022-05-31 00:00:00,Mortgage,0.05,Variable,FHA,30 Year
+Home Equity,2022-09-02 00:00:00,a4l5f000000JMR4AAO,0.85,908000,Maxie Predovic,2022-05-25 00:00:00,HELOC,0.03,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-08-28 00:00:00,a4l5f000000JMR4AAO,0.95,851000,Rhoda Stoltenberg,2022-04-30 00:00:00,HELOC,0.05,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-05-24 00:00:00,a4l5f000000JMR4AAO,0.91,933000,Emelia Kohler,2022-02-13 00:00:00,HELOC,0.02,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-08-27 00:00:00,a4l5f000000JMR4AAO,0.8,728000,Samara Pagac,2022-05-09 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-09-18 00:00:00,a4l5f000000JMR4AAO,0.76,456000,Jeffry Stehr,2022-06-10 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-09-04 00:00:00,a4l5f000000JMR4AAO,0.65,876000,Malcolm Strosin,2022-05-27 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-10-05 00:00:00,a4l5f000000JMR4AAO,0.69,512000,Nathanael Cole,2022-06-07 00:00:00,HELOC,0.05,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-06-10 00:00:00,a4l5f000000JMR4AAO,0.77,961000,Maverick Lakin,2022-03-02 00:00:00,HELOC,0.06,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-05-23 00:00:00,a4l5f000000JMR4AAO,0.71,595000,Myles Purdy,2022-02-02 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-09-18 00:00:00,a4l5f000000JMR4AAO,0.86,493000,Sally Shira,2022-06-10 00:00:00,HELOC,0.05,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-08-21 00:00:00,a4l5f000000JMR4AAO,0.66,875000,Sammy Christiano,2022-05-13 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-07-30 00:00:00,a4l5f000000JMR4AAO,0.88,544000,Santos Welborn,2022-04-11 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-09-12 00:00:00,a4l5f000000JMR4AAO,0.75,828000,Shaina Klepper,2022-05-25 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-08-06 00:00:00,a4l5f000000JMR4AAO,0.62,950000,Sharell Durrant,2022-04-08 00:00:00,HELOC,0.05,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-05-24 00:00:00,a4l5f000000JMR4AAO,0.71,733000,Sherry Derrico,2022-02-03 00:00:00,HELOC,0.05,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-09-10 00:00:00,a4l5f000000JMR4AAO,0.81,757000,Silas Burkett,2022-05-13 00:00:00,HELOC,0.03,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-05-16 00:00:00,a4l5f000000JMR4AAO,0.92,825000,Sparkle Cabaniss,2022-02-05 00:00:00,HELOC,0.05,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-06-24 00:00:00,a4l5f000000JMR4AAO,0.67,421000,Stanley Iniguez,2022-03-06 00:00:00,HELOC,0.05,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-05-24 00:00:00,a4l5f000000JMR4AAO,0.76,901000,Susanna Acoff,2022-02-03 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-08-08 00:00:00,a4l5f000000JMR4AAO,0.72,583000,Tara Ellisor,2022-04-10 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-08-04 00:00:00,a4l5f000000JMR4AAO,0.85,396000,Theron Sifuentes,2022-04-16 00:00:00,HELOC,0.05,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-06-08 00:00:00,a4l5f000000JMR4AAO,0.73,704000,Thomas Mascio,2022-02-18 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-07-16 00:00:00,a4l5f000000JMR4AAO,0.69,730000,Tran Manfredi,2022-03-18 00:00:00,HELOC,0.02,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-07-21 00:00:00,a4l5f000000JMR4AAO,0.67,361000,Trina Zirkle,2022-04-12 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-06-15 00:00:00,a4l5f000000JMR4AAO,0.76,928000,Ty Bade,2022-03-07 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-07-04 00:00:00,a4l5f000000JMR4AAO,0.93,571000,Tyisha Spurgin,2022-03-16 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-06-21 00:00:00,a4l5f000000JMR4AAO,0.93,998000,Tynisha Loberg,2022-03-03 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-07-28 00:00:00,a4l5f000000JMR4AAO,0.78,630000,Tyson Jamison,2022-03-30 00:00:00,HELOC,0.03,Variable,HELOC,10 Draw / 20 Repay
+Residential,2022-08-20 00:00:00,a4l5f000000JMR4AAO,0.85,898000,Val Lehmann,2022-05-12 00:00:00,Mortgage,0.04,Variable,FHA,30 Year
+Residential,2022-06-10 00:00:00,a4l5f000000JMR4AAO,0.7,443000,Wei Rayo,2022-02-20 00:00:00,Mortgage,0.05,Fixed,FHA,30 Year
+Residential,2022-08-19 00:00:00,a4l5f000000JMR4AAO,0.89,950000,Young Bendixen,2022-04-21 00:00:00,Mortgage,0.04,Fixed,Conventional,15 Year
+Residential,2022-08-27 00:00:00,a4l5f000000JMR4AAO,0.72,796000,Zachary Forgione,2022-04-29 00:00:00,Mortgage,0.03,Variable,FHA,15 Year
+Residential,2022-09-08 00:00:00,a4l5f000000JMR4AAO,0.88,855000,Ashlyn Doctor,2022-05-31 00:00:00,Mortgage,0.04,Variable,Conventional,30 Year
+Residential,2022-09-18 00:00:00,a4l5f000000JMR4AAO,0.81,822000,Ronnie Obyrne,2022-06-10 00:00:00,Mortgage,0.05,Fixed,Conventional,30 Year
+Residential,2022-08-25 00:00:00,a4l5f000000JMR4AAO,0.61,790000,Rosetta Urman,2022-05-07 00:00:00,Mortgage,0.04,Variable,Conventional,30 Year
+Residential,2022-09-14 00:00:00,a4l5f000000JMR4AAO,0.89,940000,Amit Aiu,2022-05-17 00:00:00,Mortgage,0.04,Fixed,FHA,30 Year
+Residential,2022-08-29 00:00:00,a4l5f000000JMR4AAO,0.92,516000,Abigail Brown,2022-05-01 00:00:00,Mortgage,0.05,Fixed,VA,30 Year
+Residential,2022-09-20 00:00:00,a4l5f000000JMR4AAO,0.72,661000,Karen Davis,2022-05-23 00:00:00,Mortgage,0.04,Fixed,Conventional,30 Year
+Residential,2022-05-28 00:00:00,a4l5f000000JMR4AAO,0.91,627000,Catherine Phillips,2022-02-07 00:00:00,Mortgage,0.03,Variable,Conventional,15 Year
+Residential,2022-08-13 00:00:00,a4l5f000000JMR4AAO,0.9,735000,Kenneth Hudson,2022-05-15 00:00:00,Mortgage,0.04,Variable,Conventional,30 Year
+Residential,2022-06-09 00:00:00,a4l5f000000JMR4AAO,0.82,551000,Marc Mulcahy,2022-02-19 00:00:00,Mortgage,0.05,Variable,FHA,30 Year
+Residential,2022-09-28 00:00:00,a4l5f000000JMR4AAO,0.82,375000,Kelly Baunach,2022-05-31 00:00:00,Mortgage,0.04,Variable,VA,30 Year
+Residential,2022-05-23 00:00:00,a4l5f000000JMR4AAO,0.73,733000,Brenda Shah,2022-02-12 00:00:00,Mortgage,0.03,Fixed,FHA,15 Year
+Residential,2022-08-01 00:00:00,a4l5f000000JMR4AAO,0.73,919000,Marc Quail,2022-04-13 00:00:00,Mortgage,0.04,Variable,Conventional,30 Year
+Residential,2022-06-05 00:00:00,a4l5f000000JMR4AAO,0.95,878000,Serena Dupont,2022-02-05 00:00:00,Mortgage,0.04,Fixed,Conventional,15 Year
+Residential,2022-07-30 00:00:00,a4l5f000000JMR4AAO,0.93,772000,Abraham Winer,2022-04-21 00:00:00,Mortgage,0.04,Fixed,VA,30 Year
+Residential,2022-05-27 00:00:00,a4l5f000000JMR4AAO,0.71,655000,Adelle World,2022-02-16 00:00:00,Mortgage,0.04,Variable,Conventional,30 Year
+Residential,2022-06-26 00:00:00,a4l5f000000JMR4AAO,0.68,972000,Alan Labrador,2022-02-26 00:00:00,Mortgage,0.04,Variable,Conventional,30 Year
+Residential,2022-07-25 00:00:00,a4l5f000000JMR4AAO,0.8,966000,Alease Litt,2022-04-26 00:00:00,Mortgage,0.05,Variable,VA,30 Year
+Residential,2022-08-01 00:00:00,a4l5f000000JMR4AAO,0.62,757000,Aleshia Wiesner,2022-04-13 00:00:00,Mortgage,0.04,Fixed,VA,30 Year
+Residential,2022-10-02 00:00:00,a4l5f000000JMR4AAO,0.84,702000,Alfreda Sneller,2022-06-04 00:00:00,Mortgage,0.05,Fixed,VA,30 Year
+Residential,2022-08-11 00:00:00,a4l5f000000JMR4AAO,0.69,843000,Allegra Jung,2022-04-13 00:00:00,Mortgage,0.04,Fixed,Conventional,15 Year
+Residential,2022-08-19 00:00:00,a4l5f000000JMR4AAO,0.73,658000,Amos Shockey,2022-05-01 00:00:00,Mortgage,0.04,Fixed,VA,30 Year
+Residential,2022-06-03 00:00:00,a4l5f000000JMR4AAO,0.85,780000,Alice Flynn,2022-02-03 00:00:00,Mortgage,0.04,Variable,Conventional,30 Year
+Residential,2022-07-17 00:00:00,a4l5f000000JMR4AAO,0.77,886000,Annabell Mccusker,2022-04-08 00:00:00,Mortgage,0.05,Fixed,Conventional,30 Year
+Residential,2022-09-29 00:00:00,a4l5f000000JMR4AAO,0.8,969000,Annabelle Bastarache,2022-06-01 00:00:00,Mortgage,0.02,Variable,Conventional,15 Year
+Residential,2022-09-29 00:00:00,a4l5f000000JMR4AAO,0.91,789000,Ardis Irons,2022-06-01 00:00:00,Mortgage,0.04,Fixed,Conventional,15 Year
+Residential,2022-06-26 00:00:00,a4l5f000000JMR4AAO,0.9,802000,Daniel Crouch,2022-03-18 00:00:00,Mortgage,0.04,Variable,FHA,30 Year
+Residential,2022-06-23 00:00:00,a4l5f000000JMR4AAO,0.82,463000,Senaida Eberly,2022-03-15 00:00:00,Mortgage,0.04,Fixed,Conventional,30 Year
+Residential,2022-08-23 00:00:00,a4l5f000000JMR4AAO,0.95,582000,Malcolm Lehner,2022-05-05 00:00:00,Mortgage,0.05,Fixed,FHA,30 Year
+Residential,2022-06-28 00:00:00,a4l5f000000JMR4AAO,0.6,511000,Randall Boyle,2022-02-28 00:00:00,Mortgage,0.02,Variable,FHA,15 Year
+Residential,2022-09-28 00:00:00,a4l5f000000JMR4AAO,0.81,353000,Anderson Jacobs,2022-05-31 00:00:00,Mortgage,0.05,Variable,Conventional,30 Year
+Residential,2022-06-09 00:00:00,a4l5f000000JMR4AAO,0.82,609000,Sage Lowe,2022-03-11 00:00:00,Mortgage,0.03,Variable,Conventional,15 Year
+Residential,2022-09-20 00:00:00,a4l5f000000JMR4AAO,0.78,652000,Sylvester Lakin,2022-05-23 00:00:00,Mortgage,0.04,Fixed,VA,30 Year
+Residential,2022-07-14 00:00:00,a4l5f000000JMR4AAO,0.85,561000,Pasquale Bauch,2022-04-05 00:00:00,Mortgage,0.05,Variable,FHA,30 Year
+Residential,2022-06-07 00:00:00,a4l5f000000JMR4AAO,0.62,447000,Michael Jast,2022-02-17 00:00:00,Mortgage,0.02,Variable,VA,15 Year
+Residential,2022-08-12 00:00:00,a4l5f000000JMR4AAO,0.78,816000,Maci Herman,2022-04-14 00:00:00,Mortgage,0.03,Variable,VA,15 Year
+Residential,2022-06-29 00:00:00,a4l5f000000JMR4AAO,0.93,558000,Emory Crist,2022-03-11 00:00:00,Mortgage,0.03,Fixed,Conventional,15 Year
+Residential,2022-07-01 00:00:00,a4l5f000000JMR4AAO,0.71,701000,Lynn Bogisich,2022-03-23 00:00:00,Mortgage,0.04,Fixed,VA,30 Year
+Residential,2022-05-14 00:00:00,a4l5f000000JMR4AAO,0.91,902000,Marley Lang,2022-02-03 00:00:00,Mortgage,0.05,Fixed,VA,30 Year
+Residential,2022-08-19 00:00:00,a4l5f000000JMR4AAO,0.62,975000,Lessie Howe,2022-04-21 00:00:00,Mortgage,0.03,Variable,FHA,15 Year
+Residential,2022-06-22 00:00:00,a4l5f000000JMR4AAO,0.74,963000,Sienna Ryan,2022-03-14 00:00:00,Mortgage,0.05,Variable,Conventional,30 Year
+Residential,2022-06-16 00:00:00,a4l5f000000JMR4AAO,0.84,516000,Sallie Satterfield,2022-02-16 00:00:00,Mortgage,0.04,Variable,Conventional,30 Year
+Residential,2022-07-07 00:00:00,a4l5f000000JMR4AAO,0.86,890000,Isobel Stanton,2022-04-08 00:00:00,Mortgage,0.04,Fixed,Conventional,15 Year
+Residential,2022-07-19 00:00:00,a4l5f000000JMR4AAO,0.88,716000,Maymie Jacobs,2022-03-31 00:00:00,Mortgage,0.03,Variable,Conventional,15 Year
+Residential,2022-08-17 00:00:00,a4l5f000000JMR4AAO,0.92,795000,Margarita Roberts,2022-04-29 00:00:00,Mortgage,0.04,Fixed,Conventional,30 Year
+Residential,2022-07-14 00:00:00,a4l5f000000JMR4AAO,0.9,957000,Jodie Yundt,2022-03-26 00:00:00,Mortgage,0.02,Variable,Conventional,15 Year
+Residential,2022-08-08 00:00:00,a4l5f000000JMR4AAO,0.9,595000,Sam Miller,2022-04-20 00:00:00,Mortgage,0.04,Variable,VA,30 Year
+Residential,2022-08-07 00:00:00,a4l5f000000JMR4AAO,0.88,519000,Hannah Bannana,2022-04-09 00:00:00,Mortgage,0.03,Variable,FHA,15 Year
+Residential,2022-07-20 00:00:00,a4l5f000000JMR4AAO,0.93,958000,Sadye Ziemann,2022-03-22 00:00:00,Mortgage,0.04,Fixed,VA,30 Year
+Residential,2022-06-23 00:00:00,a4l5f000000JMR4AAO,0.88,911000,Misty Steuber,2022-03-25 00:00:00,Mortgage,0.03,Variable,VA,15 Year
+Residential,2022-08-03 00:00:00,a4l5f000000JMR4AAO,0.89,749000,Lessie Wiza,2022-04-25 00:00:00,Mortgage,0.06,Fixed,VA,30 Year
+Residential,2022-06-05 00:00:00,a4l5f000000JMR4AAO,0.95,390000,Pietro West,2022-02-25 00:00:00,Mortgage,0.04,Variable,Conventional,30 Year
+Residential,2022-08-01 00:00:00,a4l5f000000JMR4AAO,0.64,501000,Kole Konopelski,2022-05-03 00:00:00,Mortgage,0.05,Fixed,FHA,30 Year
+Residential,2022-08-09 00:00:00,a4l5f000000JMR4AAO,0.87,669000,Raven Feest,2022-04-21 00:00:00,Mortgage,0.05,Variable,Conventional,30 Year
+Residential,2022-09-27 00:00:00,a4l5f000000JMR4AAO,0.73,543000,Emma Torphy,2022-05-30 00:00:00,Mortgage,0.03,Fixed,Conventional,15 Year
+Residential,2022-09-21 00:00:00,a4l5f000000JMR4AAO,0.87,380000,Kian Mueller,2022-06-13 00:00:00,Mortgage,0.04,Fixed,VA,30 Year
+Residential,2022-07-12 00:00:00,a4l5f000000JMR4AAO,0.68,482000,Soledad Grant,2022-04-03 00:00:00,Mortgage,0.03,Fixed,Conventional,15 Year
+Residential,2022-08-16 00:00:00,a4l5f000000JMR4AAO,0.62,829000,Lee Ernser,2022-04-18 00:00:00,Mortgage,0.06,Fixed,FHA,30 Year
+Residential,2022-09-02 00:00:00,a4l5f000000JMR4AAO,0.87,691000,Lorna Parisian,2022-05-05 00:00:00,Mortgage,0.04,Variable,FHA,30 Year
+Residential,2022-06-23 00:00:00,a4l5f000000JMR4AAO,0.6,376000,Kathlyn Crona,2022-03-15 00:00:00,Mortgage,0.04,Fixed,Conventional,30 Year
+Residential,2022-06-14 00:00:00,a4l5f000000JMR4AAO,0.8,402000,Maddison Upton,2022-03-06 00:00:00,Mortgage,0.04,Fixed,Conventional,15 Year
+Residential,2022-07-27 00:00:00,a4l5f000000JMR4AAO,0.72,937000,Malachi Fahey,2022-03-29 00:00:00,Mortgage,0.04,Variable,Conventional,30 Year
+Residential,2022-06-06 00:00:00,a4l5f000000JMR4AAO,0.74,726000,Kaela Olson,2022-02-16 00:00:00,Mortgage,0.04,Variable,Conventional,30 Year
+Residential,2022-09-02 00:00:00,a4l5f000000JMR4AAO,0.7,481000,Major Cremin,2022-06-04 00:00:00,Mortgage,0.04,Fixed,Conventional,30 Year
+Residential,2022-07-10 00:00:00,a4l5f000000JMR4AAO,0.64,408000,Neha Orn,2022-03-22 00:00:00,Mortgage,0.04,Variable,FHA,30 Year
+Residential,2022-09-30 00:00:00,a4l5f000000JMR4AAO,0.89,643000,Emelia Nolan,2022-06-02 00:00:00,Mortgage,0.05,Fixed,Conventional,30 Year
+Residential,2022-08-27 00:00:00,a4l5f000000JMR4AAO,0.84,565000,Anne Tucker,2022-05-19 00:00:00,Mortgage,0.03,Variable,Conventional,15 Year
+Residential,2022-06-16 00:00:00,a4l5f000000JMR4AAO,0.68,576000,Michaela Keebler,2022-02-16 00:00:00,Mortgage,0.05,Variable,FHA,30 Year
+Residential,2022-09-29 00:00:00,a4l5f000000JMR4AAO,0.68,397000,Marilyne Gislason,2022-06-11 00:00:00,Mortgage,0.03,Variable,Conventional,15 Year
+Residential,2022-08-19 00:00:00,a4l5f000000JMR4AAO,0.7,905000,Jon Parker,2022-05-11 00:00:00,Mortgage,0.04,Fixed,VA,30 Year
+Residential,2022-06-22 00:00:00,a4l5f000000JMR4AAO,0.82,780000,Lawrence Kshlerin,2022-02-22 00:00:00,Mortgage,0.04,Fixed,Conventional,15 Year
+Residential,2022-06-03 00:00:00,a4l5f000000JMR4AAO,0.67,631000,Julie Jakubowski,2022-02-13 00:00:00,Mortgage,0.05,Fixed,FHA,30 Year
+Residential,2022-06-10 00:00:00,a4l5f000000JMR4AAO,0.61,971000,Kenny Steuber,2022-03-02 00:00:00,Mortgage,0.03,Fixed,FHA,15 Year
+Residential,2022-07-01 00:00:00,a4l5f000000JMR4AAO,0.67,711000,Maureen Collins,2022-03-03 00:00:00,Mortgage,0.05,Fixed,FHA,30 Year
+Residential,2022-09-06 00:00:00,a4l5f000000JMR4AAO,0.66,754000,Sarai Purdy,2022-05-09 00:00:00,Mortgage,0.04,Variable,VA,15 Year
+Residential,2022-06-23 00:00:00,a4l5f000000JMR4AAO,0.8,466000,Jeanie Steuber,2022-02-23 00:00:00,Mortgage,0.05,Fixed,Conventional,30 Year
+Residential,2022-08-01 00:00:00,a4l5f000000JMR4AAO,0.76,435000,Petra Okuneva,2022-04-13 00:00:00,Mortgage,0.05,Fixed,Conventional,30 Year
+Residential,2022-07-29 00:00:00,a4l5f000000JMR4AAO,0.92,443000,Rylan Feil,2022-04-10 00:00:00,Mortgage,0.06,Fixed,Conventional,30 Year
+Residential,2022-09-27 00:00:00,a4l5f000000JMR4AAO,0.63,690000,Myrl Parisian,2022-05-30 00:00:00,Mortgage,0.04,Fixed,Conventional,30 Year
+Residential,2022-09-04 00:00:00,a4l5f000000JMR4AAO,0.84,446000,Mathias Dietrich,2022-05-27 00:00:00,Mortgage,0.04,Fixed,FHA,30 Year
+Residential,2022-06-04 00:00:00,a4l5f000000JMR4AAO,0.75,691000,Lempi Stanton,2022-02-04 00:00:00,Mortgage,0.05,Variable,VA,30 Year
+Residential,2022-06-17 00:00:00,a4l5f000000JMR4AAO,0.65,412000,Stewart Bernhard,2022-02-27 00:00:00,Mortgage,0.03,Variable,Conventional,15 Year
+Residential,2022-09-22 00:00:00,a4l5f000000JMR4AAO,0.68,820000,Johan Champlin,2022-06-04 00:00:00,Mortgage,0.05,Fixed,FHA,30 Year
+Residential,2022-07-20 00:00:00,a4l5f000000JMR4AAO,0.86,566000,Kasey Gislason,2022-04-01 00:00:00,Mortgage,0.04,Fixed,Conventional,15 Year
+Residential,2022-09-08 00:00:00,a4l5f000000JMR4AAO,0.69,609000,Tom Brady,2022-05-21 00:00:00,Mortgage,0.04,Variable,VA,30 Year
+Residential,2022-07-05 00:00:00,a4l5f000000JMR4AAO,0.92,797000,Kelly Utley,2022-03-17 00:00:00,Mortgage,0.05,Variable,Conventional,30 Year
+Residential,2022-09-06 00:00:00,a4l5f000000JMR4AAO,0.75,652000,Susan Soriano,2022-06-08 00:00:00,Mortgage,0.05,Variable,Conventional,30 Year
+Residential,2022-05-31 00:00:00,a4l5f000000JMR4AAO,0.95,636000,Antoinette Braz,2022-02-10 00:00:00,Mortgage,0.04,Variable,VA,30 Year
+Residential,2022-07-13 00:00:00,a4l5f000000JMR4AAO,0.72,869000,Antonia Quimby,2022-03-25 00:00:00,Mortgage,0.03,Fixed,Conventional,15 Year
+Residential,2022-07-21 00:00:00,a4l5f000000JMR4AAO,0.94,447000,Joesph Howell,2022-04-02 00:00:00,Mortgage,0.03,Fixed,Conventional,15 Year
+Residential,2022-05-29 00:00:00,a4l5f000000JMR4AAO,0.77,589000,Jeremie Cartwright,2022-02-08 00:00:00,Mortgage,0.03,Fixed,Conventional,15 Year
+Home Equity,2022-09-18 00:00:00,a4l5f000000JMR4AAO,0.74,812000,Makenzie Predovic,2022-06-10 00:00:00,HELOC,0.03,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-09-14 00:00:00,a4l5f000000JMR4AAO,0.66,986000,Connor Reilly,2022-05-27 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-09-18 00:00:00,a4l5f000000JMR4AAO,0.75,661000,Keshawn Marvin,2022-05-21 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-06-07 00:00:00,a4l5f000000JMR4AAO,0.86,474000,Pietro VonRueden,2022-02-17 00:00:00,HELOC,0.03,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-08-14 00:00:00,a4l5f000000JMR4AAO,0.61,764000,Kevon Heidenreich,2022-04-16 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-07-09 00:00:00,a4l5f000000JMR4AAO,0.75,355000,Leonard Barrows,2022-03-21 00:00:00,HELOC,0.03,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-06-28 00:00:00,a4l5f000000JMR4AAO,0.72,388000,Kaleigh Wisoky,2022-02-28 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-09-05 00:00:00,a4l5f000000JMR4AAO,0.64,376000,Wilfrid Cremin,2022-05-18 00:00:00,HELOC,0.05,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-08-26 00:00:00,a4l5f000000JMR4AAO,0.77,626000,Emory Weissnat,2022-05-08 00:00:00,HELOC,0.02,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-08-29 00:00:00,a4l5f000000JMR4AAO,0.86,538000,Tiffany Schulist,2022-05-01 00:00:00,HELOC,0.05,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-07-26 00:00:00,a4l5f000000JMR4AAO,0.79,993000,Leone Marks,2022-04-07 00:00:00,HELOC,0.03,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-06-17 00:00:00,a4l5f000000JMR4AAO,0.66,552000,Jon Olson,2022-02-17 00:00:00,HELOC,0.03,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-09-18 00:00:00,a4l5f000000JMR4AAO,0.85,969000,Anna Purdy,2022-05-21 00:00:00,HELOC,0.03,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-07-27 00:00:00,a4l5f000000JMR4AAO,0.7,626000,Ramon Ernser,2022-03-29 00:00:00,HELOC,0.02,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-06-04 00:00:00,a4l5f000000JMR4AAO,0.95,479000,Alexandra Hartmann,2022-02-04 00:00:00,HELOC,0.03,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-08-23 00:00:00,a4l5f000000JMR4AAO,0.94,911000,Sherry Hahn,2022-05-15 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-07-04 00:00:00,a4l5f000000JMR4AAO,0.77,576000,David Hahn,2022-03-26 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-06-14 00:00:00,a4l5f000000JMR4AAO,0.94,839000,Maggie Kub,2022-02-14 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-05-19 00:00:00,a4l5f000000JMR4AAO,0.94,958000,Barbera Kemplin,2022-02-08 00:00:00,HELOC,0.02,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-08-31 00:00:00,a4l5f000000JMR4AAO,0.86,420000,Bernadette Bedoya,2022-05-13 00:00:00,HELOC,0.05,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-06-09 00:00:00,a4l5f000000JMR4AAO,0.94,470000,Bernice Quail,2022-03-01 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-07-20 00:00:00,a4l5f000000JMR4AAO,0.94,799000,Brandy Steenberg,2022-04-01 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-09-16 00:00:00,a4l5f000000JMR4AAO,0.93,524000,Brynn Sae,2022-05-19 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-10-07 00:00:00,a4l5f000000JMR4AAO,0.94,481000,Camilla Kolesar,2022-06-09 00:00:00,HELOC,0.05,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-09-02 00:00:00,a4l5f000000JMR4AAO,0.87,827000,Carolyne Ness,2022-05-25 00:00:00,HELOC,0.05,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-06-13 00:00:00,a4l5f000000JMR4AAO,0.77,370000,Kaden Blick,2022-03-05 00:00:00,HELOC,0.03,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-09-04 00:00:00,a4l5f000000JMR4AAO,0.84,375000,Cedric Stennett,2022-05-07 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-09-01 00:00:00,a4l5f000000JMR4AAO,0.67,578000,Chae Montalbo,2022-05-24 00:00:00,HELOC,0.03,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-06-25 00:00:00,a4l5f000000JMR4AAO,0.6,471000,Chester Forbes,2022-02-25 00:00:00,HELOC,0.03,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-06-22 00:00:00,a4l5f000000JMR4AAO,0.75,665000,Chloe Forshee,2022-03-04 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-09-07 00:00:00,a4l5f000000JMR4AAO,0.95,500000,Chris Rule,2022-05-30 00:00:00,HELOC,0.06,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-08-12 00:00:00,a4l5f000000JMR4AAO,0.95,644000,Christal Schippers,2022-04-14 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-06-07 00:00:00,a4l5f000000JMR4AAO,0.68,779000,Coralee Burghart,2022-02-07 00:00:00,HELOC,0.05,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-08-26 00:00:00,a4l5f000000JMR4AAO,0.7,508000,Corrinne Schleicher,2022-05-08 00:00:00,HELOC,0.03,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-09-23 00:00:00,a4l5f000000JMR4AAO,0.93,921000,Crista Seabrook,2022-06-05 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-06-08 00:00:00,a4l5f000000JMR4AAO,0.86,770000,Daniela Cuevas,2022-02-28 00:00:00,HELOC,0.03,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-08-25 00:00:00,a4l5f000000JMR4AAO,0.95,532000,Darci Gess,2022-05-17 00:00:00,HELOC,0.04,Variable,HELOC,10 Draw / 20 Repay
+Home Equity,2022-08-18 00:00:00,a4l5f000000JMR4AAO,0.78,378000,Daren Ryland,2022-04-30 00:00:00,HELOC,0.03,Variable,HELOC,10 Draw / 20 Repay

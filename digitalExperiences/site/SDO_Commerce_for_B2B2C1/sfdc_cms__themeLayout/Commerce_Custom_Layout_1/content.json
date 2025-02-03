@@ -1,0 +1,22 @@
+{
+  "type" : "sfdc_cms__themeLayout",
+  "title" : "Commerce Custom Layout",
+  "contentBody" : {
+    "component" : {
+      "attributes" : { },
+      "children" : [ {
+        "id" : "5408ff95-5f76-4954-b194-a9c7c69c1f2a",
+        "name" : "header",
+        "type" : "region"
+      }, {
+        "id" : "f1619328-5fd8-4d82-b630-c0f283fdf2b4",
+        "name" : "footer",
+        "type" : "region"
+      } ],
+      "definition" : "b2c_lite_commerce:commerceLayoutCustom",
+      "id" : "a2788f13-0f33-4f62-9c1b-acd5386a6200",
+      "type" : "component"
+    }
+  },
+  "urlName" : "commerce-custom-layout"
+}

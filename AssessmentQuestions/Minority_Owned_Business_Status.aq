@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Minority Owned Business Status</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Minority Owned Business Status</questionText>
+        <responseValues>Yes
+No
+N/A</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Select</dataType>
+    <developerName>Minority_Owned_Business_Status</developerName>
+    <name>Minority Owned Business Status</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

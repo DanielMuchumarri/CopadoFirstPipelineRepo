@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DigitalExperienceConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>ESW_Example_Bank_Embedded__1736538548050</label>
+    <site>
+        <urlPathPrefix>ESWExampleBankEmbedded1736538548050</urlPathPrefix>
+    </site>
+    <space>site/ESW_Example_Bank_Embedded_17365385480501</space>
+</DigitalExperienceConfig>

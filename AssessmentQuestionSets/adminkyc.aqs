@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionDeveloperNames>AnticipatedMonthlyWires</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>TotalDollarsOfMonthlyWires</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>SendingWiresOnBehalfOfOthers</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>NatureOfWires</assessmentQuestionDeveloperNames>
+    <developerName>adminkyc</developerName>
+    <name>Domestic Payments KYC</name>
+</AssessmentQuestionSet>

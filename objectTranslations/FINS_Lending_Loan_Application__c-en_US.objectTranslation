@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Loan Application</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Loan Applications</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Loan Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Income --></label>
+        <name>Annual_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Phase --></label>
+        <name>Application_Phase__c</name>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation><!-- Submitted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Borrower SSN --></label>
+        <name>Borrower_SSN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Borrower --></label>
+        <name>Borrower__c</name>
+        <relationshipLabel><!-- Loan Applications (Borrower) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Broker --></label>
+        <name>Broker__c</name>
+        <relationshipLabel><!-- Loan Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Deposit/Down Payment --></label>
+        <name>Deposit_Down_Payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Property Value --></label>
+        <name>Estimated_Property_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Close Date --></label>
+        <name>Expected_Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Home Improvement with Refi --></label>
+        <name>Home_Improvement_with_Refi__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>Lead__c</name>
+        <relationshipLabel><!-- 1003 Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Loan Number --></label>
+        <name>Loan_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Ownership --></label>
+        <name>Loan_Ownership__c</name>
+        <picklistValues>
+            <masterLabel>Business</masterLabel>
+            <translation><!-- Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joint</masterLabel>
+            <translation><!-- Joint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single</masterLabel>
+            <translation><!-- Single --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Monthly Debt Obligations --></label>
+        <name>Monthly_Debt_Obligations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Occupancy Type --></label>
+        <name>Occupancy_Type__c</name>
+        <picklistValues>
+            <masterLabel>Investment</masterLabel>
+            <translation><!-- Investment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary Residence</masterLabel>
+            <translation><!-- Primary Residence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second Residence</masterLabel>
+            <translation><!-- Second Residence --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Loan Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Property Type --></label>
+        <name>Property_Type__c</name>
+        <picklistValues>
+            <masterLabel>Condo</masterLabel>
+            <translation><!-- Condo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>House</masterLabel>
+            <translation><!-- House --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Land</masterLabel>
+            <translation><!-- Land --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi-Family</masterLabel>
+            <translation><!-- Multi-Family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Types</masterLabel>
+            <translation><!-- Other Types --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Town House</masterLabel>
+            <translation><!-- Town House --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Purchase or Refinance --></label>
+        <name>Purchase_or_Refinance__c</name>
+        <picklistValues>
+            <masterLabel>New Property</masterLabel>
+            <translation><!-- New Property --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refinance</masterLabel>
+            <translation><!-- Refinance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Switching to Cumulus</masterLabel>
+            <translation><!-- Switching to Cumulus --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Realtor --></label>
+        <name>Realtor__c</name>
+        <relationshipLabel><!-- Loan Applications (Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- UCIN External ID --></label>
+        <name>UCIN_External_ID__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Retail Loan Applications --></description>
+        <label><!-- Retail --></label>
+        <name>Retail</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- For Wholesale Loans --></description>
+        <label><!-- Wholesale --></label>
+        <name>Wholesale</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

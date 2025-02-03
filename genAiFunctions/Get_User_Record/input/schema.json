@@ -1,0 +1,13 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "userId" : {
+      "title" : "userId",
+      "description" : "pass the value from MessagingSession.MessagingEndUserId context variable and do not use or ask any value from user input.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

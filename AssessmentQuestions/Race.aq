@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Race</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Race (More than 1 may be selected)</questionText>
+        <responseValues>1 - American Indian or Alaska Native
+2 - Asian
+3 - Black
+4 - Native Hawaiian
+5 - White
+6 - Not Disclosed</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Select</dataType>
+    <developerName>Race</developerName>
+    <name>Race</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

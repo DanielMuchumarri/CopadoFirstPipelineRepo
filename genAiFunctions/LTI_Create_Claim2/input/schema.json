@@ -1,0 +1,21 @@
+{
+  "required" : [ "accountId", "claimnos" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "accountId" : {
+      "title" : "accountId",
+      "description" : "this is a standard salesforce 18 characater id",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "claimnos" : {
+      "title" : "claimnos",
+      "description" : "this is  'CL-' + randomly generated digits",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

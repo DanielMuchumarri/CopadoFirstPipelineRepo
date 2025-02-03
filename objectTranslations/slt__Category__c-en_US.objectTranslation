@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Primary Salesforce object name for this custom timeline --></help>
+        <label><!-- Timeline Object --></label>
+        <name>slt__CustomTimelineObject__c</name>
+    </fields>
+    <fields>
+        <help><!-- Whether this category is selected to be visible in timeline filters by default --></help>
+        <label><!-- Visible by Default --></label>
+        <name>slt__DefaultVisibility__c</name>
+    </fields>
+</CustomObjectTranslation>

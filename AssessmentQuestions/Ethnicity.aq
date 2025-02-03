@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Ethnicity</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Ethnicity</questionText>
+        <responseValues>H = Hispanic or Latino
+N = Not Hispanic or Latino
+X = Not Disclosed</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Select</dataType>
+    <developerName>Ethnicity</developerName>
+    <name>Ethnicity</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

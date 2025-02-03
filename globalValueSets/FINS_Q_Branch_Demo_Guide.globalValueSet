@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Commercial Banking - Sales</fullName>
+        <default>false</default>
+        <label>Commercial Banking - Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Commercial Banking - Service</fullName>
+        <default>false</default>
+        <label>Commercial Banking - Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Commercial Banking - Treasury</fullName>
+        <default>false</default>
+        <label>Commercial Banking - Treasury</label>
+    </customValue>
+    <customValue>
+        <fullName>Retail Banking - Branch Management</fullName>
+        <default>false</default>
+        <label>Retail Banking - Branch Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Retail Banking - Starter</fullName>
+        <default>false</default>
+        <label>Retail Banking - Starter</label>
+    </customValue>
+    <customValue>
+        <fullName>CIB - CapMarkets - Onboarding</fullName>
+        <default>false</default>
+        <label>CIB - CapMarkets - Onboarding</label>
+    </customValue>
+    <customValue>
+        <fullName>Lending</fullName>
+        <default>false</default>
+        <label>Lending</label>
+    </customValue>
+    <customValue>
+        <fullName>Wealth</fullName>
+        <default>false</default>
+        <label>Wealth</label>
+    </customValue>
+    <description>This global value set represents a list of official Q-Branch demo guides. These references are used in conjunction with External IDs on object records. Together, these enable the creation of the Data Packs that power the Next Generation of Q-Branch demos.</description>
+    <masterLabel>Q-Branch Demo Guide</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

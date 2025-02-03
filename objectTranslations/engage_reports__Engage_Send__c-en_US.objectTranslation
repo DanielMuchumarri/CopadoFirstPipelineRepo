@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Source Id --></label>
+        <name>engage_reports__Composite_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engage Email Template --></label>
+        <name>engage_reports__Engage_Email_Template__c</name>
+        <relationshipLabel><!-- Engage Sends --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sent At --></label>
+        <name>engage_reports__Sent_At__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Hard Bounces --></label>
+        <name>engage_reports__Total_Hard_Bounces__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Sends --></label>
+        <name>engage_reports__Total_Sends__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Soft Bounces --></label>
+        <name>engage_reports__Total_Soft_Bounces__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>engage_reports__Type__c</name>
+        <picklistValues>
+            <masterLabel>Engage Campaigns</masterLabel>
+            <translation><!-- Engage Campaigns --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engage for Gmail</masterLabel>
+            <translation><!-- Engage for Gmail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engage for Outlook</masterLabel>
+            <translation><!-- Engage for Outlook --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

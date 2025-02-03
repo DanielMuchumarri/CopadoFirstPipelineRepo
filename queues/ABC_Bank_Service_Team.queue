@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>daniel.muchumarri@ltimindtree.com</email>
+    <name>ABC Bank Service Team</name>
+    <queueMembers>
+        <users>
+            <user>adam052023163507.yhij9rqhlbuq@ltimindtree.com2024/11/20_10-50-14.demo</user>
+            <user>billsouth032024164254586984.e2sgmsaizvpe@ltimindtree.com2024/11/20_10-50-14.demo</user>
+            <user>carrieolson.0jchywotagpc.prrzyze8taib@ltimindtree.com2024/11/20_10-50-14.demo</user>
+            <user>daniel.muchumarri@ltimindtree.com2024/11/20_10-50-14.demo</user>
+            <user>deannamarsh.d8hquoeaknfp.ufnmozwrp59j@ltimindtree.com2024/11/20_10-50-14.demo</user>
+            <user>elyeast032024164254586984.ocktw1fiisb4@ltimindtree.com2024/11/20_10-50-14.demo</user>
+            <user>janetjones.qjkn6xpuchos.orbndfgnb7lf@ltimindtree.com2024/11/20_10-50-14.demo</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>ABC_Routing_Configuration</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>MessagingSession</sobjectType>
+    </queueSobject>
+</Queue>

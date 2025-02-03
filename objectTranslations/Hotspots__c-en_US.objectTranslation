@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Hotspots</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Hotspots</value>
+    </caseValues>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q-Branch Demo Reference --></label>
+        <name>FINS_Q_Branch_Demo_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Height --></label>
+        <name>Height__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prototype Screen Configuration --></label>
+        <name>Prototype_Screen_Configuration__c</name>
+        <relationshipLabel><!-- Hotspots --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Target Screen --></label>
+        <name>Target_Screen__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target URL --></label>
+        <name>Target_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Width --></label>
+        <name>Width__c</name>
+    </fields>
+    <fields>
+        <label><!-- X-cordinate --></label>
+        <name>X_cordinate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Y-cordinate --></label>
+        <name>Y_cordinate__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

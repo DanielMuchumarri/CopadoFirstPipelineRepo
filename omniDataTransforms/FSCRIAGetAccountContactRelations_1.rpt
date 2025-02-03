@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;AccountIds&quot; : [ {
+    &quot;EntityOwner__c&quot; : false,
+    &quot;UpsertSuccess&quot; : true,
+    &quot;Id&quot; : &quot;001DP00001oRpgTYAS&quot;,
+    &quot;LastName&quot; : &quot;pm&quot;,
+    &quot;RecordTypeId&quot; : &quot;012DP000001Mn6OYAS&quot;,
+    &quot;ControlPerson__c&quot; : false,
+    &quot;FirstName&quot; : &quot;1037&quot;,
+    &quot;UpsertSObjectType&quot; : &quot;Account&quot;,
+    &quot;Role&quot; : &quot;Stakeholder&quot;
+  }, {
+    &quot;UpsertSuccess&quot; : true,
+    &quot;Id&quot; : &quot;001DP00001oRpgUYAS&quot;,
+    &quot;LastName&quot; : &quot;entityaccount1036&quot;,
+    &quot;RecordTypeId&quot; : &quot;012DP000001Mn6OYAS&quot;,
+    &quot;UpsertSObjectType&quot; : &quot;Account&quot;,
+    &quot;Role&quot; : &quot;Entity as Account&quot;
+  }, {
+    &quot;LastName&quot; : &quot;new&quot;,
+    &quot;Id&quot; : &quot;001DP00001oRpD7YAK&quot;,
+    &quot;StateCountryOfIdIssuance__c&quot; : &quot;MN&quot;,
+    &quot;ControlPerson__c&quot; : true,
+    &quot;RecordTypeId&quot; : &quot;012DP000001Mn6OYAS&quot;,
+    &quot;EstimatedNetWorth__c&quot; : &quot;$0-$50,000&quot;,
+    &quot;IConsultWithMyBroker__c&quot; : false,
+    &quot;UpsertSObjectType&quot; : &quot;Account&quot;,
+    &quot;Role&quot; : &quot;Client&quot;,
+    &quot;TypeOfGovernmentIssuedId__c&quot; : &quot;passport&quot;,
+    &quot;SendToThirdParty__c&quot; : false,
+    &quot;EntityOwner__c&quot; : false,
+    &quot;PersonTitle&quot; : &quot;snldfjn&quot;,
+    &quot;IdNumber__c&quot; : &quot;2342&quot;,
+    &quot;SendToAllAccountHolders__c&quot; : false,
+    &quot;FinServ__PrimaryCitizenship__pc&quot; : &quot;United States&quot;,
+    &quot;IdExpirationDate__c&quot; : &quot;Feb 13, 2023 12:00:00 AM&quot;,
+    &quot;MiddleName&quot; : &quot;m&quot;,
+    &quot;UpsertSuccess&quot; : true,
+    &quot;FinServ__LastFourDigitSSN__pc&quot; : &quot;3523&quot;,
+    &quot;PersonBirthdate&quot; : &quot;Feb 13, 2023 12:00:00 AM&quot;,
+    &quot;IMakeMyOwnDecisions__c&quot; : false,
+    &quot;FirstName&quot; : &quot;stake&quot;,
+    &quot;IConsultWithMyFamilyFriends__c&quot; : false
+  } ]
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>FSCRIAGetAccountContactRelations</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>4.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>AccountIds|5:Id</filterValue>
+        <globalKey>FSCRIAGetAccountContactRelationsCustom6726</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>Account</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIAGetAccountContactRelations</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Accounts</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>5.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>AccountIds|6:Id</filterValue>
+        <globalKey>FSCRIAGetAccountContactRelationsCustom3338</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>Account</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIAGetAccountContactRelations</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Accounts</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>10.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>AccountIds|11:Id</filterValue>
+        <globalKey>FSCRIAGetAccountContactRelationsCustom7869</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>Account</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIAGetAccountContactRelations</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Accounts</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>1.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>AccountIds|2:Id</filterValue>
+        <globalKey>FSCRIAGetAccountContactRelationsCustom6057</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>Account</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIAGetAccountContactRelations</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Accounts</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>13.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>AccountIds|0:Id</filterValue>
+        <globalKey>FSCRIAGetAccountContactRelationsCustom3476</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>Account</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIAGetAccountContactRelations</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Accounts</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIAGetAccountContactRelationsCustom5050</globalKey>
+        <inputFieldName>Accounts:PersonContactId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIAGetAccountContactRelations</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ContactId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>6.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>AccountIds|7:Id</filterValue>
+        <globalKey>FSCRIAGetAccountContactRelationsCustom6891</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>Account</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIAGetAccountContactRelations</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Accounts</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>8.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>AccountIds|9:Id</filterValue>
+        <globalKey>FSCRIAGetAccountContactRelationsCustom6379</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>Account</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIAGetAccountContactRelations</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Accounts</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>7.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>AccountIds|8:Id</filterValue>
+        <globalKey>FSCRIAGetAccountContactRelationsCustom2572</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>Account</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIAGetAccountContactRelations</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Accounts</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>9.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>AccountIds|10:Id</filterValue>
+        <globalKey>FSCRIAGetAccountContactRelationsCustom5894</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>Account</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIAGetAccountContactRelations</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Accounts</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>12.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>AccountIds|13:Id</filterValue>
+        <globalKey>FSCRIAGetAccountContactRelationsCustom8147</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>Account</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIAGetAccountContactRelations</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Accounts</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>Accounts:PersonContactId</filterValue>
+        <globalKey>FSCRIAGetAccountContactRelationsCustom6377</globalKey>
+        <inputFieldName>ContactId</inputFieldName>
+        <inputObjectName>AccountContactRelation</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIAGetAccountContactRelations</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Accounts:ACR</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>3.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>AccountIds|4:Id</filterValue>
+        <globalKey>FSCRIAGetAccountContactRelationsCustom1102</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>Account</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIAGetAccountContactRelations</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Accounts</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FSCRIAGetAccountContactRelationsCustom2157</globalKey>
+        <inputFieldName>Accounts:ACR:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIAGetAccountContactRelations</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AcrId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>2.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>AccountIds|3:Id</filterValue>
+        <globalKey>FSCRIAGetAccountContactRelationsCustom1053</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>Account</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIAGetAccountContactRelations</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Accounts</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>AccountIds|1:Id</filterValue>
+        <globalKey>FSCRIAGetAccountContactRelationsCustom8000</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>Account</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIAGetAccountContactRelations</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Accounts</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&apos;true&apos;</filterValue>
+        <globalKey>FSCRIAGetAccountContactRelationsCustom5385</globalKey>
+        <inputFieldName>FinServ__PrimaryGroup__c</inputFieldName>
+        <inputObjectName>AccountContactRelation</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIAGetAccountContactRelations</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Accounts:ACR</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>11.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>AccountIds|12:Id</filterValue>
+        <globalKey>FSCRIAGetAccountContactRelationsCustom8583</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>Account</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FSCRIAGetAccountContactRelations</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Accounts</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;HouseholdId&quot; : &quot;001DP00001oRpDgYAK&quot;,
+  &quot;AccountIds&quot; : [ {
+    &quot;EntityOwner__c&quot; : false,
+    &quot;UpsertSuccess&quot; : true,
+    &quot;Id&quot; : &quot;001DP00001oRpgTYAS&quot;,
+    &quot;LastName&quot; : &quot;pm&quot;,
+    &quot;RecordTypeId&quot; : &quot;012DP000001Mn6OYAS&quot;,
+    &quot;ControlPerson__c&quot; : false,
+    &quot;FirstName&quot; : &quot;1037&quot;,
+    &quot;UpsertSObjectType&quot; : &quot;Account&quot;,
+    &quot;Role&quot; : &quot;Stakeholder&quot;
+  }, {
+    &quot;UpsertSuccess&quot; : true,
+    &quot;Id&quot; : &quot;001DP00001oRpgUYAS&quot;,
+    &quot;LastName&quot; : &quot;entityaccount1036&quot;,
+    &quot;RecordTypeId&quot; : &quot;012DP000001Mn6OYAS&quot;,
+    &quot;UpsertSObjectType&quot; : &quot;Account&quot;,
+    &quot;Role&quot; : &quot;Entity as Account&quot;
+  }, {
+    &quot;LastName&quot; : &quot;new&quot;,
+    &quot;Id&quot; : &quot;001DP00001oRpD7YAK&quot;,
+    &quot;StateCountryOfIdIssuance__c&quot; : &quot;MN&quot;,
+    &quot;ControlPerson__c&quot; : true,
+    &quot;RecordTypeId&quot; : &quot;012DP000001Mn6OYAS&quot;,
+    &quot;EstimatedNetWorth__c&quot; : &quot;$0-$50,000&quot;,
+    &quot;IConsultWithMyBroker__c&quot; : false,
+    &quot;UpsertSObjectType&quot; : &quot;Account&quot;,
+    &quot;Role&quot; : &quot;Client&quot;,
+    &quot;TypeOfGovernmentIssuedId__c&quot; : &quot;passport&quot;,
+    &quot;SendToThirdParty__c&quot; : false,
+    &quot;EntityOwner__c&quot; : false,
+    &quot;PersonTitle&quot; : &quot;snldfjn&quot;,
+    &quot;IdNumber__c&quot; : &quot;2342&quot;,
+    &quot;SendToAllAccountHolders__c&quot; : false,
+    &quot;FinServ__PrimaryCitizenship__pc&quot; : &quot;United States&quot;,
+    &quot;IdExpirationDate__c&quot; : &quot;Feb 13, 2023 12:00:00 AM&quot;,
+    &quot;MiddleName&quot; : &quot;m&quot;,
+    &quot;UpsertSuccess&quot; : true,
+    &quot;FinServ__LastFourDigitSSN__pc&quot; : &quot;3523&quot;,
+    &quot;PersonBirthdate&quot; : &quot;Feb 13, 2023 12:00:00 AM&quot;,
+    &quot;IMakeMyOwnDecisions__c&quot; : false,
+    &quot;FirstName&quot; : &quot;stake&quot;,
+    &quot;IConsultWithMyFamilyFriends__c&quot; : false
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>FSCRIAGetAccountContactRelations_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

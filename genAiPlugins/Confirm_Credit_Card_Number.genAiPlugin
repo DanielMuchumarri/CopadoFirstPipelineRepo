@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description>If user complains that his credit card is lost then perform the action to query for credit card number and ask user to confirm if credit card number is correct.</description>
+    <developerName>Confirm_Credit_Card_Number</developerName>
+    <genAiFunctions>
+        <functionName>Confirm_Credit_Card_Details</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If user complains that his credit card is lost then perform the action to query for credit card number and ask user to confirm if credit card number is correct.</description>
+        <developerName>instruction_ifusercomp0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_ifusercomp0</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Confirm Credit Card Number</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>If user complains that his credit card is lost then perform the action to query for credit card number and ask user to confirm if credit card number is correct.</scope>
+</GenAiPlugin>

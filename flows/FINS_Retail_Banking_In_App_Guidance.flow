@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <environments>Default</environments>
+    <formulas>
+        <name>varDomainURL</name>
+        <dataType>String</dataType>
+        <expression>SUBSTITUTE(
+LEFT( {!$Api.Partner_Server_URL_530}, FIND(&quot;.my.salesforce.com/&quot;, {!$Api.Partner_Server_URL_530}) -1 )
+, &apos;https://&apos;, &apos;&apos;)</expression>
+    </formulas>
+    <formulas>
+        <name>varShareableURL</name>
+        <dataType>String</dataType>
+        <expression>&quot;https://&quot; + {!varDomainURL} + &quot;.lightning.force.com/lightning/app/c__FINS_Retail_Banking_Console/r/Account/&quot; + {!Get_Julie_Morris_Acct_ID.Id} + &quot;/view?0.promptId=FINS_Retail_Banking_WelcomeToFSC&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>varShareableURLv2</name>
+        <dataType>String</dataType>
+        <expression>&quot;lightning/app/c__FINS_Retail_Banking_Console/r/Account/&quot; + {!Get_Julie_Morris_Acct_ID.Id} + &quot;/view?0.promptId=FINS_Retail_Banking_WelcomeToFSC&quot;</expression>
+    </formulas>
+    <formulas>
+        <description>var3 lands in-app guidance on the homepage</description>
+        <name>varShareableURLv3</name>
+        <dataType>String</dataType>
+        <expression>&quot;lightning/app/c__FINS_Retail_Banking_Console/page/home?0.promptId=FINS_Retail_Banking_WelcomeToFSC&quot;</expression>
+    </formulas>
+    <interviewLabel>Retail Banking In-App Guidance {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Retail Banking In-App Guidance</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <description>Retrieve the information for the Retail Banking In-App Guidance</description>
+        <name>Get_In_App_Guidance_Info</name>
+        <label>Get In-App Guidance Info</label>
+        <locationX>176</locationX>
+        <locationY>278</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Prompt_Version</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>FINS_Retail_Banking_WelcomeToFSC</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Prompt</object>
+        <sortField>Id</sortField>
+        <sortOrder>Asc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Julie_Morris_Acct_ID</name>
+        <label>Get Julie Morris Acct ID</label>
+        <locationX>176</locationX>
+        <locationY>158</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_In_App_Guidance_Info</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>External_ID__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>FSC_Account.001</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <sortField>Id</sortField>
+        <sortOrder>Asc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Prompt_Version</name>
+        <label>Get Prompt Version</label>
+        <locationX>176</locationX>
+        <locationY>398</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>In_App_Guidance_Launcher</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ParentId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_In_App_Guidance_Info.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>PromptVersion</object>
+        <sortField>Id</sortField>
+        <sortOrder>Asc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <screens>
+        <name>In_App_Guidance_Launcher</name>
+        <label>In-App Guidance Launcher</label>
+        <locationX>176</locationX>
+        <locationY>518</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>LaunchGuidanceText</name>
+            <fieldText>&lt;p&gt;&lt;a href=&quot;/{!varShareableURLv3}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;font-size: 18px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong&gt;Financial Services Cloud Walk Through&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Julie_Morris_Acct_ID</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+</Flow>

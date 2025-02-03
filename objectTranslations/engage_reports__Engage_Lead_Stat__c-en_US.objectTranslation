@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clicks --></label>
+        <name>engage_reports__Clicks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Composite Key --></label>
+        <name>engage_reports__Composite_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engage Send --></label>
+        <name>engage_reports__Engage_Send__c</name>
+        <relationshipLabel><!-- Engage Lead Stats --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Hard Bounces --></label>
+        <name>engage_reports__Hard_Bounces__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hour --></label>
+        <name>engage_reports__Hour__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Id --></label>
+        <name>engage_reports__Lead_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>engage_reports__Lead__c</name>
+        <relationshipLabel><!-- Engage Lead Stats --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opens --></label>
+        <name>engage_reports__Opens__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sends --></label>
+        <name>engage_reports__Sends__c</name>
+    </fields>
+    <fields>
+        <label><!-- Soft Bounces --></label>
+        <name>engage_reports__Soft_Bounces__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unsubscribes --></label>
+        <name>engage_reports__Unsubscribes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Version --></label>
+        <name>engage_reports__Version__c</name>
+    </fields>
+</CustomObjectTranslation>

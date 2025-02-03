@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Processes a fee reversal request with input from the case owner or case owner&apos;s manager.</description>
+    <masterLabel>Orchestrate Fee Reversal (Deprecated)</masterLabel>
+</FlowDefinition>

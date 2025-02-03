@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>CreateUpdateApplicationFormDCT</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateUpdateApplicationFormDCTCustom1386</globalKey>
+        <inputFieldName>OpportunityId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateUpdateApplicationFormDCT</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>OpportunityId</outputFieldName>
+        <outputObjectName>ApplicationForm</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateUpdateApplicationFormDCTCustom2174</globalKey>
+        <inputFieldName>ApplicationFormId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateUpdateApplicationFormDCT</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>ApplicationForm</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateUpdateApplicationFormDCTCustom1720</globalKey>
+        <inputFieldName>RecordTypeId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateUpdateApplicationFormDCT</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RecordTypeId</outputFieldName>
+        <outputObjectName>ApplicationForm</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Onboarding</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateUpdateApplicationFormDCTCustom9876</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateUpdateApplicationFormDCT</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>UsageType</outputFieldName>
+        <outputObjectName>ApplicationForm</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>CreateUpdateApplicationFormDCTCustom6875</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>CreateUpdateApplicationFormDCT</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>ApplicationForm</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateUpdateApplicationFormDCTCustom3793</globalKey>
+        <inputFieldName>ApplicationFormStage</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateUpdateApplicationFormDCT</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Stage</outputFieldName>
+        <outputObjectName>ApplicationForm</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateUpdateApplicationFormDCTCustom6156</globalKey>
+        <inputFieldName>AcctId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateUpdateApplicationFormDCT</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AccountId</outputFieldName>
+        <outputObjectName>ApplicationForm</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| NOW</formulaConverted>
+        <formulaExpression>NOW()</formulaExpression>
+        <formulaResultPath>SubmissionDateFormula</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>CreateUpdateApplicationFormDCTCustom7665</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateUpdateApplicationFormDCT</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateUpdateApplicationFormDCTCustom832</globalKey>
+        <inputFieldName>SubmissionDateFormula</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateUpdateApplicationFormDCT</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SubmissionDate</outputFieldName>
+        <outputObjectName>ApplicationForm</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;ContextId&quot; : &quot;006ao000004WRExAAO&quot;,
+  &quot;omniscriptId&quot; : &quot;0jNao000000HWOTEA4&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;type&quot; : &quot;CIBOnboarding&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;sId&quot; : &quot;0jNao000000HWOTEA4&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;subType&quot; : &quot;RMInitiation&quot;,
+  &quot;timeStamp&quot; : &quot;2024-07-15T21:58:30.749Z&quot;,
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;userTimeZoneName&quot; : &quot;America/Los_Angeles&quot;,
+  &quot;userTimeZone&quot; : &quot;-420&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;admin@0624cibintonboarding.test&quot;,
+  &quot;userId&quot; : &quot;005ao000002puv3AAA&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNao000000HWOTEA4&quot;,
+  &quot;localTimeZoneName&quot; : &quot;America/Chicago&quot;,
+  &quot;RecordTypeId&quot; : &quot;012ao000001dckTAAQ&quot;,
+  &quot;OpportunityId&quot; : &quot;006ao000004WRExAAO&quot;,
+  &quot;OpportunityAccountId&quot; : &quot;001ao00000hXF4BAAW&quot;,
+  &quot;OpportunityStage&quot; : &quot;Preparation&quot;,
+  &quot;AcctId&quot; : &quot;001ao00000hXF4BAAW&quot;,
+  &quot;OpportunityName&quot; : &quot;Lazard Middle Market Fund Onboarding&quot;,
+  &quot;ApplicationForm&quot; : {
+    &quot;Name&quot; : &quot;AF-00000031&quot;,
+    &quot;Stage&quot; : &quot;Initiated&quot;
+  },
+  &quot;ProductRequestDetails&quot; : {
+    &quot;ProductType&quot; : &quot;Emerging Markets&quot;,
+    &quot;BlkCreateAuthorizedSigner&quot; : null,
+    &quot;BlkChooseCurrentSigner&quot; : {
+      &quot;TAAuthorizedSigner-Block&quot; : {
+        &quot;FINS_CIB_Requester_Capacity__c2&quot; : &quot;Authorized Signer&quot;,
+        &quot;TAAuthorizedSigner&quot; : &quot;Cathy Lane&quot;,
+        &quot;ContactName&quot; : &quot;Cathy Lane&quot;,
+        &quot;Name&quot; : &quot;Lazard Middle Market LLC&quot;,
+        &quot;ContactId&quot; : &quot;003ao00000NFKoUAAX&quot;,
+        &quot;OpptyName&quot; : &quot;Lazard Middle Market Fund Onboarding&quot;,
+        &quot;AccountId&quot; : &quot;001ao00000hXF4BAAW&quot;,
+        &quot;RequesterTelephone&quot; : &quot;555-555-5555&quot;,
+        &quot;RequesterFirstName&quot; : &quot;Cathy&quot;,
+        &quot;RequesterEmail&quot; : &quot;cathy@gmail.com&quot;,
+        &quot;RequesterLastName&quot; : &quot;Lane&quot;,
+        &quot;RequesterJobTitle&quot; : &quot;VP&quot;
+      }
+    },
+    &quot;RadioWhatDoYouWant&quot; : &quot;Choose Previous Requester&quot;,
+    &quot;FullLegalName&quot; : &quot;Lazard Middle Market LLC&quot;,
+    &quot;ProductFamily&quot; : &quot;Derivatives&quot;
+  },
+  &quot;BasicDetails&quot; : {
+    &quot;Target_Completion_Date&quot; : &quot;2024-07-22&quot;,
+    &quot;Full_Legal_Name_of_the_Customer&quot; : &quot;Lazard Middle Market LLC&quot;,
+    &quot;Booking_Entity&quot; : &quot;United States&quot;,
+    &quot;Are_you_bulk_uploading_funds&quot; : &quot;Yes&quot;,
+    &quot;Principal_Business_Function&quot; : &quot;Investment Management&quot;,
+    &quot;Entity_Type&quot; : &quot;Investment Manager&quot;,
+    &quot;Country_of_Domicile&quot; : &quot;United States&quot;
+  },
+  &quot;assessmentId&quot; : &quot;0U3ao0000005AoLCAU&quot;,
+  &quot;ApplicationFormStage&quot; : &quot;Onboarding Initial Review&quot;,
+  &quot;DRId_Opportunity&quot; : &quot;006ao000004WRExAAO&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>CreateUpdateApplicationFormDCT_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

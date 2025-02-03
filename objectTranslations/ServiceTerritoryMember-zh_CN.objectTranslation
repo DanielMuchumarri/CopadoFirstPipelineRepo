@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q-Branch Demo Reference --></label>
+        <name>FINS_Q_Branch_Demo_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSLDemoTools Original Geolocation --></label>
+        <name>FSLDemoTools_Original_Geolocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL Mobile Data --></label>
+        <name>FSL_Mobile_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal SLR HomeAddress Geolocation --></label>
+        <name>FSL__Internal_SLR_HomeAddress_Geolocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Capacity Based Resource --></label>
+        <name>SDO_SFS_Capacity_Based_Resource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non Capacity Based Resource --></label>
+        <name>SDO_SFS_Non_Capacity_Based_Resource__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSLDemoTools Master Data --></label>
+        <name>SDO_Tool_FSLDemoTools_Master_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Resource Name --></label>
+        <name>Service_Resource_Name__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Can&apos;t edit the FSLDemoTools Master data --></errorMessage>
+        <name>FSLDemoTools_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- End Date must be within 3 years from today --></errorMessage>
+        <name>FSL__Limit_STM_End_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot save Service Territory Member of type secondary with Operating Hours or Address --></errorMessage>
+        <name>FSL__Secondary_STM</name>
+    </validationRules>
+</CustomObjectTranslation>

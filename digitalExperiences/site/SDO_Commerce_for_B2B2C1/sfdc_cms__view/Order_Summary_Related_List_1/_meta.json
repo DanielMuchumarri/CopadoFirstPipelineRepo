@@ -1,0 +1,5 @@
+{
+  "apiName" : "Order_Summary_Related_List_1",
+  "type" : "sfdc_cms__view",
+  "path" : "views"
+}

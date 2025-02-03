@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Intake</fullName>
+        <default>false</default>
+        <label>Intake</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Submitted</fullName>
+        <default>false</default>
+        <label>Submitted</label>
+    </standardValue>
+    <standardValue>
+        <fullName>In Review</fullName>
+        <default>false</default>
+        <label>In Review</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Need More Info</fullName>
+        <default>false</default>
+        <label>Need More Info</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Underwriter Approved</fullName>
+        <default>false</default>
+        <label>Underwriter Approved</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Approved</fullName>
+        <default>false</default>
+        <label>Customer Approved</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Auto Approved</fullName>
+        <default>false</default>
+        <label>Auto Approved</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Rejected</fullName>
+        <default>false</default>
+        <label>Customer Rejected</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Underwriter Rejected</fullName>
+        <default>false</default>
+        <label>Underwriter Rejected</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Auto Rejected</fullName>
+        <default>false</default>
+        <label>Auto Rejected</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract Generation</fullName>
+        <default>false</default>
+        <label>Contract Generation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Awaiting Signature</fullName>
+        <default>false</default>
+        <label>Awaiting Signature</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Signature Complete</fullName>
+        <default>false</default>
+        <label>Signature Complete</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Book to Core</fullName>
+        <default>false</default>
+        <label>Book to Core</label>
+    </standardValue>
+</StandardValueSet>

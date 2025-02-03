@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionLauncherItemDef xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identifier>_1s7uuhsk95y6e123gw0osbivq1</identifier>
+    <itemActionType>Omniscript</itemActionType>
+    <itemCategory>dbBased</itemCategory>
+    <itemLanguage>English</itemLanguage>
+    <masterLabel>Lending/PreQualCommunity/English</masterLabel>
+    <subType>PreQualCommunity</subType>
+    <type>Lending</type>
+</ActionLauncherItemDef>

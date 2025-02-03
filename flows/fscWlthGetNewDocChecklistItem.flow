@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <assignments>
+        <description>Assigns the ID from the current document checklist item record in the loop to the DocumentCheckListItemID variable.</description>
+        <name>AssignNewDocumentChecklistItemsID</name>
+        <label>Assign New Document Checklist Items ID</label>
+        <locationX>264</locationX>
+        <locationY>350</locationY>
+        <assignmentItems>
+            <assignToReference>DocumentCheckListItemID</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>IterateThroughDocumentChecklistItems.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>IterateThroughDocumentChecklistItems</targetReference>
+        </connector>
+    </assignments>
+    <description>Gets the document checklist item records where the status is New.</description>
+    <environments>Default</environments>
+    <interviewLabel>FSC Wealth: Get All New Document Checklist Items {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FSC Wealth: Get All New Document Checklist Items</label>
+    <loops>
+        <description>Iterates through Document Checklist Items Value from GetNewDocumentChecklistItem.</description>
+        <name>IterateThroughDocumentChecklistItems</name>
+        <label>Iterate through Document Checklist Items</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <collectionReference>GetNewDocumentChecklistItem</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>AssignNewDocumentChecklistItemsID</targetReference>
+        </nextValueConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Gets the Document Checklist Item records with a caseId matching the ParentRecordId that was passed into the flow and Status equals to New.</description>
+        <name>GetNewDocumentChecklistItem</name>
+        <label>Get New Document Checklist Item</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>IterateThroughDocumentChecklistItems</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ParentRecordId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>CaseId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>New</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>DocumentChecklistItem</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>GetNewDocumentChecklistItem</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Stores the Case ID.</description>
+        <name>CaseId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the collection of document checklist item records.</description>
+        <name>DocumentCheckListItemID</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

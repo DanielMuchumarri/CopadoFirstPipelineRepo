@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dataset>DCDCP_Unified_Individual_Engagement_Stream</dataset>
+    <dates>
+        <alias>EngagementDateTime</alias>
+        <firstDayOfWeek>-1</firstDayOfWeek>
+        <fiscalMonthOffset>0</fiscalMonthOffset>
+        <label>Engagement Date</label>
+        <sortIndex>0</sortIndex>
+        <type xsi:nil="true"/>
+    </dates>
+    <dimensions>
+        <field>EngagementChannelAction</field>
+        <isDerived>false</isDerived>
+        <label>Engagement Channel Action</label>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>EngagementChannel</field>
+        <isDerived>false</isDerived>
+        <label>Engagement Channel</label>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>EngagementChannelType</field>
+        <isDerived>false</isDerived>
+        <label>Engagement Channel Type</label>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>IndividualFirstName</field>
+        <isDerived>false</isDerived>
+        <label>First Name</label>
+        <sortIndex>3</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>IndividualLastName</field>
+        <isDerived>false</isDerived>
+        <label>Last Name</label>
+        <sortIndex>4</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>ReferrerMedium</field>
+        <isDerived>false</isDerived>
+        <label>Referrer Medium</label>
+        <sortIndex>5</sortIndex>
+    </dimensions>
+</WaveXmd>
